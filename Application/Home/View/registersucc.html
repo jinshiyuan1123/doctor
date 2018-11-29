@@ -1,0 +1,225 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="dns-prefetch" href="http://img.guahao.com">	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="https://img.guahao.com/favicon.ico" />
+<!-- External CSS -->
+	<link rel="stylesheet" href="https://img.guahao.com/front/hps-pc-static/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
+	<link rel="stylesheet" href="https://img.guahao.com/front/hps-pc-static/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="https://img.guahao.com/front/hps-pc-static/css/hack/ie6.css?v=1.3"/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="https://img.guahao.com/front/hps-pc-static/css/hack/ie7.css?v=1.3"/>
+<![endif]-->
+<script  type="text/javascript">
+	// $GF { Array } - functions defined in pages which has no module. The collected functions will be defined in page directly.
+	$GF = [];
+
+	// 图片加载失败,error设置默认图片也加载失败避免死循环
+	window.NoFind = function(src) {
+		var img = event.srcElement;
+		img.src = src;
+		img.onerror = null;
+	};
+</script>
+
+	
+		
+		
+		    <title>医生注册 | 微医</title>
+		<style>
+			html, body{
+				height: 100%;
+			}
+		</style>
+	</head>
+	
+	<body class="account-body">
+		<!-- #g-wrapper -->
+		<div id="g-wrapper">
+			<!-- #gc -->
+			
+
+<div class="g-container new-account-ui new-doctor-register J_NewRegister" id="gc" data-module="account">
+	<div class="big-bg"></div>
+	<div class="main-box J_MainBox">
+		<div class="box-header g-clear">
+			<a class="g-left logo" href="http://www.guahao.com"></a>
+			<div class="g-left title">医生注册</div>
+			<ul class="gh-register">
+				<li>
+					<i class="info"></i>
+						创建账号
+				</li>
+				<li>
+					<i class="full"></i>
+						完善信息
+				</li>
+				<li class="on">
+					<i class="suc"></i>
+						注册成功
+				</li>
+			</ul>			
+		</div>
+		<div class="form-container doctor-register-suc">
+			<form id="userForm" name="userForm" method="post" action="">
+				<div class="top-tips">
+					<p class="success-tips"><span class="blue-text">注册成功，李旭峰医生欢迎加入微医，微医因你更精彩！</span></p>
+				</div>
+				<p class="middle-tips">您的账号是<span class="account">{$mobile}</span>&nbsp;&nbsp;此账号可同时登录微医，微医生APP</p>
+				<a class="btn btn-success btn-lg enter-home" href="{:U('home/index/doctorhome')}">进入微医生</a>
+				<div class="bottom-info g-clear">
+					<div class="g-left">
+						<img src="https://img.guahao.com/portal_upload/qrlogo/qrDrapp1.jpg" onerror="this.src='http://www.guahao.com/qrcode/gener?qrIndex=qrDrapp1';this.removeAttribute('onerror');" />
+					</div>
+					<div class="g-left">
+						<p>扫码下载“微医生”客户端，微医生，<br/>品牌医生的移动诊室！</p>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+			<!-- end of #gc -->
+		</div>	
+		<!-- end of #g-wrapper -->
+		
+<script  type="text/javascript">
+	//打点日志全局变量
+	$GLog = {
+		requestMethod:'POST',
+		loginId:'k2RuCJd/JdRIDYDws0DZwxiJla5rD11gqT3Un/1wF9s8THjPcAXKIA==',
+		perSessiionId:'154303338518820178067151',
+		shortSessionId:'',
+		referurl:'https://doctor.guahao.com/register/doctor/submit',
+		userAgent:'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+		logUrl: 'https://trackweb.guahao.cn/blank.gif',
+		debug: false,
+		domainEnd: 'guahao.com',
+		errorEventName:'portal_eops_js_error',
+		token:'!P0MfsMGSMtzR8Y4AEYzglqQocb34CJA1a3YAxjo-AYftrp-xiEhIjKRHL9Qnse_qS5PAwoEtdKex5WZVo5OfKagWMPwraORW-Pj1aMKnhoLnlXUMJG-6ChkCHOE2AKqRBS3Tn4OCxKPuWSKsd3CWUEP3rbogozbuGnbJAkv4Cxq7c',
+        monitorLog : false
+	}
+	// $GC { Object } - globle configure
+     $GC = {
+		staticServer:"https://img.guahao.com",
+		imageServer:"https://img.guahao.com",
+		echartServer: "https://im-web.guahao.cn",
+		flashIp: "https://tqvedio-hezuo.guahao.com",
+		guahaoServer:"http://www.guahao.com",
+		eopsServer:"https://doctor.guahao.com",
+		isLogined:"true",
+		isdocLogined:"true",
+		mobilevalidcodepwd : 'lvxian95169124',
+		version:"1541078824a18cef",
+		jsCPath:"https://img.guahao.com" + "/common/js",
+		jsPPath:"https://img.guahao.com" + "/front/hps-pc-static/js",
+		isDev: false,
+		domainProfix: "doctor",
+	 	appServer: "https://api-gateway.guahao.com",
+		 snsWebServer:"https://bbs.guahao.com"
+
+	};
+
+	// $GS { Array } - the init parameters for startup
+	$GS = [$GC.jsCPath + "/base/jquery-1.8.1.min.js?20170125",
+		$GC.jsCPath + "/plugins/datehelper.js",
+		$GC.jsCPath + "/plugins/jquery.placeholder.js",
+		$GC.jsCPath + "/plugins/json2.js",
+		$GC.jsCPath + "/plugins/socket.io.js",
+		$GC.jsPPath + "/base/eops.js?_=1541078824a18cef",
+		function(){
+		 // load common module
+			if(GL.Browser.ie6){
+				GL.load([$GC.jsPPath + "/hack/ie6.js" + "?_=" + $GC.version]);
+			}
+			if (!$GC.isDev) {
+				GL.load([$GC.jsPPath + "/plugins/raven.js"]);
+			}
+			var timer = setInterval(function() {
+				if(typeof Eops === 'undefined') {
+					return false;
+				}
+				clearInterval(timer);
+				GL.load([Eops.adaptModule("common")]);
+				 // load the modules defined in page
+				 var moduleName = $("#gc").data("module") || $("#gc2").data("module");
+				 if(moduleName){
+					var module = Eops.modules[moduleName];
+					if(!module) {
+						module = Eops.adaptModule(moduleName);
+					}
+					if(module) {
+						GL.load([module]);
+					}
+				}
+			});
+
+	}];
+
+	//同盾token 发送
+	(function() {
+		var name = "_wysid_";
+		var sid = getCookie(name);
+		if(null !== sid && ''!==sid && undefined !== sid){
+			_fmOpt = {
+				partner: 'weiyi',
+				appName: 'weiyi_web',
+				token: sid,
+				fmb: true,
+				getinfo: function() {
+					return "e3Y6ICIyLjUuMCIsIG9zOiAid2ViIiwgczogMTk5LCBlOiAianMgbm90IGRvd25sb2FkIn0=";
+				}
+						};
+			var cimg = new Image(1,1);
+			cimg.onload = function() {
+				_fmOpt.imgLoaded = true;
+			};
+			cimg.src = "https://fp.fraudmetrix.cn/fp/clear.png?partnerCode=weiyi&appName=weiyi_web&tokenId=" + _fmOpt.token;
+			var fm = document.createElement('script'); fm.type = 'text/javascript'; fm.async = true;
+			fm.src = '//static.fraudmetrix.cn/v2/fm.js?ver=0.1&t=' + (new Date().getTime()/3600000).toFixed(0);
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fm, s);
+		}
+
+		function getCookie(c_name)
+		{
+			if (document.cookie.length>0)
+			{
+				c_start=document.cookie.indexOf(c_name + "=")
+				if (c_start!=-1)
+				{
+					c_start=c_start + c_name.length+1
+					c_end=document.cookie.indexOf(";",c_start)
+					if (c_end==-1) c_end=document.cookie.length
+					return unescape(document.cookie.substring(c_start,c_end))
+				}
+			}
+			return ""
+		}
+
+	})();
+</script>
+
+<script type="text/javascript" src="https://img.guahao.com/front/hps-pc-static/js/base/GL.js?_=1541078824a18cef" ></script>
+<script src="https://img.guahao.com/front/hps-pc-static/js/plugins/scout.js?_=1541078824a18cef"></script>
+<!-- analytics code -->
+<div class="hide">
+	<script type="text/javascript"> 
+	 
+		(function() { 
+		
+			// baidu
+			var hm = document.createElement('script'); hm.type = 'text/javascript'; hm.async = true;
+			hm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'hm.baidu.com/h.js?66fcb71a7f1d7ae4ae082580ac03c957';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hm, s); 
+		  
+		  
+		})();
+	</script>   
+</div>
+
+	</body>
+</html>

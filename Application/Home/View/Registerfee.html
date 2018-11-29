@@ -1,0 +1,306 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="dns-prefetch" href="https://static.guahao.cn">   
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    <title>登录 | 微医(挂号网)-互联网医院在线诊疗平台</title>
+                <meta name="keywords" content="微医登录,挂号网登录" />
+                <meta name="description" content="微医（挂号网）注册页面，微医（挂号网）怎么注册使用 - 微医（www.guahao.com）致力于打造实名医患交流的互联网健康服务平台。聚合了全国超过3900家重点医院，建立了全国三级医院30万名医生的专长库，是您合作的首选平台。" />
+<link rel="canonical" href="https://www.guahao.com/user/login"/>
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://wy.guahao.com/mobile/login">
+<meta name="mobile-agent" content="format=html5; url=https://wy.guahao.com/mobile/login">
+<meta http-equiv="Cache-Control" content="no-transform" />
+
+<meta property="wb:webmaster" content="3b0138a4c935e0f6" />
+<meta property="qc:admins" content="341606771467510176375" />
+    <link rel="shortcut icon" href="https://static.guahao.cn/favicon.ico" />
+
+    <link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/portal.base.min.css?v=1542352557776f11" type="text/css"/>
+    <link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/portal.basic.min.css?v=1542352557776f11" type="text/css"/>
+    <link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/portal.hdd.min.css?v=1542352557776f11" type="text/css"/>
+    <link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/portal.content.min.css?v=1542352557776f11" type="text/css"/>
+    <link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/style.min.css?v=1542352557776f11" type="text/css"/>
+    <link rel="stylesheet" href="https://static.guahao.cn/common/css/animate.min.css?v=20141222" type="text/css"/>
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" media="screen" href="https://static.guahao.cn/front/portal-pc-static/css/ie6.css?v=1542352557776f11"/>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="screen" href="https://static.guahao.cn/front/portal-pc-static/css/ie7.css?v=1542352557776f11"/>
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" media="screen" href="https://static.guahao.cn/front/portal-pc-static/css/ie8.css?v=1542352557776f11"/>
+<![endif]-->
+
+<script  type="text/javascript">
+    $GF = [];
+
+    GreenLine = {};
+    // 打点日志全局变量
+    GreenLine.Log = {
+        url:'https://track.guahao.cn/blank.gif?',
+        requestMethod:'GET',
+        loginId:'',
+        perSessiionId:'1542509717443018725013178',
+        shortSessionId:'1542509717448',
+        referurl:'http://www.sou.com/index.php',
+        userAgent:'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+        errorEventName:'portal_pc_js_error',
+        token: "",
+        monitorLog : false
+    }
+    // 老的埋点，已废弃，后面统一删除HTML上的埋点
+    function _smartlog(link,mod){return true;};
+</script>
+ 
+         
+        <style>
+            html, body{
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="g-wrapper">
+            <div id="gc">
+                
+
+
+<input type="hidden" id="g-cfg" data-module="new-account" data-rightbar="0">
+<div class="g-container account-ui-v3 user-login-v3 J_NewLogin">
+    <div class="big-bg">
+        <!-- <div class="bg-cover"></div> -->
+    </div>
+    <div class="main-box J_MainBox">
+        <div class="nav g-clear">
+            <li class="main-current J_MainTab"><span>登录</span>&nbsp;&nbsp;<i>▪</i>&nbsp;&nbsp;<a href="{:U('home/index/register')}">注册</a></li>
+            <li class="download-normal">扫一扫</li>
+        </div>
+        <div class="tab-list ">
+            <div class="tab-listcon J_TabList">
+                <div class="tab-main g-clear J_TabMain">
+                    <div class="form-container">
+                        <form action="/user/login" method="post">
+                            <div class="g-tips-box-error hide">
+                                <span class="gi gi-error"></span>
+                                <span class="content">
+                                </span>
+                            </div>
+                            <input type="hidden" name="method" value="dologin"/>
+                            <input type="hidden" name="target" value="/"/>
+                            <ul>
+                                <li class="icon-line">
+                                    <label class="item-icon icon-user"></label>
+                                    <input type="text" id="loginId" name="loginId" class="form-input" placeholder="手机、邮箱或用户名" tabindex="1">
+                                </li>
+                                <li class="icon-line">
+                                    <label class="item-icon icon-pwd"></label>
+                                    <input type="password" autocomplete="off" disableautocomplete id="password" class="form-input" placeholder="密码" maxlength="20" tabindex="2">
+                                    <input type="password" autocomplete="off" disableautocomplete name="password" class="hide">
+                                </li>
+                                <li>
+                                    <input type="text" id="validCode" name="validCode" autocomplete="off" class="form-input code-text" placeholder="验证码" tabindex="3">
+                                    <a href="javascript:void(0)" title="换一张" class="captcha J_Captcha J_RefreshCaptcha">
+                                        <img src="/validcode/genimage/1">
+                                    </a>
+                                </li>
+                                <li class="action-bar">
+                                    <a href="javascript:;" id="J_LoginSubmit" class="gbb gbt-green" monitor="userlogin,login,login">登&nbsp;录</a>
+                                </li>
+                                <li class="auto-login">
+                                    <input type="checkbox" id="autoLogin" name="autologin" monitor="userlogin,login,auto_login"><label for="autoLogin">自动登录</label>
+                                    <div class="fo-pwd">
+                                        <a href="https://www.guahao.com/forget/index" class="forget-ps" target="_blank" monitor="userlogin,login,forget_password">忘记密码？</a>
+                                    </div>          
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="third-login">
+                        <i class="or">或</i>
+                        <div class="qrcode-wrapper">
+                            <img src="https://static.guahao.cn/front/portal-pc-static/img/qr/drain/app-login.jpg">
+                            <span>下载APP</span>
+                        </div>
+                        <div class="qrcode-wrapper secondary">
+                            <img src="https://static.guahao.cn/front/portal-pc-static/img/qr/drain/wechat-subscription.jpg">
+                            <span>关注公众号</span>
+                        </div>
+                        <h5>使用第三方登录平台</h5>
+                        <p class="third-platform J_LoginList">
+                        
+                            <a href="https://www.guahao.com/partners/qq/login" class="icon-qq J_Social" monitor="other_login,other_login,qq">QQ</a>
+                            <a href="https://www.guahao.com/tblogin/tbfastlogin" class="icon-taobao" monitor="other_login,other_login,taobao">淘宝</a>
+                            <a href="https://www.guahao.com/alipayFastLogin/getFastLoginInfo" class="icon-alipay J_Social" monitor="other_login,other_login,zhifubao">支付宝</a>
+                            <a href="https://www.guahao.com/partners/weixin/login" class="icon-weixin J_Social" monitor="other_login,other_login,weixin">微信</a>
+                            <a href="https://www.guahao.com/partners/sina/fastlogin" class="noMrgR icon-sina J_Social" monitor="other_login,other_login,sina">新浪微博</a>
+                        
+                        </p>
+                        <div class="go-home">
+                             <a href="https://www.guahao.com" monitor="userlogin,userlogin,home_back">返回首页</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-download g-clear J_TabDownload">
+                    <div class="qr-inner">
+                        <ul class="g-clear">
+                            <li><img src="https://static.guahao.cn/front/portal-pc-static/img/account/v3/qr-user.png" alt=""><p>下载<a href="https://www.guahao.com/intro/userapp" monitor="scan_download,scan_download,user_app">微医APP</a></p></li>
+                            <li class="wy-qr"><img src="https://static.guahao.cn/front/portal-pc-static/img/account/v3/qr-doctor.png" alt=""><p>下载<a href="https://www.guahao.com/intro/drapp" monitor="scan_download,scan_download,doctor_app">微医生APP</a></p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="policy-info login">
+                登录即代表您已阅读并同意
+                <a href="https://www.guahao.com/agreement" target="_blank">《微医用户注册协议》</a>
+                <a href="https://www.guahao.com/agreement/privacy_policy" target="_blank">《法律声明及隐私权政策》</a>
+            </div>
+            <div class="switch-login"><a href="http://doctor.guahao.com/user/login" monitor="userlogin,doctor_log,doctorlog">医生</a></div>
+        </div>
+    </div> 
+    <div class="footer J_footer">
+        <ul class="ftCon">
+            <li class="ft-king">
+                <i class="icon-left"></i>
+                <h4>专业的平台</h4>
+                <p>三甲医院号源直供、服务挂号上亿人次</p>
+            </li>
+            <li class="ft-doc">
+                <i class="icon-left"></i>
+                <h4>知名的医师</h4>
+                <p>知名医疗资源、精诚解决您的疑难杂症</p>
+            </li>
+            <li class="ft-consult">
+                <i class="icon-left"></i>
+                <h4>权威的问诊</h4>
+                <p>多样化问诊模式、快速精准解答问题</p>
+            </li>
+            <li class="ft-news"> 
+                <i class="icon-left"></i>
+                <h4>全面的资讯</h4>
+                <p>名医讲堂、时事健康资讯一手掌握</p>
+            </li>
+        </ul>
+    </div>
+</div>
+            </div>
+            <script type="text/javascript">
+    $GC = {
+        debug: false,
+        echartServer: '//im-web.guahao.cn',
+        isLogined : false,
+        guahaoServer :  'https://www.guahao.com',
+        staticServer : 'https://static.guahao.cn',
+        imageServer : 'https://h2img.guahao.com',
+        kanoServer: 'https://kano.guahao.cn',
+        serviceServer : 'https://service.guahao.com',
+        eopsServer : 'http://doctor.guahao.com',
+        wepayServer : 'https://wepay.guahao.com',
+        mobilevalidcodepwd : 'lvxian95169124',
+        version:"1542352557776f11",
+        encodeId:"",
+        jsCPath:"https://static.guahao.cn" + "/common/js",
+        jspath:"https://static.guahao.cn" + "/front/portal-pc-static/js",
+        domainEnd:'guahao.com',
+        bbsServer: 'https://bbs.guahao.com',
+        gatewayServer: 'https://api-gateway.guahao.com',
+        cloudcardServer: "https://service-api-finance.guahao.com",
+        jkljServer: 'https://www.healthhlj.cn',
+        weiYiH5GuahaoServer: 'https://wy.guahao.com'
+    };
+
+    // $GS { Array } - the init parameters for startup
+    $GS = [
+        $GC.jspath + "/plugins/scout.js?_=1542352557776f11",
+        $GC.jspath + "/plugins/raven.js?_=1542352557776f11",
+        $GC.jsCPath + "/base/jquery-1.8.1.min.js",
+        $GC.jspath + "/base/GH.js?_=1542352557776f11",
+        $GC.jsCPath + "/plugins/validator.js?_=20160129",function(){
+
+         // load common module
+         GL.load([GH.adaptModule("common")]);
+
+         // load the modules defined in page
+         var moduleName = $("#g-cfg").data("module");
+         if(moduleName){
+            var module = GH.modules[moduleName];
+            if(!module) {
+                module = GH.adaptModule(moduleName);
+            }
+            if(module) {
+                GL.load([module]);
+            }
+        }
+
+        if($GU.isIE6()){
+            GL.load([$GC.jspath + "/hack/ie6.js"]);
+        }
+    }];
+</script>
+<script type="text/javascript" src="https://static.guahao.cn/front/portal-pc-static/js/base/GL.js?_=1542352557776f11" ></script>
+<script>
+    //同盾token 发送
+    (function() {
+        _fmOpt = {
+            partner: 'weiyi',
+            appName: 'weiyi_web',
+            token: "weiyi-" + new Date().getTime() + '-' + Math.random().toString(16),
+            fmb: true,
+            getinfo: function() {
+                return "e3Y6ICIyLjUuMCIsIG9zOiAid2ViIiwgczogMTk5LCBlOiAianMgbm90IGRvd25sb2FkIn0=";
+            }
+                };
+        var cimg = new Image(1,1);
+        cimg.onload = function() {
+            _fmOpt.imgLoaded = true;
+        };
+        cimg.src = "https://fp.fraudmetrix.cn/fp/clear.png?partnerCode=weiyi&appName=weiyi_web&tokenId=" + _fmOpt.token;
+        var fm = document.createElement('script'); fm.type = 'text/javascript'; fm.async = true;
+        fm.src = '//static.fraudmetrix.cn/v2/fm.js?ver=0.1&t=' + (new Date().getTime()/3600000).toFixed(0);
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fm, s);
+        setTimeout(function () {
+            var fmCode = _fmOpt.getinfo();
+            if (fmCode.length <= 256) {
+                setCookie('_fm_code', _fmOpt.getinfo())
+            };
+        }, 1200);
+        function setCookie (name, val) {
+            var expires = '; expires=' + new Date(new Date().getTime() + 30 * 24 * 3600 * 1000).toUTCString()
+            document.cookie = [name, '=', encodeURIComponent(val), expires, '; path=/'].join('')
+        }
+    })();
+</script>
+
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https'){
+       bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else{
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+<div class="hide">
+    <script type="text/javascript">
+ 
+        (function() { 
+        
+            // baidu
+            var hm = document.createElement("script");
+                            hm.src = "https://hm.baidu.com/hm.js?5697507823ecd633819db0771bb99cfb";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>  
+</div>
+        </div>
+    </body>
+</html>

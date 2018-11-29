@@ -1,0 +1,182 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="dns-prefetch" href="http://img.guahao.com">	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="https://img.guahao.com/favicon.ico" />
+<!-- External CSS -->
+	<link rel="stylesheet" href="https://img.guahao.com/front/hps-pc-static/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
+	<link rel="stylesheet" href="https://img.guahao.com/front/hps-pc-static/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
+ <script src="__PUBLIC_HIS__/vendor/jquery/jquery.min.js"></script>
+    <script src="__PUBLIC_HIS__/vendor/layer/layer.js"></script>
+
+
+	
+		
+		
+		    <title>医生注册 | 微医</title>
+		<style>
+			html, body{
+				height: 100%;
+			}
+		</style>
+	</head>
+	
+	<body class="account-body">
+		<!-- #g-wrapper -->
+		<div id="g-wrapper">
+			<!-- #gc -->
+			
+
+<div class="g-container new-account-ui new-doctor-register J_DoctorRegSecond" id="gc" data-module="account">
+<div class="big-bg"></div>
+<div class="main-box J_MainBox">
+	<div class="box-header g-clear">
+		<a class="g-left logo" href="http://www.guahao.com"></a>
+		<div class="g-left title">医生注册</div>
+		<ul class="gh-register">
+			<li>
+				<i class="info"></i>
+				创建账号
+			</li>
+			<li class="on">
+				<i class="full"></i>
+				完善信息
+			</li>
+			<li>
+				<i class="suc"></i>
+				注册成功
+			</li>
+		</ul>
+	</div>
+	<div class="form-container">
+		<form id="" name=""  method="post" action="{:U('home/index/registersucc')}">
+			<div class="msg-container">
+				<div class="g-tips-box-succ hide">
+					<span class="gi gi-succ"></span>
+					<span class="content"></span>
+				</div>
+			</div>
+			<input name='csrf_token' type='hidden' value='tbziiuv5tgkk'>
+			<input type="hidden" name="target" value="" />
+			<input type="hidden" name="origin" value="" />
+			<input type="hidden" name="action" value="register" />
+			<ul>
+				<li class="top-tips">
+					<h3>完善个人信息</h3>
+					<h4>如果你是好医生，就让所有人知道您的名字</h4>
+				</li>
+				<li>
+					<label class="item-name"><em>*</em>姓&nbsp;&nbsp;名</label>
+					<input type="hidden" name="mobile" value="{$mobile}">
+					<input type="hidden" name="password" value="{$password}">
+					<input type="text" id="doctorName" autocomplete="off" name="doctorName" class="form-input loginId" placeholder="请输入您的真实姓名" value=""/>
+				</li>
+				<li class="major-small g-clear" style="position:relative;z-index:3;">
+					<label class="item-name g-left"><em>*</em>地&nbsp;&nbsp;区</label>
+				<!-- 	<select class="form-select" name="province" id="province">
+						<option value="">请选择省份</option>
+					</select>&nbsp;&nbsp;
+					<select class="form-select" name="city" id="city">
+						<option value="">请选择城市</option>
+					</select> -->
+					<div class="major g-left" style="width:174px;height:52px;">
+						
+						  <select class=" " id="province" name="province" style="width:164px;height:42px;">
+							<option value="0" id="sel_text" >
+                            <if condition="$region">
+                            {$region}
+                            <else/>
+                            请选择...
+                            </if>
+                            </option>
+                            <foreach name="province" item="val">
+                           <option value="{$val.provinceid}" >{$val['province']}</option>
+                            </foreach>
+						</select >
+					
+						<ul class="pro-list J_ProvinceList">
+						</ul>
+					</div>
+					<div class="major  g-left">
+						 <select class="city jscitys " id="cities" name="cities" style="width:164px;height:42px;">
+							<option value="" id="">
+                            <if condition="$city">
+                            {$city}
+                            <else/>
+                            请选择...
+                            </if>
+                            </option>
+                           
+						</select>
+					</div>
+					<input type="hidden" class="J_HiddenProvince" name="provinceId" value="2">
+					<input type="hidden" class="J_HiddenCity" name="cityId" value="">
+				</li>
+				<li>
+					<label class="item-name"><em>*</em>医&nbsp;&nbsp;院</label>
+					<span class="gh-search-input J_AutoHospital"><input type="text" id="hospitalName" autocomplete="off" name="hospitalName" class="form-input" value='' placeholder="请输入您所在的医院名称"></span>
+					<input type="hidden" name="hospitalId" class="J_HiddenHospitalId" value="">
+				</li>
+				<li>
+					<label class="item-name"><em>*</em>科&nbsp;&nbsp;室</label>
+					<span class="gh-search-input J_AutoDept"><input type="text" id="hospdeptName" autocomplete="off" name="hospdeptName" value='' class="form-input" placeholder="请输入您所在的科室名称"></span>
+					<input type="hidden" name="deptId" class="J_HiddenDeptId" value="">
+				</li>
+				<li class="major" style="position:relative;z-index:2;width: 450px;">
+					<label class="item-name"><em>*</em>职&nbsp;&nbsp;称</label>
+					<input type="text" id="titleType" autocomplete="off" name="titleTypeName" class="form-input" placeholder="请输入您的职称" value=''><span class="arrow J_MajorArrow"><i></i></span>
+					<ul class="pro-list J_MajorList">
+						<li><a href="javascript:;" data-id="1">主任医师</a></li>
+						<li><a href="javascript:;" data-id="3">副主任医师</a></li>
+						<li><a href="javascript:;" data-id="2">主治医师</a></li>
+						<li><a href="javascript:;" data-id="4">医师</a></li>
+						<li><a href="javascript:;" data-id="5">住院医师</a></li>
+					</ul>
+					<input type="hidden" name="titleType" class="J_HiddenProId" value="">
+				</li>
+				<li>
+					<label class="item-name">固&nbsp;&nbsp;话</label>
+					<span class="gh-search-input "><input type="text" maxlength="5"  name="areaCode" class="form-input" style="width:80px;" placeholder="区号" />&nbsp;&nbsp;<input type="text"  class="form-input" name="phone" value="" style="width:205px;" placeholder="请输入您的医院固定电话"  /></span>
+				</li>
+				<li class="action-bar">
+					<input type="submit" value="注&nbsp;册" class="btn btn-success btn-lg reg-btn" style="height:50px;">
+					
+					<a class="to-up" href="javascript:history.back();">上一步</a>
+				</li>
+			</ul>
+		</form>
+	</div>
+</div>
+</div>
+
+
+		</div>	
+		<!-- end of #g-wrapper -->
+		
+<script>
+      $(document).ready(function(){
+     
+        $("#province").change(function(){
+              var province = $("#province").val();
+              $("#sel_text").val(province);
+              $.post('/home/index/province.php',{province:province},function(data){
+              	console.info(data);
+                var arr = data.split(',');
+                var html="";
+                for(i=0;i<arr.length-1;i++){
+                      
+                    html+="<option value="+arr[i]+">"+arr[i]+"</option>";
+                }
+                // console.info(html);
+                $("#cities").html(html);
+              })
+           
+        });
+      });
+      </script>
+</div>
+
+	</body>
+</html>

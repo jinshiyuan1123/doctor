@@ -1,0 +1,48 @@
+<div class="gh-nav">
+    <div class="container g-clear">
+        <div class="g-left">
+            <if condition="!session('home_user_info')">
+                <span class="text">您好！ 请</span>
+                <span class="login"></span>
+                <a href="{:U('home/index/login')}" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,login">登录</a>
+                <span class="line">|</span>
+                <a target="_blank" href="{:U('home/index/register')}" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,signin">注册</a>
+                <a href="{:U('home/index/doctorlogin')}" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" class="doctor-login" monitor="public_head,publick_head,doctoruser"><i style="right:6px"><img src="__PUBLIC_HOME__/doctor-login.png"></i>我是医生</a>
+            <else/>
+
+                     <span class="text">您好
+                         {:session('home_user_info.mobile')}
+                          </span> 
+                     <a href="{:U('home/index/orderlist')}" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,mycenter">个人中心</a>
+                       
+                    <span class="line">|</span>
+                    <a href="https://www.guahao.com/my/orderlist" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,order">预约单</a> 
+                    <span class="line">|</span>
+                    <a href="https://www.guahao.com/my/favorite/list" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,myfollow">我的关注</a> 
+                    <span class="line">|</span> 
+                    <a href="{:U('/home/index/logout')}" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,logout">退出</a> 
+               
+            </if>
+        </div>
+        
+        
+          <div class="g-right">
+                <a href="https://www.guahao.com/intro/userapp" rel="nofollow" class="dl-guide J_SeoGuide" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,appdload">
+                    下载APP
+                    <span>
+                        <img src="https://static.guahao.cn/front/portal-pc-static/img/index-appQRcode.png?v=20170505" alt="">
+                    </span>
+                </a>
+                <span class="line">|</span>
+
+
+            <a href="https://www.guahao.com/fastcancel/index" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,ordercancel">快速取消订单</a>
+            <span class="line">|</span>
+            <a href="https://www.guahao.com/help/common" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" id="helpCenter" target="_blank" monitor="public_head,publick_head,cscenter">客服中心</a>
+            <span class="line">|</span>
+            <a href="http://www.wedoctor.com" rel="nofollow" onmousedown="return _smartlog(this,'TOP')">微医云</a>
+            <span class="line">|</span>
+            <a href="http://www.jiankx.com" rel="nofollow" onmousedown="return _smartlog(this,'TOP')">微医保</a>
+        </div>
+      </div> 
+  </div>

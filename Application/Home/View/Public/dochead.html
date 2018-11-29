@@ -1,0 +1,36 @@
+<div class="g-header-new noprint">
+    <div class="notice"  id="J_Notify" style="display: none;">
+        <div class="center" class="">
+            <div class="notice-contain">
+                <span class="bell-icon"></span>
+                <span class="title">公告：</span>
+                <div id="J_NotifyBox" class="wrapper" style="">
+                    <div class="move-box" style="" >
+                        <span class="content J_Content" href="javascript:;"></span>
+                    </div>
+                    <div class="move-box2" style="display: none;" >
+                        <span class="content J_Content" href="javascript:;"></span>
+                    </div>
+                </div>
+                <span class="close-icon J_NoticeClose"></span>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <a class="logo" href="#">
+            <img src="__PUBLIC_HOME__/images/header_logo.png?_=123456" alt="logo">
+        </a>
+        <div class="nav">
+                    <span>欢迎您
+                            ,&nbsp;{$docname}
+                    </span>
+                <a href="#" target="_blank" class="help" title="联系客服" monitor="doctorweb,menu_top,wy_robot"><b class="border">联系客服</b></a>
+                <a href="{:U('home/index/authprofile')}" class="setting" title="账号设置" monitor="doctorweb,menu_top,accountset"><b class="border">账号设置</b></a>
+                <a href="{:U('home/index/docLogout')}" class="logout j-out-system" title="退出" monitor="doctorweb,menu_top,exit"><b>退出</b></a>
+                <input type="hidden" class="j-out-url" value="" />
+        </div>
+    </div>
+    <div class="gm-box-off-out hide">
+        <p style="text-align: center;">您还在接诊状态，确定退出登录?</p>
+    </div>
+</div>
