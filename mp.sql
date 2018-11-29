@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : www
+Source Server         : localhost
 Source Server Version : 50553
 Source Host           : localhost:3306
 Source Database       : mp
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-11-27 01:51:53
+Date: 2018-11-29 14:41:48
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -2913,7 +2913,7 @@ INSERT INTO `dzm_his_auth_rule` VALUES ('24', '', 'Member/resetPassword', '重�
 INSERT INTO `dzm_his_auth_rule` VALUES ('34', 'fa fa-drivers-license', 'Department/index', '科室管理', '22', '1', '1', '1', '1', '', '0');
 INSERT INTO `dzm_his_auth_rule` VALUES ('26', 'fa fa-id-badge', 'Registeredfee/Registeredfee_list', '挂号费管理', '22', '1', '1', '1', '1', '', '0');
 INSERT INTO `dzm_his_auth_rule` VALUES ('27', 'fa fa-money', 'PrescriptionExtracharges/index', '病情分类', '22', '1', '1', '1', '1', '', '0');
-INSERT INTO `dzm_his_auth_rule` VALUES ('28', 'fa fa-sheqel', 'Inspectionfee/index', '检查项目费', '22', '1', '1', '1', '1', '', '0');
+INSERT INTO `dzm_his_auth_rule` VALUES ('28', 'fa fa-sheqel', 'Inspectionfee/index', '添加文章', '22', '1', '1', '1', '1', '', '0');
 INSERT INTO `dzm_his_auth_rule` VALUES ('29', 'fa fa-book', 'Dictionary/index', '字典表维护', '22', '1', '1', '1', '1', '', '0');
 INSERT INTO `dzm_his_auth_rule` VALUES ('30', '', 'AuthGroup/ruleGroup', '查看职务权限', '23', '2', '1', '1', '1', '', '0');
 INSERT INTO `dzm_his_auth_rule` VALUES ('31', '', 'Doctor/getExtracharges', '获取附加费用', '2', '2', '1', '1', '1', '', '0');
@@ -3737,7 +3737,7 @@ CREATE TABLE `dzm_his_dictionary` (
   PRIMARY KEY (`did`),
   KEY `parent_id` (`parent_id`),
   KEY `hid` (`hid`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COMMENT='字典表';
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COMMENT='字典表';
 
 -- ----------------------------
 -- Records of dzm_his_dictionary
@@ -3762,8 +3762,12 @@ INSERT INTO `dzm_his_dictionary` VALUES ('17', '项目单位', '3', '0', '0', '1
 INSERT INTO `dzm_his_dictionary` VALUES ('18', '人员分类', '4', '0', '0', '1508983676', '0', '', '0');
 INSERT INTO `dzm_his_dictionary` VALUES ('19', '中草药', '11', '0', '0', '1508983676', '0', '', '0');
 INSERT INTO `dzm_his_dictionary` VALUES ('20', '中成药', '11', '0', '0', '1508983676', '0', '', '0');
-INSERT INTO `dzm_his_dictionary` VALUES ('21', '化验类', '16', '1', '1', '1511948889', '1511948927', '', '0');
-INSERT INTO `dzm_his_dictionary` VALUES ('22', '拍片类', '16', '1', '1', '1511948943', '0', '', '0');
+INSERT INTO `dzm_his_dictionary` VALUES ('21', '谣言粉碎机', '16', '1', '1', '1511948889', '1543458066', '', '0');
+INSERT INTO `dzm_his_dictionary` VALUES ('22', '就医攻略', '16', '1', '1', '1511948943', '1543458058', '', '0');
+INSERT INTO `dzm_his_dictionary` VALUES ('23', '中医养生', '16', '1', '1', '1543458073', '0', '', '0');
+INSERT INTO `dzm_his_dictionary` VALUES ('24', '名医直通车', '16', '1', '1', '1543458102', '0', '', '0');
+INSERT INTO `dzm_his_dictionary` VALUES ('25', '择医网讲堂', '16', '1', '1', '1543458134', '0', '', '0');
+INSERT INTO `dzm_his_dictionary` VALUES ('26', '热门排行', '16', '1', '1', '1543458176', '0', '', '0');
 
 -- ----------------------------
 -- Table structure for dzm_his_doctor
@@ -3950,27 +3954,29 @@ CREATE TABLE `dzm_his_inspectionfee` (
   `ins_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `mid` int(10) NOT NULL DEFAULT '0' COMMENT '添加用户id',
   `hid` int(10) NOT NULL DEFAULT '0' COMMENT '医院id',
-  `inspection_name` varchar(50) NOT NULL DEFAULT '' COMMENT '项目名称',
-  `class` varchar(50) NOT NULL DEFAULT '' COMMENT '项目类别',
-  `unit_price` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '项目单价',
-  `cost` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '项目成本',
+  `inspection_name` varchar(255) NOT NULL DEFAULT '' COMMENT '项目名称',
+  `class` varchar(255) NOT NULL DEFAULT '' COMMENT '项目类别',
+  `unit_price` varchar(255) NOT NULL DEFAULT '0.00' COMMENT '项目单价',
+  `cost` varchar(255) NOT NULL DEFAULT '0.00' COMMENT '项目成本',
   `create_time` int(10) NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(10) NOT NULL DEFAULT '0' COMMENT '修改时间',
-  `unit` varchar(50) NOT NULL DEFAULT '' COMMENT '单位',
+  `unit` longtext NOT NULL COMMENT '内容',
   `class_id` int(10) NOT NULL DEFAULT '0' COMMENT '类别id',
   UNIQUE KEY `pre_id` (`ins_id`) USING BTREE,
   KEY `hid` (`hid`) USING BTREE,
   KEY `inspection_name` (`inspection_name`) USING BTREE,
   KEY `class` (`class`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='检查项目费用表';
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COMMENT='检查项目费用表';
 
 -- ----------------------------
 -- Records of dzm_his_inspectionfee
 -- ----------------------------
-INSERT INTO `dzm_his_inspectionfee` VALUES ('1', '1', '1', 'X光', '拍片类', '20.00', '5.00', '1511948965', '0', '次', '22');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('2', '1', '1', 'CT', '拍片类', '50.00', '10.00', '1511948984', '0', '次', '22');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('3', '1', '1', '血常规', '化验类', '5.00', '1.00', '1511949016', '0', '次', '21');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('4', '1', '1', '乙肝五项', '化验类', '30.00', '10.00', '1511949064', '0', '次', '21');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('7', '1', '1', '警惕冬季高发病，守护宝宝健康入冬', '就医攻略', '是', '新', '1543464112', '1543464302', '秋风中，申城弥漫着沁人心脾的桂花香。老饕们的至爱大闸蟹亦应市而上。秋天是个收获的季节。收获之后意味着贮藏，故而秋冬相连，不仅仅是季节的更替。中医认为秋收冬藏。冬藏的正是秋气肃降之下的阳气。阳气者，人身之大宝也。“天之一丸红日，人之一息真阳”。真阳足则人体康健。对重视身体健康的人士来说，如何在冬令贮藏真气之季保养阳气着实应该引起重视。而中医的滋补膏方确是一种好方法。', '22');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('10', '1', '1', '秋风起，蟹脚痒；冬令至，膏滋俏', '中医养生', '是', '', '1543472337', '0', '从古至今，国人都十分重视“立冬”。在北方，立冬有吃倭瓜饺子的风俗；台湾立冬有“羊肉炉”、“姜母鸭”进补习惯。苏州人在立冬的时候常吃什么呢？7日，苏州博物馆（苏州民俗博物馆）研究员沈建东告诉记者，保健进补是“老苏州”立冬的主要习俗。 　　 　　 冬令进补吃膏滋是苏州人过立冬的老传统。在旧时苏州，一些大户人家还用红参、桂圆、核桃肉，在冬季烧汤喝，有补气活血助阳的功效。通常每到立冬节气，苏州中医院以及一些老字号药房都会专门开设进补门诊，为市民煎熬膏药，销售冬令滋补保健品。 【绿之韵胶囊】www.lvzhiyun.cn 　　 　　 此外，苏州人自秋天开始，便强调每天吃些白果、栗子等坚果，温肺益气。近些年在立冬前，苏州各处羊肉店也纷纷开张，“吃个羊肉火锅、喝碗羊汤暖暖身”，也是非常惬意的。 　　 　　 沈建东告诉记者，立冬之后，农历十月就马上到了，农历十月伊始，“老苏州”们便纷纷开始忙碌准备冬天的储备食物，如小麦来酿冬酿酒、腌制蔬菜等。此时，江南还有“西风响，蟹脚痒，蟹立冬，影无踪”的谚语，喜欢吃螃蟹的苏州人到了农历十月也开始变换吃法儿，所谓的“九月雌、十月雄”是说到了农历十月就要吃雄的螃蟹了', '23');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('8', '1', '1', '医生说｜脾胃不好膏方来调！冬季进补正当时', '就医攻略', '是', '', '1543471585', '0', '对于肝脏的保护、保养一直是很多人都非常关心的事情，做好养肝、护肝的相关事宜，不只是对肝脏好，对整个五脏六腑的调节也是好的。当前，肝脏疾病不断涌现出来，肝脏一旦出现损伤，带来的影响是很多人无法接受的。\n而脂肪肝是最常见的肝脏疾病，需要大家认清楚，了解脂肪肝是什么，能够让人更好的保健？', '22');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('9', '1', '1', '手机放口袋会杀精吗？', '谣言粉碎机', '是', '热', '1543472176', '0', '目前，患上脂肪肝的中老年人越来越多，需要引起大家的关注，肝细胞中的脂肪堆积不断增多，引起了脂肪发生病变，脂肪在其中起到了非常重要的推波助澜作用。\n\n正常情况下，健康的肝脏是需要少量的脂肪，例如，甘油三酯、磷脂、胆固醇等，这些成分约占肝脏的5%。但是，一旦肝脏中的脂肪含量超标，甚至达到了50%，那么就可能形成了脂肪肝。\n\n出现了脂肪肝，除了通过服药治疗外，正确的饮食显得更加重要，有些食物能吃，有些食物不能吃。\n\n出现脂肪肝，吃什么好？\n\n1、豆制品\n\n作为蛋白质非常优质的食物，豆制品适合大家食用，通过食用豆制品，能够吸收大豆蛋白，能够降低血清总胆固醇、甘油三酯的含量，对保护肝脏，避免肝脏中脂肪含量高非常好。\n\n2、枸杞\n\n吃枸杞除了能补肾之外，对于养肝、护肝也是好的，通过吃枸杞，能够吸收甜茶碱，有效的避免肝脏中脂肪堆积过多，对防治脂肪肝非常好。\n\n如果你本身就有肝脏炎症，也可以吃一点枸杞，进行保护肝脏，不要多，每天15g即可，干嚼、泡水都可以。', '21');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('11', '1', '1', '医生手术间隙“累趴”照刷屏朋友圈 称是工作常态', '名医直通车', '是', '热', '1543472961', '0', '“一台移植手术前后达10-12小时是一种常态。”\n\n长征医院胰岛移植团队负责人殷浩说，胰岛细胞移植手术包含三部分，获取供体器官是第一个步骤，供体的获取由全国人体器官分配系统统一进行分配。\n\n据殷浩介绍，在团队中，季峻松常常需要前往全国各地获取器官，就在5月16日，他还去了一趟安徽，与安徽省立医院合作完成了安徽省第一例胰腺捐献，“只要接到供体捐献消息，我们就需要随时准备出发，在8小时内带回GMP胰岛分离室进行胰岛细胞分离，时间越短，器官移植效果也就越好。”\n\n季峻松表示，在实验室分离胰岛细胞是移植手术中的重要一环，这一部分大约历时6-7个小时，最后一步是给病人注射胰岛细胞，需要1小时左右，“注射前还需要介入科医生帮我们做一个微创手术，目的是建立一个注射细胞的通路。”\n\n“并不只有我一个人在努力，也并不只有医护人员在努力，我们的背后有一个强大的团队，可能有二三十人在共同守护‘生命的种子’。”\n\n季峻松表示。\n\n殷浩也表示，除了医护人员外，移植工作的顺利开展，还要感谢像东方航空、铁路部门等单位的配合，“第一时间帮我们开通绿色通道，让获取的供体器官在最短的时间内到达移植医院，开展手术”。\n\n“我们只是把他们的爱传递下去”\n\n殷浩和季峻松认为，他们的这项工作非常有意义。2017年的统计数据表明中国有一亿多名糖尿病患者，其中有不少是儿童、青少年。糖尿病尽管属于慢性病，如果控制不佳其带来的后续危害巨大。高血糖对血管、神经器官的长期损伤，可能导致肾功能衰竭、失眠、糖尿病足等严重并发症，而脆性糖尿病导致的低血糖无意识昏迷，随时有死亡风险。\n\n在繁忙的工作节奏背后，长征医院器官移植科的专家们也在关注糖尿病群体的增长带来的各种问题。\n\n长征医院器官移植中心主任丁国善表示，胰岛细胞移植最特别之处在于，可以帮助患者生理性调节血糖，既避免了高血糖的发生，又防止了低血糖的出现，是一项有效的治疗方法。尽管只有少部分严重糖尿病人需要接受胰岛移植这类手术治疗，但由于近年来糖尿病患者病人数量逐年增长，出现严重并发症的患者也越来越多。', '24');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('12', '1', '1', '中日友好医院里“人机对战” AI完胜皮肤科医生', '名医直通车', '是', '新', '1543473201', '1543473238', '日前，一场特殊的较量在中日友好医院展开。\n\n对阵的一方是来自北京、云南、内蒙古等地的10名皮肤科医生，另一方是首款黄色人种皮肤肿瘤人工智能辅助决策系统——优智AI系统。竞赛科目是皮肤肿瘤的诊断成功率，包括皮肤肿瘤性质及肿瘤名称。比赛开始前，中国人民解放军总医院皮肤病医院孟如松教授拿出60组皮肤肿瘤病例资料，现场随机抽取10组图片，让医师与优智AI系统同时作答，正确答案以病理诊断为金标准。\n\n十分钟后，优智AI系统的良性分类符合率达100%，恶性符合率为75%，平均符合率达到了90%；而医生组对应则分别为76%，62.5%和63%。AI完胜皮肤科医生。\n\n孟如松表示，“人机对战”的结果表明，优智AI系统已经完成了应用于临床的功能实现，能够为皮肤科医生，尤其是基层皮肤科医生和低年资皮肤科医生的临床工作实现有效助力。\n\n对于人类医生逊于AI系统的结果，皮肤病专家并不感到意外。\n\n2017年，斯坦福大学在《自然》杂志上发表了一份关于皮肤肿瘤机器深度学习的研究。结果显示，深度学习在良恶性3分类和疾病大类9分类任务上的符合率分别可达72.1%和55.4%。而针对同样的分类识别，专业医生平均符合率分别为65.8%和54.2%。\n\n“由于皮肤病的临床表现多位于肌肤暴露部位，很多疾病可以通过查看临床图片、皮肤镜图片、病理切片等影像资料来进行判断。”北京大学人民医院皮肤科主任张建中教授表示，通过海量图片的学习，皮肤科是最适合远程医疗和人工智能的医疗领域。', '24');
 
 -- ----------------------------
 -- Table structure for dzm_his_inventory
