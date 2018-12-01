@@ -1413,10 +1413,10 @@
                             <dd><a href="<?php echo U('home/index/about');?>" rel="nofollow" onmousedown="return _smartlog(this,'BTM')">关于我们</a></dd>
                             <dd><a href="#" onmousedown="return _smartlog(this,'BTM')">友情链接</a></dd>
                             <dd><a href="#" rel="nofollow" onmousedown="return _smartlog(this,'BTM')">加入择医网</a></dd>
-                            <dd><a href="#" rel="nofollow" onmousedown="return _smartlog(this,'BTM')">版权声明</a></dd>
+                            <dd><a href="<?php echo U('home/index/statement');?>" rel="nofollow" onmousedown="return _smartlog(this,'BTM')">版权声明</a></dd>
                             <dd><a href="#" rel="nofollow" onmousedown="return _smartlog(this,'BTM')">联系我们</a></dd>
                             <dd class="last"><a href="#" rel="nofollow" target="_blank" onmousedown="return _smartlog(this,'BTM')">新浪微博</a></dd>
-                            <dd><a href="#" onmousedown="return _smartlog(this,'BTM')">网站地图</a></dd>
+                            <dd><a href="<?php echo U('home/index/navlist');?>" onmousedown="return _smartlog(this,'BTM')">网站地图</a></dd>
                             <dd><a href="#" onmousedown="return _smartlog(this,'BTM')">知识库</a></dd>
                         </dl>
                         <dl class="two">

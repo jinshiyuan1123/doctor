@@ -816,4 +816,12 @@ function getCity($ip = '')
       $this->display(':about');
     }
 
+    public function statement(){
+      $this->display(':statement');
+    }
+
+    public function navlist(){
+      $this->display(':navlist');
+    }
+
 }
