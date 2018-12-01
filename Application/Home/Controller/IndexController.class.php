@@ -812,4 +812,8 @@ function getCity($ip = '')
       $this->display(':topic');
     }
 
+    public function about(){
+      $this->display(':about');
+    }
+
 }

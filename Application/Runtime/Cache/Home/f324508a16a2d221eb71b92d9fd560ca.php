@@ -106,7 +106,7 @@
                     <div class="gh-logo ">
                         <!-- <a href="/"  onmousedown="" monitor="public_logo,publick_logo,headlogo"></a> -->
 
-                        <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.png" alt="择医网" class="wy-logo">
+                        <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo">
                     </div>
 
 
@@ -1410,7 +1410,7 @@
                     <div class="links g-left">
                         <dl class="one g-clear">
                             <dt>关于择医网</dt>
-                            <dd><a href="#" rel="nofollow" onmousedown="return _smartlog(this,'BTM')">关于我们</a></dd>
+                            <dd><a href="<?php echo U('home/index/about');?>" rel="nofollow" onmousedown="return _smartlog(this,'BTM')">关于我们</a></dd>
                             <dd><a href="#" onmousedown="return _smartlog(this,'BTM')">友情链接</a></dd>
                             <dd><a href="#" rel="nofollow" onmousedown="return _smartlog(this,'BTM')">加入择医网</a></dd>
                             <dd><a href="#" rel="nofollow" onmousedown="return _smartlog(this,'BTM')">版权声明</a></dd>
