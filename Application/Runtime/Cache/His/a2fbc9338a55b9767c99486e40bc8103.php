@@ -109,7 +109,7 @@
     <div class="sidebar-scroll">
         <nav>
             <ul class="nav" id="menu-nav">
-                <?php if(is_array($menu1)): foreach($menu1 as $key=>$v): ?><li class="li-menu"><a href="<?php echo U($v[menu_name]);?>" class="menu" id="<?php echo ($v["id"]); ?>" p-id="<?php echo ($v["pid"]); ?>" target="main"><i class="fa fa-medkit"></i> <span><?php echo ($v["title"]); ?></span></a></li><?php endforeach; endif; ?>
+                <?php if(is_array($menu1)): foreach($menu1 as $key=>$v): ?><li class="li-menu">545</li><?php endforeach; endif; ?>
             </ul>
         </nav>
     </div>

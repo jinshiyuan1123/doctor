@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost
+Source Server         : www
 Source Server Version : 50553
 Source Host           : localhost:3306
-Source Database       : mp
+Source Database       : doctor
 
 Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-11-29 14:41:48
+Date: 2018-12-02 19:03:00
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -2834,8 +2834,8 @@ CREATE TABLE `dzm_his_auth_group` (
 -- ----------------------------
 -- Records of dzm_his_auth_group
 -- ----------------------------
-INSERT INTO `dzm_his_auth_group` VALUES ('1', '管理员', '1', '1', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,84,85,86,89,87,88,141,142,143,144,145,139,148,149');
-INSERT INTO `dzm_his_auth_group` VALUES ('2', '医生', '1', '1', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,61,62,63,64,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,90,91,92,93,96,98,99,100,102,103,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,84,85,86,87,88,89,141,142,143,144,147,148,149,150,151,152,153,154,155,156,157,158,159,160');
+INSERT INTO `dzm_his_auth_group` VALUES ('1', '管理员', '1', '1', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,84,85,86,89,87,88,141,142,143,144,145,139,148,149,223,224');
+INSERT INTO `dzm_his_auth_group` VALUES ('2', '医生', '1', '1', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,61,62,63,64,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,90,91,92,93,96,98,99,100,102,103,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,84,85,86,87,88,89,141,142,143,144,147,148,149,150,151,152,153,154,155,156,157,158,159,160,223,244');
 INSERT INTO `dzm_his_auth_group` VALUES ('3', '护士', '1', '1', '1,2,3,4');
 INSERT INTO `dzm_his_auth_group` VALUES ('4', '挂号员', '1', '1', '1,2,3,4,5');
 INSERT INTO `dzm_his_auth_group` VALUES ('5', '收费员', '1', '1', '5,6,7,1,2,3,4,5,8');
@@ -2881,7 +2881,7 @@ CREATE TABLE `dzm_his_auth_rule` (
   `condition` char(100) NOT NULL DEFAULT '',
   `order_list` int(255) DEFAULT '0' COMMENT '排序字段',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=223 DEFAULT CHARSET=utf8mb4 COMMENT='用户权限表';
+) ENGINE=MyISAM AUTO_INCREMENT=225 DEFAULT CHARSET=utf8mb4 COMMENT='用户权限表';
 
 -- ----------------------------
 -- Records of dzm_his_auth_rule
@@ -3033,6 +3033,8 @@ INSERT INTO `dzm_his_auth_rule` VALUES ('145', '', 'Registeredfee/getRepetition'
 INSERT INTO `dzm_his_auth_rule` VALUES ('147', '', 'Doctor/printOrder', '打印处方', '11', '2', '1', '1', '1', '', '0');
 INSERT INTO `dzm_his_auth_rule` VALUES ('148', '', 'Inventory/set_early_warning', '库存查询  设置预警', '51', '2', '1', '1', '1', '', '0');
 INSERT INTO `dzm_his_auth_rule` VALUES ('149', 'fa fa-cog', 'HisWxmp/index', '第三方配置', '22', '1', '1', '1', '1', '', '0');
+INSERT INTO `dzm_his_auth_rule` VALUES ('223', 'fa fa-info-circle', 'Member/myHospitalInfolist', '在线咨询', '22', '1', '1', '1', '1', '', '0');
+INSERT INTO `dzm_his_auth_rule` VALUES ('224', 'fa fa-info-circle', 'Member/myvideo', '微视频', '22', '1', '1', '1', '1', '', '0');
 
 -- ----------------------------
 -- Table structure for dzm_his_batches_of_inventory
@@ -3862,7 +3864,7 @@ CREATE TABLE `dzm_his_hospital` (
 -- ----------------------------
 -- Records of dzm_his_hospital
 -- ----------------------------
-INSERT INTO `dzm_his_hospital` VALUES ('1', 'admin', '', '1511947869', '', '1543131406', '1', '', 'admin', '', '', '', '');
+INSERT INTO `dzm_his_hospital` VALUES ('1', 'admin', '', '1511947869', '', '1543727822', '1', '', 'admin', '', '', '', '');
 
 -- ----------------------------
 -- Table structure for dzm_his_hospital_doctor_relation
@@ -4751,6 +4753,36 @@ INSERT INTO `dzm_his_prescription_extracharges` VALUES ('3', '1', '1', '糖料�
 INSERT INTO `dzm_his_prescription_extracharges` VALUES ('4', '1', '1', '高血压', '高血压是以体循环动脉血压持续性增高为主要表现的临床综合征，是常见的心血管疾病。高血压分为原发性高血压和继发性高血压。继发性高血压多继发于肾、内分泌和神经系统疾病。...', '1.00', '0', '1543249122', '1543251994');
 
 -- ----------------------------
+-- Table structure for dzm_his_product
+-- ----------------------------
+DROP TABLE IF EXISTS `dzm_his_product`;
+CREATE TABLE `dzm_his_product` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mobile` varchar(255) DEFAULT NULL COMMENT '手机',
+  `sicktime` varchar(255) DEFAULT NULL COMMENT '患病时间',
+  `name` varchar(255) DEFAULT NULL,
+  `ishospital` varchar(255) DEFAULT NULL COMMENT '是否去过医院',
+  `content` longtext COMMENT '病情描述',
+  `imgurl` varchar(500) DEFAULT NULL,
+  `plike` varchar(255) DEFAULT NULL,
+  `time` varchar(255) DEFAULT NULL,
+  `create_time` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of dzm_his_product
+-- ----------------------------
+INSERT INTO `dzm_his_product` VALUES ('1', ' 13776848129', '半年', null, '0', '三分大赛', null, null, null, null);
+INSERT INTO `dzm_his_product` VALUES ('2', ' 13776848129', '一月', null, '0', ' 士大夫但是', 'home/images/2018-12-02/5c0365016ff4b.jpg,home/images/2018-12-02/5c03650170c64.png,', null, null, null);
+INSERT INTO `dzm_his_product` VALUES ('3', ' 13776848129', '一月', null, '0', 'dfgdfgd', 'home/images/2018-12-02/5c0365ad98d96.jpg,', null, null, '1543726509');
+INSERT INTO `dzm_his_product` VALUES ('4', ' 13776848129', '大于半年', null, '1', '所得税地方', 'home/images/2018-12-02/5c03662615a92.png,', null, null, '1543726630');
+INSERT INTO `dzm_his_product` VALUES ('5', ' 13776848129', '一周', null, '1', '1111', '', null, null, '1543737210');
+INSERT INTO `dzm_his_product` VALUES ('6', null, null, null, null, null, '', null, null, '1543737270');
+INSERT INTO `dzm_his_product` VALUES ('7', ' 13776848129', '一周', null, '1', '111', '', null, null, '1543737298');
+INSERT INTO `dzm_his_product` VALUES ('8', null, null, null, null, null, '', null, null, '1543737358');
+
+-- ----------------------------
 -- Table structure for dzm_his_provinces
 -- ----------------------------
 DROP TABLE IF EXISTS `dzm_his_provinces`;
@@ -5314,7 +5346,29 @@ CREATE TABLE `dzm_his_user` (
 -- ----------------------------
 -- Records of dzm_his_user
 -- ----------------------------
-INSERT INTO `dzm_his_user` VALUES ('3', '王大锤', '$2y$12$xtE1f6GvA5HXiY0Bkh32uethcIA4YwWizgQUaJ/i6E481ixkv6aLe', '', '男', '24', '0', '11', '2824030344@qq.com', '13776848129', 'Public/home/pic/33.jpg', '1542699872', '1543049178', '0.00');
+INSERT INTO `dzm_his_user` VALUES ('3', '王大锤', '$2y$12$xtE1f6GvA5HXiY0Bkh32uethcIA4YwWizgQUaJ/i6E481ixkv6aLe', '', '男', '24', '0', '11', '2824030344@qq.com', '13776848129', 'Public/home/pic/33.jpg', '1542699872', '1543716173', '0.00');
+
+-- ----------------------------
+-- Table structure for dzm_his_video
+-- ----------------------------
+DROP TABLE IF EXISTS `dzm_his_video`;
+CREATE TABLE `dzm_his_video` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mobile` varchar(255) DEFAULT NULL COMMENT '手机',
+  `sicktime` varchar(255) DEFAULT NULL COMMENT '患病时间',
+  `name` varchar(255) DEFAULT NULL,
+  `ishospital` varchar(255) DEFAULT NULL COMMENT '是否去过医院',
+  `content` longtext COMMENT '病情描述',
+  `videourl` varchar(500) DEFAULT NULL,
+  `plike` varchar(255) DEFAULT NULL,
+  `time` varchar(255) DEFAULT NULL,
+  `create_time` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of dzm_his_video
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for dzm_his_work_log

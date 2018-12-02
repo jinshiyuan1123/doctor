@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="/Public/home/css/portal.base.min.css?v=1543244398d5b04c" type="text/css"/>
     <link rel="stylesheet" href="/Public/home/css/portal.basic.min.css?v=1543244398d5b04c" type="text/css"/>
     <link rel="stylesheet" href="/Public/home/css/portal.hdd.min.css?v=1543244398d5b04c" type="text/css"/>
-    <link rel="stylesheet" href="/Public/his/css/portal.content.min.css?v=1543244398d5b04c" type="text/css"/>
+    <link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/portal.content.min.css?v=1543244398d5b04c" type="text/css"/>
     <link rel="stylesheet" href="/Public/home/css/style.min.css?v=1543244398d5b04c" type="text/css"/>
     <link rel="stylesheet" href="/Public/home/css/animate.min.css?v=20141222" type="text/css"/>
 <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
@@ -100,8 +100,7 @@
                 <div class="gh-main">
                  <div class="container g-clear">
                     <div class="gh-logo ">
-                        <a  href="https://www.guahao.com"  class="logo " onmousedown="return _smartlog(this,'LOG')" monitor="public_logo,publick_logo,headlogo"></a>
-
+                         <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo">
                     </div>
 
     
@@ -826,7 +825,7 @@
         <div class="warp-bg">
             <div class="grid-group main-content">
             <div class="g-consult-form qk">
-                <form class="grid-form" action="/json/bconsult/asksubmit" method="post" name="consult" id="form-consult" autocomplete="off">
+                <form class="grid-form" action="<?php echo U('home/index/upload');?>" method="post" name="consult" id="form-consult" enctype="multipart/form-data">
                     <input name='csrf_token' type='hidden' value='10uj7jmjh4qic'>
                     <div class="item info">
                         <label for=""><span class="gfm-required-mark">*</span>你要为谁咨询：</label>
@@ -888,10 +887,10 @@
                                 </div>
                                 <div class="row">
                                      <span href="javascript:;" class="new-upload" onmousedown="$TK.click('freeask_ask,freeask_ask,uploadpic')">
-                                        <i class="dzyy-i-do"></i>
-                                        <input type="file" name="certificate1" class="upload-input J_CertUpload" data-url="/kano/uploadComponentByStream/video_therapy">
-                                        <input type="hidden" id="J_HiddenCertImgs" name="imagePath" value="">
-                                        <input type="hidden" name="orderNo" value="">
+    <input name="photo[]" type="file" value="" multiple='multiple' />
+
+
+
                                     </span>
                                     <span class="g-txt-gray-lighter upload-desc">
                                         <b style="font-size: 14px">添加图片</b><br>病症部位、检查报告单、诊断报告单以及病历等病情资料（请保证图片清晰，共可上传6张）</span>
@@ -900,14 +899,16 @@
                         </div>
                     </div>
                     <div class="item J_Agree">
-                        <input type="checkbox" value="1">
-                        我已阅读并同意《<a href="https://hd.guahao.com/u/24441" target="_blank">知情同意书</a>》
+                        <input type="checkbox" value="1" checked >
+                        我已阅读并同意《<a href="<?php echo U('home/index/ulist');?>" target="_blank">知情同意书</a>》
                         <span class="J_FirstDiag">、家医签约</span>
                     </div>
                     <div class="item submit">
                         <div class="contain">
                             <div class="submit-con">
-                                <a name="submit" class="J_submit gbn gbt-green2" href="javascript:;" onmousedown="$TK.click('freeask_ask,freeask_ask,free_submit')">提交病情（免费）</a> <p class="submit-guide">提交订单后，请<a href="https://www.guahao.com/intro/userapp" target="_blank" monitor="freeask_ask,freeask_ask,mycenter_ask">下载微医APP</a>或关注微医公众号及时获取医生回复。</p>
+                                
+                                <input type="submit" value="提交病情（免费）" name="" class="J_submit gbn gbt-green2">
+                                <p class="submit-guide">提交订单后，请<a href="https://www.guahao.com/intro/userapp" target="_blank" monitor="freeask_ask,freeask_ask,mycenter_ask">下载微医APP</a>或关注微医公众号及时获取医生回复。</p>
                             </div>
                         </div>
                     </div>
@@ -1140,119 +1141,7 @@
         </div>
     </div>
 
-</div><script type="text/javascript">
-    $GC = {
-        debug: false,
-        echartServer: '//im-web.guahao.cn',
-        isLogined : false,
-        guahaoServer :  'https://www.guahao.com',
-        staticServer : 'https://static.guahao.cn',
-        imageServer : 'https://h2img.guahao.com',
-        kanoServer: 'https://kano.guahao.cn',
-        serviceServer : 'https://service.guahao.com',
-        eopsServer : 'http://doctor.guahao.com',
-        wepayServer : 'https://wepay.guahao.com',
-        mobilevalidcodepwd : 'lvxian95169124',
-        version:"1543244398d5b04c",
-        encodeId:"",
-        jsCPath:"https://static.guahao.cn" + "/common/js",
-        jspath:"https://static.guahao.cn" + "/front/portal-pc-static/js",
-        domainEnd:'guahao.com',
-        bbsServer: 'https://bbs.guahao.com',
-        gatewayServer: 'https://api-gateway.guahao.com',
-        cloudcardServer: "https://service-api-finance.guahao.com",
-        jkljServer: 'https://www.healthhlj.cn',
-        weiYiH5GuahaoServer: 'https://wy.guahao.com'
-    };
-
-    // $GS { Array } - the init parameters for startup
-    $GS = [
-        $GC.jspath + "/plugins/scout.js?_=1543244398d5b04c",
-        $GC.jspath + "/plugins/raven.js?_=1543244398d5b04c",
-        $GC.jsCPath + "/base/jquery-1.8.1.min.js",
-        $GC.jspath + "/base/GH.js?_=1543244398d5b04c",
-        $GC.jsCPath + "/plugins/validator.js?_=20160129",function(){
-
-         // load common module
-         GL.load([GH.adaptModule("common")]);
-
-         // load the modules defined in page
-         var moduleName = $("#g-cfg").data("module");
-         if(moduleName){
-            var module = GH.modules[moduleName];
-            if(!module) {
-                module = GH.adaptModule(moduleName);
-            }
-            if(module) {
-                GL.load([module]);
-            }
-        }
-
-        if($GU.isIE6()){
-            GL.load([$GC.jspath + "/hack/ie6.js"]);
-        }
-    }];
-</script>
-<script type="text/javascript" src="https://static.guahao.cn/front/portal-pc-static/js/base/GL.js?_=1543244398d5b04c" ></script>
-<script>
-    //同盾token 发送
-    (function() {
-        _fmOpt = {
-            partner: 'weiyi',
-            appName: 'weiyi_web',
-            token: "weiyi-" + new Date().getTime() + '-' + Math.random().toString(16),
-            fmb: true,
-            getinfo: function() {
-                return "e3Y6ICIyLjUuMCIsIG9zOiAid2ViIiwgczogMTk5LCBlOiAianMgbm90IGRvd25sb2FkIn0=";
-            }
-                };
-        var cimg = new Image(1,1);
-        cimg.onload = function() {
-            _fmOpt.imgLoaded = true;
-        };
-        cimg.src = "https://fp.fraudmetrix.cn/fp/clear.png?partnerCode=weiyi&appName=weiyi_web&tokenId=" + _fmOpt.token;
-        var fm = document.createElement('script'); fm.type = 'text/javascript'; fm.async = true;
-        fm.src = '//static.fraudmetrix.cn/v2/fm.js?ver=0.1&t=' + (new Date().getTime()/3600000).toFixed(0);
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fm, s);
-        setTimeout(function () {
-            var fmCode = _fmOpt.getinfo();
-            if (fmCode.length <= 256) {
-                setCookie('_fm_code', _fmOpt.getinfo())
-            };
-        }, 1200);
-        function setCookie (name, val) {
-            var expires = '; expires=' + new Date(new Date().getTime() + 30 * 24 * 3600 * 1000).toUTCString()
-            document.cookie = [name, '=', encodeURIComponent(val), expires, '; path=/'].join('')
-        }
-    })();
-</script>
-
-<script>
-    (function(){
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https'){
-       bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-      }
-      else{
-      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-      }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-<div class="hide">
-    <script type="text/javascript">
- 
-        (function() { 
-        
-            // baidu
-            var hm = document.createElement("script");
-                            hm.src = "https://hm.baidu.com/hm.js?5697507823ecd633819db0771bb99cfb";
-            var s = document.getElementsByTagName("script")[0]; 
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>  
 </div>
+
 </body>
 </html>

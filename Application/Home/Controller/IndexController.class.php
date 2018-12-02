@@ -1,8 +1,8 @@
 <?php
 // +----------------------------------------------------------------------
-// | 大宅门云诊所系统 [ version 1.0 ]  http://bbs.dzmtech.com
+// | 择医网 [ version 1.0 ]  
 // +----------------------------------------------------------------------
-// | Copyright (c) 2017 (北京天元九合科技有限公司) All rights reserved.
+// | Copyright (c) 2018 () All rights reserved.
 // +----------------------------------------------------------------------
 // | Author: wsl
 // +----------------------------------------------------------------------
@@ -823,5 +823,102 @@ function getCity($ip = '')
     public function navlist(){
       $this->display(':navlist');
     }
+
+
+    public function upload(){
+    $upload = new \Think\Upload();// 实例化上传类
+    $upload->maxSize   =     3145728 ;// 设置附件上传大小
+    $upload->allowExts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+    $upload->rootPath  =     './Public/'; // 设置附件上传根目录
+    $upload->savePath  = 'home/images/'; // 设置附件上传（子）目录
+    $info   =   $upload->upload();
+    $post = I('post.');
+   
+     $arr = "";
+     foreach($info as $kk=>$vv){
+        $arr.= $vv['savepath'].$vv['savename'].',';
+     }
+    
+     $data = array(
+      'mobile' => $post['patientMobile'],
+      'sicktime' => $post['sickTime'],
+      'ishospital' => $post['isGoHospital'],
+      'content' => $post['consultContent'],
+      'imgurl' =>$arr,
+      'create_time' =>time(),
+
+
+     );
+     // var_dump($data);die;
+     $res = M('his_product')->add($data);
+
+    if (!$info) {
+      $this->error($upload->getError());//上传错误
+    }else{
+      $this->success('上传成功');//success
+    }
+
+}
+  
+  public function ulist(){
+    $this->display(':ulist');
+  }
+  
+  public function video(){
+    $this->display(':video');
+  }
+
+  public function videolist(){
+    $this->display(':videolist');
+  }
+
+  public function zipai(){
+    $this->display(':zipai');
+  }
+
+   public function getname($exname){
+     $dir = './public/home/video/';
+     $i=1;
+     if(!is_dir($dir)){
+        mkdir($dir,0777);
+     }
+     while(true){
+       if(!is_file($dir.$i.".".$exname)){
+          $name=$i.".".$exname;
+          break;
+        }
+       $i++;
+     }
+     return $dir.$name;
+
+  }
+
+  public function showlist(){
+
+    $exname=strtolower(substr($_FILES['upfile']['name'],(strrpos($_FILES['upfile']['name'],'.')+1)));
+
+    $uploadfile = $this->getname($exname);
+    // var_dump($uploadfile);die;
+    $res = I('post.');
+    $datalist = array(
+      'mobile'=> $res['patientMobile'],
+      'ishospital'=> $res['isGoHospital'],
+      'sicktime' => $res['sickTime'],
+      'content'=> $res['consultContent'],
+      'videourl' => $uploadfile,
+      'create_time'=> time(),
+    );
+
+    $row = M('his_video')->add($datalist);
+    if (move_uploaded_file($_FILES['upfile']['tmp_name'], $uploadfile)) {
+      $this->success('<h2><font color=#ff0000>文件上传成功！</font></h2><br><br>',U('home/index/video'));
+
+    }else {
+        $this->error('<h2><font color=#ff0000>文件上传失败！</font></h2><br><br>',U('home/index/video'));
+     
+    } 
+    // echo "下面是文件上传的一些信息：<br><br>原文件名：".$_FILES['upfile']['name'] ."<br><br>类型：" .$_FILES['upfile']['type'] ."<br><br>临时文件名：".$_FILES['upfile']['tmp_name']. "<br><br>文件大小：".$_FILES['upfile']['size']."<br><br>错误代码：".$_FILES['upfile']['error'];
+  }
+  
 
 }

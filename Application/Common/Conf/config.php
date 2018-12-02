@@ -8,6 +8,8 @@ return array(
         '__PUBLIC_HIS__'    => __ROOT__.'/Public/his',
         '__PUBLIC_HOME__'    => __ROOT__.'/Public/home',
         '__PUBLIC_WAP__'    => __ROOT__.'/Public/wap',
+        '__PUBLIC_MUSIC__'  => __ROOT__.'/Public/music',
+        '__PUBLIC_VIDEO__' => __ROOT__.'/Public/home/video',
     ),
 //***********************************URL设置**************************************
     'MODULE_ALLOW_LIST'      => array('His','Home','Wap'), //允许访问列表

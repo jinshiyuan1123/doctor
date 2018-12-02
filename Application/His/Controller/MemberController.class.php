@@ -65,6 +65,82 @@ class MemberController extends HisBaseController
         }
     }
 
+      /**
+     * 我的诊所信息
+     * Author: doreen
+     */
+    public function myHospitalInfolist()
+    {
+        if (IS_AJAX) { //ajax提交保存修改信息
+            $data = I();
+            $condition = [
+                'h.hid' => $this->hospitalInfo['uid'],
+            ];
+            $hospital = M('his_hospital');
+            $hospitalInfo = $this->member_model->getMyHospitalInfo($condition);
+            if ($hospitalInfo) {
+                $map['hid'] = $this->hospitalInfo['uid'];
+                $res = $this->member_model->updateHospital($map,$data);
+                if ($res) {
+                    $this->ajaxSuccess('修改成功');
+                } elseif ($hospital->getError()) {
+                    $this->ajaxError($hospital->getError());
+                } else {
+                    $this->ajaxError('修改失败');
+                }
+            } else {
+                $this->ajaxError('该诊所不存在');
+            }
+        } else { //我的诊所页面显示
+            $hid = $this->hospitalInfo['uid'];
+            $condition = [
+                'h.hid' => $hid,
+            ];
+            $hospitalInfo = $this->member_model->getMyHospitalInfo($condition); //所属诊所信息
+            $doctorCount = $this->member_model->doctorCount($hid); //所属诊所医生数量
+            $currentDepartment = D('his_department')->currentDepartment($hid); //所属当前诊所的科室
+            $this->assign('hospitalInfo', $hospitalInfo);
+            $this->assign('doctorCount', $doctorCount);
+            $this->assign('currentDepartment', $currentDepartment);
+            $this->display();
+        }
+    }
+     public function myvideo()
+    {
+        if (IS_AJAX) { //ajax提交保存修改信息
+            $data = I();
+            $condition = [
+                'h.hid' => $this->hospitalInfo['uid'],
+            ];
+            $hospital = M('his_hospital');
+            $hospitalInfo = $this->member_model->getMyHospitalInfo($condition);
+            if ($hospitalInfo) {
+                $map['hid'] = $this->hospitalInfo['uid'];
+                $res = $this->member_model->updateHospital($map,$data);
+                if ($res) {
+                    $this->ajaxSuccess('修改成功');
+                } elseif ($hospital->getError()) {
+                    $this->ajaxError($hospital->getError());
+                } else {
+                    $this->ajaxError('修改失败');
+                }
+            } else {
+                $this->ajaxError('该诊所不存在');
+            }
+        } else { //我的诊所页面显示
+            $hid = $this->hospitalInfo['uid'];
+            $condition = [
+                'h.hid' => $hid,
+            ];
+            $hospitalInfo = $this->member_model->getMyHospitalInfo($condition); //所属诊所信息
+            $doctorCount = $this->member_model->doctorCount($hid); //所属诊所医生数量
+            $currentDepartment = D('his_department')->currentDepartment($hid); //所属当前诊所的科室
+            $this->assign('hospitalInfo', $hospitalInfo);
+            $this->assign('doctorCount', $doctorCount);
+            $this->assign('currentDepartment', $currentDepartment);
+            $this->display();
+        }
+    }
     /**
      * 添加用户（医生，护士，..）
      * Author: gmq

@@ -19,7 +19,7 @@ class IndexController extends HisBaseController
 
     public function _initialize()
     {
-        C('TITLE',"明医诊所云");
+        C('TITLE',"择医网");
         C('KEYEORDS',"");
         C('DESCRIPTION',"");
         parent::_initialize();
