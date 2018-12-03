@@ -204,6 +204,7 @@
         $(document).on('click', '.supplierEdit', function () {
             $('#editSupplierBomb').show(0);
             var sid = $(this).attr('data-sid');
+            alert(sid);
             $.get("{:U('/Supplier/editSupplier')}",
                 {'sid':sid},
                 function (data) {

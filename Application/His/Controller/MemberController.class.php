@@ -99,12 +99,28 @@ class MemberController extends HisBaseController
             $hospitalInfo = $this->member_model->getMyHospitalInfo($condition); //所属诊所信息
             $doctorCount = $this->member_model->doctorCount($hid); //所属诊所医生数量
             $currentDepartment = D('his_department')->currentDepartment($hid); //所属当前诊所的科室
+            $res = M('his_product')->order(' id desc')->where()->select();
+            $content =array();;
+            foreach($res as $kk=>$vv) {
+                $res[$kk]['content'] = mb_substr($vv['content'],0,10,'utf-8')."...";
+               
+            }
+           
+            $this->assign('res',$res);
             $this->assign('hospitalInfo', $hospitalInfo);
             $this->assign('doctorCount', $doctorCount);
             $this->assign('currentDepartment', $currentDepartment);
+
             $this->display();
         }
     }
+
+     /**
+     * 供应商修改
+     * Author: doreen
+     */
+  
+
      public function myvideo()
     {
         if (IS_AJAX) { //ajax提交保存修改信息
@@ -199,7 +215,26 @@ class MemberController extends HisBaseController
      * Author: gmq
      */
     public function editUser(){
+
         $uid = I('get.uid','0','intval');//用户id
+        $sid = I('get.sid','0','intval');
+        $his = M('his_product');
+        $res = $his->where("id='$sid'")->find();
+        $rowlist = I('post.');
+        // var_dump($rowlist);
+        if($rowlist['contact_telephone'] =='是'){
+            $ishospital=1;
+        }else{
+            $ishospital=0;
+        }
+        $datas = array('ishospital'=>$ishospital,'sicktime'=>$rowlist['contact_name'],'content'=>$rowlist['contact_mobile'],'mobile'=>$rowlist['mobile']);
+        $value = $his->where("id='$rowlist[supplier_name]'")->setField($datas);
+       if($value){
+         $this->ajaxSuccess('修改成功');
+       }
+        if($res){
+             $this->ajaxReturn($res);
+        }
         if(IS_POST){
             $uid = I('post.uid','0','intval');
             $data = I('post.');
@@ -214,7 +249,7 @@ class MemberController extends HisBaseController
         if($userInfo){
              $this->ajaxReturn($userInfo);
         }else{
-            $this->error('此用户不存22在');
+            $this->error('此用户不存在');
         }
 
     }
@@ -303,10 +338,15 @@ class MemberController extends HisBaseController
         if($uid==$this->userInfo['uid']){
             $this->ajaxError('自己不能移除自己');
         }
-        $r = $this->member_model->removeUser($uid);
-        if(!$r){
+        $sid = I('post.sid','','intval');
+        $res = M('his_product')->where("id='$sid'")->delete();
+        if(!$res){
             $this->ajaxError('移除失败');
         }
+        $r = $this->member_model->removeUser($uid);
+        // if(!$r){
+        //     $this->ajaxError('移除失败');
+        // }
         $this->ajaxSuccess('移除成功');
     }
 
