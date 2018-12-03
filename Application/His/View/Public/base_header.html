@@ -68,7 +68,7 @@
         <nav>
             <ul class="nav" id="menu-nav">
                 <foreach name="menu1" item="v">
-                <li class="li-menu">545</li>
+                <li class="li-menu"><a href="{:U($v[menu_name])}" class="menu" id="{$v.id}" p-id="{$v.pid}" target="main"><i class="fa fa-medkit"></i> <span>{$v.title}33</span></a></li>
                 </foreach>
             </ul>
         </nav>

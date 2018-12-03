@@ -11,10 +11,11 @@
     <meta name="mobile-agent" content="format=html5; url=/m">
     <meta http-equiv="Cache-Control" content="no-transform" />
     <link rel="shortcut icon" href="/Public/home/favicon.ico" />
-    <link rel="stylesheet" href="/Public/home/css/portal.base.min.css?v=1535436384237752" type="text/css" />
-     <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="/Public/home/css/portal.base.min.css" type="text/css" />
+       <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
     <script src="/Public/his/vendor/layer/layer.js"></script>
 
+  
     <script type="text/javascript">
         $GF = [];
         GreenLine = {};
@@ -41,21 +42,16 @@
             img.onerror = null;
         };
     </script>
-    <link rel="stylesheet" href="/Public/home/css/index.css?v=1535436384237752" type="text/css" />
-    <meta name="shenma-site-verification" content="9bfa5c53d29a8d687154a0d8dbe23383_1542098342">
+    <link rel="stylesheet" href="/Public/home/css/index.css" type="text/css" />
+ 
 </head>
 
 <body>
 
 
-
-
-
     <div id="g-wrapper" class="g-wrapper g-page-1200 landing-wrapper">
         <div id="gh">
-            <!--[if lt IE 8]>
-<div class="g-browser-update">你的浏览器实在太旧了，为了更加安全和方便地进行挂号，推荐您升级浏览器：<a target="_blank" href="http://browsehappy.com">立即升级</a></div>
-<![endif]-->
+       
            <div class="gh-nav">
     <div class="container g-clear">
         <div class="g-left">
@@ -104,9 +100,7 @@
             <div class="gh-main">
                 <div class="container g-clear">
                     <div class="gh-logo ">
-                        <!-- <a href="/"  onmousedown="" monitor="public_logo,publick_logo,headlogo"></a> -->
-
-                        <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo">
+                         <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo">
                     </div>
 
 
@@ -116,10 +110,10 @@
                         <form class="gh-search-form" action="" name="qform">
                             <span class="gh-search-input">
                 <span class="search-icon"></span>
-                            <input type="text" name="searchid" value="" id="searchid"  placeholder="请输入疾病名、科室名、医院名或医生名" />
-                            <input type="hidden" name="searchType" value="search" class="J_SearchType">
+                            <input type="text" name="q" value="" autocomplete="off" maxlength="50" class="J_SearchQs" placeholder="请输入疾病名、科室名、医院名或医生名" />
+                           
                             </span>
-                            <a class="gbn gbt-green2 radius-right big-search-bt" href="javascript:void(0);">搜索</a>
+                            <a class="gbn gbt-green2 radius-right big-search-bt" id="searchid"  target="_blank">搜索</a>
                             <div class="clear"></div>
                         </form>
                         <div class="search-key">
@@ -127,25 +121,25 @@
                             <a monitor="public_search,public_search,searchhot" monitor-search-q="防治冠心病" monitor-click-rank="0" href="" target="_blank" class=" J_SearchHot">
                             防治冠心病
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="高血压病" monitor-click-rank="1" href="/s.html?q=%E9%AB%98%E8%A1%80%E5%8E%8B%E7%97%85" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="高血压病" monitor-click-rank="1" href="=%E9%AB%98%E8%A1%80%E5%8E%8B%E7%97%85" class=" J_SearchHot">
                             高血压病
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="流感" monitor-click-rank="2" href="/s.html?q=%E6%B5%81%E6%84%9F" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="流感" monitor-click-rank="2" href="=%E6%B5%81%E6%84%9F" class=" J_SearchHot">
                             流感
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="心肌梗塞" monitor-click-rank="3" href="/s.html?q=%E5%BF%83%E8%82%8C%E6%A2%97%E5%A1%9E" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="心肌梗塞" monitor-click-rank="3" href="=%E5%BF%83%E8%82%8C%E6%A2%97%E5%A1%9E" class=" J_SearchHot">
                             心肌梗塞
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="骨折" monitor-click-rank="4" href="/s.html?q=%E9%AA%A8%E6%8A%98" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="骨折" monitor-click-rank="4" href="=%E9%AA%A8%E6%8A%98" class=" J_SearchHot">
                             骨折
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="心肌炎" monitor-click-rank="5" href="/s.html?q=%E5%BF%83%E8%82%8C%E7%82%8E" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="心肌炎" monitor-click-rank="5" href="=%E5%BF%83%E8%82%8C%E7%82%8E" class=" J_SearchHot">
                             心肌炎
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="结膜炎" monitor-click-rank="6" href="/s.html?q=%E7%BB%93%E8%86%9C%E7%82%8E" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="结膜炎" monitor-click-rank="6" href="=%E7%BB%93%E8%86%9C%E7%82%8E" class=" J_SearchHot">
                             结膜炎
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="支气管炎" monitor-click-rank="7" href="/s.html?q=%E6%94%AF%E6%B0%94%E7%AE%A1%E7%82%8E" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="支气管炎" monitor-click-rank="7" href="=%E6%94%AF%E6%B0%94%E7%AE%A1%E7%82%8E" class=" J_SearchHot">
                             支气管炎
                         </a>
 
@@ -169,12 +163,13 @@
                             <li data-subnav="sub-nav-welife"><a target="_blank" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">
                     医疗器械</a>
                             </li>
-                           <!--  <li><a target="_blank" href="eteam.html" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,spteam">医院耗材</a></li>
+                          
                              -->
                             <li><a target="_blank" href="#" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">健康E务室</a></li>
                               <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">优选音乐</a></li>
 
                                <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a></li>
+
 
                         </ul>
                         <div class="main-category-nav J_DiseaseCategory">
@@ -184,7 +179,7 @@
                                     <li data-id="1">
                                         <h5 class="title"><i class="nk"></i><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="">内科</a></h5>
                                         <span class="sub-ds">
-        <a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="<?php echo ($localhost); ?>/index.php/home/index/search?q=糖尿病&searchType=search_query" class="first" monitor="public_fastselect,div,hotsick">糖尿病</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="<?php echo ($localhost); ?>/index.php/home/index/search?q=高血压&searchType=search_query" monitor="public_fastselect,div,hotsick">高血压</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="<?php echo ($localhost); ?>/index.php/home/index/search?q=冠心病&searchType=search_query85" monitor="public_fastselect,div,hotsick">冠心病</a>
+        <a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E7%B3%96%E5%B0%BF%E7%97%85" class="first" monitor="public_fastselect,div,hotsick">糖尿病</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E9%AB%98%E8%A1%80%E5%8E%8B" monitor="public_fastselect,div,hotsick">高血压</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E5%86%A0%E5%BF%83%E7%97%85" monitor="public_fastselect,div,hotsick">冠心病</a>
         </span>
                                     </li>
                                     <li data-id="2">
@@ -833,28 +828,28 @@
                             <li class="focus-pannel" style="background:#ffa4a7;">
                                 <div class="banner-container J_BannerCtn">
                                     <a target="_blank" href="#" monitor="home_activity,advmain,slideitem">
-                                        <img class="main-banner J_MainBanner" src="https://static.guahao.cn/front/portal-pc-static/img/2015/home/blank.gif" data-img="https://kano.guahao.cn/VHX46440258?resize=800x350" width="800" height="350">
+                                        <img class="main-banner J_MainBanner" src="/Public/home/images/P-1.1.1-800-350.jpg" data-img="/Public/home/images/P-1.1.1-800-350.jpg" width="800" height="350">
                                     </a>
                                 </div>
                             </li>
                             <li class="focus-pannel" style="background:#fca03d;">
                                 <div class="banner-container J_BannerCtn">
                                     <a target="_blank" href="#" monitor="home_activity,advmain,slideitem">
-                                        <img class="main-banner J_MainBanner" src="https://static.guahao.cn/front/portal-pc-static/img/2015/home/blank.gif" data-img="https://kano.guahao.cn/kec46246680?resize=800x350" width="800" height="350">
+                                        <img class="main-banner J_MainBanner" src="/Public/home/images/P-1.1.1PCBANNER800-350.jpg" data-img="/Public/home/images/P-1.1.1PCBANNER800-350.jpg" width="800" height="350">
                                     </a>
                                 </div>
                             </li>
                             <li class="focus-pannel" style="background:#182F86;">
                                 <div class="banner-container J_BannerCtn">
                                     <a target="_blank" href="#" monitor="home_activity,advmain,slideitem">
-                                        <img class="main-banner J_MainBanner" src="https://static.guahao.cn/front/portal-pc-static/img/2015/home/blank.gif" data-img="https://kano.guahao.cn/UVH46557568?resize=800x350" width="800" height="350">
+                                        <img class="main-banner J_MainBanner" src="/Public/home/images/999888.jpg" data-img="/Public/home/images/999888.jpg" width="800" height="350">
                                     </a>
                                 </div>
                             </li>
                             <li class="focus-pannel" style="background:#6234CA;">
                                 <div class="banner-container J_BannerCtn">
                                     <a target="_blank" href="#" monitor="home_activity,advmain,slideitem">
-                                        <img class="main-banner J_MainBanner" src="https://static.guahao.cn/front/portal-pc-static/img/2015/home/blank.gif" data-img="https://kano.guahao.cn/5wq46032016?resize=800x350" width="800" height="350">
+                                        <img class="main-banner J_MainBanner" src="/Public/home/images/111222.jpg" data-img="/Public/home/images/111222.jpg" width="800" height="350">
                                     </a>
                                 </div>
                             </li>
@@ -869,13 +864,13 @@
 
 
                             <a target="_blank" href="#" rel="nofollow" onmousedown="return _smartlog(this,'BNA')">
-                                <img src="https://static.guahao.cn/front/portal-pc-static/img/2015/home/slide-new-banner1.png" width="209" height="117" alt="择医网用户版">
+                                <img src="/Public/home/images/slide-new-banner1.png" width="209" height="117" alt="择医网用户版">
                             </a>
                             <a target="_blank" href="#" onmousedown="return _smartlog(this,'BNB')">
-                                <img src="https://static.guahao.cn/front/portal-pc-static/img/2015/home/slide-new-banner2.png" width="209" height="117" alt="诊治中心">
+                                <img src="/Public/home/images/slide-new-banner2.png" width="209" height="117" alt="诊治中心">
                             </a>
                             <a target="_blank" href="#" onmousedown="return _smartlog(this,'BNB')">
-                                <img src="https://static.guahao.cn/front/portal-pc-static/img/2015/home/slide-new-banner3.png" width="209" height="117" alt="大家帮">
+                                <img src="/Public/home/images/slide-new-banner3.png" width="209" height="117" alt="大家帮">
                             </a>
 
                         </div>
@@ -934,193 +929,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="g-container landing-section booking-section J_BookingSection">
-                    <div class="title-bar">
-                        <h2>预约挂号</h2>
-                        <span class="slogan">
-                快速预约，便捷就医！（费用由医院自行设定，平台不收取任何额外费用）
-            </span>
-                    </div>
-                    <div class="main-ctn g-clear">
-                        <div class="g-grid-left J_AreaFilter">
-                            <div class="fast-order">
-                                <div class="title">
-                                    <span class="addr-icon zoomIn animated"></span>
-                                    <span class="province J_Province"><?php if($region): echo ($region); else: ?>地区<?php endif; ?></span>
-                                    <span class="city J_City"><?php if($city): echo ($city); else: ?>不限<?php endif; ?></span>
-                                    <a href="javascript:;" class="switch J_AreaSwitch" monitor="home_order,fastorder,city">切换<i class="arrow-down"></i></a>
-                                </div>
-                                <div class="main">
-                                    <form action="#" method="post">
-                                        <input type="hidden" name="pi" value="" />
-                                        <input type="hidden" name="p" value="" />
-                                        <input type="hidden" name="ci" value="" />
-                                        <input type="hidden" name="c" value="" />
-                                        <div style="display:none">
-                                            <select class="province js-province" name="province" style="display:block">
-                            <option value="">请选择...</option>
-                        </select>
-                                            <select class="city js-city disabled" disabled="disabled" name="city" style="display:block">
-                            <option value="">请选择...</option>
-                        </select>
-                                        </div>
-                                        <select class="js-hospital disabled J_Select2" disabled="disabled" name="hospital" multiple="multiple">
-                        <option value="">请选择...</option>
-                    </select>
-                                        <select class="js-dept disabled J_Select2" disabled="disabled" name="hdid" multiple="multiple">
-                        <option value="">请选择...</option>
-                    </select>
-                                        <a href="javascript:;" class="gbn gbt-orange js-btn" monitor="home_order, fastorder, fastorder">快速挂号</a>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="addr-wrap J_Area" style="z-index: 0; display: none;">
-                                <div class="stick"><a href="javascript:;" class="switch J_HideArea">切换<i class="arrow-down"></i></a></div>
-                                <a href="javascript:void(0);" class="close"></a>
-                                <div class="hot-city J_HotCity">
-                                    <label>热门：</label>
-                                    <ul>
-
-                                        <li><a href="javascript:void(0);" name="hotcity" province-id="2">上海</a></li>
-
-                                        <li><a href="javascript:void(0);" name="hotcity" province-id="1">北京</a></li>
-
-                                        <li><a href="javascript:void(0);" name="hotcity" city-id="79" province-id="29" province-name="广东">广州</a></li>
-
-                                        <li><a href="javascript:void(0);" name="hotcity" city-id="81" province-id="29" province-name="广东">深圳</a></li>
-
-                                        <li><a href="javascript:void(0);" name="hotcity" city-id="229" province-id="19" province-name="湖北">武汉</a></li>
-
-                                        <li><a href="javascript:void(0);" name="hotcity" city-id="552" province-id="24" province-name="浙江">杭州</a></li>
-
-                                        <li><a href="javascript:void(0);" name="hotcity" city-id="254" province-id="30" province-name="湖南">长沙</a></li>
-
-                                        <li><a href="javascript:void(0);" name="hotcity" city-id="280" province-id="22" province-name="江苏">南京</a></li>
-
-                                        <li><a href="javascript:void(0);" name="hotcity" city-id="4" province-id="3749" province-name="西南">重庆</a></li>
-
-                                        <li><a href="javascript:void(0);" name="hotcity" city-id="402" province-id="21" province-name="山东">青岛</a></li>
-
-                                        <li><a href="javascript:void(0);" name="hotcity" city-id="437" province-id="9" province-name="陕西">西安</a></li>
-                                    </ul>
-                                </div>
-                                <div class="area-content J_AreaContent">
-                                    <div class="province J_ProvinceContainer">
-                                        <p class="content-title">请选择省份:</p>
-                                        <ul class="J_ProvinceUl">
-                                        </ul>
-                                    </div>
-                                    <div class="city J_CityContainer">
-                                        <p class="content-title">您当前选择省份：<span class="J_SelProvince"></span> <span class="back J_AreaBack">返回重选省份</span>
-                                        </p>
-                                        <div class="J_CityWrap">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="recom-hospital">
-                                <div class="dq J_RecomHospital" data-tab-url="https://www.guahao.com/homepage/hpconsult/areaHospitalByHospitalId/">
-                                    <div class="tabs">
-                                        <span class="tip">推荐医院</span>
-                                        <ul class="g-clear J_Nav">
-                                            <!-- 推荐医院地区静态数据 -->
-                                            <li data-id="2" style="width: 56px;">
-                                                <a href="#" target="_blank" class="on" onmousedown="return _smartlog(this,'HPT')" data-id="2" monitor="home_fastselect,hosprecommend,hospcity">上海</a>
-                                                <span></span>
-                                            </li>
-                                            <li data-id="1" style="width: 56px;">
-                                                <a href="#" target="_blank" class="on" onmousedown="return _smartlog(this,'HPT')" data-id="1" monitor="home_fastselect,hosprecommend,hospcity">北京</a>
-                                                <span></span>
-                                            </li>
-                                            <li data-id="29" style="width: 56px;">
-                                                <a href="#" target="_blank" class="on" onmousedown="return _smartlog(this,'HPT')" data-id="29" monitor="home_fastselect,hosprecommend,hospcity">广东</a>
-                                                <span></span>
-                                            </li>
-                                            <li data-id="22" style="width: 56px;">
-                                                <a href="#" target="_blank" class="on" onmousedown="return _smartlog(this,'HPT')" data-id="22" monitor="home_fastselect,hosprecommend,hospcity">江苏</a>
-                                                <span></span>
-                                            </li>
-                                            <li data-id="19" style="width: 56px;">
-                                                <a href="#" target="_blank" class="on" onmousedown="return _smartlog(this,'HPT')" data-id="19" monitor="home_fastselect,hosprecommend,hospcity">湖北</a>
-                                                <span></span>
-                                            </li>
-                                            <li data-id="8" style="width: 56px;">
-                                                <a href="#" target="_blank" class="on" onmousedown="return _smartlog(this,'HPT')" data-id="8" monitor="home_fastselect,hosprecommend,hospcity">山西</a>
-                                                <span></span>
-                                            </li>
-                                            <li data-id="9" style="width: 56px;">
-                                                <a href="#" target="_blank" class="on" onmousedown="return _smartlog(this,'HPT')" data-id="9" monitor="home_fastselect,hosprecommend,hospcity">陕西</a>
-                                                <span></span>
-                                            </li>
-                                            <li data-id="999" style="width: 84px;">
-                                                <a href="#" target="_blank" class="on" onmousedown="return _smartlog(this,'HPT')" data-id="999" monitor="home_fastselect,hosprecommend,hospcity">其他地区</a>
-                                                <span></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="content-container J_ContentContainer"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g-grid-right">
-                            <div class="gd-list">
-                                <h3>
-                                    <a class="more" href="#" target='_blank' monitor="home_activity,doctordirect,team_more">更多</a>
-                                </h3>
-                                <ul class="J_exportTeam">
-                                    <li>
-                                        <a href="#" target="_blank" class="cover-bg team-item" onmousedown="return _smartlog(this,'MYTD')"></a>
-                                        <div class="teaminfo">
-                                            <dl>
-                                                <dt><a href="#" target="_blank" class="cover-bg"><img src="/Public/home/images/f54c238f-ecae-4350-84d7-92901107e0ec000.jpg" alt="" onerror="this.src='https://static.guahao.cn/img/character/doc-unknow.png?_=20121223';"></a></dt>
-                                                <dd>
-                                                    <a href="#" target="_blank" class="doc">孙强</a><a class="dept" href="" target="_blank">孙强</a><br/>
-                                                    <a href="#" target="_blank" class="hos">南昌市第一医院</a>
-                                                    <a href="#" target="_blank" class="bookbtn" monitor="home_activity,doctordirect,order">立即预约</a>
-                                                </dd>
-                                            </dl>
-                                            <strong class="claim">疾病要求：<span>
-                            腔内泌尿外科、男性生殖系统疾病、泌尿系统结石、泌尿生殖系肿
-                            <span class="less-content">...<a class="js-down">&nbsp;详细</a></span>    
-                        </span></strong>
-                                        </div>
-                                        <a href="#" class="expert-team" target="_blank" onmousedown="return _smartlog(this,'MYTD')" monitor="home_activity,doctordirect,spteam">
-                                            <span class="name">专家团队</span>
-                                            <i class="arrow"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank" class="cover-bg team-item" onmousedown="return _smartlog(this,'MYTD')"></a>
-                                        <div class="teaminfo">
-                                            <dl>
-                                                <dt><a href="#" target="_blank" class="cover-bg"><img src="/Public/home/images/b72fb78e-0ffc-432d-a820-1f08ce76da6d.jpg" alt="" onerror="this.src='https://static.guahao.cn/img/character/doc-unknow.png?_=20121223';"></a></dt>
-                                                <dd>
-                                                    <a href="#" target="_blank" class="doc">刘秀娟</a><a class="dept" href="" target="_blank">刘秀娟</a><br/>
-                                                    <a href="#" target="_blank" class="hos">中国人民解放军第94医院</a>
-                                                    <a href="#" target="_blank" class="bookbtn" monitor="home_activity,doctordirect,order">立即预约</a>
-                                                </dd>
-                                            </dl>
-                                            <strong class="claim">疾病要求：<span>
-                            肾小球肾炎、肾病综合征、IgA肾病、糖尿病肾病、高血压肾病
-                            <span class="less-content">...<a class="js-down">&nbsp;详细</a></span>    
-                        </span></strong>
-                                        </div>
-                                        <a href="#" class="expert-team" target="_blank" onmousedown="return _smartlog(this,'MYTD')" monitor="home_activity,doctordirect,spteam">
-                                            <span class="name">专家团队</span>
-                                            <i class="arrow"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="g-container landing-section consult-section J_ConsultSection" data-lazy-url="https://www.guahao.com/homepage/hpconsult/consultList">
-                    <div class="loading"></div>
-                </div>
+              
+               
                 <div class="g-container landing-section news-section">
                     <div class="title-bar">
-                        <h2>健康资讯</h2>
+                         <h2>健康资讯</h2>
                         <span class="slogan">
             关注健康，享受生活！
                 <a href="#" style="display:none">寻找医言堂“好医生” 找的就是您！
@@ -1520,78 +1333,23 @@
                 }
             ];
         </script>
-        <script type="text/javascript" src="https://static.guahao.cn/front/portal-pc-static/js/base/GL.js?_=1535436384237752"></script>
-        <script>
-            //同盾token 发送
-            (function() {
-                _fmOpt = {
-                    partner: 'weiyi',
-                    appName: 'weiyi_web',
-                    token: "weiyi-" + new Date().getTime() + '-' + Math.random().toString(16),
-                    fmb: true,
-                    getinfo: function() {
-                        return "e3Y6ICIyLjUuMCIsIG9zOiAid2ViIiwgczogMTk5LCBlOiAianMgbm90IGRvd25sb2FkIn0=";
-                    }
-                };
-                var cimg = new Image(1, 1);
-                cimg.onload = function() {
-                    _fmOpt.imgLoaded = true;
-                };
-                cimg.src = "https://fp.fraudmetrix.cn/fp/clear.png?partnerCode=weiyi&appName=weiyi_web&tokenId=" + _fmOpt.token;
-                var fm = document.createElement('script');
-                fm.type = 'text/javascript';
-                fm.async = true;
-                fm.src = '//static.fraudmetrix.cn/v2/fm.js?ver=0.1&t=' + (new Date().getTime() / 3600000).toFixed(0);
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(fm, s);
-                setTimeout(function() {
-                    var fmCode = _fmOpt.getinfo();
-                    if (fmCode.length <= 256) {
-                        setCookie('_fm_code', _fmOpt.getinfo())
-                    };
-                }, 1200);
+        <script type="text/javascript" src="/Public/home/js/GL.js?_=1535436384237752"></script>
+       
+       <script type="text/javascript">
+           $(document).ready(function(){
+            $('#searchid').click(function(){
 
-                function setCookie(name, val) {
-                    var expires = '; expires=' + new Date(new Date().getTime() + 30 * 24 * 3600 * 1000).toUTCString()
-                    document.cookie = [name, '=', encodeURIComponent(val), expires, '; path=/'].join('')
+                var q = $('.J_SearchQs').val();
+                alert(q);
+                if(q){
+                     window.location.href='<?php echo U('home/index/search');?>'+'?q='+q+'&searchType=search'; 
                 }
-            })();
-        </script>
-
-        <script>
-            (function() {
-                var bp = document.createElement('script');
-                var curProtocol = window.location.protocol.split(':')[0];
-                if (curProtocol === 'https') {
-                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-                } else {
-                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-                }
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(bp, s);
-            })();
-        </script>
-        <div class="hide">
-            <script type="text/javascript">
-                (function() {
-
-                    // baidu
-                    var hm = document.createElement("script");
-                    hm.src = "https://hm.baidu.com/hm.js?5697507823ecd633819db0771bb99cfb";
-                    var s = document.getElementsByTagName("script")[0];
-                    s.parentNode.insertBefore(hm, s);
-                })();
-            </script>
-             <script type="text/javascript">
-                $(document).ready(function(){
-                    $('.big-search-bt').click(function(){
-                        var q = $("#searchid").val();
-                        
-                        window.location.href="http://www.sou.com/index.php/home/index/search?q="+q+"&searchType=search_query";
-                    });
-                });
-            </script>
-        </div>
+              
+              
+            });
+           });
+       </script>
+        
 </body>
 
 </html>
