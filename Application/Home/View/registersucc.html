@@ -4,16 +4,12 @@
 	<head>
 		<link rel="dns-prefetch" href="http://img.guahao.com">	
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="shortcut icon" href="https://img.guahao.com/favicon.ico" />
-<!-- External CSS -->
-	<link rel="stylesheet" href="https://img.guahao.com/front/hps-pc-static/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
-	<link rel="stylesheet" href="https://img.guahao.com/front/hps-pc-static/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
-<!--[if IE 6]>
-<link rel="stylesheet" type="text/css" href="https://img.guahao.com/front/hps-pc-static/css/hack/ie6.css?v=1.3"/>
-<![endif]-->
-<!--[if IE 7]>
-<link rel="stylesheet" type="text/css" href="https://img.guahao.com/front/hps-pc-static/css/hack/ie7.css?v=1.3"/>
-<![endif]-->
+<link rel="shortcut icon" href="__PUBLIC_HOME__/favicon.ico" />
+
+	<link rel="stylesheet" href="__PUBLIC_HOME__/css/wen/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
+	<link rel="stylesheet" href="__PUBLIC_HOME__/css/wen/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
+ <script src="__PUBLIC_HIS__/vendor/jquery/jquery.min.js"></script>
+    <script src="__PUBLIC_HIS__/vendor/layer/layer.js"></script>
 <script  type="text/javascript">
 	// $GF { Array } - functions defined in pages which has no module. The collected functions will be defined in page directly.
 	$GF = [];
@@ -51,7 +47,7 @@
 			<div class="g-left title">医生注册</div>
 			<ul class="gh-register">
 				<li>
-					<i class="info"></i>
+					<i class="info"></i>	
 						创建账号
 				</li>
 				<li>
@@ -67,16 +63,16 @@
 		<div class="form-container doctor-register-suc">
 			<form id="userForm" name="userForm" method="post" action="">
 				<div class="top-tips">
-					<p class="success-tips"><span class="blue-text">注册成功，李旭峰医生欢迎加入微医，微医因你更精彩！</span></p>
+					<p class="success-tips"><span class="blue-text">注册成功，{$true_name}医生欢迎加入择医网，择医因你更精彩！</span></p>
 				</div>
 				<p class="middle-tips">您的账号是<span class="account">{$mobile}</span>&nbsp;&nbsp;此账号可同时登录微医，微医生APP</p>
-				<a class="btn btn-success btn-lg enter-home" href="{:U('home/index/doctorhome')}">进入微医生</a>
+				<a class="btn btn-success btn-lg enter-home" href="{:U('home/index/doctorhome')}">进入择医网</a>
 				<div class="bottom-info g-clear">
 					<div class="g-left">
 						<img src="https://img.guahao.com/portal_upload/qrlogo/qrDrapp1.jpg" onerror="this.src='http://www.guahao.com/qrcode/gener?qrIndex=qrDrapp1';this.removeAttribute('onerror');" />
 					</div>
 					<div class="g-left">
-						<p>扫码下载“微医生”客户端，微医生，<br/>品牌医生的移动诊室！</p>
+						<p>扫码下载“择医网”客户端，择医网，<br/>品牌医生的移动诊室！</p>
 					</div>
 				</div>
 			</form>

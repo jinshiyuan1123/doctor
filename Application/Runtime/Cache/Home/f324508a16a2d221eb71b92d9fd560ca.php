@@ -155,24 +155,24 @@
                 <div class="container g-clear  ">
                     <div class="home-menu-ctn">
                         <ul class="g-clear main-menu-nav">
-                            <li class="hot">
-                                <a class="own-tab" target="_blank" href="<?php echo U('home/index/hospital');?>" monitor="public_menu,home_menu,ask">在线问诊</a>
-                            </li>
-                            <li><a target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">医生论坛</a></li>
-                            <li><a target="_blank" target="_blank" href="<?php echo U('home/index/ask');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,preciseorder">免费咨询</a></li>
-                            <li class="authority"><a class="own-tab" target="_blank" target="_blank" href="https://baike.h.gov.cn/" rel="nofollow">医药直通车</a></li>
-                            <li data-subnav="sub-nav-welife"><a target="_blank" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">
-                    医疗器械</a>
-                            </li>
-                          
-                             -->
-                            <li><a target="_blank" href="#" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">健康E务室</a></li>
-                              <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">优选音乐</a></li>
+<li class="hot">
+    <a class="own-tab" target="_blank" href="<?php echo U('home/index/hospital');?>" monitor="public_menu,home_menu,ask">在线问诊</a>
+</li>
+<li><a target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">医生论坛</a></li>
+<li><a target="_blank" target="_blank" href="<?php echo U('home/index/ask');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,preciseorder">免费咨询</a></li>
+<li class="authority"><a class="own-tab" target="_blank" target="_blank" href="https://baike.h.gov.cn/" rel="nofollow">医药直通车</a></li>
+<li data-subnav="sub-nav-welife"><a target="_blank" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">
+医疗器械</a>
+</li>
 
-                               <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a></li>
+ -->
+<li><a target="_blank" href="#" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">健康E务室</a></li>
+  <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">优选音乐</a></li>
+
+   <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a></li>
 
 
-                        </ul>
+</ul>
                         <div class="main-category-nav J_DiseaseCategory">
                             <h3><i></i>帮你快速找医生</h3>
                             <div class="nav-cats-wrapper J_FastCategory" style="display:block">
@@ -2003,7 +2003,7 @@
 
         </div>
 
-        <div id="gf">
+          <div id="gf">
             <div class="g-container">
                 <div class="g-footer g-clear">
                     <a class="logo g-left" href="/" onmousedown="return _smartlog(this,'BTM')"></a>
@@ -2058,9 +2058,7 @@
             </div>
         </div>
 
-        <div id="gm-bg"></div>
-        <div id="gm-mask">
-        </div>
+       
         <script type="text/javascript">
             $GC = {
                 debug: false,

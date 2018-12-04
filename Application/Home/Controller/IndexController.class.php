@@ -155,11 +155,11 @@ function getCity($ip = '')
      }
 
      public function agreement(){
-        $this->display();
+        $this->display(':agreement');
      }
 
      public function privacy_policy(){
-        $this->display();
+        $this->display(':privacy_policy');
      }
 
      public function Registerfee(){
@@ -712,6 +712,7 @@ function getCity($ip = '')
         $this->error('内容保存有误');
       }
       $this->assign('mobile',$data['mobile']);
+      $this->assign('true_name',$data['true_name']);
       $this->display(':registersucc');
     }
 
@@ -919,6 +920,8 @@ function getCity($ip = '')
     } 
     // echo "下面是文件上传的一些信息：<br><br>原文件名：".$_FILES['upfile']['name'] ."<br><br>类型：" .$_FILES['upfile']['type'] ."<br><br>临时文件名：".$_FILES['upfile']['tmp_name']. "<br><br>文件大小：".$_FILES['upfile']['size']."<br><br>错误代码：".$_FILES['upfile']['error'];
   }
+
+ 
   
 
 }
