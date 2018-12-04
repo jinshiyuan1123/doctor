@@ -171,3 +171,1279 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
 
+[ 2018-12-04T09:47:52+08:00 ] 127.0.0.1 /Home/?q=%E9%AB%98%E8%A1%80%E5%8E%8B
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000253s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0078s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2018-12-04T09:47:57+08:00 ] 127.0.0.1 /index.php/home/index/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000445s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002129s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000378s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2018-12-04T09:47:57+08:00 ] 127.0.0.1 /index.php/home/index/style/load.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+
+[ 2018-12-04T09:48:42+08:00 ] 127.0.0.1 /index.php/home/index/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000215s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2018-12-04T09:48:42+08:00 ] 127.0.0.1 /index.php/home/index/style/load.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+
+[ 2018-12-04T09:54:43+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000196s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0039s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000855s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000899s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2018-12-04T09:56:32+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000420s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002540s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0079s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001368s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001421s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2018-12-04T09:56:43+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000440s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002315s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0080s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001395s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001450s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2018-12-04T09:57:25+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000475s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002571s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0106s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001401s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001457s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2018-12-04T09:58:08+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000269s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0148s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001828s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001912s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2018-12-04T10:06:18+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000449s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002376s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0130s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001361s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001415s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045399s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2018-12-04T10:07:26+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000433s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002992s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0163s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001468s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001529s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2018-12-04T10:08:29+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000473s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002496s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0114s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001498s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001565s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2018-12-04T10:09:08+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000380s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002019s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0067s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001354s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001405s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2018-12-04T10:10:01+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000434s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002274s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0045s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001456s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001512s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2018-12-04T10:10:30+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000409s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002190s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0183s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0095s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001720s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001811s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2018-12-04T10:16:01+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000387s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002020s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0074s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001344s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001397s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2018-12-04T10:16:41+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000364s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001971s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0086s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001391s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001443s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2018-12-04T10:19:06+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000477s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002401s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0123s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001368s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2018-12-04T10:19:22+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000415s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002247s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0052s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001482s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001559s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2018-12-04T10:19:25+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001864s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0145s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001631s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001694s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2018-12-04T10:19:45+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000556s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002822s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0131s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001399s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2018-12-04T10:19:59+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000258s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001579s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0061s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001442s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001502s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2018-12-04T10:20:32+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000332s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0066s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001489s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001545s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2018-12-04T10:20:40+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000377s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001893s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0080s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001836s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001906s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-12-04T10:22:04+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000393s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002056s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0089s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001446s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001501s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2018-12-04T10:23:14+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000371s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001983s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0152s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001388s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001442s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2018-12-04T10:23:30+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001792s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0062s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001660s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001763s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+
+[ 2018-12-04T10:23:40+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000549s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002710s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0065s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001743s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001811s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2018-12-04T10:23:45+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000487s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002653s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0081s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001567s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001629s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2018-12-04T10:24:15+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000313s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002060s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0064s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001702s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001774s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001270s ]
+
+[ 2018-12-04T10:24:35+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000260s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001623s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0088s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001572s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001687s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2018-12-04T10:25:08+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000279s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001797s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0173s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001562s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001621s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001185s ]
+
+[ 2018-12-04T10:26:15+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000999s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004086s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0067s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001430s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001489s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2018-12-04T10:26:46+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000540s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002616s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0088s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001544s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001599s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2018-12-04T10:29:26+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000381s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001998s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0091s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001544s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001602s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2018-12-04T10:30:19+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000480s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002365s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0054s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001542s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001597s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2018-12-04T10:30:58+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000438s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002273s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0119s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001465s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001520s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2018-12-04T10:32:04+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000468s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002440s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0062s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001658s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001744s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2018-12-04T10:33:55+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000441s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002316s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0112s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 96 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002512s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002623s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001270s ]
+

@@ -83,11 +83,7 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
 			</ul>
 			</div>
 			<div class="clearfix">
-				<video width="350" height="400" controls>
- <source src="/Public/home/video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
-  <!-- <source src="movie.ogg" type="video/ogg"> -->
-  您的浏览器不支持 HTML5 video 标签。
-</video>
+				
 					
 				<a href="<?php echo U('home/index/videolist');?>" target="_blank">
 				<video width="250" height="300" controls autobuffer>
