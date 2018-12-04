@@ -107,7 +107,7 @@
 
 
                     <div class="gh-search gh-web-search gh-search-left ">
-                        <form class="gh-search-form" action="" name="qform">
+                        <form class="gh-search-form" action="<?php echo U('home/index/search');?>" name="qform">
                             <span class="gh-search-input">
                 <span class="search-icon"></span>
                             <input type="text" name="q" value="" autocomplete="off" maxlength="50" class="J_SearchQs" placeholder="请输入疾病名、科室名、医院名或医生名" />
@@ -1340,7 +1340,7 @@
             $('#searchid').click(function(){
 
                 var q = $('.J_SearchQs').val();
-                alert(q);
+               
                 if(q){
                      window.location.href='<?php echo U('home/index/search');?>'+'?q='+q+'&searchType=search'; 
                 }
