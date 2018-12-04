@@ -27,8 +27,8 @@
 <script src="__PUBLIC_HIS__/vendor/jquery/jquery.min.js"></script>
     <script src="__PUBLIC_HIS__/vendor/layer/layer.js"></script>
 
-                        <link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/expert_v2.css?v=1543244398d5b04c" type="text/css"/>
-  
+        <link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/expert_v2.css?v=1543244398d5b04c" type="text/css"/>
+
 </head>
 <body class="g-1200px g-page-1200"> 
     
@@ -71,7 +71,7 @@
         <div class="warpbg">
             <div class="grid-group main-content g-consult-form qk">
            
-                <form class="grid-form" enctype="multipart/form-data" action="{:U('home/index/showlist')}" method=post>
+                <form class="grid-form" enctype="multipart/form-data" action="{:U('home/index/showlist')}" onsubmit="return checkPost();" method=post>
                     <input name='csrf_token' type='hidden' value='10uj7jmjh4qic'>
                     
                     <div class="item mobile">
@@ -80,7 +80,7 @@
                         </label>
                         <div class="contain">
                             <div class="row">
-                                <input type="text" name="patientMobile" class="long error J_Mobile" id="f-mobile"  style="width: 390px;" value=" "/>
+                                <input type="text" name="patientMobile" class="long error J_Mobile" id="fmobile" value=""  style="width: 390px;" value=" "/>
                             </div>
                             <p class="g-txt-gray-lightest" style="font-size:12px;">
                                 请确保手机通畅，以便及时联系到您。
@@ -235,90 +235,23 @@
     
       
 
-    <div id="gm-bg"></div>
-<div id="gm-mask">
-    <div class="gm-box account-ui-v3 user-login-v3 new-login-dialog-v3 g-clear J_LoginDialogV3" id="gm-login">
-        <a class="close gm-close" href="javascript:;"></a>
-        <div class="g-left">
-            <div class="main-box J_MainBox">
-                <div class="nav g-clear">
-                        <li class="main-current J_MainTab"><span>登录</span>&nbsp;&nbsp;<i>▪</i>&nbsp;&nbsp;<a href="https://www.guahao.com/register/mobile?target=%2Fbefore%2Fconsult%2Fask">注册</a></li>
-                        <li class="download-normal">扫一扫</li>
-                </div>
-                <div class="tab-list ">
-                    <div class="tab-listcon J_TabList">
-                        <div class="tab-main g-clear J_TabMain">
-                            <div class="form-container">
-                                <form action="/user/login_a">
-                                    <div class="lg-tips tips-error hide"></div>
-                                    <div class="lg-tips tips-succ hide"></div>
-                                    <ul>
-                                        <li class="icon-line">
-                                            <label class="item-icon icon-user"></label>
-                                            <input type="text" id="poploginId" name="loginId" class="form-input required" placeholder="手机、邮箱或用户名" maxlength="30" tabindex="1" />
-                                        </li>
-                                        <li class="icon-line">
-                                            <label class="item-icon icon-pwd"></label>
-                                            <input type="password" autocomplete="off" disableautocomplete   id="password" class="form-input required" placeholder="密码" maxlength="20" tabindex="2" />
-                                            <input type="password" autocomplete="off" disableautocomplete name="password" class="hide" /> 
-                                        </li>
-                                        <li> 
-                                            <input type="text" maxlength="4" autocomplete="off" class="form-input required code-text" placeholder="验证码" name="validCode" data-validcode="loginmodal" tabindex="3" />
-                                            <a href="javascript:void(0)"  title="换一张" class="captcha">
-                                                <img src="https://www.guahao.com/validcode/genimage/1" />
-                                            </a>
-                                        </li>
-                                        <li class="action-bar actionbt">
-                                            <a tabindex="4" href="javascript:;" id="loginbtn" class="gbb gbt-green">登&nbsp;录</a>
-                                        </li>
-                                        <li class="auto-login">
-                                            <input type="checkbox" id="autoLogin" name="autologin"><label for="autoLogin">自动登录</label>
-                                            <div class="fo-pwd">
-                                                <a href="https://www.guahao.com/forget/index" class="forget-ps" target="_blank">忘记密码？</a>
-                                            </div>
-                                        </li>
-                                    </ul> 
-                                </form>
-                            </div>
-                            <div class="third-login">
-                                <i class="or">或</i>
-                                <div class="qrcode-wrapper">
-                                    <img src="https://static.guahao.cn/front/portal-pc-static/img/qr/drain/app-login.jpg">
-                                    <span>下载APP</span>
-                                </div>
-                                <div class="qrcode-wrapper secondary">
-                                    <img src="https://static.guahao.cn/front/portal-pc-static/img/qr/drain/wechat-subscription.jpg">
-                                    <span>关注公众号</span>
-                                </div>
-                                <h5>使用第三方登录平台</h5>
-                                <p class="third-platform J_LoginList">
-                                        <a href="https://www.guahao.com/partners/weixin/login" class="icon-weixin J_Social">微信</a>
-                                        <a href="https://www.guahao.com/partners/qq/login" class="icon-qq J_Social">QQ</a>
-                                        <a href="https://www.guahao.com/partners/sina/fastlogin" class="noMrgR icon-sina J_Social">新浪微博</a>
-                                        <a href="https://www.guahao.com/tblogin/tbfastlogin" class="icon-taobao">淘宝</a>
-                                        <a href="https://www.guahao.com/alipayFastLogin/getFastLoginInfo" class="icon-alipay J_Social">支付宝</a>
-                                </p>
-                                <div class="go-home">
-                                     <a href="https://www.guahao.com">返回首页</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-download g-clear J_TabDownload">
-                            <div class="qr-inner">
-                                <ul class="g-clear">
-                                    <li><img src="https://static.guahao.cn/front/portal-pc-static/img/account/v3/qr-user.png" alt=""><p>下载<a href="https://www.guahao.com/intro/userapp">微医APP</a></p></li>
-                                    <li class="wy-qr"><img src="https://static.guahao.cn/front/portal-pc-static/img/account/v3/qr-doctor.png" alt=""><p>下载<a href="https://www.guahao.com/intro/drapp">微医生APP</a></p></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                <a class="btn-switch" href="http://doctor.guahao.com/user/login"><i></i><span>医生</span></a> 
-            </div>
-        </div>
-    </div>
 
-</div>
+<script type="text/javascript">
+   
+   function checkPost(){
+    var mobile = $("#fmobile").val();
+    var phoneReg = /(^1[3|4|5|7|8]\d{9}$)|(^09\d{8}$)/;
 
+    if(mobile == ''){
+        layer.msg('手机不能为空');
+        return false;
+    }
+    if (!phoneReg.test(mobile)) {
+        alert('手机格式错误！');
+        return false;
+    }
+
+   }
+</script>
 </body>
 </html>

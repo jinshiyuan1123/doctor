@@ -13417,3 +13417,378 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001751s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001848s ]
 
+[ 2018-12-04T22:47:18+08:00 ] 127.0.0.1 /index.php/home/index/questionlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000878s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003735s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0413s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001284s ]
+
+[ 2018-12-04T22:47:20+08:00 ] 127.0.0.1 /index.php/home/index/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002271s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000764s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005283s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000460s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000590s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003570s ]
+
+[ 2018-12-04T22:47:21+08:00 ] 127.0.0.1 /index.php/home/index/style/load.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+
+[ 2018-12-04T22:48:05+08:00 ] 127.0.0.1 /index.php/home/index/zipai
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000436s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002113s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2018-12-04T22:48:10+08:00 ] 127.0.0.1 /index.php/home/index/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000447s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002227s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: isGoHospital D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 906 行.
+SQL: SHOW COLUMNS FROM `dzm_his_video` [ RunTime:0.0054s ]
+SQL: INSERT INTO `dzm_his_video` (`mobile`,`ishospital`,`sicktime`,`content`,`videourl`,`create_time`) VALUES (' ',NULL,'','','./public/home/video/1.','1543934890') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
+
+[ 2018-12-04T22:48:10+08:00 ] 127.0.0.1 /index.php/home/index/css/error.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+ERR: 模板不存在:./Application/Home/View/Public/404.html
+
+[ 2018-12-04T22:51:18+08:00 ] 127.0.0.1 /index.php/home/index/zipai
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001571s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004816s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2018-12-04T22:52:42+08:00 ] 127.0.0.1 /index.php/home/index/zipai
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000672s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002844s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2018-12-04T22:53:03+08:00 ] 127.0.0.1 /index.php/home/index/zipai
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000484s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002734s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2018-12-04T22:53:07+08:00 ] 127.0.0.1 /index.php/home/index/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000594s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003063s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: isGoHospital D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 906 行.
+SQL: SHOW COLUMNS FROM `dzm_his_video` [ RunTime:0.0075s ]
+SQL: INSERT INTO `dzm_his_video` (`mobile`,`ishospital`,`sicktime`,`content`,`videourl`,`create_time`) VALUES ('',NULL,'','','./public/home/video/1.','1543935187') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2018-12-04T22:53:07+08:00 ] 127.0.0.1 /index.php/home/index/css/error.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000522s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002807s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+ERR: 模板不存在:./Application/Home/View/Public/404.html
+
+[ 2018-12-04T22:54:25+08:00 ] 127.0.0.1 /index.php/home/index/zipai
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000312s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2018-12-04T22:55:57+08:00 ] 127.0.0.1 /index.php/home/index/zipai
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000482s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002344s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.1194s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001362s ]
+
+[ 2018-12-04T22:56:36+08:00 ] 127.0.0.1 /index.php/home/index/showlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000712s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003010s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_video` [ RunTime:0.0056s ]
+SQL: INSERT INTO `dzm_his_video` (`mobile`,`ishospital`,`sicktime`,`content`,`videourl`,`create_time`) VALUES ('13141589203','1','健康','健康之家','./public/home/video/7.mp4','1543935396') [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2018-12-04T22:56:38+08:00 ] 127.0.0.1 /index.php/home/index/video
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000521s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002711s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0591s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000453s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000544s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001359s ]
+
+[ 2018-12-04T22:56:38+08:00 ] 127.0.0.1 /index.php/home/index/style/load.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+
