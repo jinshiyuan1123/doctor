@@ -35,6 +35,7 @@ class HisBaseController extends BaseController {
         if(CONTROLLER_NAME != 'Index')
         {
             $auth = new Auth();
+           
             $auth_result = $auth->check($name, $user_info['uid']);
 
             if($auth_result === false)

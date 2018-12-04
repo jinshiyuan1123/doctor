@@ -50,7 +50,7 @@
         </div>
     </div>
     <div class="center">
-        <a class="logo" href="#">
+        <a class="logo" href="<?php echo U('home/index/index');?>">
             <img src="/Public/home/images/logolist.jpg?_=123456" alt="logo">
         </a>
         <div class="nav">

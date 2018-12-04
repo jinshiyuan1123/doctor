@@ -19,6 +19,7 @@ class MemberController extends HisBaseController
 
     public function _initialize()
     {
+
         parent::_initialize();
         $member_model = D('HisMember');
         $this->member_model = $member_model;
@@ -123,7 +124,9 @@ class MemberController extends HisBaseController
 
      public function myvideo()
     {
-        if (IS_AJAX) { //ajax提交保存修改信息
+          
+       
+       if (IS_AJAX) { //ajax提交保存修改信息
             $data = I();
             $condition = [
                 'h.hid' => $this->hospitalInfo['uid'],
@@ -151,9 +154,18 @@ class MemberController extends HisBaseController
             $hospitalInfo = $this->member_model->getMyHospitalInfo($condition); //所属诊所信息
             $doctorCount = $this->member_model->doctorCount($hid); //所属诊所医生数量
             $currentDepartment = D('his_department')->currentDepartment($hid); //所属当前诊所的科室
+            $res = M('his_video')->order(' id desc')->where()->select();
+            $content =array();;
+            foreach($res as $kk=>$vv) {
+                $res[$kk]['content'] = mb_substr($vv['content'],0,10,'utf-8')."...";
+               
+            }
+           
+            $this->assign('res',$res);
             $this->assign('hospitalInfo', $hospitalInfo);
             $this->assign('doctorCount', $doctorCount);
             $this->assign('currentDepartment', $currentDepartment);
+
             $this->display();
         }
     }
@@ -254,6 +266,47 @@ class MemberController extends HisBaseController
 
     }
 
+      /**
+     * 修改（医生，护士，..）信息
+     * Author: gmq
+     */
+    public function editUserlist(){
+      
+       
+        $sid = I('get.sid','0','intval');
+
+        $his = M('his_video');
+        $res = $his->where("id='$sid'")->find();
+        $rowlist = I('post.');
+       
+        $datas = array('videourl'=>$rowlist['contact_telephone'],'sicktime'=>$rowlist['contact_name'],'content'=>$rowlist['contact_mobile'],'mobile'=>$rowlist['mobile']);
+        $value = $his->where("id='$rowlist[supplier_name]'")->setField($datas);
+       if($value){
+         $this->ajaxSuccess('修改成功');
+       }
+        if($res){
+             $this->ajaxReturn($res);
+        }
+        if(IS_POST){
+            $uid = I('post.uid','0','intval');
+            $data = I('post.');
+            $r = $this->member_model->saveUserRelate($uid,$data);
+            if($r){
+                $this->ajaxSuccess('修改成功');
+            }else{
+                $this->ajaxError('提交失败');
+            }
+        }
+        $userInfo =M('his_doctor')->where("id='$uid'")->find();
+        if($userInfo){
+             $this->ajaxReturn($userInfo);
+        }else{
+            $this->error('此用户不存在');
+        }
+
+    }
+
+
     /**
      * 医生列表管理
      * Author: gmq
@@ -344,6 +397,25 @@ class MemberController extends HisBaseController
             $this->ajaxError('移除失败');
         }
         $r = $this->member_model->removeUser($uid);
+        // if(!$r){
+        //     $this->ajaxError('移除失败');
+        // }
+        $this->ajaxSuccess('移除成功');
+    }
+
+
+     /**
+     * 删除视频
+     * Author: gmq
+     */
+    public function removelist(){
+        
+        $sid = I('post.sid');
+        $res = M('his_video')->where("id='$sid'")->delete();
+        if(!$res){
+            $this->ajaxError('移除失败');
+        }
+        // $r = $this->member_model->removeUserlist($uid);
         // if(!$r){
         //     $this->ajaxError('移除失败');
         // }

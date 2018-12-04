@@ -11,29 +11,15 @@
 	    <meta name="keywords" content="微医，微医，网上挂号，网上预约，找医院，找医生" />
 <link rel="canonical" href="https://www.guahao.com/my/helper/questionlist"/>
 
+<link rel="shortcut icon" href="/Public/home/favicon.ico" />
 
-<meta http-equiv="Cache-Control" content="no-transform" />
+	<link rel="stylesheet" href="/Public/home/css/wen/portal.base.min.css?v=1542352557776f11" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/portal.basic.min.css?v=1542352557776f11" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/portal.hdd.min.css?v=1542352557776f11" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/portal.content.min.css?v=1542352557776f11" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/style.min.css?v=1542352557776f11" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/animate.min.css?v=20141222" type="text/css"/>
 
-<meta property="wb:webmaster" content="3b0138a4c935e0f6" />
-<meta property="qc:admins" content="341606771467510176375" />
-	<link rel="shortcut icon" href="https://static.guahao.cn/favicon.ico" />
-
-	<link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/portal.base.min.css?v=1542352557776f11" type="text/css"/>
-	<link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/portal.basic.min.css?v=1542352557776f11" type="text/css"/>
-	<link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/portal.hdd.min.css?v=1542352557776f11" type="text/css"/>
-	<link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/portal.content.min.css?v=1542352557776f11" type="text/css"/>
-	<link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/style.min.css?v=1542352557776f11" type="text/css"/>
-	<link rel="stylesheet" href="https://static.guahao.cn/common/css/animate.min.css?v=20141222" type="text/css"/>
-
-<!--[if IE 6]>
-<link rel="stylesheet" type="text/css" media="screen" href="https://static.guahao.cn/front/portal-pc-static/css/ie6.css?v=1542352557776f11"/>
-<![endif]-->
-<!--[if IE 7]>
-<link rel="stylesheet" type="text/css" media="screen" href="https://static.guahao.cn/front/portal-pc-static/css/ie7.css?v=1542352557776f11"/>
-<![endif]-->
-<!--[if IE 8]>
-<link rel="stylesheet" type="text/css" media="screen" href="https://static.guahao.cn/front/portal-pc-static/css/ie8.css?v=1542352557776f11"/>
-<![endif]-->
 
 <script  type="text/javascript">
 	$GF = [];
@@ -86,7 +72,8 @@
                      <span class="text">您好
                          <?php echo session('home_user_info.mobile');?>
                           </span> 
-                     <a href="<?php echo U('home/index/orderlist');?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,mycenter">个人中心</a>
+                         
+                     <a href=" <?php if($docmobile): echo U('home/index/doctorhome'); else: echo U('home/index/orderlist'); endif; ?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,mycenter">个人中心</a>
                        
                     <span class="line">|</span>
                     <a href="https://www.guahao.com/my/orderlist" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,order">预约单</a> 
