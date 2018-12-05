@@ -63,7 +63,9 @@
                            
                             <th>手机</th>
                             <th>患病时间</th>
+                             <th>是否显示</th>
                             <th>路径</th>
+                           
                             <th>描述</th>
                             <th>创建日期</th>
                             <th>操作</th>
@@ -74,9 +76,10 @@
                         <td><?php echo ($val["id"]); ?></td>
                         <td><?php echo ($val["mobile"]); ?></td>
                         <td><?php echo ($val["sicktime"]); ?></td>
-                       
+                        <td><?php echo ($val["ishospital"]); ?></td>
                       
                         <td><?php echo ($val["videourl"]); ?></td>
+
                         <td><?php echo ($val["content"]); ?></td>
                         <td><?php echo (date('Y-m-d',$val["create_time"])); ?></td>
                         <td><button type="button" class="btn btn-primary btn-sm mr10 supplierEdit" data-sid="<?php echo ($val["id"]); ?>">编辑</button><button type="button" class="btn btn-default btn-sm delete" data-sid="<?php echo ($val["id"]); ?>">删除</button>
@@ -169,6 +172,13 @@
             </div>
             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
+                    <span class="btn">是否显示:</span>
+                </span>
+                <input class="form-control" type="text" name="editIshospital" placeholder="" onkeyup="value=value.replace(/[^\a-zA-Z\u4E00-\u9FA5]/g,'')"
+                       onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\a-zA-Z\u4E00-\u9FA5]/g,''))">
+            </div>
+            <div class="input-group listSeaForm wb100 mt10">
+                <span class="input-group-btn">
                     <span class="btn">路径：</span>
                 </span>
                
@@ -251,12 +261,12 @@ function UnixToDate(unixTime, isFull, timeZone) {
             $.get("<?php echo U('/Member/editUserlist');?>",
                 {'sid':sid},
                 function (data) {
-                   
+                  
                     if (data) {
                         $(":input[name='editSupplier']").val(data.id);
                         $(":input[name='editAddress']").val(data.mobile);
                         $(":input[name='editContactName']").val(data.sicktime);
-                       
+                        $(":input[name='editIshospital']").val(data.ishospital);
                         $(":input[name='editContactPhone']").val(data.videourl);
                        
                        
@@ -278,13 +288,14 @@ function UnixToDate(unixTime, isFull, timeZone) {
             var contact_name = $(":input[name='editContactName']").val();
             var contact_mobile = $(":input[name='editContactMobile']").val();
             var contact_telephone = $(":input[name='editContactPhone']").val();
+            var editIshospital = $(":input[name='editIshospital']").val();
              var mobile = $("#editAddress").val();
-
+            
             var sid = $(":input[name='editSid']").val();
           
           
             $.post("<?php echo U('/Member/editUserlist');?>",
-                {"supplier_name":supplier_name,"contact_name":contact_name,"contact_mobile":contact_mobile,"contact_telephone":contact_telephone,"mobile":mobile,
+                {"supplier_name":supplier_name,"contact_name":contact_name,"contact_mobile":contact_mobile,"editIshospital":editIshospital,"contact_telephone":contact_telephone,"mobile":mobile,
                "sid":sid},
                 function (data) {
                     if (data.status == 'success') {

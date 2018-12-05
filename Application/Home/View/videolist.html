@@ -31,7 +31,7 @@ background-repeat:repeat;background-size:inherit;background-attachment:fixed;bac
 }
 </style>
 
-<title>火王之破晓之战 - 火王之破晓之战 - 电影达人</title>
+<title>{$res.sicktime}</title>
 <meta name="keywords" content="火王之破晓之战">
 <meta name="description" content="火王之破晓之战">
 <style type="text/css">
@@ -82,7 +82,7 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
 					<a style="display:none" id="videourlgo" href=""></a>
 
 <video width="352" height="264" controls autobuffer>
-    <source src="__PUBLIC_VIDEO__/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
+    <source src="/{$res.videourl}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
 </video>
 
 </div>
@@ -129,7 +129,9 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
 					<div class="hy-play-list tab-pane fade in active" id="list3">
 						<div class="item">
 							<div class="plot">
-							<font><!--介绍开始-->千年以前，宇宙中有一星域，那里山川秀美，景色宜人。火王仲天（陈柏霖 饰）、风神千睸（景甜 饰）、山神帝昀等六位神明在众神之首尚轩的带领下共同维护星域的和平。在一次与黑暗势力的对抗中，众神遭受重创，千睸为救爱人仲天生死未卜，星域面临灭顶之灾。仲天为了寻找拯救家园的能量，在尚轩指引下，寻找新的生机。几经跋涉，仲天来到遥远的东域，并在此仲天遇到了与爱人千睸长相一样的司徒奉剑。两人经历一次次磨难后相爱，却又因此陷入了更大的生死危机中。而此时，黑暗势力也跟随至此，原来这一切幕后黑手竟然就是仲天曾经的好兄弟帝昀。在历经亲情、友情、爱情的种种抗衡后，善念终于战胜邪恶，仲天和帝昀也重新携手，共同找寻拯救星域的希望，重建美好家园。<!--介绍结束--></font></div>
+							<font><!--介绍开始-->
+							{$res.content}
+							<!--介绍结束--></font></div>
 						</div>
 					</div>
 				</div>

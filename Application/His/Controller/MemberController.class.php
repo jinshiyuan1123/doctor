@@ -278,8 +278,8 @@ class MemberController extends HisBaseController
         $his = M('his_video');
         $res = $his->where("id='$sid'")->find();
         $rowlist = I('post.');
-       
-        $datas = array('videourl'=>$rowlist['contact_telephone'],'sicktime'=>$rowlist['contact_name'],'content'=>$rowlist['contact_mobile'],'mobile'=>$rowlist['mobile']);
+        $datas = array('videourl'=>$rowlist['contact_telephone'],'ishospital'=>$rowlist['editIshospital'],'sicktime'=>$rowlist['contact_name'],'content'=>$rowlist['contact_mobile'],'mobile'=>$rowlist['mobile']);
+        // var_dump($datas);
         $value = $his->where("id='$rowlist[supplier_name]'")->setField($datas);
        if($value){
          $this->ajaxSuccess('修改成功');

@@ -866,10 +866,31 @@ function getCity($ip = '')
   }
   
   public function video(){
+    $res = M('his_video')->where("sicktime='健康'")->limit(4)->select();
+    $res1 = M('his_video')->where("sicktime='养生'")->limit(4)->select();
+    $res2 = M('his_video')->where("sicktime='减肥'")->limit(4)->select();
+    $res3 = M('his_video')->where("sicktime='生活'")->limit(4)->select();
+    $res4 = M('his_video')->where("sicktime='自拍拍'")->limit(4)->select();
+    $this->assign('res',$res);
+    $this->assign('res1',$res1);
+    $this->assign('res2',$res2);
+    $this->assign('res3',$res3);
+    $this->assign('res4',$res4);
+    
     $this->display(':video');
   }
 
+  public function videos(){
+    $id = I('get.sicktime');
+    $res = M('his_video')->where("sicktime='$id'")->select();
+    $this->assign('res',$res);
+    $this->assign('head',$id);
+    $this->display(':videos');
+  }
   public function videolist(){
+    $id = I('get.id','','intval');
+    $res = M('his_video')->where("id='$id'")->find();
+    $this->assign('res',$res);
     $this->display(':videolist');
   }
 
@@ -878,7 +899,7 @@ function getCity($ip = '')
   }
 
    public function getname($exname){
-     $dir = './public/home/video/';
+     $dir = 'public/home/video/';
      $i=1;
      if(!is_dir($dir)){
         mkdir($dir,0777);
@@ -903,7 +924,7 @@ function getCity($ip = '')
     $res = I('post.');
     $datalist = array(
       'mobile'=> $res['patientMobile'],
-      'ishospital'=> $res['isGoHospital'],
+      'ishospital'=> '否',
       'sicktime' => $res['sickTime'],
       'content'=> $res['consultContent'],
       'videourl' => $uploadfile,
@@ -912,7 +933,7 @@ function getCity($ip = '')
 
     $row = M('his_video')->add($datalist);
     if (move_uploaded_file($_FILES['upfile']['tmp_name'], $uploadfile)) {
-      $this->success('<h2><font color=#ff0000>文件上传成功！</font></h2><br><br>',U('home/index/video'));
+      $this->success('<h2><font color=#ff0000>文件上传成功！等待管理员审核！</font></h2><br><br>',U('home/index/video'));
 
     }else {
         $this->error('<h2><font color=#ff0000>文件上传失败！</font></h2><br><br>',U('home/index/video'));
