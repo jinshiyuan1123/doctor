@@ -73,9 +73,9 @@
                             <span class="gh-search-input">
                 <span class="search-icon"></span>
                             <input type="text" name="q" value="" autocomplete="off" maxlength="50" class="J_SearchQ" placeholder="请输入疾病名、科室名、医院名或医生名" />
-                            <input type="hidden" name="searchType" value="search" class="J_SearchType">
+                          
                             </span>
-                            <a class="gbn gbt-green2 radius-right big-search-bt" href="javascript:void(0);">搜索</a>
+                            <a class="gbn gbt-green2 radius-right big-search-bt" href="">搜索</a>
                             <div class="clear"></div>
                         </form>
                         <div class="search-key">
@@ -1335,6 +1335,20 @@
                     s.parentNode.insertBefore(hm, s);
                 })();
             </script>
+              <script type="text/javascript">
+           $(document).ready(function(){
+            $('#searchid').click(function(){
+
+                var q = $('.J_SearchQs').val();
+               
+                if(q){
+                     window.location.href='{:U('home/index/search')}'+'?q='+q+'&searchType=search'; 
+                }
+              
+              
+            });
+           });
+       </script>
         </div>
 </body>
 
