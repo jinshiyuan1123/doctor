@@ -1248,7 +1248,7 @@
                 $GC.jspath + "/plugins/scout.js?_=1535436384237752",
                 $GC.jspath + "/plugins/raven.js?_=1535436384237752",
                 $GC.jsCPath + "/base/jquery-1.8.1.min.js",
-                $GC.jspath + "/base/GH.js?_=1535436384237752",
+                // $GC.jspath + "/base/GH.js?_=1535436384237752",
                 $GC.jsCPath + "/plugins/validator.js?_=20160129",
                 function() {
 
@@ -1273,69 +1273,9 @@
                 }
             ];
         </script>
-        <script type="text/javascript" src="https://static.guahao.cn/front/portal-pc-static/js/base/GL.js?_=1535436384237752"></script>
-        <script>
-            //同盾token 发送
-            (function() {
-                _fmOpt = {
-                    partner: 'weiyi',
-                    appName: 'weiyi_web',
-                    token: "weiyi-" + new Date().getTime() + '-' + Math.random().toString(16),
-                    fmb: true,
-                    getinfo: function() {
-                        return "e3Y6ICIyLjUuMCIsIG9zOiAid2ViIiwgczogMTk5LCBlOiAianMgbm90IGRvd25sb2FkIn0=";
-                    }
-                };
-                var cimg = new Image(1, 1);
-                cimg.onload = function() {
-                    _fmOpt.imgLoaded = true;
-                };
-                cimg.src = "https://fp.fraudmetrix.cn/fp/clear.png?partnerCode=weiyi&appName=weiyi_web&tokenId=" + _fmOpt.token;
-                var fm = document.createElement('script');
-                fm.type = 'text/javascript';
-                fm.async = true;
-                fm.src = '//static.fraudmetrix.cn/v2/fm.js?ver=0.1&t=' + (new Date().getTime() / 3600000).toFixed(0);
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(fm, s);
-                setTimeout(function() {
-                    var fmCode = _fmOpt.getinfo();
-                    if (fmCode.length <= 256) {
-                        setCookie('_fm_code', _fmOpt.getinfo())
-                    };
-                }, 1200);
-
-                function setCookie(name, val) {
-                    var expires = '; expires=' + new Date(new Date().getTime() + 30 * 24 * 3600 * 1000).toUTCString()
-                    document.cookie = [name, '=', encodeURIComponent(val), expires, '; path=/'].join('')
-                }
-            })();
-        </script>
-
-        <script>
-            (function() {
-                var bp = document.createElement('script');
-                var curProtocol = window.location.protocol.split(':')[0];
-                if (curProtocol === 'https') {
-                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-                } else {
-                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-                }
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(bp, s);
-            })();
-        </script>
-        <div class="hide">
-            <script type="text/javascript">
-                (function() {
-
-                    // baidu
-                    var hm = document.createElement("script");
-                    hm.src = "https://hm.baidu.com/hm.js?5697507823ecd633819db0771bb99cfb";
-                    var s = document.getElementsByTagName("script")[0];
-                    s.parentNode.insertBefore(hm, s);
-                })();
-            </script>
-              <script type="text/javascript">
+      <script type="text/javascript" src="__PUBLIC_HOME__/js/GL.js?_=1535436384237752"></script>
+          <script type="text/javascript" src="__PUBLIC_HOME__/js/GH.js?_=1535436384237752"></script>
+       <script type="text/javascript">
            $(document).ready(function(){
             $('#searchid').click(function(){
 
@@ -1349,7 +1289,6 @@
             });
            });
        </script>
-        </div>
 </body>
 
 </html>
