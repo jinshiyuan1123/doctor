@@ -11,12 +11,11 @@
     <meta name="mobile-agent" content="format=html5; url=/m">
     <meta http-equiv="Cache-Control" content="no-transform" />
     <link rel="shortcut icon" href="__PUBLIC_HOME__/favicon.ico" />
-    <link rel="stylesheet" href="__PUBLIC_HOME__/css/portal.base.min.css" type="text/css" />
-
-       <script src="__PUBLIC_HIS__/vendor/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="__PUBLIC_HOME__/css/portal.base.min.css?v=1535436384237752" type="text/css" />
+      <script src="__PUBLIC_HIS__/vendor/jquery/jquery.min.js"></script>
     <script src="__PUBLIC_HIS__/vendor/layer/layer.js"></script>
 
-  
+
     <script type="text/javascript">
         $GF = [];
         GreenLine = {};
@@ -43,34 +42,40 @@
             img.onerror = null;
         };
     </script>
-    <link rel="stylesheet" href="__PUBLIC_HOME__/css/index.css" type="text/css" />
- 
+    <link rel="stylesheet" href="__PUBLIC_HOME__/css/index.css?v=1535436384237752" type="text/css" />
+    <meta name="shenma-site-verification" content="9bfa5c53d29a8d687154a0d8dbe23383_1542098342">
 </head>
 
 <body>
 
 
+
+
+
     <div id="g-wrapper" class="g-wrapper g-page-1200 landing-wrapper">
         <div id="gh">
-       
+            <!--[if lt IE 8]>
+<div class="g-browser-update">你的浏览器实在太旧了，为了更加安全和方便地进行挂号，推荐您升级浏览器：<a target="_blank" href="http://browsehappy.com">立即升级</a></div>
+<![endif]-->
            <include file="Public:headlist" />
             <div class="gh-main">
                 <div class="container g-clear">
                     <div class="gh-logo ">
-                         <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="__PUBLIC_HOME__/images/logolist.jpg" alt="择医网" class="wy-logo">
+                        <!-- <a href="/"  onmousedown="" monitor="public_logo,publick_logo,headlogo"></a> -->
+                     <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="__PUBLIC_HOME__/images/logolist.jpg" alt="择医网" class="wy-logo">
                     </div>
 
 
 
 
                     <div class="gh-search gh-web-search gh-search-left ">
-                        <form class="gh-search-form" action="{:U('home/index/search')}" name="qform">
+                         <form class="gh-search-form" action="{:U('home/index/search')}" name="qform">
                             <span class="gh-search-input">
                 <span class="search-icon"></span>
-                            <input type="text" name="q" value="" autocomplete="off" maxlength="50" class="J_SearchQs" placeholder="请输入疾病名、科室名、医院名或医生名" />
-                           
+                            <input type="text" name="q" value="" autocomplete="off" maxlength="50" class="J_SearchQ" placeholder="请输入疾病名、科室名、医院名或医生名" />
+                            <input type="hidden" name="searchType" value="search" class="J_SearchType">
                             </span>
-                            <a class="gbn gbt-green2 radius-right big-search-bt" id="searchid"  target="_blank">搜索</a>
+                            <a class="gbn gbt-green2 radius-right big-search-bt" href="javascript:void(0);">搜索</a>
                             <div class="clear"></div>
                         </form>
                         <div class="search-key">
@@ -78,25 +83,25 @@
                             <a monitor="public_search,public_search,searchhot" monitor-search-q="防治冠心病" monitor-click-rank="0" href="" target="_blank" class=" J_SearchHot">
                             防治冠心病
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="高血压病" monitor-click-rank="1" href="=%E9%AB%98%E8%A1%80%E5%8E%8B%E7%97%85" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="高血压病" monitor-click-rank="1" href="/s.html?q=%E9%AB%98%E8%A1%80%E5%8E%8B%E7%97%85" class=" J_SearchHot">
                             高血压病
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="流感" monitor-click-rank="2" href="=%E6%B5%81%E6%84%9F" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="流感" monitor-click-rank="2" href="/s.html?q=%E6%B5%81%E6%84%9F" class=" J_SearchHot">
                             流感
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="心肌梗塞" monitor-click-rank="3" href="=%E5%BF%83%E8%82%8C%E6%A2%97%E5%A1%9E" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="心肌梗塞" monitor-click-rank="3" href="/s.html?q=%E5%BF%83%E8%82%8C%E6%A2%97%E5%A1%9E" class=" J_SearchHot">
                             心肌梗塞
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="骨折" monitor-click-rank="4" href="=%E9%AA%A8%E6%8A%98" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="骨折" monitor-click-rank="4" href="/s.html?q=%E9%AA%A8%E6%8A%98" class=" J_SearchHot">
                             骨折
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="心肌炎" monitor-click-rank="5" href="=%E5%BF%83%E8%82%8C%E7%82%8E" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="心肌炎" monitor-click-rank="5" href="/s.html?q=%E5%BF%83%E8%82%8C%E7%82%8E" class=" J_SearchHot">
                             心肌炎
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="结膜炎" monitor-click-rank="6" href="=%E7%BB%93%E8%86%9C%E7%82%8E" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="结膜炎" monitor-click-rank="6" href="/s.html?q=%E7%BB%93%E8%86%9C%E7%82%8E" class=" J_SearchHot">
                             结膜炎
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="支气管炎" monitor-click-rank="7" href="=%E6%94%AF%E6%B0%94%E7%AE%A1%E7%82%8E" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="支气管炎" monitor-click-rank="7" href="/s.html?q=%E6%94%AF%E6%B0%94%E7%AE%A1%E7%82%8E" class=" J_SearchHot">
                             支气管炎
                         </a>
 
@@ -110,7 +115,7 @@
 
                 <div class="container g-clear  ">
                     <div class="home-menu-ctn">
-                        <include file="Public:headtop" />
+                          <include file="Public:headtop" />
                         <div class="main-category-nav J_DiseaseCategory">
                             <h3><i></i>帮你快速找医生</h3>
                             <div class="nav-cats-wrapper J_FastCategory" style="display:block">
@@ -868,791 +873,9 @@
                         </div>
                     </div>
                 </div>
-  
-   <div class="g-container landing-section consult-section " data-lazy-url="">
-        
-    
-<div class="title-bar">
-    <h2>在线问诊
-    </h2>
-    <span class="slogan">
-        足不出户看医生（微医平台的问诊费由医生自行设定，平台不收取任何额外费用）
-    </span>
-</div>
+                 <include file="Public:headtoplist" />
 
-<div class="main-ctn g-clear">
-    <div class="g-grid-left">
-        <div class="consult-bar">
-            <div class="consult-fm">
-                <form class="J_FreeConsult" action="/before/consult/ask" method="get" target="_blank">
-                    <input class="consult-input" name="consultContent" type="text" maxlength="50" placeholder="">
-                    <span class="consult-txt" style="">
-                        <img src="https://static.guahao.cn/front/portal-pc-static/img/ask-tip.gif">
-                    </span>
-                    <button class="consult-btn" type="button">我要免费提问</button>
-                </form>
-            </div>
-        </div>
-        <div class="consult-list J_ConsultList" data-tab-url="/homepage/hpconsult/expertList/">
-            <div class="tabs">
-                <ul class="g-clear J_Nav">
-                    <li data-id="7f67f180-cff3-11e1-831f-5cf9dd2e7135" class="on" style="width: 76px;"><a href="/expert/7f67f180-cff3-11e1-831f-5cf9dd2e7135/妇产科">妇产科</a><span></span></li>
-                    <li data-id="7f6802e2-cff3-11e1-831f-5cf9dd2e7135" style="width: 62px;"><a href="/expert/7f6802e2-cff3-11e1-831f-5cf9dd2e7135/儿科">儿科</a><span></span></li>
-                    <li data-id="7f640bba-cff3-11e1-831f-5cf9dd2e7135" style="width: 62px;"><a href="/expert/7f640bba-cff3-11e1-831f-5cf9dd2e7135/内科">内科</a><span></span></li>
-                    <li data-id="7f67b77e-cff3-11e1-831f-5cf9dd2e7135" style="width: 62px;"><a href="/expert/7f67b77e-cff3-11e1-831f-5cf9dd2e7135/外科">外科</a><span></span></li>
-                    <li data-id="7f68c1d2-cff3-11e1-831f-5cf9dd2e7135" style="width: 76px;"><a href="/expert/7f68c1d2-cff3-11e1-831f-5cf9dd2e7135/中医科">中医科</a><span></span></li>
-                    <li data-id="7f688f14-cff3-11e1-831f-5cf9dd2e7135" style="width: 76px;" class=""><a href="/expert/&#9;7f688f14-cff3-11e1-831f-5cf9dd2e7135/皮肤科">皮肤科</a><span></span></li>
-                    <li data-id="7f67dd62-cff3-11e1-831f-5cf9dd2e7135" style="width: 62px;"><a href="/expert/7f67dd62-cff3-11e1-831f-5cf9dd2e7135/骨科">骨科</a><span></span></li>
-                    <li data-id="7f6866c4-cff3-11e1-831f-5cf9dd2e7135" style="width: 132px;"><a href="/expert/7f6866c4-cff3-11e1-831f-5cf9dd2e7135/耳鼻咽喉头颈科">耳鼻咽喉头颈科</a><span></span></li>
-                    <li data-id="7f69043a-cff3-11e1-831f-5cf9dd2e7135" style="width: 90px;"><a href="/expert/7f69043a-cff3-11e1-831f-5cf9dd2e7135/其他科室">其他科室</a><span></span></li>
-                </ul>
-            </div>
-            <div class="content-container J_ContentContainer">
-<div class="dept-consult J_Item">
-    <div class="doctor-show">
-        <div class="more"><i></i><a class="J_MoreDoctor" target="_blank" href="/expert/7f67f180-cff3-11e1-831f-5cf9dd2e7135/妇产科" monitor="home_ask,doctor_select,doctor_more">更多</a></div>
-          <div class="bx-wrapper" style="max-width: 865px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 315px;"><ul class="g-doctor-card g-clear J_DoctorList" style="width: 1720%; position: relative; left: -1776px;"><li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;" class="bx-clone">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/8bT15332698_image140.jpg?timestamp=1529565739746" alt="张艳珍" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="张艳珍">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">张艳珍</a><i>主任医师</i></p>
-              <p>产科门诊</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="杭州市第一人民医院">杭州市第一人民医院</span>
-                <span class="more-dot"></span>
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.8</em></span>
-              <span>问诊量 <i>298</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  擅长优生优育、孕产妇保健、产前筛查、产前诊断、产...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/ED26165FB5D45154E040A8C00F0124FE000#consult" monitor="home,doctor,picask" monitor-doctor-id="ED26165FB5D45154E040A8C00F0124FE000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥100</em>
-                    </span>
-                  </a>
-                   <a class="infos video" href="/expert/ED26165FB5D45154E040A8C00F0124FE000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="ED26165FB5D45154E040A8C00F0124FE000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em class="price">￥200</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/ED26165FB5D45154E040A8C00F0124FE000" monitor="home,ask,doctor" monitor-doctor-id="ED26165FB5D45154E040A8C00F0124FE000" target="_blank">张艳珍</a>
-            </div>
-                <a class="expert-team" target="_blank" href="/eteam/2134" monitor="home,ask,team" monitor-team-id="2134"><span class="txt">专家团队</span><i class="arrow"></i></a>
-          </li><li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;" class="bx-clone">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/zt42695674_image140.jpg" alt="李娜" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="李娜">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">李娜</a><i>副主任医师</i></p>
-              <p>妇产科</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="新疆生产建设兵团医院">新疆生产建设兵团医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.8</em></span>
-              <span>问诊量 <i>233</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  产科领域擅长孕期保健、高危妊娠包括妊娠合并内外科...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image disabled" href="javascript:;">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em>未开通</em>
-                    </span>
-                  </a>
-                  <a class="infos video" href="/expert/97a0a0b8-c720-11e1-913c-5cf9dd2e7135000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="97a0a0b8-c720-11e1-913c-5cf9dd2e7135000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em>暂无排班</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/97a0a0b8-c720-11e1-913c-5cf9dd2e7135000" monitor="home,ask,doctor" monitor-doctor-id="97a0a0b8-c720-11e1-913c-5cf9dd2e7135000" target="_blank">李娜</a>
-            </div>
-                <a class="expert-team" target="_blank" href="/eteam/6920" monitor="home,ask,team" monitor-team-id="6920"><span class="txt">专家团队</span><i class="arrow"></i></a>
-          </li><li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;" class="bx-clone">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/IlP28130429_image140.jpg?timestamp=1514178692745" alt="孙惠兰" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="孙惠兰">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">孙惠兰</a><i>主任医师</i></p>
-              <p>妇科名医</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="浙江大学医学院附属妇产科医院">浙江大学医学院附属妇产科医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.9</em></span>
-              <span>问诊量 <i>427</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  妇科炎症、不孕不育、优生优育、计划生育、妇科肿瘤...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/c6d7ab00-2e89-4234-a05f-32ba9a8945b2000#consult" monitor="home,doctor,picask" monitor-doctor-id="c6d7ab00-2e89-4234-a05f-32ba9a8945b2000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥65</em>
-                    </span>
-                  </a>
-                  <a class="infos video" href="/expert/c6d7ab00-2e89-4234-a05f-32ba9a8945b2000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="c6d7ab00-2e89-4234-a05f-32ba9a8945b2000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em>暂无排班</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/c6d7ab00-2e89-4234-a05f-32ba9a8945b2000" monitor="home,ask,doctor" monitor-doctor-id="c6d7ab00-2e89-4234-a05f-32ba9a8945b2000" target="_blank">孙惠兰</a>
-            </div>
-          </li><li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;" class="bx-clone">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/VQV32381178_image140.jpg?timestamp=1518164864920" alt="韦浪花" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="韦浪花">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">韦浪花</a><i>副主任医师</i></p>
-              <p>计划生育科资深专家</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="浙江大学医学院附属妇产科医院">浙江大学医学院附属妇产科医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.9</em></span>
-              <span>问诊量 <i>91</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  计划生育疾病的诊断与治疗
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/c96ad697-c8c9-44bd-a83b-191141de1c8b000#consult" monitor="home,doctor,picask" monitor-doctor-id="c96ad697-c8c9-44bd-a83b-191141de1c8b000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥80</em>
-                    </span>
-                  </a>
-                   <a class="infos video" href="/expert/c96ad697-c8c9-44bd-a83b-191141de1c8b000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="c96ad697-c8c9-44bd-a83b-191141de1c8b000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em class="price">￥100</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/c96ad697-c8c9-44bd-a83b-191141de1c8b000" monitor="home,ask,doctor" monitor-doctor-id="c96ad697-c8c9-44bd-a83b-191141de1c8b000" target="_blank">韦浪花</a>
-            </div>
-          </li>
-            <li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/MiQ2828568_image140.jpg?timestamp=1469714574274" alt="刁斌" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="刁斌">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">刁斌</a><i>主任医师</i></p>
-              <p>妇科</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="北部战区总医院">北部战区总医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.9</em></span>
-              <span>问诊量 <i>266</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  女性盆底疾病、妇科肿瘤、妇科内分泌及病理产科的诊...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/45558090-a2e5-44a2-b573-6911626c5901000#consult" monitor="home,doctor,picask" monitor-doctor-id="45558090-a2e5-44a2-b573-6911626c5901000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥120</em>
-                    </span>
-                  </a>
-                   <a class="infos video" href="/expert/45558090-a2e5-44a2-b573-6911626c5901000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="45558090-a2e5-44a2-b573-6911626c5901000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em class="price">￥150</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/45558090-a2e5-44a2-b573-6911626c5901000" monitor="home,ask,doctor" monitor-doctor-id="45558090-a2e5-44a2-b573-6911626c5901000" target="_blank">刁斌</a>
-            </div>
-          </li>
-            <li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/EeV2692835_image140.jpg" alt="邹雁" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="邹雁">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">邹雁</a><i>主任医师</i></p>
-              <p>妇产科</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="新疆生产建设兵团医院">新疆生产建设兵团医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.9</em></span>
-              <span>问诊量 <i>931</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  从事妇产科工作20余年 不仅具有良好的诊疗思维方...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/960287b4-c720-11e1-913c-5cf9dd2e7135000#consult" monitor="home,doctor,picask" monitor-doctor-id="960287b4-c720-11e1-913c-5cf9dd2e7135000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥60</em>
-                    </span>
-                  </a>
-                   <a class="infos video" href="/expert/960287b4-c720-11e1-913c-5cf9dd2e7135000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="960287b4-c720-11e1-913c-5cf9dd2e7135000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em class="price">￥120</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/960287b4-c720-11e1-913c-5cf9dd2e7135000" monitor="home,ask,doctor" monitor-doctor-id="960287b4-c720-11e1-913c-5cf9dd2e7135000" target="_blank">邹雁</a>
-            </div>
-                <a class="expert-team" target="_blank" href="/eteam/7371" monitor="home,ask,team" monitor-team-id="7371"><span class="txt">专家团队</span><i class="arrow"></i></a>
-          </li>
-            <li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/Bde2680340_image140.jpg" alt="韩凤英" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="韩凤英">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">韩凤英</a><i>副主任医师</i></p>
-              <p>妇产科</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="中国人民解放军第474医院">中国人民解放军第474医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.7</em></span>
-              <span>问诊量 <i>600</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  计划生育手术及相关指导、宫颈疾病的早期筛查及手术...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000#consult" monitor="home,doctor,picask" monitor-doctor-id="3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥60</em>
-                    </span>
-                  </a>
-                  <a class="infos video" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em>暂无排班</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000" monitor="home,ask,doctor" monitor-doctor-id="3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000" target="_blank">韩凤英</a>
-            </div>
-          </li>
-            <li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/NXY2618213_image140.jpg" alt="陈红" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="陈红">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">陈红</a><i>主任医师</i></p>
-              <p>妇科门诊</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="武汉大学中南医院">武汉大学中南医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.6</em></span>
-              <span>问诊量 <i>25</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  1.宫腔镜、腹腔镜和诺舒微创技术诊治妇科疾病，如...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/3bee3608-f8d3-4cac-9939-14041c5e8a6c000#consult" monitor="home,doctor,picask" monitor-doctor-id="3bee3608-f8d3-4cac-9939-14041c5e8a6c000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥60</em>
-                    </span>
-                  </a>
-                   <a class="infos video" href="/expert/3bee3608-f8d3-4cac-9939-14041c5e8a6c000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="3bee3608-f8d3-4cac-9939-14041c5e8a6c000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em class="price">￥100</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/3bee3608-f8d3-4cac-9939-14041c5e8a6c000" monitor="home,ask,doctor" monitor-doctor-id="3bee3608-f8d3-4cac-9939-14041c5e8a6c000" target="_blank">陈红</a>
-            </div>
-                <a class="expert-team" target="_blank" href="/eteam/4629" monitor="home,ask,team" monitor-team-id="4629"><span class="txt">专家团队</span><i class="arrow"></i></a>
-          </li>
-            <li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/8bT15332698_image140.jpg?timestamp=1529565739746" alt="张艳珍" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="张艳珍">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">张艳珍</a><i>主任医师</i></p>
-              <p>产科门诊</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="杭州市第一人民医院">杭州市第一人民医院</span>
-                <span class="more-dot"></span>
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.8</em></span>
-              <span>问诊量 <i>298</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  擅长优生优育、孕产妇保健、产前筛查、产前诊断、产...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/ED26165FB5D45154E040A8C00F0124FE000#consult" monitor="home,doctor,picask" monitor-doctor-id="ED26165FB5D45154E040A8C00F0124FE000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥100</em>
-                    </span>
-                  </a>
-                   <a class="infos video" href="/expert/ED26165FB5D45154E040A8C00F0124FE000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="ED26165FB5D45154E040A8C00F0124FE000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em class="price">￥200</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/ED26165FB5D45154E040A8C00F0124FE000" monitor="home,ask,doctor" monitor-doctor-id="ED26165FB5D45154E040A8C00F0124FE000" target="_blank">张艳珍</a>
-            </div>
-                <a class="expert-team" target="_blank" href="/eteam/2134" monitor="home,ask,team" monitor-team-id="2134"><span class="txt">专家团队</span><i class="arrow"></i></a>
-          </li>
-            <li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/zt42695674_image140.jpg" alt="李娜" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="李娜">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">李娜</a><i>副主任医师</i></p>
-              <p>妇产科</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="新疆生产建设兵团医院">新疆生产建设兵团医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.8</em></span>
-              <span>问诊量 <i>233</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  产科领域擅长孕期保健、高危妊娠包括妊娠合并内外科...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image disabled" href="javascript:;">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em>未开通</em>
-                    </span>
-                  </a>
-                  <a class="infos video" href="/expert/97a0a0b8-c720-11e1-913c-5cf9dd2e7135000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="97a0a0b8-c720-11e1-913c-5cf9dd2e7135000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em>暂无排班</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/97a0a0b8-c720-11e1-913c-5cf9dd2e7135000" monitor="home,ask,doctor" monitor-doctor-id="97a0a0b8-c720-11e1-913c-5cf9dd2e7135000" target="_blank">李娜</a>
-            </div>
-                <a class="expert-team" target="_blank" href="/eteam/6920" monitor="home,ask,team" monitor-team-id="6920"><span class="txt">专家团队</span><i class="arrow"></i></a>
-          </li>
-            <li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/IlP28130429_image140.jpg?timestamp=1514178692745" alt="孙惠兰" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="孙惠兰">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">孙惠兰</a><i>主任医师</i></p>
-              <p>妇科名医</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="浙江大学医学院附属妇产科医院">浙江大学医学院附属妇产科医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.9</em></span>
-              <span>问诊量 <i>427</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  妇科炎症、不孕不育、优生优育、计划生育、妇科肿瘤...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/c6d7ab00-2e89-4234-a05f-32ba9a8945b2000#consult" monitor="home,doctor,picask" monitor-doctor-id="c6d7ab00-2e89-4234-a05f-32ba9a8945b2000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥65</em>
-                    </span>
-                  </a>
-                  <a class="infos video" href="/expert/c6d7ab00-2e89-4234-a05f-32ba9a8945b2000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="c6d7ab00-2e89-4234-a05f-32ba9a8945b2000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em>暂无排班</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/c6d7ab00-2e89-4234-a05f-32ba9a8945b2000" monitor="home,ask,doctor" monitor-doctor-id="c6d7ab00-2e89-4234-a05f-32ba9a8945b2000" target="_blank">孙惠兰</a>
-            </div>
-          </li>
-            <li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/VQV32381178_image140.jpg?timestamp=1518164864920" alt="韦浪花" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="韦浪花">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">韦浪花</a><i>副主任医师</i></p>
-              <p>计划生育科资深专家</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="浙江大学医学院附属妇产科医院">浙江大学医学院附属妇产科医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.9</em></span>
-              <span>问诊量 <i>91</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  计划生育疾病的诊断与治疗
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/c96ad697-c8c9-44bd-a83b-191141de1c8b000#consult" monitor="home,doctor,picask" monitor-doctor-id="c96ad697-c8c9-44bd-a83b-191141de1c8b000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥80</em>
-                    </span>
-                  </a>
-                   <a class="infos video" href="/expert/c96ad697-c8c9-44bd-a83b-191141de1c8b000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="c96ad697-c8c9-44bd-a83b-191141de1c8b000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em class="price">￥100</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/c96ad697-c8c9-44bd-a83b-191141de1c8b000" monitor="home,ask,doctor" monitor-doctor-id="c96ad697-c8c9-44bd-a83b-191141de1c8b000" target="_blank">韦浪花</a>
-            </div>
-          </li>
-    <li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;" class="bx-clone">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/MiQ2828568_image140.jpg?timestamp=1469714574274" alt="刁斌" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="刁斌">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">刁斌</a><i>主任医师</i></p>
-              <p>妇科</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="北部战区总医院">北部战区总医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.9</em></span>
-              <span>问诊量 <i>266</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  女性盆底疾病、妇科肿瘤、妇科内分泌及病理产科的诊...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/45558090-a2e5-44a2-b573-6911626c5901000#consult" monitor="home,doctor,picask" monitor-doctor-id="45558090-a2e5-44a2-b573-6911626c5901000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥120</em>
-                    </span>
-                  </a>
-                   <a class="infos video" href="/expert/45558090-a2e5-44a2-b573-6911626c5901000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="45558090-a2e5-44a2-b573-6911626c5901000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em class="price">￥150</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/45558090-a2e5-44a2-b573-6911626c5901000" monitor="home,ask,doctor" monitor-doctor-id="45558090-a2e5-44a2-b573-6911626c5901000" target="_blank">刁斌</a>
-            </div>
-          </li><li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;" class="bx-clone">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/EeV2692835_image140.jpg" alt="邹雁" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="邹雁">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">邹雁</a><i>主任医师</i></p>
-              <p>妇产科</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="新疆生产建设兵团医院">新疆生产建设兵团医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.9</em></span>
-              <span>问诊量 <i>931</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  从事妇产科工作20余年 不仅具有良好的诊疗思维方...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/960287b4-c720-11e1-913c-5cf9dd2e7135000#consult" monitor="home,doctor,picask" monitor-doctor-id="960287b4-c720-11e1-913c-5cf9dd2e7135000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥60</em>
-                    </span>
-                  </a>
-                   <a class="infos video" href="/expert/960287b4-c720-11e1-913c-5cf9dd2e7135000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="960287b4-c720-11e1-913c-5cf9dd2e7135000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em class="price">￥120</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/960287b4-c720-11e1-913c-5cf9dd2e7135000" monitor="home,ask,doctor" monitor-doctor-id="960287b4-c720-11e1-913c-5cf9dd2e7135000" target="_blank">邹雁</a>
-            </div>
-                <a class="expert-team" target="_blank" href="/eteam/7371" monitor="home,ask,team" monitor-team-id="7371"><span class="txt">专家团队</span><i class="arrow"></i></a>
-          </li><li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;" class="bx-clone">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/Bde2680340_image140.jpg" alt="韩凤英" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="韩凤英">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">韩凤英</a><i>副主任医师</i></p>
-              <p>妇产科</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="中国人民解放军第474医院">中国人民解放军第474医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.7</em></span>
-              <span>问诊量 <i>600</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  计划生育手术及相关指导、宫颈疾病的早期筛查及手术...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000#consult" monitor="home,doctor,picask" monitor-doctor-id="3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥60</em>
-                    </span>
-                  </a>
-                  <a class="infos video" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em>暂无排班</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000" monitor="home,ask,doctor" monitor-doctor-id="3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000" target="_blank">韩凤英</a>
-            </div>
-          </li><li style="float: left; list-style: none; position: relative; width: 199px; margin-right: 23px;" class="bx-clone">
-              <div class="card-inner">
-              <a class="doctor-avatar" href="javascript:;">
-                   <img src="https://kano.guahao.cn/NXY2618213_image140.jpg" alt="陈红" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" title="陈红">
-                        <i class="opened"></i>
-              </a>
-              
-                <p class="doctor-name"><a href="javascript:;">陈红</a><i>主任医师</i></p>
-              <p>妇科门诊</p>
-              <p class="doctor-hospital">
-                <span class="g-txt-ell" title="武汉大学中南医院">武汉大学中南医院</span>
-                
-              </p>
-            <p class="doctor-consult">
-              <span class="star">评分 <em>9.6</em></span>
-              <span>问诊量 <i>25</i></span>
-            </p>
-            
-            <p class="doctor-good">擅长：
-                  1.宫腔镜、腹腔镜和诺舒微创技术诊治妇科疾病，如...
-            </p>
-
-              <div class="doctor-service">
-                  <a class="infos image" href="/expert/3bee3608-f8d3-4cac-9939-14041c5e8a6c000#consult" monitor="home,doctor,picask" monitor-doctor-id="3bee3608-f8d3-4cac-9939-14041c5e8a6c000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>图文问诊</em>
-                      <em class="price">￥60</em>
-                    </span>
-                  </a>
-                   <a class="infos video" href="/expert/3bee3608-f8d3-4cac-9939-14041c5e8a6c000#consult" monitor="ask,doctor,vpask" monitor-doctor-id="3bee3608-f8d3-4cac-9939-14041c5e8a6c000" target="_blank">
-                    <i></i>
-                    <span class="service-name">
-                      <em>视话问诊</em>
-                      <em class="price">￥100</em>
-                    </span>
-                  </a>
-              </div>
-              <a class="cover-bg seo-anchor-text" href="/expert/3bee3608-f8d3-4cac-9939-14041c5e8a6c000" monitor="home,ask,doctor" monitor-doctor-id="3bee3608-f8d3-4cac-9939-14041c5e8a6c000" target="_blank">陈红</a>
-            </div>
-                <a class="expert-team" target="_blank" href="/eteam/4629" monitor="home,ask,team" monitor-team-id="4629"><span class="txt">专家团队</span><i class="arrow"></i></a>
-          </li></ul></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href=""></a><a class="bx-next" href=""></a></div></div></div>
-</div>
-
-<div class="consult-show">
-<ul class="J_ConsultShow">
-        <li>
-            <div class="ask g-clear">
-              <i class="pre-icon">问</i>
-              <a target="_blank" href="/consult/detail/12438233" style="color: #333;text-decoration:none;"><span class="content" title="月经走后10天又出血了，不知道是第二次来月经还是异常出血。已经做过彩超">月经走后10天又出血了，不知道是第二次来月经还是异常出血。已经做过彩超</span></a>
-              <span class="date">时间：2017-06-26</span>
-            </div>
-            <div class="answer g-clear" style="display: block;">
-              <i class="pre-icon">答</i>
-              <div class="inner g-clear">
-                <i class="arrow"></i>
-                <a target="_blank" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000" monitor="">
-                    <img class="portrait" src="https://kano.guahao.cn/Bde2680340_image140.jpg" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" alt="韩凤英" height="35" width="35">
-                </a>
-                <p>
-                  <span class="doc-info"><a target="_blank" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000">韩凤英</a>&nbsp;副主任医师&nbsp;&nbsp;中国人民解放军第474医院-妇产科</span>
-                  <span class="doc-answer">从B超和你的未次月经时间看，不排除这次出血是排卵期出血，你不用紧张，口服抗炎、止血药物5天，观察观察。&nbsp;&nbsp;<a target="_blank" href="/consult/detail/12438233" monitor="home,ask,rate">详细</a></span>
-                </p>
-              </div>
-            </div>
-        </li>
-        <li>
-            <div class="ask g-clear">
-              <i class="pre-icon">问</i>
-              <a target="_blank" href="/consult/detail/12634918" style="color: #333;text-decoration:none;"><span class="content" title="医生，我最后一次经期是2017年5月15号！6月17号早上查出怀孕，中午开始感冒发烧有点咳嗽！发烧一直持续到18号下午才退烧！温度一直都在38.2度左右！最高就是39.4！几个小时！医生没让吃药！让物理降温！听说前三个月感冒发烧会导致胎儿畸形！所以我这胎还能要吗！">医生，我最后一次经期是2017年5月15号！6月17号早上查出怀孕，中午开始感冒发烧有点咳嗽！发烧一直持续到18号下午才退烧！温度一直都在38.2度左右！最高就是39.4！几个小时！医生没让吃药！让物理降温！听说前三个月感冒发烧会导致胎儿畸形！所以我这胎还能要吗！</span></a>
-              <span class="date">时间：2017-06-26</span>
-            </div>
-            <div class="answer g-clear">
-              <i class="pre-icon">答</i>
-              <div class="inner g-clear">
-                <i class="arrow"></i>
-                <a target="_blank" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000" monitor="">
-                    <img class="portrait" src="https://kano.guahao.cn/Bde2680340_image140.jpg" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" alt="韩凤英" height="35" width="35">
-                </a>
-                <p>
-                  <span class="doc-info"><a target="_blank" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000">韩凤英</a>&nbsp;副主任医师&nbsp;&nbsp;中国人民解放军第474医院-妇产科</span>
-                  <span class="doc-answer">从你的未次月经算，你才孕36天，因时间太短，建议一周后复查B超，以明确宫内孕。孕早期感冒发烧多少对胚胎是有影响...&nbsp;&nbsp;<a target="_blank" href="/consult/detail/12634918" monitor="home,ask,rate">详细</a></span>
-                </p>
-              </div>
-            </div>
-        </li>
-        <li>
-            <div class="ask g-clear">
-              <i class="pre-icon">问</i>
-              <a target="_blank" href="/consult/detail/10782672" style="color: #333;text-decoration:none;"><span class="content" title="外阴长疙瘩，会疼，白带异常">外阴长疙瘩，会疼，白带异常</span></a>
-              <span class="date">时间：2017-05-06</span>
-            </div>
-            <div class="answer g-clear">
-              <i class="pre-icon">答</i>
-              <div class="inner g-clear">
-                <i class="arrow"></i>
-                <a target="_blank" href="/expert/45558090-a2e5-44a2-b573-6911626c5901000" monitor="">
-                    <img class="portrait" src="https://kano.guahao.cn/MiQ2828568_image140.jpg?timestamp=1469714574274" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" alt="刁斌" height="35" width="35">
-                </a>
-                <p>
-                  <span class="doc-info"><a target="_blank" href="/expert/45558090-a2e5-44a2-b573-6911626c5901000">刁斌</a>&nbsp;主任医师&nbsp;&nbsp;北部战区总医院-妇科</span>
-                  <span class="doc-answer">外阴小疙瘩 痒 可能霉菌性阴道炎 没有性生活就口服氟康唑150 毫克 72 小时一次 2次就可以&nbsp;&nbsp;<a target="_blank" href="/consult/detail/10782672" monitor="home,ask,rate">详细</a></span>
-                </p>
-              </div>
-            </div>
-        </li>
-      </ul>  
-    </div>
-</div>
- </div>
-        </div>
-    </div>
-    <div class="g-grid-right"> 
-        <div class="freeconsultation">
-            <a href="/internet/hospital" class="url-wrap" monitor="home,ask_more,find_spask" target="_blank"><img src="__PUBLIC_HOME__/images/1111.png" alt=""></a>
-            <a href="/internet/hospital" class="gbn gbt-orange" monitor="home,ask_more,find_spask" target="_blank">找专家问诊</a>
-           
-               <img src="__PUBLIC_HOME__/images/290.png" alt="">
-           
-        </div>
-        <a target="_blank" href="" class="volunteer seo-anchor-text" onmousedown="return _smartlog(this,'JRYZ')" monitor="home_activity,todayask,todayask">
-            今日义诊
-        </a>    
-    </div></div></div>           
-               
-                <div class="g-container landing-section news-section">
+              <div class="g-container landing-section news-section">
                     <div class="title-bar">
                          <h2>健康资讯</h2>
                         <span class="slogan">
@@ -1991,13 +1214,16 @@
         </div>
 
         <include file="Public:bottom" />
-       
+
+        <div id="gm-bg"></div>
+        <div id="gm-mask">
+        </div>
         <script type="text/javascript">
             $GC = {
                 debug: false,
                 echartServer: '//im-web.guahao.cn',
                 isLogined: true,
-                guahaoServer: '',
+                guahaoServer: 'https://www.guahao.com',
                 staticServer: 'https://static.guahao.cn',
                 imageServer: 'https://h2img.guahao.com',
                 kanoServer: 'https://kano.guahao.cn',
@@ -2047,23 +1273,69 @@
                 }
             ];
         </script>
-        <script type="text/javascript" src="__PUBLIC_HOME__/js/GL.js?_=1535436384237752"></script>
-       
-       <script type="text/javascript">
-           $(document).ready(function(){
-            $('#searchid').click(function(){
+        <script type="text/javascript" src="https://static.guahao.cn/front/portal-pc-static/js/base/GL.js?_=1535436384237752"></script>
+        <script>
+            //同盾token 发送
+            (function() {
+                _fmOpt = {
+                    partner: 'weiyi',
+                    appName: 'weiyi_web',
+                    token: "weiyi-" + new Date().getTime() + '-' + Math.random().toString(16),
+                    fmb: true,
+                    getinfo: function() {
+                        return "e3Y6ICIyLjUuMCIsIG9zOiAid2ViIiwgczogMTk5LCBlOiAianMgbm90IGRvd25sb2FkIn0=";
+                    }
+                };
+                var cimg = new Image(1, 1);
+                cimg.onload = function() {
+                    _fmOpt.imgLoaded = true;
+                };
+                cimg.src = "https://fp.fraudmetrix.cn/fp/clear.png?partnerCode=weiyi&appName=weiyi_web&tokenId=" + _fmOpt.token;
+                var fm = document.createElement('script');
+                fm.type = 'text/javascript';
+                fm.async = true;
+                fm.src = '//static.fraudmetrix.cn/v2/fm.js?ver=0.1&t=' + (new Date().getTime() / 3600000).toFixed(0);
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fm, s);
+                setTimeout(function() {
+                    var fmCode = _fmOpt.getinfo();
+                    if (fmCode.length <= 256) {
+                        setCookie('_fm_code', _fmOpt.getinfo())
+                    };
+                }, 1200);
 
-                var q = $('.J_SearchQs').val();
-               
-                if(q){
-                     window.location.href='{:U('home/index/search')}'+'?q='+q+'&searchType=search'; 
+                function setCookie(name, val) {
+                    var expires = '; expires=' + new Date(new Date().getTime() + 30 * 24 * 3600 * 1000).toUTCString()
+                    document.cookie = [name, '=', encodeURIComponent(val), expires, '; path=/'].join('')
                 }
-              
-              
-            });
-           });
-       </script>
-        
+            })();
+        </script>
+
+        <script>
+            (function() {
+                var bp = document.createElement('script');
+                var curProtocol = window.location.protocol.split(':')[0];
+                if (curProtocol === 'https') {
+                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                } else {
+                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                }
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
+            })();
+        </script>
+        <div class="hide">
+            <script type="text/javascript">
+                (function() {
+
+                    // baidu
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?5697507823ecd633819db0771bb99cfb";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+        </div>
 </body>
 
 </html>

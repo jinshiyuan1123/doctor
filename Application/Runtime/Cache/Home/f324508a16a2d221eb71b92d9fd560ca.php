@@ -11,12 +11,11 @@
     <meta name="mobile-agent" content="format=html5; url=/m">
     <meta http-equiv="Cache-Control" content="no-transform" />
     <link rel="shortcut icon" href="/Public/home/favicon.ico" />
-    <link rel="stylesheet" href="/Public/home/css/portal.base.min.css" type="text/css" />
-
-       <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="/Public/home/css/portal.base.min.css?v=1535436384237752" type="text/css" />
+      <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
     <script src="/Public/his/vendor/layer/layer.js"></script>
 
-  
+
     <script type="text/javascript">
         $GF = [];
         GreenLine = {};
@@ -43,16 +42,21 @@
             img.onerror = null;
         };
     </script>
-    <link rel="stylesheet" href="/Public/home/css/index.css" type="text/css" />
- 
+    <link rel="stylesheet" href="/Public/home/css/index.css?v=1535436384237752" type="text/css" />
+    <meta name="shenma-site-verification" content="9bfa5c53d29a8d687154a0d8dbe23383_1542098342">
 </head>
 
 <body>
 
 
+
+
+
     <div id="g-wrapper" class="g-wrapper g-page-1200 landing-wrapper">
         <div id="gh">
-       
+            <!--[if lt IE 8]>
+<div class="g-browser-update">你的浏览器实在太旧了，为了更加安全和方便地进行挂号，推荐您升级浏览器：<a target="_blank" href="http://browsehappy.com">立即升级</a></div>
+<![endif]-->
            <div class="gh-nav">
     <div class="container g-clear">
         <div class="g-left">
@@ -102,20 +106,21 @@
             <div class="gh-main">
                 <div class="container g-clear">
                     <div class="gh-logo ">
-                         <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo">
+                        <!-- <a href="/"  onmousedown="" monitor="public_logo,publick_logo,headlogo"></a> -->
+                     <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo">
                     </div>
 
 
 
 
                     <div class="gh-search gh-web-search gh-search-left ">
-                        <form class="gh-search-form" action="<?php echo U('home/index/search');?>" name="qform">
+                         <form class="gh-search-form" action="<?php echo U('home/index/search');?>" name="qform">
                             <span class="gh-search-input">
                 <span class="search-icon"></span>
-                            <input type="text" name="q" value="" autocomplete="off" maxlength="50" class="J_SearchQs" placeholder="请输入疾病名、科室名、医院名或医生名" />
-                           
+                            <input type="text" name="q" value="" autocomplete="off" maxlength="50" class="J_SearchQ" placeholder="请输入疾病名、科室名、医院名或医生名" />
+                            <input type="hidden" name="searchType" value="search" class="J_SearchType">
                             </span>
-                            <a class="gbn gbt-green2 radius-right big-search-bt" id="searchid"  target="_blank">搜索</a>
+                            <a class="gbn gbt-green2 radius-right big-search-bt" href="javascript:void(0);">搜索</a>
                             <div class="clear"></div>
                         </form>
                         <div class="search-key">
@@ -123,25 +128,25 @@
                             <a monitor="public_search,public_search,searchhot" monitor-search-q="防治冠心病" monitor-click-rank="0" href="" target="_blank" class=" J_SearchHot">
                             防治冠心病
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="高血压病" monitor-click-rank="1" href="=%E9%AB%98%E8%A1%80%E5%8E%8B%E7%97%85" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="高血压病" monitor-click-rank="1" href="/s.html?q=%E9%AB%98%E8%A1%80%E5%8E%8B%E7%97%85" class=" J_SearchHot">
                             高血压病
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="流感" monitor-click-rank="2" href="=%E6%B5%81%E6%84%9F" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="流感" monitor-click-rank="2" href="/s.html?q=%E6%B5%81%E6%84%9F" class=" J_SearchHot">
                             流感
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="心肌梗塞" monitor-click-rank="3" href="=%E5%BF%83%E8%82%8C%E6%A2%97%E5%A1%9E" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="心肌梗塞" monitor-click-rank="3" href="/s.html?q=%E5%BF%83%E8%82%8C%E6%A2%97%E5%A1%9E" class=" J_SearchHot">
                             心肌梗塞
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="骨折" monitor-click-rank="4" href="=%E9%AA%A8%E6%8A%98" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="骨折" monitor-click-rank="4" href="/s.html?q=%E9%AA%A8%E6%8A%98" class=" J_SearchHot">
                             骨折
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="心肌炎" monitor-click-rank="5" href="=%E5%BF%83%E8%82%8C%E7%82%8E" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="心肌炎" monitor-click-rank="5" href="/s.html?q=%E5%BF%83%E8%82%8C%E7%82%8E" class=" J_SearchHot">
                             心肌炎
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="结膜炎" monitor-click-rank="6" href="=%E7%BB%93%E8%86%9C%E7%82%8E" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="结膜炎" monitor-click-rank="6" href="/s.html?q=%E7%BB%93%E8%86%9C%E7%82%8E" class=" J_SearchHot">
                             结膜炎
                         </a>
-                            <a monitor="public_search,public_search,searchhot" monitor-search-q="支气管炎" monitor-click-rank="7" href="=%E6%94%AF%E6%B0%94%E7%AE%A1%E7%82%8E" class=" J_SearchHot">
+                            <a monitor="public_search,public_search,searchhot" monitor-search-q="支气管炎" monitor-click-rank="7" href="/s.html?q=%E6%94%AF%E6%B0%94%E7%AE%A1%E7%82%8E" class=" J_SearchHot">
                             支气管炎
                         </a>
 
@@ -155,7 +160,7 @@
 
                 <div class="container g-clear  ">
                     <div class="home-menu-ctn">
-                        <ul class="g-clear main-menu-nav">
+                          <ul class="g-clear main-menu-nav">
 <li class="hot">
     <a class="own-tab" target="_blank" href="<?php echo U('home/index/hospital');?>" monitor="public_menu,home_menu,ask">在线问诊</a>
 </li>
@@ -931,8 +936,7 @@
                         </div>
                     </div>
                 </div>
-  
-   <div class="g-container landing-section consult-section " data-lazy-url="">
+                    <div class="g-container landing-section consult-section " data-lazy-url="">
         
     
 <div class="title-bar">
@@ -1713,9 +1717,9 @@
         <a target="_blank" href="" class="volunteer seo-anchor-text" onmousedown="return _smartlog(this,'JRYZ')" monitor="home_activity,todayask,todayask">
             今日义诊
         </a>    
-    </div></div></div>           
-               
-                <div class="g-container landing-section news-section">
+    </div></div></div> 
+
+              <div class="g-container landing-section news-section">
                     <div class="title-bar">
                          <h2>健康资讯</h2>
                         <span class="slogan">
@@ -2059,13 +2063,16 @@
             </div>
         </div>
 
-       
+
+        <div id="gm-bg"></div>
+        <div id="gm-mask">
+        </div>
         <script type="text/javascript">
             $GC = {
                 debug: false,
                 echartServer: '//im-web.guahao.cn',
                 isLogined: true,
-                guahaoServer: '',
+                guahaoServer: 'https://www.guahao.com',
                 staticServer: 'https://static.guahao.cn',
                 imageServer: 'https://h2img.guahao.com',
                 kanoServer: 'https://kano.guahao.cn',
@@ -2115,23 +2122,69 @@
                 }
             ];
         </script>
-        <script type="text/javascript" src="/Public/home/js/GL.js?_=1535436384237752"></script>
-       
-       <script type="text/javascript">
-           $(document).ready(function(){
-            $('#searchid').click(function(){
+        <script type="text/javascript" src="https://static.guahao.cn/front/portal-pc-static/js/base/GL.js?_=1535436384237752"></script>
+        <script>
+            //同盾token 发送
+            (function() {
+                _fmOpt = {
+                    partner: 'weiyi',
+                    appName: 'weiyi_web',
+                    token: "weiyi-" + new Date().getTime() + '-' + Math.random().toString(16),
+                    fmb: true,
+                    getinfo: function() {
+                        return "e3Y6ICIyLjUuMCIsIG9zOiAid2ViIiwgczogMTk5LCBlOiAianMgbm90IGRvd25sb2FkIn0=";
+                    }
+                };
+                var cimg = new Image(1, 1);
+                cimg.onload = function() {
+                    _fmOpt.imgLoaded = true;
+                };
+                cimg.src = "https://fp.fraudmetrix.cn/fp/clear.png?partnerCode=weiyi&appName=weiyi_web&tokenId=" + _fmOpt.token;
+                var fm = document.createElement('script');
+                fm.type = 'text/javascript';
+                fm.async = true;
+                fm.src = '//static.fraudmetrix.cn/v2/fm.js?ver=0.1&t=' + (new Date().getTime() / 3600000).toFixed(0);
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fm, s);
+                setTimeout(function() {
+                    var fmCode = _fmOpt.getinfo();
+                    if (fmCode.length <= 256) {
+                        setCookie('_fm_code', _fmOpt.getinfo())
+                    };
+                }, 1200);
 
-                var q = $('.J_SearchQs').val();
-               
-                if(q){
-                     window.location.href='<?php echo U('home/index/search');?>'+'?q='+q+'&searchType=search'; 
+                function setCookie(name, val) {
+                    var expires = '; expires=' + new Date(new Date().getTime() + 30 * 24 * 3600 * 1000).toUTCString()
+                    document.cookie = [name, '=', encodeURIComponent(val), expires, '; path=/'].join('')
                 }
-              
-              
-            });
-           });
-       </script>
-        
+            })();
+        </script>
+
+        <script>
+            (function() {
+                var bp = document.createElement('script');
+                var curProtocol = window.location.protocol.split(':')[0];
+                if (curProtocol === 'https') {
+                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                } else {
+                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                }
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
+            })();
+        </script>
+        <div class="hide">
+            <script type="text/javascript">
+                (function() {
+
+                    // baidu
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?5697507823ecd633819db0771bb99cfb";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+        </div>
 </body>
 
 </html>
