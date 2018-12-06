@@ -90,6 +90,8 @@ function getCity($ip = '')
 
     public function index()
     {
+
+       
         $ip = $this->getIP();
         $getip = $this->getCity($ip);
         
@@ -98,6 +100,10 @@ function getCity($ip = '')
         $this->assign('region',$getip['region']);
         $this->assign('city',$getip['city']);
         $this->display(':index');
+    }
+
+    public function indexsearch(){
+       $row = M('his_prescription_extracharges')->where("extracharges_name='$name'")->find();
     }
 
 

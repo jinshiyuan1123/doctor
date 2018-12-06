@@ -186,7 +186,9 @@
                                     <li data-id="1">
                                         <h5 class="title"><i class="nk"></i><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="">内科</a></h5>
                                         <span class="sub-ds">
-        <a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E7%B3%96%E5%B0%BF%E7%97%85" class="first" monitor="public_fastselect,div,hotsick">糖尿病</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E9%AB%98%E8%A1%80%E5%8E%8B" monitor="public_fastselect,div,hotsick">高血压</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E5%86%A0%E5%BF%83%E7%97%85" monitor="public_fastselect,div,hotsick">冠心病</a>
+        <a  class="first"  onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'糖尿病'+'&searchType=search'; " monitor="public_fastselect,div,hotsick">糖尿病</a>
+        <a   onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'高血压'+'&searchType=search'; ">高血压</a>
+        <a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="" monitor="public_fastselect,div,hotsick">冠心病</a>
         </span>
                                     </li>
                                     <li data-id="2">
@@ -2097,7 +2099,7 @@
                 $GC.jspath + "/plugins/scout.js?_=1535436384237752",
                 $GC.jspath + "/plugins/raven.js?_=1535436384237752",
                 $GC.jsCPath + "/base/jquery-1.8.1.min.js",
-                // $GC.jspath + "/base/GH.js?_=1535436384237752",
+                $GC.jspath + "/base/GH.js?_=1535436384237752",
                 $GC.jsCPath + "/plugins/validator.js?_=20160129",
                 function() {
 

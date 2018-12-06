@@ -300,7 +300,7 @@
                     </div>
                 </div>
                 <p class="copyright">
-                    版权所有：杭州广发科技有限公司&nbsp;&nbsp;&nbsp;
+                    版权所有：&nbsp;&nbsp;&nbsp;
                         <a href="" rel="nofollow">浙B2-20130007</a>&nbsp;&nbsp;
                         <a href="" rel="nofollow">浙卫(03)网审[2014]015号</a>&nbsp;&nbsp;
                         <a href="" rel="nofollow">(浙)-经营性-2014-0022</a>&nbsp;&nbsp;
