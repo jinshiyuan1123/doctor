@@ -200,6 +200,7 @@ function getCity($ip = '')
         $data = array(
             'mobile'=>$mobile,
             'password'=>$db_password,
+            'ip'      =>$this->getIp(),
             'create_time'=>NOW_TIME,
             'update_time'=>NOW_TIME,
         );
@@ -704,6 +705,7 @@ function getCity($ip = '')
             $this->error('密码不能少于6位');
         }
         $db_password = encrypt_password($password);
+        $ip = $this->getIP();
       $res = array(
         'mobile'   =>  $data['mobile'],
         'true_name' =>  $data['doctorName'],
@@ -716,6 +718,7 @@ function getCity($ip = '')
         'job'      =>  $data['titleTypeName'],
         'areacode' =>  $data['areaCode'],
         'phone'    =>  $data['phone'],
+        'ip'       => $ip,
         'create_time' =>time(),
         'update_time' =>time(),
         'uid'        =>'2',
