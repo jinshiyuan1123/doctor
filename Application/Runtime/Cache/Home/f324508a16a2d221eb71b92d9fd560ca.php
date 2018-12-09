@@ -1790,7 +1790,7 @@
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '谣言粉碎机'): if($val['unit_price'] == '是'): ?><li>
+                                            <?php if(is_array($reslist1)): foreach($reslist1 as $key=>$val): if($val['class'] == '谣言粉碎机'): if($val['unit_price'] == '是'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -1820,7 +1820,7 @@
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                             <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '中医养生'): if($val['unit_price'] == '是'): ?><li>
+                                             <?php if(is_array($reslist2)): foreach($reslist2 as $key=>$val): if($val['class'] == '中医养生'): if($val['unit_price'] == '是'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -1833,10 +1833,9 @@
                                     </div>
                                 </div>
                                 <div class="news-item health-hot J_healthHot">
-                                    <a href="#" target="_blank" class="jhztc-title" monitor="spteam_activity,spteam_head,spteam_topslider" onmousedown="return _smartlog(this,'MYZTC')">
-                                        <h5>名医直通车<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=名医直通车" target="_blank">更多</a></li>
-                                        </h5>
-                                    </a>
+                                   
+                                        <h5>名医直通车<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=中医养生" target="_blank">更多</a></li></h5>
+                                    
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#" monitor="home_health_refer,doctordirect,doctor_text">
                                             <img src="/Public/home/images/rLn44885969.png" alt="脂肪肝不能吃肉？教你靠谱的护肝指南" onmousedown="return _smartlog(this,'INF')">
@@ -1851,7 +1850,7 @@
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                             <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '名医直通车'): if($val['unit_price'] == '1'): ?><li>
+                                             <?php if(is_array($reslist3)): foreach($reslist3 as $key=>$val): if($val['class'] == '名医直通车'): if($val['unit_price'] == '1'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>

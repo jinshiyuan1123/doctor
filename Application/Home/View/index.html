@@ -958,7 +958,7 @@
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <foreach name="reslist" item="val">
+                                            <foreach name="reslist1" item="val">
                                           <if condition="$val['class'] eq '谣言粉碎机'">
                                           <if condition="$val['unit_price'] eq '是'">
                                             <li>
@@ -1000,7 +1000,7 @@
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                             <foreach name="reslist" item="val">
+                                             <foreach name="reslist2" item="val">
                                           <if condition="$val['class'] eq '中医养生'">
                                           <if condition="$val['unit_price'] eq '是'">
                                             <li>
@@ -1025,10 +1025,9 @@
                                     </div>
                                 </div>
                                 <div class="news-item health-hot J_healthHot">
-                                    <a href="#" target="_blank" class="jhztc-title" monitor="spteam_activity,spteam_head,spteam_topslider" onmousedown="return _smartlog(this,'MYZTC')">
-                                        <h5>名医直通车<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=名医直通车" target="_blank">更多</a></li>
-                                        </h5>
-                                    </a>
+                                   
+                                        <h5>名医直通车<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=中医养生" target="_blank">更多</a></li></h5>
+                                    
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#" monitor="home_health_refer,doctordirect,doctor_text">
                                             <img src="__PUBLIC_HOME__/images/rLn44885969.png" alt="脂肪肝不能吃肉？教你靠谱的护肝指南" onmousedown="return _smartlog(this,'INF')">
@@ -1043,7 +1042,7 @@
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                             <foreach name="reslist" item="val">
+                                             <foreach name="reslist3" item="val">
                                           <if condition="$val['class'] eq '名医直通车'">
                                            <if condition="$val['unit_price'] eq '1'">
                                           

@@ -94,9 +94,19 @@ function getCity($ip = '')
        
         $ip = $this->getIP();
         $getip = $this->getCity($ip);
+        $class="就医攻略";
+        $class1="谣言粉碎机";
+        $class2="中医养生";
+        $class3="名医直通车";
+        $res = M('his_inspectionfee')->where("class='$class' ")->limit(6)->select();
+        $res1 = M('his_inspectionfee')->where("class='$class1' ")->limit(6)->select();
+        $res2 = M('his_inspectionfee')->where("class='$class2' ")->limit(6)->select();
+        $res3 = M('his_inspectionfee')->where("class='$class3' ")->limit(6)->select();
         
-        $res = M('his_inspectionfee')->where()->select();
         $this->assign('reslist',$res);
+        $this->assign('reslist1',$res1);
+        $this->assign('reslist2',$res2);
+        $this->assign('reslist3',$res3);
         $this->assign('region',$getip['region']);
         $this->assign('city',$getip['city']);
         $this->display(':index');
