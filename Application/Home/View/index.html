@@ -15,7 +15,6 @@
       <script src="__PUBLIC_HIS__/vendor/jquery/jquery.min.js"></script>
     <script src="__PUBLIC_HIS__/vendor/layer/layer.js"></script>
 
-
     <script type="text/javascript">
         $GF = [];
         GreenLine = {};
@@ -900,7 +899,7 @@
                         <div class="g-grid-left">
                             <div class="news-main g-clear">
                                 <div class="news-item medical-strategy J_medicalStrategy">
-                                    <h5>就医攻略<li style="float:right;list-style:none">更多</li></h5> 
+                                    <h5>就医攻略<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=就医攻略" target="_blank">更多</a></li></h5> 
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="__PUBLIC_HOME__/images/1536026134780.jpg" alt="又双叒叕流产！怎么才能保住宝宝？">
@@ -943,7 +942,7 @@
                                 </div>
 
                                 <div class="news-item rumor-crusher J_rumorCrusher">
-                                    <h5>谣言粉碎机</h5>
+                                    <h5>谣言粉碎机<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=谣言粉碎机" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="__PUBLIC_HOME__/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
@@ -985,7 +984,7 @@
                                     </div>
                                 </div>
                                 <div class="news-item health-preserve J_healthPreserve">
-                                    <h5>中医养生</h5>
+                                    <h5>中医养生<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=中医养生" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="__PUBLIC_HOME__/images/bottom-default.png">
@@ -1027,7 +1026,7 @@
                                 </div>
                                 <div class="news-item health-hot J_healthHot">
                                     <a href="#" target="_blank" class="jhztc-title" monitor="spteam_activity,spteam_head,spteam_topslider" onmousedown="return _smartlog(this,'MYZTC')">
-                                        <h5>名医直通车
+                                        <h5>名医直通车<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=名医直通车" target="_blank">更多</a></li>
                                         </h5>
                                     </a>
                                     <div class="focus-single g-clear">
@@ -1046,17 +1045,17 @@
                                         <ul>
                                              <foreach name="reslist" item="val">
                                           <if condition="$val['class'] eq '名医直通车'">
-                                           <if condition="$val['unit_price'] eq '是'">
+                                           <if condition="$val['unit_price'] eq '1'">
                                           
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot">{$val['inspection_name']}</div>
-                                                    <if condition="$val['cost'] eq '新'">
+                                                    <if condition="$val['cost'] eq '1'">
                                                     <img src="__PUBLIC_HOME__/images/new.png" alt="">
 
                                                     </if>
-                                                    <if condition="$val['cost'] eq '热'">
+                                                    <if condition="$val['cost'] eq '2'">
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>
@@ -1304,6 +1303,22 @@
          
            });
        </script>
+       <link rel="stylesheet" type="text/css" href="__PUBLIC_HOME__/common/css/layout.css" />
+<script type="text/javascript" src="__PUBLIC_HOME__/common/js/base.js"></script>
+<script type="text/javascript" src="__PUBLIC_HOME__/common/js/common.js"></script>
+
+       <div class="suspend">
+  <dl>
+    <dt class="IE6PNG"></dt>
+    <dd class="suspendQQ"><a href="tencent://message/?Site=baidu.com&uin=1569602446&Menu=yes" target="_blank"></a></dd>
+    <dd class="suspendTel"><a href="javascript:void(0);"></a></dd>
+  </dl>
+</div>
+<!--[if IE 6]><script type="text/javascript" src="common/js/IE6PNG.js"></script>
+<script type="text/javascript">PNGmin.fix(".IE6PNG");</script><![endif]-->
+<script type="text/javascript">           
+Common.init();
+</script>
 </body>
 
 </html>

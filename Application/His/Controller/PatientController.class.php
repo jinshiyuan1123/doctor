@@ -66,64 +66,27 @@ class PatientController extends HisBaseController
      */
     public function editPatient()
     {
+
         if (IS_AJAX) { //保存编辑的患者档案
             $patientId = I('post.pid','','intval');
-            $height  = !empty(I('post.height')) ? number_format(I('post.height'),1) : I('post.height');
-            $weight  = !empty(I('post.weight')) ? number_format(I('post.weight'),1) : I('post.weight');
-            $leftVision  = !empty(I('post.left_version')) ? number_format(I('post.left_version'),1) : I('post.left_version');
-            $rightVision  = !empty(I('post.right_version')) ? number_format(I('post.right_version'),1) : I('post.right_version');
-            if(!empty(I('post.height')) && !is_numeric($height)) $this->ajaxError('身高为整数或小数');
-            if(!empty(I('post.weight')) && !is_numeric($weight)) $this->ajaxError('体重为整数或小数');
-            if(!empty(I('post.left_version')) && !is_numeric($leftVision)) $this->ajaxError('左眼视力为整数或小数');
-            if(!empty(I('post.right_version')) && !is_numeric($rightVision)) $this->ajaxError('右眼视力为整数或小数');
-            $bloodType = json_encode(array(I('post.blood_type','','intval'), I('post.Rh','','intval')));
-            $name = str_replace(' ', '', I('post.name','','htmlspecialchars'));
-            $emergency_contact_name = str_replace(' ', '', I('post.emergency_contact_name','','htmlspecialchars'));
-            //保存患者基本信息
-            $patientInfo = array(
-                'name'         =>  $name,
-                'sex'          =>  I('post.sex','','intval'),
-                'birthday'     =>  I('post.birthday'),
-                'id_card'      =>  I('post.id_card') ? I('post.id_card') : '',
-                'address'      =>  I('post.address','','htmlspecialchars') ? I('post.address','','htmlspecialchars') : '',
-                'allergy_info' =>  I('post.allergy_info','','htmlspecialchars') ? I('post.allergy_info','','htmlspecialchars') : ''
+            $res = I('post.');
+            $res['sex'] =1 ?'男':'女';
+            $password = encrypt_password($res['password']);
+            $data = array(
+                'username' => $res['name'],
+                'sex'      => $res['sex'],
+                'password' => $password,
+                'age'      => $res['age'],
+                'update_time' => time(),
             );
-            $map = [
-                'patient_id' => $patientId,
-            ];
-            $editPatientRes = $this->patient_model->editPatient($map, $patientInfo);
-            if ($editPatientRes) {
-                //保存患者档案附加信息
-                $fileInfo = $this->patient_model->findPatientFileInfoById($patientId);
-                $fileInsertInfo = array(
-                    'emergency_contact_name'     => $emergency_contact_name ? $emergency_contact_name : '',
-                    'emergency_contact_mobile'   => I('post.emergency_contact_mobile') ? I('post.emergency_contact_mobile') : '',
-                    'emergency_contact_relation' => I('post.emergency_contact_relation','','intval'),
-                    'left_ear_hearing'           => I('post.left_ear_hearing','','intval'),
-                    'right_ear_hearing'          => I('post.right_ear_hearing','','intval'),
-                    'left_vision'               => $leftVision,
-                    'right_vision'              => $rightVision,
-                    'height'                     => $height,
-                    'weight'                     => $weight,
-                    'blood_type'                 => $bloodType,
-                    'personal_info'              => I('post.personal_info','','htmlspecialchars') ? I('post.personal_info','','htmlspecialchars') : '',
-                    'family_info'                => I('post.family_info','','htmlspecialchars') ? I('post.family_info','','htmlspecialchars') : '',
-                );
-                if ($fileInfo) {
-                    $fileInsertInfo['update_time'] = time();
-                    $editFailInfo = $this->patient_model->editPatientInfo($map,$fileInsertInfo);
-                    $editFailInfo ?  $this->ajaxSuccess('修改成功') : $this->ajaxError('修改失败');
-                } else {
-                    $fileInsertInfo['create_time'] = time();
-                    $fileInsertInfo['patient_id'] = $patientId;
-                    $addFileInfo = $this->patient_model->addPatientInfo($fileInsertInfo);
-                    $addFileInfo ?  $this->ajaxSuccess('修改成功') : $this->ajaxError('修改失败');
-                }
-            } elseif ($this->patient_model->getError()) {
-                $this->ajaxError($this->patient_model->getError());
-            } else {
+            $reslist = M('his_user')->where("id='$patientId'")->save($data);
+            if($reslist){
+                $this->ajaxSuccess('修改成功');
+            }else{
                 $this->ajaxError('修改失败');
             }
+            
+               
         } else {
             //患者档案
             $pid = I('get.pid','','intval');
@@ -144,7 +107,9 @@ class PatientController extends HisBaseController
             foreach ($careOrderLists as $key => $value) {
                 $careOrderSubLists[] = $this->patient_model->getCareOrderSubLists($value['id']);
             }
+            $reslists = M('his_user')->where("id='$pid'")->find();
             $this->assign('patientInfo', $patientInfo);
+            $this->assign('reslist',$reslists);
             $this->assign('fileInfo', $fileInfo);
             $this->assign('careHistoryLists', $careHistoryLists);
             $this->assign('careHistory', $careHistory);

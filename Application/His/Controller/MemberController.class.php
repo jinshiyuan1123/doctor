@@ -228,36 +228,22 @@ class MemberController extends HisBaseController
      */
     public function editUser(){
 
+
         $uid = I('get.uid','0','intval');//用户id
-        $sid = I('get.sid','0','intval');
-        $his = M('his_product');
-        $res = $his->where("id='$sid'")->find();
+    
+        if(IS_POST){
         $rowlist = I('post.');
-        // var_dump($rowlist);
-        if($rowlist['contact_telephone'] =='是'){
-            $ishospital=1;
-        }else{
-            $ishospital=0;
-        }
-        $datas = array('ishospital'=>$ishospital,'sicktime'=>$rowlist['contact_name'],'content'=>$rowlist['contact_mobile'],'mobile'=>$rowlist['mobile']);
-        $value = $his->where("id='$rowlist[supplier_name]'")->setField($datas);
-       if($value){
+        
+        $password = encrypt_password($rowlist['password']);
+        $datas = array('true_name'=>$rowlist['true_name'],'sex'=>$rowlist['sex'],'department'=>$rowlist['department_id'],'age'=>$rowlist['age'],'typelist'=>$rowlist['type'],'password'=>$password,'update_time'=>time() );
+        $reslist = M('his_doctor')->where("id='$rowlist[uid]'")->save($datas);
+        // p($reslist);die;
+       if($reslist){
          $this->ajaxSuccess('修改成功');
        }
-        if($res){
-             $this->ajaxReturn($res);
-        }
-        if(IS_POST){
-            $uid = I('post.uid','0','intval');
-            $data = I('post.');
-            $r = $this->member_model->saveUserRelate($uid,$data);
-            if($r){
-                $this->ajaxSuccess('修改成功');
-            }else{
-                $this->ajaxError('提交失败');
-            }
-        }
+    }
         $userInfo =M('his_doctor')->where("id='$uid'")->find();
+        $this->assign('uid',$userInfo['id']);
         if($userInfo){
              $this->ajaxReturn($userInfo);
         }else{

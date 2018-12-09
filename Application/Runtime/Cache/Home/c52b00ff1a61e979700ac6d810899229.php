@@ -130,9 +130,10 @@
         </div>
             <div class="g-doctor">
                 <div class="g-jianjie">
-                    <a class="doc-pic-container" id="J_PicContainer"  href="/health/kiBvB60135221">
-                        <span id="J_SpanSrc" data-src="https://kano-sns.guahao.cn/TMG24743557.jpg?token=4d2d4ab94a631926b2c4f4ead4f140fb"></span>
-                    </a>
+                   
+                        
+                        <img class="doc-pic-container" style="width:140px;;" src="/Public/home/images/1511164061343.jpg">
+                   <a class="doc-pic-container" style="height: 0" href=""></a>
                     <div class="doc-name">
                         <span>医生说</span>
                     </div>

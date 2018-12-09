@@ -1,4 +1,48 @@
-<!-- MAIN -->
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html lang="en">
+<head>
+    <link href="/Public/home/favicon.ico" rel="shortcut icon">
+    <title><?php echo C('TITLE');?></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="/Public/his/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Public/his/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Public/his/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="/Public/his/vendor/chartist/css/chartist-custom.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/Public/his/css/main.css?<?php echo time();?>">
+    <!-- <link rel="stylesheet" type="text/css" href="http://www.zzw0527.com/testlist/main.css?<?php echo time();?>"> -->
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="/Public/his/css/demo.css?<?php echo time();?>">
+    <!-- public -->
+    <link rel="stylesheet" href="/Public/his/css/public.css?<?php echo time();?>">
+
+    <!-- ICONS >
+    <link rel="apple-touch-icon" sizes="76x76" href="/Public/his/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="__PUBLIC_ROBOT__/img/favicon.png"-->
+    <link rel="stylesheet" type="text/css" href="/Public/his/vendor/datetimepicker/jquery.datetimepicker.css"/>
+
+    <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
+    <script src="/Public/his/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Public/his/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/Public/his/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="/Public/his/vendor/chartist/js/chartist.min.js"></script>
+    <script src="/Public/his/scripts/klorofil-common.js"></script>
+    <script src="/Public/his/vendor/datetimepicker/jquery.datetimepicker.js"></script>
+    <script src="/Public/his/js/public.js?<?php echo time();?>"></script>
+    <script src="/Public/his/js/check.form.js?<?php echo time();?>"></script>
+    <script src="/Public/his/vendor/layer/layer.js"></script>
+    <!--<script src="/Public/his/js/echarts.min.js"></script>-->
+
+
+</head>
+<body>
+
+
+<!-- WRAPPER -->
+    <!-- MAIN -->
   
 <div class="main">
     <!-- MAIN CONTENT -->
@@ -22,7 +66,7 @@
 								<span class="input-group-btn">
 									<span class="btn">姓名：</span>
 								</span>
-                                <input class="form-control" name="name" type="text" value="{$reslist['username']}" maxlength="10 " onkeyup="value=value.replace(/[^\a-zA-Z\u4E00-\u9FA5]/g,'')"
+                                <input class="form-control" name="name" type="text" value="<?php echo ($reslist['username']); ?>" maxlength="10 " onkeyup="value=value.replace(/[^\a-zA-Z\u4E00-\u9FA5]/g,'')"
                                        onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\a-zA-Z\u4E00-\u9FA5]/g,''))">
                             </div>
                             <div class="input-group listSeaForm l"  style="width: 22%; margin-right: 1%">
@@ -30,16 +74,16 @@
 									<span class="btn">性别：</span>
 								</span>
                                 <select class="form-control" name="sex" id="sex">
-                                    <option value="1" {:$reslist['sex'] == 男 ? 'selected' : ''}>男</option>
-                                    <option value="2" {:$reslist['sex'] == 女? 'selected' : ''}>女</option>
+                                    <option value="1" <?php echo $reslist['sex'] == 男 ? 'selected' : '';?>>男</option>
+                                    <option value="2" <?php echo $reslist['sex'] == 女? 'selected' : '';?>>女</option>
                                 </select>
                             </div>
                             <div class="input-group listSeaForm l" style="width: 24%;">
 								<span class="input-group-btn">
 									<span class="btn">年龄：</span>
 								</span>
-                                 <input class="form-control" id="age" type="text" value="{$reslist['age']}">
-                               <!--  <input class="form-control dateTime" id="birthday" name="birthday" type="text" value="{$patientInfo['birthday']}"> -->
+                                 <input class="form-control" id="age" type="text" value="<?php echo ($reslist['age']); ?>">
+                               <!--  <input class="form-control dateTime" id="birthday" name="birthday" type="text" value="<?php echo ($patientInfo['birthday']); ?>"> -->
                                 <!-- <i class="fa fa-calendar"></i> -->
                             </div>
                             <div class="input-group listSeaForm l" style="width: 22%;">
@@ -51,7 +95,7 @@
 								<span class="input-group-btn">
 									<span class="btn">身高：</span>
 								</span>
-                                <input class="form-control" name="height" type="text" value="{$fileInfo['height']}" onkeyup="value=value.replace(/[^\d^\.]+/g,'')">
+                                <input class="form-control" name="height" type="text" value="<?php echo ($fileInfo['height']); ?>" onkeyup="value=value.replace(/[^\d^\.]+/g,'')">
                                 <span class="input-group-btn bc" style="padding:0 8px">
 									<span class="btn">厘米</span>
 								</span>
@@ -60,7 +104,7 @@
 								<span class="input-group-btn">
 									<span class="btn">体重：</span>
 								</span>
-                                <input class="form-control" name="weight" type="text" value="{$fileInfo['weight']}" onkeyup="value=value.replace(/[^\d^\.]+/g,'')">
+                                <input class="form-control" name="weight" type="text" value="<?php echo ($fileInfo['weight']); ?>" onkeyup="value=value.replace(/[^\d^\.]+/g,'')">
                                 <span class="input-group-btn bc" style="padding:0 8px">
 									<span class="btn">公斤</span>
 								</span>
@@ -72,17 +116,17 @@
 								</span>
                                 <select class="form-control" name="blood_type" id="blood_type">
                                     <option value="">请选择血型</option>
-                                    <option value="1" {:$fileInfo['blood_type'] == 1 ? 'selected' : ''}>A</option>
-                                    <option value="2" {:$fileInfo['blood_type'] == 2 ? 'selected' : ''}>B</option>
-                                    <option value="3" {:$fileInfo['blood_type'] == 3 ? 'selected' : ''}>AB</option>
-                                    <option value="4" {:$fileInfo['blood_type'] == 4 ? 'selected' : ''}>O</option>
+                                    <option value="1" <?php echo $fileInfo['blood_type'] == 1 ? 'selected' : '';?>>A</option>
+                                    <option value="2" <?php echo $fileInfo['blood_type'] == 2 ? 'selected' : '';?>>B</option>
+                                    <option value="3" <?php echo $fileInfo['blood_type'] == 3 ? 'selected' : '';?>>AB</option>
+                                    <option value="4" <?php echo $fileInfo['blood_type'] == 4 ? 'selected' : '';?>>O</option>
                                 </select>
                             </div>
                             <div class="input-group listSeaForm l" style="width: 22%;">
                                 <select class="form-control" name="Rh" id="Rh">
                                     <option value="">请选择</option>
-                                    <option value="1" {:$fileInfo['Rh'] == 1 ? 'selected' : ''}>Rh阴性</option>
-                                    <option value="2" {:$fileInfo['Rh'] == 2 ? 'selected' : ''}>阳性</option>
+                                    <option value="1" <?php echo $fileInfo['Rh'] == 1 ? 'selected' : '';?>>Rh阴性</option>
+                                    <option value="2" <?php echo $fileInfo['Rh'] == 2 ? 'selected' : '';?>>阳性</option>
                                 </select>
                             </div> -->
                         </div>
@@ -92,8 +136,8 @@
 									<span class="btn">左耳听力：</span>
 								</span>
                                 <select class="form-control" name="left_ear_hearing" id="left_ear_hearing">
-                                    <option value="1" {:$fileInfo['left_ear_hearing'] == 1 ? 'selected' : ''}>正常</option>
-                                    <option value="2" {:$fileInfo['left_ear_hearing'] == 2 ? 'selected' : ''}>耳聋</option>
+                                    <option value="1" <?php echo $fileInfo['left_ear_hearing'] == 1 ? 'selected' : '';?>>正常</option>
+                                    <option value="2" <?php echo $fileInfo['left_ear_hearing'] == 2 ? 'selected' : '';?>>耳聋</option>
                                 </select>
                             </div>
                             <div class="input-group listSeaForm l"  style="width: 25%; margin-right: 1%">
@@ -101,8 +145,8 @@
 									<span class="btn">右耳听力：</span>
 								</span>
                                 <select class="form-control" name="right_ear_hearing" id="right_ear_hearing">
-                                    <option value="1" {:$fileInfo['right_ear_hearing'] == 1 ? 'selected' : ''}>正常</option>
-                                    <option value="2" {:$fileInfo['right_ear_hearing'] == 2 ? 'selected' : ''}>耳聋</option>
+                                    <option value="1" <?php echo $fileInfo['right_ear_hearing'] == 1 ? 'selected' : '';?>>正常</option>
+                                    <option value="2" <?php echo $fileInfo['right_ear_hearing'] == 2 ? 'selected' : '';?>>耳聋</option>
                                 </select>
                             </div>
  -->
@@ -116,7 +160,7 @@
 								<span class="input-group-btn">
 									<span class="btn">右眼视力：</span>
 								</span>
-                                <input class="form-control" name="right_version" type="text" value="{$fileInfo['right_vision']}" onkeyup="value=value.replace(/[^\d^\.]+/g,'')">
+                                <input class="form-control" name="right_version" type="text" value="<?php echo ($fileInfo['right_vision']); ?>" onkeyup="value=value.replace(/[^\d^\.]+/g,'')">
                             </div> -->
                         </div>
                         <div class="mt10 clearfix">
@@ -124,7 +168,7 @@
 								<span class="input-group-btn">
 									<span class="btn">电话：</span>
 								</span>
-                                <input class="form-control" type="text" value="{$reslist['mobile']}" disabled>
+                                <input class="form-control" type="text" value="<?php echo ($reslist['mobile']); ?>" disabled>
                             </div>
                               <div class="input-group listSeaForm l" style="width: 24%; margin-right: 1%">
                                 <span class="input-group-btn">
@@ -137,23 +181,23 @@
 								<span class="input-group-btn">
 									<span class="btn">住址：</span>
 								</span>
-                                <input class="form-control" name="address" type="text" value="{$patientInfo['address']}" maxlength="100">
+                                <input class="form-control" name="address" type="text" value="<?php echo ($patientInfo['address']); ?>" maxlength="100">
                             </div> -->
                         </div>
                         
                         <h3 class="tit1 ftl mt20"><span class="blue mr10">过敏史</span></h3>
                         <div class="mt10 clearfix">
-                            <textarea class="form-control" id="allergy_info" name="allergy_info" rows="2" maxlength="500" placeholder="">{$patientInfo['allergy_info']}</textarea>
+                            <textarea class="form-control" id="allergy_info" name="allergy_info" rows="2" maxlength="500" placeholder=""><?php echo ($patientInfo['allergy_info']); ?></textarea>
                         </div>
                         <h3 class="tit1 ftl mt20"><span class="blue mr10">个人史</span></h3>
                         <div class="mt10 clearfix">
-                            <textarea class="form-control" id="personal_info" name="personal_info" rows="2" maxlength="500" placeholder="">{$fileInfo['personal_info']}</textarea>
+                            <textarea class="form-control" id="personal_info" name="personal_info" rows="2" maxlength="500" placeholder=""><?php echo ($fileInfo['personal_info']); ?></textarea>
                         </div>
                         <h3 class="tit1 ftl mt20"><span class="blue mr10">家族史</span></h3>
                         <div class="mt10 clearfix">
-                            <textarea class="form-control" id="family_info" name="family_info" rows="2" maxlength="500" placeholder="">{$fileInfo['family_info']}</textarea>
+                            <textarea class="form-control" id="family_info" name="family_info" rows="2" maxlength="500" placeholder=""><?php echo ($fileInfo['family_info']); ?></textarea>
                         </div>
-                        <input type="hidden" name="pid" value="{$patientId}">
+                        <input type="hidden" name="pid" value="<?php echo ($patientId); ?>">
                     </div>
                 </li>
                 <li>
@@ -164,18 +208,16 @@
                             <div class="profile-detail">
                                 <h3 class="panel-title blue pd10">病历</h3>
                                 <div class="pd10" style="height: 640px; cursor: pointer; overflow-y: auto;">
-                                    <foreach name="careHistoryLists" item="vo">
-                                        <div class="alert alert-info mb10 history" data-hid="{$vo['id']}">
-                                            {$vo['addtime']|date='Y-m-d H:i',###}
-                                            {$vo['department_name']}
-                                            {$vo['hospital_name']} -
+                                    <?php if(is_array($careHistoryLists)): foreach($careHistoryLists as $key=>$vo): ?><div class="alert alert-info mb10 history" data-hid="<?php echo ($vo['id']); ?>">
+                                            <?php echo (date('Y-m-d H:i',$vo['addtime'])); ?>
+                                            <?php echo ($vo['department_name']); ?>
+                                            <?php echo ($vo['hospital_name']); ?> -
                                             <?php if($vo['true_name']) { ?>
-                                                {$vo['true_name']}
+                                                <?php echo ($vo['true_name']); ?>
                                             <?php } else { ?>
-                                                {$vo['owner_name']}
+                                                <?php echo ($vo['owner_name']); ?>
                                             <?php } ?>
-                                        </div>
-                                    </foreach>
+                                        </div><?php endforeach; endif; ?>
                                 </div>
                             </div>
                             <!-- END PROFILE DETAIL -->
@@ -189,7 +231,7 @@
 									<span class="input-group-btn">
 										<span class="btn">发病日期：</span>
 									</span>
-                                    <input class="form-control" type="text" disabled value="{$careHistory['case_date']}">
+                                    <input class="form-control" type="text" disabled value="<?php echo ($careHistory['case_date']); ?>">
                                 </div>
                                 <div class="input-group listSeaForm l"  style="width: 28%; margin-right: 1%">
 									<span class="input-group-btn">
@@ -210,16 +252,15 @@
 									<span class="input-group-btn">
 										<span class="btn">主诉：</span>
 									</span>
-                                    <textarea class="form-control" rows="1" type="text" disabled>{$careHistory['case_title']}</textarea>
+                                    <textarea class="form-control" rows="1" type="text" disabled><?php echo ($careHistory['case_title']); ?></textarea>
                                 </div>
                             </div>
                             <h3 class="tit1 ftl mt20"><span class="blue">家族史</span></h3>
                             <div class="mt10 clearfix">
-                                <textarea class="form-control" rows="2" maxlength="500" disabled>{$careHistory['family_info']}</textarea>
+                                <textarea class="form-control" rows="2" maxlength="500" disabled><?php echo ($careHistory['family_info']); ?></textarea>
                             </div>
-                            <foreach name="careOrderLists" item="careOrder" key="k">
-                                <div class="mt20">
-                                    <h3 class="tit1 ftl"><span class="blue">处方{$k+1}</span></h3>
+                            <?php if(is_array($careOrderLists)): foreach($careOrderLists as $k=>$careOrder): ?><div class="mt20">
+                                    <h3 class="tit1 ftl"><span class="blue">处方<?php echo ($k+1); ?></span></h3>
                                     <table class="table table-bordered ftc mt10">
                                         <thead>
                                         <tr>
@@ -230,30 +271,25 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <foreach name="careOrderSubLists" item="careOrderSub">
-                                            <foreach name="careOrderSub" item="orderSub" key="key">
-                                                <?php if($orderSub['fid'] == $careOrder['id']) { ?>
+                                        <?php if(is_array($careOrderSubLists)): foreach($careOrderSubLists as $key=>$careOrderSub): if(is_array($careOrderSub)): foreach($careOrderSub as $key=>$orderSub): if($orderSub['fid'] == $careOrder['id']) { ?>
                                                     <tr>
-                                                        <td>{$key+1}</td>
-                                                        <td>{$orderSub['goods_name']}</td>
-                                                        <td>{$orderSub['single']}</td>
-                                                        <td>{$orderSub['tips']}</td>
+                                                        <td><?php echo ($key+1); ?></td>
+                                                        <td><?php echo ($orderSub['goods_name']); ?></td>
+                                                        <td><?php echo ($orderSub['single']); ?></td>
+                                                        <td><?php echo ($orderSub['tips']); ?></td>
                                                     </tr>
-                                                <?php } ?>
-                                            </foreach>
-                                        </foreach>
+                                                <?php } endforeach; endif; endforeach; endif; ?>
                                         </tbody>
                                     </table>
                                     <div class="ftr">
                                         <div class="fublBox gray2">
-                                            <span class="">每 {$careOrder['num_a']} 天</span>
-                                            <span class="ml10">{$careOrder['num_b']} 剂</span>
-                                            <span class="ml10">服用 {$careOrder['num_c']} 天</span>
-                                            <span class="ml10">共 {$careOrder['num_d']} 剂</span>
+                                            <span class="">每 <?php echo ($careOrder['num_a']); ?> 天</span>
+                                            <span class="ml10"><?php echo ($careOrder['num_b']); ?> 剂</span>
+                                            <span class="ml10">服用 <?php echo ($careOrder['num_c']); ?> 天</span>
+                                            <span class="ml10">共 <?php echo ($careOrder['num_d']); ?> 剂</span>
                                         </div>
                                     </div>
-                                </div>
-                            </foreach>
+                                </div><?php endforeach; endif; ?>
                         </div>
                         <!-- END RIGHT COLUMN -->
                     </div>
@@ -298,7 +334,7 @@
                 return false;
             }
            
-            $.post("{:U('/Patient/editPatient')}",{'pid':pid,'name':name,'sex':sex,'password':password,'age':age},
+            $.post("<?php echo U('/Patient/editPatient');?>",{'pid':pid,'name':name,'sex':sex,'password':password,'age':age},
                 function (data) {
                     if (data.status == 'success') {
                         location.reload();
@@ -310,7 +346,7 @@
         //查看病历
         $(document).on('click', '.history', function(){
             var history_id = $(this).attr('data-hid');
-            $.post("{:U('/Patient/careHistory')}",
+            $.post("<?php echo U('/Patient/careHistory');?>",
                 { "history_id": history_id},
                 function (data) {
                     if (data.status=='success') {
@@ -445,3 +481,13 @@
         return result;
     }
 </script>
+
+<!-- END WRAPPER -->
+
+<script type="text/javascript">
+    if(parent.endLoad){
+        parent.endLoad();
+    }
+</script>
+</body>
+</html>

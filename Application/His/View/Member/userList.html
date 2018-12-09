@@ -223,8 +223,8 @@
 						<span class="input-group-btn">
 							<span class="btn">密码：</span>
 						</span>
-                        <a class="btn btn-primary" id="b-reset-password">重置密码</a>
-                        <!--<input class="form-control" id="b-password" type="text" value="" placeholder="请输入手机号" disabled="disabled">-->
+                        <!-- <a class="btn btn-primary" id="b-reset-password">重置密码</a> -->
+                        <input class="form-control" id="password" type="text" value="" placeholder="请输入密码" >
                     </div>
                     <div class="input-group listSeaForm mt10 wb100">
 						<span class="input-group-btn">
@@ -442,7 +442,7 @@
             var uid = $(this).attr('uid');
          
             $.get('{:U("Member/editUser")}',{'uid':uid},function (data) {
-               
+               // consoloe.info(data);
                  var user_name = data.mobile;
                  var true_name = data.true_name;
                  var department_id = data.department;
@@ -452,8 +452,10 @@
                  var strong = data.strong;
                  var pic = data.picture;
                  var type = data.typelist;
-                 var uid = data.uid;
+                 var uid = data.id;
                  var age = data.age;
+
+
                  var src = "{:C('UPLOAD_DOCTOR')}"+pic;
 
                  $("#doc-pic").attr('src',pic?src:'/Upload/doctor/doctor_def.jpg');
@@ -469,6 +471,7 @@
                   $("#b-introduction").val(introduction);
                   $("#b-strong").val(strong);
                   $("#b-age").val(age);
+                  $("#password").val();
                   $(':radio[name="b-type"]').eq(type-2).attr("checked",true);
             })
             $('#editDoctorBomb').show(0);
@@ -484,6 +487,7 @@
                 var strong = $("#b-strong").val();
                 var type = $("input[name='b-type']:checked").val();
                 var age = $("#b-age").val();
+                var password = $("#password").val();
                 if(true_name.length==0 || true_name.length>6){
                     remindBox('姓名不能为空,并且不能多于6位');
                     return false;
@@ -500,10 +504,19 @@
                     remindBox('科室不能为空');
                     return false;
                 }
+                if(password==''){
+                    remindBox('密码不能为空');
+                    return false;
+                }
+                if(password.length<6){
+                    remindBox('密码不能少于6位');
+                    return false;
+                }
+
 
                 $.post("{:U('Member/editUser')}", {
                     true_name: true_name, sex: sex, department_id: department_id,age:age,
-                rank:rank,introduction:introduction,strong:strong,type:type,uid:uid,picture:picture},function (data) {
+                rank:rank,introduction:introduction,strong:strong,type:type,uid:uid,picture:picture,password:password},function (data) {
                         if(data.status=='success'){
                             remindBox("修改成功");
                             window.location.reload();

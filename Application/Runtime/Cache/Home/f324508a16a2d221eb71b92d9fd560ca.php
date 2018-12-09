@@ -15,7 +15,6 @@
       <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
     <script src="/Public/his/vendor/layer/layer.js"></script>
 
-
     <script type="text/javascript">
         $GF = [];
         GreenLine = {};
@@ -84,8 +83,8 @@
         
         
           <div class="g-right">
-                <a href="https://www.guahao.com/intro/userapp" rel="nofollow" class="dl-guide J_SeoGuide" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,appdload">
-                    下载APP
+                <a href="" rel="nofollow" class="dl-guide J_SeoGuide" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,appdload">
+                    收藏本站    
                     <span>
                         <img src="https://static.guahao.cn/front/portal-pc-static/img/index-appQRcode.png?v=20170505" alt="">
                     </span>
@@ -1744,7 +1743,7 @@
                         <div class="g-grid-left">
                             <div class="news-main g-clear">
                                 <div class="news-item medical-strategy J_medicalStrategy">
-                                    <h5>就医攻略<li style="float:right;list-style:none">更多</li></h5> 
+                                    <h5>就医攻略<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=就医攻略" target="_blank">更多</a></li></h5> 
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="/Public/home/images/1536026134780.jpg" alt="又双叒叕流产！怎么才能保住宝宝？">
@@ -1775,7 +1774,7 @@
                                 </div>
 
                                 <div class="news-item rumor-crusher J_rumorCrusher">
-                                    <h5>谣言粉碎机</h5>
+                                    <h5>谣言粉碎机<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=谣言粉碎机" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
@@ -1805,7 +1804,7 @@
                                     </div>
                                 </div>
                                 <div class="news-item health-preserve J_healthPreserve">
-                                    <h5>中医养生</h5>
+                                    <h5>中医养生<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=中医养生" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="/Public/home/images/bottom-default.png">
@@ -1835,7 +1834,7 @@
                                 </div>
                                 <div class="news-item health-hot J_healthHot">
                                     <a href="#" target="_blank" class="jhztc-title" monitor="spteam_activity,spteam_head,spteam_topslider" onmousedown="return _smartlog(this,'MYZTC')">
-                                        <h5>名医直通车
+                                        <h5>名医直通车<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=名医直通车" target="_blank">更多</a></li>
                                         </h5>
                                     </a>
                                     <div class="focus-single g-clear">
@@ -1852,12 +1851,12 @@
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                             <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '名医直通车'): if($val['unit_price'] == '是'): ?><li>
+                                             <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '名医直通车'): if($val['unit_price'] == '1'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
-                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
-                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                             </li><?php endif; endif; endforeach; endif; ?>
@@ -2153,6 +2152,22 @@
          
            });
        </script>
+       <link rel="stylesheet" type="text/css" href="/Public/home/common/css/layout.css" />
+<script type="text/javascript" src="/Public/home/common/js/base.js"></script>
+<script type="text/javascript" src="/Public/home/common/js/common.js"></script>
+
+       <div class="suspend">
+  <dl>
+    <dt class="IE6PNG"></dt>
+    <dd class="suspendQQ"><a href="tencent://message/?Site=baidu.com&uin=1569602446&Menu=yes" target="_blank"></a></dd>
+    <dd class="suspendTel"><a href="javascript:void(0);"></a></dd>
+  </dl>
+</div>
+<!--[if IE 6]><script type="text/javascript" src="common/js/IE6PNG.js"></script>
+<script type="text/javascript">PNGmin.fix(".IE6PNG");</script><![endif]-->
+<script type="text/javascript">           
+Common.init();
+</script>
 </body>
 
 </html>

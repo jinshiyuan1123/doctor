@@ -122,10 +122,15 @@
                 </span>
                 <div class="input-group listSeaForm l" style="width: 9%; margin-right: 2%;">
                     <span class="input-group-btn">
-                        <span class="btn">是：</span>
+                        <span class="btn">新：</span>
                     </span>
 
                     <input type="radio" name="blue" id="blues" value="1">
+                     <span class="input-group-btn">
+                        <span class="btn">热：</span>
+                    </span>
+
+                    <input type="radio" name="blue" id="blues2" value="2">
 
                     <span class="input-group-btn" style="left:2px;">
                         <span class="btn">否：</span>
@@ -356,10 +361,15 @@
                 </span>
                 <div class="input-group listSeaForm l" style="width: 9%; margin-right: 2%;">
                     <span class="input-group-btn">
-                        <span class="btn">是：</span>
+                        <span class="btn">新：</span>
                     </span>
 
                     <input type="radio" name="blue" id="blue" value="1">
+                      <span class="input-group-btn">
+                        <span class="btn">热：</span>
+                    </span>
+
+                    <input type="radio" name="blue" id="blue2" value="2">
 
                     <span class="input-group-btn" style="left:2px;">
                         <span class="btn">否：</span>
@@ -504,12 +514,19 @@
                           $("#bluelist").prop("checked",false);
                            $("#redlist").prop("checked",true);
                        }
+                       // alert(data.data.inspectionInfo.cost);
                        if(data.data.inspectionInfo.cost =='1'){
                            $("#blue").prop("checked",true);
+                           $("#blue2").prop("checked",false);
                            $("#red").prop("checked",false);
 
+                       }else if(data.data.inspectionInfo.cost =='2'){
+                           $("#blue").prop("checked",false);
+                           $("#blue2").prop("checked",true);
+                           $("#red").prop("checked",false);
                        }else{
                            $("#blue").prop("checked",false);
+                           $("#blue2").prop("checked",false);
                            $("#red").prop("checked",true);
 
                        }
@@ -611,7 +628,9 @@
                                 item.unit_price = '否'
                             }
                             if(item.cost == '1'){
-                                item.cost = '是';
+                                item.cost = '新';
+                            }else if(item.cost=='2'){
+                                 item.cost = '热';
                             }else{
                                 item.cost = '否';
                             }

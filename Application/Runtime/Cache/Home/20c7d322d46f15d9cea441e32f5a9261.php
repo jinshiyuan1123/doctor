@@ -47,7 +47,7 @@
 			<div class="g-left title">医生注册</div>
 			<ul class="gh-register">
 				<li>
-					<i class="info"></i>
+					<i class="info"></i>	
 						创建账号
 				</li>
 				<li>

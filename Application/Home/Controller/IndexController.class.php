@@ -184,9 +184,7 @@ function getCity($ip = '')
         if (empty($password)) {
             $this->error('密码错误');
         }
-        if (strlen($password) < 6) {
-            $this->error('密码不能少于6位');
-        }
+        
         $db_password = encrypt_password($password);
 
         $data = array(
@@ -704,6 +702,7 @@ function getCity($ip = '')
         'password' =>  $db_password,
         'hospital' =>  $data['hospitalName'],
         'root'     =>  $data['hospdeptName'],
+        'rank'     => 1,
         'job'      =>  $data['titleTypeName'],
         'areacode' =>  $data['areaCode'],
         'phone'    =>  $data['phone'],
@@ -866,6 +865,14 @@ function getCity($ip = '')
     }
 
 }
+
+
+  public function topiclist (){
+    $class = I('get.class');
+    $data = M('his_inspectionfee')->where("class='$class'")->select();
+    $this->assign('datalist',$data);
+    $this->display(':topiclist');
+  }
   
   public function ulist(){
     $this->display(':ulist');
