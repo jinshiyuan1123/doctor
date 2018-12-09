@@ -2041,9 +2041,9 @@
                         <div class="clear"></div>
                     </div>
                     <div class="code g-left">
-                        <a class="nihe" href="http://www.nihe.org.cn" rel="nofollow" target="_blank">中国健康教育中心<br/>卫生部新闻宣传中心</a>
+                        <a class="nihe" href="http://www.nihe.org.cn" rel="nofollow" target="_blank">政府网<br/>卫生部新闻宣传中心</a>
                         <a class="cha" href="http://www.cha.org.cn/" rel="nofollow" target="_blank">中国医院协会<br/>门急诊管理专业委员会</a>
-                        <a class="fudanmed" href="http://www.fudanmed.com/manage/index.aspx" rel="nofollow" target="_blank">上海复旦医院管理公司</a>
+                        <a class="fudanmed" href="http://www.fudanmed.com/manage/index.aspx" rel="nofollow" target="_blank">中国阳网在线</a>
                         <a class="cfnews" href="http://www.cfnews.org.cn" rel="nofollow" target="_blank">中国家庭报<br/>卫计委人口文化发展中心</a>
                         <div class="clear"></div>
                     </div>
