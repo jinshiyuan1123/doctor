@@ -207,6 +207,10 @@
 
 .bombBox .bombMask{width:100%; height:100%; position:absolute; top:0; left:0; background-color:#000; opacity:0.6; z-index:0}
 /*分页*/
+.bombBoxs {width:100%; height:100%; position:absolute; top:0; left:0; background-color:#000; opacity:1; z-index:0}
+
+/*.bombMasks{width:100%; height:100%; position:absolute; top:0; left:0; background-color:#000; opacity:0.6; z-index:0}*/
+/*分页*/
 .paging {}
 .paging span ,.paging i{ border: #ccc 1px solid; cursor: pointer; margin-right: 6px; padding: .2em .8em .3em; font-size: 75%;font-weight: 500;line-height: 1;text-align: center; white-space: nowrap;vertical-align: baseline; border-radius: .25em;}
 .paging span.on,.paging i{border: #337ab7 1px solid; color: #fff; background-color: #337ab7;}

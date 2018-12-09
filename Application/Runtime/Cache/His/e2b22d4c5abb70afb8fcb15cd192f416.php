@@ -42,7 +42,9 @@
 
 
 <!-- WRAPPER -->
-    <!-- MAIN -->
+    
+
+<!-- MAIN -->
 <div class="main">
     <!-- MAIN CONTENT -->
     <div class="main-content">
@@ -78,9 +80,10 @@
 </div>
 <!-- END MAIN -->
 <!-- 添加文章弹框 start -->
-<div class="bombBox" id="inspectionItemBomb" style="display: none;">
-    <div class="bombContent inspectionItemBomb whiteBg">
+<div class="bombBoxs" id="inspectionItemBomb" style="display: none;">
+    <div class="bombContent inspectionItemBomb whiteBg wenzhang">
         <div class="bombTit">添加文章<i class="fa fa-remove"></i></div>
+
         <div class="ftc pd10">
             <div class="input-group listSeaForm wb100">
                 <span class="input-group-btn">
@@ -96,33 +99,223 @@
 
                 </select>
             </div>
-            <div class="input-group listSeaForm wb100 mt10">
+             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
-                    <span class="btn">是否显示：</span>
+                    <span class="btn">显示：</span>
                 </span>
-                <input class="form-control" type="text" id="addUnitPrice" name="unit_price" value="" placeholder="">
+                <div class="input-group listSeaForm l" style="width: 9%; margin-right: 2%;">
+                    <span class="input-group-btn">
+                        <span class="btn">是：</span>
+                    </span>
+                    <input type="radio" name="blues" id="bluelists" value="1">
+
+                    <span class="input-group-btn" style="left:2px">
+                        <span class="btn">否：</span>
+                    </span>
+                   <input  type="radio" name="blues" id="redlists" value="0">
+
+                </div>
             </div>
             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
                     <span class="btn">热/新：</span>
                 </span>
-                <input class="form-control" type="text" id="addCost" name="cost" value="" placeholder="">
+                <div class="input-group listSeaForm l" style="width: 9%; margin-right: 2%;">
+                    <span class="input-group-btn">
+                        <span class="btn">是：</span>
+                    </span>
+
+                    <input type="radio" name="blue" id="blues" value="1">
+
+                    <span class="input-group-btn" style="left:2px;">
+                        <span class="btn">否：</span>
+                    </span>
+                   <input type="radio" name="blue" id="reds" value="0">
+
+                </div>
+               
             </div>
-            <div class="input-group listSeaForm wb100 mt10">
+             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
                     <span class="btn">文章内容：</span>
                 </span>
-                <textarea name="" id="addUnit" name="addUnit" value="" cols="20" rows="6"></textarea>
+                <!-- <textarea name="" id="addUnit" name="addUnit" value="" cols="100" rows="6"></textarea> -->
              
             </div>
+            <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <script type="text/javascript" charset="utf-8" src="/Public/his/js/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/Public/his/js/ueditor/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="/Public/his/js/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <style type="text/css">
+        div {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1></h1>
+        <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+    </div>
+    <div id="btns">
+        <!-- <div>
+            <button onclick="getAllHtml()">获得整个html的内容</button>
+            <button onclick="getContent()">获得内容</button>
+            <button onclick="setContent()">写入内容</button>
+            <button onclick="setContent(true)">追加内容</button>
+            <button onclick="getContentTxt()">获得纯文本</button>
+            <button onclick="getPlainTxt()">获得带格式的纯文本</button>
+            <button onclick="hasContent()">判断是否有内容</button>
+            <button onclick="setFocus()">使编辑器获得焦点</button>
+            <button onmousedown="isFocus(event)">编辑器是否获得焦点</button>
+            <button onmousedown="setblur(event)">编辑器失去焦点</button>
+        </div>
+        <div>
+            <button onclick="getText()">获得当前选中的文本</button>
+            <button onclick="insertHtml()">插入给定的内容</button>
+            <button id="enable" onclick="setEnabled()">可以编辑</button>
+            <button onclick="setDisabled()">不可编辑</button>
+            <button onclick=" UE.getEditor('editor').setHide()">隐藏编辑器</button>
+            <button onclick=" UE.getEditor('editor').setShow()">显示编辑器</button>
+            <button onclick=" UE.getEditor('editor').setHeight(300)">设置高度为300默认关闭了自动长高</button>
+        </div>
+        <div>
+            <button onclick="getLocalData()">获取草稿箱内容</button>
+            <button onclick="clearLocalData()">清空草稿箱</button>
+        </div> -->
+    </div>
+    <div>
+       <!--  <button onclick="createEditor()">
+            创建编辑器</button>
+        <button onclick="deleteEditor()">
+            删除编辑器</button> -->
+    </div>
+    <script type="text/javascript">
+        //实例化编辑器
+        //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+        var ue = UE.getEditor('editor');
+        function isFocus(e) {
+            alert(UE.getEditor('editor').isFocus());
+            UE.dom.domUtils.preventDefault(e)
+        }
+        function setblur(e) {
+            UE.getEditor('editor').blur();
+            UE.dom.domUtils.preventDefault(e)
+        }
+        function insertHtml() {
+            var value = prompt('插入html代码', '');
+            UE.getEditor('editor').execCommand('insertHtml', value)
+        }
+        function createEditor() {
+            enableBtn();
+            UE.getEditor('editor');
+        }
+        function getAllHtml() {
+            alert(UE.getEditor('editor').getAllHtml())
+        }
+        function getContent() {
+            var arr = [];
+            arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+            arr.push("内容为：");
+            arr.push(UE.getEditor('editor').getContent());
+            alert(arr.join("\n"));
+        }
+        function getPlainTxt() {
+            var arr = [];
+            arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
+            arr.push("内容为：");
+            arr.push(UE.getEditor('editor').getPlainTxt());
+            alert(arr.join('\n'))
+        }
+        function setContent(isAppendTo) {
+            var arr = [];
+            arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
+            UE.getEditor('editor').setContent('欢迎使用ueditor', isAppendTo);
+            alert(arr.join("\n"));
+        }
+        function setDisabled() {
+            UE.getEditor('editor').setDisabled('fullscreen');
+            disableBtn("enable");
+        }
+        function setEnabled() {
+            UE.getEditor('editor').setEnabled();
+            enableBtn();
+        }
+        function getText() {
+            //当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
+            var range = UE.getEditor('editor').selection.getRange();
+            range.select();
+            var txt = UE.getEditor('editor').selection.getText();
+            alert(txt)
+        }
+        function getContentTxt() {
+            var arr = [];
+            arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
+            arr.push("编辑器的纯文本内容为：");
+            arr.push(UE.getEditor('editor').getContentTxt());
+            alert(arr.join("\n"));
+        }
+        function hasContent() {
+            var arr = [];
+            arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
+            arr.push("判断结果为：");
+            arr.push(UE.getEditor('editor').hasContents());
+            alert(arr.join("\n"));
+        }
+        function setFocus() {
+            UE.getEditor('editor').focus();
+        }
+        function deleteEditor() {
+            disableBtn();
+            UE.getEditor('editor').destroy();
+        }
+        function disableBtn(str) {
+            var div = document.getElementById('btns');
+            var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+            for (var i = 0, btn; btn = btns[i++];) {
+                if (btn.id == str) {
+                    UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+                } else {
+                    btn.setAttribute("disabled", "true");
+                }
+            }
+        }
+        function enableBtn() {
+            var div = document.getElementById('btns');
+            var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+            for (var i = 0, btn; btn = btns[i++];) {
+                UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+            }
+        }
+        function getLocalData() {
+            alert(UE.getEditor('editor').execCommand("getlocaldata"));
+        }
+        function clearLocalData() {
+            UE.getEditor('editor').execCommand("clearlocaldata");
+            alert("已清空草稿箱")
+        }
+    </script>
+</body>
+
+</html>
+            <textarea id="wordtype" name="wordtype" style="display: none"></textarea>
             <a class="btn btn-primary determine wb100 mt20 add">保存</a>
         </div>
     </div>
-    <a><div class="bombMask"></div></a>
+    <a><div class="bombMasks"></div></a>
 </div>
 <!-- 添加文章弹框 end -->
 <!-- 编辑文章弹框 start -->
-<div class="bombBox" id="inspectionEditBomb" style="display: none;">
+<div class="bombBoxs" id="inspectionEditBomb" style="display: none;">
     <div class="bombContent inspectionItemBomb whiteBg">
         <div class="bombTit">编辑检查文章<i class="fa fa-remove"></i></div>
         <div class="ftc pd10">
@@ -142,29 +335,58 @@
             </div>
             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
-                    <span class="btn">是否显示：</span>
+                    <span class="btn">显示：</span>
                 </span>
-                <input class="form-control" type="text" id="editUnitPrice" name="unit_price" value="" placeholder="">
+                <div class="input-group listSeaForm l" style="width: 9%; margin-right: 2%;">
+                    <span class="input-group-btn">
+                        <span class="btn">是：</span>
+                    </span>
+                    <input type="radio" name="blues" id="bluelist" value="1">
+
+                    <span class="input-group-btn" style="left:2px">
+                        <span class="btn">否：</span>
+                    </span>
+                   <input  type="radio" name="blues" id="redlist" value="0">
+
+                </div>
             </div>
             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
                     <span class="btn">热/新：</span>
                 </span>
-                <input class="form-control" type="text" id="editCost" name="cost" value="" placeholder="">
+                <div class="input-group listSeaForm l" style="width: 9%; margin-right: 2%;">
+                    <span class="input-group-btn">
+                        <span class="btn">是：</span>
+                    </span>
+
+                    <input type="radio" name="blue" id="blue" value="1">
+
+                    <span class="input-group-btn" style="left:2px;">
+                        <span class="btn">否：</span>
+                    </span>
+                   <input type="radio" name="blue" id="red" value="0">
+
+                </div>
+               
             </div>
             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
                     <span class="btn">文章内容：</span>
                 </span>
-                <textarea class="form-control" name="editUnit" value="" id="editUnit" cols="20" rows="6"></textarea>
+                <!-- <textarea class="form-control" name="editUnit" value="" id="editUnit" cols="20" rows="6"></textarea> -->
                 <!-- <input  type="text" id="" name="unit" value="" placeholder=""> -->
             </div>
+         
+             <textarea id="myEditor" name="myEditor" style=" ">
+              
+             </textarea>
             <input type="hidden" id="editInsId" name="ins_id" value="">
             <a class="btn btn-primary determine wb100 mt20 edit">保存</a>
         </div>
     </div>
-    <a><div class="bombMask"></div></a>
+    <a><div class="bombMasks"></div></a>
 </div>
+
 <!-- 编辑文章弹框 end -->
 <!-- Javascript -->
 <style>
@@ -203,6 +425,7 @@
         });
         //添加文章弹框
         $(document).on('click', '.inspectionItemAddBtn', function () {
+
             $.get("<?php echo U('/Inspectionfee/addInspection');?>",
                 function (data) {
                     if (data.status=='success') {
@@ -224,13 +447,28 @@
         });
         //添加文章保存
         $(document).on('click', '.add', function() {
+            var word = document.getElementById('wordtype').innerHTML=UE.getEditor('editor').getContent();
+            
             var inspection_name = $('#addInspectionName').val();
             var class_id = $('#addClass option:selected').val();
-            var unit_price = $('#addUnitPrice').val();
-            var cost = $('#addCost').val();
+             var bluelists = $("#bluelists").prop("checked",true);
+             if(bluelists){
+                var unit_price = $("#bluelists").val();
+             }else{
+                var unit_price = $("#redlists").val();
+             }
+             var blues = $("#blues").prop("checked",true);
+             if(blues){
+                var cost = $("#blues").val();
+             }else{
+                var cost = $("#reds").val();
+             }
+            
+            // var cost = $('#redlist').val();
+            // alert(cost);
             var unit = $('#addUnit').val();
             $.post("<?php echo U('/Inspectionfee/addInspection');?>",
-                {"inspection_name":inspection_name,"class_id":class_id,"unit_price":unit_price,"cost":cost,"unit":unit},
+                {"inspection_name":inspection_name,"class_id":class_id,"unit_price":unit_price,"cost":cost,"unit":unit,"word":word},
                 function (data) {
                     if (data.status=='success') {
                         getInspectionLists('', _inspection_page);
@@ -252,8 +490,29 @@
                 {'ins_id':ins_id},
                 function (data) {
                     if (data.status=='success') {
+                        // console.info(data.data);
+                         $("#myEditor").val(data.data.inspectionInfo.textarea);
+                         UE.getEditor('myEditor');
+
                         $('#editInspectionName').val(data.data.inspectionInfo.inspection_name);
-                        $('#editUnitPrice').val(data.data.inspectionInfo.unit_price);
+                       if(data.data.inspectionInfo.unit_price=='1'){
+                       
+                           $("#bluelist").prop("checked",true);
+                           $("#redlist").prop("checked",false);
+
+                       }else{
+                          $("#bluelist").prop("checked",false);
+                           $("#redlist").prop("checked",true);
+                       }
+                       if(data.data.inspectionInfo.cost =='1'){
+                           $("#blue").prop("checked",true);
+                           $("#red").prop("checked",false);
+
+                       }else{
+                           $("#blue").prop("checked",false);
+                           $("#red").prop("checked",true);
+
+                       }
                         $('#editCost').val(data.data.inspectionInfo.cost);
                         $('#editUnit').val(data.data.inspectionInfo.unit);
                         $('#editInsId').val(data.data.inspectionInfo.ins_id);
@@ -286,13 +545,16 @@
             var inspection_name = $('#editInspectionName').val();
             var class_id = $('#editClass option:selected').val();
             var class_name = $('#editClass option:selected').html();
-            var unit_price = $('#editUnitPrice').val();
-            var cost = $('#editCost').val();
+            var unit_price = $('input:radio[name=blues]:checked').val();
+           
+            var cost = $('input:radio[name=blue]:checked').val();
             var unit = $('#editUnit').val();
             var ins_id = $('#editInsId').val();
             var id= $('#'+ins_id+' td:eq(0)').html();
+            var word = document.getElementById('myEditor').innerHTML=UE.getEditor('myEditor').getContent();
+            
             $.post("<?php echo U('/Inspectionfee/editInspection');?>",
-                {"inspection_name":inspection_name,"class_id":class_id,"unit_price":unit_price,"cost":cost,"unit":unit,'ins_id':ins_id},
+                {"inspection_name":inspection_name,"class_id":class_id,"unit_price":unit_price,"cost":cost,"unit":unit,'ins_id':ins_id,"word":word},
                 function (data) {
                     if (data.status=='success') {
                         var html = '<tr id="'+ins_id+'"><td>'+id+'</td>' +
@@ -312,6 +574,7 @@
                         $('#inspectionEditBomb').hide(0);
                     }
                     remindBox(data.msg);
+                     location.reload();
                 },
                 "json");
         });
@@ -342,6 +605,16 @@
                         var html = '';
                         $.each(data.data.list,function (i,item) {
                             var id = i + 1;
+                            if(item.unit_price =='1' ){
+                                item.unit_price = '是';
+                            }else{
+                                item.unit_price = '否'
+                            }
+                            if(item.cost == '1'){
+                                item.cost = '是';
+                            }else{
+                                item.cost = '否';
+                            }
                             html += '<tr id="'+item.ins_id+'">' +
                                 '<td>'+item.ins_id+'</td>' +
                                 '<td>'+item.inspection_name+'</td>' +
@@ -353,6 +626,7 @@
                                 '<button type="button" class="btn btn-default btn-sm returnBtn delete" data-insid="'+item.ins_id+'">删除</button></td></tr>';
                         });
                         _inspection_page=data.data.page;
+
                         $("#tbodyApp").html(html);
                         if(data.data.pager_str.length>0){
                             $("#inspection_pager_box").html(data.data.pager_str);

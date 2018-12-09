@@ -55,6 +55,7 @@
                     </div>
                     <div id="J_TopicContent" class="g-zw">
                     <?php echo ($reslist["unit"]); ?>
+                    <?php echo ($reslist["textarea"]); ?>
                     </div>
             </div>
             <div class="g-share">
@@ -311,7 +312,7 @@
                 </p>
                 <div style="width:300px;margin:0 auto; padding:20px 0;">
                     <a target="_blank" href="" rel="nofollow" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/Public/home/images/ghs.png" style="float:left;" />
-                        <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">苏ICP备16006821号-2</p>
+                        <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">苏ICP备16006825号-4</p>
                     </a>
                 </div>
             </div>

@@ -117,10 +117,10 @@
                          <form class="gh-search-form" action="<?php echo U('home/index/search');?>" name="qform">
                             <span class="gh-search-input">
                 <span class="search-icon"></span>
-                            <input type="text" name="q" value="" autocomplete="off" maxlength="50" class="J_SearchQ" placeholder="请输入疾病名、科室名、医院名或医生名" />
+                            <input type="text" name="q" value="" id="J_SearchQs" autocomplete="off" maxlength="50"  placeholder="请输入疾病名、科室名、医院名或医生名" />
                           
                             </span>
-                            <a class="gbn gbt-green2 radius-right big-search-bt" href="">搜索</a>
+                            <a class="gbn gbt-green2 radius-right big-search-bt"  id="searchid">搜索</a>
                             <div class="clear"></div>
                         </form>
                         <div class="search-key">
@@ -188,36 +188,46 @@
                                         <span class="sub-ds">
         <a  class="first"  onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'糖尿病'+'&searchType=search'; " monitor="public_fastselect,div,hotsick">糖尿病</a>
         <a   onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'高血压'+'&searchType=search'; ">高血压</a>
-        <a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="" monitor="public_fastselect,div,hotsick">冠心病</a>
+        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'冠心病'+'&searchType=search';" monitor="public_fastselect,div,hotsick">冠心病</a>
         </span>
                                     </li>
                                     <li data-id="2">
                                         <h5 class="title"><i class="wk"></i><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="">外科</a></h5>
                                         <span class="sub-ds">
-        <a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E4%B9%B3%E8%85%BA%E7%99%8C" class="first" monitor="public_fastselect,div,hotsick">乳腺癌</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E8%A1%80%E7%AE%A1%E7%98%A4" monitor="public_fastselect,div,hotsick">血管瘤</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E8%82%9D%E7%99%8C" monitor="public_fastselect,div,hotsick">肝癌</a>
+        <a  onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'乳腺癌'+'&searchType=search';" class="first" monitor="public_fastselect,div,hotsick">乳腺癌</a>
+        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'血管瘤'+'&searchType=search';" monitor="public_fastselect,div,hotsick">血管瘤</a>
+        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'肝癌'+'&searchType=search';" monitor="public_fastselect,div,hotsick">肝癌</a>
         </span>
                                     </li>
                                     <li data-id="3">
                                         <h5 class="title"><i class="fck"></i><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="">妇产科</a></h5>
                                         <span class="sub-ds">
-        <a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E4%B8%8D%E5%AD%95" class="first" monitor="public_fastselect,div,hotsick">不孕</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E9%98%B4%E9%81%93%E7%82%8E" monitor="public_fastselect,div,hotsick">阴道炎</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E5%8D%B5%E5%B7%A2%E5%9B%8A%E8%82%BF" monitor="public_fastselect,div,hotsick">卵巢囊肿</a>
+        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'不孕'+'&searchType=search';" class="first" monitor="public_fastselect,div,hotsick">不孕</a>
+        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'阴道炎'+'&searchType=search';" monitor="public_fastselect,div,hotsick">阴道炎</a>
+        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'卵巢囊肿'+'&searchType=search';" monitor="public_fastselect,div,hotsick">卵巢囊肿</a>
         </span>
                                     </li>
                                     <li data-id="4">
                                         <h5 class="title"><i class="pfk"></i><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="">皮肤性病科</a></h5>
                                         <span class="sub-ds">
-        <a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E7%99%BD%E7%99%9C%E9%A3%8E" class="first" monitor="public_fastselect,div,hotsick">白癜风</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E6%B9%BF%E7%96%B9" monitor="public_fastselect,div,hotsick">湿疹</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E9%93%B6%E5%B1%91%E7%97%85" monitor="public_fastselect,div,hotsick">银屑病</a>
+        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'白癜风'+'&searchType=search';" class="first" monitor="public_fastselect,div,hotsick">白癜风</a>
+        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'湿疹'+'&searchType=search';" monitor="public_fastselect,div,hotsick">湿疹</a>
+        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'银屑病'+'&searchType=search';" monitor="public_fastselect,div,hotsick">银屑病</a>
         </span>
                                     </li>
                                     <li data-id="5">
                                         <h5 class="title"><i class="gk"></i><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="">骨科</a></h5>
-                                        <span class="sub-ds"><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E9%A2%88%E6%A4%8E%E7%97%85" class="first" monitor="public_fastselect,div,hotsick">颈椎病</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E8%85%B0%E6%A4%8E%E9%97%B4%E7%9B%98%E7%AA%81%E5%87%BA%E7%97%87" monitor="public_fastselect,div,hotsick">腰椎间盘突出症</a>
+                                        <span class="sub-ds">
+                                        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'颈椎病'+'&searchType=search';" class="first" monitor="public_fastselect,div,hotsick">颈椎病</a>
+                                        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'腰椎间盘突出症'+'&searchType=search';" monitor="public_fastselect,div,hotsick">腰椎间盘突出症</a>
         </span>
                                     </li>
                                     <li data-id="6">
                                         <h5 class="title"><i class="wgk"></i><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="">耳鼻咽喉科</a></h5>
                                         <span class="sub-ds">
-        <a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=鼻咽癌" class="first" monitor="public_fastselect,div,hotsick">鼻咽癌</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E9%BC%BB%E7%82%8E" monitor="public_fastselect,div,hotsick">鼻炎</a><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="/s.html?key=%E7%99%BD%E5%86%85%E9%9A%9C" monitor="public_fastselect,div,hotsick">白内障</a>
+        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'鼻咽癌'+'&searchType=search';" class="first" monitor="public_fastselect,div,hotsick">鼻咽癌</a>
+        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'鼻炎'+'&searchType=search';" monitor="public_fastselect,div,hotsick">鼻炎</a>
+        <a onclick=" window.location.href='<?php echo U('home/index/search');?>'+'?q='+'白内障'+'&searchType=search';" monitor="public_fastselect,div,hotsick">白内障</a>
         </span>
                                     </li>
                                     <li class="other" data-id="8">
@@ -1734,7 +1744,7 @@
                         <div class="g-grid-left">
                             <div class="news-main g-clear">
                                 <div class="news-item medical-strategy J_medicalStrategy">
-                                    <h5>就医攻略</h5>
+                                    <h5>就医攻略<li style="float:right;list-style:none">更多</li></h5> 
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="/Public/home/images/1536026134780.jpg" alt="又双叒叕流产！怎么才能保住宝宝？">
@@ -2048,7 +2058,7 @@
                     </div>
                 </div>
                 <p class="copyright">
-                    版权所有：杭州广发科技有限公司&nbsp;&nbsp;&nbsp;
+                    版权所有：&nbsp;&nbsp;&nbsp;
                         <a href="" rel="nofollow">浙B2-20130007</a>&nbsp;&nbsp;
                         <a href="" rel="nofollow">浙卫(03)网审[2014]015号</a>&nbsp;&nbsp;
                         <a href="" rel="nofollow">(浙)-经营性-2014-0022</a>&nbsp;&nbsp;
@@ -2059,7 +2069,7 @@
                 </p>
                 <div style="width:300px;margin:0 auto; padding:20px 0;">
                     <a target="_blank" href="" rel="nofollow" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/Public/home/images/ghs.png" style="float:left;" />
-                        <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">苏ICP备16006821号-2</p>
+                        <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">苏ICP备16006825号-4</p>
                     </a>
                 </div>
             </div>
@@ -2069,6 +2079,7 @@
         <div id="gm-bg"></div>
         <div id="gm-mask">
         </div>
+
         <script type="text/javascript">
             $GC = {
                 debug: false,
@@ -2096,11 +2107,11 @@
 
             // $GS { Array } - the init parameters for startup
             $GS = [
-                $GC.jspath + "/plugins/scout.js?_=1535436384237752",
-                $GC.jspath + "/plugins/raven.js?_=1535436384237752",
-                $GC.jsCPath + "/base/jquery-1.8.1.min.js",
+                // $GC.jspath + "/plugins/scout.js?_=1535436384237752",
+                // $GC.jspath + "/plugins/raven.js?_=1535436384237752",
+                // $GC.jsCPath + "/base/jquery-1.8.1.min.js",
                 $GC.jspath + "/base/GH.js?_=1535436384237752",
-                $GC.jsCPath + "/plugins/validator.js?_=20160129",
+                // $GC.jsCPath + "/plugins/validator.js?_=20160129",
                 function() {
 
                     // load common module
@@ -2130,7 +2141,7 @@
            $(document).ready(function(){
             $('#searchid').click(function(){
 
-                var q = $('.J_SearchQs').val();
+                var q = $('#J_SearchQs').val();
                
                 if(q){
                      window.location.href='<?php echo U('home/index/search');?>'+'?q='+q+'&searchType=search'; 
@@ -2138,6 +2149,8 @@
               
               
             });
+            // alert(99);
+         
            });
        </script>
 </body>

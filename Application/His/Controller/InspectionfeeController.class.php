@@ -39,6 +39,9 @@ class InspectionfeeController extends HisBaseController
         }
         $hospitalId = $this->hospitalInfo['uid'];
         $inspectionLists = $this->inspectionfee_model->getInspectionLists($hospitalId, $search);
+        $inspectionLists['unit_price']==1?'是':'否';
+        $inspectionLists['cost'] == 1 ?'是':'否';
+        // var_dump($inspectionLists);
         if (IS_AJAX) {
             $this->ajaxSuccess('', $inspectionLists);
         } else {
@@ -52,6 +55,7 @@ class InspectionfeeController extends HisBaseController
      */
     public function addInspection()
     {
+        // var_dump(I('post.'));die;
         if(IS_POST){ //保存添加检查项目
             $mid = $this->userInfo['uid'];
             $hospitalId = $this->hospitalInfo['uid'];
@@ -72,6 +76,7 @@ class InspectionfeeController extends HisBaseController
             // if(!empty(I('post.cost')) && !is_numeric($cost)) $this->ajaxError('成本金额为整数或小数');
             //保存添加的检查项目
             $classId = I('post.class_id','','intval');
+
             $class = D('his_dictionary')->findDictionaryById($classId);
             $data = array(
                 'mid'                  =>  $mid,
@@ -80,6 +85,7 @@ class InspectionfeeController extends HisBaseController
                 'unit_price'           =>  $unitPrice,
                 'unit'                 =>  I('post.unit','','htmlspecialchars'),
                 'cost'                 =>  $cost,
+                'textarea'             =>  htmlspecialchars_decode(I('post.word')),
                 'class'                =>  $class ? $class['dictionary_name'] : '系统默认',
                 'class_id'             =>  $class ? $class['did'] : 0,
                 'create_time'          =>  time(),
@@ -102,6 +108,11 @@ class InspectionfeeController extends HisBaseController
             $this->ajaxSuccess('', $classLists);
         }
     }
+
+    public function edit(){
+        $this->display();
+    }
+    
 
     /**
      * 检查项目修改
@@ -144,6 +155,7 @@ class InspectionfeeController extends HisBaseController
                 'inspection_name'      =>  $inspectionName,
                 'unit_price'           =>  $unitPrice,
                 'unit'                 =>  I('post.unit','','htmlspecialchars'),
+                'textarea'             =>  htmlspecialchars_decode(I('post.word')),
                 'cost'                 =>  $cost,
                 'class'                =>  $class,
                 'class_id'             =>  $class_id,
@@ -164,6 +176,7 @@ class InspectionfeeController extends HisBaseController
             $insId = I('get.ins_id','','intval');
             $hospitalId = $this->hospitalInfo['uid'];
             $inspectionInfo = $this->inspectionfee_model->getInspectionInfoById($insId);
+            $inspectionInfo['textarea'] = htmlspecialchars_decode($inspectionInfo['textarea']);
             $map = [
                 'parent_id' => 16,
                 'hid' => array('in', [0,$hospitalId]),

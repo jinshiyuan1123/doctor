@@ -72,10 +72,10 @@
                          <form class="gh-search-form" action="{:U('home/index/search')}" name="qform">
                             <span class="gh-search-input">
                 <span class="search-icon"></span>
-                            <input type="text" name="q" value="" autocomplete="off" maxlength="50" class="J_SearchQ" placeholder="请输入疾病名、科室名、医院名或医生名" />
+                            <input type="text" name="q" value="" id="J_SearchQs" autocomplete="off" maxlength="50"  placeholder="请输入疾病名、科室名、医院名或医生名" />
                           
                             </span>
-                            <a class="gbn gbt-green2 radius-right big-search-bt" href="">搜索</a>
+                            <a class="gbn gbt-green2 radius-right big-search-bt"  id="searchid">搜索</a>
                             <div class="clear"></div>
                         </form>
                         <div class="search-key">
@@ -900,7 +900,7 @@
                         <div class="g-grid-left">
                             <div class="news-main g-clear">
                                 <div class="news-item medical-strategy J_medicalStrategy">
-                                    <h5>就医攻略</h5>
+                                    <h5>就医攻略<li style="float:right;list-style:none">更多</li></h5> 
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="__PUBLIC_HOME__/images/1536026134780.jpg" alt="又双叒叕流产！怎么才能保住宝宝？">
@@ -1230,6 +1230,7 @@
         <div id="gm-bg"></div>
         <div id="gm-mask">
         </div>
+
         <script type="text/javascript">
             $GC = {
                 debug: false,
@@ -1257,11 +1258,11 @@
 
             // $GS { Array } - the init parameters for startup
             $GS = [
-                $GC.jspath + "/plugins/scout.js?_=1535436384237752",
-                $GC.jspath + "/plugins/raven.js?_=1535436384237752",
-                $GC.jsCPath + "/base/jquery-1.8.1.min.js",
+                // $GC.jspath + "/plugins/scout.js?_=1535436384237752",
+                // $GC.jspath + "/plugins/raven.js?_=1535436384237752",
+                // $GC.jsCPath + "/base/jquery-1.8.1.min.js",
                 $GC.jspath + "/base/GH.js?_=1535436384237752",
-                $GC.jsCPath + "/plugins/validator.js?_=20160129",
+                // $GC.jsCPath + "/plugins/validator.js?_=20160129",
                 function() {
 
                     // load common module
@@ -1291,7 +1292,7 @@
            $(document).ready(function(){
             $('#searchid').click(function(){
 
-                var q = $('.J_SearchQs').val();
+                var q = $('#J_SearchQs').val();
                
                 if(q){
                      window.location.href='{:U('home/index/search')}'+'?q='+q+'&searchType=search'; 
@@ -1299,6 +1300,8 @@
               
               
             });
+            // alert(99);
+         
            });
        </script>
 </body>

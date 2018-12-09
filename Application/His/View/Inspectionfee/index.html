@@ -1,3 +1,5 @@
+
+
 <!-- MAIN -->
 <div class="main">
     <!-- MAIN CONTENT -->
@@ -34,9 +36,10 @@
 </div>
 <!-- END MAIN -->
 <!-- 添加文章弹框 start -->
-<div class="bombBox" id="inspectionItemBomb" style="display: none;">
-    <div class="bombContent inspectionItemBomb whiteBg">
+<div class="bombBoxs" id="inspectionItemBomb" style="display: none;">
+    <div class="bombContent inspectionItemBomb whiteBg wenzhang">
         <div class="bombTit">添加文章<i class="fa fa-remove"></i></div>
+
         <div class="ftc pd10">
             <div class="input-group listSeaForm wb100">
                 <span class="input-group-btn">
@@ -52,33 +55,59 @@
 
                 </select>
             </div>
-            <div class="input-group listSeaForm wb100 mt10">
+             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
-                    <span class="btn">是否显示：</span>
+                    <span class="btn">显示：</span>
                 </span>
-                <input class="form-control" type="text" id="addUnitPrice" name="unit_price" value="" placeholder="">
+                <div class="input-group listSeaForm l" style="width: 9%; margin-right: 2%;">
+                    <span class="input-group-btn">
+                        <span class="btn">是：</span>
+                    </span>
+                    <input type="radio" name="blues" id="bluelists" value="1">
+
+                    <span class="input-group-btn" style="left:2px">
+                        <span class="btn">否：</span>
+                    </span>
+                   <input  type="radio" name="blues" id="redlists" value="0">
+
+                </div>
             </div>
             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
                     <span class="btn">热/新：</span>
                 </span>
-                <input class="form-control" type="text" id="addCost" name="cost" value="" placeholder="">
+                <div class="input-group listSeaForm l" style="width: 9%; margin-right: 2%;">
+                    <span class="input-group-btn">
+                        <span class="btn">是：</span>
+                    </span>
+
+                    <input type="radio" name="blue" id="blues" value="1">
+
+                    <span class="input-group-btn" style="left:2px;">
+                        <span class="btn">否：</span>
+                    </span>
+                   <input type="radio" name="blue" id="reds" value="0">
+
+                </div>
+               
             </div>
-            <div class="input-group listSeaForm wb100 mt10">
+             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
                     <span class="btn">文章内容：</span>
                 </span>
-                <textarea name="" id="addUnit" name="addUnit" value="" cols="20" rows="6"></textarea>
+                <!-- <textarea name="" id="addUnit" name="addUnit" value="" cols="100" rows="6"></textarea> -->
              
             </div>
+            <include file="Public:edit"/>
+            <textarea id="wordtype" name="wordtype" style="display: none"></textarea>
             <a class="btn btn-primary determine wb100 mt20 add">保存</a>
         </div>
     </div>
-    <a><div class="bombMask"></div></a>
+    <a><div class="bombMasks"></div></a>
 </div>
 <!-- 添加文章弹框 end -->
 <!-- 编辑文章弹框 start -->
-<div class="bombBox" id="inspectionEditBomb" style="display: none;">
+<div class="bombBoxs" id="inspectionEditBomb" style="display: none;">
     <div class="bombContent inspectionItemBomb whiteBg">
         <div class="bombTit">编辑检查文章<i class="fa fa-remove"></i></div>
         <div class="ftc pd10">
@@ -98,29 +127,58 @@
             </div>
             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
-                    <span class="btn">是否显示：</span>
+                    <span class="btn">显示：</span>
                 </span>
-                <input class="form-control" type="text" id="editUnitPrice" name="unit_price" value="" placeholder="">
+                <div class="input-group listSeaForm l" style="width: 9%; margin-right: 2%;">
+                    <span class="input-group-btn">
+                        <span class="btn">是：</span>
+                    </span>
+                    <input type="radio" name="blues" id="bluelist" value="1">
+
+                    <span class="input-group-btn" style="left:2px">
+                        <span class="btn">否：</span>
+                    </span>
+                   <input  type="radio" name="blues" id="redlist" value="0">
+
+                </div>
             </div>
             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
                     <span class="btn">热/新：</span>
                 </span>
-                <input class="form-control" type="text" id="editCost" name="cost" value="" placeholder="">
+                <div class="input-group listSeaForm l" style="width: 9%; margin-right: 2%;">
+                    <span class="input-group-btn">
+                        <span class="btn">是：</span>
+                    </span>
+
+                    <input type="radio" name="blue" id="blue" value="1">
+
+                    <span class="input-group-btn" style="left:2px;">
+                        <span class="btn">否：</span>
+                    </span>
+                   <input type="radio" name="blue" id="red" value="0">
+
+                </div>
+               
             </div>
             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
                     <span class="btn">文章内容：</span>
                 </span>
-                <textarea class="form-control" name="editUnit" value="" id="editUnit" cols="20" rows="6"></textarea>
+                <!-- <textarea class="form-control" name="editUnit" value="" id="editUnit" cols="20" rows="6"></textarea> -->
                 <!-- <input  type="text" id="" name="unit" value="" placeholder=""> -->
             </div>
+         
+             <textarea id="myEditor" name="myEditor" style=" ">
+              
+             </textarea>
             <input type="hidden" id="editInsId" name="ins_id" value="">
             <a class="btn btn-primary determine wb100 mt20 edit">保存</a>
         </div>
     </div>
-    <a><div class="bombMask"></div></a>
+    <a><div class="bombMasks"></div></a>
 </div>
+
 <!-- 编辑文章弹框 end -->
 <!-- Javascript -->
 <style>
@@ -159,6 +217,7 @@
         });
         //添加文章弹框
         $(document).on('click', '.inspectionItemAddBtn', function () {
+
             $.get("{:U('/Inspectionfee/addInspection')}",
                 function (data) {
                     if (data.status=='success') {
@@ -180,13 +239,28 @@
         });
         //添加文章保存
         $(document).on('click', '.add', function() {
+            var word = document.getElementById('wordtype').innerHTML=UE.getEditor('editor').getContent();
+            
             var inspection_name = $('#addInspectionName').val();
             var class_id = $('#addClass option:selected').val();
-            var unit_price = $('#addUnitPrice').val();
-            var cost = $('#addCost').val();
+             var bluelists = $("#bluelists").prop("checked",true);
+             if(bluelists){
+                var unit_price = $("#bluelists").val();
+             }else{
+                var unit_price = $("#redlists").val();
+             }
+             var blues = $("#blues").prop("checked",true);
+             if(blues){
+                var cost = $("#blues").val();
+             }else{
+                var cost = $("#reds").val();
+             }
+            
+            // var cost = $('#redlist').val();
+            // alert(cost);
             var unit = $('#addUnit').val();
             $.post("{:U('/Inspectionfee/addInspection')}",
-                {"inspection_name":inspection_name,"class_id":class_id,"unit_price":unit_price,"cost":cost,"unit":unit},
+                {"inspection_name":inspection_name,"class_id":class_id,"unit_price":unit_price,"cost":cost,"unit":unit,"word":word},
                 function (data) {
                     if (data.status=='success') {
                         getInspectionLists('', _inspection_page);
@@ -208,8 +282,29 @@
                 {'ins_id':ins_id},
                 function (data) {
                     if (data.status=='success') {
+                        // console.info(data.data);
+                         $("#myEditor").val(data.data.inspectionInfo.textarea);
+                         UE.getEditor('myEditor');
+
                         $('#editInspectionName').val(data.data.inspectionInfo.inspection_name);
-                        $('#editUnitPrice').val(data.data.inspectionInfo.unit_price);
+                       if(data.data.inspectionInfo.unit_price=='1'){
+                       
+                           $("#bluelist").prop("checked",true);
+                           $("#redlist").prop("checked",false);
+
+                       }else{
+                          $("#bluelist").prop("checked",false);
+                           $("#redlist").prop("checked",true);
+                       }
+                       if(data.data.inspectionInfo.cost =='1'){
+                           $("#blue").prop("checked",true);
+                           $("#red").prop("checked",false);
+
+                       }else{
+                           $("#blue").prop("checked",false);
+                           $("#red").prop("checked",true);
+
+                       }
                         $('#editCost').val(data.data.inspectionInfo.cost);
                         $('#editUnit').val(data.data.inspectionInfo.unit);
                         $('#editInsId').val(data.data.inspectionInfo.ins_id);
@@ -242,13 +337,16 @@
             var inspection_name = $('#editInspectionName').val();
             var class_id = $('#editClass option:selected').val();
             var class_name = $('#editClass option:selected').html();
-            var unit_price = $('#editUnitPrice').val();
-            var cost = $('#editCost').val();
+            var unit_price = $('input:radio[name=blues]:checked').val();
+           
+            var cost = $('input:radio[name=blue]:checked').val();
             var unit = $('#editUnit').val();
             var ins_id = $('#editInsId').val();
             var id= $('#'+ins_id+' td:eq(0)').html();
+            var word = document.getElementById('myEditor').innerHTML=UE.getEditor('myEditor').getContent();
+            
             $.post("{:U('/Inspectionfee/editInspection')}",
-                {"inspection_name":inspection_name,"class_id":class_id,"unit_price":unit_price,"cost":cost,"unit":unit,'ins_id':ins_id},
+                {"inspection_name":inspection_name,"class_id":class_id,"unit_price":unit_price,"cost":cost,"unit":unit,'ins_id':ins_id,"word":word},
                 function (data) {
                     if (data.status=='success') {
                         var html = '<tr id="'+ins_id+'"><td>'+id+'</td>' +
@@ -268,6 +366,7 @@
                         $('#inspectionEditBomb').hide(0);
                     }
                     remindBox(data.msg);
+                     location.reload();
                 },
                 "json");
         });
@@ -298,6 +397,16 @@
                         var html = '';
                         $.each(data.data.list,function (i,item) {
                             var id = i + 1;
+                            if(item.unit_price =='1' ){
+                                item.unit_price = '是';
+                            }else{
+                                item.unit_price = '否'
+                            }
+                            if(item.cost == '1'){
+                                item.cost = '是';
+                            }else{
+                                item.cost = '否';
+                            }
                             html += '<tr id="'+item.ins_id+'">' +
                                 '<td>'+item.ins_id+'</td>' +
                                 '<td>'+item.inspection_name+'</td>' +
@@ -309,6 +418,7 @@
                                 '<button type="button" class="btn btn-default btn-sm returnBtn delete" data-insid="'+item.ins_id+'">删除</button></td></tr>';
                         });
                         _inspection_page=data.data.page;
+
                         $("#tbodyApp").html(html);
                         if(data.data.pager_str.length>0){
                             $("#inspection_pager_box").html(data.data.pager_str);
