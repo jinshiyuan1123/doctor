@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-12-04 22:44:46
+Date: 2018-12-09 22:59:45
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -2859,7 +2859,7 @@ CREATE TABLE `dzm_his_auth_group_access` (
 -- Records of dzm_his_auth_group_access
 -- ----------------------------
 INSERT INTO `dzm_his_auth_group_access` VALUES ('1', '1');
-INSERT INTO `dzm_his_auth_group_access` VALUES ('2', '2');
+INSERT INTO `dzm_his_auth_group_access` VALUES ('2', '4');
 INSERT INTO `dzm_his_auth_group_access` VALUES ('3', '2');
 INSERT INTO `dzm_his_auth_group_access` VALUES ('4', '2');
 INSERT INTO `dzm_his_auth_group_access` VALUES ('5', '2');
@@ -3037,7 +3037,7 @@ INSERT INTO `dzm_his_auth_rule` VALUES ('223', 'fa fa-info-circle', 'Member/myHo
 INSERT INTO `dzm_his_auth_rule` VALUES ('224', 'fa fa-info-circle', 'Member/myvideo', '微视频', '22', '1', '1', '1', '1', '', '0');
 INSERT INTO `dzm_his_auth_rule` VALUES ('225', 'fa fa-info-circle', 'Member/editUserlist', '微视频编辑', '22', '2', '1', '1', '1', '', '0');
 INSERT INTO `dzm_his_auth_rule` VALUES ('226', 'fa fa-info-circle', 'Member/addUserlist', '微视频保存', '22', '2', '1', '1', '1', '', '0');
-INSERT INTO `dzm_his_auth_rule` VALUES ('227', 'fa fa-info-circle', 'Member/removelist', '微视频移除', '22', '2', '1', '1', '1', '', '0');
+INSERT INTO `dzm_his_auth_rule` VALUES ('227', 'fa fa-info-circle', 'Inspectionfee/edit', '微视频移除', '22', '2', '1', '1', '1', '', '0');
 
 -- ----------------------------
 -- Table structure for dzm_his_batches_of_inventory
@@ -3792,6 +3792,7 @@ CREATE TABLE `dzm_his_doctor` (
   `department` varchar(255) DEFAULT NULL COMMENT '科室',
   `rank` varchar(255) DEFAULT NULL COMMENT '医生级别',
   `job` varchar(255) NOT NULL COMMENT '职位',
+  `ip` varchar(255) NOT NULL,
   `room` text NOT NULL COMMENT '科室',
   `create_time` int(10) NOT NULL COMMENT '注册时间',
   `update_time` int(10) NOT NULL COMMENT '修改时间',
@@ -3802,14 +3803,16 @@ CREATE TABLE `dzm_his_doctor` (
   `ask_price` decimal(10,2) DEFAULT '0.00' COMMENT '咨询价格',
   PRIMARY KEY (`id`),
   KEY `uid` (`uid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COMMENT='医生基本信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COMMENT='医生基本信息表';
 
 -- ----------------------------
 -- Records of dzm_his_doctor
 -- ----------------------------
-INSERT INTO `dzm_his_doctor` VALUES ('1', '测试', '33', '', '0', '0', '0', '13141589223', '', '协和医院', '2', '3', '', '', '1543235676', '1543933318', '', '2', '4', '2', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('2', '王昊天', '44', '', '0', '0', '0', '13141589223', '', '协和医院', '3', '1', '', '', '1543240548', '1543933318', '', '2', '5', '2', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('3', '李小健', '33', '', '0', '0', '0', '13141589223', '', '协和医院', '2', '2', '', '', '1543247335', '1543933318', '', '2', '4', '', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('1', '', null, '', '0', '0', '0', '13141589223', '$2y$12$uSv5Ek4qF7nkmbxmsqVrkuCY4uUq.A4LtPRow6GIzgJJcA6VYzszW', '协和医院', null, '3', '', '', '', '1543235676', '1544333782', '', '2', '', '2', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('2', '方法', '0', '', '0', '0', '0', '13141589223', '$2y$12$8aLaRV0WMeVHIZpmzi4xCOANVFPGaLA66ozEiAcLCax89tWvNitD2', '协和医院', '', '1', '', '', '', '1543240548', '1544333782', '', '2', '7', '2', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('3', '测试', '0', '', '0', '0', '0', '13141589223', '$2y$12$3sab.fPjhPHMvCGXl1ijJuguegZE3yUfGAqYbziXlgLwiUzx4ILc.', '协和医院', '', '2', '', '', '', '1543247335', '1544333782', '', '2', '7', '', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('4', '王守道', '0', '130000', '0', '唐山市', '83856745', '13141589203', '$2y$12$Mtv3mGq3i92VRMsFyTrSGu5/4yzBHS6lRCYkvu3GhCsLC8iC1pHuW', '中心医院', '', '1', '医生', '', '', '1544332507', '1544336336', '', '2', '7', '', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('5', '多的', '0', '130000', '0', '秦皇岛市', '83856745', '13141589556', '$2y$12$yIoudEjifKHjW5X8a9cWWuAybiLyJAq62ejyS3NPxV8WXNpL3x1ei', '但是', null, '1', '士大夫', '127.0.0.1', '', '1544346481', '1544346481', '', '2', '', '', '0.00');
 
 -- ----------------------------
 -- Table structure for dzm_his_doctors
@@ -3963,6 +3966,7 @@ CREATE TABLE `dzm_his_inspectionfee` (
   `inspection_name` varchar(255) NOT NULL DEFAULT '' COMMENT '项目名称',
   `class` varchar(255) NOT NULL DEFAULT '' COMMENT '项目类别',
   `unit_price` varchar(255) NOT NULL DEFAULT '0.00' COMMENT '项目单价',
+  `textarea` longtext,
   `cost` varchar(255) NOT NULL DEFAULT '0.00' COMMENT '项目成本',
   `create_time` int(10) NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(10) NOT NULL DEFAULT '0' COMMENT '修改时间',
@@ -3972,17 +3976,28 @@ CREATE TABLE `dzm_his_inspectionfee` (
   KEY `hid` (`hid`) USING BTREE,
   KEY `inspection_name` (`inspection_name`) USING BTREE,
   KEY `class` (`class`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COMMENT='检查项目费用表';
+) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COMMENT='检查项目费用表';
 
 -- ----------------------------
 -- Records of dzm_his_inspectionfee
 -- ----------------------------
-INSERT INTO `dzm_his_inspectionfee` VALUES ('7', '1', '1', '警惕冬季高发病，守护宝宝健康入冬', '就医攻略', '是', '新', '1543464112', '1543464302', '秋风中，申城弥漫着沁人心脾的桂花香。老饕们的至爱大闸蟹亦应市而上。秋天是个收获的季节。收获之后意味着贮藏，故而秋冬相连，不仅仅是季节的更替。中医认为秋收冬藏。冬藏的正是秋气肃降之下的阳气。阳气者，人身之大宝也。“天之一丸红日，人之一息真阳”。真阳足则人体康健。对重视身体健康的人士来说，如何在冬令贮藏真气之季保养阳气着实应该引起重视。而中医的滋补膏方确是一种好方法。', '22');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('10', '1', '1', '秋风起，蟹脚痒；冬令至，膏滋俏', '中医养生', '是', '', '1543472337', '0', '从古至今，国人都十分重视“立冬”。在北方，立冬有吃倭瓜饺子的风俗；台湾立冬有“羊肉炉”、“姜母鸭”进补习惯。苏州人在立冬的时候常吃什么呢？7日，苏州博物馆（苏州民俗博物馆）研究员沈建东告诉记者，保健进补是“老苏州”立冬的主要习俗。 　　 　　 冬令进补吃膏滋是苏州人过立冬的老传统。在旧时苏州，一些大户人家还用红参、桂圆、核桃肉，在冬季烧汤喝，有补气活血助阳的功效。通常每到立冬节气，苏州中医院以及一些老字号药房都会专门开设进补门诊，为市民煎熬膏药，销售冬令滋补保健品。 【绿之韵胶囊】www.lvzhiyun.cn 　　 　　 此外，苏州人自秋天开始，便强调每天吃些白果、栗子等坚果，温肺益气。近些年在立冬前，苏州各处羊肉店也纷纷开张，“吃个羊肉火锅、喝碗羊汤暖暖身”，也是非常惬意的。 　　 　　 沈建东告诉记者，立冬之后，农历十月就马上到了，农历十月伊始，“老苏州”们便纷纷开始忙碌准备冬天的储备食物，如小麦来酿冬酿酒、腌制蔬菜等。此时，江南还有“西风响，蟹脚痒，蟹立冬，影无踪”的谚语，喜欢吃螃蟹的苏州人到了农历十月也开始变换吃法儿，所谓的“九月雌、十月雄”是说到了农历十月就要吃雄的螃蟹了', '23');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('8', '1', '1', '医生说｜脾胃不好膏方来调！冬季进补正当时', '就医攻略', '是', '', '1543471585', '0', '对于肝脏的保护、保养一直是很多人都非常关心的事情，做好养肝、护肝的相关事宜，不只是对肝脏好，对整个五脏六腑的调节也是好的。当前，肝脏疾病不断涌现出来，肝脏一旦出现损伤，带来的影响是很多人无法接受的。\n而脂肪肝是最常见的肝脏疾病，需要大家认清楚，了解脂肪肝是什么，能够让人更好的保健？', '22');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('9', '1', '1', '手机放口袋会杀精吗？', '谣言粉碎机', '是', '热', '1543472176', '0', '目前，患上脂肪肝的中老年人越来越多，需要引起大家的关注，肝细胞中的脂肪堆积不断增多，引起了脂肪发生病变，脂肪在其中起到了非常重要的推波助澜作用。\n\n正常情况下，健康的肝脏是需要少量的脂肪，例如，甘油三酯、磷脂、胆固醇等，这些成分约占肝脏的5%。但是，一旦肝脏中的脂肪含量超标，甚至达到了50%，那么就可能形成了脂肪肝。\n\n出现了脂肪肝，除了通过服药治疗外，正确的饮食显得更加重要，有些食物能吃，有些食物不能吃。\n\n出现脂肪肝，吃什么好？\n\n1、豆制品\n\n作为蛋白质非常优质的食物，豆制品适合大家食用，通过食用豆制品，能够吸收大豆蛋白，能够降低血清总胆固醇、甘油三酯的含量，对保护肝脏，避免肝脏中脂肪含量高非常好。\n\n2、枸杞\n\n吃枸杞除了能补肾之外，对于养肝、护肝也是好的，通过吃枸杞，能够吸收甜茶碱，有效的避免肝脏中脂肪堆积过多，对防治脂肪肝非常好。\n\n如果你本身就有肝脏炎症，也可以吃一点枸杞，进行保护肝脏，不要多，每天15g即可，干嚼、泡水都可以。', '21');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('11', '1', '1', '医生手术间隙“累趴”照刷屏朋友圈 称是工作常态', '名医直通车', '是', '热', '1543472961', '0', '“一台移植手术前后达10-12小时是一种常态。”\n\n长征医院胰岛移植团队负责人殷浩说，胰岛细胞移植手术包含三部分，获取供体器官是第一个步骤，供体的获取由全国人体器官分配系统统一进行分配。\n\n据殷浩介绍，在团队中，季峻松常常需要前往全国各地获取器官，就在5月16日，他还去了一趟安徽，与安徽省立医院合作完成了安徽省第一例胰腺捐献，“只要接到供体捐献消息，我们就需要随时准备出发，在8小时内带回GMP胰岛分离室进行胰岛细胞分离，时间越短，器官移植效果也就越好。”\n\n季峻松表示，在实验室分离胰岛细胞是移植手术中的重要一环，这一部分大约历时6-7个小时，最后一步是给病人注射胰岛细胞，需要1小时左右，“注射前还需要介入科医生帮我们做一个微创手术，目的是建立一个注射细胞的通路。”\n\n“并不只有我一个人在努力，也并不只有医护人员在努力，我们的背后有一个强大的团队，可能有二三十人在共同守护‘生命的种子’。”\n\n季峻松表示。\n\n殷浩也表示，除了医护人员外，移植工作的顺利开展，还要感谢像东方航空、铁路部门等单位的配合，“第一时间帮我们开通绿色通道，让获取的供体器官在最短的时间内到达移植医院，开展手术”。\n\n“我们只是把他们的爱传递下去”\n\n殷浩和季峻松认为，他们的这项工作非常有意义。2017年的统计数据表明中国有一亿多名糖尿病患者，其中有不少是儿童、青少年。糖尿病尽管属于慢性病，如果控制不佳其带来的后续危害巨大。高血糖对血管、神经器官的长期损伤，可能导致肾功能衰竭、失眠、糖尿病足等严重并发症，而脆性糖尿病导致的低血糖无意识昏迷，随时有死亡风险。\n\n在繁忙的工作节奏背后，长征医院器官移植科的专家们也在关注糖尿病群体的增长带来的各种问题。\n\n长征医院器官移植中心主任丁国善表示，胰岛细胞移植最特别之处在于，可以帮助患者生理性调节血糖，既避免了高血糖的发生，又防止了低血糖的出现，是一项有效的治疗方法。尽管只有少部分严重糖尿病人需要接受胰岛移植这类手术治疗，但由于近年来糖尿病患者病人数量逐年增长，出现严重并发症的患者也越来越多。', '24');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('12', '1', '1', '中日友好医院里“人机对战” AI完胜皮肤科医生', '名医直通车', '是', '新', '1543473201', '1543473238', '日前，一场特殊的较量在中日友好医院展开。\n\n对阵的一方是来自北京、云南、内蒙古等地的10名皮肤科医生，另一方是首款黄色人种皮肤肿瘤人工智能辅助决策系统——优智AI系统。竞赛科目是皮肤肿瘤的诊断成功率，包括皮肤肿瘤性质及肿瘤名称。比赛开始前，中国人民解放军总医院皮肤病医院孟如松教授拿出60组皮肤肿瘤病例资料，现场随机抽取10组图片，让医师与优智AI系统同时作答，正确答案以病理诊断为金标准。\n\n十分钟后，优智AI系统的良性分类符合率达100%，恶性符合率为75%，平均符合率达到了90%；而医生组对应则分别为76%，62.5%和63%。AI完胜皮肤科医生。\n\n孟如松表示，“人机对战”的结果表明，优智AI系统已经完成了应用于临床的功能实现，能够为皮肤科医生，尤其是基层皮肤科医生和低年资皮肤科医生的临床工作实现有效助力。\n\n对于人类医生逊于AI系统的结果，皮肤病专家并不感到意外。\n\n2017年，斯坦福大学在《自然》杂志上发表了一份关于皮肤肿瘤机器深度学习的研究。结果显示，深度学习在良恶性3分类和疾病大类9分类任务上的符合率分别可达72.1%和55.4%。而针对同样的分类识别，专业医生平均符合率分别为65.8%和54.2%。\n\n“由于皮肤病的临床表现多位于肌肤暴露部位，很多疾病可以通过查看临床图片、皮肤镜图片、病理切片等影像资料来进行判断。”北京大学人民医院皮肤科主任张建中教授表示，通过海量图片的学习，皮肤科是最适合远程医疗和人工智能的医疗领域。', '24');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('7', '1', '1', '警惕冬季高发病，守护宝宝健康入冬', '就医攻略', '是', null, '新', '1543464112', '1543464302', '秋风中，申城弥漫着沁人心脾的桂花香。老饕们的至爱大闸蟹亦应市而上。秋天是个收获的季节。收获之后意味着贮藏，故而秋冬相连，不仅仅是季节的更替。中医认为秋收冬藏。冬藏的正是秋气肃降之下的阳气。阳气者，人身之大宝也。“天之一丸红日，人之一息真阳”。真阳足则人体康健。对重视身体健康的人士来说，如何在冬令贮藏真气之季保养阳气着实应该引起重视。而中医的滋补膏方确是一种好方法。', '22');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('10', '1', '1', '秋风起，蟹脚痒；冬令至，膏滋俏', '中医养生', '是', null, '', '1543472337', '0', '从古至今，国人都十分重视“立冬”。在北方，立冬有吃倭瓜饺子的风俗；台湾立冬有“羊肉炉”、“姜母鸭”进补习惯。苏州人在立冬的时候常吃什么呢？7日，苏州博物馆（苏州民俗博物馆）研究员沈建东告诉记者，保健进补是“老苏州”立冬的主要习俗。 　　 　　 冬令进补吃膏滋是苏州人过立冬的老传统。在旧时苏州，一些大户人家还用红参、桂圆、核桃肉，在冬季烧汤喝，有补气活血助阳的功效。通常每到立冬节气，苏州中医院以及一些老字号药房都会专门开设进补门诊，为市民煎熬膏药，销售冬令滋补保健品。 【绿之韵胶囊】www.lvzhiyun.cn 　　 　　 此外，苏州人自秋天开始，便强调每天吃些白果、栗子等坚果，温肺益气。近些年在立冬前，苏州各处羊肉店也纷纷开张，“吃个羊肉火锅、喝碗羊汤暖暖身”，也是非常惬意的。 　　 　　 沈建东告诉记者，立冬之后，农历十月就马上到了，农历十月伊始，“老苏州”们便纷纷开始忙碌准备冬天的储备食物，如小麦来酿冬酿酒、腌制蔬菜等。此时，江南还有“西风响，蟹脚痒，蟹立冬，影无踪”的谚语，喜欢吃螃蟹的苏州人到了农历十月也开始变换吃法儿，所谓的“九月雌、十月雄”是说到了农历十月就要吃雄的螃蟹了', '23');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('8', '1', '1', '医生说｜脾胃不好膏方来调！冬季进补正当时', '就医攻略', '是', null, '', '1543471585', '0', '对于肝脏的保护、保养一直是很多人都非常关心的事情，做好养肝、护肝的相关事宜，不只是对肝脏好，对整个五脏六腑的调节也是好的。当前，肝脏疾病不断涌现出来，肝脏一旦出现损伤，带来的影响是很多人无法接受的。\n而脂肪肝是最常见的肝脏疾病，需要大家认清楚，了解脂肪肝是什么，能够让人更好的保健？', '22');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('9', '1', '1', '手机放口袋会杀精吗？', '谣言粉碎机', '是', null, '热', '1543472176', '0', '目前，患上脂肪肝的中老年人越来越多，需要引起大家的关注，肝细胞中的脂肪堆积不断增多，引起了脂肪发生病变，脂肪在其中起到了非常重要的推波助澜作用。\n\n正常情况下，健康的肝脏是需要少量的脂肪，例如，甘油三酯、磷脂、胆固醇等，这些成分约占肝脏的5%。但是，一旦肝脏中的脂肪含量超标，甚至达到了50%，那么就可能形成了脂肪肝。\n\n出现了脂肪肝，除了通过服药治疗外，正确的饮食显得更加重要，有些食物能吃，有些食物不能吃。\n\n出现脂肪肝，吃什么好？\n\n1、豆制品\n\n作为蛋白质非常优质的食物，豆制品适合大家食用，通过食用豆制品，能够吸收大豆蛋白，能够降低血清总胆固醇、甘油三酯的含量，对保护肝脏，避免肝脏中脂肪含量高非常好。\n\n2、枸杞\n\n吃枸杞除了能补肾之外，对于养肝、护肝也是好的，通过吃枸杞，能够吸收甜茶碱，有效的避免肝脏中脂肪堆积过多，对防治脂肪肝非常好。\n\n如果你本身就有肝脏炎症，也可以吃一点枸杞，进行保护肝脏，不要多，每天15g即可，干嚼、泡水都可以。', '21');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('11', '1', '1', '医生手术间隙“累趴”照刷屏朋友圈 称是工作常态', '名医直通车', '1', '', '1', '1543472961', '1544339169', '', '24');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('12', '1', '1', '中日友好医院里“人机对战” AI完胜皮肤科医生', '名医直通车', '1', '<p>\n    <br/>\n</p>\n<p>\n    标题测试\n</p>\n<p>\n    <img src=\"/ueditor/php/upload/image/20181209/1544286262110010.png\" title=\"1544286262110010.png\" alt=\"a.png\"/>\n</p>\n<p>\n  <li>达成册封</li>\n  海关监管就\n</p>\n<p>\n    就会空喊口号\n</p>\n<p>\n    很快很快就\n</p>', '1', '1543473201', '1544286908', '日前，一场特殊的较量在中日友好医院展开。\n\n对阵的一方是来自北京、云南、内蒙古等地的10名皮肤科医生，另一方是首款黄色人种皮肤肿瘤人工智能辅助决策系统——优智AI系统。竞赛科目是皮肤肿瘤的诊断成功率，包括皮肤肿瘤性质及肿瘤名称。比赛开始前，中国人民解放军总医院皮肤病医院孟如松教授拿出60组皮肤肿瘤病例资料，现场随机抽取10组图片，让医师与优智AI系统同时作答，正确答案以病理诊断为金标准。\n\n十分钟后，优智AI系统的良性分类符合率达100%，恶性符合率为75%，平均符合率达到了90%；而医生组对应则分别为76%，62.5%和63%。AI完胜皮肤科医生。\n\n孟如松表示，“人机对战”的结果表明，优智AI系统已经完成了应用于临床的功能实现，能够为皮肤科医生，尤其是基层皮肤科医生和低年资皮肤科医生的临床工作实现有效助力。\n\n对于人类医生逊于AI系统的结果，皮肤病专家并不感到意外。\n\n2017年，斯坦福大学在《自然》杂志上发表了一份关于皮肤肿瘤机器深度学习的研究。结果显示，深度学习在良恶性3分类和疾病大类9分类任务上的符合率分别可达72.1%和55.4%。而针对同样的分类识别，专业医生平均符合率分别为65.8%和54.2%。\n\n“由于皮肤病的临床表现多位于肌肤暴露部位，很多疾病可以通过查看临床图片、皮肤镜图片、病理切片等影像资料来进行判断。”北京大学人民医院皮肤科主任张建中教授表示，通过海量图片的学习，皮肤科是最适合远程医疗和人工智能的医疗领域。', '24');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('13', '1', '1', 'test', '中医养生', 'test', null, 'test', '1544271416', '0', 'ste', '0');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('14', '1', '1', 'test22', '中医养生', 'test', null, 'test2df', '1544273565', '0', 'fdd', '26');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('15', '1', '1', '文章', '热门排行', '是', '&lt;p&gt;史蒂芬孙的&lt;img src=&quot;/ueditor/php/upload/image/20181208/1544273798138971.jpg&quot; title=&quot;1544273798138971.jpg&quot; alt=&quot;8jp.jpg&quot;/&gt;&lt;/p&gt;', '热', '1544273800', '0', '似懂非懂是', '26');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('16', '1', '1', 'sdf', '择医网讲堂', 'ss', '&amp;lt;p&amp;gt;sdf&amp;lt;img src=&amp;quot;/ueditor/php/upload/image/20181208/1544273868118070.png&amp;quot; title=&amp;quot;1544273868118070.png&amp;quot; alt=&amp;quot;222.png&amp;quot;/&amp;gt;&amp;lt;/p&amp;gt;', 'ss', '1544273869', '0', 'sdf', '25');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('17', '1', '1', '电饭锅', '热门排行', '1', '<p><img src=\"/ueditor/php/upload/image/20181208/1544280734251865.png\" title=\"1544280734251865.png\" alt=\"a.png\"/></p><p><img src=\"/ueditor/php/upload/image/20181208/1544280769808739.png\" title=\"1544280769808739.png\" alt=\"pic.png\"/></p><p><img src=\"/ueditor/php/upload/image/20181208/1544280792641905.png\" title=\"1544280792641905.png\" alt=\"222.png\"/></p>', '1', '1544274192', '1544284685', '士大夫', '26');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('18', '1', '1', '股份', '系统默认', '1', '', '0', '1544285755', '0', '', '0');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('19', '1', '1', '特色', '系统默认', '1', '', '0', '1544285768', '0', '', '0');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('20', '1', '1', '特色的说法', '择医网讲堂', '1', '<p>士大夫</p>', '1', '1544286011', '0', '士大夫', '25');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('21', '1', '1', '特色忒', '系统默认', '0', '<p>史蒂芬孙的</p>', '1', '1544286038', '1544286061', '对方答复', '0');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('22', '1', '1', '特色22', '名医直通车', '1', '', '2', '1544286109', '1544340087', '', '24');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('23', '1', '1', 'test222', '热门排行', '1', '', '0', '1544340112', '1544340126', '', '26');
 
 -- ----------------------------
 -- Table structure for dzm_his_inventory
@@ -4650,7 +4665,7 @@ CREATE TABLE `dzm_his_member` (
 -- Records of dzm_his_member
 -- ----------------------------
 INSERT INTO `dzm_his_member` VALUES ('1', 'admin', '$2y$12$Zqgl6rJe.tYYwJlOLDiKru6v9.HplkKNOBkwIRbHr.Xiilr4qWBD.', '0', null, '1511947869', '1', '0', '1', '0', '0', '0', '', '0.00', '0.00', '', '0');
-INSERT INTO `dzm_his_member` VALUES ('2', '13200010002', '$2y$12$3ISeuAXcEPkc8mBpMB.JpuuoJVWfgd.8V.LCjtYTRl2TCQ0MJhISG', '0', null, '1511949108', '1', '1', '2', '1', '1', '0', '', '0.00', '0.00', '', '1543131454');
+INSERT INTO `dzm_his_member` VALUES ('2', '13200010002', '$2y$12$Kl1FP.poaeFN5d717iWPN.jDQol.FrcPuQogxn755hXqV5wjpYGBu', '0', null, '1511949108', '1', '1', '4', '2', '3', '0', '', '0.00', '0.00', '', '1544333782');
 INSERT INTO `dzm_his_member` VALUES ('3', '13141589203', '$2y$12$Fz/y0NNYbFXpYvLSmtgATuLXTqw5mdz2Fo2rS5v0.eXAmFPx2mzJa', '0', null, '1543232227', '1', '1', '2', '2', '1', '0', '', '0.00', '0.00', '', '0');
 INSERT INTO `dzm_his_member` VALUES ('4', null, '$2y$12$bn5G82RJid8AmAyI4Aqun.0wsq1ERgRSy6cnSbrAKDizuRiB3lKwS', '0', null, '1543233211', '1', '1', '2', '3', '1', '0', '', '0.00', '0.00', '', '0');
 INSERT INTO `dzm_his_member` VALUES ('5', null, '$2y$12$Ffytafmjt62g8j2PytoLZeppA1JIW4XMiFjE5M95PUFPMFbWy1ud.', '0', null, '1543235542', '1', '1', '2', null, '0', '0', '', '0.00', '0.00', '', '0');
@@ -4777,8 +4792,8 @@ CREATE TABLE `dzm_his_product` (
 -- ----------------------------
 -- Records of dzm_his_product
 -- ----------------------------
-INSERT INTO `dzm_his_product` VALUES ('1', ' 13776848129', '半年', null, '0', '三分大赛', null, null, null, null);
-INSERT INTO `dzm_his_product` VALUES ('2', ' 13776848121', '一月', null, '0', ' 士大夫但是', 'home/images/2018-12-02/5c0365016ff4b.jpg,home/images/2018-12-02/5c03650170c64.png,', null, null, null);
+INSERT INTO `dzm_his_product` VALUES ('1', null, null, null, '0', null, null, null, null, null);
+INSERT INTO `dzm_his_product` VALUES ('2', null, null, null, null, null, 'home/images/2018-12-02/5c0365016ff4b.jpg,home/images/2018-12-02/5c03650170c64.png,', null, null, null);
 INSERT INTO `dzm_his_product` VALUES ('3', ' 13776848129', '一月', null, '0', 'dfgdfgd', 'home/images/2018-12-02/5c0365ad98d96.jpg,', null, null, '1543726509');
 INSERT INTO `dzm_his_product` VALUES ('4', ' 13776848129', '大于半年', null, '1', '所得税地方', 'home/images/2018-12-02/5c03662615a92.png,', null, null, '1543726630');
 INSERT INTO `dzm_his_product` VALUES ('5', ' 13776848129', '一周', null, '1', '1111', '', null, null, '1543737210');
@@ -5020,7 +5035,7 @@ CREATE TABLE `dzm_his_scheduling` (
   KEY `department_id` (`department_id`) USING BTREE,
   KEY `company_id` (`company_id`) USING BTREE,
   KEY `start_time_this_week` (`start_time_this_week`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='我的排班';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='我的排班';
 
 -- ----------------------------
 -- Records of dzm_his_scheduling
@@ -5029,6 +5044,7 @@ INSERT INTO `dzm_his_scheduling` VALUES ('1', '2', '1', '1', '2017-11-27', '2017
 INSERT INTO `dzm_his_scheduling` VALUES ('2', '2', '1', '1', '2018-11-12', '2018-11-18', '1542370770', '0');
 INSERT INTO `dzm_his_scheduling` VALUES ('3', '2', '1', '1', '2018-11-19', '2018-11-25', '1543118078', '0');
 INSERT INTO `dzm_his_scheduling` VALUES ('4', '2', '1', '1', '2018-11-26', '2018-12-02', '1543246350', '0');
+INSERT INTO `dzm_his_scheduling` VALUES ('5', '2', '1', '1', '2018-12-03', '2018-12-09', '1544281171', '0');
 
 -- ----------------------------
 -- Table structure for dzm_his_scheduling_subsection
@@ -5041,7 +5057,7 @@ CREATE TABLE `dzm_his_scheduling_subsection` (
   PRIMARY KEY (`scheduling_subsection_id`),
   KEY `subsection_type` (`subsection_type`) USING BTREE,
   KEY `scheduling_id` (`scheduling_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COMMENT='排班时段表';
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COMMENT='排班时段表';
 
 -- ----------------------------
 -- Records of dzm_his_scheduling_subsection
@@ -5058,6 +5074,9 @@ INSERT INTO `dzm_his_scheduling_subsection` VALUES ('9', '3', '3');
 INSERT INTO `dzm_his_scheduling_subsection` VALUES ('10', '1', '4');
 INSERT INTO `dzm_his_scheduling_subsection` VALUES ('11', '2', '4');
 INSERT INTO `dzm_his_scheduling_subsection` VALUES ('12', '3', '4');
+INSERT INTO `dzm_his_scheduling_subsection` VALUES ('13', '1', '5');
+INSERT INTO `dzm_his_scheduling_subsection` VALUES ('14', '2', '5');
+INSERT INTO `dzm_his_scheduling_subsection` VALUES ('15', '3', '5');
 
 -- ----------------------------
 -- Table structure for dzm_his_scheduling_week
@@ -5074,7 +5093,7 @@ CREATE TABLE `dzm_his_scheduling_week` (
   KEY `week` (`week`) USING BTREE,
   KEY `registeredfee_id` (`registeredfee_id`) USING BTREE,
   KEY `scheduling_subsection_id` (`scheduling_subsection_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8 COMMENT='排班星期表';
+) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8 COMMENT='排班星期表';
 
 -- ----------------------------
 -- Records of dzm_his_scheduling_week
@@ -5163,6 +5182,27 @@ INSERT INTO `dzm_his_scheduling_week` VALUES ('81', '2018/11/29', '4', null, '12
 INSERT INTO `dzm_his_scheduling_week` VALUES ('82', '2018/11/30', '5', null, '12');
 INSERT INTO `dzm_his_scheduling_week` VALUES ('83', '2018/12/01', '6', null, '12');
 INSERT INTO `dzm_his_scheduling_week` VALUES ('84', '2018/12/02', '0', null, '12');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('85', '2018/12/03', '1', null, '13');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('86', '2018/12/04', '2', null, '13');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('87', '2018/12/05', '3', null, '13');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('88', '2018/12/06', '4', null, '13');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('89', '2018/12/07', '5', null, '13');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('90', '2018/12/08', '6', null, '13');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('91', '2018/12/09', '0', null, '13');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('92', '2018/12/03', '1', null, '14');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('93', '2018/12/04', '2', null, '14');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('94', '2018/12/05', '3', null, '14');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('95', '2018/12/06', '4', null, '14');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('96', '2018/12/07', '5', null, '14');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('97', '2018/12/08', '6', null, '14');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('98', '2018/12/09', '0', null, '14');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('99', '2018/12/03', '1', null, '15');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('100', '2018/12/04', '2', null, '15');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('101', '2018/12/05', '3', null, '15');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('102', '2018/12/06', '4', null, '15');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('103', '2018/12/07', '5', null, '15');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('104', '2018/12/08', '6', null, '15');
+INSERT INTO `dzm_his_scheduling_week` VALUES ('105', '2018/12/09', '0', null, '15');
 
 -- ----------------------------
 -- Table structure for dzm_his_sms_log
@@ -5340,17 +5380,19 @@ CREATE TABLE `dzm_his_user` (
   `certNo` varchar(255) NOT NULL COMMENT '身份证',
   `email` varchar(255) NOT NULL,
   `mobile` varchar(11) NOT NULL DEFAULT '0' COMMENT '手机号',
+  `ip` varchar(255) NOT NULL,
   `pic` varchar(255) NOT NULL COMMENT '头像',
   `create_time` int(10) NOT NULL COMMENT '注册时间',
   `update_time` int(10) NOT NULL COMMENT '修改时间',
   `ask_price` decimal(10,2) DEFAULT '0.00' COMMENT '咨询价格',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COMMENT='医生基本信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COMMENT='医生基本信息表';
 
 -- ----------------------------
 -- Records of dzm_his_user
 -- ----------------------------
-INSERT INTO `dzm_his_user` VALUES ('3', '王大锤', '$2y$12$xtE1f6GvA5HXiY0Bkh32uethcIA4YwWizgQUaJ/i6E481ixkv6aLe', '', '男', '24', '0', '11', '2824030344@qq.com', '13776848129', 'Public/home/pic/33.jpg', '1542699872', '1543933777', '0.00');
+INSERT INTO `dzm_his_user` VALUES ('3', '王大锤', '$2y$12$VM4DTs.gN1ytNhC7YfZY9OMkrriWatYYIeLLViL/5.8hFXh.oNG5K', '', '男', '24', '0', '11', '2824030344@qq.com', '13776848129', '', 'Public/home/pic/33.jpg', '1542699872', '1544332093', '0.00');
+INSERT INTO `dzm_his_user` VALUES ('5', '', '$2y$12$s5rpkeZjTSlBP5qiWklI9OMZsBAOYQF0Uq3M30bxPtdgc9/cXd8tK', '', '', '', '0', '', '', '13141589223', '127.0.0.1', '', '1544346727', '1544346727', '0.00');
 
 -- ----------------------------
 -- Table structure for dzm_his_video
@@ -5368,11 +5410,13 @@ CREATE TABLE `dzm_his_video` (
   `time` varchar(255) DEFAULT NULL,
   `create_time` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of dzm_his_video
 -- ----------------------------
+INSERT INTO `dzm_his_video` VALUES ('5', '', '', null, null, '', './public/home/video/1.', null, null, '1543935187');
+INSERT INTO `dzm_his_video` VALUES ('6', '13141589203', '健康', null, '1', '健康之家', './public/home/video/7.mp4', null, null, '1543935396');
 
 -- ----------------------------
 -- Table structure for dzm_his_work_log
