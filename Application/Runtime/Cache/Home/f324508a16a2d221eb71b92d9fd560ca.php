@@ -170,7 +170,7 @@
 医疗器械</a>
 </li>
 
- -->
+
 <li><a target="_blank" href="#" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">健康E务室</a></li>
   <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">优选音乐</a></li>
 
@@ -571,7 +571,9 @@
 
                 </div>
                
-                    <div class="g-container landing-section consult-section " data-lazy-url="">
+                  
+
+   <div class="g-container landing-section consult-section " data-lazy-url="">
         
     
 <div class="title-bar">
@@ -595,6 +597,8 @@
                 </form>
             </div>
         </div>
+
+
         <div class="consult-list J_ConsultList" data-tab-url="/homepage/hpconsult/expertList/">
             <div class="tabs">
                 <ul class="g-clear J_Nav">
@@ -1353,6 +1357,8 @@
             今日义诊
         </a>    
     </div></div></div> 
+
+
 
               <div class="g-container landing-section news-section">
                     <div class="title-bar">
