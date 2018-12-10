@@ -897,6 +897,7 @@ function getCity($ip = '')
     $res2 = M('his_video')->where("sicktime='减肥'")->limit(4)->select();
     $res3 = M('his_video')->where("sicktime='生活'")->limit(4)->select();
     $res4 = M('his_video')->where("sicktime='自拍拍'")->limit(4)->select();
+    // var_dump($res);die;
     $this->assign('res',$res);
     $this->assign('res1',$res1);
     $this->assign('res2',$res2);

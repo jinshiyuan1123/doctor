@@ -1,4 +1,4 @@
-
+<?php if (!defined('THINK_PATH')) exit();?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -10,18 +10,18 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
-  <link rel="shortcut icon" href="__PUBLIC_HOME__/favicon.ico" />
-<link href="__PUBLIC_VIDEO__/css/bootstrap.min.css" rel="stylesheet" type="text/css" />				
-<link href="__PUBLIC_VIDEO__/css/swiper.min.css" rel="stylesheet" type="text/css" >		
-<link href="__PUBLIC_VIDEO__/css/iconfont.css" rel="stylesheet" type="text/css" />
-<link href="__PUBLIC_VIDEO__/css/whitecolor.css" rel="stylesheet" type="text/css" />
-<link href="__PUBLIC_VIDEO__/css/style.min.css" rel="stylesheet" type="text/css" />
-<script src="__PUBLIC_VIDEO__/js/jquery.min.js"></script>
-<script type="text/javascript" src="__PUBLIC_VIDEO__/js/bootstrap.min.js"></script>		
-<script src="__PUBLIC_VIDEO__/js/function.js"></script>
-<script type='text/javascript' src="__PUBLIC_VIDEO__/js/LazyLoad.js"></script>
-<script type='text/javascript' src="__PUBLIC_VIDEO__/js/swiper.min.js"></script>
-<script type="text/javascript " src="__PUBLIC_VIDEO__/js/history.js "></script>	
+  <link rel="shortcut icon" href="/Public/home/favicon.ico" />
+<link href="/Public/home/video/css/bootstrap.min.css" rel="stylesheet" type="text/css" />				
+<link href="/Public/home/video/css/swiper.min.css" rel="stylesheet" type="text/css" >		
+<link href="/Public/home/video/css/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="/Public/home/video/css/whitecolor.css" rel="stylesheet" type="text/css" />
+<link href="/Public/home/video/css/style.min.css" rel="stylesheet" type="text/css" />
+<script src="/Public/home/video/js/jquery.min.js"></script>
+<script type="text/javascript" src="/Public/home/video/js/bootstrap.min.js"></script>		
+<script src="/Public/home/video/js/function.js"></script>
+<script type='text/javascript' src="/Public/home/video/js/LazyLoad.js"></script>
+<script type='text/javascript' src="/Public/home/video/js/swiper.min.js"></script>
+<script type="text/javascript " src="/Public/home/video/js/history.js "></script>	
 <style type="text/css">
 
 body{
@@ -49,7 +49,7 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
 	    <div class="row">
 		  	<div class="item">
 			    <div class="logo hidden-xs">
-					<img class="logolist "  style="background-size: cover;width: 120px;height: 50px;display: inline-block;" src="__PUBLIC_HOME__/images/logolist.jpg" alt="择医网" class="wy-logo">										  
+					<img class="logolist "  style="background-size: cover;width: 120px;height: 50px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo">										  
 				</div>	
 				<div class="search"> 
 <form id="ff-search" role="search" action="http://sou.zzw0527.com/dianying/seacher.php?wd=" method="get">
@@ -58,9 +58,9 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
                   </form>
 			   </div>			   
 			   <ul class="menulist hidden-xs">
-					<li><a href="{:U('home/index/index')}">首页</a></li>
+					<li><a href="<?php echo U('home/index/index');?>">首页</a></li>
 					<li ><a href="http://sou.zzw0527.com/dianying/movie.php">健康</a></li>					<li ><a href="http://sou.zzw0527.com/dianying/tv.php">养生</a></li>					<li ><a href="http://sou.zzw0527.com/dianying/dongman.php">减肥</a></li>					<li ><a href="http://sou.zzw0527.com/dianying/zongyi.php">生活</a></li>
-										<li class="act6"><a href="{:U('home/index/zipai')}" target="_blank">我拍拍</a></li>
+										<li class="act6"><a href="<?php echo U('home/index/zipai');?>" target="_blank">我拍拍</a></li>
 
 				</ul>													 
 		  	</div>							
@@ -79,22 +79,16 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
 			<div class="hy-video-head">
 				<h3 class="margin-0"><i class="icon iconfont icon-vip text-color"></i> 健康</h3>
 				<ul class="pull-right">
-							<li class="active"><a href="{:U('home/index/videos')}?sicktime=<?php echo urldecode('健康');?>" class="text-muted">更多 <i class="icon iconfont icon-xiangyou"></i></a></li>
+							<li class="active"><a href="<?php echo U('home/index/videos');?>?sicktime=<?php echo urldecode('健康');?>" class="text-muted">更多 <i class="icon iconfont icon-xiangyou"></i></a></li>
 			</ul>
 			</div>
 			<div class="clearfix">
-				<foreach name="res" item="val">
-				<if condition="$val.sicktime eq '健康'">
-				<if condition="$val.ishospital eq '1'">
-				<a href="{:U('home/index/videolist')}?id={$val.id}" target="_blank">
+				<?php if(is_array($res)): foreach($res as $key=>$val): if($val["sicktime"] == '健康'): if($val["ishospital"] == '1'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
 				<video width="250" height="300" controls autobuffer>
-				<source src="/{$val.videourl}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
+				<source src="/<?php echo ($val["videourl"]); ?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
 				</video>
-				</a>
-				</if>
-				</if>
-				&nbsp;&nbsp;
-				</foreach>
+				</a><?php endif; endif; ?>
+				&nbsp;&nbsp;<?php endforeach; endif; ?>
 					
 				
 				
@@ -113,23 +107,17 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
 			<div class="hy-video-head">
 				<ul class="pull-right">
 				
-				<li class="active"><a href="{:U('home/index/videos')}?sicktime=<?php echo urldecode('养生');?>" class="text-muted">更多 <i class="icon iconfont icon-xiangyou"></i></a></li>
+				<li class="active"><a href="<?php echo U('home/index/videos');?>?sicktime=<?php echo urldecode('养生');?>" class="text-muted">更多 <i class="icon iconfont icon-xiangyou"></i></a></li>
 				</ul>
 				<h3 class="margin-0"><i class="icon iconfont icon-caidanicondianyinghui text-color"></i>养生</h3>
 			</div>
 			<div class="clearfix">
-			<foreach name="res1" item="val">
-				<if condition="$val.sicktime eq '养生'">
-				<if condition="$val.ishospital eq '1'">
-				<a href="{:U('home/index/videolist')}?id={$val.id}" target="_blank">
+			<?php if(is_array($res1)): foreach($res1 as $key=>$val): if($val["sicktime"] == '养生'): if($val["ishospital"] == '1'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
 				<video width="250" height="300" controls autobuffer>
-				<source src="/{$val.videourl}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
+				<source src="/<?php echo ($val["videourl"]); ?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
 				</video>
-				</a>
-				</if>
-				</if>
-				&nbsp;&nbsp;
-				</foreach>
+				</a><?php endif; endif; ?>
+				&nbsp;&nbsp;<?php endforeach; endif; ?>
 
 
 				<div class="hy-video-footer visible-xs clearfix">
@@ -144,23 +132,17 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
 			<div class="hy-video-head">
 				<ul class="pull-right">
 				
-				<li class="active"><a href="{:U('home/index/videos')}?sicktime=<?php echo urldecode('减肥');?>" class="text-muted">更多 <i class="icon iconfont icon-xiangyou"></i></a></li>
+				<li class="active"><a href="<?php echo U('home/index/videos');?>?sicktime=<?php echo urldecode('减肥');?>" class="text-muted">更多 <i class="icon iconfont icon-xiangyou"></i></a></li>
 				</ul>
 				<h3 class="margin-0"><i class="icon iconfont icon-tv_icon text-color"></i>减肥</h3>
 			</div>
 			<div class="clearfix">
-			<foreach name="res2" item="val">
-				<if condition="$val.sicktime eq '减肥'">
-				<if condition="$val.ishospital eq '1'">
-				<a href="{:U('home/index/videolist')}?id={$val.id}" target="_blank">
+			<?php if(is_array($res2)): foreach($res2 as $key=>$val): if($val["sicktime"] == '减肥'): if($val["ishospital"] == '1'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
 				<video width="250" height="300" controls autobuffer>
-				<source src="/{$val.videourl}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
+				<source src="/<?php echo ($val["videourl"]); ?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
 				</video>
-				</a>
-				</if>
-				</if>
-				&nbsp;&nbsp;
-				</foreach>
+				</a><?php endif; endif; ?>
+				&nbsp;&nbsp;<?php endforeach; endif; ?>
 			</div>
 		</div>		<!--剧集-->
 						<!--综艺-->
@@ -170,23 +152,17 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
 			<div class="hy-video-head">
 				<ul class="pull-right">
 				
-					<li class="active"><a href="{:U('home/index/videos')}?sicktime=<?php echo urldecode('生活');?>" class="text-muted">更多 <i class="icon iconfont icon-xiangyou"></i></a></li>
+					<li class="active"><a href="<?php echo U('home/index/videos');?>?sicktime=<?php echo urldecode('生活');?>" class="text-muted">更多 <i class="icon iconfont icon-xiangyou"></i></a></li>
 				</ul>
 				<h3 class="margin-0"><i class="icon iconfont icon-jiemu text-color"></i>生活</h3>
 			</div>
 			<div class="clearfix">
-				<foreach name="res3" item="val">
-				<if condition="$val.sicktime eq '生活'">
-				<if condition="$val.ishospital eq '1'">
-				<a href="{:U('home/index/videolist')}?id={$val.id}" target="_blank">
+				<?php if(is_array($res3)): foreach($res3 as $key=>$val): if($val["sicktime"] == '生活'): if($val["ishospital"] == '1'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
 				<video width="250" height="300" controls autobuffer>
-				<source src="/{$val.videourl}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
+				<source src="/<?php echo ($val["videourl"]); ?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
 				</video>
-				</a>
-				</if>
-				</if>
-				&nbsp;&nbsp;
-				</foreach>
+				</a><?php endif; endif; ?>
+				&nbsp;&nbsp;<?php endforeach; endif; ?>
 			</div>
 		</div>		<!--综艺-->
 										<!--动漫-->
@@ -196,23 +172,17 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
 			<div class="hy-video-head">
 				<ul class="pull-right">
 				
-					<li class="active"><a href="{:U('home/index/videos')}?sicktime=<?php echo urldecode('自拍拍');?>" class="text-muted">更多 <i class="icon iconfont icon-xiangyou"></i></a></li>
+					<li class="active"><a href="<?php echo U('home/index/videos');?>?sicktime=<?php echo urldecode('自拍拍');?>" class="text-muted">更多 <i class="icon iconfont icon-xiangyou"></i></a></li>
 				</ul>
 				<h3 class="margin-0"><i class="icon iconfont icon-liebiaodaohang_dongman text-color"></i>我拍拍</h3>
 			</div>
 			<div class="clearfix">
-				 	<foreach name="res4" item="val">
-				<if condition="$val.sicktime eq '自拍拍'">
-				<if condition="$val.ishospital eq '1'">
-				<a href="{:U('home/index/videolist')}?id={$val.id}" target="_blank">
+				 	<?php if(is_array($res4)): foreach($res4 as $key=>$val): if($val["sicktime"] == '自拍拍'): if($val["ishospital"] == '1'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
 				<video width="250" height="300" controls autobuffer>
-				<source src="/{$val.videourl}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
+				<source src="/<?php echo ($val["videourl"]); ?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
 				</video>
-				</a>
-				</if>
-				</if>
-				&nbsp;&nbsp;
-				</foreach>
+				</a><?php endif; endif; ?>
+				&nbsp;&nbsp;<?php endforeach; endif; ?>
 			</div>
 		</div>		<!--动漫-->
 				
