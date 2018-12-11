@@ -3,21 +3,12 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="shortcut icon" href="/Public/home/images/favicon.ico" />
+<link rel="shortcut icon" href="/Public/home/favicon.ico" />
 <!-- External CSS -->
 	<link rel="stylesheet" href="/Public/home/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
 	<link rel="stylesheet" href="/Public/home/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
-<script  type="text/javascript">
-	// $GF { Array } - functions defined in pages which has no module. The collected functions will be defined in page directly.
-	$GF = [];
-
-	// 图片加载失败,error设置默认图片也加载失败避免死循环
-	window.NoFind = function(src) {
-		var img = event.srcElement;
-		img.src = src;
-		img.onerror = null;
-	};
-</script>
+    <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
+    <script src="/Public/his/vendor/layer/layer.js"></script>
 
 	
 				<link rel="stylesheet" href="https://img.guahao.com/front/hps-pc-static/css/questions.css?v=1541078824a18cef" type="text/css"/>
@@ -242,7 +233,7 @@
 
 <div id="gc" class="gp-questions questions-common" data-module="questions-help">
 	<div class="gc-mask">
-	<form action="">
+	
 		<div class="content-admin g-clear g-content">
 			<div id="g-breadcrumb">
 				<a href="<?php echo U('home/index/doctorhome');?>">首页</a>&gt;
@@ -266,24 +257,24 @@
                      <br><br>
                      <span style="font-size:15px;color:#000000;width:10px;">文章分类</span>
                      &nbsp;
-                     <input type="text" style="width:200px;height:30px;border-radius: 2px;">
+                     <input type="text" name="namelist" id="namelist" style="width:200px;height:30px;border-radius: 2px;">
                       &nbsp; &nbsp; &nbsp; &nbsp;
                      <span style="font-size:15px;color:#000000;width:10px;">来源</span>
                       &nbsp; 
-                      <input type="radio" name="blue" id="blue" value="1">
+                      <input type="radio" name="blues" id="blue" value="1">
                        &nbsp;原创 
                       &nbsp; &nbsp;
-                    <input type="radio" name="blue" id="blues" value="2">
+                    <input type="radio" name="blues" id="blues" value="2">
                       &nbsp;转载
                      &nbsp; &nbsp; &nbsp; &nbsp;
-                     <input type="radio"> &nbsp;置顶
+                     <input type="radio" name="toplist" id="toplist" value="1"> &nbsp;置顶
                      <br/>
                   
                      </div>
                      &nbsp;<br>
                        <span style="font-size:15px;color:#000000;width:10px;">标题</span>
                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <input type="text" style="width:200px;height:30px;border-radius: 2px;">
+                      <input type="text" name="titlelist" id="titlelist"  style="width:200px;height:30px;border-radius: 2px;">
                       &nbsp; &nbsp; &nbsp; &nbsp;
                     
                 </div>
@@ -459,13 +450,14 @@
 </body>
 
 </html>
+             <textarea id="wordtype" name="wordtype" style="display: none"></textarea>
             <br>
             <div style="float:center">
-          <button type="submit" class="search-button" style="border-radius: 2px; width: 166px; height: 100%;color: #fff;font-size: 24px;background-color: #589bff;border: none;cursor: pointer;">发布文章</button>
+          <button  class="search-button btn" style="border-radius: 2px; width: 166px; height: 100%;color: #fff;font-size: 24px;background-color: #589bff;border: none;cursor: pointer;">发布文章</button>
 </div>
 			</div>
 
-</form>
+
 	    </div>
 	</div>
 	<!-- end of .gc-mask -->
@@ -480,146 +472,41 @@
 			<div id="gf" class="gf-new">
 	<div class="g-container">
 		<p>网友、医生言论仅代表其个人观点，不代表本站同意其说法，本站不承担由此引起的法律责任</p>	
-		<p>微医提供平台支持 Copyright 2011-2018版权所有。&nbsp;&nbsp;浙ICP备12034511号</p>
+		<p>择医网提供平台支持 Copyright 2011-2018版权所有。&nbsp;&nbsp;</p>
 	</div>
 </div>
 			<!-- end of #gf -->
 		</div>	
 		<!-- end of #g-wrapper -->
 		
-<script  type="text/javascript">
-	//打点日志全局变量
-	$GLog = {
-		requestMethod:'GET',
-		loginId:'RabrfWSrP3oFmJ1/Sz69i23RkmJO9BjimZAFtRYjChTMGvgehYKYQA==',
-		perSessiionId:'154303338518820178067151',
-		shortSessionId:'',
-		referurl:'/auth/operation',
-		userAgent:'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
-		logUrl: 'https://trackweb.guahao.cn/blank.gif',
-		debug: false,
-		domainEnd: 'guahao.com',
-		errorEventName:'portal_eops_js_error',
-		token:'!P0MfsMGSMtzR8Y4AEYzglqQocb34CJA1a3YAxjo-AYftrp-xiEhIjKRHL9Qnse_qS5PAwoEtdKex5WZVo5OfKagWMPwraORW-Pj1aMKnhoLnlXUMJG-6ChkCHOE2AKqRBS3Tn4OCxKPuWSKsd3CWUEP3rbogozbuGnbJAkv4Cxq7c',
-        monitorLog : false
-	}
-	// $GC { Object } - globle configure
-     $GC = {
-		staticServer:"https://img.guahao.com",
-		imageServer:"https://img.guahao.com",
-		echartServer: "https://im-web.guahao.cn",
-		flashIp: "https://tqvedio-hezuo.guahao.com",
-		guahaoServer:"http://www.guahao.com",
-		eopsServer:"",
-		isLogined:"true",
-		isdocLogined:"true",
-		mobilevalidcodepwd : 'lvxian95169124',
-		version:"1541078824a18cef",
-		jsCPath:"https://img.guahao.com" + "/common/js",
-		jsPPath:"https://img.guahao.com" + "/front/hps-pc-static/js",
-		isDev: false,
-		domainProfix: "doctor",
-	 	appServer: "https://api-gateway.guahao.com",
-		 snsWebServer:"https://bbs.guahao.com"
 
-	};
-
-	// $GS { Array } - the init parameters for startup
-	$GS = [$GC.jsCPath + "/base/jquery-1.8.1.min.js?20170125",
-		$GC.jsCPath + "/plugins/datehelper.js",
-		$GC.jsCPath + "/plugins/jquery.placeholder.js",
-		$GC.jsCPath + "/plugins/json2.js",
-		$GC.jsCPath + "/plugins/socket.io.js",
-		$GC.jsPPath + "/base/eops.js?_=1541078824a18cef",
-		function(){
-		 // load common module
-			if(GL.Browser.ie6){
-				GL.load([$GC.jsPPath + "/hack/ie6.js" + "?_=" + $GC.version]);
-			}
-			if (!$GC.isDev) {
-				GL.load([$GC.jsPPath + "/plugins/raven.js"]);
-			}
-			var timer = setInterval(function() {
-				if(typeof Eops === 'undefined') {
-					return false;
-				}
-				clearInterval(timer);
-				GL.load([Eops.adaptModule("common")]);
-				 // load the modules defined in page
-				 var moduleName = $("#gc").data("module") || $("#gc2").data("module");
-				 if(moduleName){
-					var module = Eops.modules[moduleName];
-					if(!module) {
-						module = Eops.adaptModule(moduleName);
-					}
-					if(module) {
-						GL.load([module]);
-					}
-				}
-			});
-
-	}];
-
-	//同盾token 发送
-	(function() {
-		var name = "_wysid_";
-		var sid = getCookie(name);
-		if(null !== sid && ''!==sid && undefined !== sid){
-			_fmOpt = {
-				partner: 'weiyi',
-				appName: 'weiyi_web',
-				token: sid,
-				fmb: true,
-				getinfo: function() {
-					return "e3Y6ICIyLjUuMCIsIG9zOiAid2ViIiwgczogMTk5LCBlOiAianMgbm90IGRvd25sb2FkIn0=";
-				}
-						};
-			var cimg = new Image(1,1);
-			cimg.onload = function() {
-				_fmOpt.imgLoaded = true;
-			};
-			cimg.src = "https://fp.fraudmetrix.cn/fp/clear.png?partnerCode=weiyi&appName=weiyi_web&tokenId=" + _fmOpt.token;
-			var fm = document.createElement('script'); fm.type = 'text/javascript'; fm.async = true;
-			fm.src = '//static.fraudmetrix.cn/v2/fm.js?ver=0.1&t=' + (new Date().getTime()/3600000).toFixed(0);
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fm, s);
-		}
-
-		function getCookie(c_name)
-		{
-			if (document.cookie.length>0)
-			{
-				c_start=document.cookie.indexOf(c_name + "=")
-				if (c_start!=-1)
-				{
-					c_start=c_start + c_name.length+1
-					c_end=document.cookie.indexOf(";",c_start)
-					if (c_end==-1) c_end=document.cookie.length
-					return unescape(document.cookie.substring(c_start,c_end))
-				}
-			}
-			return ""
-		}
-
-	})();
-</script>
-
-<script type="text/javascript" src="https://img.guahao.com/front/hps-pc-static/js/base/GL.js?_=1541078824a18cef" ></script>
-<script src="https://img.guahao.com/front/hps-pc-static/js/plugins/scout.js?_=1541078824a18cef"></script>
-<!-- analytics code -->
-<div class="hide">
 	<script type="text/javascript"> 
-	 
-		(function() { 
-		
-			// baidu
-			var hm = document.createElement('script'); hm.type = 'text/javascript'; hm.async = true;
-			hm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'hm.baidu.com/h.js?66fcb71a7f1d7ae4ae082580ac03c957';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hm, s); 
-		  
-		  
-		})();
+
+	 //添加文章保存
+        $(document).on('click', '.btn', function() {
+            var word = document.getElementById('wordtype').innerHTML=UE.getEditor('editor').getContent();
+
+            var namelist = $('#namelist').val();
+            var blues = $("input[name='blues']:checked").val();
+            var toplist = $("#toplist").val();
+            var titlelist = $("#titlelist").val();
+
+            
+           
+         
+            $.post("<?php echo U('/home/index/addarticle');?>",
+                {"namelist":namelist,"blues":blues,"toplist":toplist,"titlelist":titlelist,"word":word},
+                function (data) {
+
+                    if (data.status=='success') {
+                       window.location.href="<?php echo U('home/index/article');?>";
+                    }
+                    // remindBox(data.msg);
+                },
+                "json");
+        });
 	</script>   
-</div>
+
 
 	</body>
 </html>

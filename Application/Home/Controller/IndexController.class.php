@@ -747,6 +747,26 @@ function getCity($ip = '')
       $this->display(':articlelist');
     }
 
+    public function addarticle(){
+      $res = I('post.');
+      $data = array(
+        'textarea' => htmlspecialchars_decode($res['word']),
+        'title'    => $res['titlelist'],
+         'top'     => $res['toplist'],
+         'socure'  => $res['blues'],
+         'type'    => $res['namelist'],
+         'createtime' => time(),
+         'updatetime' => time(),
+      );
+      $row = M('his_doctorlist')->add($data);
+      if($row){
+         $this->ajaxSuccess('<h2><font color=#ff0000>文件添加成功！等待管理员审核！</font></h2><br><br>',U('home/index/article'));
+      }else{
+           $this->ajaxError('<h2><font color=#ff0000>文件添加失败！</font></h2><br><br>');
+      }
+     
+    }
+
     public function authprofile()
     {
       $this->display(':authprofile');
