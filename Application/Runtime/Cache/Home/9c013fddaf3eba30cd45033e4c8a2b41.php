@@ -1,12 +1,12 @@
-
+<?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE HTML>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="shortcut icon" href="__PUBLIC_HOME__/images/favicon.ico" />
+<link rel="shortcut icon" href="/Public/home/favicon.ico" />
 <!-- External CSS -->
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
 <script  type="text/javascript">
 	// $GF { Array } - functions defined in pages which has no module. The collected functions will be defined in page directly.
 	$GF = [];
@@ -20,15 +20,52 @@
 </script>
 
 	
-				<link rel="stylesheet" href="https://img.guahao.com/front/hps-pc-static/css/questions.css?v=1541078824a18cef" type="text/css"/>
+		        <meta name="keywords" content="微医" />
+		        <meta name="description" content="微医" />
 		
-		    <title>常见问题 | 择医网</title>
+		    <title>医生个人资料 | 微医</title>
 	</head>
 	
 	<body>
 		<!-- #g-wrapper -->
 		<div id="g-wrapper" class="gc-new">
-			 <include file="Public:dochead" />
+			<!-- #gh -->
+			 <div class="g-header-new noprint">
+    <div class="notice"  id="J_Notify" style="display: none;">
+        <div class="center" class="">
+            <div class="notice-contain">
+                <span class="bell-icon"></span>
+                <span class="title">公告：</span>
+                <div id="J_NotifyBox" class="wrapper" style="">
+                    <div class="move-box" style="" >
+                        <span class="content J_Content" href="javascript:;"></span>
+                    </div>
+                    <div class="move-box2" style="display: none;" >
+                        <span class="content J_Content" href="javascript:;"></span>
+                    </div>
+                </div>
+                <span class="close-icon J_NoticeClose"></span>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <a class="logo" href="<?php echo U('home/index/index');?>">
+            <img src="/Public/home/images/logolist.jpg?_=123456" alt="logo">
+        </a>
+        <div class="nav">
+                    <span>欢迎您
+                            ,&nbsp;<?php echo ($docname); ?>
+                    </span>
+                <a href="#" target="_blank" class="help" title="联系客服" monitor="doctorweb,menu_top,wy_robot"><b class="border">联系客服</b></a>
+                <a href="<?php echo U('home/index/authprofile');?>" class="setting" title="账号设置" monitor="doctorweb,menu_top,accountset"><b class="border">账号设置</b></a>
+                <a href="<?php echo U('home/index/docLogout');?>" class="logout j-out-system" title="退出" monitor="doctorweb,menu_top,exit"><b>退出</b></a>
+                <input type="hidden" class="j-out-url" value="" />
+        </div>
+    </div>
+    <div class="gm-box-off-out hide">
+        <p style="text-align: center;">您还在接诊状态，确定退出登录?</p>
+    </div>
+</div>
 <script type="text/javascript">
     $GF.push(function() {
         //文字跑马灯
@@ -68,27 +105,7 @@
             },
             success: function(res) {
                 if(res.flag == 0) {
-                    if(res.item) {//查询结果
-                        var dataObj = res.item;
-                        $('.move-box .J_Content').html(dataObj.content);
-                        $('.move-box2 .J_Content').html(dataObj.content);
-                        //html方法插入的内容，直接拿宽度拿不到
-                        setTimeout(function(){
-                            var outWidth = $('#J_NotifyBox').outerWidth();
-                            var box1 = $('#J_NotifyBox .move-box'),box2 = $('#J_NotifyBox .move-box2');
-                            var inWidth = box1.outerWidth();
-                            //顶部通知超过一行，自动滚动播放
-                            if(inWidth > outWidth){
-                                var left1 = 0;
-                                var left2 = inWidth;
-                                var difference = outWidth - inWidth;
-                                function move(){
-                                    box2.show();
-                                    var item2Left = box2.css('left');
-                                    var item1Left = box1.css('left');
-                                    left1 = left1-1;
-                                    left2 = left2-1;
-                                    box1.css({'left':left1+40+'px'});
+                    if(res.item) );
                                     box2.css({'left':left2+40+'px'}); 
                                     if(parseInt(item1Left) == difference){
                                         left2 = outWidth;
@@ -133,9 +150,7 @@
                         console.log('没有配置公告');
                     }
                 }
-                else {//没有配置公告
-                    console.log('没有配置公告');
-                }
+                else 
             },
             error: function(){
                 console.log('公告接口失败');
@@ -151,7 +166,7 @@
 	<!-- 医生个人简介 -->
 	<div  class="top">
 		<div class="head-box">
-                        <img src="https://img.guahao.com/portal_upload/userheadpic/pYf27810846_180x180.?timeStamp=1543038789523" alt="李旭峰大夫" class="head-img"/>
+                        <img src="https://img.guahao.com/portal_upload/userheadpic/pYf27810846_180x180.?timeStamp=1543037844164" alt="李旭峰大夫" class="head-img"/>
 		</div>
 		<div class="info">
 			<div class="basic-info">
@@ -162,12 +177,12 @@
 				         		上海中医药大学附属龙华医院<span class="dept"></span>
 				         		<span class="dept">1222室</span>
 			</div>
-			<a href="#" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
+			<a href="" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
 		</div>
 	</div>
 
 	<ul class="menu-parent-box">
-			<li class="menu-parent "><a href="{:U('home/index/doctorhome')}" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
+			<li class="menu-parent "><a href="<?php echo U('home/index/doctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
 					<li class="menu-parent ">
 					<a href="javascript:;"
 					
@@ -178,19 +193,19 @@
 					     账号设置
 						</a>
 									<div class="menu-child-box hide">
-									   	<a class="menu-child " href="{:U('home/index/authprofile')}" monitor="doctorweb,menu,accountset_myinfo"
+									   	<a class="menu-child active" href="<?php echo U('home/index/authprofile');?>" monitor="doctorweb,menu,accountset_myinfo"
 										  >
 										   
 								   		个人资料</a>
-									   	<a class="menu-child " href="{:U('home/index/head_pic_settings')}" monitor="doctorweb,menu,accountset_pichead"
+									   	<a class="menu-child " href="<?php echo U('home/index/head_pic_settings');?>" monitor="doctorweb,menu,accountset_pichead"
 										  >
 										   
 								   		头像设置</a>
-									   	<a class="menu-child " href="{:U('home/index/authaccout')}" monitor="doctorweb,menu,accountset_info"
+									   	<a class="menu-child " href="h<?php echo U('home/index/authaccout');?>" monitor="doctorweb,menu,accountset_info"
 										  >
 										   
 								   		账号信息</a>
-									   	<a class="menu-child " href="{:U('home/index/authtomod')}" monitor="doctorweb,menu,accountset_password"
+									   	<a class="menu-child " href="<?php echo U('home/index/authtomod');?>" monitor="doctorweb,menu,accountset_password"
 										  >
 										   
 								   		修改密码</a>
@@ -206,14 +221,14 @@
 					     帮助与反馈
 						</a>
 									<div class="menu-child-box hide">
-									   	<a class="menu-child " href="{:U('home/index/authoperation')}" 
+									   	<a class="menu-child " href="h<?php echo U('home/index/authoperation');?>" 
 										  >
 										   
 								   		操作手册</a>
 									   	<a class="menu-child " href="#" >
 										   
-								   		我的文章</a>
-									   	<a class="menu-child active" href="#" 
+								   		联系客服</a>
+									   	<a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
 										  >
 										   
 								   		常见问题</a>
@@ -223,107 +238,132 @@
 </div>
 
 				<!-- #gc -->
-				<!-- #gc -->
-<!---->
+				
 
 
-<div id="gc" class="gp-questions questions-common" data-module="questions-help">
-	<div class="gc-mask">
-		<div class="content-admin g-clear g-content">
-			<div id="g-breadcrumb">
-				<a href="{:U('home/index/doctorhome')}">首页</a>&gt;
-				<a href="#">帮助与反馈</a>&gt;
-				<span>常见问题</span>
+	<div id="gc" class="gp-doc-profile"  data-module="doc-operate">
+		<div class="gc-mask">
+			<div class="content-admin g-clear g-content">
+				<div id="g-breadcrumb">
+				    <a href="https://doctor.guahao.com/home">首页</a>&gt;
+			        <span>账号设置 &gt;</span>
+			        <span>个人资料</span>
+			  	</div>
+				<div class="g-content-widget g-tab">
+					<div class="config-tab">
+						<a href="javascript:;" class="active" monitor="doctorweb,accountset_top,myinfo">个人资料</a>
+						<a href="<?php echo U('home/index/head_pic_settings');?>" monitor="doctorweb,accountset_top,headpic">头像设置</a>
+						<a href="<?php echo U('home/index/authaccout');?>" monitor="doctorweb,accountset_top,info">账号信息</a>
+						<a href="<?php echo U('home/index/authtomod');?>" monitor="doctorweb,accountset_top,password">修改密码</a>
+					</div>
+					<div class="content-warp">
+						     	 	  <input type="hidden" name="originalTitleName" value="" />
+						     	 	  <input type="hidden" name="originalTitleType"  value="">
+						     	 	  <input type="hidden" name="titleTypeStatus" value="-1">
+						     	 	  
+						     	 	  <input type="hidden" name="originalScienceTitleName" value="" />
+						     	 	  <input type="hidden" name="originalScienceTitleType" value="">
+						     	 	  <input type="hidden" name="titleTypeStatus" value="-1">
+					         <form  name="doctorInfo" id="doc_profile_form"  class="gfm-inline" method="POST">
+						       <input type="hidden" value="/auth/profile" name="loginTarget">
+					     	 <div class="g-tips-box-error hide">
+						   		<span class="gi gi-error"></span>
+						   		<span class="tips-text"></span>
+						   	</div>
+				  			<div class="g-tips-box-succ hide">
+								<span class="gi gi-succ"></span>
+							   	<span class="tips-text"></span>
+							</div>
+					     	 <ul>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item">
+					     	 			<label style="line-height: 60px;">头像：</label>
+					     	 			<div class="cert-preview g-clear J_CertPreview">
+					     	 				<div class="preview-item">
+					     	 					<img class="preview-img" src="
+					     	 														https://img.guahao.com/portal_upload/userheadpic/pYf27810846_180x180.?timeStamp=1543037843789
+"/>
+					     	 				</div>
+					     	 			</div>
+					     	 		</div>
+					     	 	</li>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item ">
+						     	 	  	<label>登录名：</label>
+						     	 	 	 <span class="gfm-left">13776848129</span>
+						     	 	 </div>
+					     	 	</li>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item ">
+						     	 	  <label>真实姓名：</label>
+						     	 	  <span class="gfm-left">李旭峰</span>
+						     	 	 </div>
+					     	 	</li>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item ">
+						     	 	  <label>行政职称： </label>
+						     	 	 	主任医师
+						     	 	 </div>
+					     	 	</li>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item ">
+						     	 	  	<label>资格证明：</label>
+						     	 	  	<span class="gfm-left">请上传专业技术资格证书(职称证)证明</span>
+						     	 	  	<div class="cert-img J_Handleimgs">
+											<a class="J_AddCertimgs" >
+												<i class="icon-add"></i>
+													<input type="text" name="titleImages" class="upload-img" value="" />
+											</a>
+						     	 	  	</div>
+						     	 	 </div>
+					     	 	</li>
+					     	 	
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item">
+						     	 	    <label>性别：</label>
+										<input type="radio" name="gender" value="1"  />男
+										<input type="radio" name="gender" value="2"  />女
+						     	 	</div>
+					     	 	</li>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item">
+					     	 			<label>执业点：</label>
+					     	 			<span class="gfm-left">上海中医药大学附属龙华医院&nbsp;1222室</span>
+					     	 		</div>
+					     	 	</li>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item ">
+						     	 	  <label><i>*</i>擅长：</label>
+						     	 	  <textarea  class="gfm-left" id="featureContent" name="feature"  data-required="1" pattern="^(.|\n){20,}$" data-message="除去首尾空格，不能少于20个字"></textarea>
+						     	 	   <span class="comment-limit">
+						                 	最多可以输入<i>2000</i>字，您还可以输入<i><span class="num">2000</span></i> 字
+						               </span>
+						     	 	 </div>
+					     	 	</li>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item ">
+						     	 	  <label><i>*</i>简介：</label>
+						     	 	  <textarea rows="" cols=""  class="gfm-left" name="intro"  id="introContent" data-required="1" pattern="^(.|\n){20,}$" data-message="除去首尾空格，不能少于20个字"></textarea>
+						     	 	 </div>
+					     	 	</li>
+					     	 	<li class="gfm-action g-clear">
+					     	 		<div class="gfm-item ">
+						     	 		 <label>&nbsp;</label>
+						     	 		 <span class="gfm-left">
+						     	 			<a class="gbn gbt-blue1" href="javascript:;"  id="doUpdate" monitor="doctorweb,accountset_myinfo,refresh">更新</a>
+						     	 		 </span>
+					     	 		 </div>
+					     	 	</li>
+					     	 </ul>
+					    </form>
+					</div>
+
+				</div>
 			</div>
-			<div class="g-tab g-content-widget">
-                <div class="questions-list">
-                	<div class="search-box">
-                    	<input type="text" class="search-input J_SearchInput" placeholder="请输入您的问题">
-                    	<button type="submit" class="search-button">搜索</button>
-                    	<ul class="search-result J_ResultBox"></ul>
-                    </div>
-                    <div class="dashed-line"></div>
-                    <div class="item-box J_ItemBox">
-	                    <div class="item">
-	                    	<h5 class="item-h5">热搜</h5>
-	                    	<ul>
-                    					<li class="item-li"><a href="#s/?subId=773&parentId=-999" target="_blank">提交什么资料进行实名认证？</a></li>
-                    					<li class="item-li"><a href="#s/?subId=774&parentId=-999" target="_blank"> 认证审核需要多久的时间？</a></li>
-                    					<li class="item-li"><a href="#s/?subId=779&parentId=-999" target="_blank">忘记密码，如何找回？</a></li>
-                    					<li class="item-li"><a href="#s/?subId=780&parentId=-999" target="_blank">如何修改密码？</a></li>
-                    					<li class="item-li"><a href="#s/?subId=782&parentId=-999" target="_blank">微医生app端和网页端的医生账号是否一样？</a></li>
-	                    	</ul>
-	                    </div>
-			                    <div class="item">
-			                    	<h5 class="item-h5 J_ItemH5" data-id="224">问诊相关</h5>
-			                    	<ul>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=231&parentId=224" target="_blank">全科咨询</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=232&parentId=224" target="_blank">图文问诊</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=233&parentId=224" target="_blank">视话问诊</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=234&parentId=224" target="_blank">处方权</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=235&parentId=224" target="_blank">银行卡与收入</a>
-				                    			</li>
-			                    	</ul>
-			                    </div>
-			                    <div class="item">
-			                    	<h5 class="item-h5 J_ItemH5" data-id="225">业务相关</h5>
-			                    	<ul>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=236&parentId=225" target="_blank">操作相关</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=237&parentId=225" target="_blank">业务相关</a>
-				                    			</li>
-			                    	</ul>
-			                    </div>
-			                    <div class="item">
-			                    	<h5 class="item-h5 J_ItemH5" data-id="226">其它</h5>
-			                    	<ul>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=238&parentId=226" target="_blank">产品介绍</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=239&parentId=226" target="_blank">行医无忧</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=259&parentId=226" target="_blank">大家帮</a>
-				                    			</li>
-			                    	</ul>
-			                    </div>
-			                    <div class="item">
-			                    	<h5 class="item-h5 J_ItemH5" data-id="223">账号相关</h5>
-			                    	<ul>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=228&parentId=223" target="_blank">实名认证</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=229&parentId=223" target="_blank">登录相关</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=230&parentId=223" target="_blank">基础信息相关</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=227&parentId=223" target="_blank">注册与下载</a>
-				                    			</li>
-			                    	</ul>
-			                    </div>
-                    </div>
-                </div>
-			</div>
-	    </div>
+		</div>
+		<!-- end of .gp-doc-profile -->
 	</div>
-	<!-- end of .gc-mask -->
-</div>
-<!-- end of #gc -->
+	<!-- end of #gc -->
 <span id="gi_page_totop" class="gi gi-page-totop"></span>
 
 				<!-- end of #gc -->
@@ -344,10 +384,10 @@
 	//打点日志全局变量
 	$GLog = {
 		requestMethod:'GET',
-		loginId:'RabrfWSrP3oFmJ1/Sz69i23RkmJO9BjimZAFtRYjChTMGvgehYKYQA==',
+		loginId:'nPuS8fU8D/OwSYgBHuytSD2a94FM1t6yua5UQIInwpIEhwBSJw8iRQ==',
 		perSessiionId:'154303338518820178067151',
 		shortSessionId:'',
-		referurl:'/auth/operation',
+		referurl:'https://doctor.guahao.com/home',
 		userAgent:'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
 		logUrl: 'https://trackweb.guahao.cn/blank.gif',
 		debug: false,
@@ -363,7 +403,7 @@
 		echartServer: "https://im-web.guahao.cn",
 		flashIp: "https://tqvedio-hezuo.guahao.com",
 		guahaoServer:"http://www.guahao.com",
-		eopsServer:"",
+		eopsServer:"https://doctor.guahao.com",
 		isLogined:"true",
 		isdocLogined:"true",
 		mobilevalidcodepwd : 'lvxian95169124',

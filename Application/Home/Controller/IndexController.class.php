@@ -739,6 +739,14 @@ function getCity($ip = '')
       $this->display(':doctorhome');
     }
 
+    public function article(){
+      $this->display(':article');
+    }
+
+    public function articlelist(){
+      $this->display(':articlelist');
+    }
+
     public function authprofile()
     {
       $this->display(':authprofile');

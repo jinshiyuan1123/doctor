@@ -22,7 +22,7 @@
 	
 				<link rel="stylesheet" href="https://img.guahao.com/front/hps-pc-static/css/questions.css?v=1541078824a18cef" type="text/css"/>
 		
-		    <title>常见问题 | 择医网</title>
+		    <title>我的文章 | 择医网</title>
 	</head>
 	
 	<body>
@@ -210,10 +210,10 @@
 										  >
 										   
 								   		操作手册</a>
-									   	<a class="menu-child " href="#" >
+									   	<a class="menu-child active" href="#" >
 										   
 								   		我的文章</a>
-									   	<a class="menu-child active" href="#" 
+									   	<a class="menu-child " href="#" 
 										  >
 										   
 								   		常见问题</a>
@@ -233,13 +233,14 @@
 			<div id="g-breadcrumb">
 				<a href="{:U('home/index/doctorhome')}">首页</a>&gt;
 				<a href="#">帮助与反馈</a>&gt;
-				<span>常见问题</span>
+				<span>我的文章</span>
 			</div>
 			<div class="g-tab g-content-widget">
                 <div class="questions-list">
                 	<div class="search-box">
-                    	<input type="text" class="search-input J_SearchInput" placeholder="请输入您的问题">
-                    	<button type="submit" class="search-button">搜索</button>
+                    	<a href="{:U('home/index/articlelist')}">
+                    	<button type="submit" class="search-button" style="width:160px;border-radius: 2px;">发布文章</button>
+                    	</a>
                     	<ul class="search-result J_ResultBox"></ul>
                     </div>
                     <div class="dashed-line"></div>

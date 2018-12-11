@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : www
+Source Server         : localhost
 Source Server Version : 50553
 Source Host           : localhost:3306
 Source Database       : doctor
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-12-09 22:59:45
+Date: 2018-12-11 11:10:39
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -3813,6 +3813,38 @@ INSERT INTO `dzm_his_doctor` VALUES ('2', '方法', '0', '', '0', '0', '0', '131
 INSERT INTO `dzm_his_doctor` VALUES ('3', '测试', '0', '', '0', '0', '0', '13141589223', '$2y$12$3sab.fPjhPHMvCGXl1ijJuguegZE3yUfGAqYbziXlgLwiUzx4ILc.', '协和医院', '', '2', '', '', '', '1543247335', '1544333782', '', '2', '7', '', '0.00');
 INSERT INTO `dzm_his_doctor` VALUES ('4', '王守道', '0', '130000', '0', '唐山市', '83856745', '13141589203', '$2y$12$Mtv3mGq3i92VRMsFyTrSGu5/4yzBHS6lRCYkvu3GhCsLC8iC1pHuW', '中心医院', '', '1', '医生', '', '', '1544332507', '1544336336', '', '2', '7', '', '0.00');
 INSERT INTO `dzm_his_doctor` VALUES ('5', '多的', '0', '130000', '0', '秦皇岛市', '83856745', '13141589556', '$2y$12$yIoudEjifKHjW5X8a9cWWuAybiLyJAq62ejyS3NPxV8WXNpL3x1ei', '但是', null, '1', '士大夫', '127.0.0.1', '', '1544346481', '1544346481', '', '2', '', '', '0.00');
+
+-- ----------------------------
+-- Table structure for dzm_his_doctorlist
+-- ----------------------------
+DROP TABLE IF EXISTS `dzm_his_doctorlist`;
+CREATE TABLE `dzm_his_doctorlist` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '用户id',
+  `username` varchar(20) NOT NULL DEFAULT '' COMMENT '用户个人资料真实姓名',
+  `province` varchar(255) DEFAULT '0' COMMENT '省',
+  `cities` varchar(255) DEFAULT '' COMMENT '市区',
+  `password` varchar(255) NOT NULL DEFAULT '0' COMMENT '密码',
+  `area` varchar(255) NOT NULL DEFAULT '0' COMMENT '地区',
+  `mobile` varchar(11) NOT NULL DEFAULT '0' COMMENT '手机号',
+  `hospital` varchar(255) NOT NULL DEFAULT '' COMMENT '医院',
+  `room` varchar(255) NOT NULL DEFAULT '' COMMENT '科室',
+  `job` varchar(255) NOT NULL DEFAULT '' COMMENT '职位',
+  `areacode` varchar(255) NOT NULL COMMENT '区号',
+  `textarea` longtext NOT NULL,
+  `phone` varchar(255) NOT NULL COMMENT '电话',
+  `createtime` int(10) NOT NULL COMMENT '注册时间',
+  `updatetime` int(10) NOT NULL COMMENT '修改时间',
+  `uid` int(11) NOT NULL COMMENT '用户表userid',
+  `ask_price` decimal(10,2) DEFAULT '0.00' COMMENT '咨询价格',
+  PRIMARY KEY (`id`),
+  KEY `uid` (`uid`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COMMENT='医生文章信息表';
+
+-- ----------------------------
+-- Records of dzm_his_doctorlist
+-- ----------------------------
+INSERT INTO `dzm_his_doctorlist` VALUES ('1', '张三', '25', '', '0', '0', '0', '', '', '', '', '', '', '1511949108', '0', '2', '0.00');
+INSERT INTO `dzm_his_doctorlist` VALUES ('2', '当时发', '140000', null, '$2y$12$n97x7Fue6SddXflXIPYO9.2hUli2gTMM96LdAuluI5fjSklVCeYXW', '0', '13141589203', '登山泛水', '', '医生', '0527', '', '83856745', '1543045946', '1543117928', '2', '0.00');
 
 -- ----------------------------
 -- Table structure for dzm_his_doctors

@@ -185,10 +185,7 @@
 	<ul class="menu-parent-box">
 			<li class="menu-parent active"><a href="<?php echo U('home/index/doctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
 					<li class="menu-parent ">
-					<a href="javascript:;"
-					
-					
-					class="hasChild J_ParentMenu">
+					<a href="javascript:;" class="hasChild J_ParentMenu">
 						<i style="background: url(/Public/home/images/J5t37110059.png) no-repeat"></i>
 						
 					     账号设置
@@ -226,13 +223,14 @@
 										  >
 										   
 								   		操作手册</a>
-									   	<a class="menu-child " href="#" >
+									   	<a class="menu-child " href="<?php echo U('home/index/article');?>" >
 										   
-								   		联系客服</a>
+								   		我的文章</a>
 									   	<a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
 										  >
 										   
 								   		常见问题</a>
+                                          
 									</div>
 					</li>
 	</ul>
