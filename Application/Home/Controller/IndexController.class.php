@@ -380,7 +380,7 @@ function getCity($ip = '')
         $smsapi = "http://api.smsbao.com/";
         $user = "jinshiyuan1123"; //短信平台帐号
         $pass = md5("w134789"); //短信平台密码
-        // $content="【诊所云】您的验证码为".$num."，在5分钟内有效";//要发送的短信内容，随便设置
+        // $content="【择医网】您的验证码为".$num."，在5分钟内有效";//要发送的短信内容，随便设置
         // $phone = $phonenum;//要发送短信的手机号码
         // $sendurl = $smsapi."sms?u=".$user."&p=".$pass."&m=".$phone."&c=".urlencode($content);//固定格式
         // $result =file_get_contents($sendurl);//固定格式
@@ -760,9 +760,9 @@ function getCity($ip = '')
       );
       $row = M('his_doctorlist')->add($data);
       if($row){
-         $this->ajaxSuccess('<h2><font color=#ff0000>文件添加成功！等待管理员审核！</font></h2><br><br>',U('home/index/article'));
+         $this->ajaxSuccess('<h2><font color=#ff0000>文章添加成功！等待管理员审核！</font></h2><br><br>',U('home/index/article'));
       }else{
-           $this->ajaxError('<h2><font color=#ff0000>文件添加失败！</font></h2><br><br>');
+           $this->ajaxError('<h2><font color=#ff0000>文章添加失败！</font></h2><br><br>');
       }
      
     }
