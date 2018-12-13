@@ -55,98 +55,7 @@
         <p style="text-align: center;">您还在接诊状态，确定退出登录?</p>
     </div>
 </div>
-<script type="text/javascript">
-    $GF.push(function() {
-        //文字跑马灯
-        //requestAnimationFrame
-        (function() {
-            var lastTime = 0;
-            var vendors = ['ms', 'moz', 'webkit', 'o'];
-            for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
-                window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
-                window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
-            }
-            if (!window.requestAnimationFrame){
-                window.requestAnimationFrame = function(callback, element) {
-                    var currTime = new Date().getTime();
-                    console.log(currTime);
-                    var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-                    var id = window.setTimeout(function() {
-                        callback(currTime + timeToCall);
-                    }, timeToCall);
-                    lastTime = currTime + timeToCall;
-                    return id;
-                };
-            }
-            if (!window.cancelAnimationFrame){
-                window.cancelAnimationFrame = function(id) {
-                    clearTimeout(id);
-                };
-            }
-        }());
-        
-        $.ajax({
-            type: "post",
-            url: 'https://api-gateway.guahao.com/common/notice/mainplatformdetail.json',
-            //headers : {'weiyi-appid':'d_h5_weiyi'},
-            beforeSend: function(xhr) {
-                xhr.setRequestHeader("weiyi-appid", "d_web_doctor");
-            },
-            success: function(res) {
-                if(res.flag == 0) {
-                    if(res.item) );
-                                    box2.css({'left':left2+40+'px'}); 
-                                    if(parseInt(item1Left) == difference){
-                                        left2 = outWidth;
-                                        box2.css({'left':left2+40+'px'}); 
-                                    }else if(parseInt(item2Left) == difference){
-                                        left1 = outWidth;
-                                        box1.css({'left':left1+40+'px'});
-                                    }
-                                    requestAnimationFrame(move);
-                                };
-                                move();
-                            }
-                            box1.css({'visibility': 'visible'});
-                            box2.css({'visibility': 'visible'});
-                        },0);
 
-                       if (!$('#J_Notify').length) {
-                           return;
-                       }
-                       if(!localStorage.getItem("indexNotice") || localStorage.getItem("indexNotice")!=dataObj.gmtModified){
-                           $('#J_Notify').show();
-                       }
-                       var openFun = function(close) {
-                           close();
-                           localStorage.setItem("indexNotice",dataObj.gmtModified);
-                           $('#J_Notify').hide();
-                       };
-                       //点击公告
-                       $('.J_Content').on('click',function(){
-                            //弹窗展示
-                           $.confirm({title:"公告",content:"<span style='font-size: 16px;color: #333333;'>"+dataObj.content+"</span>",okText:"知道了",okfun: openFun,cancelfun:openFun,cancelEqualClose:true,className:"new-ok"});
-                           localStorage.setItem("indexNotice",dataObj.gmtModified);
-                       });
-                       //点击关闭按钮
-                       $('.J_NoticeClose').click(function(){
-                            if(dataObj.gmtModified){
-                               localStorage.setItem("indexNotice",dataObj.gmtModified);
-                            }
-                           $('#J_Notify').hide();
-                       })
-                    }else{
-                        console.log('没有配置公告');
-                    }
-                }
-                else 
-            },
-            error: function(){
-                console.log('公告接口失败');
-            }
-        });
-    });
-</script>
 
             <!-- end of #gh -->
             <div class="g-container">
@@ -252,29 +161,31 @@
                     <div></div>
                    &nbsp;&nbsp;
                      <hr style="height:1px;border:none;border-top:1px solid #888888;" /> 
-				
-                     <div style="float: center">
+				    <?php if(is_array($res)): foreach($res as $key=>$vo): ?><div style="float: center">
                      <br><br>
                      <span style="font-size:15px;color:#000000;width:10px;">文章分类</span>
                      &nbsp;
-                     <input type="text" name="namelist" id="namelist" style="width:200px;height:30px;border-radius: 2px;">
+                     <input type="text" name="namelist" id="namelist" value="<?php echo ($vo["type"]); ?>" style="width:200px;height:30px;border-radius: 2px;">
                       &nbsp; &nbsp; &nbsp; &nbsp;
                      <span style="font-size:15px;color:#000000;width:10px;">来源</span>
                       &nbsp; 
-                      <input type="radio" name="blues" id="blue" value="1">
+                    
+                      <input type="radio" name="blues" id="blue" value="1" <?php if($vo["socure"] == 1): ?>checked<?php endif; ?>>
                        &nbsp;原创 
                       &nbsp; &nbsp;
-                    <input type="radio" name="blues" id="blues" value="2">
+
+                    <input type="radio" name="blues" id="blues" value="2" <?php if($vo["socure"] == 2): ?>checked<?php endif; ?>>
                       &nbsp;转载
+
                      &nbsp; &nbsp; &nbsp; &nbsp;
-                     <input type="radio" name="toplist" id="toplist" value="1"> &nbsp;置顶
+                     <input type="radio" name="toplist" id="toplist" value="1"<?php if($vo["top"] == 1): ?>checked<?php endif; ?> > &nbsp;置顶
                      <br/>
                   
                      </div>
                      &nbsp;<br>
                        <span style="font-size:15px;color:#000000;width:10px;">标题</span>
                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <input type="text" name="titlelist" id="titlelist"  style="width:200px;height:30px;border-radius: 2px;">
+                      <input type="text" name="titlelist" id="titlelist" value="<?php echo ($vo["title"]); ?>" style="width:200px;height:30px;border-radius: 2px;">
                       &nbsp; &nbsp; &nbsp; &nbsp;
                     
                 </div>
@@ -285,7 +196,8 @@
                 <!-- <textarea name="" id="addUnit" name="addUnit" value="" cols="100" rows="6"></textarea> -->
              
             </div>
-            <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            <div style="display: none">
+             <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -450,12 +362,16 @@
 </body>
 
 </html>
-             <textarea id="wordtype" name="wordtype" style="display: none"></textarea>
-            <br>
-           
-           
+            </div>
+            
+               <textarea id="myEditor" name="myEditor" style=" ">
+              
+             </textarea>
+             <input type="hidden" id="articleids" name="article" value="<?php echo ($vo["id"]); ?>">
+            <input type="hidden" id="textarea" name="ins_id" value="<?php echo ($vo["textarea"]); ?>">
+            <br><?php endforeach; endif; ?>
             <div style="float:center">
-          <button  class="search-button btn" style="border-radius: 2px; width: 166px; height: 100%;color: #fff;font-size: 24px;background-color: #589bff;border: none;cursor: pointer;">发布文章</button>
+          <button  class="search-button editor" style="border-radius: 2px; width: 166px; height: 100%;color: #fff;font-size: 24px;background-color: #589bff;border: none;cursor: pointer;">编辑文章</button>
 </div>
 			</div>
 
@@ -483,21 +399,27 @@
 		
 
 	<script type="text/javascript"> 
+         var textarea = $("#textarea").val();
+         var mylist = $("#myEditor").val(textarea);
+         UE.getEditor('myEditor');
 
-	 //添加文章保存
-        $(document).on('click', '.btn', function() {
-            var word = document.getElementById('wordtype').innerHTML=UE.getEditor('editor').getContent();
+	 //编辑文章保存
+        $(document).ready(function() {
+            $('.editor').click(function(){
 
+            var word = document.getElementById('textarea').innerHTML=UE.getEditor('myEditor').getContent();
+          
             var namelist = $('#namelist').val();
             var blues = $("input[name='blues']:checked").val();
             var toplist = $("#toplist").val();
             var titlelist = $("#titlelist").val();
+            var uid = $("#articleids").val();
 
             
            
          
-            $.post("<?php echo U('/home/index/addarticle');?>",
-                {"namelist":namelist,"blues":blues,"toplist":toplist,"titlelist":titlelist,"word":word},
+            $.post("<?php echo U('/home/index/editorarticlelist');?>",
+                {"namelist":namelist,"blues":blues,"toplist":toplist,"titlelist":titlelist,"word":word,"uid":uid},
                 function (data) {
 
                     if (data.status=='success') {
@@ -507,6 +429,7 @@
                     // remindBox(data.msg);
                 },
                 "json");
+            });
         });
 	</script>   
 

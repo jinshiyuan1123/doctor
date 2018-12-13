@@ -169,6 +169,31 @@ class MemberController extends HisBaseController
             $this->display();
         }
     }
+
+
+
+    public function doctorlist(){
+        if(IS_POST){
+            $id = I('post.');
+            $data = array(
+                'process'=>$id['uidlist'],
+            );
+            $row = M('his_doctorlist')->where("id='$id[uid]'")->save($data);
+            if($row){
+                $this->ajaxSuccess('审核成功');
+            }else{
+                $this->ajaxError('审核失败');
+            }
+        }
+        $res = M('his_doctorlist')->select();
+        $this->assign('res',$res);
+        $this->display();
+    }
+     public function doctoreidtor(){
+        $res = M('his_doctorlist')->select();
+        $this->assign('res',$res);
+        $this->display();
+    }
     /**
      * 添加用户（医生，护士，..）
      * Author: gmq

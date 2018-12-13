@@ -740,11 +740,29 @@ function getCity($ip = '')
     }
 
     public function article(){
+      $res = M('his_doctorlist')->select();
+      $this->assign('res',$res);
       $this->display(':article');
     }
 
     public function articlelist(){
+      // $id = I('get.');
+      // if($id){
+      //     $res = M('his_doctorlist')->where("id='$id'")->find();
+      //    $this->assign('res',$res);
+      // }
+    
       $this->display(':articlelist');
+    }
+
+    public function editorarticle(){
+       $id = I('get.id');
+      
+      if($id){
+          $res = M('his_doctorlist')->where("id='$id'")->select();
+         $this->assign('res',$res);  
+      }
+      $this->display(':editorarticle');
     }
 
     public function addarticle(){
@@ -759,6 +777,26 @@ function getCity($ip = '')
          'updatetime' => time(),
       );
       $row = M('his_doctorlist')->add($data);
+      if($row){
+         $this->ajaxSuccess('<h2><font color=#ff0000>文章添加成功！等待管理员审核！</font></h2><br><br>',U('home/index/article'));
+      }else{
+           $this->ajaxError('<h2><font color=#ff0000>文章添加失败！</font></h2><br><br>');
+      }
+     
+    }
+
+      public function editorarticlelist(){
+      $res = I('post.');
+      $data = array(
+        'textarea' => htmlspecialchars_decode($res['word']),
+        'title'    => $res['titlelist'],
+         'top'     => $res['toplist'],
+         'socure'  => $res['blues'],
+         'type'    => $res['namelist'],
+         // 'createtime' => time(),
+         'updatetime' => time(),
+      );
+      $row = M('his_doctorlist')->where("id='$res[uid]'")->save($data);
       if($row){
          $this->ajaxSuccess('<h2><font color=#ff0000>文章添加成功！等待管理员审核！</font></h2><br><br>',U('home/index/article'));
       }else{

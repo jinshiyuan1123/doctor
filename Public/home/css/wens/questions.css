@@ -1,0 +1,209 @@
+/* *********** CSS3 特性 ************* */
+/*帮助与反馈-常见问题*/
+.gp-questions .questions-list .search-box {
+  position: relative;
+  width: 300px;
+  height: 35px;
+  padding-top: 24px;
+  margin: 0 auto 24px auto;
+}
+.gp-questions .questions-list .search-box .search-input {
+  float: left;
+  box-sizing: border-box;
+  width: 234px;
+  height: 100%;
+  padding-left: 14px;
+  border: 1px solid #DEDEDE;
+  border-radius: 2px 0 0 2px;
+}
+.gp-questions .questions-list .search-box .search-button {
+  float: left;
+  width: 66px;
+  height: 100%;
+  color: #fff;
+  font-size: 14px;
+  background-color: #589bff;
+  border-radius: 0 2px 2px 0;
+  border: none;
+  cursor: pointer;
+}
+.gp-questions .questions-list .search-box .search-result {
+  position: absolute;
+  left: 0;
+  top: 58px;
+  width: 232px;
+  border-left: 1px solid #DEDEDE;
+  border-right: 1px solid #DEDEDE;
+}
+.gp-questions .questions-list .search-box .search-result .search-result-li {
+  height: 26px;
+  line-height: 26px;
+  padding-left: 14px;
+}
+.gp-questions .questions-list .search-box .search-result .search-result-li a {
+  overflow: hidden;
+  display: block;
+  font-size: 14px;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.gp-questions .questions-list .search-box .search-result .search-result-li:last-child {
+  border-bottom: 1px solid #DEDEDE;
+}
+.gp-questions .questions-list .dashed-line {
+  box-sizing: border-box;
+  width: 832px;
+  height: 1px;
+  margin: 0 auto 28px auto;
+  border-bottom: 1px dashed #f8f8f8;
+}
+.gp-questions .questions-list .item {
+  width: 896px;
+  padding-left: 35px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background-color: #FEFEFE;
+  /*border: 1px solid #F4F4F4;*/
+  box-sizing: border-box;
+}
+.gp-questions .questions-list .item .item-h5 {
+  height: 56px;
+  line-height: 56px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+.gp-questions .questions-list .item .item-li {
+  margin-bottom: 15px;
+}
+.gp-questions .questions-list .item .item-li a {
+  color: #666;
+}
+.gp-questions .questions-list .item .item-li a:hover {
+  color: #589bff;
+}
+.gp-questions .questions-list .item .item-li:before {
+  content: "·";
+  padding-right: 6px;
+  color: #589BFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+.gp-questions .questions-all {
+  overflow: hidden;
+  min-height: 282px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.gp-questions .questions-all .menu-box {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 242px;
+  min-height: 820px;
+  padding-top: 32px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.gp-questions .questions-all .menu-box .menu-item .menu-item-h5 {
+  height: 30px;
+  line-height: 30px;
+  margin-left: 18px;
+  margin-bottom: 8px;
+  color: #589bff;
+  font-weight: normal;
+  font-size: 14px;
+  cursor: pointer;
+}
+.gp-questions .questions-all .menu-box .menu-item .menu-item-h5 a {
+  color: #589bff;
+  text-decoration: none;
+}
+.gp-questions .questions-all .menu-box .menu-item .menu-item-h5:before {
+  content: "·";
+  padding-right: 6px;
+  color: #589BFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+.gp-questions .questions-all .menu-box .menu-item .menu-item-ul {
+  display: none;
+}
+.gp-questions .questions-all .menu-box .menu-item.selected .menu-item-ul {
+  display: block;
+  padding-left: 46px;
+}
+.gp-questions .questions-all .menu-box .menu-item.selected .menu-item-ul li a {
+  height: 24px;
+  line-height: 24px;
+  color: #666;
+  font-size: 14px;
+}
+.gp-questions .questions-all .menu-box .menu-item.selected .menu-item-ul li a:hover {
+  text-decoration: underline;
+}
+.gp-questions .questions-all .menu-box .menu-item.selected .menu-item-ul li a:before {
+  content: "·";
+  display: inline-block;
+  width: 12px;
+  color: #589BFF;
+  font-weight: bold;
+}
+.gp-questions .questions-all .menu-box .menu-item.selected .menu-item-ul li.selected a {
+  color: #589bff;
+}
+.gp-questions .questions-all .menu-box .menu-item.selected .menu-item-h5 {
+  color: #fefeff;
+  background: url("../img/rounded-rectangle.png") no-repeat;
+  background-size: 176px 30px;
+}
+.gp-questions .questions-all .menu-box .menu-item.selected .menu-item-h5 a {
+  color: #fefeff;
+  text-decoration: none;
+}
+.gp-questions .questions-all .content-box {
+  display: inline-block;
+  float: left;
+  width: 955px;
+  min-height: 820px;
+  padding: 15px 32px 0;
+  box-sizing: border-box;
+}
+.gp-questions .questions-all .content-box .no-result {
+  display: none;
+  margin-top: 154px;
+}
+.gp-questions .questions-all .content-box .no-result .no-result-img {
+  margin: 0 auto;
+  height: 171px;
+  background: url('../img/empty.png') no-repeat center center;
+  background-size: 171px;
+}
+.gp-questions .questions-all .content-box .no-result .no-result-text {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+.gp-questions .questions-all .content-box .item .item-h5 {
+  height: 34px;
+  line-height: 34px;
+  padding-left: 20px;
+  color: #589bff;
+  font-size: 14px;
+  font-weight: normal;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.gp-questions .questions-all .content-box .item .item-h5.selected,
+.gp-questions .questions-all .content-box .item .item-h5:hover {
+  background: -webkit-linear-gradient(#fafafa, #f4f4f4);
+  background: -o-linear-gradient(#fafafa, #f4f4f4);
+  background: -moz-linear-gradient(#fafafa, #f4f4f4);
+  background: linear-gradient(#fafafa, #f4f4f4);
+}
+.gp-questions .questions-all .content-box .item .item-content {
+  display: none;
+  padding: 20px 0px 30px 20px;
+  color: #666;
+  font-size: 12px;
+}

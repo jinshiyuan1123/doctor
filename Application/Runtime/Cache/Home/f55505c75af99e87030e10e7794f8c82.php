@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="shortcut icon" href="/Public/home/images/favicon.ico" />
+<link rel="shortcut icon" href="/Public/home/favicon.ico" />
 <!-- External CSS -->
 	<link rel="stylesheet" href="/Public/home/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
 	<link rel="stylesheet" href="/Public/home/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
@@ -20,7 +20,7 @@
 </script>
 
 	
-				<link rel="stylesheet" href="https://img.guahao.com/front/hps-pc-static/css/questions.css?v=1541078824a18cef" type="text/css"/>
+				<link rel="stylesheet" href="/Public/home/css/wens/questions.css?v=1541078824a18cef" type="text/css"/>
 		
 		    <title>我的文章 | 择医网</title>
 	</head>
@@ -258,78 +258,20 @@
                     </div>
                     <div class="dashed-line"></div>
                     <div class="item-box J_ItemBox">
-	                    <div class="item">
-	                    	<h5 class="item-h5">热搜</h5>
+	                    <div class="item" >
+	                    	<h5 class="item-h5">文章</h5>
 	                    	<ul>
-                    					<li class="item-li"><a href="#s/?subId=773&parentId=-999" target="_blank">提交什么资料进行实名认证？</a></li>
-                    					<li class="item-li"><a href="#s/?subId=774&parentId=-999" target="_blank"> 认证审核需要多久的时间？</a></li>
+	                    	<?php if(is_array($res)): foreach($res as $key=>$vo): ?><li class="item-li"><a href="<?php echo U('home/index/editorarticle');?>?id=<?php echo ($vo["id"]); ?>" target="_blank"><?php echo ($vo["title"]); ?></a></li>
+                    					<!-- <li class="item-li"><a href="#s/?subId=774&parentId=-999" target="_blank"> 认证审核需要多久的时间？</a></li>
                     					<li class="item-li"><a href="#s/?subId=779&parentId=-999" target="_blank">忘记密码，如何找回？</a></li>
                     					<li class="item-li"><a href="#s/?subId=780&parentId=-999" target="_blank">如何修改密码？</a></li>
-                    					<li class="item-li"><a href="#s/?subId=782&parentId=-999" target="_blank">微医生app端和网页端的医生账号是否一样？</a></li>
+                    					<li class="item-li"><a href="#s/?subId=782&parentId=-999" target="_blank">微医生app端和网页端的医生账号是否一样？</a></li> --><?php endforeach; endif; ?>
 	                    	</ul>
 	                    </div>
-			                    <div class="item">
-			                    	<h5 class="item-h5 J_ItemH5" data-id="224">问诊相关</h5>
-			                    	<ul>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=231&parentId=224" target="_blank">全科咨询</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=232&parentId=224" target="_blank">图文问诊</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=233&parentId=224" target="_blank">视话问诊</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=234&parentId=224" target="_blank">处方权</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=235&parentId=224" target="_blank">银行卡与收入</a>
-				                    			</li>
-			                    	</ul>
-			                    </div>
-			                    <div class="item">
-			                    	<h5 class="item-h5 J_ItemH5" data-id="225">业务相关</h5>
-			                    	<ul>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=236&parentId=225" target="_blank">操作相关</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=237&parentId=225" target="_blank">业务相关</a>
-				                    			</li>
-			                    	</ul>
-			                    </div>
-			                    <div class="item">
-			                    	<h5 class="item-h5 J_ItemH5" data-id="226">其它</h5>
-			                    	<ul>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=238&parentId=226" target="_blank">产品介绍</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=239&parentId=226" target="_blank">行医无忧</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=259&parentId=226" target="_blank">大家帮</a>
-				                    			</li>
-			                    	</ul>
-			                    </div>
-			                    <div class="item">
-			                    	<h5 class="item-h5 J_ItemH5" data-id="223">账号相关</h5>
-			                    	<ul>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=228&parentId=223" target="_blank">实名认证</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=229&parentId=223" target="_blank">登录相关</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=230&parentId=223" target="_blank">基础信息相关</a>
-				                    			</li>
-				                    			<li class="item-li">
-				                    				<a href="#s/?subId=227&parentId=223" target="_blank">注册与下载</a>
-				                    			</li>
-			                    	</ul>
-			                    </div>
+			                    
+			                  
+			                  
+			                  
                     </div>
                 </div>
 			</div>

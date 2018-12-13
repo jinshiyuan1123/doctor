@@ -20,120 +20,7 @@
 		<!-- #g-wrapper -->
 		<div id="g-wrapper" class="gc-new">
 			 <include file="Public:dochead" />
-<script type="text/javascript">
-    $GF.push(function() {
-        //文字跑马灯
-        //requestAnimationFrame
-        (function() {
-            var lastTime = 0;
-            var vendors = ['ms', 'moz', 'webkit', 'o'];
-            for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
-                window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
-                window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
-            }
-            if (!window.requestAnimationFrame){
-                window.requestAnimationFrame = function(callback, element) {
-                    var currTime = new Date().getTime();
-                    console.log(currTime);
-                    var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-                    var id = window.setTimeout(function() {
-                        callback(currTime + timeToCall);
-                    }, timeToCall);
-                    lastTime = currTime + timeToCall;
-                    return id;
-                };
-            }
-            if (!window.cancelAnimationFrame){
-                window.cancelAnimationFrame = function(id) {
-                    clearTimeout(id);
-                };
-            }
-        }());
-        
-        $.ajax({
-            type: "post",
-            url: 'https://api-gateway.guahao.com/common/notice/mainplatformdetail.json',
-            //headers : {'weiyi-appid':'d_h5_weiyi'},
-            beforeSend: function(xhr) {
-                xhr.setRequestHeader("weiyi-appid", "d_web_doctor");
-            },
-            success: function(res) {
-                if(res.flag == 0) {
-                    if(res.item) {//查询结果
-                        var dataObj = res.item;
-                        $('.move-box .J_Content').html(dataObj.content);
-                        $('.move-box2 .J_Content').html(dataObj.content);
-                        //html方法插入的内容，直接拿宽度拿不到
-                        setTimeout(function(){
-                            var outWidth = $('#J_NotifyBox').outerWidth();
-                            var box1 = $('#J_NotifyBox .move-box'),box2 = $('#J_NotifyBox .move-box2');
-                            var inWidth = box1.outerWidth();
-                            //顶部通知超过一行，自动滚动播放
-                            if(inWidth > outWidth){
-                                var left1 = 0;
-                                var left2 = inWidth;
-                                var difference = outWidth - inWidth;
-                                function move(){
-                                    box2.show();
-                                    var item2Left = box2.css('left');
-                                    var item1Left = box1.css('left');
-                                    left1 = left1-1;
-                                    left2 = left2-1;
-                                    box1.css({'left':left1+40+'px'});
-                                    box2.css({'left':left2+40+'px'}); 
-                                    if(parseInt(item1Left) == difference){
-                                        left2 = outWidth;
-                                        box2.css({'left':left2+40+'px'}); 
-                                    }else if(parseInt(item2Left) == difference){
-                                        left1 = outWidth;
-                                        box1.css({'left':left1+40+'px'});
-                                    }
-                                    requestAnimationFrame(move);
-                                };
-                                move();
-                            }
-                            box1.css({'visibility': 'visible'});
-                            box2.css({'visibility': 'visible'});
-                        },0);
 
-                       if (!$('#J_Notify').length) {
-                           return;
-                       }
-                       if(!localStorage.getItem("indexNotice") || localStorage.getItem("indexNotice")!=dataObj.gmtModified){
-                           $('#J_Notify').show();
-                       }
-                       var openFun = function(close) {
-                           close();
-                           localStorage.setItem("indexNotice",dataObj.gmtModified);
-                           $('#J_Notify').hide();
-                       };
-                       //点击公告
-                       $('.J_Content').on('click',function(){
-                            //弹窗展示
-                           $.confirm({title:"公告",content:"<span style='font-size: 16px;color: #333333;'>"+dataObj.content+"</span>",okText:"知道了",okfun: openFun,cancelfun:openFun,cancelEqualClose:true,className:"new-ok"});
-                           localStorage.setItem("indexNotice",dataObj.gmtModified);
-                       });
-                       //点击关闭按钮
-                       $('.J_NoticeClose').click(function(){
-                            if(dataObj.gmtModified){
-                               localStorage.setItem("indexNotice",dataObj.gmtModified);
-                            }
-                           $('#J_Notify').hide();
-                       })
-                    }else{
-                        console.log('没有配置公告');
-                    }
-                }
-                else {//没有配置公告
-                    console.log('没有配置公告');
-                }
-            },
-            error: function(){
-                console.log('公告接口失败');
-            }
-        });
-    });
-</script>
 
             <!-- end of #gh -->
             <div class="g-container">
@@ -239,29 +126,32 @@
                     <div></div>
                    &nbsp;&nbsp;
                      <hr style="height:1px;border:none;border-top:1px solid #888888;" /> 
-				
+				    <foreach name="res" item="vo">
                      <div style="float: center">
                      <br><br>
                      <span style="font-size:15px;color:#000000;width:10px;">文章分类</span>
                      &nbsp;
-                     <input type="text" name="namelist" id="namelist" style="width:200px;height:30px;border-radius: 2px;">
+                     <input type="text" name="namelist" id="namelist" value="{$vo.type}" style="width:200px;height:30px;border-radius: 2px;">
                       &nbsp; &nbsp; &nbsp; &nbsp;
                      <span style="font-size:15px;color:#000000;width:10px;">来源</span>
                       &nbsp; 
-                      <input type="radio" name="blues" id="blue" value="1">
+                    
+                      <input type="radio" name="blues" id="blue" value="1" <if condition="$vo.socure eq 1">checked </if>>
                        &nbsp;原创 
                       &nbsp; &nbsp;
-                    <input type="radio" name="blues" id="blues" value="2">
+
+                    <input type="radio" name="blues" id="blues" value="2" <if condition="$vo.socure eq 2">checked </if>>
                       &nbsp;转载
+
                      &nbsp; &nbsp; &nbsp; &nbsp;
-                     <input type="radio" name="toplist" id="toplist" value="1"> &nbsp;置顶
+                     <input type="radio" name="toplist" id="toplist" value="1"<if condition="$vo.top eq 1">checked </if> > &nbsp;置顶
                      <br/>
                   
                      </div>
                      &nbsp;<br>
                        <span style="font-size:15px;color:#000000;width:10px;">标题</span>
                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <input type="text" name="titlelist" id="titlelist"  style="width:200px;height:30px;border-radius: 2px;">
+                      <input type="text" name="titlelist" id="titlelist" value="{$vo.title}" style="width:200px;height:30px;border-radius: 2px;">
                       &nbsp; &nbsp; &nbsp; &nbsp;
                     
                 </div>
@@ -272,13 +162,20 @@
                 <!-- <textarea name="" id="addUnit" name="addUnit" value="" cols="100" rows="6"></textarea> -->
              
             </div>
-            <include file="Public:edit"/>
-             <textarea id="wordtype" name="wordtype" style="display: none"></textarea>
+            <div style="display: none">
+             <include file="Public:edit"/>
+            </div>
+            
+               <textarea id="myEditor" name="myEditor" style=" ">
+              
+             </textarea>
+             <input type="hidden" id="articleids" name="article" value="{$vo.id}">
+            <input type="hidden" id="textarea" name="ins_id" value="{$vo.textarea}">
             <br>
            
-           
+           </foreach>
             <div style="float:center">
-          <button  class="search-button btn" style="border-radius: 2px; width: 166px; height: 100%;color: #fff;font-size: 24px;background-color: #589bff;border: none;cursor: pointer;">发布文章</button>
+          <button  class="search-button editor" style="border-radius: 2px; width: 166px; height: 100%;color: #fff;font-size: 24px;background-color: #589bff;border: none;cursor: pointer;">编辑文章</button>
 </div>
 			</div>
 
@@ -306,21 +203,27 @@
 		
 
 	<script type="text/javascript"> 
+         var textarea = $("#textarea").val();
+         var mylist = $("#myEditor").val(textarea);
+         UE.getEditor('myEditor');
 
-	 //添加文章保存
-        $(document).on('click', '.btn', function() {
-            var word = document.getElementById('wordtype').innerHTML=UE.getEditor('editor').getContent();
+	 //编辑文章保存
+        $(document).ready(function() {
+            $('.editor').click(function(){
 
+            var word = document.getElementById('textarea').innerHTML=UE.getEditor('myEditor').getContent();
+          
             var namelist = $('#namelist').val();
             var blues = $("input[name='blues']:checked").val();
             var toplist = $("#toplist").val();
             var titlelist = $("#titlelist").val();
+            var uid = $("#articleids").val();
 
             
            
          
-            $.post("{:U('/home/index/addarticle')}",
-                {"namelist":namelist,"blues":blues,"toplist":toplist,"titlelist":titlelist,"word":word},
+            $.post("{:U('/home/index/editorarticlelist')}",
+                {"namelist":namelist,"blues":blues,"toplist":toplist,"titlelist":titlelist,"word":word,"uid":uid},
                 function (data) {
 
                     if (data.status=='success') {
@@ -330,6 +233,7 @@
                     // remindBox(data.msg);
                 },
                 "json");
+            });
         });
 	</script>   
 
