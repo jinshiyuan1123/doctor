@@ -261,11 +261,12 @@
 	                    <div class="item" >
 	                    	<h5 class="item-h5">文章</h5>
 	                    	<ul>
-	                    	<?php if(is_array($res)): foreach($res as $key=>$vo): ?><li class="item-li"><a href="<?php echo U('home/index/editorarticle');?>?id=<?php echo ($vo["id"]); ?>" target="_blank"><?php echo ($vo["title"]); ?></a></li>
+	                    	<?php if(is_array($res)): foreach($res as $key=>$vo): ?><li class="item-li"><a href="<?php echo U('home/index/editorarticle');?>?id=<?php echo ($vo["id"]); ?>" target="_blank"><?php echo ($vo["title"]); ?></a><span style="color:">&nbsp;&nbsp;&nbsp; <?php if($vo["process"] == 1): ?><span style="color:#f60">已审核</span><?php else: ?>待审核<?php endif; ?></span></li>
+
                     					<!-- <li class="item-li"><a href="#s/?subId=774&parentId=-999" target="_blank"> 认证审核需要多久的时间？</a></li>
                     					<li class="item-li"><a href="#s/?subId=779&parentId=-999" target="_blank">忘记密码，如何找回？</a></li>
                     					<li class="item-li"><a href="#s/?subId=780&parentId=-999" target="_blank">如何修改密码？</a></li>
-                    					<li class="item-li"><a href="#s/?subId=782&parentId=-999" target="_blank">微医生app端和网页端的医生账号是否一样？</a></li> --><?php endforeach; endif; ?>
+                    					<li class="item-li"><a href="#s/?subId=782&parentId=-999" target="_blank">择医生app端和网页端的医生账号是否一样？</a></li> --><?php endforeach; endif; ?>
 	                    	</ul>
 	                    </div>
 			                    
@@ -289,7 +290,7 @@
 			<div id="gf" class="gf-new">
 	<div class="g-container">
 		<p>网友、医生言论仅代表其个人观点，不代表本站同意其说法，本站不承担由此引起的法律责任</p>	
-		<p>微医提供平台支持 Copyright 2011-2018版权所有。&nbsp;&nbsp;浙ICP备12034511号</p>
+		<p>择医提供平台支持 Copyright 2011-2018版权所有。&nbsp;&nbsp;浙ICP备12034511号</p>
 	</div>
 </div>
 			<!-- end of #gf -->

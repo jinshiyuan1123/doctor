@@ -396,18 +396,198 @@ function getCity($ip = '')
 
 
    public function fastorder(){
-        $ip = $this->getIP();
-        $getip = $this->getCity($ip);
-        $res = M('his_provinces');
-        $province = $res->where()->select();
-        $cities = M('his_cities')->where()->select();
-        $this->assign('province',$province);
-        $this->assign('cities',$cities);
-        $this->assign('region',$getip['region']);
-        $this->assign('city',$getip['city']);
+        $res = M('his_doctorlist')->where()->select();
+       
+        $this->assign('res',$res);
         $this->display(':fastorder');
    }
 
+   public function fastorderlist(){
+     // Vendor('./admin/index.html');
+    $id = I('get.id');
+
+    $res = M('his_doctorlist')->where("id='$id'")->find();
+    $reslist = M('his_ly')->where("pid='$id'")->order('create_time desc')->select();
+    $this->assign('reslist',$reslist);
+    $this->assign('res',$res);
+    $this->display(':fastorderlist');
+   }
+
+
+   public function addlist(){
+      $id = I('post.');
+      // var_dump($id);die;
+      $data = array(
+        'content' => $id['content'],
+        'pid' => $id['pid'],
+        'attitude' => $id['attitude'],
+        'ip' => $_SERVER['REMOTE_ADDR'],
+        'create_time' => $id['time'],
+        'nickname' => $id['name'],
+        'support' => 0,
+
+        'likeIPs' =>$_SERVER['REMOTE_ADDR'],
+      );
+      $res = M('his_ly')->add($data);
+      if($res){
+        $this->ajaxSuccess('评论成功');
+      }else{
+        $this->ajaxError('评论失败');
+      }
+     
+    
+      $this->display();
+
+   }
+
+   public function uidlike(){
+
+
+ $id = I('post.');
+
+$ids = $id['id'];
+$IP  = $_SERVER['REMOTE_ADDR'];
+$res = M('his_ly')->where("id='$ids'")->find();
+
+$result =mysqli_fetch_assoc($res); 
+$oTime = $result['like_time'];
+$likeIPs = $result['likeIPs'];
+$IP_array = explode(',', $likeIPs);
+$hour_gap = (strtotime($nTime)-strtotime($oTime));
+$like_time = 60*60*$like_time_gap;
+
+if ($likeIPs and in_array($IP, $IP_array)) {
+    if ($hour_gap<$like_time_gap) {
+        echo "0";
+    }
+    else{
+        $sql = "UPDATE $table SET like_time='$nTime',support='$likes' WHERE id='$id'";
+        $res = mysqli_query($conn,$sql);
+        echo '1';
+    }
+    
+}else{
+    $IPs = $likeIPs.','.$IP;
+    $sql = "UPDATE $table SET like_time='$nTime',support='$likes',likeIPs='$IPs' WHERE id='$id'";
+    $res = mysqli_query($conn,$sql);
+    echo '1';
+}
+   }
+
+    public function uidlist(){  
+   
+    $mode = $_POST['m']?$_POST['m']:'0';
+
+    // $order = $mode=='0'?'create_time':'support';
+    $res = M('his_ly')->where("pid='$mode'")->order(' create_time desc')->select();
+
+   
+    $nums = count($res);
+   
+    // if ($nums>0) {
+    //     $data = GenDataArray($res);
+    //     // var_dump($res);die;
+    //     $result = genList($data);
+    //     p($result);die;
+    //     echo json_encode($result) ;
+    // }
+}
+public function GenDataArray($res)
+{
+    global $data_array;
+    // while ($row = mysqli_fetch_assoc($res)) {$rows[$row['id']]=$row;}
+    foreach ($res as $i => $row) {
+        $newData = recursiveData($rows[$i],$rows);
+        array_push($data_array,$newData);
+    }
+    return $data_array;
+}
+
+public function recursiveData($row,$rows)
+{
+    $name = $row['nickname'];
+    $attitude = $row['attitude'];
+    $pid  = $row['pid'];
+    $content = $row['content'];
+    $id    = $row['id'];
+    $pltime = $row['create_time'];
+    $support = $row['support'];
+    $ip = str_replace(strrchr($row['ip'], '.'), '.*',$row['ip']);
+    $this_array=array(
+        "id"=>$id,
+        'pid'=>$pid,
+        'name'=>$name,
+        'content'=>$content,
+        'time'=>$pltime,
+        "ip"=>$ip,
+        'support'=>$support,
+        'attitude'=>$attitude,
+        'child'=>'',
+        );
+    if ($pid==0) {
+        return $this_array;
+    }
+    for ($i=1; $i <count($rows)+1 ; $i++) { 
+            if ($rows[$i]['id']==$pid) {
+                $this_array['child']=recursiveData($rows[$i],$rows);
+                return $this_array;
+            }
+        }
+}
+
+public function genList($data_array)
+{   
+    global $html_array;
+    $count = 0;
+    for($i=0;$i<count($data_array);$i++) {
+        $count ++;
+        $meta = $data_array[$i];
+        $head = '<li class="Cli" id="'.$meta['id'].'">';
+        $mid = recursived($meta,1 ,$count);
+        $end = '</li>';
+        array_push($html_array,$head.$mid.$end);
+    }
+    return $html_array;
+}
+
+public function recursived($meta,$flag,$count )
+{
+    global $img_src;
+    $timeStamp = $meta['time'];
+    $support  = $meta['support'];
+    $attitude = $meta['attitude'];
+    $id = $count;
+    // $id = $meta['id'];
+    $content = $meta['content'];
+    $ip = $meta['ip'];
+    $name = $meta['name'];
+    $child = $meta['child'];
+    
+    $head = $img_src[$attitude].'<label class="Clabel"><span id="timeStamp">'.$timeStamp.'</span>&nbsp;<span id="nickname">'.$name.'</span>(<span id="ip">'.$ip.'</span>)发表：<span class="lays">'.$id.'楼</span></label>
+                        <div class="Ccontent" >';
+    if ($child) {
+        $mid = recursived($child,$flag-1 );
+    }
+    else{
+        $mid='';
+        
+        if ($flag==1) {
+            $t = '<label style="float:right"><span class="bottomSpan" onclick="answer('.$id.')">回复</span >&nbsp;&nbsp;<span class="bottomSpan" onclick="like('.$id.')" id="support'.$id.'">支持</span>(<span class="scount" id="like'.$id.'">'.$support.'</span>)</label>';
+            $end = $content.$t.'</div>';
+            return $head.$mid.$end;
+        }
+         
+    }
+    if ($flag==1) {
+        $t = '<label style="float:right"><span class="bottomSpan" onclick="answer('.$id.')">回复</span >&nbsp;&nbsp;<span class="bottomSpan" onclick="like('.$id.')" id="support'.$id.'">支持</span>(<span class="scount" id="like'.$id.'">'.$support.'</span>)</label>';
+    }
+    else{
+        $t='';
+    }
+    $end = $content.$t.'</div>';
+    return $head.$mid.$end;
+}
+  
    public function province()
    {
         $id = I('post.province','','string');

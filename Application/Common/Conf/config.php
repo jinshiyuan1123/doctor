@@ -10,6 +10,7 @@ return array(
         '__PUBLIC_WAP__'    => __ROOT__.'/Public/wap',
         '__PUBLIC_MUSIC__'  => __ROOT__.'/Public/music',
         '__PUBLIC_VIDEO__' => __ROOT__.'/Public/home/video',
+        '__ROOT_ADMIN__'    => __ROOT__.'/admin',
     ),
 //***********************************URL设置**************************************
     'MODULE_ALLOW_LIST'      => array('His','Home','Wap'), //允许访问列表
