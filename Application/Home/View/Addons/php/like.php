@@ -1,9 +1,10 @@
 <?php 
 header('Content-Type: text/html;charset=utf-8');
 error_reporting(0);
-require_once '__ROOT_ADMIN__/init.php';
+require_once 'init.php';
 $nTime = $_POST['time'];
 $likes  =$_POST['like'];
+
 $id = $_POST['id'];
 $IP  = $_SERVER['REMOTE_ADDR'];
 $sql = "SELECT * FROM $table WHERE id='$id'";

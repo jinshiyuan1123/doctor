@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-12-11 11:10:39
+Date: 2018-12-14 13:56:12
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -2834,8 +2834,8 @@ CREATE TABLE `dzm_his_auth_group` (
 -- ----------------------------
 -- Records of dzm_his_auth_group
 -- ----------------------------
-INSERT INTO `dzm_his_auth_group` VALUES ('1', '管理员', '1', '1', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,84,85,86,89,87,88,141,142,143,144,145,139,148,149,223,224,225,266,227');
-INSERT INTO `dzm_his_auth_group` VALUES ('2', '医生', '1', '1', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,61,62,63,64,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,90,91,92,93,96,98,99,100,102,103,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,84,85,86,87,88,89,141,142,143,144,147,148,149,150,151,152,153,154,155,156,157,158,159,160,223,244,255,226,227');
+INSERT INTO `dzm_his_auth_group` VALUES ('1', '管理员', '1', '1', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,84,85,86,89,87,88,141,142,143,144,145,139,148,149,223,224,225,266,227,228');
+INSERT INTO `dzm_his_auth_group` VALUES ('2', '医生', '1', '1', '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,61,62,63,64,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,90,91,92,93,96,98,99,100,102,103,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,84,85,86,87,88,89,141,142,143,144,147,148,149,150,151,152,153,154,155,156,157,158,159,160,223,244,255,226,227,228');
 INSERT INTO `dzm_his_auth_group` VALUES ('3', '护士', '1', '1', '1,2,3,4');
 INSERT INTO `dzm_his_auth_group` VALUES ('4', '挂号员', '1', '1', '1,2,3,4,5');
 INSERT INTO `dzm_his_auth_group` VALUES ('5', '收费员', '1', '1', '5,6,7,1,2,3,4,5,8');
@@ -2881,7 +2881,7 @@ CREATE TABLE `dzm_his_auth_rule` (
   `condition` char(100) NOT NULL DEFAULT '',
   `order_list` int(255) DEFAULT '0' COMMENT '排序字段',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=228 DEFAULT CHARSET=utf8mb4 COMMENT='用户权限表';
+) ENGINE=MyISAM AUTO_INCREMENT=229 DEFAULT CHARSET=utf8mb4 COMMENT='用户权限表';
 
 -- ----------------------------
 -- Records of dzm_his_auth_rule
@@ -3038,6 +3038,7 @@ INSERT INTO `dzm_his_auth_rule` VALUES ('224', 'fa fa-info-circle', 'Member/myvi
 INSERT INTO `dzm_his_auth_rule` VALUES ('225', 'fa fa-info-circle', 'Member/editUserlist', '微视频编辑', '22', '2', '1', '1', '1', '', '0');
 INSERT INTO `dzm_his_auth_rule` VALUES ('226', 'fa fa-info-circle', 'Member/addUserlist', '微视频保存', '22', '2', '1', '1', '1', '', '0');
 INSERT INTO `dzm_his_auth_rule` VALUES ('227', 'fa fa-info-circle', 'Inspectionfee/edit', '微视频移除', '22', '2', '1', '1', '1', '', '0');
+INSERT INTO `dzm_his_auth_rule` VALUES ('228', 'fa fa-info-circle', 'Member/doctorlist', '医生发布文章', '22', '1', '1', '1', '1', '', '0');
 
 -- ----------------------------
 -- Table structure for dzm_his_batches_of_inventory
@@ -3811,7 +3812,7 @@ CREATE TABLE `dzm_his_doctor` (
 INSERT INTO `dzm_his_doctor` VALUES ('1', '', null, '', '0', '0', '0', '13141589223', '$2y$12$uSv5Ek4qF7nkmbxmsqVrkuCY4uUq.A4LtPRow6GIzgJJcA6VYzszW', '协和医院', null, '3', '', '', '', '1543235676', '1544333782', '', '2', '', '2', '0.00');
 INSERT INTO `dzm_his_doctor` VALUES ('2', '方法', '0', '', '0', '0', '0', '13141589223', '$2y$12$8aLaRV0WMeVHIZpmzi4xCOANVFPGaLA66ozEiAcLCax89tWvNitD2', '协和医院', '', '1', '', '', '', '1543240548', '1544333782', '', '2', '7', '2', '0.00');
 INSERT INTO `dzm_his_doctor` VALUES ('3', '测试', '0', '', '0', '0', '0', '13141589223', '$2y$12$3sab.fPjhPHMvCGXl1ijJuguegZE3yUfGAqYbziXlgLwiUzx4ILc.', '协和医院', '', '2', '', '', '', '1543247335', '1544333782', '', '2', '7', '', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('4', '王守道', '0', '130000', '0', '唐山市', '83856745', '13141589203', '$2y$12$Mtv3mGq3i92VRMsFyTrSGu5/4yzBHS6lRCYkvu3GhCsLC8iC1pHuW', '中心医院', '', '1', '医生', '', '', '1544332507', '1544336336', '', '2', '7', '', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('4', '王守道', '0', '130000', '0', '唐山市', '83856745', '13141589203', '$2y$12$Mtv3mGq3i92VRMsFyTrSGu5/4yzBHS6lRCYkvu3GhCsLC8iC1pHuW', '中心医院', '', '1', '医生', '', '', '1544332507', '1544750500', '', '2', '7', '', '0.00');
 INSERT INTO `dzm_his_doctor` VALUES ('5', '多的', '0', '130000', '0', '秦皇岛市', '83856745', '13141589556', '$2y$12$yIoudEjifKHjW5X8a9cWWuAybiLyJAq62ejyS3NPxV8WXNpL3x1ei', '但是', null, '1', '士大夫', '127.0.0.1', '', '1544346481', '1544346481', '', '2', '', '', '0.00');
 
 -- ----------------------------
@@ -3822,29 +3823,25 @@ CREATE TABLE `dzm_his_doctorlist` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '用户id',
   `username` varchar(20) NOT NULL DEFAULT '' COMMENT '用户个人资料真实姓名',
   `province` varchar(255) DEFAULT '0' COMMENT '省',
-  `cities` varchar(255) DEFAULT '' COMMENT '市区',
-  `password` varchar(255) NOT NULL DEFAULT '0' COMMENT '密码',
-  `area` varchar(255) NOT NULL DEFAULT '0' COMMENT '地区',
-  `mobile` varchar(11) NOT NULL DEFAULT '0' COMMENT '手机号',
-  `hospital` varchar(255) NOT NULL DEFAULT '' COMMENT '医院',
-  `room` varchar(255) NOT NULL DEFAULT '' COMMENT '科室',
-  `job` varchar(255) NOT NULL DEFAULT '' COMMENT '职位',
-  `areacode` varchar(255) NOT NULL COMMENT '区号',
+  `socure` varchar(255) NOT NULL DEFAULT '' COMMENT '来源',
+  `top` varchar(255) NOT NULL DEFAULT '' COMMENT '置顶',
+  `title` varchar(255) NOT NULL COMMENT '标题',
   `textarea` longtext NOT NULL,
-  `phone` varchar(255) NOT NULL COMMENT '电话',
+  `type` varchar(255) NOT NULL COMMENT '分类',
   `createtime` int(10) NOT NULL COMMENT '注册时间',
   `updatetime` int(10) NOT NULL COMMENT '修改时间',
+  `process` varchar(255) NOT NULL COMMENT '是否显示',
   `uid` int(11) NOT NULL COMMENT '用户表userid',
   `ask_price` decimal(10,2) DEFAULT '0.00' COMMENT '咨询价格',
   PRIMARY KEY (`id`),
   KEY `uid` (`uid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COMMENT='医生文章信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COMMENT='医生文章信息表';
 
 -- ----------------------------
 -- Records of dzm_his_doctorlist
 -- ----------------------------
-INSERT INTO `dzm_his_doctorlist` VALUES ('1', '张三', '25', '', '0', '0', '0', '', '', '', '', '', '', '1511949108', '0', '2', '0.00');
-INSERT INTO `dzm_his_doctorlist` VALUES ('2', '当时发', '140000', null, '$2y$12$n97x7Fue6SddXflXIPYO9.2hUli2gTMM96LdAuluI5fjSklVCeYXW', '0', '13141589203', '登山泛水', '', '医生', '0527', '', '83856745', '1543045946', '1543117928', '2', '0.00');
+INSERT INTO `dzm_his_doctorlist` VALUES ('3', '', '0', '2', '1', '头颅核磁共振显示，两侧额顶叶少些缺血灶，该怎么治疗', '<p>大是大3366非66</p><p><img src=\"/ueditor/php/upload/image/20181213/1544678350366157.jpg\" title=\"1544678350366157.jpg\" alt=\"1212.jpg\"/><img src=\"/ueditor/php/upload/image/20181213/1544678354117334.jpg\" title=\"1544678354117334.jpg\" alt=\"预览图_千图网_编号28483998.jpg\"/></p>', '测试', '1544500177', '1544678356', '1', '0', '0.00');
+INSERT INTO `dzm_his_doctorlist` VALUES ('4', '', '0', '1', '1', '奋斗头颅核磁共振显示，两侧额顶叶少些缺血灶，该怎么治疗', '<p>电饭锅</p>', '梵蒂冈', '1544500531', '1544500531', '1', '0', '0.00');
 
 -- ----------------------------
 -- Table structure for dzm_his_doctors
@@ -4028,7 +4025,7 @@ INSERT INTO `dzm_his_inspectionfee` VALUES ('18', '1', '1', '股份', '系统默
 INSERT INTO `dzm_his_inspectionfee` VALUES ('19', '1', '1', '特色', '系统默认', '1', '', '0', '1544285768', '0', '', '0');
 INSERT INTO `dzm_his_inspectionfee` VALUES ('20', '1', '1', '特色的说法', '择医网讲堂', '1', '<p>士大夫</p>', '1', '1544286011', '0', '士大夫', '25');
 INSERT INTO `dzm_his_inspectionfee` VALUES ('21', '1', '1', '特色忒', '系统默认', '0', '<p>史蒂芬孙的</p>', '1', '1544286038', '1544286061', '对方答复', '0');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('22', '1', '1', '特色22', '名医直通车', '1', '', '2', '1544286109', '1544340087', '', '24');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('22', '1', '1', '特色22', '名医直通车', '1', '<p>dfsd</p>', '2', '1544286109', '1544665840', '', '24');
 INSERT INTO `dzm_his_inspectionfee` VALUES ('23', '1', '1', 'test222', '热门排行', '1', '', '0', '1544340112', '1544340126', '', '26');
 
 -- ----------------------------
@@ -4085,6 +4082,54 @@ INSERT INTO `dzm_his_inventory` VALUES ('27', '14', '1', '19998', '', '15.00', '
 INSERT INTO `dzm_his_inventory` VALUES ('28', '13', '1', '19998', '', '15.00', '47.00', '299970.00', '939906.00', '0', '1511949357');
 INSERT INTO `dzm_his_inventory` VALUES ('29', '12', '1', '19998', '', '15.00', '47.00', '299970.00', '939906.00', '0', '1511949357');
 INSERT INTO `dzm_his_inventory` VALUES ('30', '11', '1', '19998', '', '15.00', '47.00', '299970.00', '939906.00', '0', '1511949357');
+
+-- ----------------------------
+-- Table structure for dzm_his_ly
+-- ----------------------------
+DROP TABLE IF EXISTS `dzm_his_ly`;
+CREATE TABLE `dzm_his_ly` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT '0',
+  `nickname` varchar(255) DEFAULT NULL,
+  `support` int(11) DEFAULT '0',
+  `like_time` datetime DEFAULT NULL,
+  `content` text,
+  `attitude` int(11) DEFAULT NULL,
+  `create_time` datetime DEFAULT NULL,
+  `ip` varchar(255) DEFAULT NULL,
+  `likeIPs` text,
+  `display` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of dzm_his_ly
+-- ----------------------------
+INSERT INTO `dzm_his_ly` VALUES ('2', '0', '是', '0', null, '阿斯顿', '1', '2018-12-14 11:28:36', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('3', '0', '发', '0', null, '地方', '1', '2018-12-14 11:29:34', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('4', '0', '的', '0', null, '士大夫', '1', '2018-12-14 11:31:54', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('5', '0', '的', '0', null, '士大夫', '1', '2018-12-14 11:32:12', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('6', '0', '个', '0', null, '士大夫', '1', '2018-12-14 11:34:11', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('7', '0', '66', '0', null, '似的发射点', '1', '2018-12-14 11:34:50', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('8', '0', '55', '0', null, '似的发射点', '1', '2018-12-14 11:35:39', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('9', '0', '77', '0', null, '东方古典风', '1', '2018-12-14 11:37:18', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('10', '0', '等等', '0', null, '斯蒂芬多少', '1', '2018-12-14 11:39:02', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('11', '0', '否', '0', null, '大方豆腐', '1', '2018-12-14 11:40:56', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('12', '0', '的', '0', null, '是的', '1', '2018-12-14 11:41:23', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('13', '0', '的', '0', null, '水电费', '1', '2018-12-14 11:45:07', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('14', '0', '的', '0', null, '士大夫似的', '1', '2018-12-14 11:45:39', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('15', '0', '的', '0', null, '士大夫似的', '1', '2018-12-14 11:46:43', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('16', '0', '否', '0', null, '电饭锅', '1', '2018-12-14 11:52:15', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('17', '0', '的', '0', null, '多少', '1', '2018-12-14 12:40:28', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('18', '0', '的', '0', null, '东方古典风', '1', '2018-12-14 12:41:41', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('19', '0', '的', '0', null, '士大夫似的', '1', '2018-12-14 12:42:59', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('20', '0', '的', '0', null, '送达方式', '1', '2018-12-14 12:44:22', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('21', '3', '66', '1', '2018-12-14 13:17:17', '尔特人', '1', '2018-12-14 12:51:47', '127.0.0.1', '127.0.0.1', '1');
+INSERT INTO `dzm_his_ly` VALUES ('22', '3', '44', '0', null, '水电费', '1', '2018-12-14 12:52:41', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('23', '3', '55', '0', null, '豆腐干饭的', '1', '2018-12-14 12:54:30', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('24', '3', '的', '0', null, '地方', '1', '2018-12-14 12:55:15', '127.0.0.1', null, '1');
+INSERT INTO `dzm_his_ly` VALUES ('25', '3', '的', '1', '2018-12-14 13:16:54', '送达方式', '1', '2018-12-14 12:57:14', '127.0.0.1', '127.0.0.1', '1');
+INSERT INTO `dzm_his_ly` VALUES ('26', '4', '的', '0', null, '测试深层次', '1', '2018-12-14 13:45:25', '127.0.0.1', null, '1');
 
 -- ----------------------------
 -- Table structure for dzm_his_mchpay

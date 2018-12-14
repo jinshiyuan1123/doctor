@@ -1,7 +1,7 @@
 <?php 
  header('Content-Type: text/html;charset=utf-8');
- // require_once 'init.php';
-var_dump($_POST);die;
+ require_once 'init.php';
+
  $name = $_POST['name'];
  $content = $_POST['content'];
  $pid = $_POST['pid'];

@@ -11,6 +11,7 @@ $data_array  = array( );
 if ($nums>0) {
 	$data = GenDataArray($res);
 	$result = genList($data);
+	// var_dump($result);
 	echo json_encode($result) ;
 }
 

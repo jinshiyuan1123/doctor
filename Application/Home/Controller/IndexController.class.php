@@ -415,149 +415,106 @@ function getCity($ip = '')
 
 
    public function addlist(){
-      $id = I('post.');
-      // var_dump($id);die;
-      $data = array(
-        'content' => $id['content'],
-        'pid' => $id['pid'],
-        'attitude' => $id['attitude'],
-        'ip' => $_SERVER['REMOTE_ADDR'],
-        'create_time' => $id['time'],
-        'nickname' => $id['name'],
-        'support' => 0,
+     header('Content-Type: text/html;charset=utf-8');
 
-        'likeIPs' =>$_SERVER['REMOTE_ADDR'],
-      );
-      $res = M('his_ly')->add($data);
-      if($res){
-        $this->ajaxSuccess('评论成功');
-      }else{
-        $this->ajaxError('评论失败');
-      }
-     
-    
-      $this->display();
+         $host     = 'localhost';//数据库主机名
+         $account  = 'root';//账户
+         $password = 'root';//密码
+         $database = 'doctor';//数据库名称
+         $coding = 'utf8';//数据库交互字符集
+         $table  = 'dzm_his_ly';//存放评论数据的表名
+         $like_time_gap = 2;//点赞支持时间间隔，单位：小时，这个时间内不能重复点赞
+         $img_src = array(
+            '-1'=>'<img src="/Public/home/Addons/img/fan.png">',//态度小图标:反面态度 22px * 22px 可以自己制作更改
+            '0'=>'<img src="/Public/home/Addons/img/zhong.png">',//态度小图标:中立态度
+            '1'=>'<img src="/Public/home/Addons/img/zheng.png">',//态度小图标:正面态度
+            '2'=>'',//无图标
+            );
+         $conn = mysqli_connect($host,$account,$password,$database);
+        mysqli_query($conn,'set names '.$coding);
+         $name = $_POST['name'];
+         $content = $_POST['content'];
+         $pid = $_POST['pid'];
+         $attitude = $_POST['attitude'];
+         $ip = $_SERVER['REMOTE_ADDR'];
+         $pltime = $_POST['time'];
+         $sql = "INSERT INTO  $table(nickname,pid,content,attitude,create_time,ip) VALUES('$name','$pid','$content','$attitude','$pltime','$ip')";
+         if (mysqli_query($conn,$sql)) {
+            echo '1';
+         }
+         else{
+            echo '0';
+         }
+
 
    }
 
-   public function uidlike(){
+   public function handler(){
+ 
+         $host     = 'localhost';//数据库主机名
+         $account  = 'root';//账户
+         $password = 'root';//密码
+         $database = 'doctor';//数据库名称
+         $coding = 'utf8';//数据库交互字符集
+         $table  = 'dzm_his_ly';//存放评论数据的表名
+         $like_time_gap = 2;//点赞支持时间间隔，单位：小时，这个时间内不能重复点赞
+         $img_src = array(
+            '-1'=>'<img src="/Public/home/Addons/img/fan.png">',//态度小图标:反面态度 22px * 22px 可以自己制作更改
+            '0'=>'<img src="/Public/home/Addons/img/zhong.png">',//态度小图标:中立态度
+            '1'=>'<img src="/Public/home/Addons/img/zheng.png">',//态度小图标:正面态度
+            '2'=>'',//无图标
+            );
+// var_dump($img_src);die;
+         $conn = mysqli_connect($host,$account,$password,$database);
+        mysqli_query($conn,'set names '.$coding);
+        $mode = $_POST['m']?$_POST['m']:'0';
+        $pid = I('post.pid');
 
-
- $id = I('post.');
-
-$ids = $id['id'];
-$IP  = $_SERVER['REMOTE_ADDR'];
-$res = M('his_ly')->where("id='$ids'")->find();
-
-$result =mysqli_fetch_assoc($res); 
-$oTime = $result['like_time'];
-$likeIPs = $result['likeIPs'];
-$IP_array = explode(',', $likeIPs);
-$hour_gap = (strtotime($nTime)-strtotime($oTime));
-$like_time = 60*60*$like_time_gap;
-
-if ($likeIPs and in_array($IP, $IP_array)) {
-    if ($hour_gap<$like_time_gap) {
-        echo "0";
-    }
-    else{
-        $sql = "UPDATE $table SET like_time='$nTime',support='$likes' WHERE id='$id'";
+        $order = $mode=='0'?'create_time':'support';
+        $sql = "SELECT * FROM  $table where pid='{$pid}'  ORDER BY $order  DESC";
+        $html_array = array();
         $res = mysqli_query($conn,$sql);
-        echo '1';
-    }
-    
-}else{
-    $IPs = $likeIPs.','.$IP;
-    $sql = "UPDATE $table SET like_time='$nTime',support='$likes',likeIPs='$IPs' WHERE id='$id'";
-    $res = mysqli_query($conn,$sql);
-    echo '1';
-}
-   }
-
-    public function uidlist(){  
-   
-    $mode = $_POST['m']?$_POST['m']:'0';
-
-    // $order = $mode=='0'?'create_time':'support';
-    $res = M('his_ly')->where("pid='$mode'")->order(' create_time desc')->select();
-
-   
-    $nums = count($res);
-   
-    // if ($nums>0) {
-    //     $data = GenDataArray($res);
-    //     // var_dump($res);die;
-    //     $result = genList($data);
-    //     p($result);die;
-    //     echo json_encode($result) ;
-    // }
-}
-public function GenDataArray($res)
-{
-    global $data_array;
-    // while ($row = mysqli_fetch_assoc($res)) {$rows[$row['id']]=$row;}
-    foreach ($res as $i => $row) {
-        $newData = recursiveData($rows[$i],$rows);
-        array_push($data_array,$newData);
-    }
-    return $data_array;
-}
-
-public function recursiveData($row,$rows)
-{
-    $name = $row['nickname'];
-    $attitude = $row['attitude'];
-    $pid  = $row['pid'];
-    $content = $row['content'];
-    $id    = $row['id'];
-    $pltime = $row['create_time'];
-    $support = $row['support'];
-    $ip = str_replace(strrchr($row['ip'], '.'), '.*',$row['ip']);
-    $this_array=array(
-        "id"=>$id,
-        'pid'=>$pid,
-        'name'=>$name,
-        'content'=>$content,
-        'time'=>$pltime,
-        "ip"=>$ip,
-        'support'=>$support,
-        'attitude'=>$attitude,
-        'child'=>'',
-        );
-    if ($pid==0) {
-        return $this_array;
-    }
-    for ($i=1; $i <count($rows)+1 ; $i++) { 
-            if ($rows[$i]['id']==$pid) {
-                $this_array['child']=recursiveData($rows[$i],$rows);
-                return $this_array;
-            }
+        $nums = mysqli_num_rows($res);
+        $data_array  = array( );
+       
+        if ($nums>0) {
+            $data = M('his_ly')->where("pid='$pid'")->order("$order desc")->select();
+         
+            $result = $this->genList($data);
+           // var_dump($result);die;
+            echo json_encode($result) ;
         }
-}
-
-public function genList($data_array)
+   }
+   public function genList($data_array)
 {   
-    global $html_array;
+     $html_array = array();
     $count = 0;
     for($i=0;$i<count($data_array);$i++) {
         $count ++;
         $meta = $data_array[$i];
         $head = '<li class="Cli" id="'.$meta['id'].'">';
-        $mid = recursived($meta,1 ,$count);
+        $mid = $this->recursived($meta,1 ,$count);
         $end = '</li>';
+        // var_dump($mid);die;
         array_push($html_array,$head.$mid.$end);
     }
+    // var_dump($html_array);die;
     return $html_array;
 }
-
 public function recursived($meta,$flag,$count )
 {
-    global $img_src;
-    $timeStamp = $meta['time'];
+     $img_src = array(
+        '-1'=>'<img src="/Public/home/Addons/img/fan.png">',//态度小图标:反面态度 22px * 22px 可以自己制作更改
+        '0'=>'<img src="/Public/home/Addons/img/zhong.png">',//态度小图标:中立态度
+        '1'=>'<img src="/Public/home/Addons/img/zheng.png">',//态度小图标:正面态度
+        '2'=>'',//无图标
+        );
+    $timeStamp = $meta['create_time'];
     $support  = $meta['support'];
     $attitude = $meta['attitude'];
+    // var_dump($attitude);die;
     $id = $count;
-    // $id = $meta['id'];
+    $ids = $meta['id'];
     $content = $meta['content'];
     $ip = $meta['ip'];
     $name = $meta['name'];
@@ -566,20 +523,20 @@ public function recursived($meta,$flag,$count )
     $head = $img_src[$attitude].'<label class="Clabel"><span id="timeStamp">'.$timeStamp.'</span>&nbsp;<span id="nickname">'.$name.'</span>(<span id="ip">'.$ip.'</span>)发表：<span class="lays">'.$id.'楼</span></label>
                         <div class="Ccontent" >';
     if ($child) {
-        $mid = recursived($child,$flag-1 );
+        $mid = $this->recursived($child,$flag-1 );
     }
     else{
         $mid='';
         
         if ($flag==1) {
-            $t = '<label style="float:right"><span class="bottomSpan" onclick="answer('.$id.')">回复</span >&nbsp;&nbsp;<span class="bottomSpan" onclick="like('.$id.')" id="support'.$id.'">支持</span>(<span class="scount" id="like'.$id.'">'.$support.'</span>)</label>';
+            $t = '<label style="float:right"><span class="bottomSpan" onclick="answer('.$ids.')">回复</span >&nbsp;&nbsp;<span class="bottomSpan" onclick="like('.$ids.')" id="support'.$ids.'">支持</span>(<span class="scount" id="like'.$ids.'">'.$support.'</span>)</label>';
             $end = $content.$t.'</div>';
             return $head.$mid.$end;
         }
          
     }
     if ($flag==1) {
-        $t = '<label style="float:right"><span class="bottomSpan" onclick="answer('.$id.')">回复</span >&nbsp;&nbsp;<span class="bottomSpan" onclick="like('.$id.')" id="support'.$id.'">支持</span>(<span class="scount" id="like'.$id.'">'.$support.'</span>)</label>';
+        $t = '<label style="float:right"><span class="bottomSpan" onclick="answer('.$ids.')">回复</span >&nbsp;&nbsp;<span class="bottomSpan" onclick="like('.$ids.')" id="support'.$ids.'">支持</span>(<span class="scount" id="like'.$id.'">'.$support.'</span>)</label>';
     }
     else{
         $t='';
@@ -587,7 +544,105 @@ public function recursived($meta,$flag,$count )
     $end = $content.$t.'</div>';
     return $head.$mid.$end;
 }
-  
+
+    public function GenDataArray($res)
+    {
+      
+       $data_array = array( );
+        while ($row = mysqli_fetch_assoc($res)) {$rows[$row['id']]=$row;}
+
+        foreach ($res as $i => $row) {
+            $newData = $this->recursiveData($rows[$i],$rows);
+          
+            array_push($data_array,$newData);
+        }
+       
+        return $data_array;
+    }
+
+
+    public function recursiveData($row,$rows)
+    {
+        $name = $row['nickname'];
+        $attitude = $row['attitude'];
+        $pid  = $row['pid'];
+        $content = $row['content'];
+        $id    = $row['id'];
+        $pltime = $row['create_time'];
+        $support = $row['support'];
+        $ip = str_replace(strrchr($row['ip'], '.'), '.*',$row['ip']);
+        $this_array=array(
+            "id"=>$id,
+            'pid'=>$pid,
+            'name'=>$name,
+            'content'=>$content,
+            'time'=>$pltime,
+            "ip"=>$ip,
+            'support'=>$support,
+            'attitude'=>$attitude,
+            'child'=>'',
+            );
+        if ($pid==0) {
+            return $this_array;
+        }
+        for ($i=1; $i <count($rows)+1 ; $i++) { 
+                if ($rows[$i]['id']==$pid) {
+                    $this_array['child']=$this->recursiveData($rows[$i],$rows);
+                    return $this_array;
+                }
+            }
+    }
+
+   public function uidlike(){
+
+
+         $id = I('post.');
+       
+        $ids = $id['id'];
+        $likes = $id['like'];
+        $nTime = $id['time'];
+        $IP  = $_SERVER['REMOTE_ADDR'];
+        $data = array(
+            'like_time'=>$nTime,
+            'support' => $likes,
+            'likeIPs' => $IP,
+        );
+         $ress = M('his_ly')->where("id='$ids'")->save($data);
+        $res = M('his_ly')->where("id='$ids'")->find();
+
+        $result =mysqli_fetch_assoc($res); 
+        $oTime = $result['like_time'];
+        $likeIPs = $result['likeIPs'];
+        $IP_array = explode(',', $likeIPs);
+        $hour_gap = (strtotime($nTime)-strtotime($oTime));
+        $like_time = 60*60*$like_time_gap;
+        $table = 'dzm_his_ly';
+        if ($likeIPs and in_array($IP, $IP_array)) {
+            if ($hour_gap<$like_time_gap) {
+                echo "0";
+            }
+            else{
+                // $sql = "UPDATE $table SET like_time='$nTime',support='$likes' WHERE id='$ids'";
+                $ress = M('his_ly')->where("id='$ids'")->save($data);
+                // $res = mysqli_query($conn,$sql);
+                echo '1';
+            }
+            
+        }else{
+            $IPs = $likeIPs.','.$IP;
+            $sql = "UPDATE $table SET like_time='$nTime',support='$likes',likeIPs='$IPs' WHERE id='$id'";
+            $res = mysqli_query($conn,$sql);
+            echo '1';
+        }
+   }
+
+   
+
+
+
+
+
+
    public function province()
    {
         $id = I('post.province','','string');

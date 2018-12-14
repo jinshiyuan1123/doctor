@@ -121,71 +121,20 @@
                 <div class="g-container">
                     <div class="fastorder-wrap">
                         
-                       <!--  <div class="fastorder-main">
-                            <div class="tips">温馨提醒：费用由医院自行设定，平台不收取任何额外费用</div>
-                            <div class="g-fastorder-box">
-                                <div class="row g-clear">
-                                    <label>地区：</label>
-                                    <select class="province js-province" id="province" name="province">
-							<option value="0" id="sel_text">
-                            <?php if($region): echo ($region); ?>
-                            <?php else: ?>
-                            请选择...<?php endif; ?>
-                            </option>
-                            <?php if(is_array($province)): foreach($province as $key=>$val): ?><option value="<?php echo ($val["provinceid"]); ?>" ><?php echo ($val['province']); ?></option><?php endforeach; endif; ?>
-						</select >
-                                </div>
-                                <div class="row g-clear">
-                                    <label>&nbsp;</label>
-                            <select class="city jscitys " id="cities" name="city">
-							<option value="" id="">
-                            <?php if($city): echo ($city); ?>
-                            <?php else: ?>
-                            请选择...<?php endif; ?>
-                            </option>
-                           
-						</select>
-                                </div>
-                                <div class="row g-clear">
-                                    <label>医院：</label>
-                                    <select class="js-hospital disabled" disabled="disabled" name="hospital">
-							<option value="">请选择...</option>
-						</select>
-                                </div>
-                                <div class="row g-clear">
-                                    <label>科室：</label>
-                                    <select class="js-dept disabled" disabled="disabled" name="hdid">
-							<option value="">请选择...</option>
-						</select>
-                                </div>
-                                <div class="gfm-actions">
-                                    <a href="#" class="gbn gbt-green js-btn" monitor="fastorder,fastorder,fast_order">医生论坛</a>
-                                </div>
-                                <div class="footer-msg"></div>
-                            </div>
-                        </div> -->
+                       
 
           <?php if(is_array($res)): foreach($res as $key=>$vo): if($vo["process"] == 1): ?><div style="margin-top: 8px;"></div>
-                    <li style=" list-style-type:none;font-size:15px">
-            <div class="ask g-clear" style=" ">
-              <i class="pre-icon">&nbsp;&nbsp;&nbsp;</i>     
-              <a target="_blank" href="<?php echo U('home/index/fastorderlist');?>?id=<?php echo ($vo["id"]); ?>" style="color: #333;text-decoration:none;"><span class="content" title="<?php echo ($vo["title"]); ?>"></span><?php echo ($vo["title"]); ?></a>
-              <span class="date" style="float: right;"><?php echo (date('Y-m-d',$vo["createtime"])); ?>&nbsp;&nbsp;</span>
-            </div>
-            <div class="answer g-clear" style="display: none;">
-              <i class="pre-icon">答</i>
-              <div class="inner g-clear">
-                <i class="arrow"></i>
-                <a target="_blank" href="https://www.guahao.com/expert/efee491b-7ef4-4fca-917d-c7e8f3809464000" monitor="ask,individuation_ask,doctor">
-                    <img class="portrait" src="https://kano.guahao.cn/kgy2705875_image140.jpg" onerror="this.src='https://static.guahao.cn/img/character/doc-unknow-l.png?_=20121223';" alt="孙石磊" height="35" width="35">
-                </a>
-                <p>
-                  <span class="doc-info"><a target="_blank" href="https://www.guahao.com/expert/efee491b-7ef4-4fca-917d-c7e8f3809464000" monitor="ask,individuation_ask,doctor">孙石磊</a>&nbsp;&nbsp;&nbsp;郑州大学第一附属医院-神内门诊</span>
-                  <span class="doc-answer">和高血压有关&nbsp;&nbsp;<a target="_blank" href="https://www.guahao.com/consult/detail/35354788" monitor="ask,individuation_ask,asktalk_detail">详细</a></span>
-                </p>
-              </div>
-            </div>
-        </li>
+                <ul>
+                    <li style="list-style-type:none;font-size:15px">
+                    <i class="pre-icon">&nbsp;&nbsp;&nbsp;</i>  
+                    <i><?php echo ($key+1); ?>.</i>  
+                    <!-- <span>12-14</span> -->
+                    <a  href="<?php echo U('home/index/fastorderlist');?>?id=<?php echo ($vo["id"]); ?>" title="<?php echo ($vo["title"]); ?>" target="_blank"><?php echo ($vo["title"]); ?></a>
+                      <span class="date" style="float: right;"><?php echo (date('Y-m-d',$vo["createtime"])); ?>&nbsp;&nbsp;</span>
+                </li>
+            </ul>
+       
+                  
         <div style="margin-top: 8px;"></div><?php endif; endforeach; endif; ?>
 
                     </div>

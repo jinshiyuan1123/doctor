@@ -28,7 +28,7 @@ ul{list-style: none;}
 .choose a{color: #357973!important;}
 
 /*分页内容*/
-.Cli{border-bottom: 1px dashed #ccc;text-align: left;font-size: 12px;margin-left: -40px;margin-top:10px; }
+.Cli{border-bottom: 1px dashed #ccc;text-align: left;font-size: 12px;margin-top:10px; }
 #timeStamp{color: red;}
 #nickname{ }
 #ip{ }
