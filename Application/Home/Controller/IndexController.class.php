@@ -393,12 +393,31 @@ function getCity($ip = '')
    {
         $user = I('post.');
    }
-
+    public function getpage($count, $pagesize = 10) {
+    $p = new \Think\Page($count, $pagesize);
+    // var_dump($p);die;
+    $p->setConfig('header', '<li class="rows">共<b>%TOTAL_ROW%</b>条记录&nbsp;第<b>%NOW_PAGE%</b>页/共<b>%TOTAL_PAGE%</b>页</li>');
+    $p->setConfig('prev', '上一页');
+    $p->setConfig('next', '下一页');
+    $p->setConfig('last', '末页');
+    $p->setConfig('first', '首页');
+    $p->setConfig('theme', '%FIRST%%UP_PAGE%%LINK_PAGE%%DOWN_PAGE%%END%%HEADER%');
+    $p->lastSuffix = false;//最后一页不显示为总页数
+    return $p;
+}
 
    public function fastorder(){
         $res = M('his_doctorlist')->where()->select();
-       
-        $this->assign('res',$res);
+         $m = M('his_doctorlist');      
+        $where = "id>1";
+        $count = $m->where()->count();
+      
+        $p = $this->getpage($count,10);
+        // var_dump($p);die;
+        // $list = $m->field(true)->where($where)->order('id')->limit($p->firstRow, $p->listRows)->select();
+       $list = $m->field(true)->where($where)->order('id')->limit($p->firstRow, $p->listRows)->select();
+        $this->assign('page', $p->show()); // 赋值分页输出
+        $this->assign('res',$list);
         $this->display(':fastorder');
    }
 
@@ -1269,7 +1288,8 @@ public function recursived($meta,$flag,$count )
     } 
     // echo "下面是文件上传的一些信息：<br><br>原文件名：".$_FILES['upfile']['name'] ."<br><br>类型：" .$_FILES['upfile']['type'] ."<br><br>临时文件名：".$_FILES['upfile']['tmp_name']. "<br><br>文件大小：".$_FILES['upfile']['size']."<br><br>错误代码：".$_FILES['upfile']['error'];
   }
-
+ 
+ 
  
   
 
