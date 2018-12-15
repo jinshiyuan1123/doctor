@@ -1,4 +1,5 @@
-  <div class="g-container landing-section news-section">
+
+              <div class="g-container landing-section news-section">
                     <div class="title-bar">
                          <h2>健康资讯</h2>
                         <span class="slogan">
@@ -11,7 +12,7 @@
                         <div class="g-grid-left">
                             <div class="news-main g-clear">
                                 <div class="news-item medical-strategy J_medicalStrategy">
-                                    <h5>就医攻略</h5>
+                                    <h5>就医攻略<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=就医攻略" target="_blank">更多</a></li></h5> 
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="__PUBLIC_HOME__/images/1536026134780.jpg" alt="又双叒叕流产！怎么才能保住宝宝？">
@@ -54,7 +55,7 @@
                                 </div>
 
                                 <div class="news-item rumor-crusher J_rumorCrusher">
-                                    <h5>谣言粉碎机</h5>
+                                    <h5>谣言粉碎机<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=谣言粉碎机" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="__PUBLIC_HOME__/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
@@ -70,7 +71,7 @@
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <foreach name="reslist" item="val">
+                                            <foreach name="reslist1" item="val">
                                           <if condition="$val['class'] eq '谣言粉碎机'">
                                           <if condition="$val['unit_price'] eq '是'">
                                             <li>
@@ -96,7 +97,7 @@
                                     </div>
                                 </div>
                                 <div class="news-item health-preserve J_healthPreserve">
-                                    <h5>中医养生</h5>
+                                    <h5>中医养生<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=中医养生" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="__PUBLIC_HOME__/images/bottom-default.png">
@@ -112,7 +113,7 @@
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                             <foreach name="reslist" item="val">
+                                             <foreach name="reslist2" item="val">
                                           <if condition="$val['class'] eq '中医养生'">
                                           <if condition="$val['unit_price'] eq '是'">
                                             <li>
@@ -137,10 +138,9 @@
                                     </div>
                                 </div>
                                 <div class="news-item health-hot J_healthHot">
-                                    <a href="#" target="_blank" class="jhztc-title" monitor="spteam_activity,spteam_head,spteam_topslider" onmousedown="return _smartlog(this,'MYZTC')">
-                                        <h5>名医直通车
-                                        </h5>
-                                    </a>
+                                   
+                                        <h5>名医直通车<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=中医养生" target="_blank">更多</a></li></h5>
+                                    
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#" monitor="home_health_refer,doctordirect,doctor_text">
                                             <img src="__PUBLIC_HOME__/images/rLn44885969.png" alt="脂肪肝不能吃肉？教你靠谱的护肝指南" onmousedown="return _smartlog(this,'INF')">
@@ -155,19 +155,19 @@
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                             <foreach name="reslist" item="val">
+                                             <foreach name="reslist3" item="val">
                                           <if condition="$val['class'] eq '名医直通车'">
-                                           <if condition="$val['unit_price'] eq '是'">
+                                           <if condition="$val['unit_price'] eq '1'">
                                           
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot">{$val['inspection_name']}</div>
-                                                    <if condition="$val['cost'] eq '新'">
+                                                    <if condition="$val['cost'] eq '1'">
                                                     <img src="__PUBLIC_HOME__/images/new.png" alt="">
 
                                                     </if>
-                                                    <if condition="$val['cost'] eq '热'">
+                                                    <if condition="$val['cost'] eq '2'">
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>

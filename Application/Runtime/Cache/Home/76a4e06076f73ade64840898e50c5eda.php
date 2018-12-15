@@ -85,7 +85,9 @@
 			    <div class="gh-main">
 			     <div class="container g-clear">
 			    	<div class="gh-logo ">
-			    		<img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo">
+			    		 <a href="<?php echo U('home/index/index');?>">
+                        <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo"></a>
+                       
 			    	</div>
 
 	
