@@ -166,11 +166,11 @@
              <include file="Public:edit"/>
             </div>
             
-               <textarea id="myEditor" name="myEditor" style=" ">
+               <textarea id="myEditor" name="myEditor" style="">
               
              </textarea>
              <input type="hidden" id="articleids" name="article" value="{$vo.id}">
-            <input type="hidden" id="textarea" name="ins_id" value="{$vo.textarea}">
+            <input type="hidden" id="textarea" name="ins_id" value='{$vo.textarea}'>
             <br>
            
            </foreach>
@@ -197,13 +197,14 @@
 		<p>择医网提供平台支持 Copyright 2011-2018版权所有。&nbsp;&nbsp;</p>
 	</div>
 </div>
-			<!-- end of #gf -->
+			
 		</div>	
 		<!-- end of #g-wrapper -->
 		
 
 	<script type="text/javascript"> 
          var textarea = $("#textarea").val();
+         // console.info(textarea);
          var mylist = $("#myEditor").val(textarea);
          UE.getEditor('myEditor');
 

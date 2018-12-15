@@ -364,11 +364,11 @@
 </html>
             </div>
             
-               <textarea id="myEditor" name="myEditor" style=" ">
+               <textarea id="myEditor" name="myEditor" style="">
               
              </textarea>
              <input type="hidden" id="articleids" name="article" value="<?php echo ($vo["id"]); ?>">
-            <input type="hidden" id="textarea" name="ins_id" value="<?php echo ($vo["textarea"]); ?>">
+            <input type="hidden" id="textarea" name="ins_id" value='<?php echo ($vo["textarea"]); ?>'>
             <br><?php endforeach; endif; ?>
             <div style="float:center">
           <button  class="search-button editor" style="border-radius: 2px; width: 166px; height: 100%;color: #fff;font-size: 24px;background-color: #589bff;border: none;cursor: pointer;">编辑文章</button>
@@ -393,13 +393,14 @@
 		<p>择医网提供平台支持 Copyright 2011-2018版权所有。&nbsp;&nbsp;</p>
 	</div>
 </div>
-			<!-- end of #gf -->
+			
 		</div>	
 		<!-- end of #g-wrapper -->
 		
 
 	<script type="text/javascript"> 
          var textarea = $("#textarea").val();
+         console.info(textarea);
          var mylist = $("#myEditor").val(textarea);
          UE.getEditor('myEditor');
 

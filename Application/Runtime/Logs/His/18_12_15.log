@@ -239,3 +239,1539 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
 
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /Public/home/img/homepage-sp.png?_=20170508
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000990s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /Public/home/img/internethospital/opened.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /Public/home/img/search/more-dot.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /Public/home/css/images/img-index.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /Public/home/img/consult.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001322s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png?v=20170505
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001193s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /Public/home/img/rightbar-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /img/v2/hp2.png?_=20140624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+
+[ 2018-12-15T11:39:14+08:00 ] 127.0.0.1 /json/white/area/provinces
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000693s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003776s ]
+ERR: 无法加载控制器:Json
+
+[ 2018-12-15T11:39:15+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+
+[ 2018-12-15T11:39:15+08:00 ] 127.0.0.1 /Public/home/img/v2/index-banner.jpg?v=2017_04_28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+
+[ 2018-12-15T11:39:15+08:00 ] 127.0.0.1 /Public/home/img/account/show-qr.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-12-15T11:39:15+08:00 ] 127.0.0.1 /Public/home/img/account/double-arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+
+[ 2018-12-15T11:39:15+08:00 ] 127.0.0.1 /Public/home/img/account/bg-doctor.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/header_new/header2_yuyue.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/header_new/header2_fangwen.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-refresh.png?20160708
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/header_new/header2_wen.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-qkzx.png?20171128
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-twwz.png?20171128
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/icon-teacher.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-more.png?20160708
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-spwz.png?20171128
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-insurance-1.png?20160719
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-insurance-2.png?20160719
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+
+[ 2018-12-15T11:39:40+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-insurance-3.png?20160719
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+
+[ 2018-12-15T11:39:41+08:00 ] 127.0.0.1 /Public/home/img/account/upload_btn.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+
+
+[ 2018-12-15T11:39:43+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-blue-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+
+[ 2018-12-15T11:39:44+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001271s ]
+
+[ 2018-12-15T11:39:44+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+
+[ 2018-12-15T11:39:44+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+
+[ 2018-12-15T11:39:44+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+
+[ 2018-12-15T11:39:44+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+
+[ 2018-12-15T11:39:44+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+
+[ 2018-12-15T11:39:44+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+
+[ 2018-12-15T11:39:44+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-blue-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+
+[ 2018-12-15T11:39:47+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+
+[ 2018-12-15T11:39:47+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+
+[ 2018-12-15T11:39:47+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+
+[ 2018-12-15T11:39:47+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+
+[ 2018-12-15T11:39:47+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2018-12-15T11:39:47+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+
+[ 2018-12-15T11:39:48+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001032s ]
+
+[ 2018-12-15T11:40:08+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+
+[ 2018-12-15T11:40:08+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+
+[ 2018-12-15T11:40:08+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2018-12-15T11:40:08+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-12-15T11:40:08+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+
+[ 2018-12-15T11:40:08+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+
+[ 2018-12-15T11:40:09+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001512s ]
+
+[ 2018-12-15T11:41:11+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2018-12-15T11:41:11+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+
+[ 2018-12-15T11:41:11+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001418s ]
+
+[ 2018-12-15T11:41:11+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+
+[ 2018-12-15T11:41:11+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+
+[ 2018-12-15T11:41:11+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+
+[ 2018-12-15T11:41:11+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-blue-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000782s ]
+
+[ 2018-12-15T11:41:12+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+
+[ 2018-12-15T11:41:13+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+
+[ 2018-12-15T11:41:13+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+
+[ 2018-12-15T11:41:13+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+
+[ 2018-12-15T11:41:13+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+
+[ 2018-12-15T11:41:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001895s ]
+
+[ 2018-12-15T11:41:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001463s ]
+
+[ 2018-12-15T11:41:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+
+[ 2018-12-15T11:41:17+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+
+[ 2018-12-15T11:41:17+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+
+[ 2018-12-15T11:41:17+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+
+[ 2018-12-15T11:41:17+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001284s ]
+
+[ 2018-12-15T11:41:18+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+
+[ 2018-12-15T11:41:18+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+
+[ 2018-12-15T11:41:18+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2018-12-15T11:41:28+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+
+[ 2018-12-15T11:41:28+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+
+[ 2018-12-15T11:41:28+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+
+[ 2018-12-15T11:41:28+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+
+[ 2018-12-15T11:41:28+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-blue-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2018-12-15T11:41:29+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2018-12-15T11:41:29+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+
+[ 2018-12-15T11:41:29+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+
+[ 2018-12-15T11:41:29+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2018-12-15T11:41:29+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+
+[ 2018-12-15T11:41:29+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+
+[ 2018-12-15T11:41:30+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+
+[ 2018-12-15T11:41:30+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000908s ]
+
+[ 2018-12-15T11:41:30+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+
+[ 2018-12-15T11:41:30+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2018-12-15T11:43:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2018-12-15T11:43:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2018-12-15T11:43:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+
+[ 2018-12-15T11:43:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2018-12-15T11:43:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+
+[ 2018-12-15T11:43:14+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+
+[ 2018-12-15T11:43:15+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+
+[ 2018-12-15T11:44:06+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2018-12-15T11:45:55+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+
+[ 2018-12-15T11:45:55+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-12-15T11:45:56+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+
+[ 2018-12-15T11:45:56+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+
+[ 2018-12-15T11:45:56+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+
+[ 2018-12-15T11:45:56+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+
+[ 2018-12-15T11:45:56+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+
+[ 2018-12-15T11:46:11+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+
+[ 2018-12-15T11:46:11+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+
+[ 2018-12-15T11:46:11+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+
+[ 2018-12-15T11:46:11+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+
+[ 2018-12-15T11:46:11+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+
+[ 2018-12-15T11:46:11+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-12-15T11:46:11+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+
+[ 2018-12-15T11:47:25+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2018-12-15T11:47:25+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+
+[ 2018-12-15T11:47:25+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+
+[ 2018-12-15T11:47:25+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+
+[ 2018-12-15T11:47:25+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+
+[ 2018-12-15T11:47:25+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+
+[ 2018-12-15T11:47:26+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+
+[ 2018-12-15T11:47:35+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000798s ]
+
+[ 2018-12-15T11:47:35+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+
+[ 2018-12-15T11:47:35+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+
+[ 2018-12-15T11:47:35+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-12-15T11:47:35+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+
+[ 2018-12-15T11:47:35+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+
+[ 2018-12-15T11:47:36+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+
+[ 2018-12-15T11:47:46+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001486s ]
+
+[ 2018-12-15T11:47:46+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+
+[ 2018-12-15T11:47:46+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010549s ]
+
+[ 2018-12-15T11:47:46+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+
+[ 2018-12-15T11:47:46+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+
+[ 2018-12-15T11:47:46+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+
+[ 2018-12-15T11:47:47+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2018-12-15T11:48:18+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-12-15T11:48:18+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+
+[ 2018-12-15T11:48:18+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003022s ]
+
+[ 2018-12-15T11:48:18+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+
+[ 2018-12-15T11:48:18+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+
+[ 2018-12-15T11:48:18+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+
+[ 2018-12-15T11:48:18+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+
+[ 2018-12-15T11:48:30+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+
+[ 2018-12-15T11:48:30+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+
+[ 2018-12-15T11:48:30+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2018-12-15T11:48:30+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001850s ]
+
+[ 2018-12-15T11:48:30+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+
+[ 2018-12-15T11:48:30+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+
+[ 2018-12-15T11:48:30+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001318s ]
+
+[ 2018-12-15T11:48:43+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2018-12-15T11:48:43+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+
+[ 2018-12-15T11:48:43+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2018-12-15T11:48:43+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2018-12-15T11:48:43+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+
+[ 2018-12-15T11:48:43+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+
+[ 2018-12-15T11:48:44+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+
+[ 2018-12-15T11:48:57+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+
+[ 2018-12-15T11:48:57+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+
+[ 2018-12-15T11:48:57+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+
+[ 2018-12-15T11:48:57+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+
+[ 2018-12-15T11:48:57+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+
+[ 2018-12-15T11:48:57+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+
+[ 2018-12-15T11:48:57+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+
+[ 2018-12-15T11:49:07+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+
+[ 2018-12-15T11:49:07+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+
+[ 2018-12-15T11:49:07+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+
+[ 2018-12-15T11:49:07+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+
+[ 2018-12-15T11:49:07+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+
+[ 2018-12-15T11:49:07+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+
+[ 2018-12-15T11:49:07+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+
+[ 2018-12-15T11:49:18+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+
+[ 2018-12-15T11:49:18+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2018-12-15T11:49:18+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+
+[ 2018-12-15T11:49:18+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+
+[ 2018-12-15T11:49:18+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+
+[ 2018-12-15T11:49:19+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2018-12-15T11:49:33+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+
+[ 2018-12-15T11:49:33+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2018-12-15T11:49:33+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+
+[ 2018-12-15T11:49:33+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001569s ]
+
+[ 2018-12-15T11:49:33+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+
+[ 2018-12-15T11:49:33+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-12-15T11:49:33+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+
+[ 2018-12-15T11:49:48+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2018-12-15T11:49:48+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2018-12-15T11:49:48+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+
+:0.000412s ]
+
+[ 2018-12-15T11:49:48+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+
+[ 2018-12-15T11:49:48+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+
+[ 2018-12-15T11:49:49+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+
+[ 2018-12-15T11:49:59+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2018-12-15T11:49:59+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+
+[ 2018-12-15T11:49:59+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+
+[ 2018-12-15T11:49:59+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+
+[ 2018-12-15T11:49:59+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003281s ]
+
+[ 2018-12-15T11:49:59+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+
+[ 2018-12-15T11:49:59+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+
+[ 2018-12-15T11:50:10+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+
+[ 2018-12-15T11:50:10+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+
+[ 2018-12-15T11:50:10+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+
+[ 2018-12-15T11:50:10+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+
+[ 2018-12-15T11:50:10+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+
+[ 2018-12-15T11:50:11+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+
+[ 2018-12-15T11:50:11+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+
+[ 2018-12-15T11:50:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+
+[ 2018-12-15T11:50:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+
+[ 2018-12-15T11:50:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+
+[ 2018-12-15T11:50:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+
+[ 2018-12-15T11:50:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+
+s ]
+
+[ 2018-12-15T11:50:15+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+
+[ 2018-12-15T11:50:21+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+
+[ 2018-12-15T11:50:21+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000975s ]
+
+[ 2018-12-15T11:50:21+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+
+[ 2018-12-15T11:50:21+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+
+[ 2018-12-15T11:50:21+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+
+[ 2018-12-15T11:50:22+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+
+[ 2018-12-15T11:50:22+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+
+[ 2018-12-15T11:50:29+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+
+[ 2018-12-15T11:50:29+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+
+[ 2018-12-15T11:50:29+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+
+[ 2018-12-15T11:50:29+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+
+[ 2018-12-15T11:50:29+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+
+[ 2018-12-15T11:50:29+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+
+[ 2018-12-15T11:51:00+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001366s ]
+
+[ 2018-12-15T11:51:00+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+
+96s ]
+
+[ 2018-12-15T11:51:00+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+
+[ 2018-12-15T11:51:00+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001073s ]
+
+[ 2018-12-15T11:51:00+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004484s ]
+
+[ 2018-12-15T11:51:00+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+
+[ 2018-12-15T11:51:23+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+
+[ 2018-12-15T11:51:23+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+
+[ 2018-12-15T11:51:23+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+
+[ 2018-12-15T11:51:23+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+
+[ 2018-12-15T11:51:23+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+
+[ 2018-12-15T11:51:23+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+
+[ 2018-12-15T11:51:24+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001124s ]
+
+[ 2018-12-15T11:51:51+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+
+[ 2018-12-15T11:51:51+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+
+[ 2018-12-15T11:51:51+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+
+[ 2018-12-15T11:51:51+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+
+[ 2018-12-15T11:51:51+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+
+[ 2018-12-15T11:51:51+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+
+[ 2018-12-15T11:51:52+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+
+[ 2018-12-15T11:52:05+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+
+[ 2018-12-15T11:52:05+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+
+[ 2018-12-15T11:52:05+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001568s ]
+
+[ 2018-12-15T11:52:05+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+
+[ 2018-12-15T11:52:05+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2018-12-15T11:52:05+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+
+[ 2018-12-15T11:53:20+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+
+[ 2018-12-15T11:53:20+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+
+[ 2018-12-15T11:53:21+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-12-15T11:53:21+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000392s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002492s ]
+
+[ 2018-12-15T11:53:21+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+
+[ 2018-12-15T11:53:21+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001217s ]
+
+[ 2018-12-15T11:53:21+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+
+[ 2018-12-15T11:54:04+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2018-12-15T11:54:04+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+
+[ 2018-12-15T11:54:04+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+
+[ 2018-12-15T11:54:04+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+
+[ 2018-12-15T11:54:04+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+
+[ 2018-12-15T11:54:04+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+
+[ 2018-12-15T11:54:04+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+
+[ 2018-12-15T11:56:51+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+
+[ 2018-12-15T11:56:51+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+
+[ 2018-12-15T11:56:51+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+
+[ 2018-12-15T11:56:51+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+
+[ 2018-12-15T11:56:51+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+
+[ 2018-12-15T11:56:51+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+
+[ 2018-12-15T11:56:52+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001037s ]
+
+[ 2018-12-15T11:57:07+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+
+[ 2018-12-15T11:57:07+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+
+[ 2018-12-15T11:57:07+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+
+[ 2018-12-15T11:57:07+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+
+[ 2018-12-15T11:57:07+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+
+[ 2018-12-15T11:57:07+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+
+[ 2018-12-15T11:57:08+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+
+[ 2018-12-15T11:57:21+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001352s ]
+
+[ 2018-12-15T11:57:21+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+
+[ 2018-12-15T11:57:21+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001638s ]
+
+[ 2018-12-15T11:57:22+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+
+[ 2018-12-15T11:57:22+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+
+[ 2018-12-15T11:57:22+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+
+[ 2018-12-15T11:57:22+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+
+[ 2018-12-15T11:57:31+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+
+[ 2018-12-15T11:57:31+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+
+[ 2018-12-15T11:57:31+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+
+[ 2018-12-15T11:57:31+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+
+[ 2018-12-15T11:57:31+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+
+[ 2018-12-15T11:57:31+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+
+[ 2018-12-15T11:57:31+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+
+[ 2018-12-15T11:58:27+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+
+[ 2018-12-15T11:58:27+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2018-12-15T11:58:27+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2018-12-15T11:58:27+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2018-12-15T11:58:27+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+
+ime:0.000623s ]
+
+[ 2018-12-15T11:58:27+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+

@@ -1014,6 +1014,7 @@ public function recursived($meta,$flag,$count )
       
       if($id){
           $res = M('his_doctorlist')->where("id='$id'")->select();
+        
          $this->assign('res',$res);  
       }
       $this->display(':editorarticle');
