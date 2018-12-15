@@ -1,4 +1,4 @@
-
+<?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -16,17 +16,17 @@
 
 <meta property="wb:webmaster" content="3b0138a4c935e0f6" />
 <meta property="qc:admins" content="341606771467510176375" />
-	<link rel="shortcut icon" href="__PUBLIC_HOME__/favicon.ico" />
+	<link rel="shortcut icon" href="/Public/home/favicon.ico" />
 
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/portal.base.min.css?v=1543323361ad1626" type="text/css"/>
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/portal.basic.min.css?v=1543323361ad1626" type="text/css"/>
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/portal.hdd.min.css?v=1543323361ad1626" type="text/css"/>
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/portal.content.min.css?v=1543323361ad1626" type="text/css"/>
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/style.min.css?v=1543323361ad1626" type="text/css"/>
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/animate.min.css?v=20141222" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/portal.base.min.css?v=1543323361ad1626" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/portal.basic.min.css?v=1543323361ad1626" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/portal.hdd.min.css?v=1543323361ad1626" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/portal.content.min.css?v=1543323361ad1626" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/style.min.css?v=1543323361ad1626" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/animate.min.css?v=20141222" type="text/css"/>
 
 
-    					<link rel="stylesheet" href="__PUBLIC_HOME__/css/about-us.css?v=1543323361ad1626" type="text/css"/>
+    					<link rel="stylesheet" href="/Public/home/css/about-us.css?v=1543323361ad1626" type="text/css"/>
   
 </head>
 <body class="g-1200px g-page-1200"> 
@@ -38,7 +38,49 @@
 
 <div id="g-wrapper" class="g-wrapper "> 
 	<div id="gh">
-  <include file="Public:headlist" />
+  <div class="gh-nav">
+    <div class="container g-clear">
+        <div class="g-left">
+            <?php if(!session('home_user_info')): ?><span class="text">您好！ 请</span>
+                <span class="login"></span>
+                <a href="<?php echo U('home/index/login');?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,login">登录</a>
+                <span class="line">|</span>
+                <a target="_blank" href="<?php echo U('home/index/register');?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,signin">注册</a>
+                <a href="<?php echo U('home/index/doctorlogin');?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" class="doctor-login" monitor="public_head,publick_head,doctoruser"><i style="right:6px"><img src="/Public/home/doctor-login.png"></i>我是医生</a>
+            <?php else: ?>
+
+                     <span class="text">您好
+                         <?php echo session('home_user_info.mobile');?>
+                          </span> 
+                         
+                     <a href=" <?php if($docmobile): echo U('home/index/doctorhome'); else: echo U('home/index/orderlist'); endif; ?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,mycenter">个人中心</a>
+                       
+                    <span class="line">|</span>
+                    <a href="https://www.guahao.com/my/orderlist" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,order">预约单</a> 
+                    <span class="line">|</span>
+                    <a href="https://www.guahao.com/my/favorite/list" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,myfollow">我的关注</a> 
+                    <span class="line">|</span> 
+                    <a href="<?php echo U('/home/index/logout');?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,logout">退出</a><?php endif; ?>
+        </div>
+        
+        
+          <div class="g-right">
+                <a href="" rel="nofollow" class="dl-guide J_SeoGuide" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,appdload">
+                    收藏本站    
+                    <span>
+                        <img src="https://static.guahao.cn/front/portal-pc-static/img/index-appQRcode.png?v=20170505" alt="">
+                    </span>
+                </a>
+                <span class="line">|</span>
+
+
+          
+            <a href="tencent://message/?Site=baidu.com&uin=1569602446&Menu=yes" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" id="helpCenter" target="_blank" monitor="public_head,publick_head,cscenter">客服中心</a>
+            
+
+        </div>
+      </div> 
+  </div>
 
 
 			    <div class="gh-main">
@@ -46,8 +88,8 @@
 			    	<div class="gh-logo ">
 			    	
                       
-                         <a href="{:U('home/index/index')}">
-                        <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="__PUBLIC_HOME__/images/logolist.jpg" alt="择医网" class="wy-logo"></a>
+                         <a href="<?php echo U('home/index/index');?>">
+                        <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo"></a>
                        
 			    	</div>
 
@@ -921,11 +963,11 @@
 							<div class="third-login">
 								<i class="or">或</i>
                                 <div class="qrcode-wrapper">
-                                    <img src="__PUBLIC_HOME__/img/qr/drain/app-login.jpg">
+                                    <img src="/Public/home/img/qr/drain/app-login.jpg">
                                     <span>下载APP</span>
                                 </div>
                                 <div class="qrcode-wrapper secondary">
-                                    <img src="__PUBLIC_HOME__/img/qr/drain/wechat-subscription.jpg">
+                                    <img src="/Public/home/img/qr/drain/wechat-subscription.jpg">
                                     <span>关注公众号</span>
                                 </div>
 								<h5>使用第三方登录平台</h5>
@@ -944,8 +986,8 @@
 						<div class="tab-download g-clear J_TabDownload">
 							<div class="qr-inner">
 								<ul class="g-clear">
-									<li><img src="__PUBLIC_HOME__/img/account/v3/qr-user.png" alt=""><p>下载<a href="/intro/userapp">择医网APP</a></p></li>
-									<li class="wy-qr"><img src="__PUBLIC_HOME__/img/account/v3/qr-doctor.png" alt=""><p>下载<a href="/intro/drapp">择医网生APP</a></p></li>
+									<li><img src="/Public/home/img/account/v3/qr-user.png" alt=""><p>下载<a href="/intro/userapp">择医网APP</a></p></li>
+									<li class="wy-qr"><img src="/Public/home/img/account/v3/qr-doctor.png" alt=""><p>下载<a href="/intro/drapp">择医网生APP</a></p></li>
 								</ul>
 							</div>
 						</div>

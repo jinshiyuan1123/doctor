@@ -49,7 +49,8 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
 	    <div class="row">
 		  	<div class="item">
 			    <div class="logo hidden-xs">
-					<img class="logolist "  style="background-size: cover;width: 120px;height: 50px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo">										  
+					  <a href="<?php echo U('home/index/index');?>">
+                        <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo"></a>										  
 				</div>	
 				<div class="search"> 
 <form id="ff-search" role="search" action="" method="get">

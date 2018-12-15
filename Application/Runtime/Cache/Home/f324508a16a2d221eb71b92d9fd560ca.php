@@ -103,7 +103,9 @@
                 <div class="container g-clear">
                     <div class="gh-logo ">
                         <!-- <a href="/"  onmousedown="" monitor="public_logo,publick_logo,headlogo"></a> -->
-                     <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo">
+                      <a href="<?php echo U('home/index/index');?>">
+                        <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo"></a>
+                       
                     </div>
 
 
@@ -158,17 +160,33 @@
                     <div class="home-menu-ctn">
                           <ul class="g-clear main-menu-nav">
 <li class="hot">
-    <a class="own-tab" target="_blank" href="<?php echo U('home/index/hospital');?>" monitor="public_menu,home_menu,ask">在线问诊</a>
+    <a class="own-tab" target="_blank" href="" monitor="public_menu,home_menu,ask">健康资讯</a>
 </li>
-<li><a target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">医生论坛</a></li>
-<li><a target="_blank" target="_blank" href="<?php echo U('home/index/ask');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,preciseorder">免费咨询</a></li>
-<li class="authority"><a class="own-tab" target="_blank" target="_blank" href="https://baike.h.gov.cn/" rel="nofollow">医药直通车</a></li>
+<li><a target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">网站公告</a></li>
+<li><a target="_blank" target="_blank" href="<?php echo U('home/index/hospital');?>" >在线咨询</a></li>
+<li class="authority"><a class="own-tab" target="_blank" target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow">医生论坛</a></li>
 <li data-subnav="sub-nav-welife"><a target="_blank" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">
-医疗器械</a>
+健康</a>
 </li>
 
 
-<li><a target="_blank" href="#" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">健康E务室</a></li>
+<li><a target="_blank" href="#" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">医药直通车</a></li>
+  <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">医疗器械</a></li>
+
+   <li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">宣传耗材</a></li>
+
+
+</ul>
+
+<ul class="g-clear main-menu-nav">
+<li class="hot">
+    <a  target="_blank" href="<?php echo U('home/index/hospital');?>" >慈善</a>
+</li>
+<li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">健康视频</a></li>
+<li><a target="_blank" target="_blank" href="<?php echo U('home/index/ask');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,preciseorder">搞笑视频</a></li>
+
+
+
   <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">优选音乐</a></li>
 
    <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a></li>
@@ -179,7 +197,8 @@
 
 
 <div class="main-category-nav J_DiseaseCategory">
-     <h3><i></i>帮你快速找医生</h3>
+      <a href="<?php echo U('home/index/index');?>">
+     <h3><i></i>   首页</h3></a>
                             <div class="nav-cats-wrapper J_FastCategory" style="display:block">
                                 <ul>
                                     <li data-id="1">
@@ -2028,16 +2047,16 @@ $(document).ready(function(){
             </span>
                     </div>
                     <div class="main-ctn g-clear">
-                        <div class="g-grid-left">
+                        <div class="g-grid-left" style="width:1200px">
                             <div class="news-main g-clear">
-                                <div class="news-item medical-strategy J_medicalStrategy">
-                                    <h5>就医攻略</h5>
+                                <div class="news-item medical-strategy J_medicalStrategy" style="width:300px;border-right: 1px dotted #f9fbf9">
+                                    <h5>医院公开<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=就医攻略" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="/Public/home/images/1536026134780.jpg" alt="又双叒叕流产！怎么才能保住宝宝？">
                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">又双叒叕流产！怎么才能保住宝宝？</a>
+                                            <a target="_blank" href="#" class="title">又流产！怎么保住宝宝？</a>
                                             <span class="summary">
                                     对于一个期待成为母亲的女性而言，不孕是很痛苦的，但比之更痛苦的，是怀孕后却保不住自己的宝宝第一胎，雀跃着欢喜着，宝宝没保...
                                         <a target="_blank" href="#">[详细]
@@ -2061,8 +2080,8 @@ $(document).ready(function(){
                                     </div>
                                 </div>
 
-                                <div class="news-item rumor-crusher J_rumorCrusher">
-                                    <h5>谣言粉碎机</h5>
+                                <div class="news-item rumor-crusher J_rumorCrusher" style="width:300px">
+                                    <h5>医院动态</h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
@@ -2091,55 +2110,25 @@ $(document).ready(function(){
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="news-item health-preserve J_healthPreserve">
-                                    <h5>中医养生</h5>
+
+                                <div class="news-item rumor-crusher J_rumorCrusher" style="">
+                                    <h5>医院健康</h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
-                                            <img src="/Public/home/images/bottom-default.png">
+                                            <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">中医望诊，一眼就看出有什么病</a>
+                                            <a target="_blank" href="#" class="title">每天走一万步，真的健康吗？</a>
                                             <span class="summary">
-                            脸色反应气血的兴衰　　面部的色泽是气血通过经络上注于面而表现出来的，气血的盛衰及运行情况，必定会从面色上反映出来　　脸色...
-                            <a target="_blank" href="#">[详细]
-                            </a>
-                        </span>
-                                        </div>
-                                    </div>
-                                    <div class="focus-list">
-                                        <ul>
-                                             <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '中医养生'): if($val['unit_price'] == '是'): ?><li>
-                                                <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
-                                                    <i class="dot"></i>
-                                                    <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
-                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
-                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
-                                                </a>
-                                                <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                                            </li><?php endif; endif; endforeach; endif; ?>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="news-item health-hot J_healthHot">
-                                    <a href="#" target="_blank" class="jhztc-title" monitor="spteam_activity,spteam_head,spteam_topslider" onmousedown="return _smartlog(this,'MYZTC')">
-                                        <h5>名医直通车
-                                        </h5>
+                                    每个人心中都有一个更美好的自己：健康、苗条、充满活力而运动，可以帮助你实现这样的自己自从“每天一万步”这个活动出现后，大...
+                                    <a target="_blank" href="#">[详细]
                                     </a>
-                                    <div class="focus-single g-clear">
-                                        <a target="_blank" href="#" monitor="home_health_refer,doctordirect,doctor_text">
-                                            <img src="/Public/home/images/rLn44885969.png" alt="脂肪肝不能吃肉？教你靠谱的护肝指南" onmousedown="return _smartlog(this,'INF')">
-                                        </a>
-                                        <div class="text">
-                                            <a target="_blank" href="#" class="title" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">脂肪肝不能吃肉？教你靠谱的护肝指南</a>
-                                            <span class="summary">
-                                关于脂肪肝的传闻，你听过几个？  胖的人才会得脂肪肝！ 脂肪肝就是油脂吃太多了，所以得了脂肪肝就不能
-                                <a target="_blank" href="#" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">[详细]</a>
-                            </span>
+                                </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                             <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '名医直通车'): if($val['unit_price'] == '是'): ?><li>
+                                            <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '谣言粉碎机'): if($val['unit_price'] == '是'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -2148,12 +2137,112 @@ $(document).ready(function(){
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                             </li><?php endif; endif; endforeach; endif; ?>
+                                           
                                         </ul>
                                     </div>
                                 </div>
+                              
+                                
                             </div>
                         </div>
-                        
+                         <div class="g-grid-left" style="width:1200px">
+                            <div class="news-main g-clear" style="border-top: 2px solid rgba(180, 183, 178, 0.06);">
+                                <div class="news-item medical-strategy J_medicalStrategy" style="width:300px;border-right: 1px dotted #f9fbf9">
+                                    <h5>医院党建</h5>
+                                    <div class="focus-single g-clear">
+                                        <a target="_blank" href="#">
+                                            <img src="/Public/home/images/1536026134780.jpg" alt="又双流产！怎么保住宝宝？">
+                                        </a>
+                                        <div class="text">
+                                            <a target="_blank" href="#" class="title">又双流产！怎么保住宝宝？</a>
+                                            <span class="summary">
+                                    对于一个期待成为母亲的女性而言，不孕是很痛苦的，但比之更痛苦的，是怀孕后却保不住自己的宝宝第一胎，雀跃着欢喜着，宝宝没保...
+                                        <a target="_blank" href="#">[详细]
+                                    </a>
+                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="focus-list">
+                                        <ul>
+                                            
+                                          <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '就医攻略'): if($val['unit_price'] == '是'): ?><li>
+                                                <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
+                                                    <i class="dot"></i>
+                                                    <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
+                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                </a>
+                                                <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
+                                            </li><?php endif; endif; endforeach; endif; ?>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="news-item rumor-crusher J_rumorCrusher" style="width:300px">
+                                    <h5>医院视频</h5>
+                                    <div class="focus-single g-clear">
+                                        <a target="_blank" href="#">
+                                            <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
+                                        </a>
+                                        <div class="text">
+                                            <a target="_blank" href="#" class="title">每天走一万步，真的健康吗？</a>
+                                            <span class="summary">
+                                    每个人心中都有一个更美好的自己：健康、苗条、充满活力而运动，可以帮助你实现这样的自己自从“每天一万步”这个活动出现后，大...
+                                    <a target="_blank" href="#">[详细]
+                                    </a>
+                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="focus-list">
+                                        <ul>
+                                            <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '谣言粉碎机'): if($val['unit_price'] == '是'): ?><li>
+                                                <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
+                                                    <i class="dot"></i>
+                                                    <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
+                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                </a>
+                                                <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
+                                            </li><?php endif; endif; endforeach; endif; ?>
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="news-item rumor-crusher J_rumorCrusher" style="">
+                                    <h5>我拍拍</h5>
+                                    <div class="focus-single g-clear">
+                                        <a target="_blank" href="#">
+                                            <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
+                                        </a>
+                                        <div class="text">
+                                            <a target="_blank" href="#" class="title">每天走一万步，真的健康吗？</a>
+                                            <span class="summary">
+                                    每个人心中都有一个更美好的自己：健康、苗条、充满活力而运动，可以帮助你实现这样的自己自从“每天一万步”这个活动出现后，大...
+                                    <a target="_blank" href="#">[详细]
+                                    </a>
+                                </span>
+                                        </div>
+                                    </div>
+                                    <div class="focus-list">
+                                        <ul>
+                                            <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '谣言粉碎机'): if($val['unit_price'] == '是'): ?><li>
+                                                <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
+                                                    <i class="dot"></i>
+                                                    <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
+                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                </a>
+                                                <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
+                                            </li><?php endif; endif; endforeach; endif; ?>
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                              
+                                
+                            </div>
+                        </div>
                     </div>
                 </div>
 
