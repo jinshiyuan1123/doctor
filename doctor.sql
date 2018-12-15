@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost
+Source Server         : www
 Source Server Version : 50553
 Source Host           : localhost:3306
 Source Database       : doctor
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-12-14 13:56:12
+Date: 2018-12-15 17:23:02
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -3809,10 +3809,10 @@ CREATE TABLE `dzm_his_doctor` (
 -- ----------------------------
 -- Records of dzm_his_doctor
 -- ----------------------------
-INSERT INTO `dzm_his_doctor` VALUES ('1', '', null, '', '0', '0', '0', '13141589223', '$2y$12$uSv5Ek4qF7nkmbxmsqVrkuCY4uUq.A4LtPRow6GIzgJJcA6VYzszW', '协和医院', null, '3', '', '', '', '1543235676', '1544333782', '', '2', '', '2', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('2', '方法', '0', '', '0', '0', '0', '13141589223', '$2y$12$8aLaRV0WMeVHIZpmzi4xCOANVFPGaLA66ozEiAcLCax89tWvNitD2', '协和医院', '', '1', '', '', '', '1543240548', '1544333782', '', '2', '7', '2', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('3', '测试', '0', '', '0', '0', '0', '13141589223', '$2y$12$3sab.fPjhPHMvCGXl1ijJuguegZE3yUfGAqYbziXlgLwiUzx4ILc.', '协和医院', '', '2', '', '', '', '1543247335', '1544333782', '', '2', '7', '', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('4', '王守道', '0', '130000', '0', '唐山市', '83856745', '13141589203', '$2y$12$Mtv3mGq3i92VRMsFyTrSGu5/4yzBHS6lRCYkvu3GhCsLC8iC1pHuW', '中心医院', '', '1', '医生', '', '', '1544332507', '1544750500', '', '2', '7', '', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('1', '', null, '', '0', '0', '0', '13141589223', '$2y$12$uSv5Ek4qF7nkmbxmsqVrkuCY4uUq.A4LtPRow6GIzgJJcA6VYzszW', '协和医院', null, '3', '', '127.0.0.1', '', '1543235676', '1544333782', '', '2', '', '2', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('2', '方法', '0', '', '0', '0', '0', '13141589223', '$2y$12$8aLaRV0WMeVHIZpmzi4xCOANVFPGaLA66ozEiAcLCax89tWvNitD2', '协和医院', '', '1', '', '127.0.0.1', '', '1543240548', '1544333782', '', '2', '7', '2', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('3', '测试', '0', '', '0', '0', '0', '13141589223', '$2y$12$3sab.fPjhPHMvCGXl1ijJuguegZE3yUfGAqYbziXlgLwiUzx4ILc.', '协和医院', '', '2', '', '127.0.0.1', '', '1543247335', '1544333782', '', '2', '7', '', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('4', '王守道', '0', '130000', '0', '唐山市', '83856745', '13141589203', '$2y$12$Mtv3mGq3i92VRMsFyTrSGu5/4yzBHS6lRCYkvu3GhCsLC8iC1pHuW', '中心医院', '', '1', '医生', '127.0.0.1', '', '1544332507', '1544845179', '', '2', '7', '', '0.00');
 INSERT INTO `dzm_his_doctor` VALUES ('5', '多的', '0', '130000', '0', '秦皇岛市', '83856745', '13141589556', '$2y$12$yIoudEjifKHjW5X8a9cWWuAybiLyJAq62ejyS3NPxV8WXNpL3x1ei', '但是', null, '1', '士大夫', '127.0.0.1', '', '1544346481', '1544346481', '', '2', '', '', '0.00');
 
 -- ----------------------------
@@ -3840,7 +3840,7 @@ CREATE TABLE `dzm_his_doctorlist` (
 -- ----------------------------
 -- Records of dzm_his_doctorlist
 -- ----------------------------
-INSERT INTO `dzm_his_doctorlist` VALUES ('3', '', '0', '2', '1', '头颅核磁共振显示，两侧额顶叶少些缺血灶，该怎么治疗', '<p>大是大3366非66</p><p><img src=\"/ueditor/php/upload/image/20181213/1544678350366157.jpg\" title=\"1544678350366157.jpg\" alt=\"1212.jpg\"/><img src=\"/ueditor/php/upload/image/20181213/1544678354117334.jpg\" title=\"1544678354117334.jpg\" alt=\"预览图_千图网_编号28483998.jpg\"/></p>', '测试', '1544500177', '1544678356', '1', '0', '0.00');
+INSERT INTO `dzm_his_doctorlist` VALUES ('3', '', '0', '2', '1', '头颅核磁共振显示，两侧额顶叶少些缺血灶，该怎么治疗', '<p><img src=\"/ueditor/php/upload/image/20181215/1544845285401701.jpg\" title=\"1544845285401701.jpg\" alt=\"1511164061343.jpg\"/></p>', '测试', '1544500177', '1544845286', '1', '0', '0.00');
 INSERT INTO `dzm_his_doctorlist` VALUES ('4', '', '0', '1', '1', '奋斗头颅核磁共振显示，两侧额顶叶少些缺血灶，该怎么治疗', '<p>电饭锅</p>', '梵蒂冈', '1544500531', '1544500531', '1', '0', '0.00');
 
 -- ----------------------------
@@ -5398,6 +5398,7 @@ CREATE TABLE `dzm_his_supplier` (
   `contact_telephone` varchar(20) NOT NULL DEFAULT '' COMMENT '联系人电话',
   `bank_account` varchar(50) NOT NULL DEFAULT '' COMMENT '银行账号',
   `address` varchar(100) NOT NULL DEFAULT '' COMMENT '供应商地址',
+  `ip` varchar(255) NOT NULL,
   `hospital_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '医院id',
   `create_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
@@ -5411,8 +5412,8 @@ CREATE TABLE `dzm_his_supplier` (
 -- ----------------------------
 -- Records of dzm_his_supplier
 -- ----------------------------
-INSERT INTO `dzm_his_supplier` VALUES ('1', '协和医院', '王大锤', '15100010002', '010-00010002', '622021706004742103', '沭阳', '1', '1511949274', '1543231235');
-INSERT INTO `dzm_his_supplier` VALUES ('2', '中心医院', '李斯', '13776848127', '0527-83856745', '234342', '沭阳', '1', '1543231196', '0');
+INSERT INTO `dzm_his_supplier` VALUES ('1', '协和医院', '王大锤', '15100010002', '010-00010002', '622021706004742103', '沭阳', '127.0.0.1', '1', '1511949274', '1543231235');
+INSERT INTO `dzm_his_supplier` VALUES ('2', '中心医院', '李斯', '13776848127', '0527-83856745', '234342', '沭阳', '127.0.0.1', '1', '1543231196', '0');
 
 -- ----------------------------
 -- Table structure for dzm_his_transaction_record
@@ -5468,8 +5469,8 @@ CREATE TABLE `dzm_his_user` (
 -- ----------------------------
 -- Records of dzm_his_user
 -- ----------------------------
-INSERT INTO `dzm_his_user` VALUES ('3', '王大锤', '$2y$12$VM4DTs.gN1ytNhC7YfZY9OMkrriWatYYIeLLViL/5.8hFXh.oNG5K', '', '男', '24', '0', '11', '2824030344@qq.com', '13776848129', '', 'Public/home/pic/33.jpg', '1542699872', '1544332093', '0.00');
-INSERT INTO `dzm_his_user` VALUES ('5', '', '$2y$12$s5rpkeZjTSlBP5qiWklI9OMZsBAOYQF0Uq3M30bxPtdgc9/cXd8tK', '', '', '', '0', '', '', '13141589223', '127.0.0.1', '', '1544346727', '1544346727', '0.00');
+INSERT INTO `dzm_his_user` VALUES ('3', '王大锤', '$2y$12$VM4DTs.gN1ytNhC7YfZY9OMkrriWatYYIeLLViL/5.8hFXh.oNG5K', '', '男', '24', '0', '11', '2824030344@qq.com', '13776848129', '127.0.0.1', 'Public/home/pic/33.jpg', '1542699872', '1544332093', '0.00');
+INSERT INTO `dzm_his_user` VALUES ('5', '王大锤1', '$2y$12$s5rpkeZjTSlBP5qiWklI9OMZsBAOYQF0Uq3M30bxPtdgc9/cXd8tK', '', '', '', '0', '', '', '13141589223', '127.0.0.1', '', '1544346727', '1544346727', '0.00');
 
 -- ----------------------------
 -- Table structure for dzm_his_video
