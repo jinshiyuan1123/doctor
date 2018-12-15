@@ -87,32 +87,31 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
 			</ul>
 			</div>
 			<div class="clearfix">
-				<?php if(is_array($res)): foreach($res as $key=>$val): ?><a href="<?php echo ($val["sicktime"]); ?>">222</a>
-				<?php if($val["sicktime"] == '健康'): if($val["ishospital"] == '是'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
+				<?php if(is_array($res)): foreach($res as $key=>$val): if($val["sicktime"] == '健康'): if($val["ishospital"] == '1'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
 				<video width="250" height="300" controls autobuffer>
 				<source src="/<?php echo ($val["videourl"]); ?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
 				</video>
 				</a><?php endif; endif; ?>
 				&nbsp;&nbsp;
-				<?php if($val["sicktime"] == '养生'): if($val["ishospital"] == '是'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
+				<?php if($val["sicktime"] == '养生'): if($val["ishospital"] == '1'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
 				<video width="250" height="300" controls autobuffer>
 				<source src="/<?php echo ($val["videourl"]); ?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
 				</video>
 				</a><?php endif; endif; ?>
 				&nbsp;&nbsp;
-				<?php if($val["sicktime"] == '减肥'): if($val["ishospital"] == '是'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
+				<?php if($val["sicktime"] == '减肥'): if($val["ishospital"] == '1'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
 				<video width="250" height="300" controls autobuffer>
 				<source src="/<?php echo ($val["videourl"]); ?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
 				</video>
 				</a><?php endif; endif; ?>
 				&nbsp;&nbsp;
-				<?php if($val["sicktime"] == '生活'): if($val["ishospital"] == '是'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
+				<?php if($val["sicktime"] == '生活'): if($val["ishospital"] == '1'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
 				<video width="250" height="300" controls autobuffer>
 				<source src="/<?php echo ($val["videourl"]); ?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
 				</video>
 				</a><?php endif; endif; ?>
 				&nbsp;&nbsp;
-				<?php if($val["sicktime"] == '自拍拍'): if($val["ishospital"] == '是'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
+				<?php if($val["sicktime"] == '自拍拍'): if($val["ishospital"] == '1'): ?><a href="<?php echo U('home/index/videolist');?>?id=<?php echo ($val["id"]); ?>" target="_blank">
 				<video width="250" height="300" controls autobuffer>
 				<source src="/<?php echo ($val["videourl"]); ?>" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
 				</video>
