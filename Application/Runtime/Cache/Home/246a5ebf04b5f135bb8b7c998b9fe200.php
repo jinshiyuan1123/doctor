@@ -59,10 +59,10 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
 			   </div>			   
 			   <ul class="menulist hidden-xs">
 				<li><a href="<?php echo U('home/index/index');?>">首页</a></li>
-				<li ><a href="">健康</a></li>			
-				<li ><a href="">养生</a></li>	
-				<li ><a href="">减肥</a></li>	
-				<li ><a href="">生活</a></li>
+				<li ><a href="<?php echo U('home/index/videos');?>?sicktime=<?php echo urldecode('健康');?>">健康</a></li>			
+				<li ><a href="<?php echo U('home/index/videos');?>?sicktime=<?php echo urldecode('养生');?>">养生</a></li>	
+				<li ><a href="<?php echo U('home/index/videos');?>?sicktime=<?php echo urldecode('减肥');?>">减肥</a></li>	
+				<li ><a href="<?php echo U('home/index/videos');?>?sicktime=<?php echo urldecode('生活');?>">生活</a></li>
 
 				<li class="act6"><a href="<?php echo U('home/index/zipai');?>" target="_blank">我拍拍</a></li>
 

@@ -52,14 +52,19 @@ function uaredirect(f){try{if(document.getElementById("bdmark")!=null){return}va
 					<img class="logolist "  style="background-size: cover;width: 120px;height: 50px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo">										  
 				</div>	
 				<div class="search"> 
-<form id="ff-search" role="search" action="http://sou.zzw0527.com/dianying/seacher.php?wd=" method="get">
+<form id="ff-search" role="search" action="" method="get">
                             <input class="form-control" placeholder="输入影片名称回车搜索..." type="text" id="ff-wd" name="wd" required="">
                             <input type="submit" class="hide"><a href="javascript:" class="btns" title="搜索" onClick="$('#ff-search').submit();"><i class="icon iconfont icon-sou"></i></a>
                   </form>
 			   </div>			   
 			   <ul class="menulist hidden-xs">
 					<li><a href="<?php echo U('home/index/index');?>">首页</a></li>
-					<li ><a href="http://sou.zzw0527.com/dianying/movie.php">健康</a></li>					<li ><a href="http://sou.zzw0527.com/dianying/tv.php">养生</a></li>					<li ><a href="http://sou.zzw0527.com/dianying/dongman.php">减肥</a></li>					<li ><a href="http://sou.zzw0527.com/dianying/zongyi.php">生活</a></li>
+					<li ><a href="<?php echo U('home/index/videos');?>?sicktime=<?php echo urldecode('健康');?>">健康</a></li>				
+					<li ><a href="<?php echo U('home/index/videos');?>?sicktime=<?php echo urldecode('养生');?>">养生</a>
+						</li>	
+										
+						<li ><a href="<?php echo U('home/index/videos');?>?sicktime=<?php echo urldecode('减肥');?>">减肥</a></li>
+						<li ><a href="<?php echo U('home/index/videos');?>?sicktime=<?php echo urldecode('生活');?>">生活</a></li>
 										<li class="act6"><a href="<?php echo U('home/index/zipai');?>" target="_blank">我拍拍</a></li>
 
 				</ul>													 
