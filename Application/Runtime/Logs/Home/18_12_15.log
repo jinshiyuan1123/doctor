@@ -2262,3 +2262,2122 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
 
+[ 2018-12-15T12:20:17+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000396s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002329s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0289s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001425s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001542s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2018-12-15T12:27:32+08:00 ] 127.0.0.1 /index.php/home/index/articlelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2018-12-15T12:27:45+08:00 ] 127.0.0.1 /index.php/home/index/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000349s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001735s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0481s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `dzm_his_doctorlist`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2018-12-15T13:20:01+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000352s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002083s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0287s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2018-12-15T13:21:24+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000461s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002300s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001188s ]
+
+[ 2018-12-15T13:22:08+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000548s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002678s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001141s ]
+
+[ 2018-12-15T13:22:30+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000280s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001486s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0276s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2018-12-15T13:23:48+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000529s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002610s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0483s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2018-12-15T13:23:58+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000580s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002637s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001006s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2018-12-15T13:24:07+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000363s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002076s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2018-12-15T13:24:34+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001756s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001659s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001742s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2018-12-15T13:24:45+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000373s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002105s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2018-12-15T13:24:55+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000436s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002560s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0596s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002408s ]
+
+[ 2018-12-15T13:25:09+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002323s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000897s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005627s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0333s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001616s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001716s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2018-12-15T13:25:20+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000425s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002080s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001446s ]
+
+[ 2018-12-15T13:25:27+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000452s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002278s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001666s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001765s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2018-12-15T13:25:51+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000265s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0403s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.1147s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2018-12-15T13:26:01+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000500s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002706s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001734s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001833s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2018-12-15T13:26:19+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000400s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002231s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0391s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2018-12-15T13:26:46+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000348s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002773s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0471s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0395s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2018-12-15T13:27:08+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001567s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005912s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005783s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005979s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2018-12-15T14:00:13+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000726s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003640s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001504s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001610s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2018-12-15T14:01:24+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000361s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001688s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002795s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002964s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2018-12-15T14:03:31+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000625s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003111s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0492s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001740s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001842s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.135317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2018-12-15T14:04:29+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000447s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003071s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002899s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003030s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001723s ]
+
+[ 2018-12-15T14:10:40+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000826s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003827s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001842s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001943s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001201s ]
+
+[ 2018-12-15T14:10:58+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001178s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000849s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004856s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001330s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2018-12-15T14:12:00+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000712s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003744s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001270s ]
+
+[ 2018-12-15T14:12:19+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000480s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002318s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2018-12-15T14:12:43+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000775s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003280s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0396s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001453s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001528s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2018-12-15T14:14:22+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000579s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002939s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002371s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002476s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2018-12-15T14:16:26+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000465s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003108s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0287s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003434s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003562s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2018-12-15T14:16:40+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001680s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001006s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2018-12-15T14:22:24+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000958s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004817s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0292s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001435s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001567s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2018-12-15T14:22:57+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000402s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002029s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003496s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003636s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.151545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.151668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001903s ]
+
+[ 2018-12-15T14:24:16+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000613s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003008s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003351s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003615s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001302s ]
+
+[ 2018-12-15T14:24:38+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000562s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002680s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002753s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002938s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2018-12-15T14:25:55+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000404s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002009s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0361s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001249s ]
+
+[ 2018-12-15T14:26:45+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001818s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.1480s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2018-12-15T14:27:56+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000540s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002485s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001167s ]
+
+[ 2018-12-15T14:28:35+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000600s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002621s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002818s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002990s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001317s ]
+
+[ 2018-12-15T14:30:41+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000706s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003283s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001903s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2018-12-15T14:32:07+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000630s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002920s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-12-15T14:33:55+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001103s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004621s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001299s ]
+
+[ 2018-12-15T14:34:58+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000411s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002151s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001406s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001482s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2018-12-15T14:35:30+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000431s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002244s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2018-12-15T14:35:50+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000379s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002103s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0242s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001901s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001995s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2018-12-15T14:36:18+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000672s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003447s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0841s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001633s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001728s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2018-12-15T14:36:32+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000357s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001916s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001724s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001825s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053739s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2018-12-15T14:36:53+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000402s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002330s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0307s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001858s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001937s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002928s ]
+
+[ 2018-12-15T14:37:02+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000377s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002103s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0590s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0618s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001457s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001551s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2018-12-15T14:37:32+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001583s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0423s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003399s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001212s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001326s ]
+
+[ 2018-12-15T14:37:42+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000576s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002665s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0274s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0465s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001852s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001930s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001686s ]
+
+[ 2018-12-15T14:37:57+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000364s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002028s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0285s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001919s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002031s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001452s ]
+
+[ 2018-12-15T14:38:05+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000338s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001662s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001765s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2018-12-15T14:38:11+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001708s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001524s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001621s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2018-12-15T14:38:19+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000346s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001882s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0559s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001760s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001855s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2018-12-15T14:39:40+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000375s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002256s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001461s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001882s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2018-12-15T14:40:47+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000474s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002887s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004318s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004407s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000855s ]
+
+[ 2018-12-15T14:42:22+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000387s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002023s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0387s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001578s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001697s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001537s ]
+
+[ 2018-12-15T14:42:34+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000704s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003287s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001346s ]
+
+[ 2018-12-15T14:42:43+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000413s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002113s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2018-12-15T14:42:53+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000400s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004218s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2018-12-15T14:43:40+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000576s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004333s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 110 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001213s ]
+

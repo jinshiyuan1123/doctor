@@ -1,4 +1,48 @@
-<!-- MAIN -->
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html lang="en">
+<head>
+    <link href="/Public/home/favicon.ico" rel="shortcut icon">
+    <title><?php echo C('TITLE');?></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="/Public/his/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Public/his/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Public/his/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="/Public/his/vendor/chartist/css/chartist-custom.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/Public/his/css/main.css?<?php echo time();?>">
+    <!-- <link rel="stylesheet" type="text/css" href="http://www.zzw0527.com/testlist/main.css?<?php echo time();?>"> -->
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="/Public/his/css/demo.css?<?php echo time();?>">
+    <!-- public -->
+    <link rel="stylesheet" href="/Public/his/css/public.css?<?php echo time();?>">
+
+    <!-- ICONS >
+    <link rel="apple-touch-icon" sizes="76x76" href="/Public/his/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="__PUBLIC_ROBOT__/img/favicon.png"-->
+    <link rel="stylesheet" type="text/css" href="/Public/his/vendor/datetimepicker/jquery.datetimepicker.css"/>
+
+    <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
+    <script src="/Public/his/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Public/his/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/Public/his/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="/Public/his/vendor/chartist/js/chartist.min.js"></script>
+    <script src="/Public/his/scripts/klorofil-common.js"></script>
+    <script src="/Public/his/vendor/datetimepicker/jquery.datetimepicker.js"></script>
+    <script src="/Public/his/js/public.js?<?php echo time();?>"></script>
+    <script src="/Public/his/js/check.form.js?<?php echo time();?>"></script>
+    <script src="/Public/his/vendor/layer/layer.js"></script>
+    <!--<script src="/Public/his/js/echarts.min.js"></script>-->
+
+
+</head>
+<body>
+
+
+<!-- WRAPPER -->
+    <!-- MAIN -->
 <div class="main">
     <!-- MAIN CONTENT -->
     <div class="main-content">
@@ -16,7 +60,7 @@
                             </div>
                             <button type="button" class="btn btn-primary" id="search-doctor">查询</button>
                             <button type="button" class="btn btn-primary r doctorAddBtn">添加医生</button>
-                            <button type="button" class="btn btn-default r mr10 disabledNumberBtn">已禁用人数{$remove_count}</button>
+                            <button type="button" class="btn btn-default r mr10 disabledNumberBtn">已禁用人数<?php echo ($remove_count); ?></button>
                         </div>
                         <div class="pd10">
                             <table class="table drugsTable ftc" id="userList">
@@ -36,29 +80,23 @@
                                 </thead>
                                 <tbody>
                                 <?php if (!empty($list)){?>
-                                <foreach name="list" item="v" key="k">
-                                <tr>
-                                    <td>{$v.uid}</td>
-                                    <td>{$v.true_name}</td>
-                                    <if condition="$v.sex eq 1">
-                                        <td>男</td>
-                                     <elseif condition="$v.sex eq 2"/>
+                                <?php if(is_array($list)): foreach($list as $k=>$v): ?><tr>
+                                    <td><?php echo ($v["uid"]); ?></td>
+                                    <td><?php echo ($v["true_name"]); ?></td>
+                                    <?php if($v["sex"] == 1): ?><td>男</td>
+                                     <?php elseif($v["sex"] == 2): ?>
                                         <td>女</td>
-                                      <else/>
-                                        <td>--</td>
-                                    </if>
-                                    <if condition="$v.age eq 0">
-                                         <td>--</td>
-                                    <else/>
-                                        <td>{$v.age}</td>
-                                    </if>
-                                    <td>{$v.user_name}</td>
-                                    <td>{$v.department_name}</td>
-                                    <td>{$v.title}</td>
-                                    <td>{$v.create_time|date="Y-m-d",###}</td>
-                                    <td><button type="button" uid="{$v.uid}" class="btn btn-success btn-sm doctorEditBtn">编辑</button> <button type="button" uid="{$v.uid}"  class="btn btn-default btn-sm deleteBtn">移除</button></td>
-                                </tr>
-                                </foreach>
+                                      <?php else: ?>
+                                        <td>--</td><?php endif; ?>
+                                    <?php if($v["age"] == 0): ?><td>--</td>
+                                    <?php else: ?>
+                                        <td><?php echo ($v["age"]); ?></td><?php endif; ?>
+                                    <td><?php echo ($v["user_name"]); ?></td>
+                                    <td><?php echo ($v["department_name"]); ?></td>
+                                    <td><?php echo ($v["title"]); ?></td>
+                                    <td><?php echo (date("Y-m-d",$v["create_time"])); ?></td>
+                                    <td><button type="button" uid="<?php echo ($v["uid"]); ?>" class="btn btn-success btn-sm doctorEditBtn">编辑</button> <button type="button" uid="<?php echo ($v["uid"]); ?>"  class="btn btn-default btn-sm deleteBtn">移除</button></td>
+                                </tr><?php endforeach; endif; ?>
                                 <?php }else{?>
                                   <tr><td colspan="7" height="30" align="center" class="f_red" >暂无数据</td></tr>
                                 <?php } ?>
@@ -86,18 +124,16 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <foreach name="roleList['list']" item="v">
-                                <tr>
-                                    <td>{$v.id}</td>
-                                    <td>{$v.title}</td>
-                                    <td><a href="{:U('AuthGroup/ruleGroup',array('role_id'=>$v[id]))}" class="btn btn-primary btn-sm">查看权限</a></td>
-                                </tr>
-                                </foreach>
+                                <?php if(is_array($roleList['list'])): foreach($roleList['list'] as $key=>$v): ?><tr>
+                                    <td><?php echo ($v["id"]); ?></td>
+                                    <td><?php echo ($v["title"]); ?></td>
+                                    <td><a href="<?php echo U('AuthGroup/ruleGroup',array('role_id'=>$v[id]));?>" class="btn btn-primary btn-sm">查看权限</a></td>
+                                </tr><?php endforeach; endif; ?>
                                 </tbody>
                             </table>
                         </div>
                         <div class="paging mt20 mb20 ftc" id="roleListPage">
-                           {$roleList.pager_str}
+                           <?php echo ($roleList["pager_str"]); ?>
                         </div>
                     </li>
                 </ul>
@@ -123,9 +159,7 @@
                 </span>
                 <select class="form-control" id="department">
                     <option value="0">请选择医院</option>
-                    <foreach name="memberlist" item="v">
-                    <option value="{$v.supplier_name}">{$v.supplier_name}</option>
-                    </foreach>
+                    <?php if(is_array($memberlist)): foreach($memberlist as $key=>$v): ?><option value="<?php echo ($v["supplier_name"]); ?>"><?php echo ($v["supplier_name"]); ?></option><?php endforeach; endif; ?>
                 </select>
             </div>
             <div class="input-group listSeaForm mt10 wb100">
@@ -134,9 +168,7 @@
 				</span>
                 <select class="form-control" id="department_id">
                     <option value="0">请选择科室</option>
-                    <foreach name="departmentList" item="v">
-                    <option value="{$v.did}">{$v.department_name}</option>
-                    </foreach>
+                    <?php if(is_array($departmentList)): foreach($departmentList as $key=>$v): ?><option value="<?php echo ($v["did"]); ?>"><?php echo ($v["department_name"]); ?></option><?php endforeach; endif; ?>
                 </select>
             </div>
             <div class="input-group listSeaForm mt10 wb100">
@@ -144,9 +176,7 @@
 					<span class="btn">级别：</span>
 				</span>
                 <select class="form-control" id="rank">
-                <foreach name="rankList" item="v" key="k">
-                    <option value="{$k}">{$v}</option>
-                </foreach>
+                <?php if(is_array($rankList)): foreach($rankList as $k=>$v): ?><option value="<?php echo ($k); ?>"><?php echo ($v); ?></option><?php endforeach; endif; ?>
                 </select>
             </div>
             <div class="input-group listSeaForm mt10 wb100">
@@ -164,20 +194,16 @@
             <div class="mt10">
                 <span>职务：</span>
                 <div class="clearfix">
-                    <foreach name="roleList.list" item="v">
-                    <label class="fancy-checkbox l mr20">
-                        <if condition="$v.id eq 2">
-                            <input type="radio" name="type" value="{$v.id}" checked="checked">
-                            <span>{$v.title}</span>
-                         <elseif condition="$v.id eq 1"/>
+                    <?php if(is_array($roleList["list"])): foreach($roleList["list"] as $key=>$v): ?><label class="fancy-checkbox l mr20">
+                        <?php if($v["id"] == 2): ?><input type="radio" name="type" value="<?php echo ($v["id"]); ?>" checked="checked">
+                            <span><?php echo ($v["title"]); ?></span>
+                         <?php elseif($v["id"] == 1): ?>
 
-                         <else />
-                            <input type="radio" name="type" value="{$v.id}">
-                            <span>{$v.title}</span>
-                        </if>
+                         <?php else: ?>
+                            <input type="radio" name="type" value="<?php echo ($v["id"]); ?>">
+                            <span><?php echo ($v["title"]); ?></span><?php endif; ?>
 
-                    </label>
-                    </foreach>
+                    </label><?php endforeach; endif; ?>
                 </div>
             </div>
                <button type="button" class="btn btn-primary wb100" id="addUser">保存</button>
@@ -248,9 +274,7 @@
 				</span>
                 <select class="form-control" id="b-department_id">
                     <option value="0">请选择科室</option>
-                    <foreach name="departmentList" item="v">
-                        <option value="{$v.did}">{$v.department_name}</option>
-                    </foreach>
+                    <?php if(is_array($departmentList)): foreach($departmentList as $key=>$v): ?><option value="<?php echo ($v["did"]); ?>"><?php echo ($v["department_name"]); ?></option><?php endforeach; endif; ?>
                 </select>
             </div>
             <div class="input-group listSeaForm mt10 wb100">
@@ -258,22 +282,16 @@
 					<span class="btn">级别：</span>
 				</span>
                 <select class="form-control" id="b-rank">
-                    <foreach name="rankList" item="v" key="k">
-                        <option value="{$k}">{$v}</option>
-                    </foreach>
+                    <?php if(is_array($rankList)): foreach($rankList as $k=>$v): ?><option value="<?php echo ($k); ?>"><?php echo ($v); ?></option><?php endforeach; endif; ?>
                 </select>
             </div>
             <div class="mt10">
                 <span>职务：</span>
                 <div class="clearfix">
-                    <foreach name="roleList.list" item="v">
-                        <label class="fancy-checkbox l mr20">
-                            <if condition="$v.id neq 1">
-                            <input type="radio" name="b-type" value="{$v.id}" >
-                            <span>{$v.title}</span>
-                            </if>
-                        </label>
-                    </foreach>
+                    <?php if(is_array($roleList["list"])): foreach($roleList["list"] as $key=>$v): ?><label class="fancy-checkbox l mr20">
+                            <?php if($v["id"] != 1): ?><input type="radio" name="b-type" value="<?php echo ($v["id"]); ?>" >
+                            <span><?php echo ($v["title"]); ?></span><?php endif; ?>
+                        </label><?php endforeach; endif; ?>
                 </div>
             </div>
             <div class="mt10 clearfix">
@@ -352,7 +370,7 @@
             var _self  = $(this);
             promptBox('确定删除吗？', function () {
                     var uid =  _self.attr('uid');
-                    $.post('{:U("Member/removeUser")}',{uid:uid},function (data) {
+                    $.post('<?php echo U("Member/removeUser");?>',{uid:uid},function (data) {
                         if(data.status=='success'){
                             remindBox(data.msg);
                             _self.parent().parent().hide();
@@ -421,7 +439,7 @@
                     remindBox('请选择角色');
                     return false;
                 }
-                $.post('{:U("Member/addUser")}',{user_name:user_name,true_name:true_name,
+                $.post('<?php echo U("Member/addUser");?>',{user_name:user_name,true_name:true_name,
                     age:age,department_id:department_id,department:department,rank:rank,type:type},
                     function (data) {
                      if(data.status=='success'){
@@ -442,7 +460,7 @@
 
             var uid = $(this).attr('uid');
          
-            $.get('{:U("Member/editUser")}',{'uid':uid},function (data) {
+            $.get('<?php echo U("Member/editUser");?>',{'uid':uid},function (data) {
                // consoloe.info(data);
                  var user_name = data.mobile;
                  var true_name = data.true_name;
@@ -457,7 +475,7 @@
                  var age = data.age;
 
 
-                 var src = "{:C('UPLOAD_DOCTOR')}"+pic;
+                 var src = "<?php echo C('UPLOAD_DOCTOR');?>"+pic;
 
                  $("#doc-pic").attr('src',pic?src:'/Upload/doctor/doctor_def.jpg');
 
@@ -515,7 +533,7 @@
                 }
 
 
-                $.post("{:U('Member/editUser')}", {
+                $.post("<?php echo U('Member/editUser');?>", {
                     true_name: true_name, sex: sex, department_id: department_id,age:age,
                 rank:rank,introduction:introduction,strong:strong,type:type,uid:uid,picture:picture,password:password},function (data) {
                         if(data.status=='success'){
@@ -544,7 +562,7 @@
                   return false;
               }
             $('#RemoveUserList tbody').html("");
-            $.post("{:U('Member/RemoveUserList')}",{},function (data) {
+            $.post("<?php echo U('Member/RemoveUserList');?>",{},function (data) {
                 var html = "";
                 $.each(data.list,function (i,val) {
                      html += "<tr>";
@@ -588,7 +606,7 @@
         //重置医生密码
         $("#b-reset-password").click(function () {
             var uid = $("#b-uid").val();
-            $.post("{:U('Member/resetPassword')}",{uid:uid},function (data) {
+            $.post("<?php echo U('Member/resetPassword');?>",{uid:uid},function (data) {
                 console.log(data);
                  if(data.status=='success'){
                      remindBox('重置成功');
@@ -602,7 +620,7 @@
     //点击启用后重载页面
           $(document).on('click', '.is_start', function (){
               var uid = $(this).attr('uid');
-              $.post("{:U('Member/startUser')}",{uid:uid},function (data) {
+              $.post("<?php echo U('Member/startUser');?>",{uid:uid},function (data) {
                   if(data.status='success'){
                       remindBox('启用成功');
                       window.location.reload();
@@ -668,7 +686,7 @@
 
     //搜索加载列表
     function RemoveUserList(search, page) {
-        $.post("{:U('Member/RemoveUserList')}",
+        $.post("<?php echo U('Member/RemoveUserList');?>",
             { "search": search, 'p':page, 'pagesize':10,'action':'removeUserList'},function (data) {
             console.log(data.list);
 
@@ -709,7 +727,7 @@
     }
     //医生分页列表函数
     function userList(search, page) {
-        $.post("{:U('Member/userList')}",
+        $.post("<?php echo U('Member/userList');?>",
             { "search": search, 'p':page, 'pagesize':10,'action':'userList'},
             function (data) {
                 if (data.status=='success') {
@@ -790,7 +808,7 @@
     }
     //职位分页函数
     function roleList(search, page) {
-        $.post("{:U('Member/userList')}",
+        $.post("<?php echo U('Member/userList');?>",
             { "search": search, 'p':page, 'pagesize':10,'action':'roleList'},
             function (data) {
             //console.log(data);
@@ -832,7 +850,7 @@
         var formDate  = new FormData($("#uploadForm")[0]);
 
         $.ajax({
-            url:"{:U('Member/uploadDocPic')}",
+            url:"<?php echo U('Member/uploadDocPic');?>",
             type:'POST',
             data:formDate,
             async:false,
@@ -855,3 +873,12 @@
 
 
 </script>
+<!-- END WRAPPER -->
+
+<script type="text/javascript">
+    if(parent.endLoad){
+        parent.endLoad();
+    }
+</script>
+</body>
+</html>

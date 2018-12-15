@@ -566,6 +566,53 @@
 
 
 
+                     
+
+    <link href="/Public/home/css/wens/index.css" rel="stylesheet" type="text/css">
+    <script src="/Public/home/js/jquery.1.12.0.js" type="text/javascript"></script>
+
+<link type="text/css" rel="stylesheet" href="/Public/home/css/wens/yyk_search.css"/>
+
+<div class="" id="yyk_header_14">
+  
+        
+        <input id="labTypeSpelling" type="hidden" value=""></input>
+        <input id="diseaseSpelling" type="hidden" value=""></input>
+        <input id="diseaseId" type="hidden" value=""></input>
+        <input id="areaSpelling" type="hidden" value="suqian"></input>
+        <input id="condition" type="hidden" value=""></input>
+        <input id="hexId" type="hidden" value=""></input>
+        <input id="keyName" type="hidden" value=""></input>
+        <input id="areaId" type="hidden" value="3213"></input>
+        <input id="labTypeId" type="hidden" value=""></input>
+        <input id="showSearchDown" type="hidden" value="1"></input>
+       
+   
+</div>
+
+    <div class="index">
+        <!-- data-banner 为背景数据 -->
+        <div class="index-top" style="">
+            <div class="banner-page"></div>
+            <div class="order" id="order">
+                <div class="tit"><b>快速预约</b><span><a href="/user/yuyue.html" target="_blank">挂号记录</a>/<a href="/user/yuyue.html" target="_blank">退号</a></span></div>
+                <div class="item"><b>城市</b><span class="sort"></span><span class="sort"></span></div>
+                <div class="item"><b>医院</b><span></span></div>
+                <div class="item"><b>科室</b><span></span></div>
+                <div class="btn"><a href="" target="_self">立即预约</a></div>
+                <div class="count">已收录全国<b>189个</b>城市，<b>2050家</b>医院</div>
+                <div class="sel" style="display:none;"><ul class="sel-0 clearfix"></ul><ul class="sel-1 clearfix"></ul><ul class="sel-2 clearfix"></ul><ul class="sel-3 learfix"></ul></div>
+            </div>
+        </div>
+        <!-- 假日提醒 -->
+
+         
+        <script src="/Public/home/js/orderbox.js"></script>
+       
+
+    </div>
+
+
                 </div>
                
                   
@@ -582,6 +629,16 @@
 </div>
 
 <div class="main-ctn g-clear">
+   <div class="g-grid-right"> 
+        <div class="freeconsultation">
+            <a href="/internet/hospital" class="url-wrap" monitor="home,ask_more,find_spask" target="_blank"><img src="/Public/home/images/1111.png" alt=""></a>
+            <a href="/internet/hospital" class="gbn gbt-orange" monitor="home,ask_more,find_spask" target="_blank">找专家问诊</a>
+           
+        </div>
+        <a target="_blank" href="" class="volunteer seo-anchor-text" onmousedown="return _smartlog(this,'JRYZ')" monitor="home_activity,todayask,todayask">
+            今日义诊
+        </a>    
+    </div>
     <div class="g-grid-left">
         <div class="consult-bar">
             <div class="consult-fm">
@@ -1348,7 +1405,7 @@
 
         </div>
     </div>
-    <div class="g-grid-right"> 
+    <!-- <div class="g-grid-right"> 
         <div class="freeconsultation">
             <a href="/internet/hospital" class="url-wrap" monitor="home,ask_more,find_spask" target="_blank"><img src="/Public/home/images/1111.png" alt=""></a>
             <a href="/internet/hospital" class="gbn gbt-orange" monitor="home,ask_more,find_spask" target="_blank">找专家问诊</a>
@@ -1359,7 +1416,8 @@
         <a target="_blank" href="" class="volunteer seo-anchor-text" onmousedown="return _smartlog(this,'JRYZ')" monitor="home_activity,todayask,todayask">
             今日义诊
         </a>    
-    </div>
+    </div> -->
+
     </div>
     </div> 
 <script>
