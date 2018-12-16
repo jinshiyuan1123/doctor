@@ -7340,9 +7340,9 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
             var me = this;
 
             me.fireEvent('beforesetcontent', html);
-            var root = UE.htmlparser(html);
-            me.filterInputRule(root);
-            html = root.toHtml();
+            // var root = UE.htmlparser(html);
+            // me.filterInputRule(root);
+            // html = root.toHtml();
 
             me.body.innerHTML = (isAppendTo ? me.body.innerHTML : '') + html;
 
@@ -17766,7 +17766,7 @@ UE.plugins['video'] = function (){
             for(var i=0,vi,len = videoObjs.length;i<len;i++){
                 vi = videoObjs[i];
                 cl = (type == 'upload' ? 'edui-upload-video video-js vjs-default-skin':'edui-faked-video');
-                html.push(creatInsertStr( vi.url, vi.width || 420,  vi.height || 280, id + i, null, cl, 'image'));
+                html.push(creatInsertStr( vi.url, vi.width || 420,  vi.height || 280, id + i, null, cl, 'video'));
             }
             me.execCommand("inserthtml",html.join(""),true);
             var rng = this.selection.getRange();
@@ -23653,17 +23653,24 @@ UE.plugin.register('music', function (){
     var me = this;
     function creatInsertStr(url,width,height,align,cssfloat,toEmbed){
         return  !toEmbed ?
-                '<img ' +
-                    (align && !cssfloat? 'align="' + align + '"' : '') +
-                    (cssfloat ? 'style="float:' + cssfloat + '"' : '') +
-                    ' width="'+ width +'" height="' + height + '" _url="'+url+'" class="edui-faked-music"' +
-                    ' src="'+me.options.langPath+me.options.lang+'/images/music.png" />'
+                '<img alt="Ueditor上传本地音频MP3" '="" +="" (align="" &&="" !cssfloat?="" 'align="' + align + '" :="" '')="" (cssfloat="" ?="" ''="" width="'+ width +'" height="' + height + '" _url="'+url+'" class="edui-faked-music" src="https://segmentfault.com/a/'+me.options.langPath+me.options.lang+'/images/music.png">'
             :
-            '<embed type="application/x-shockwave-flash" class="edui-faked-music" pluginspage="http://www.macromedia.com/go/getflashplayer"' +
-                ' src="' + url + '" width="' + width  + '" height="' + height  + '" '+ (align && !cssfloat? 'align="' + align + '"' : '') +
-                (cssfloat ? 'style="float:' + cssfloat + '"' : '') +
-                ' wmode="transparent" play="true" loop="false" menu="false" allowscriptaccess="never" allowfullscreen="true" >';
+            '<audio class="edui-faked-music" controls="controls" src="'+ url+'" width="'+width+'" height="'+height+'" '+(align&&!cssfloat?'align="'+align+'" ':"")+(cssfloat?'':"")+'=""></audio>';
+            // '<embed type="application/x-shockwave-flash" class="edui-faked-music" pluginspage="http://www.macromedia.com/go/getflashplayer" '="" +="" src="' + url + '" width="' + width  + '" height="' + height  + '" '+="" (align="" &&="" !cssfloat?="" 'align="' + align + '" :="" '')="" (cssfloat="" ?="" ''="" wmode="transparent" play="true" loop="false" menu="false" allowscriptaccess="never" allowfullscreen="true">';
     }
+    // function creatInsertStr(url,width,height,align,cssfloat,toEmbed){
+    //     return  !toEmbed ?
+    //             '<img ' +
+    //                 (align && !cssfloat? 'align="' + align + '"' : '') +
+    //                 (cssfloat ? 'style="float:' + cssfloat + '"' : '') +
+    //                 ' width="'+ width +'" height="' + height + '" _url="'+url+'" class="edui-faked-music"' +
+    //                 ' src="'+me.options.langPath+me.options.lang+'/images/music.png" />'
+    //         :
+    //         '<embed type="application/x-shockwave-flash" class="edui-faked-music" pluginspage="http://www.macromedia.com/go/getflashplayer"' +
+    //             ' src="' + url + '" width="' + width  + '" height="' + height  + '" '+ (align && !cssfloat? 'align="' + align + '"' : '') +
+    //             (cssfloat ? 'style="float:' + cssfloat + '"' : '') +
+    //             ' wmode="transparent" play="true" loop="false" menu="false" allowscriptaccess="never" allowfullscreen="true" >';
+    // }
     return {
         outputRule: function(root){
             utils.each(root.getNodesByTagName('img'),function(node){

@@ -211,28 +211,46 @@
 <li data-subnav="sub-nav-welife"><a target="_blank" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">
 健康</a>
 <ul>
-    <li><a href="#">二级菜单</a></li>
-    <li><a href="#">二级菜单</a></li>
-    <li><a href="#">二级菜单</a></li>
+    <li><a href="#" target="_blank">养生</a></li>
+    <li><a href="#" target="_blank">健康</a></li>
+    <li><a href="#" target="_blank">两性</a></li>
+    <li><a href="#" target="_blank">减肥</a></li>
+    <li><a href="#" target="_blank">美容</a></li>
+    <li><a href="#" target="_blank">饮食</a></li>
+    <li><a href="#" target="_blank">母婴</a></li>
+    <li><a href="#" target="_blank">运动</a></li>
+    <li><a href="#" target="_blank">百科</a></li>
 </ul>
 </li>
 
 
-<li><a target="_blank" href="#" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">医药直通车</a></li>
+<li><a target="_blank" href="#" target="_blank" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">医药直通车</a>
+<ul>
+    <li><a href="#" target="_blank">中药材</a></li>
+    <li><a href="#" target="_blank">中药饮片</a></li>
+    <li><a href="#" target="_blank">中成药</a></li>
+    <li><a href="#" target="_blank">化学药品</a></li>
+    <li><a href="#" target="_blank">生物制品</a></li>
+    <li><a href="#" target="_blank">外用剂</a></li>
+    <li><a href="#" target="_blank">保健品</a></li>
+  
+</ul>	
+</li>
   <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">医疗器械</a>
 <ul>
-    <li><a href="#">二级菜单</a></li>
-    <li><a href="#">二级菜单</a></li>
-    <li><a href="#">二级菜单</a></li>
+	 <li><a href="#" target="_blank">保健器材</a></li>
+    <li><a href="#" target="_blank">康复设备</a></li>
+    <li><a href="#" target="_blank">护理设备</a></li>
+    <li><a href="#" target="_blank">医疗器械</a></li>
+    <li><a href="#" target="_blank">电子仪器</a></li>
+    <li><a href="#" target="_blank">分析仪器</a></li>
+    <li><a href="#" target="_blank">一次性用品</a></li>
+   
 </ul>
   </li>
 
    <li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">宣传耗材</a>
-   	<ul>
-                    <li><a href="#">二级菜单</a></li>
-                    <li><a href="#">二级菜单</a></li>
-                    <li><a href="#">二级菜单</a></li>
-                </ul>
+
    </li>
 
 
@@ -242,36 +260,63 @@
 <li class="hot">
     <a  target="_blank" href="<?php echo U('home/index/hospital');?>" >慈善</a>
     <ul>
-    <li><a href="#">二级菜单</a></li>
-    <li><a href="#">二级菜单</a></li>
-    <li><a href="#">二级菜单</a></li>
+    <li><a href="#" target="_blank">求助</a></li>
+    <li><a href="#" target="_blank">捐助</a></li>
+    <li><a href="#" target="_blank">活动</a></li>
+    <li><a href="#" target="_blank">公开</a></li>
+    
 </ul>
 </li>
 <li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">健康视频</a>
 	<ul>
-    <li><a href="#">二级菜单</a></li>
-    <li><a href="#">二级菜单</a></li>
-    <li><a href="#">二级菜单</a></li>
+    <li><a href="#" target="_blank">健康</a></li>
+    <li><a href="#" target="_blank">养生</a></li>
+    <li><a href="#" target="_blank">减肥</a></li>
+     <li><a href="#" target="_blank">生活</a></li>
+    <li><a href="#" target="_blank">饮食</a></li>
+  
 </ul>
 </li>
 <li><a target="_blank" target="_blank" href="<?php echo U('home/index/ask');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,preciseorder">搞笑视频</a>
-	<ul>
-    <li><a href="#">二级菜单</a></li>
-    <li><a href="#">二级菜单</a></li>
-    <li><a href="#">二级菜单</a></li>
-</ul>
+	
 </li>
 
 
 
-  <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">优选音乐</a></li>
+  <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">优选音乐</a>
+  	<ul>
+    <li><a href="#" target="_blank">演唱会</a></li>
+    <li><a href="#" target="_blank">影视</a></li>
+    <li><a href="#" target="_blank">校园</a></li>
+    <li><a href="#" target="_blank">儿歌</a></li>
+    <li><a href="#" target="_blank">网络</a></li>
+    <li><a href="#" target="_blank">外语</a></li>
+    <li><a href="#" target="_blank">怀旧</a></li>
+    <li><a href="#" target="_blank">摇滚</a></li>
+    <li><a href="#" target="_blank">流行</a></li>
+    <li><a href="#" target="_blank">情感</a></li>
+    <li><a href="#" target="_blank">民谣</a></li>
+    <li><a href="#" target="_blank">专辑</a></li>
+    <li><a href="#" target="_blank">古典</a></li>
+</ul>
+  </li>
 
    <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a>
-   	 <ul>
-                    <li><a href="#">二级菜单</a></li>
-                    <li><a href="#">二级菜单</a></li>
-                    <li><a href="#">二级菜单</a></li>
-                </ul>
+<ul>
+    <li><a href="#" target="_blank">演唱会</a></li>
+    <li><a href="#" target="_blank">影视</a></li>
+    <li><a href="#" target="_blank">校园</a></li>
+    <li><a href="#" target="_blank">儿歌</a></li>
+    <li><a href="#" target="_blank">网络</a></li>
+    <li><a href="#" target="_blank">外语</a></li>
+    <li><a href="#" target="_blank">怀旧</a></li>
+    <li><a href="#" target="_blank">摇滚</a></li>
+    <li><a href="#" target="_blank">流行</a></li>
+    <li><a href="#" target="_blank">情感</a></li>
+    <li><a href="#" target="_blank">民谣</a></li>
+    <li><a href="#" target="_blank">专辑</a></li>
+    <li><a href="#" target="_blank">古典</a></li>
+</ul>
    </li>
 
 
@@ -1872,8 +1917,8 @@ $(document).ready(function(){
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
-                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
-                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                             </li><?php endif; endif; endforeach; endif; ?>
@@ -1898,12 +1943,12 @@ $(document).ready(function(){
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <?php if(is_array($reslist1)): foreach($reslist1 as $key=>$val): if($val['class'] == '谣言粉碎机'): if($val['unit_price'] == '是'): ?><li>
+                                            <?php if(is_array($reslist1)): foreach($reslist1 as $key=>$val): if($val['class'] == '谣言粉碎机'): if($val['unit_price'] == '1'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
-                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
-                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                             </li><?php endif; endif; endforeach; endif; ?>
@@ -1928,12 +1973,12 @@ $(document).ready(function(){
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                             <?php if(is_array($reslist2)): foreach($reslist2 as $key=>$val): if($val['class'] == '中医养生'): if($val['unit_price'] == '是'): ?><li>
+                                             <?php if(is_array($reslist2)): foreach($reslist2 as $key=>$val): if($val['class'] == '中医养生'): if($val['unit_price'] == '1'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
-                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
-                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                             </li><?php endif; endif; endforeach; endif; ?>
@@ -2133,7 +2178,7 @@ $(document).ready(function(){
                         <div class="g-grid-left" style="width:1200px">
                             <div class="news-main g-clear">
                                 <div class="news-item medical-strategy J_medicalStrategy" style="width:300px;border-right: 1px dotted #f9fbf9">
-                                    <h5>医院公开<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=就医攻略" target="_blank">更多</a></li></h5>
+                                    <h5>医院公开<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=医院公开" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="/Public/home/images/1536026134780.jpg" alt="又双叒叕流产！怎么才能保住宝宝？">
@@ -2150,12 +2195,12 @@ $(document).ready(function(){
                                     <div class="focus-list">
                                         <ul>
                                             
-                                          <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '就医攻略'): if($val['unit_price'] == '是'): ?><li>
+                                          <?php if(is_array($reslist4)): foreach($reslist4 as $key=>$val): if($val['class'] == '医院公开'): if($val['unit_price'] == '1'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
-                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
-                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                             </li><?php endif; endif; endforeach; endif; ?>
@@ -2164,7 +2209,7 @@ $(document).ready(function(){
                                 </div>
 
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="width:300px">
-                                    <h5>医院动态</h5>
+                                    <h5>医院动态<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=医院动态" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
@@ -2180,12 +2225,12 @@ $(document).ready(function(){
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '谣言粉碎机'): if($val['unit_price'] == '是'): ?><li>
+                                            <?php if(is_array($reslist5)): foreach($reslist5 as $key=>$val): if($val['class'] == '医院动态'): if($val['unit_price'] == '1'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
-                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
-                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                             </li><?php endif; endif; endforeach; endif; ?>
@@ -2195,7 +2240,7 @@ $(document).ready(function(){
                                 </div>
 
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="">
-                                    <h5>医院健康</h5>
+                                    <h5>医院健康<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=医院健康" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
@@ -2211,12 +2256,12 @@ $(document).ready(function(){
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '谣言粉碎机'): if($val['unit_price'] == '是'): ?><li>
+                                            <?php if(is_array($reslist6)): foreach($reslist6 as $key=>$val): if($val['class'] == '医院健康'): if($val['unit_price'] == '1'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
-                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
-                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                             </li><?php endif; endif; endforeach; endif; ?>
@@ -2231,7 +2276,7 @@ $(document).ready(function(){
                          <div class="g-grid-left" style="width:1200px">
                             <div class="news-main g-clear" style="border-top: 2px solid rgba(180, 183, 178, 0.06);">
                                 <div class="news-item medical-strategy J_medicalStrategy" style="width:300px;border-right: 1px dotted #f9fbf9">
-                                    <h5>医院党建</h5>
+                                    <h5>医院党建<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=就医攻略" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="/Public/home/images/1536026134780.jpg" alt="又双流产！怎么保住宝宝？">
@@ -2248,12 +2293,12 @@ $(document).ready(function(){
                                     <div class="focus-list">
                                         <ul>
                                             
-                                          <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '就医攻略'): if($val['unit_price'] == '是'): ?><li>
+                                          <?php if(is_array($reslist7)): foreach($reslist7 as $key=>$val): if($val['class'] == '医院党建'): if($val['unit_price'] == '1'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
-                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
-                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                             </li><?php endif; endif; endforeach; endif; ?>
@@ -2262,7 +2307,7 @@ $(document).ready(function(){
                                 </div>
 
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="width:300px">
-                                    <h5>医院视频</h5>
+                                    <h5>医院视频<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=医院视频" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
@@ -2278,12 +2323,12 @@ $(document).ready(function(){
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '谣言粉碎机'): if($val['unit_price'] == '是'): ?><li>
+                                            <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '医院视频'): if($val['unit_price'] == '1'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
-                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
-                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                             </li><?php endif; endif; endforeach; endif; ?>
@@ -2293,7 +2338,7 @@ $(document).ready(function(){
                                 </div>
 
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="">
-                                    <h5>我拍拍</h5>
+                                    <h5>我拍拍<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=我拍拍" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
@@ -2309,12 +2354,12 @@ $(document).ready(function(){
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '谣言粉碎机'): if($val['unit_price'] == '是'): ?><li>
+                                            <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '我拍拍'): if($val['unit_price'] == '1'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
-                                                    <?php if($val['cost'] == '新'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
-                                                    <?php if($val['cost'] == '热'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                                                    <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                             </li><?php endif; endif; endforeach; endif; ?>

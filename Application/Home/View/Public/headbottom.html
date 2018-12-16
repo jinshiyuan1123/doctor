@@ -31,16 +31,16 @@
                                             
                                           <foreach name="reslist" item="val">
                                           <if condition="$val['class'] eq '就医攻略'">
-                                          <if condition="$val['unit_price'] eq '是'">
+                                          <if condition="$val['unit_price'] eq '1'">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot">{$val['inspection_name']}</div>
-                                                    <if condition="$val['cost'] eq '新'">
+                                                    <if condition="$val['cost'] eq '1'">
                                                     <img src="__PUBLIC_HOME__/images/new.png" alt="">
 
                                                     </if>
-                                                    <if condition="$val['cost'] eq '热'">
+                                                    <if condition="$val['cost'] eq '2'">
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>
@@ -73,16 +73,16 @@
                                         <ul>
                                             <foreach name="reslist1" item="val">
                                           <if condition="$val['class'] eq '谣言粉碎机'">
-                                          <if condition="$val['unit_price'] eq '是'">
+                                          <if condition="$val['unit_price'] eq '1'">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot">{$val['inspection_name']}</div>
-                                                    <if condition="$val['cost'] eq '新'">
+                                                    <if condition="$val['cost'] eq '1'">
                                                     <img src="__PUBLIC_HOME__/images/new.png" alt="">
 
                                                     </if>
-                                                    <if condition="$val['cost'] eq '热'">
+                                                    <if condition="$val['cost'] eq '2'">
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>
@@ -115,16 +115,16 @@
                                         <ul>
                                              <foreach name="reslist2" item="val">
                                           <if condition="$val['class'] eq '中医养生'">
-                                          <if condition="$val['unit_price'] eq '是'">
+                                          <if condition="$val['unit_price'] eq '1'">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot">{$val['inspection_name']}</div>
-                                                    <if condition="$val['cost'] eq '新'">
+                                                    <if condition="$val['cost'] eq '1'">
                                                     <img src="__PUBLIC_HOME__/images/new.png" alt="">
 
                                                     </if>
-                                                    <if condition="$val['cost'] eq '热'">
+                                                    <if condition="$val['cost'] eq '2'">
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>

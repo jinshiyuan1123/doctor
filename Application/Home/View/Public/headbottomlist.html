@@ -11,7 +11,7 @@
                         <div class="g-grid-left" style="width:1200px">
                             <div class="news-main g-clear">
                                 <div class="news-item medical-strategy J_medicalStrategy" style="width:300px;border-right: 1px dotted #f9fbf9">
-                                    <h5>医院公开<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=就医攻略" target="_blank">更多</a></li></h5>
+                                    <h5>医院公开<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=医院公开" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="__PUBLIC_HOME__/images/1536026134780.jpg" alt="又双叒叕流产！怎么才能保住宝宝？">
@@ -28,18 +28,18 @@
                                     <div class="focus-list">
                                         <ul>
                                             
-                                          <foreach name="reslist" item="val">
-                                          <if condition="$val['class'] eq '就医攻略'">
-                                          <if condition="$val['unit_price'] eq '是'">
+                                          <foreach name="reslist4" item="val">
+                                          <if condition="$val['class'] eq '医院公开'">
+                                          <if condition="$val['unit_price'] eq '1'">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot">{$val['inspection_name']}</div>
-                                                    <if condition="$val['cost'] eq '新'">
+                                                    <if condition="$val['cost'] eq '1'">
                                                     <img src="__PUBLIC_HOME__/images/new.png" alt="">
 
                                                     </if>
-                                                    <if condition="$val['cost'] eq '热'">
+                                                    <if condition="$val['cost'] eq '2'">
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>
@@ -54,7 +54,7 @@
                                 </div>
 
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="width:300px">
-                                    <h5>医院动态</h5>
+                                    <h5>医院动态<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=医院动态" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="__PUBLIC_HOME__/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
@@ -70,18 +70,18 @@
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <foreach name="reslist" item="val">
-                                          <if condition="$val['class'] eq '谣言粉碎机'">
-                                          <if condition="$val['unit_price'] eq '是'">
+                                            <foreach name="reslist5" item="val">
+                                          <if condition="$val['class'] eq '医院动态'">
+                                          <if condition="$val['unit_price'] eq '1'">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot">{$val['inspection_name']}</div>
-                                                    <if condition="$val['cost'] eq '新'">
+                                                    <if condition="$val['cost'] eq '1'">
                                                     <img src="__PUBLIC_HOME__/images/new.png" alt="">
 
                                                     </if>
-                                                    <if condition="$val['cost'] eq '热'">
+                                                    <if condition="$val['cost'] eq '2'">
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>
@@ -97,7 +97,7 @@
                                 </div>
 
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="">
-                                    <h5>医院健康</h5>
+                                    <h5>医院健康<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=医院健康" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="__PUBLIC_HOME__/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
@@ -113,18 +113,18 @@
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <foreach name="reslist" item="val">
-                                          <if condition="$val['class'] eq '谣言粉碎机'">
-                                          <if condition="$val['unit_price'] eq '是'">
+                                            <foreach name="reslist6" item="val">
+                                          <if condition="$val['class'] eq '医院健康'">
+                                          <if condition="$val['unit_price'] eq '1'">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot">{$val['inspection_name']}</div>
-                                                    <if condition="$val['cost'] eq '新'">
+                                                    <if condition="$val['cost'] eq '1'">
                                                     <img src="__PUBLIC_HOME__/images/new.png" alt="">
 
                                                     </if>
-                                                    <if condition="$val['cost'] eq '热'">
+                                                    <if condition="$val['cost'] eq '2'">
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>
@@ -145,7 +145,7 @@
                          <div class="g-grid-left" style="width:1200px">
                             <div class="news-main g-clear" style="border-top: 2px solid rgba(180, 183, 178, 0.06);">
                                 <div class="news-item medical-strategy J_medicalStrategy" style="width:300px;border-right: 1px dotted #f9fbf9">
-                                    <h5>医院党建</h5>
+                                    <h5>医院党建<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=就医攻略" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="__PUBLIC_HOME__/images/1536026134780.jpg" alt="又双流产！怎么保住宝宝？">
@@ -162,18 +162,18 @@
                                     <div class="focus-list">
                                         <ul>
                                             
-                                          <foreach name="reslist" item="val">
-                                          <if condition="$val['class'] eq '就医攻略'">
-                                          <if condition="$val['unit_price'] eq '是'">
+                                          <foreach name="reslist7" item="val">
+                                          <if condition="$val['class'] eq '医院党建'">
+                                          <if condition="$val['unit_price'] eq '1'">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot">{$val['inspection_name']}</div>
-                                                    <if condition="$val['cost'] eq '新'">
+                                                    <if condition="$val['cost'] eq '1'">
                                                     <img src="__PUBLIC_HOME__/images/new.png" alt="">
 
                                                     </if>
-                                                    <if condition="$val['cost'] eq '热'">
+                                                    <if condition="$val['cost'] eq '2'">
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>
@@ -188,7 +188,7 @@
                                 </div>
 
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="width:300px">
-                                    <h5>医院视频</h5>
+                                    <h5>医院视频<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=医院视频" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="__PUBLIC_HOME__/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
@@ -205,17 +205,17 @@
                                     <div class="focus-list">
                                         <ul>
                                             <foreach name="reslist" item="val">
-                                          <if condition="$val['class'] eq '谣言粉碎机'">
-                                          <if condition="$val['unit_price'] eq '是'">
+                                          <if condition="$val['class'] eq '医院视频'">
+                                          <if condition="$val['unit_price'] eq '1'">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot">{$val['inspection_name']}</div>
-                                                    <if condition="$val['cost'] eq '新'">
+                                                    <if condition="$val['cost'] eq '1'">
                                                     <img src="__PUBLIC_HOME__/images/new.png" alt="">
 
                                                     </if>
-                                                    <if condition="$val['cost'] eq '热'">
+                                                    <if condition="$val['cost'] eq '2'">
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>
@@ -231,7 +231,7 @@
                                 </div>
 
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="">
-                                    <h5>我拍拍</h5>
+                                    <h5>我拍拍<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=我拍拍" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
                                             <img src="__PUBLIC_HOME__/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
@@ -248,17 +248,17 @@
                                     <div class="focus-list">
                                         <ul>
                                             <foreach name="reslist" item="val">
-                                          <if condition="$val['class'] eq '谣言粉碎机'">
-                                          <if condition="$val['unit_price'] eq '是'">
+                                          <if condition="$val['class'] eq '我拍拍'">
+                                          <if condition="$val['unit_price'] eq '1'">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot">{$val['inspection_name']}</div>
-                                                    <if condition="$val['cost'] eq '新'">
+                                                    <if condition="$val['cost'] eq '1'">
                                                     <img src="__PUBLIC_HOME__/images/new.png" alt="">
 
                                                     </if>
-                                                    <if condition="$val['cost'] eq '热'">
+                                                    <if condition="$val['cost'] eq '2'">
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>

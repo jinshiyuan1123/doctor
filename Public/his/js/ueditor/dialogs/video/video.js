@@ -301,11 +301,33 @@
 
         var count = uploadFile.getQueueCount();
         if (count) {
-            $('.info', '#queueList').html('<span style="color:red;">' + '还有2个未上传文件'.replace(/[\d]/, count) + '</span>');
+     $('.info', '#queueList').html('<span>' + '还有2个未上传文件'.replace(/[\d]/, count) + '</span>');
             return false;
         } else {
-            editor.execCommand('insertvideo', videoObjs, 'upload');
+            var is_music = 0;
+            var ext = file.url.split('.').pop().toLowerCase() ;
+            var music_type = ['mp3','wav'];
+            for(var i in music_type){
+                if(music_type[i]== ext){
+                    is_music = 1;
+                }
+            }
+            if (is_music) {
+                editor.execCommand('music', {
+                    url: uploadDir + file.url,
+                    width: 400,
+                    height: 95
+                });
+            } else {
+                editor.execCommand('insertvideo', videoObjs, 'upload');
+            }
         }
+        // if (count) {
+        //     $('.info', '#queueList').html('<span style="color:red;">' + '还有2个未上传文件'.replace(/[\d]/, count) + '</span>');
+        //     return false;
+        // } else {
+        //     editor.execCommand('insertvideo', videoObjs, 'upload');
+        // }
     }
 
     /*初始化上传标签*/
