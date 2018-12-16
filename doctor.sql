@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-12-15 17:23:02
+Date: 2018-12-16 16:15:03
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -5412,7 +5412,7 @@ CREATE TABLE `dzm_his_supplier` (
 -- ----------------------------
 -- Records of dzm_his_supplier
 -- ----------------------------
-INSERT INTO `dzm_his_supplier` VALUES ('1', '协和医院', '王大锤', '15100010002', '010-00010002', '622021706004742103', '沭阳', '127.0.0.1', '1', '1511949274', '1543231235');
+INSERT INTO `dzm_his_supplier` VALUES ('1', '协和医院', '王大锤', '15100010002', '010-00010002', '622021706004742103', '沭阳', '127.0.0.1', '1', '1511949274', '1544944084');
 INSERT INTO `dzm_his_supplier` VALUES ('2', '中心医院', '李斯', '13776848127', '0527-83856745', '234342', '沭阳', '127.0.0.1', '1', '1543231196', '0');
 
 -- ----------------------------
@@ -5655,6 +5655,45 @@ CREATE TABLE `dzm_his_wx_menu` (
 -- ----------------------------
 -- Records of dzm_his_wx_menu
 -- ----------------------------
+
+-- ----------------------------
+-- Table structure for dzm_his_yydoctor
+-- ----------------------------
+DROP TABLE IF EXISTS `dzm_his_yydoctor`;
+CREATE TABLE `dzm_his_yydoctor` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '用户id',
+  `true_name` varchar(20) NOT NULL DEFAULT '' COMMENT '用户个人资料真实姓名',
+  `age` int(3) DEFAULT '0' COMMENT '年龄',
+  `province` varchar(255) DEFAULT '',
+  `sex` tinyint(1) NOT NULL DEFAULT '0' COMMENT '性别 0,空1:男  2:女',
+  `cities` varchar(255) NOT NULL DEFAULT '0',
+  `phone` varchar(11) NOT NULL DEFAULT '0' COMMENT '手机号',
+  `mobile` varchar(255) NOT NULL DEFAULT '' COMMENT '邮箱',
+  `password` varchar(255) NOT NULL DEFAULT '',
+  `hospital` varchar(255) NOT NULL DEFAULT '' COMMENT '医院',
+  `department` varchar(255) DEFAULT NULL COMMENT '科室',
+  `rank` varchar(255) DEFAULT NULL COMMENT '医生级别',
+  `job` varchar(255) NOT NULL COMMENT '职位',
+  `checkid` varchar(255) DEFAULT NULL,
+  `ip` varchar(255) NOT NULL,
+  `room` text NOT NULL COMMENT '科室',
+  `create_time` int(10) NOT NULL COMMENT '注册时间',
+  `update_time` int(10) NOT NULL COMMENT '修改时间',
+  `sid` varchar(255) NOT NULL COMMENT '医院id',
+  `uid` int(11) NOT NULL COMMENT '用户表userid',
+  `typelist` varchar(255) NOT NULL,
+  `type1` varchar(255) DEFAULT '' COMMENT '"2","3","4","5","6","7","8"分别代表医生,护士,挂号员,收费员,发药员,财务, 其他人员',
+  `ask_price` decimal(10,2) DEFAULT '0.00' COMMENT '咨询价格',
+  PRIMARY KEY (`id`),
+  KEY `uid` (`uid`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COMMENT='医生基本信息表';
+
+-- ----------------------------
+-- Records of dzm_his_yydoctor
+-- ----------------------------
+INSERT INTO `dzm_his_yydoctor` VALUES ('1', '王小军', '0', '130000', '0', '石家庄市', '83856745', '13141589223', '$2y$12$qyrPtYAv8qCJT0Bc9wiNru9tu3SZj3XEmb87H/UhB7FGwp9zEt.6C', '中心医院', null, '1', '', '1', '127.0.0.1', '', '1544931350', '1544931350', '', '2', '', '', '0.00');
+INSERT INTO `dzm_his_yydoctor` VALUES ('2', '十多万', '0', '130000', '0', '石家庄市', '83856745', '13141589223', '$2y$12$C3Wt9J7NVz46vI44BG1Ule1pv386XylcD3sIOhE0sVN5I3HFC39Jy', '南山医院', null, '1', '', '0', '127.0.0.1', '', '1544931453', '1544931453', '', '2', '', '', '0.00');
+INSERT INTO `dzm_his_yydoctor` VALUES ('3', '史蒂芬', '0', '140000', '0', '阳泉市', '83856745', '13141589203', '$2y$12$dtrTtoFfkknOW/aCULO9iO5H/oVInKSiguYV23fkBUILdl88pwkPi', '北京医院', null, '1', '', '1', '127.0.0.1', '', '1544931617', '1544931617', '', '2', '', '', '0.00');
 
 -- ----------------------------
 -- Table structure for dzm_patient
