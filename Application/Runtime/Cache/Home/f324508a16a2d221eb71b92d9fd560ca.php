@@ -157,41 +157,122 @@
                 </div>
             </div>
             <div class="gh-home-menu J_NewMenu">
-
+<style type="text/css">
+    
+    /* 设置二级菜单绝对定位，并隐藏 */
+    .menuDiv > ul > li > ul {
+        position: absolute;
+        display: none;
+    }
+    .menuDiv > ul > li > a:hover {
+        color: #f0f;
+        background-color: #bcf;
+    }
+     .menuDiv > ul > li:hover ul {
+        display: block;
+    }
+     /* 二级菜单 */
+    .menuDiv > ul > li > ul > li > a {
+        width: 120px;
+        line-height: 36px;
+        color: #456;
+        background-color: #eff; 
+        text-align: center;
+        /*border: 1px solid #ccc;*/
+        border-top: none;
+        display: block;
+    }
+     /* 在二级菜单中，第一个设置顶边框 */
+    .menuDiv > ul > li > ul > li:first-child > a {
+        border-top: 1px solid #ccc;
+    }
+     /* 在二级菜单中，鼠标放上去的样式 */
+    .menuDiv > ul > li > ul > li > a:hover {
+        color: #a4f;
+        background-color: #cdf;
+    }
+  
+    
+ 
+   
+</style>
                 <div class="container g-clear  ">
-                    <div class="home-menu-ctn">
+                    <div class="home-menu-ctn menuDiv">
                           <ul class="g-clear main-menu-nav">
 <li class="hot">
     <a class="own-tab" target="_blank" href="" monitor="public_menu,home_menu,ask">健康资讯</a>
+
 </li>
 <li><a target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">网站公告</a></li>
 <li><a target="_blank" target="_blank" href="<?php echo U('home/index/hospital');?>" >在线咨询</a></li>
-<li class="authority"><a class="own-tab" target="_blank" target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow">医生论坛</a></li>
+<li class="authority"><a class="own-tab" target="_blank" target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow">医生论坛</a>
+
+</li>
 <li data-subnav="sub-nav-welife"><a target="_blank" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">
 健康</a>
+<ul>
+    <li><a href="#">二级菜单</a></li>
+    <li><a href="#">二级菜单</a></li>
+    <li><a href="#">二级菜单</a></li>
+</ul>
 </li>
 
 
 <li><a target="_blank" href="#" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">医药直通车</a></li>
-  <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">医疗器械</a></li>
+  <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">医疗器械</a>
+<ul>
+    <li><a href="#">二级菜单</a></li>
+    <li><a href="#">二级菜单</a></li>
+    <li><a href="#">二级菜单</a></li>
+</ul>
+  </li>
 
-   <li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">宣传耗材</a></li>
+   <li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">宣传耗材</a>
+   	<ul>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                </ul>
+   </li>
 
 
 </ul>
-
+<div></div>
 <ul class="g-clear main-menu-nav">
 <li class="hot">
     <a  target="_blank" href="<?php echo U('home/index/hospital');?>" >慈善</a>
+    <ul>
+    <li><a href="#">二级菜单</a></li>
+    <li><a href="#">二级菜单</a></li>
+    <li><a href="#">二级菜单</a></li>
+</ul>
 </li>
-<li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">健康视频</a></li>
-<li><a target="_blank" target="_blank" href="<?php echo U('home/index/ask');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,preciseorder">搞笑视频</a></li>
+<li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">健康视频</a>
+	<ul>
+    <li><a href="#">二级菜单</a></li>
+    <li><a href="#">二级菜单</a></li>
+    <li><a href="#">二级菜单</a></li>
+</ul>
+</li>
+<li><a target="_blank" target="_blank" href="<?php echo U('home/index/ask');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,preciseorder">搞笑视频</a>
+	<ul>
+    <li><a href="#">二级菜单</a></li>
+    <li><a href="#">二级菜单</a></li>
+    <li><a href="#">二级菜单</a></li>
+</ul>
+</li>
 
 
 
   <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">优选音乐</a></li>
 
-   <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a></li>
+   <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a>
+   	 <ul>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                    <li><a href="#">二级菜单</a></li>
+                </ul>
+   </li>
 
 
 </ul>
