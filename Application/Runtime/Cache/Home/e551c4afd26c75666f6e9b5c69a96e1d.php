@@ -828,10 +828,10 @@
 
 			  	</div>				
 				<div class="title-img">
-					<img src="https://static.guahao.cn/img/v2/family1.png?20161214" />
+					<img src="/Public/home/images/family1.png?20161214" />
 				</div>
 				<div class="family">
-					<img src="https://static.guahao.cn/img/v2/family.jpg?20161222" />
+					<img src="/Public/home/images/family.jpg?20161222" />
 				</div>
 			</div>
 		</div>

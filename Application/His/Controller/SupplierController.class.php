@@ -39,7 +39,10 @@ class SupplierController extends HisBaseController
         }
         //获取供应商列表
         $hospitalId = $this->hospitalInfo['uid'];
-        $supplierLists = $this->supplier_model->getSupplierLists($hospitalId, $search);
+        $res = M('his_yydoctor')->select();
+        $supplierLists = $res;
+        // var_dump($res);
+        // $supplierLists = $this->supplier_model->getSupplierLists($hospitalId, $search);
         if (IS_AJAX) {
             $this->ajaxSuccess('', $supplierLists);
         } else {
@@ -96,20 +99,28 @@ class SupplierController extends HisBaseController
                 'sid' => array('NEQ', I('post.sid','','intval'))
             );
             $supplierList = $this->supplier_model->getSupplier($condition);
-            foreach ($supplierList as $key => $value) {
-                if ($value['supplier_name'] == $data['supplier_name']) {
-                    $this->ajaxError('供应商名称已存在');
-                }
-            }
-            if (preg_match('/\\d+/', I('post.supplier_name','','htmlspecialchars'))) $this->ajaxError('供应商名称不包含数字');
-            if (preg_match('/\\d+/', I('post.contact_name','','htmlspecialchars'))) $this->ajaxError('联系人姓名不包含数字');
+            // foreach ($supplierList as $key => $value) {
+            //     if ($value['supplier_name'] == $data['supplier_name']) {
+            //         $this->ajaxError('供应商名称已存在');
+            //     }
+            // }
+            // if (preg_match('/\\d+/', I('post.supplier_name','','htmlspecialchars'))) $this->ajaxError('供应商名称不包含数字');
+            // if (preg_match('/\\d+/', I('post.contact_name','','htmlspecialchars'))) $this->ajaxError('联系人姓名不包含数字');
             //保存编辑的供应商
-            $sid = I('post.sid','','intval');
+            $sid = I('post.');
             $data['update_time'] = time();
-            $map = [
-                'sid' => $sid,
+            $pidlist= $sid['sid'];
+            $data = [
+                'hospital' =>$sid['supplier_name'],
+                'mobile' => $sid['contact_name'],
+                'phone' => $sid['contact_telephone'],
+                'true_name' => $sid['address'],
+                'checkid' => $sid['checkid'],
+
             ];
-            $result = $this->supplier_model->editSupplier($map, $data);
+            // p($sid);die;
+           
+            $result = M('his_yydoctor')->where("id='$pidlist'")->save($data);
             if ($result) {
                 $this->ajaxSuccess('修改成功');
             } elseif ($this->supplier_model->getError()) {
@@ -119,7 +130,7 @@ class SupplierController extends HisBaseController
             }
         }else{ //显示编辑页面
             $sid = I('get.sid','','intval');
-            $supplierInfo = $this->supplier_model->getSupplierInfoById($sid);
+            $supplierInfo = M('his_yydoctor')->where("id='$sid'")->find();
             $this->ajaxSuccess('', $supplierInfo);
         }
     }
@@ -133,7 +144,8 @@ class SupplierController extends HisBaseController
         if(IS_POST){
             $sid = I('post.sid','','intval');
             if($sid){
-                $res = $this->supplier_model->deleteSupplier($sid);
+                $res = M('his_yydoctor')->where("id='$sid'")->delete();
+                // $res = $this->supplier_model->deleteSupplier($sid);
                 $res ? $this->ajaxSuccess('删除成功') : $this->ajaxError('删除失败');
             }
         }

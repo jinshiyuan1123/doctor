@@ -866,6 +866,10 @@ public function recursived($meta,$flag,$count )
       $this->display(':doctorlogin');
     }
 
+    public function yylogin(){
+      $this->display(':yylogin');
+    }
+
     public function docLogin()
     {
       $data = I('post.');
@@ -907,6 +911,14 @@ public function recursived($meta,$flag,$count )
         $this->redirect('/home');
     }
 
+     public function yydocLogout()
+    {
+        session_unset('home_user_info');
+        session_destroy('home_user_info');
+         $this->redirect('/home');
+       
+    }
+
     public function doctorlist()
     {
       $this->display(':doctorlist');
@@ -921,6 +933,11 @@ public function recursived($meta,$flag,$count )
     public function registerdoctor()
     {
       $this->display(':registerdoctor');
+    }
+
+    public function yyregister()
+    {
+      $this->display(':yyregister');
     }
 
     public function doctorsubmit()
@@ -948,6 +965,30 @@ public function recursived($meta,$flag,$count )
         $this->display(':doctorsubmit');
     }
 
+       public function yydoctorsubmit()
+    {
+        $verify_code = I('post.validCode', '', 'string');
+
+        $verify = new \Think\Verify();
+        if(!$verify->check($verify_code)){
+            
+         $this->error('验证码错误！');
+        }
+        $mobile = I('post.mobile','','string');
+        $password = I('post.password','','string');
+        $ip = $this->getIP();
+        $getip = $this->getCity($ip);
+        $res = M('his_provinces');
+        $province = $res->where()->select();
+        $cities = M('his_cities')->where()->select();
+        $this->assign('mobile',$mobile);
+        $this->assign('password',$password);
+        $this->assign('province',$province);
+        $this->assign('cities',$cities);
+        $this->assign('region',$getip['region']);
+        $this->assign('city',$getip['city']);
+        $this->display(':yydoctorsubmit');
+    }
 
     public function registersucc(){
       $data = I('post.');
@@ -988,9 +1029,52 @@ public function recursived($meta,$flag,$count )
       $this->display(':registersucc');
     }
 
+     public function yyregistersucc(){
+      $data = I('post.');
+      $password = $data['password'];
+       if (empty($password)) {
+            $this->error('密码错误');
+        }
+        if (strlen($password) < 6) {
+            $this->error('密码不能少于6位');
+        }
+        $db_password = encrypt_password($password);
+        $ip = $this->getIP();
+      $res = array(
+        'mobile'   =>  $data['mobile'],
+        'true_name' =>  $data['doctorName'],
+        'province' =>  $data['province'],
+        'cities'   =>  $data['cities'],
+        'password' =>  $db_password,
+        'hospital' =>  $data['hospitalName'],
+        'root'     =>  1,
+        'rank'     => 1,
+        'checkid'      =>  0,
+        'areacode' =>  $data['areaCode'],
+        'phone'    =>  $data['phone'],
+        'ip'       => $ip,
+        'create_time' =>time(),
+        'update_time' =>time(),
+        'uid'        =>'2',
+
+
+      );
+      $res = M('his_yydoctor')->add($res);
+      if(!$res){
+        $this->error('内容保存有误');
+      }
+      $this->assign('mobile',$data['mobile']);
+      $this->assign('true_name',$data['true_name']);
+      $this->display(':yyregistersucc');
+    }
+
     public function doctorhome()
     {
       $this->display(':doctorhome');
+    }
+
+    public function yydoctorhome(){
+      $this->display(':yydoctorhome');
     }
 
     public function article(){
@@ -1063,6 +1147,11 @@ public function recursived($meta,$flag,$count )
     public function authprofile()
     {
       $this->display(':authprofile');
+    }
+
+     public function yyauthprofile()
+    {
+      $this->display(':yyauthprofile');
     }
 
     public function head_pic_settings()
