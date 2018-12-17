@@ -18,7 +18,7 @@
     <meta property="qc:admins" content="341606771467510176375" />
     <link rel="shortcut icon" href="/Public/home/favicon.ico" />
     <link rel="stylesheet" href="/Public/home/css/portal.base.min.css?v=1535436384237752" type="text/css" />
-    <!-- <link rel="stylesheet" href="/Public/home/css/portal.basic.min.css?v=1535436384237752" type="text/css" /> -->
+    <link rel="stylesheet" href="/Public/home/css/toplist.css?v=1535436384237752" type="text/css" />
 
      <link rel="stylesheet" href="/Public/home/css/list/portal.basic.min.css?v=1535436384237752" type="text/css" />
 
@@ -90,8 +90,10 @@
                 </div>
             </div>
             <div class="gh-home-menu J_NewMenu">
-
-            <ul class="g-clear main-menu-nav">
+  <div class="container g-clear  ">
+                    <div class="home-menu-ctn menuDiv">
+            
+<ul class="g-clear main-menu-nav">
 <li class="hot">
     <a class="own-tab" target="_blank" href="" monitor="public_menu,home_menu,ask">健康资讯</a>
 
@@ -215,7 +217,7 @@
 
 </ul>
         </div>
-
+</div></div>
         <div id="gc">
 
 
