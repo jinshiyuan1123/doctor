@@ -2339,6 +2339,43 @@ $(document).ready(function(){
                     </div>
                 </div>
 
+                   <div class="g-container landing-section news-section">
+                    <div class="title-bar">
+                         <h2>医院入住</h2>
+                        <span class="slogan">
+            <!-- 关注健康，享受生活！ -->
+                <a href="#" style="display:none">寻找医言堂“好医生” 找的就是您！
+                </a>
+            </span>
+                    </div>
+                    <div class="main-ctn g-clear">
+                        <div class="g-grid-left" style="width:1200px">
+                           
+                            <div class="news-main g-clear">
+                                 <?php if(is_array($rowlist)): foreach($rowlist as $key=>$vo): ?><div class="news-item medical-strategy J_medicalStrategy" style="width:200px;border-right: 1px dotted #f9fbf9">
+                                    
+                                    <div class="focus-single g-clear">
+                                        <a target="_blank" href="<?php echo U('home/index/zonghe');?>?id=<?php echo ($vo["sid"]); ?>">
+                                            <img src="/Public/home/images/default_yy.gif" alt="">
+                                        </a>
+                                        
+                                    </div><br/>
+                                       <?php echo ($vo["supplier_name"]); ?><br/>
+                                       二级甲等
+                                </div><?php endforeach; endif; ?>
+                              
+
+                               
+                                    <h5><li style="float:right;list-style:none"><a href="<?php echo U('home/index/zonghelist');?>" target="_blank">更多</a></li></h5>
+                                   
+                             
+                              
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
 
             </div>
             <div class="helpqs-list hide">

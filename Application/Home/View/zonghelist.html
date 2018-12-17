@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>择医网(挂号网)-互联网医院在线诊疗平台</title>
+    <meta name="keywords" content="挂号网,择医网,互联网医院,预约挂号,网上预约,网上挂号,网上预约挂号,在线问诊,在线咨询,健康资讯,医院挂号,医院预约,专家门诊" />
+    <meta name="description" content="择医网,互联网医院国家试点平台,聚合了全国重点医院,学科带头人,副主任以上的医师,提供预约挂号,在线诊疗,电子处方,在线配药全方位服务。找大专家,上择医网。" />
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="/m">
+    <meta name="mobile-agent" content="format=html5; url=/m">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <link rel="shortcut icon" href="__PUBLIC_HOME__/favicon.ico" />
+    <link rel="stylesheet" href="__PUBLIC_HOME__/css/portal.base.min.css?v=1535436384237752" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC_HOME__/css/toplist.css">
+      <script src="__PUBLIC_HIS__/vendor/jquery/jquery.min.js"></script>
+    <script src="__PUBLIC_HIS__/vendor/layer/layer.js"></script>
+
+  
+    <link rel="stylesheet" href="__PUBLIC_HOME__/css/index.css?v=1535436384237752" type="text/css" />
+    <meta name="shenma-site-verification" content="9bfa5c53d29a8d687154a0d8dbe23383_1542098342">
+</head>
+
+<body>
+
+
+
+
+
+    <div id="g-wrapper" class="g-wrapper g-page-1200 landing-wrapper">
+        <div id="gh">
+            <!--[if lt IE 8]>
+<div class="g-browser-update">你的浏览器实在太旧了，为了更加安全和方便地进行挂号，推荐您升级浏览器：<a target="_blank" href="http://browsehappy.com">立即升级</a></div>
+<![endif]-->
+           <include file="Public:headlist" />
+            
+            <div class="gh-home-menu J_NewMenu">
+
+                <div class="container g-clear  ">
+                    <div class="home-menu-ctn menuDiv">
+                          <include file="Public:headtop" />
+
+
+
+<div class="main-category-nav J_DiseaseCategory">
+      <a href="{:U('home/index/index')}">
+     <h3><i></i>   首页</h3></a>
+                            
+   
+</div>
+
+
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="gc">
+
+            <div id="g-cfg" class="gp-index" data-fo-help="1" data-fo-appcode="1" data-loadpop="wyapp,remind" data-header-fixed="1" data-module="home" data-rightbar="1">
+               
+                <div class="g-container landing-section news-section">
+                    <div class="title-bar">
+                         <h2>医院入住</h2>
+                        <span class="slogan">
+            <!-- 关注健康，享受生活！ -->
+                <a href="#" style="display:none">寻找医言堂“好医生” 找的就是您！
+                </a>
+            </span>
+                    </div>
+                    <div class="main-ctn g-clear">
+                        <div class="g-grid-left" style="width:1200px">
+                           
+                            <div class="news-main g-clear">
+                                 <foreach name="reslist" item="vo">
+                                <div class="news-item medical-strategy J_medicalStrategy" style="width:200px;border-right: 1px dotted #f9fbf9">
+                                    
+                                    <div class="focus-single g-clear">
+                                        <a target="_blank" href="{:U('home/index/zonghe')}?id={$vo.sid}">
+                                            <img src="__PUBLIC_HOME__/images/default_yy.gif" alt="">
+                                        </a>
+                                        
+                                    </div><br/>
+                                       {$vo.supplier_name}<br/>
+                                       二级甲等
+                                </div>
+                            </foreach>
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+            <div class="helpqs-list hide">
+
+            </div>
+
+        </div>
+
+        <include file="Public:bottom" />
+
+        <div id="gm-bg"></div>
+        <div id="gm-mask">
+        </div>
+
+       
+       <link rel="stylesheet" type="text/css" href="__PUBLIC_HOME__/common/css/layout.css" />
+<script type="text/javascript" src="__PUBLIC_HOME__/common/js/base.js"></script>
+<script type="text/javascript" src="__PUBLIC_HOME__/common/js/common.js"></script>
+
+       <div class="suspend">
+  <dl>
+    <dt class="IE6PNG"></dt>
+    <dd class="suspendQQ"><a href="tencent://message/?Site=baidu.com&uin=1569602446&Menu=yes" target="_blank"></a></dd>
+    <dd class="suspendTel"><a href="javascript:void(0);"></a></dd>
+  </dl>
+</div>
+<!--[if IE 6]><script type="text/javascript" src="common/js/IE6PNG.js"></script>
+<script type="text/javascript">PNGmin.fix(".IE6PNG");</script><![endif]-->
+<script type="text/javascript">           
+Common.init();
+</script>
+</body>
+
+</html>
