@@ -5718,3 +5718,8 @@ INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000463s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
 ERR: 无法加载控制器:Public
 
+[ 2018-12-17T12:32:26+08:00 ] 127.0.0.1 /Public/home/img/bx-direction.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+
