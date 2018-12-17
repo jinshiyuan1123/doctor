@@ -862,3 +862,3977 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
 
+[ 2018-12-17T10:37:01+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+
+[ 2018-12-17T10:37:01+08:00 ] 127.0.0.1 /Public/home/img/homepage-sp.png?_=20170508
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+
+[ 2018-12-17T10:37:01+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+
+[ 2018-12-17T10:37:01+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2018-12-17T10:37:01+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2018-12-17T10:37:01+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+
+[ 2018-12-17T10:37:01+08:00 ] 127.0.0.1 /Public/home/img/v2/index-banner.jpg?v=2017_04_28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+
+[ 2018-12-17T10:37:01+08:00 ] 127.0.0.1 /Public/home/css/images/img-index.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+
+[ 2018-12-17T10:37:02+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+
+[ 2018-12-17T10:37:02+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png?v=20170505
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+
+[ 2018-12-17T10:37:02+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+
+[ 2018-12-17T10:37:02+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+
+[ 2018-12-17T10:37:02+08:00 ] 127.0.0.1 /Public/home/img/search/more-dot.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+
+[ 2018-12-17T10:37:02+08:00 ] 127.0.0.1 /Public/home/img/internethospital/opened.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+
+[ 2018-12-17T10:37:02+08:00 ] 127.0.0.1 /Public/home/css/images/yyk_serach_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+
+[ 2018-12-17T10:37:02+08:00 ] 127.0.0.1 /Public/home/img/consult.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+
+[ 2018-12-17T10:37:02+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+
+[ 2018-12-17T10:37:02+08:00 ] 127.0.0.1 /Public/home/img/rightbar-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+
+[ 2018-12-17T10:37:02+08:00 ] 127.0.0.1 /img/v2/hp2.png?_=20140624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2018-12-17T10:37:02+08:00 ] 127.0.0.1 /json/white/area/provinces
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000599s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002492s ]
+ERR: 无法加载控制器:Json
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/img/v2/index-banner.jpg?v=2017_04_28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/img/homepage-sp.png?_=20170508
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/css/images/img-index.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/img/search/more-dot.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/img/internethospital/opened.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/img/consult.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png?v=20170505
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/css/images/yyk_serach_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+
+[ 2018-12-17T11:26:18+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+
+[ 2018-12-17T11:26:19+08:00 ] 127.0.0.1 /Public/home/img/rightbar-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+
+[ 2018-12-17T11:26:19+08:00 ] 127.0.0.1 /img/v2/hp2.png?_=20140624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+
+[ 2018-12-17T11:26:19+08:00 ] 127.0.0.1 /json/white/area/provinces
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000540s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002280s ]
+ERR: 无法加载控制器:Json
+
+[ 2018-12-17T11:26:38+08:00 ] 127.0.0.1 /Public/home/css/list/portal.basic.min.css?v=1535436384237752
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000617s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002556s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-12-17T11:26:38+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+
+[ 2018-12-17T11:26:38+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+
+[ 2018-12-17T11:26:38+08:00 ] 127.0.0.1 /Public/home/css/img/fastorder/bj.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+
+[ 2018-12-17T11:26:38+08:00 ] 127.0.0.1 /Public/home/img/2015/home/go-home.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+
+[ 2018-12-17T11:26:38+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /Public/home/img/v2/index-banner.jpg?v=2017_04_28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /Public/home/img/homepage-sp.png?_=20170508
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /Public/home/css/images/img-index.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png?v=20170505
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /Public/home/css/images/yyk_serach_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /Public/home/img/internethospital/opened.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2018-12-17T11:26:46+08:00 ] 127.0.0.1 /Public/home/img/search/more-dot.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+
+[ 2018-12-17T11:26:47+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+
+[ 2018-12-17T11:26:47+08:00 ] 127.0.0.1 /Public/home/img/rightbar-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+
+[ 2018-12-17T11:26:47+08:00 ] 127.0.0.1 /img/v2/hp2.png?_=20140624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+
+[ 2018-12-17T11:26:47+08:00 ] 127.0.0.1 /json/white/area/provinces
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000489s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002317s ]
+ERR: 无法加载控制器:Json
+
+[ 2018-12-17T11:26:51+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000450s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002148s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:26:51+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+
+[ 2018-12-17T11:26:51+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+
+[ 2018-12-17T11:26:51+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2018-12-17T11:26:51+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+
+[ 2018-12-17T11:26:51+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+
+[ 2018-12-17T11:26:51+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+
+[ 2018-12-17T11:26:51+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+
+[ 2018-12-17T11:26:51+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017211960
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000636s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002832s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/img/v2/index-banner.jpg?v=2017_04_28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/css/images/img-index.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/img/homepage-sp.png?_=20170508
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png?v=20170505
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/img/internethospital/opened.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/img/search/more-dot.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/css/images/yyk_serach_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/img/consult.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /Public/home/img/rightbar-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /json/white/area/provinces
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000434s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002081s ]
+ERR: 无法加载控制器:Json
+
+[ 2018-12-17T11:30:10+08:00 ] 127.0.0.1 /img/v2/hp2.png?_=20140624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2018-12-17T11:30:13+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000835s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003850s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:30:13+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+
+[ 2018-12-17T11:30:13+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+
+[ 2018-12-17T11:30:13+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+
+[ 2018-12-17T11:30:13+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-12-17T11:30:13+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+
+[ 2018-12-17T11:30:13+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2018-12-17T11:30:13+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+
+[ 2018-12-17T11:30:13+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017413397
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000714s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003123s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:30:16+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000686s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:30:16+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-12-17T11:30:16+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+
+[ 2018-12-17T11:30:16+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+
+[ 2018-12-17T11:30:16+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+
+[ 2018-12-17T11:30:16+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+
+[ 2018-12-17T11:30:16+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+
+[ 2018-12-17T11:30:16+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+
+[ 2018-12-17T11:30:16+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017416425
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000365s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001872s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/img/v2/index-banner.jpg?v=2017_04_28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/img/homepage-sp.png?_=20170508
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/css/images/img-index.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png?v=20170505
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/img/search/more-dot.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/css/images/yyk_serach_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/img/internethospital/opened.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/img/consult.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+
+[ 2018-12-17T11:30:20+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+
+[ 2018-12-17T11:30:21+08:00 ] 127.0.0.1 /Public/home/img/rightbar-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+
+[ 2018-12-17T11:30:21+08:00 ] 127.0.0.1 /img/v2/hp2.png?_=20140624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+
+[ 2018-12-17T11:30:21+08:00 ] 127.0.0.1 /json/white/area/provinces
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000763s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003135s ]
+ERR: 无法加载控制器:Json
+
+[ 2018-12-17T11:30:30+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+
+[ 2018-12-17T11:30:30+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+
+[ 2018-12-17T11:30:30+08:00 ] 127.0.0.1 /Public/home/img/v2/index-banner.jpg?v=2017_04_28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+
+[ 2018-12-17T11:30:30+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2018-12-17T11:30:30+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+
+[ 2018-12-17T11:30:30+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+
+[ 2018-12-17T11:30:30+08:00 ] 127.0.0.1 /Public/home/img/homepage-sp.png?_=20170508
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+
+[ 2018-12-17T11:30:30+08:00 ] 127.0.0.1 /Public/home/css/images/img-index.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+
+[ 2018-12-17T11:30:31+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png?v=20170505
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+
+[ 2018-12-17T11:30:31+08:00 ] 127.0.0.1 /Public/home/img/consult.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-12-17T11:30:31+08:00 ] 127.0.0.1 /Public/home/img/search/more-dot.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+
+[ 2018-12-17T11:30:31+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+
+[ 2018-12-17T11:30:31+08:00 ] 127.0.0.1 /Public/home/img/internethospital/opened.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+
+[ 2018-12-17T11:30:31+08:00 ] 127.0.0.1 /Public/home/css/images/yyk_serach_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+
+[ 2018-12-17T11:30:31+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+
+[ 2018-12-17T11:30:31+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+
+[ 2018-12-17T11:30:31+08:00 ] 127.0.0.1 /Public/home/img/rightbar-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+
+[ 2018-12-17T11:30:31+08:00 ] 127.0.0.1 /img/v2/hp2.png?_=20140624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+
+[ 2018-12-17T11:30:31+08:00 ] 127.0.0.1 /json/white/area/provinces
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000775s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003244s ]
+ERR: 无法加载控制器:Json
+
+[ 2018-12-17T11:30:34+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000774s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003247s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:30:34+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+
+[ 2018-12-17T11:30:34+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2018-12-17T11:30:34+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2018-12-17T11:30:34+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2018-12-17T11:30:34+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+
+[ 2018-12-17T11:30:34+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+
+[ 2018-12-17T11:30:34+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+
+[ 2018-12-17T11:30:35+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017435082
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000710s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002921s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:32:14+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000604s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002908s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:32:14+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+
+[ 2018-12-17T11:32:14+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+
+[ 2018-12-17T11:32:14+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+
+[ 2018-12-17T11:32:14+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2018-12-17T11:32:14+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+
+[ 2018-12-17T11:32:14+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2018-12-17T11:32:14+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+
+[ 2018-12-17T11:32:14+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017534574
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/img/v2/index-banner.jpg?v=2017_04_28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/css/images/img-index.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+
+ ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/img/search/more-dot.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/img/internethospital/opened.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png?v=20170505
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/img/consult.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/css/images/yyk_serach_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /Public/home/img/rightbar-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /json/white/area/provinces
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+ERR: 无法加载控制器:Json
+
+[ 2018-12-17T11:32:17+08:00 ] 127.0.0.1 /img/v2/hp2.png?_=20140624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/img/homepage-sp.png?_=20170508
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/img/v2/index-banner.jpg?v=2017_04_28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/css/images/img-index.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/css/images/img-index.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/img/consult.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/img/internethospital/opened.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png?v=20170505
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/css/images/yyk_serach_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/img/search/more-dot.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /Public/home/img/rightbar-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /img/v2/hp2.png?_=20140624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+
+[ 2018-12-17T11:32:27+08:00 ] 127.0.0.1 /json/white/area/provinces
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000528s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002352s ]
+ERR: 无法加载控制器:Json
+
+[ 2018-12-17T11:32:29+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+
+[ 2018-12-17T11:32:29+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
+[ 2018-12-17T11:32:29+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000863s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003472s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:32:29+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+
+[ 2018-12-17T11:32:29+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+
+[ 2018-12-17T11:32:29+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+
+[ 2018-12-17T11:32:29+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+
+[ 2018-12-17T11:32:29+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017549472
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:32:52+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000196s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:32:52+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+
+[ 2018-12-17T11:32:52+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2018-12-17T11:32:52+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+
+[ 2018-12-17T11:32:52+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+
+[ 2018-12-17T11:32:52+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+
+[ 2018-12-17T11:32:52+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+
+[ 2018-12-17T11:32:52+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017572557
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000184s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:32:54+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000188s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:32:54+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+
+[ 2018-12-17T11:32:54+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+
+[ 2018-12-17T11:32:54+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-12-17T11:32:54+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+
+[ 2018-12-17T11:32:54+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+
+[ 2018-12-17T11:32:54+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2018-12-17T11:32:55+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017575075
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000530s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002349s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:32:56+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000558s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002435s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:32:56+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+
+[ 2018-12-17T11:32:56+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+
+[ 2018-12-17T11:32:56+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-12-17T11:32:56+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+
+[ 2018-12-17T11:32:56+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+
+[ 2018-12-17T11:32:56+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+
+[ 2018-12-17T11:32:56+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017576604
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000556s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002275s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:33:14+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+
+[ 2018-12-17T11:33:14+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-12-17T11:33:14+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+
+[ 2018-12-17T11:33:14+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-12-17T11:33:14+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000824s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003603s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:33:14+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+
+[ 2018-12-17T11:33:14+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+
+[ 2018-12-17T11:33:14+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017594418
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000523s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002321s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:33:22+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000530s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002285s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:33:22+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017602104
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000527s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002299s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:34:00+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000538s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002340s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:34:01+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017641031
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001167s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004066s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:34:26+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000573s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002579s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:34:26+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017666853
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000582s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002661s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:35:05+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000659s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002831s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:35:05+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017705943
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000531s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002324s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:35:16+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000536s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002324s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:35:16+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017716767
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000609s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002552s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:36:20+08:00 ] 127.0.0.1 /internet/hospital/7f6866c4-cff3-11e1-831f-5cf9dd2e7135?deptName=%E8%80%B3%E9%BC%BB%E5%92%BD%E5%96%89%E5%A4%B4%E9%A2%88%E7%A7%91&_=1545017780043
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000523s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002256s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:36:21+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000638s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002613s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:36:21+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017781638
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000543s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002346s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:36:48+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000528s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002309s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:36:48+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017808653
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000531s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002414s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /Public/home/img/homepage-sp.png?_=20170508
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+
+ ]
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /Public/home/css/images/img-index.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /Public/home/img/internethospital/opened.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png?v=20170505
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /Public/home/img/search/more-dot.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /Public/home/img/consult.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /Public/home/css/images/yyk_serach_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /Public/home/img/rightbar-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /img/v2/hp2.png?_=20140624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+
+[ 2018-12-17T11:37:32+08:00 ] 127.0.0.1 /json/white/area/provinces
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000440s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002086s ]
+ERR: 无法加载控制器:Json
+
+[ 2018-12-17T11:37:36+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000443s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002416s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:37:36+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017856767
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000453s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002101s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:37:53+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002005s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:37:53+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017873820
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000438s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002029s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:38:16+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000470s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002468s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:38:17+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017897041
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000445s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002063s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:38:24+08:00 ] 127.0.0.1 /internet/hospital/7f688f14-cff3-11e1-831f-5cf9dd2e7135?deptName=%E7%9A%AE%E8%82%A4%E7%A7%91&_=1545017904035
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000439s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002028s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:38:25+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000430s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001993s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:38:25+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017905654
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000436s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002006s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:38:26+08:00 ] 127.0.0.1 /internet/hospital/7f640bba-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%86%85%E7%A7%91&_=1545017906793
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000447s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002073s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:38:27+08:00 ] 127.0.0.1 /internet/hospital/7f6802e2-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%84%BF%E7%A7%91&_=1545017907849
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000438s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002118s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:38:27+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017907873
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000430s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001992s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:38:32+08:00 ] 127.0.0.1 /internet/hospital/7f6802e2-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%84%BF%E7%A7%91&_=1545017912465
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000429s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001986s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:38:32+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017912593
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000427s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:38:54+08:00 ] 127.0.0.1 /internet/hospital/7f6802e2-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%84%BF%E7%A7%91&_=1545017934594
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000438s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001998s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:38:55+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017935186
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000432s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002002s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:38:56+08:00 ] 127.0.0.1 /internet/hospital/7f6802e2-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%84%BF%E7%A7%91&_=1545017936793
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000440s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002013s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:38:56+08:00 ] 127.0.0.1 /internet/hospital/7f68c1d2-cff3-11e1-831f-5cf9dd2e7135?deptName=%E4%B8%AD%E5%8C%BB%E7%A7%91&_=1545017936817
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000433s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002025s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:39:03+08:00 ] 127.0.0.1 /internet/hospital/7f67b77e-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A4%96%E7%A7%91&_=1545017943947
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000432s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001998s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:39:04+08:00 ] 127.0.0.1 /internet/hospital/7f640bba-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%86%85%E7%A7%91&_=1545017944009
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000441s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002023s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:39:04+08:00 ] 127.0.0.1 /internet/hospital/7f6802e2-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%84%BF%E7%A7%91&_=1545017944033
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000431s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:39:05+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002038s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:39:05+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017945696
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000455s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002088s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:39:21+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000434s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002017s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:39:21+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017961830
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000438s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002078s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:39:58+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000628s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003152s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:39:58+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545017998676
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000465s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002113s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:40:07+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000457s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002181s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:40:07+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018007606
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000452s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002111s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:40:18+08:00 ] 127.0.0.1 /internet/hospital/7f6802e2-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%84%BF%E7%A7%91&_=1545018018215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000465s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002069s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:40:18+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018018274
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000435s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002038s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:40:19+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000554s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003151s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:40:19+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018019774
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000484s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002164s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:40:52+08:00 ] 127.0.0.1 /internet/hospital/7f67dd62-cff3-11e1-831f-5cf9dd2e7135?deptName=%E9%AA%A8%E7%A7%91&_=1545018052396
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000440s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002038s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:40:53+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001431s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:40:53+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+
+[ 2018-12-17T11:40:53+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+
+[ 2018-12-17T11:40:53+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/love.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+
+[ 2018-12-17T11:40:54+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018054028
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000528s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002338s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:41:03+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000540s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002512s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:41:04+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018064050
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000531s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002292s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:41:04+08:00 ] 127.0.0.1 /internet/hospital/7f688f14-cff3-11e1-831f-5cf9dd2e7135?deptName=%E7%9A%AE%E8%82%A4%E7%A7%91&_=1545018064388
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000551s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002405s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:41:52+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000529s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002328s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:41:53+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018113079
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000534s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002300s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:41:54+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000434s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:41:54+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/love.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+
+[ 2018-12-17T11:41:54+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+
+[ 2018-12-17T11:41:54+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2018-12-17T11:41:54+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018114414
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000454s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002058s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:41:57+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000700s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002654s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:41:57+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018117732
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000536s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002323s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:42:06+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000545s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002400s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:42:06+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018126770
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000580s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002439s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:44:25+08:00 ] 127.0.0.1 /Public/home/img/expert_2015/sprite20170112.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+
+[ 2018-12-17T11:45:11+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000428s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001985s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:45:11+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000852s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003317s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:45:11+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-12-17T11:45:11+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+
+[ 2018-12-17T11:45:11+08:00 ] 127.0.0.1 /img/internethospital/volunteer.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+
+[ 2018-12-17T11:45:11+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018311552
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:45:12+08:00 ] 127.0.0.1 /internet/hospital/7f640bba-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%86%85%E7%A7%91&_=1545018312245
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000203s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:46:16+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:46:16+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+
+[ 2018-12-17T11:46:16+08:00 ] 127.0.0.1 /images/volunteer.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+
+[ 2018-12-17T11:46:16+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+
+[ 2018-12-17T11:46:17+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018377255
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000528s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002413s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:46:54+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001419s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:46:55+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+
+[ 2018-12-17T11:46:55+08:00 ] 127.0.0.1 /images/volunteer.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+
+[ 2018-12-17T11:46:55+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+
+[ 2018-12-17T11:46:55+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018415375
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000539s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002450s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:47:04+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000185s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:47:04+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+
+[ 2018-12-17T11:47:04+08:00 ] 127.0.0.1 /Public/home/css/images/volunteer.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+
+[ 2018-12-17T11:47:04+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+
+[ 2018-12-17T11:47:05+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018425012
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000904s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003184s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:47:19+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000186s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:47:19+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2018-12-17T11:47:19+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+
+[ 2018-12-17T11:47:19+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018439768
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000870s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003292s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:47:26+08:00 ] 127.0.0.1 /internet/hospital/7f69043a-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%85%B6%E4%BB%96%E7%A7%91%E5%AE%A4&_=1545018446216
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000544s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002402s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:47:37+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+
+[ 2018-12-17T11:47:37+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000603s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002891s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:47:37+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+
+[ 2018-12-17T11:47:37+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018457914
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000457s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002165s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:47:59+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000185s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:47:59+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+D-- [ RunTime:0.000350s ]
+
+[ 2018-12-17T11:47:59+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+
+[ 2018-12-17T11:47:59+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+
+[ 2018-12-17T11:47:59+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2018-12-17T11:47:59+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+
+[ 2018-12-17T11:47:59+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+
+[ 2018-12-17T11:47:59+08:00 ] 127.0.0.1 /Public/home/css/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+
+[ 2018-12-17T11:47:59+08:00 ] 127.0.0.1 /Public/home/css/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+
+[ 2018-12-17T11:47:59+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018479623
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000536s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002304s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:48:39+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000536s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002264s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:48:40+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+
+[ 2018-12-17T11:48:40+08:00 ] 127.0.0.1 /Public/home/css/img/2015/platform-logo-new.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2018-12-17T11:48:40+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-12-17T11:48:40+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+
+[ 2018-12-17T11:48:40+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+
+[ 2018-12-17T11:48:40+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2018-12-17T11:48:40+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+
+[ 2018-12-17T11:48:40+08:00 ] 127.0.0.1 /Public/home/css/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+
+[ 2018-12-17T11:48:40+08:00 ] 127.0.0.1 /Public/home/css/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+
+[ 2018-12-17T11:48:40+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018520371
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000525s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002204s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:48:42+08:00 ] 127.0.0.1 /internet/hospital/7f640bba-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%86%85%E7%A7%91&_=1545018522902
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000606s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002584s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:48:58+08:00 ] 127.0.0.1 /internet/hospital/7f67b77e-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A4%96%E7%A7%91&_=1545018538791
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000521s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002169s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:49:00+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000542s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002375s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:49:00+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+
+[ 2018-12-17T11:49:00+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+
+[ 2018-12-17T11:49:00+08:00 ] 127.0.0.1 /Public/home/css/img/2015/platform-logo-new.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+
+[ 2018-12-17T11:49:00+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2018-12-17T11:49:00+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2018-12-17T11:49:00+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+
+[ 2018-12-17T11:49:00+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+
+[ 2018-12-17T11:49:00+08:00 ] 127.0.0.1 /Public/home/css/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+
+[ 2018-12-17T11:49:00+08:00 ] 127.0.0.1 /Public/home/css/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
+[ 2018-12-17T11:49:00+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018540746
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000376s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001839s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:49:39+08:00 ] 127.0.0.1 /internet/hospital/7f6866c4-cff3-11e1-831f-5cf9dd2e7135?deptName=%E8%80%B3%E9%BC%BB%E5%92%BD%E5%96%89%E5%A4%B4%E9%A2%88%E7%A7%91&_=1545018579678
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000196s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:49:40+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000214s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:49:40+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+
+[ 2018-12-17T11:49:40+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+
+[ 2018-12-17T11:49:40+08:00 ] 127.0.0.1 /Public/home/css/img/2015/platform-logo-new.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+
+[ 2018-12-17T11:49:40+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2018-12-17T11:49:40+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+
+[ 2018-12-17T11:49:40+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+
+[ 2018-12-17T11:49:40+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+
+[ 2018-12-17T11:49:40+08:00 ] 127.0.0.1 /Public/home/css/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-12-17T11:49:40+08:00 ] 127.0.0.1 /Public/home/css/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+
+[ 2018-12-17T11:49:41+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018581352
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000359s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:50:06+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000198s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:50:06+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+
+[ 2018-12-17T11:50:06+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002968s ]
+
+[ 2018-12-17T11:50:06+08:00 ] 127.0.0.1 /Public/home/css/img/2015/platform-logo-new.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+
+[ 2018-12-17T11:50:07+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+
+[ 2018-12-17T11:50:07+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+
+[ 2018-12-17T11:50:07+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+
+[ 2018-12-17T11:50:07+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+
+[ 2018-12-17T11:50:07+08:00 ] 127.0.0.1 /Public/home/css/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+
+
+
+[ 2018-12-17T11:50:07+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018607376
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000246s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:50:17+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000211s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:50:18+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018618497
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000236s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001348s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:50:32+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001762s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:50:32+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018632648
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000229s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:51:05+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000623s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002404s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:51:06+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018666086
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000240s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:51:27+08:00 ] 127.0.0.1 /internet/hospital/7f67dd62-cff3-11e1-831f-5cf9dd2e7135?deptName=%E9%AA%A8%E7%A7%91&_=1545018687311
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000185s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:51:29+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000661s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003020s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:51:29+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+
+[ 2018-12-17T11:51:29+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+
+[ 2018-12-17T11:51:29+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018689747
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000610s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002501s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:51:46+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000561s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002324s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:51:46+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-12-17T11:51:46+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+
+[ 2018-12-17T11:51:46+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+
+[ 2018-12-17T11:51:46+08:00 ] 127.0.0.1 /Public/home/css/img/2015/platform-logo-new.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+
+[ 2018-12-17T11:51:46+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+
+[ 2018-12-17T11:51:46+08:00 ] 127.0.0.1 /Public/home/css/img/internethospital/consult-bar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+
+[ 2018-12-17T11:51:46+08:00 ] 127.0.0.1 /img/v2/loading-big.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+
+[ 2018-12-17T11:51:46+08:00 ] 127.0.0.1 /Public/home/css/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+
+[ 2018-12-17T11:51:46+08:00 ] 127.0.0.1 /Public/home/css/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+
+[ 2018-12-17T11:51:46+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018706731
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000502s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002353s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:51:47+08:00 ] 127.0.0.1 /internet/hospital/7f69043a-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%85%B6%E4%BB%96%E7%A7%91%E5%AE%A4&_=1545018707042
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000442s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002110s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000335s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001643s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /Public/home/css/img/2015/platform-logo-new.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000491s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002530s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /Public/home/css/img/expert_2015/sprite20170112.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /Public/home/css/img/account/v3/sprite-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /Public/home/css/img/account/v3/sprite-dialog-login.png?v=20151104
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /Public/home/css/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /Public/home/css/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /img/v2/icons-v2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /Public/home/css/img/account/v3/icon-user.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /Public/home/css/img/account/v3/icon-pwd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /Public/home/css/img/f-internation.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+
+[ 2018-12-17T11:52:02+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018722827
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000703s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002646s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:52:14+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000651s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002675s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:52:15+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+
+[ 2018-12-17T11:52:15+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000691s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003512s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:52:15+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+
+[ 2018-12-17T11:52:15+08:00 ] 127.0.0.1 /Public/home/css/img/2015/platform-logo-new.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001438s ]
+
+[ 2018-12-17T11:52:15+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001110s ]
+
+[ 2018-12-17T11:52:15+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+
+[ 2018-12-17T11:52:15+08:00 ] 127.0.0.1 /Public/home/css/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+
+[ 2018-12-17T11:52:15+08:00 ] 127.0.0.1 /Public/home/css/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+
+[ 2018-12-17T11:52:15+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018735585
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000240s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:53:47+08:00 ] 127.0.0.1 /internet/hospital/7f640bba-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%86%85%E7%A7%91&_=1545018827266
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000187s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:53:53+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018833392
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000184s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:54:34+08:00 ] 127.0.0.1 /internet/hospital/7f640bba-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%86%85%E7%A7%91&_=1545018874976
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:54:35+08:00 ] 127.0.0.1 /internet/hospital/7f6802e2-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%84%BF%E7%A7%91&_=1545018875000
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000218s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:54:35+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018875072
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000185s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:54:44+08:00 ] 127.0.0.1 /internet/hospital/7f640bba-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%86%85%E7%A7%91&_=1545018884196
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000254s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:54:47+08:00 ] 127.0.0.1 /internet/hospital/7f6866c4-cff3-11e1-831f-5cf9dd2e7135?deptName=%E8%80%B3%E9%BC%BB%E5%92%BD%E5%96%89%E5%A4%B4%E9%A2%88%E7%A7%91&_=1545018887177
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000250s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:54:53+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000663s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002960s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:54:53+08:00 ] 127.0.0.1 /Public/home/css/img/2015/platform-logo-new.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+
+[ 2018-12-17T11:54:53+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+
+[ 2018-12-17T11:54:53+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+
+[ 2018-12-17T11:54:53+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+
+[ 2018-12-17T11:54:53+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+
+[ 2018-12-17T11:54:53+08:00 ] 127.0.0.1 /Public/home/css/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+
+[ 2018-12-17T11:54:53+08:00 ] 127.0.0.1 /Public/home/css/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+
+[ 2018-12-17T11:54:53+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545018893972
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000374s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002035s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:56:30+08:00 ] 127.0.0.1 /internet/hospital/7f640bba-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%86%85%E7%A7%91&_=1545018990684
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000188s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:56:34+08:00 ] 127.0.0.1 /internet/hospital/7f688f14-cff3-11e1-831f-5cf9dd2e7135?deptName=%E7%9A%AE%E8%82%A4%E7%A7%91&_=1545018994882
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000185s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:56:37+08:00 ] 127.0.0.1 /internet/hospital/7f69043a-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%85%B6%E4%BB%96%E7%A7%91%E5%AE%A4&_=1545018997920
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001518s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:56:49+08:00 ] 127.0.0.1 /internet/hospital/7f6866c4-cff3-11e1-831f-5cf9dd2e7135?deptName=%E8%80%B3%E9%BC%BB%E5%92%BD%E5%96%89%E5%A4%B4%E9%A2%88%E7%A7%91&_=1545019009977
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000182s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:56:56+08:00 ] 127.0.0.1 /internet/hospital/7f69043a-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%85%B6%E4%BB%96%E7%A7%91%E5%AE%A4&_=1545019016968
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000208s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:57:05+08:00 ] 127.0.0.1 /internet/hospital/7f688f14-cff3-11e1-831f-5cf9dd2e7135?deptName=%E7%9A%AE%E8%82%A4%E7%A7%91&_=1545019025232
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000185s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:57:13+08:00 ] 127.0.0.1 /internet/hospital/7f67dd62-cff3-11e1-831f-5cf9dd2e7135?deptName=%E9%AA%A8%E7%A7%91&_=1545019033503
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000208s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:57:18+08:00 ] 127.0.0.1 /internet/hospital/7f688f14-cff3-11e1-831f-5cf9dd2e7135?deptName=%E7%9A%AE%E8%82%A4%E7%A7%91&_=1545019038082
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000194s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:57:23+08:00 ] 127.0.0.1 /internet/hospital/7f69043a-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%85%B6%E4%BB%96%E7%A7%91%E5%AE%A4&_=1545019043784
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000264s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:58:49+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000654s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002893s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:58:49+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2018-12-17T11:58:49+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001027s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004306s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:58:50+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+
+[ 2018-12-17T11:58:50+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2018-12-17T11:58:50+08:00 ] 127.0.0.1 /Public/home/css/img/2015/platform-logo-new.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+
+[ 2018-12-17T11:58:50+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+
+[ 2018-12-17T11:58:50+08:00 ] 127.0.0.1 /Public/home/css/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+
+[ 2018-12-17T11:58:50+08:00 ] 127.0.0.1 /Public/home/css/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+
+[ 2018-12-17T11:58:50+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019130402
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000692s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003086s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:59:06+08:00 ] 127.0.0.1 /internet/hospital/7f640bba-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%86%85%E7%A7%91&_=1545019146538
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000570s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002385s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:59:26+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000615s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002672s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:59:26+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-12-17T11:59:26+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+
+[ 2018-12-17T11:59:26+08:00 ] 127.0.0.1 /Public/home/css/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2018-12-17T11:59:26+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+
+[ 2018-12-17T11:59:26+08:00 ] 127.0.0.1 /Public/home/css/img/2015/platform-logo-new.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+
+[ 2018-12-17T11:59:26+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+
+[ 2018-12-17T11:59:26+08:00 ] 127.0.0.1 /Public/home/css/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+
+[ 2018-12-17T11:59:26+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019166854
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000567s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002127s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T11:59:34+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000210s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T11:59:34+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019174854
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000239s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:01:18+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000522s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002317s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:01:18+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+
+[ 2018-12-17T12:01:18+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+
+[ 2018-12-17T12:01:18+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2018-12-17T12:01:18+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+
+[ 2018-12-17T12:01:18+08:00 ] 127.0.0.1 /Public/home/css/img/2015/platform-logo-new.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+
+[ 2018-12-17T12:01:18+08:00 ] 127.0.0.1 /Public/home/css/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2018-12-17T12:01:18+08:00 ] 127.0.0.1 /Public/home/css/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+
+[ 2018-12-17T12:01:18+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019278857
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:01:19+08:00 ] 127.0.0.1 /internet/hospital/7f6866c4-cff3-11e1-831f-5cf9dd2e7135?deptName=%E8%80%B3%E9%BC%BB%E5%92%BD%E5%96%89%E5%A4%B4%E9%A2%88%E7%A7%91&_=1545019279228
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000181s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:02:22+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:02:22+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000260s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:02:22+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+
+[ 2018-12-17T12:02:22+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+
+[ 2018-12-17T12:02:22+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2018-12-17T12:02:22+08:00 ] 127.0.0.1 /Public/home/css/img/2015/platform-logo-new.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+
+[ 2018-12-17T12:02:22+08:00 ] 127.0.0.1 /Public/home/css/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+
+[ 2018-12-17T12:02:22+08:00 ] 127.0.0.1 /Public/home/css/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+
+[ 2018-12-17T12:02:22+08:00 ] 127.0.0.1 /Public/home/css/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+
+[ 2018-12-17T12:02:34+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000188s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:02:34+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019354969
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:02:53+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000186s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:03:14+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:03:14+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019394751
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000184s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:03:51+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000183s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:04:19+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000248s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:04:31+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000198s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:04:31+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019471899
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000188s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:05:24+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000245s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:05:24+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019524942
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000253s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001338s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:05:53+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000249s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001475s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:05:53+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001647s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:05:54+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019554162
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000253s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001381s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:05:57+08:00 ] 127.0.0.1 /internet/hospital/7f67b77e-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A4%96%E7%A7%91&_=1545019557679
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000276s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:07:06+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000729s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003588s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:07:07+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019627522
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000768s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003730s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:07:25+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000940s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003916s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:07:25+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019645678
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000803s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003551s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:07:44+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000749s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003182s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:07:45+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019665159
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000728s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003273s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:08:03+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000853s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004395s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:08:04+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019684258
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000790s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003471s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:09:40+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000541s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002502s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:09:41+08:00 ] 127.0.0.1 /validcode/genimage/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000512s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002327s ]
+ERR: 无法加载控制器:Validcode
+
+[ 2018-12-17T12:09:41+08:00 ] 127.0.0.1 /internet/hospital/7f67f180-cff3-11e1-831f-5cf9dd2e7135?deptName=%E5%A6%87%E4%BA%A7%E7%A7%91&_=1545019781564
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000581s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002747s ]
+ERR: 无法加载控制器:Internet
+
+[ 2018-12-17T12:09:45+08:00 ] 127.0.0.1 /internet/hospital/7f68c1d2-cff3-11e1-831f-5cf9dd2e7135?deptName=%E4%B8%AD%E5%8C%BB%E7%A7%91&_=1545019785613
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000523s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002634s ]
+ERR: 无法加载控制器:Internet
+

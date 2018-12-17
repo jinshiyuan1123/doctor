@@ -12,6 +12,7 @@
     <meta http-equiv="Cache-Control" content="no-transform" />
     <link rel="shortcut icon" href="/Public/home/favicon.ico" />
     <link rel="stylesheet" href="/Public/home/css/portal.base.min.css?v=1535436384237752" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/Public/home/css/toplist.css">
       <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
     <script src="/Public/his/vendor/layer/layer.js"></script>
 
@@ -157,48 +158,11 @@
                 </div>
             </div>
             <div class="gh-home-menu J_NewMenu">
-<style type="text/css">
-    
-    /* 设置二级菜单绝对定位，并隐藏 */
-    .menuDiv > ul > li > ul {
-        position: absolute;
-        display: none;
-    }
-    .menuDiv > ul > li > a:hover {
-        color: #f0f;
-        background-color: #bcf;
-    }
-     .menuDiv > ul > li:hover ul {
-        display: block;
-    }
-     /* 二级菜单 */
-    .menuDiv > ul > li > ul > li > a {
-        width: 120px;
-        line-height: 36px;
-        color: #456;
-        background-color: #eff; 
-        text-align: center;
-        /*border: 1px solid #ccc;*/
-        border-top: none;
-        display: block;
-    }
-     /* 在二级菜单中，第一个设置顶边框 */
-    .menuDiv > ul > li > ul > li:first-child > a {
-        border-top: 1px solid #ccc;
-    }
-     /* 在二级菜单中，鼠标放上去的样式 */
-    .menuDiv > ul > li > ul > li > a:hover {
-        color: #a4f;
-        background-color: #cdf;
-    }
-  
-    
- 
-   
-</style>
+
                 <div class="container g-clear  ">
                     <div class="home-menu-ctn menuDiv">
-                          <ul class="g-clear main-menu-nav">
+                          
+<ul class="g-clear main-menu-nav">
 <li class="hot">
     <a class="own-tab" target="_blank" href="" monitor="public_menu,home_menu,ask">健康资讯</a>
 
@@ -1913,7 +1877,7 @@ $(document).ready(function(){
                                     <div class="focus-list">
                                         <ul>
                                             
-                                          <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '就医攻略'): if($val['unit_price'] == '是'): ?><li>
+                                          <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '就医攻略'): if($val['unit_price'] == '1'): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
