@@ -3277,3 +3277,2772 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
 
+[ 2018-12-17T13:39:27+08:00 ] 127.0.0.1 /index.php/home/index/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000289s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13141589203' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] session_destroy() expects exactly 0 parameters, 1 given D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 279 行.
+
+[ 2018-12-17T13:39:27+08:00 ] 127.0.0.1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000182s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) LIMIT 6   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class7 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: class8 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 112 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class9 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 113 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000786s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000828s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2018-12-17T13:44:50+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001009s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004015s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class7 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class8 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 112 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class9 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 113 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2018-12-17T15:13:46+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000476s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003538s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class7 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class8 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 112 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class9 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 113 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 125 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 126 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001373s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2018-12-17T15:32:29+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000287s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001460s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class7 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class8 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 112 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: class9 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 113 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000795s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000839s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2018-12-17T15:32:38+08:00 ] 127.0.0.1 /index.php/home/index/fastorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000233s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001359s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0052s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 425 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_doctorlist`  [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 428 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dzm_his_doctorlist` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`province`,`socure`,`top`,`title`,`textarea`,`type`,`createtime`,`updatetime`,`process`,`uid`,`ask_price` FROM `dzm_his_doctorlist` WHERE ( id>1 ) ORDER BY id LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2018-12-17T15:32:40+08:00 ] 127.0.0.1 /index.php/home/index/fastorderlist?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000191s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `dzm_his_doctorlist` WHERE ( id='3' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0478s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='3' ) ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2018-12-17T15:32:41+08:00 ] 127.0.0.1 /index.php/home/index/handler
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000187s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0332s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='3' ) ORDER BY create_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-12-17T15:32:51+08:00 ] 127.0.0.1 /index.php/home/index/fastorderlist?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000597s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002791s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `dzm_his_doctorlist` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='4' ) ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2018-12-17T15:32:53+08:00 ] 127.0.0.1 /index.php/home/index/handler
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000230s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='4' ) ORDER BY create_time desc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000676s ]
+
+[ 2018-12-17T15:33:07+08:00 ] 127.0.0.1 /index.php/home/index/fastorderlist?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000197s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctorlist` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='4' ) ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2018-12-17T15:33:08+08:00 ] 127.0.0.1 /index.php/home/index/handler
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000212s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='4' ) ORDER BY create_time desc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2018-12-17T15:33:53+08:00 ] 127.0.0.1 /index.php/home/index/fastorderlist?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000222s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `dzm_his_doctorlist` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='4' ) ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2018-12-17T15:33:55+08:00 ] 127.0.0.1 /index.php/home/index/handler
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000186s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='4' ) ORDER BY create_time desc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2018-12-17T15:34:06+08:00 ] 127.0.0.1 /index.php/home/index/fastorderlist?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000182s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `dzm_his_doctorlist` WHERE ( id='3' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='3' ) ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2018-12-17T15:34:07+08:00 ] 127.0.0.1 /index.php/home/index/handler
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000205s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='3' ) ORDER BY create_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2018-12-17T15:35:13+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000374s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001896s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 82 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class7 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class8 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 112 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class9 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 113 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 125 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 126 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2018-12-17T15:35:23+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000259s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001672s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class7 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class8 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 112 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class9 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 113 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2018-12-17T15:39:55+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001545s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2018-12-17T16:10:47+08:00 ] 127.0.0.1 /index.php/home/index/hospital
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001563s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2018-12-17T16:10:51+08:00 ] 127.0.0.1 /index.php/home/index/fastorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0036s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 425 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_doctorlist`  [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 428 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dzm_his_doctorlist` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`username`,`province`,`socure`,`top`,`title`,`textarea`,`type`,`createtime`,`updatetime`,`process`,`uid`,`ask_price` FROM `dzm_his_doctorlist` WHERE ( id>1 ) ORDER BY id LIMIT 0,10   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-12-17T16:10:53+08:00 ] 127.0.0.1 /index.php/home/index/fastorderlist?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001728s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `dzm_his_doctorlist` WHERE ( id='4' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='4' ) ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2018-12-17T16:10:54+08:00 ] 127.0.0.1 /index.php/home/index/handler
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000223s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='4' ) ORDER BY create_time desc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2018-12-17T16:11:01+08:00 ] 127.0.0.1 /index.php/home/index/hospital
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000195s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2018-12-17T16:11:11+08:00 ] 127.0.0.1 /index.php/home/index/fastorder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000250s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001470s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0043s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 425 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_doctorlist`  [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 428 and defined D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2016\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dzm_his_doctorlist` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`username`,`province`,`socure`,`top`,`title`,`textarea`,`type`,`createtime`,`updatetime`,`process`,`uid`,`ask_price` FROM `dzm_his_doctorlist` WHERE ( id>1 ) ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2018-12-17T16:11:13+08:00 ] 127.0.0.1 /index.php/home/index/fastorderlist?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000272s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001526s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `dzm_his_doctorlist` WHERE ( id='3' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='3' ) ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2018-12-17T16:11:14+08:00 ] 127.0.0.1 /index.php/home/index/handler
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000296s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001675s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `dzm_his_ly` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `dzm_his_ly` WHERE ( pid='3' ) ORDER BY create_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+NOTIC: [8] Undefined index: name D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 554 行.
+NOTIC: [8] Undefined index: child D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 555 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2018-12-17T16:11:23+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000230s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001425s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000525s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2018-12-17T16:21:27+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-12-17T16:21:27+08:00 ] 127.0.0.1 /index.php/home/index/dist/css/share.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+ERR: 模板不存在:./Application/Home/View/Public/404.html
+
+[ 2018-12-17T16:21:27+08:00 ] 127.0.0.1 /index.php/home/index/dist/js/jquery.share.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000185s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+ERR: 模板不存在:./Application/Home/View/Public/404.html
+
+[ 2018-12-17T16:21:58+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000187s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2018-12-17T16:22:18+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000186s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-12-17T16:22:34+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000187s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-12-17T16:22:44+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2018-12-17T16:22:53+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000187s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2018-12-17T16:22:58+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000204s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2018-12-17T16:23:09+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000209s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2018-12-17T16:23:28+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001617s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2018-12-17T16:23:46+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2018-12-17T16:23:55+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000261s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001607s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2018-12-17T16:24:17+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000195s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2018-12-17T16:24:39+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000226s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001348s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000507s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2018-12-17T16:24:49+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000507s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2018-12-17T16:25:47+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001578s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2018-12-17T16:26:12+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-12-17T16:26:24+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000207s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2018-12-17T16:26:36+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000219s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001290s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2018-12-17T16:26:46+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000224s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2018-12-17T16:26:56+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000213s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2018-12-17T16:27:12+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000191s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2018-12-17T16:27:21+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000211s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2018-12-17T16:27:23+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000217s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2018-12-17T16:27:35+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000187s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-12-17T16:28:03+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2018-12-17T16:28:21+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000186s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-12-17T16:28:35+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000233s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001239s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2018-12-17T16:28:43+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000215s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2018-12-17T16:28:49+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000199s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2018-12-17T16:29:19+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2018-12-17T16:29:35+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000203s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2018-12-17T16:29:44+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000231s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2018-12-17T16:29:50+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000222s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2018-12-17T16:29:59+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2018-12-17T16:30:25+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001805s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2018-12-17T16:30:45+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000194s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007310s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2018-12-17T16:30:52+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000188s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2018-12-17T16:30:56+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2018-12-17T16:30:59+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000218s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2018-12-17T16:31:06+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000205s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2018-12-17T16:31:08+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001600s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2018-12-17T16:31:13+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001545s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2018-12-17T16:31:14+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000193s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2018-12-17T16:31:21+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000210s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2018-12-17T16:31:33+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000189s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2018-12-17T16:31:39+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000200s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2018-12-17T16:31:46+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000209s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2018-12-17T16:31:54+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000184s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2018-12-17T16:32:41+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000184s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2018-12-17T16:33:14+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000287s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2018-12-17T16:34:19+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000183s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2018-12-17T16:34:46+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000180s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000462s ]
+
+[ 2018-12-17T16:35:04+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000187s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2018-12-17T16:35:12+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000185s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2018-12-17T16:35:31+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000285s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001515s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2018-12-17T16:36:09+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000186s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2018-12-17T16:36:27+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000181s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2018-12-17T16:36:37+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000186s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0257s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2018-12-17T16:36:55+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000183s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2018-12-17T16:37:25+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000183s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2018-12-17T16:37:56+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000293s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001544s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2018-12-17T16:42:07+08:00 ] 127.0.0.1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000394s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001990s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0264s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='就医攻略'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='谣言粉碎机'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='中医养生'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='名医直通车'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class7 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 111 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class8 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 112 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class9 D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 113 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) LIMIT 6   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2018-12-17T16:42:19+08:00 ] 127.0.0.1 /index.php/home/index/topiclist?class=%E5%8C%BB%E9%99%A2%E5%85%AC%E5%BC%80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000184s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2016\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0262s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+

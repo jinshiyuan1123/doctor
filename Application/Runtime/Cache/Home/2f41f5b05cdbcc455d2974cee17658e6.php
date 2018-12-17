@@ -73,18 +73,42 @@
                         <span class="ding-text">顶</span>
                         <span id="J_SupportNum" class="ding-number">86</span>
                     </div>
-                    <div class="d-icon">
-                        <label>分享:</label>
-                        <img id="J_ShareToWechat" class="share-qq" src="https://static.guahao.cn/bbs/img/topic/weixin.png">
-                        <img id="J_ShareToWebo" class="share-weibo" src="https://static.guahao.cn/bbs/img/topic/weibo.png">
-                        <img id="J_ShareToQQ" class="share-weixin" src="https://static.guahao.cn/bbs/img/topic/qq.png">
-                    </div>
+                    
                 </div>
                 <div class="popup-qrcode-box" id="J_QrcodeBox">
                     <p class="popup-header"><i class="close" id="J_QrcodeClose"></i></p>
                     <div class="popup-qrcode" id="J_Qrcode"></div>
+
                 </div>
+            
             </div>
+            <div class="d-icon" style="width:250px;">
+            
+  
+  <link rel="stylesheet" href="/Public/home/dist/css/share.min.css">
+
+
+
+  <ol>
+   
+    <li class="row">
+      <div id="share-2">分享:</div>
+    </li>
+   
+   
+  </ol>
+
+<script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.js"></script>
+<script src="/Public/home/dist/js/jquery.share.min.js"></script>
+<script>
+$('#share-1').share();
+$('#share-2').share({sites: ['qzone', 'qq', 'weibo','wechat']});
+$('#share-3').share();
+$('#share-4').share();
+</script>
+
+
+            </div> 
             <hr class="share-division">
                 <div class="g-tuijian">
                     <div class="g-label">

@@ -56,6 +56,8 @@
                 <span class="line">|</span>
                 <a target="_blank" href="<?php echo U('home/index/register');?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,signin">注册</a>
                 <a href="<?php echo U('home/index/doctorlogin');?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" class="doctor-login" monitor="public_head,publick_head,doctoruser"><i style="right:6px"><img src="/Public/home/doctor-login.png"></i>我是医生</a>
+
+                 <a href="<?php echo U('home/index/yylogin');?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" class="doctor-login" monitor="public_head,publick_head,doctoruser"><i style="right:6px"><img src="/Public/home/images/default_yy.png"></i>医院入住</a>
             <?php else: ?>
 
                      <span class="text">您好
@@ -93,7 +95,9 @@
             <div class="gh-main">
                 <div class="container g-clear">
                     <div class="gh-logo ">
-                        <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo">
+                         <a href="<?php echo U('home/index/index');?>">
+                        <img class="logolist "  style="background-size: cover;width: 190px;height: 89px;display: inline-block;" src="/Public/home/images/logolist.jpg" alt="择医网" class="wy-logo"></a>
+                       
                     </div>
 
 
@@ -104,25 +108,130 @@
             </div>
             <div class="gh-home-menu J_NewMenu">
 
-            <ul class="g-clear main-menu-nav">
+            <!-- 
+<ul class="g-clear main-menu-nav">
 <li class="hot">
-    <a class="own-tab" target="_blank" href="<?php echo U('home/index/hospital');?>" monitor="public_menu,home_menu,ask">在线问诊</a>
+    <a class="own-tab" target="_blank" href="" monitor="public_menu,home_menu,ask">健康资讯</a>
+
 </li>
-<li><a target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">医生论坛</a></li>
-<li><a target="_blank" target="_blank" href="<?php echo U('home/index/ask');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,preciseorder">免费咨询</a></li>
-<li class="authority"><a class="own-tab" target="_blank" target="_blank" href="https://baike.h.gov.cn/" rel="nofollow">医药直通车</a></li>
+<li><a target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">网站公告</a></li>
+<li><a target="_blank" target="_blank" href="<?php echo U('home/index/hospital');?>" >在线咨询</a></li>
+<li class="authority"><a class="own-tab" target="_blank" target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow">医生论坛</a>
+
+</li>
 <li data-subnav="sub-nav-welife"><a target="_blank" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">
-医疗器械</a>
+健康</a>
+<ul>
+    <li><a href="#" target="_blank">养生</a></li>
+    <li><a href="#" target="_blank">健康</a></li>
+    <li><a href="#" target="_blank">两性</a></li>
+    <li><a href="#" target="_blank">减肥</a></li>
+    <li><a href="#" target="_blank">美容</a></li>
+    <li><a href="#" target="_blank">饮食</a></li>
+    <li><a href="#" target="_blank">母婴</a></li>
+    <li><a href="#" target="_blank">运动</a></li>
+    <li><a href="#" target="_blank">百科</a></li>
+</ul>
 </li>
 
 
-<li><a target="_blank" href="#" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">健康E务室</a></li>
-  <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">优选音乐</a></li>
+<li><a target="_blank" href="#" target="_blank" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">医药直通车</a>
+<ul>
+    <li><a href="#" target="_blank">中药材</a></li>
+    <li><a href="#" target="_blank">中药饮片</a></li>
+    <li><a href="#" target="_blank">中成药</a></li>
+    <li><a href="#" target="_blank">化学药品</a></li>
+    <li><a href="#" target="_blank">生物制品</a></li>
+    <li><a href="#" target="_blank">外用剂</a></li>
+    <li><a href="#" target="_blank">保健品</a></li>
+  
+</ul>	
+</li>
+  <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">医疗器械</a>
+<ul>
+	 <li><a href="#" target="_blank">保健器材</a></li>
+    <li><a href="#" target="_blank">康复设备</a></li>
+    <li><a href="#" target="_blank">护理设备</a></li>
+    <li><a href="#" target="_blank">医疗器械</a></li>
+    <li><a href="#" target="_blank">电子仪器</a></li>
+    <li><a href="#" target="_blank">分析仪器</a></li>
+    <li><a href="#" target="_blank">一次性用品</a></li>
+   
+</ul>
+  </li>
 
-   <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a></li>
+   <li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">宣传耗材</a>
+
+   </li>
 
 
 </ul>
+<div></div>
+<ul class="g-clear main-menu-nav">
+<li class="hot">
+    <a  target="_blank" href="<?php echo U('home/index/hospital');?>" >慈善</a>
+    <ul>
+    <li><a href="#" target="_blank">求助</a></li>
+    <li><a href="#" target="_blank">捐助</a></li>
+    <li><a href="#" target="_blank">活动</a></li>
+    <li><a href="#" target="_blank">公开</a></li>
+    
+</ul>
+</li>
+<li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">健康视频</a>
+	<ul>
+    <li><a href="#" target="_blank">健康</a></li>
+    <li><a href="#" target="_blank">养生</a></li>
+    <li><a href="#" target="_blank">减肥</a></li>
+     <li><a href="#" target="_blank">生活</a></li>
+    <li><a href="#" target="_blank">饮食</a></li>
+  
+</ul>
+</li>
+<li><a target="_blank" target="_blank" href="<?php echo U('home/index/ask');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,preciseorder">搞笑视频</a>
+	
+</li>
+
+
+
+  <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">优选音乐</a>
+  	<ul>
+    <li><a href="#" target="_blank">演唱会</a></li>
+    <li><a href="#" target="_blank">影视</a></li>
+    <li><a href="#" target="_blank">校园</a></li>
+    <li><a href="#" target="_blank">儿歌</a></li>
+    <li><a href="#" target="_blank">网络</a></li>
+    <li><a href="#" target="_blank">外语</a></li>
+    <li><a href="#" target="_blank">怀旧</a></li>
+    <li><a href="#" target="_blank">摇滚</a></li>
+    <li><a href="#" target="_blank">流行</a></li>
+    <li><a href="#" target="_blank">情感</a></li>
+    <li><a href="#" target="_blank">民谣</a></li>
+    <li><a href="#" target="_blank">专辑</a></li>
+    <li><a href="#" target="_blank">古典</a></li>
+</ul>
+  </li>
+
+   <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a>
+<ul>
+    <li><a href="#" target="_blank">演唱会</a></li>
+    <li><a href="#" target="_blank">影视</a></li>
+    <li><a href="#" target="_blank">校园</a></li>
+    <li><a href="#" target="_blank">儿歌</a></li>
+    <li><a href="#" target="_blank">网络</a></li>
+    <li><a href="#" target="_blank">外语</a></li>
+    <li><a href="#" target="_blank">怀旧</a></li>
+    <li><a href="#" target="_blank">摇滚</a></li>
+    <li><a href="#" target="_blank">流行</a></li>
+    <li><a href="#" target="_blank">情感</a></li>
+    <li><a href="#" target="_blank">民谣</a></li>
+    <li><a href="#" target="_blank">专辑</a></li>
+    <li><a href="#" target="_blank">古典</a></li>
+</ul>
+   </li>
+
+
+</ul> -->
         </div>
 
         <div id="gc">

@@ -291,7 +291,8 @@
 <div class="main-category-nav J_DiseaseCategory">
       <a href="<?php echo U('home/index/index');?>">
      <h3><i></i>   首页</h3></a>
-                            <div class="nav-cats-wrapper J_FastCategory" style="display:block">
+                            
+   <!--  <div class="nav-cats-wrapper J_FastCategory" style="display:block">
                                 <ul>
                                     <li data-id="1">
                                         <h5 class="title"><i class="nk"></i><a onmousedown="return _smartlog(this,'NAV')" target="_blank" href="">内科</a></h5>
@@ -345,7 +346,7 @@
         </li>
 
 </ul>
-</div>
+</div> -->
 </div>
 
 
