@@ -1,0 +1,418 @@
+.top-tips{float:left; background:#fffbf5; border:solid 1px #fae3bf; width:928px; overflow:hidden; padding:0 20px; height:26px; line-height:26px; text-align:center; margin-top:10px; color:#666;}
+
+.focus {width:680px; height:372px; overflow:hidden; margin-top:10px;}
+.focus .jianjie {float:left; width:231px; overflow:hidden;}
+.focus .jianjie .jj-pic {display:block; width:231px; height:179px; overflow:hidden; padding-top:13px; text-align:center; vertical-align:middle; background:url(../images/bg_some.png) no-repeat;}
+.focus .jianjie .jj-pic img {width:220px; height:165px;}
+.focus #tab1 {width:230px; height:180px; overflow:hidden; margin-top:-1px; border-right:1px solid #D9E6EB; border-bottom:1px solid #D9E6EB;}
+.focus #tab1 .tableft {float:left; width:87px; height:179px; overflow:hidden; border-top:1px solid #D9E6EB; background:url(../images/bg_line_x.gif) repeat-y -1000px 0;}
+.focus #tab1 .tableft em {float:left; width:81px; height:36px; overflow:hidden; padding-right:6px; text-align:right; line-height:36px; background:url(../images/bg_some.png) no-repeat -87px -192px; cursor:pointer;}
+.focus #tab1 .tableft .over {background-position:0 -192px;}
+.focus #tab1 div {float:right; width:134px; height:173px; overflow:hidden; padding:5px 4px 0 0; display:none;}
+.focus #tab1 div ul {width:134px; overflow:hidden;}
+.focus #tab1 div ul li {float:left; width:127px; height:29px; overflow:hidden; padding-left:7px; line-height:28px; background:url(../images/bg_line_x.gif) no-repeat left bottom;}
+.focus #tab1 div ul li a {float:left; margin-right:9px; white-space:nowrap;}
+.focus #tab1 div.show {display:block;}
+.focus .news {float:right; width:436px; overflow:hidden;}
+.focus .news .bd {display:block; width:436px; height:34px; position:relative; z-index:1;}
+.focus .news .bd strong {float:left; padding:0 8px 0 33px; font:bold 14px/26px SimSun; background:#fff url(../images/bg_points.gif) no-repeat -54px 6px; color:#f60; position:relative; z-index:2;}
+.focus .news .bd span {float:right; width:50px; overflow:hidden; padding-left:8px; line-height:26px; background:#fff; position:relative; z-index:2;}
+.focus .news .bd i {display:block; width:436px; height:0; overflow:hidden; border-top:1px solid #D9E6EB; position:absolute; left:0; top:13px; z-index:1;}
+.focus .news ul {width:436px; overflow:hidden; padding-bottom:11px;}
+.focus .news ul li {float:left; width:410px; overflow:hidden; padding:0 18px 0 8px; font:14px/26px SimSun; white-space:nowrap; text-overflow:ellipsis;}
+.focus .news ol {width:436px; height:118px; overflow:hidden; padding-top:1px; background:url(../images/bg_line_x.gif) no-repeat left top;}
+.focus .news ol li {float:left; width:424px; height:44px; overflow:hidden; margin-top:10px; padding:0 6px; font:12px/22px SimSun; text-indent:28px; background:url(../images/bg_points.gif) no-repeat 10px -317px; color:#666;}
+.focus .news ol li font {font-size:12px; color:#333;}
+
+.xinxi {width:680px; overflow:hidden;}
+.xinxi p {width:660px; height:20px; overflow:hidden; padding:10px 10px 0; line-height:20px; color:#666;}
+.xinxi p font {font-size:12px; font-weight:bold; font-family:Verdana; color:#590;}
+.xinxi .as {display:block; width:668px; overflow:hidden; padding:0 0 12px 12px;}
+.xinxi .as a {float:left; width:89px; height:27px; overflow:hidden; padding:12px 5px 0; margin:12px 12px 0 0; text-align:center; line-height:16px; background:url(../images/bg_some.png) no-repeat -231px 0; color:#4087A6; text-decoration:none; cursor:default;}
+.xinxi .as a:hover {background-position:-330px 0; color:#D97735;}
+.xinxi .as .a2 {height:35px; padding-top:4px;}
+.xinxi ul {width:660px; overflow:hidden; margin-top:10px; padding:0 10px 10px;}
+.xinxi ul li {float:left; width:330px; height:33px; overflow:hidden; color:#666;}
+.xinxi ul li strong {float:left; width:64px; height:33px; overflow:hidden; font-weight:normal; text-align:right;}
+.xinxi ul li .is {float:left; width:186px; height:12px; margin:1px 0 0 10px; display:inline; font-size:0; background:url(../images/bg_titles.jpg) no-repeat -769px -118px; position:relative;}
+.xinxi ul li .is i {display:block; height:12px; background:url(../images/bg_datas.png) repeat-x; position:absolute; left:0; top:0;}
+.xinxi ul li .is .i1 {z-index:1;}
+.xinxi ul li .is .i2 {z-index:2;}
+.xinxi ul li .is .i3 {height:13px; font-size:12px; background:none; color:#8EB7C9; top:13px;}
+.xinxi ul li .is .i3 span {white-space:nowrap; position:absolute; right:-7px; top:0; cursor:default;}
+.xinxi ul li cite {float:left; width:56px; height:33px; overflow:hidden; margin-left:6px; display:inline; white-space:nowrap;}
+.xinxi ul li cite font {margin-right:2px; font-size:12px; font-family:Verdana; color:#666;}
+.xinxi ul .x1 .is .i1 {background-position:0 -12px;} .xinxi ul .x1 .is .i2 {background-position:0 0;}
+.xinxi ul .x2 .is .i1 {background-position:0 -84px;} .xinxi ul .x2 .is .i2 {background-position:0 -72px;}
+.xinxi ul .x3 .is .i1 {background-position:0 -36px;} .xinxi ul .x3 .is .i2 {background-position:0 -24px;}
+.xinxi ul .x4 .is .i1 {background-position:0 -108px;} .xinxi ul .x4 .is .i2 {background-position:0 -96px;}
+.xinxi ul .x5 .is .i1 {background-position:0 -60px;} .xinxi ul .x5 .is .i2 {background-position:0 -48px;}
+.xinxi ul .x6 .is .i1 {background-position:0 -132px;} .xinxi ul .x6 .is .i2 {background-position:0 -120px;}
+.xinxi ol {width:664px; overflow:hidden; margin-left:4px; padding:4px 3px 12px; border-top:1px solid #E4EDF1;}
+.xinxi ol li {float:left; width:640px; overflow:hidden; padding:0 12px; font:14px SimSun; background:url(../images/bg_line_x.gif) no-repeat left bottom;}
+.xinxi ol li i {float:left; width:134px; line-height:35px; color:#666;}
+.xinxi ol li span {float:left; width:506px; padding:4px 0 5px; *padding:5px 0 4px; line-height:26px;}
+.xinxi ol li.noline {height:0; margin-top:-1px; border-top:1px solid #fff;}
+.xinxi2 {width:678px; padding-top:10px; border:1px solid #D9E6EB; border-top:none;}
+.xinxi2 ul {padding:0 9px 10px;}
+
+.tupian {display:block; width:680px; height:34px; overflow:hidden; margin-top:10px; background:url(../images/bg_titles.jpg) no-repeat 0 -35px;}
+.tupian h3 {float:left; margin-left:36px; display:inline; font:bold 14px/35px SimSun;}
+.tupian .gd {float:right; margin:12px 14px 0; display:inline;}
+.tus {width:680px; overflow:hidden; padding-bottom:16px;}
+.tus li {float:left; width:120px; height:114px; overflow:hidden; margin:17px 25px 0; display:inline;}
+.tus li img {float:left; width:120px; height:90px;}
+.tus li span {float:left; width:120px; height:14px; overflow:hidden; padding-top:10px; text-align:center; white-space:nowrap; text-overflow:ellipsis;}
+
+#tab2 h2 {margin-right:30px;}
+#tab2 em {float:left; width:97px; height:30px; overflow:hidden; margin-top:5px; text-align:center; line-height:31px; cursor:pointer;}
+#tab2 .over {font-weight:bold; background:#43A2D0; color:#fff;}
+#tab2 div {display:none; width:670px; overflow:hidden; padding:5px 5px 0;}
+#tab2 div ul {width:670px; overflow:hidden;}
+#tab2 div ul li {float:left; width:670px; overflow:hidden; background:url(../images/bg_line_x.gif) no-repeat left bottom;}
+#tab2 div ul li dl {width:576px; overflow:hidden; padding-left:94px; position:relative;}
+#tab2 div ul li dt {display:block; width:70px; height:90px; overflow:hidden; padding:15px 24px 0 0; text-align:right; line-height:22px; position:absolute; left:0; top:0;}
+#tab2 div ul li dt a {color:#666; text-decoration:underline;}
+#tab2 div ul li dt a:hover {color:#f60; text-decoration:underline;}
+#tab2 div ul li dt strong {font-weight:normal;}
+#tab2 div ul li dt strong a {color:#333; text-decoration:none;}
+#tab2 div ul li dt strong a:hover {color:#f60; text-decoration:underline;}
+#tab2 div ul li dt i {display:block; width:4px; height:7px; overflow:hidden; background:url(../images/bg_points.gif) no-repeat 0 -120px; position:absolute; right:14px; top:21px;}
+#tab2 div ul li dd {float:left; width:134px; height:110px; overflow:hidden; margin-left:9px; display:inline;}
+#tab2 div ul li dd img {float:left; width:60px; height:75px; margin:17px 10px 0 0;}
+#tab2 div ul li dd p {float:left; width:64px; height:90px; overflow:hidden; margin-top:15px; line-height:22px;}
+#tab2 div ul li dd p img {float:none; width:12px; height:12px; margin:-2px 0 0 2px;}
+#tab2 div ul li dd p font {font-size:12px; color:#666;}
+#tab2 div ol {width:670px; overflow:hidden; padding:10px 0 0;}
+#tab2 div ol li {float:left; width:660px; overflow:hidden; padding-left:10px; line-height:26px;}
+#tab2 div ol li a {float:left; margin-right:20px; white-space:nowrap;}
+#tab2 div ol li strong {float:left; overflow:hidden; padding-right:12px; font-weight:normal;}
+#tab2 div ol li strong a {margin:0; color:#333; text-decoration:none;}
+#tab2 div ol li strong a:hover {color:#f60; text-decoration:underline;}
+#tab2 div ol li strong i {margin-left:6px; font-weight:bold; color:#43A2D0;}
+#tab2 .show {display:block;}
+
+.gua {width:652px; /*height:96px; */padding:16px 14px; background:#F9FBFC;}
+.gua .sou {width:652px; height:32px; position:relative; z-index:8;}
+.gua .sou .tit {float:left; line-height:25px;}
+.gua .sou i {float:left; width:146px; height:25px; overflow:hidden; padding:0 6px; margin-right:16px; line-height:25px; background:url(../images/bg_some.png) no-repeat; color:#999; cursor:pointer;}
+.gua .sou .i1 {background-position:-231px -142px;}
+.gua .sou .i2 {background-position:-231px -167px;}
+.gua .sou .btn {float:left; width:71px; height:25px; font:bold 12px/25px SimSun; border:none; background:url(../images/bg_points.gif) no-repeat 0 -36px; color:#fff; cursor:pointer;}
+.gua .sou .btnover {background-position:0 -61px;}
+.gua .sou div {display:block; overflow:hidden; border:1px solid #8DB2C1; background:#F9FBFC; position:absolute; top:24px;}
+.gua .sou div .sb-top {display:block; width:100%; height:25px; overflow:hidden; border-bottom:1px solid #D9E6EB; background:url(../images/bg_datas.png) repeat-x 0 -144px;}
+.gua .sou div .sb-top strong {float:left; margin:6px 0 0 10px; color:#666;}
+.gua .sou div .sb-top a {float:right; width:9px; height:8px; overflow:hidden; margin:9px 8px 0; background:url(../images/bg_points.gif) no-repeat -72px -200px;}
+.gua .sou div .sb-down {display:block; width:100%; overflow:hidden; padding:10px 0;}
+.gua .sou div .sb-down a {float:left; width:95px; height:24px; overflow:hidden; padding-left:6px; margin-left:5px; line-height:24px; text-decoration:none;}
+.gua .sou div .sb-down a:hover {background:#3C9DCC; color:#fff; text-decoration:none;}
+.gua .sou #sb1 {width:323px; left:36px; z-index:1;}
+.gua .sou #sb2 {width:156px; left:270px; z-index:2;}
+.gua .sou #sb2 .sb-down a {width:140px;}
+.gua .sou #sb2 .sb-down .weekline {float:left; width:146px; height:1px; overflow:hidden; margin:11px 5px 12px; background:url(../images/bg_line_x.gif) no-repeat;}
+.gua .sou .shut {display:none;}
+.gua .sou .open {display:block;}
+.gua p {width:652px; height:52px; overflow:hidden; margin-top:2px; line-height:26px; color:#666;}
+.gua p font {font:bold 12px Verdana; color:#f60;}
+.gua2{ height:auto;padding:10px 14px;_padding:10px 13px;border:1px solid #D9E6EB; border-bottom:0; width:650px;}
+
+.yuyue {width:680px; border-top:1px solid #D9E6EB; position:relative;}
+.yuyue_loading{ width:678px; overflow:hidden; *border-top:0;}
+.yuyue div {width:100%;}
+.yue_load, .yuyue .yue_load{width:680px; padding:40px 0;}/*20121018 wzj add*/
+.yue_load .loadx,.yuyue .yue_load .loadx{width:454px; margin:0 auto;}/*20121018 wzj add*/
+.yue_load2{ width:auto; padding:80px 0;}
+.yuyue div .yu-top {display:block; width:100%; height:34px; overflow:hidden; border-top:1px solid #fff; border-bottom:1px solid #D9E6EB; background:#F7FAFB; position:relative; cursor:pointer;}
+.yuyue div .yu-top strong {float:left; margin:0 14px; font:14px/34px SimSun;}
+.yuyue div .yu-top p {float:left; font:12px/35px SimSun; cursor:default; color:#666;}
+.yuyue div .yu-top p font {margin-left:20px; font-size:12px; color:#333;}
+.yuyue div .yu-top span {display:none; height:34px; overflow:hidden; padding-left:21px; line-height:35px; background:url(../images/bg_points.gif) no-repeat 0 -229px; color:#666; position:absolute; left:484px; top:0; cursor:default;}
+.yuyue div .yu-top span font {font-size:12px; color:#f60;}
+.yuyue div .yu-top .yu {display:block; width:36px; height:18px; overflow:hidden; background:url(../images/bg_points.gif) no-repeat 0 -200px; position:absolute; right:22px; top:8px;}
+.yuyue div .yu-top2 {border-top:1px solid #F1F6F9; border-bottom:1px solid #C0DAE7; background:#E4EFF4;}
+.yuyue div .yu-top2 strong, .yuyue div .yu-top2 span font {font-weight:bold;}
+.yuyue div .yu-list {display:block; width:100%; padding-bottom:20px; border-bottom:1px solid #D9E6EB;}
+.yuyue div .yu-list ul {width:680px; height:29px; overflow:hidden; border-bottom:1px solid #E5E5E5;}
+.yuyue div .yu-list ul li {float:left; height:29px; overflow:hidden; line-height:31px; color:#666; cursor:default;}
+.yuyue div .yu-list ul .l1 {width:214px; padding-left:14px;}
+.yuyue div .yu-list ul .l2 {width:156px; padding-left:19px;}
+.yuyue div .yu-list ul .l3 {width:277px;}
+.yuyue div .yu-list dl {width:452px; padding-left:228px; background:#fff url(../images/bg_line_x.gif) no-repeat left bottom; position:relative;}
+.yuyue div .yu-list dt {height:34px; margin-top:-17px; line-height:34px; color:#590; position:absolute; left:14px; top:50%; cursor:default;}
+.yuyue div .yu-list dd {width:452px; height:34px; background:url(../images/bg_line_x.gif) no-repeat left bottom;}
+.yuyue div .yu-list dd.dds {background:url(../images/bg_dd.gif) no-repeat left bottom;}
+.yuyue div .yu-list dd i {float:left; width:146px; overflow:hidden; padding:0 10px 0 19px; line-height:34px; white-space:nowrap; text-overflow:ellipsis; color:#666; cursor:default;}
+.yuyue div .yu-list dd cite {float:left; width:182px; height:34px; overflow:hidden; padding:0 10px 0 18px; line-height:34px; white-space:nowrap; text-overflow:ellipsis; background:url(../images/bg_points.gif) no-repeat 0 -151px; color:#666;}
+.yuyue div .yu-list dd .yue {float:left; width:53px; height:22px; margin-top:8px; position:relative; z-index:3;}
+.yuyue div .yu-list dd .yue .yu {display:block; width:53px; height:18px; background:url(../images/bg_points.gif) no-repeat;}
+.yuyue div .yu-list dd .yue .yu:hover {background-position:0 -18px;}
+.yuyue div .yu-list dd .yue b {display:block; width:53px; height:18px; background:url(../images/bg_other.gif) no-repeat;}
+.yuyue div .yu-list dd .yue .b1 {background-position:-21px -321px;}
+.yuyue div .yu-list dd .yue .b2 {background-position:-21px -339px;}
+.yuyue div .yu-list dd .yue .times {display:none; width:389px; padding:4px; -moz-border-radius: 5px; -webkit-border-radius:5px; border-radius:5px; background:url(../images/bg_glass.png) repeat; _background:#E9E9E9; position:absolute; right:-12px; _right:-13px; top:21px; z-index:10;}
+.yuyue div .yu-list dd .yue .times span {display:block; width:374px; height:18px; padding:5px 0 0 13px; border:1px solid #FFB64F; border-bottom:none; background:#FEEFE2; color:#666; position:relative;}
+.yuyue div .yu-list dd .yue .times span b {display:block; width:13px; height:8px; overflow:hidden; background:url(../images/bg_points.gif) no-repeat -53px -28px; position:absolute; right:30px; top:-8px;}
+.yuyue div .yu-list dd .yue .times ol {width:377px; overflow:hidden; padding:5px 5px 4px 5px; border:1px solid #FFB64F; border-top:none; background:#fff;}
+.yuyue div .yu-list dd .yue .times ol li {float:left; width:377px; height:31px; overflow:hidden; background:url(../images/bg_line_x.gif) no-repeat left bottom;}
+.yuyue div .yu-list dd .yue .times ol li a {float:left; width:90px; height:24px; overflow:hidden; padding-left:27px; margin:3px 0 0 8px; font:12px/24px Verdana; background:url(../images/bg_points.gif) no-repeat 6px -364px; color:#666; text-decoration:none;}
+.yuyue div .yu-list dd .yue .times ol li a:hover {background-color:#FEEFE2;}
+.yuyue div .yu-list dd .yue .times ol li cite {float:left; width:90px; height:24px; overflow:hidden; padding-left:27px; margin:3px 0 0 8px; font:12px/24px Verdana; background:url(../images/web_icons.gif) no-repeat 6px -25px; color:#999; text-decoration:none; padding-right:0;}
+.yuyue div .yu-list dd .yue .times ol li cite.yy_none{ background:url(../images/web_icons.gif) no-repeat 6px -280px;}
+.yuyue div .yu-list dd .yue .times ol li.noline {width:377px; height:0; padding:0; margin-top:-1px; font-size:0; border-top:1px solid #fff;}
+.yuyue div .yu-list dd .yue2 {z-index:4;}
+.yuyue div .yu-list dd .yue2 .times {display:block;}
+.yuyue div .yu-list .dl1, .yuyue div .yu-list .dl2 {z-index:1;}
+.yuyue div .yu-list .dl3 {background-color:#F6F9FA; z-index:5;}
+.yuyue div .yu-list .dl3 dt {font-weight:bold;}
+.yuyue .shut .yu-list {display:none;}
+.yuyue .open .yu-top {border-top:1px solid #F1F6F9; border-bottom:1px solid #C0DAE7; background:#E4EFF4;}
+.yuyue .open .yu-top strong a {font-weight:bold; color:#f60;}
+.yuyue .open .yu-top p font{display:none;}
+.yuyue .open .yu-top span {display:block;}
+.yuyue .open .yu-top .yu {background-position:-36px -200px;}
+.yuyue .open .yu-list {display:block;}
+.yuyue .quan {display:block; width:680px; height:29px; overflow:hidden; border-top:1px solid #fff; border-bottom:1px solid #D9E6EB; background:#EFF5F7;}
+.yuyue .quan a {float:right; margin:9px 10px 0;}
+.yuyue2 {width:678px; border-left:1px solid #D9E6EB; border-right:1px solid #D9E6EB;}
+.yuyue2 div .yu-list dl, .yuyue2 div .yu-list dd {width:450px;}
+/*20121024 yuyue_all*/
+.yuyue_all{border-left:1px solid #D9E6EB;border-right:1px solid #D9E6EB; width:968px;}
+.yuyue_all div .yu-top span {left:596px;}
+.yuyue_all div .yu-list ul {width:968px;}
+.yuyue_all div .yu-list ul .l1 {width:272px; padding-left:14px;}
+.yuyue_all div .yu-list ul .l2 {width:290px; padding-left:19px;}
+.yuyue_all div .yu-list ul .l3 {width:277px;}
+.yuyue_all div .yu-list dl {padding-left: 287px;width: 681px;}
+.yuyue_all div .yu-list dd {width: 681px;}
+.yuyue_all div .yu-list dd.dds {background: url("../images/bg_dd2.gif") no-repeat left bottom;}
+.yuyue_all div .yu-list dd i {width: 280px;}
+.yuyue_all div .yu-list dd cite {width: 236px;}
+.yuyue_all div .yu-top .yu {right: 62px;}
+.yuyue_all div .yu-list { padding-bottom:0;}
+.yuyue_only{ z-index:30;}
+.yuyue_only div .yu-top .yu { display:none}
+.yuyue_all div .yu-list .hide_line{ background:#fff; margin-top:-1px;_margin-top:-2px; height:1px; line-height:1px; position:relative; z-index:4; font-size:1px;}
+
+.yuyue_titbar{ background:url(../images/web_icons.gif) no-repeat 10px -200px; font-size:14px; font-weight:bold; padding-left:30px; height:28px; line-height:28px; margin-top:10px;}
+.yuyue_titbar cite{ color:#f60;}
+
+.xiangxi {width:648px; overflow:inherit; padding:0; padding:0 15px 30px; border:1px solid #D9E6EB; border-top:none;}
+.xiangxi div {width:648px; padding:20px 0 10px;}
+.xiangxi div span {float:left; width:648px; height:26px; overflow:hidden; position:relative; z-index:0;}
+.xiangxi div span h3 {float:left; height:26px; padding:0 5px 0 15px; font:bold 14px SimSun; background:#fff url(../images/bg_points.gif) no-repeat 3px -116px; position:relative; z-index:2;}
+.xiangxi div span i {display:block; width:648px; height:0; overflow:hidden; border-top:1px solid #E4EDF1; position:absolute; left:0; top:8px;}
+.xiangxi div ul {float:left; width:648px; padding-bottom:10px; font:14px/26px SimSun;}
+.xiangxi div ul li {float:left; width:152px; margin-left:10px; display:inline;}
+.xiangxi div ul li .sb1 {float:left; width:152px; overflow:hidden; font-weight:normal; white-space:nowrap; text-overflow:ellipsis; cursor:default;}
+.xiangxi div ul li a {color:#333; text-decoration:none;}
+.xiangxi div ul li a:hover {color:#f60; text-decoration:underline;}
+.xiangxi div ul li font {font:bold 12px/26px SimSun; margin-left:9px; color:#C9D8DE;}
+.xiangxi div ul li .shebei {clear:both; display:none; width:160px; padding:5px; border:1px solid #91B4C3; background:#F5F9FB;}
+.xiangxi div ul li .shebei img {float:left; width:160px; height:120px;}
+.xiangxi div ul li .shebei .sb2 {float:left; width:150px; overflow:hidden; padding:8px 5px; font:12px/22px SimSun; text-align:justify; text-justify:distribute;}
+.xiangxi div ul li .shebei i {clear:both; display:block; width:9px; height:6px; overflow:hidden; background:url(../images/bg_points.gif) no-repeat -72px -212px; position:absolute; left:20px; top:-6px;}
+.xiangxi div ul li.over {position:relative; z-index:555;}
+.xiangxi div ul li.over .shebei {display:block; position:absolute; left:-15px; top:26px; z-index:999;}
+.xiangxi div b {clear:both; display:block; width:45px; height:17px; overflow:hidden; margin-left:600px; background:url(../images/bg_points.gif) no-repeat 0 -408px; cursor:pointer;}
+.xiangxi div.open ul {height:auto;}
+.xiangxi div.open b {background-position:0 -424px;}
+.xiangxi p {width:638px; padding:0 5px; padding-top:20px; font:14px/26px SimSun; text-align:justify; text-justify:distribute;}
+.xiangxi2 p {width:638px; padding:0 5px; padding-top:20px; font:14px/26px SimSun; text-indent:2em; text-align:justify; text-justify:distribute;}
+.xiangxi2 p br {display:none;}
+.xiangxi2 {padding-top:20px; font:14px/26px SimSun;}
+.xiangxi2 img {margin-top:-4px;}
+
+.xuan {width:670px; padding:0 4px 15px 4px; border-left:1px solid #D9E6EB; border-right:1px solid #D9E6EB;}
+.xuan dl {width:586px; overflow:hidden; padding:15px 0 0 84px; position:relative;}
+.xuan dt {line-height:20px; position:absolute; left:11px; top:19px;}
+.xuan dd {float:left; width:104px; overflow:hidden; margin-top:4px; white-space:nowrap; text-overflow:ellipsis;}
+.xuan dd a {padding:3px 4px; height:20px; line-height:20px;}
+.xuan dd a#now3 {background:#3096C0; color:#fff;}
+.xuan dd a#now3:hover {color:#fff; text-decoration:none; cursor:default;}
+.xuan dd.spdd {width:45px; height:17px; padding:0; background:url(../images/bg_points.gif) no-repeat 0 -408px; position:absolute; right:10px; bottom:2px; cursor:pointer;}
+.xuan dl.shut {height:120px;}
+.xuan dl.open {height:auto;}
+.xuan dl.open dd.spdd {background-position:0 -424px;}
+.xuan .shijian {display:block; width:670px; height:28px; margin-top:15px; padding-top:12px; border-top:1px dashed #D9E6EB; position:relative; z-index:8;}
+.xuan .shijian .tit {float:left; line-height:25px; padding-left:11px;}
+.xuan .shijian i {float:left; width:146px; height:25px; overflow:hidden; padding:0 6px; margin-left:13px; line-height:25px; background:url(../images/bg_some.png) no-repeat -231px -167px; color:#999; cursor:pointer;}
+.xuan .shijian div {display:block; width:156px; overflow:hidden; border:1px solid #8DB2C1; background:#F9FBFC; position:absolute; left:84px; top:36px;}
+.xuan .shijian div .sb-top {display:block; width:100%; height:25px; overflow:hidden; border-bottom:1px solid #D9E6EB; background:url(../images/bg_datas.png) repeat-x 0 -144px;}
+.xuan .shijian div .sb-top strong {float:left; margin:6px 0 0 10px; color:#666;}
+.xuan .shijian div .sb-top a {float:right; width:9px; height:8px; overflow:hidden; margin:9px 8px 0; background:url(../images/bg_points.gif) no-repeat -72px -200px;}
+.xuan .shijian div .sb-down {display:block; width:100%; overflow:hidden; padding:10px 0;}
+.xuan .shijian div .sb-down a {float:left; width:140px; height:24px; overflow:hidden; padding-left:6px; margin-left:5px; line-height:24px; text-decoration:none;}
+.xuan .shijian div .sb-down a:hover {background:#3C9DCC; color:#fff; text-decoration:none;}
+.xuan .shijian div .sb-down .weekline {float:left; width:146px; height:1px; overflow:hidden; margin:11px 5px 12px; background:url(../images/bg_line_x.gif) no-repeat;}
+.xuan .shijian .shut {display:none;}
+.xuan .shijian .open {display:block;}
+
+.jump {width:970px; height:940px; overflow:hidden; color:#666;}
+.jump .jump-box {width:750px; height:221px; overflow:hidden; margin:160px auto 0; padding-top:54px; border:1px solid #DAE6EB; background:#F6F9FA;}
+.jump .jump-box .ju {display:block; width:566px; height:123px; overflow:hidden; margin:0 auto; border:1px solid #90C8F5; background:#fff url(../images/bg_datas.png) repeat-x 0 -292px;}
+.jump .jump-box .ju .p1 {width:566px; height:40px; overflow:hidden; padding-top:18px; font:14px/24px SimSun; text-align:center;}
+.jump .jump-box .ju .p1 a {margin:0 7px;}
+.jump .jump-box .ju .p2 {width:370px; height:50px; overflow:hidden; padding-left:196px; line-height:20px; background:url(../images/bg_loading.gif) no-repeat 150px 3px;}
+.jump .jump-box .p3 {width:568px; overflow:hidden; margin:24px auto 0; line-height:24px; text-align:center;}
+.jump .jump-box .ju .p2 a, .jump .jump-box .p3 a {color:#f60; text-decoration:none;}
+.jump .jump-box .ju .p2 a:hover, .jump .jump-box .p3 a:hover {color:#f60; text-decoration:underline;}
+.jump .jump-bos {width:750px; height:190px; overflow:hidden; margin:160px auto 0; padding-top:30px; border:1px solid #D9E6EB; background:url(../images/bg_step_line_y.png) repeat-x 0 -215px;}
+.jump .jump-bos .sps {float:left; width:516px; height:66px; overflow:hidden; margin:0 0 16px 190px; text-indent:-5000px; background:url(../images/bg_step_other.png) no-repeat 0 -108px;}
+.jump .jump-bos p {float:left; width:516px; overflow:hidden; margin:0 0 8px 206px; _display:inline; line-height:24px; color:#333;}
+.jump .jump-bos p i {font-family:Verdana; line-height:22px; color:#f60;}
+.jump .jump-bos p font {font-size:12px; color:#666;}
+.jump .tips {display:block; width:752px; overflow:hidden; margin:20px auto 0; text-align:center;}
+.loadx {width:454px; height:150px; overflow:hidden; padding:4px; background:url(../images/bg_glass.png) repeat; _background:#E9E9E9;}
+.loadx .loadx-box {width:452px; height:148px; overflow:hidden; border:1px solid #7BB3CE; background:#fff;}
+.loadx .loadx-box .p1 {width:452px; height:74px; overflow:hidden; padding-top:30px; text-align:center; background:url(../images/bg_loading_x.gif) no-repeat center 60px;}
+.loadx .loadx-box .p2 {width:452px; overflow:hidden; text-align:center; color:#666;}
+.loadx .loadx-box .p2 font {font:bold 12px Verdana; color:#590;}
+
+.map-title {display:block; width:970px; height:31px; overflow:hidden; margin-top:10px; background:url(../images/bg_titles.jpg) no-repeat 0 -197px;}
+.map-title strong {float:left; padding-left:32px; font:bold 14px/31px SimSun;}
+.map-dz {width:958px; overflow:hidden; padding:0 0 10px 10px; border:1px solid #D9E6EB; border-top:none;}
+.map-dz {width:912px; overflow:hidden; padding:10px 24px 10px 32px; font:12px/24px SimSun; color:#666;}
+.map-cons {width:958px; overflow:hidden; padding:0 0 10px 10px; border:1px solid #D9E6EB; border-top:none;}
+.map-cons .map_l {float:left; width:288px; overflow:hidden;}
+.map-cons .map_l .xianlu {float:left; width:246px; height:134px; overflow:hidden; padding:8px 42px 0 0; position:relative;}
+.map-cons .map_l .xianlu span {float:left; width:246px; overflow:hidden; margin-top:12px;}
+.map-cons .map_l .xianlu span i {float:left; width:50px; height:26px; overflow:hidden; font:14px/26px SimSun; line-height:28px\9; text-align:center;}
+.map-cons .map_l .xianlu span .tit {float:left; width:166px; height:24px; padding:0 8px; font:12px/24px SimSun; line-height:26px\9; border:1px solid #BECCD1;}
+.map-cons .map_l .xianlu span a {float:left; width:89px; height:29px; overflow:hidden; margin-right:7px; text-align:center; font:bold 12px/30px SimSun; line-height:32px\9; background:url(../images/bg_map_cons.png) no-repeat -288px 0; color:#333; text-decoration:none;}
+.map-cons .map_l .xianlu span a:hover {background-position:-288px -29px; color:#333; text-decoration:none;}
+.map-cons .map_l .xianlu cite {clear:both; display:block; width:30px; height:38px; overflow:hidden; position:absolute; right:11px; top:34px;}
+.map-cons .map_l .xianlu cite a {display:block; width:30px; height:38px; background:url(../images/bg_map_cons.png) no-repeat -288px -58px;}
+.map-cons .map_l .xianlu cite a:hover {background-position:-318px -58px;}
+.map-cons .map_l .xuanlu {float:left; width:287px; height:41px; overflow:hidden; padding-left:1px; margin-top:10px;}
+.map-cons .map_l .xuanlu li {float:left; width:72px; height:34px; overflow:hidden; margin-left:-1px; _display:inline; position:relative; z-index:1;}
+.map-cons .map_l .xuanlu li a {display:block; height:26px; overflow:hidden; line-height:26px; line-height:28px\9; text-align:center; border:1px solid #D9E6EB; background:url(../images/bg_map_line_y.png) repeat-x; color:#333; text-decoration:none;}
+.map-cons .map_l .xuanlu li a:hover {background-position:0 -26px; color:#333; text-decoration:none;}
+.map-cons .map_l .xuanlu li i {display:none; width:11px; height:6px; overflow:hidden; margin-left:-5px; background:url(../images/bg_map_cons.png) no-repeat -329px -102px; position:absolute; left:50%; bottom:0;}
+.map-cons .map_l .xuanlu li#now4 {width:75px; z-index:2;}
+.map-cons .map_l .xuanlu li#now4 a {font-weight:bold; border-color:#D9E6EB; background-position:0 -26px;}
+.map-cons .map_l .xuanlu li#now4  i {display:block;}
+.map-cons .map_l .fangshi {float:left; width:288px; overflow:hidden;}
+.map-cons .map_l .fangshi div {float:left; width:288px; overflow:hidden; margin-bottom:10px; background:url(../images/bg_map_cons.png) no-repeat 0 -6px;}
+.map-cons .map_l .fangshi div .fs_top {float:left; width:234px; height:35px; overflow:hidden; padding:6px 27px 0; background:url(../images/bg_map_cons.png) no-repeat 0 35px; position:relative; cursor:pointer;}
+.map-cons .map_l .fangshi div .fs_top i {display:block; width:18px; height:16px; overflow:hidden; font:bold 11px/16px Verdana; text-align:center; color:#fff; position:absolute; left:0; top:2px; cursor:pointer;}
+.map-cons .map_l .fangshi div .fs_top cite {display:block; width:11px; height:6px; overflow:hidden; background:url(../images/bg_map_cons.png) no-repeat -329px -96px; position:absolute; right:12px; top:18px; cursor:pointer;}
+.map-cons .map_l .fangshi div .fs_top_over cite {background-position:-318px -102px;}
+.map-cons .map_l .fangshi div .fs_top strong {display:block; width:234px; height:30px; overflow:hidden; line-height:30px; line-height:32px\9; white-space:nowrap; text-overflow:ellipsis; color:#07b; cursor:pointer;}
+.map-cons .map_l .fangshi div .fs_show {float:left; display:none; width:288px; overflow:hidden;}
+.map-cons .map_l .fangshi div .fs_show .qc {display:block; width:234px; height:23px; overflow:hidden; padding:0 27px; white-space:nowrap; text-overflow:ellipsis; border-bottom:1px solid #95CEEA; color:#666; cursor:default;}
+.map-cons .map_l .fangshi div .fs_show .ps {float:left; width:262px; height:27px; overflow:hidden; padding:8px 11px 0; white-space:nowrap; border-left:2px solid #95CEEA; border-right:2px solid #95CEEA;}
+.map-cons .map_l .fangshi div .fs_show .ps i {float:left; width:19px; height:19px; overflow:hidden; margin-right:2px; background:url(../images/bg_map_cons.png) no-repeat;}
+.map-cons .map_l .fangshi div .fs_show .ps cite {float:left; width:15px; height:19px; overflow:hidden; background:url(../images/bg_map_cons.png) no-repeat;}
+.map-cons .map_l .fangshi div .fs_show .ps .cl {background-position:-288px -96px;}
+.map-cons .map_l .fangshi div .fs_show .ps .cr {background-position:-303px -96px;}
+.map-cons .map_l .fangshi div .fs_show .ps strong {float:left; height:19px; overflow:hidden; line-height:19px; line-height:20px\9; background:#43A2D0; color:#fff; cursor:default;}
+.map-cons .map_l .fangshi div .fs_show .p1 i {background-position:-289px -116px;}
+.map-cons .map_l .fangshi div .fs_show .p2 i {background-position:-289px -136px;}
+.map-cons .map_l .fangshi div .fs_show .tips {float:left; width:256px; overflow:hidden; padding:7px 14px; margin-left:2px; _display:inline; line-height:24px; text-align:justify; text-justify:distribute; border-top:1px solid #D8D8D8; border-bottom:1px solid #D8D8D8; cursor:default;}
+.map-cons .map_l .fangshi div .fs_show .fs_as {float:left; width:288px; height:26px; overflow:hidden; line-height:24px; line-height:26px\9; background:url(../images/bg_map_cons.png) no-repeat 0 bottom; position:relative;}
+.map-cons .map_l .fangshi div .fs_show .fs_as a {text-decoration:underline; position:absolute;}
+.map-cons .map_l .fangshi div .fs_show .fs_as .a1 {left:15px;}
+.map-cons .map_l .fangshi div .fs_show .fs_as .a2 {left:117px;}
+.map-cons .map_l .fangshi div .fs_show .fs_as .a3 {left:164px;}
+.map-cons .map_l .fangshi div .fs_show .fs_as .a4 {left:249px;}
+.map-cons .map_l .fangshi .open .fs_top {height:30px; background:none;}
+.map-cons .map_l .fangshi .open .fs_top cite {background-position:-318px -96px;}
+.map-cons .map_l .fangshi .open .fs_top strong {font-size:14px;}
+.map-cons .map_l .fangshi .open .fs_show {display:block;}
+.map-cons .map_r {float:right; width:646px; height:660px; overflow:hidden; margin:10px 10px 0 0; _display:inline; border:1px solid #ddd;}
+
+/* 2013 */
+.summary {width:638px; overflow:hidden; margin-top:10px; padding:16px 20px 20px; border:1px solid #D9E6EB;}
+.summary img {float:left; width:140px; height:110px; margin-top:8px;}
+.summary .sums {float:right; width:478px; overflow:hidden;}
+.summary .sums p {float:left; width:370px; overflow:hidden; font:12px/24px SimSun; color:#666;}
+.summary .sums ol {float:right; width:68px; overflow:hidden; padding-top:24px; font:12px/24px SimSun;}
+.summary .sums ol li {float:left; width:68px; overflow:hidden; text-align:right;}
+.summary .sum-yu {float:right; width:478px; overflow:hidden; padding-top:4px;}
+.summary .sum-yu cite {float:left; width:370px; height:29px; overflow:hidden; font:12px/28px Verdana; line-height:30px\9; white-space:nowrap; text-overflow:ellipsis; color:#666;}
+.summary .sum-yu cite font {margin-right:6px; font-size:12px; color:#f90;}
+.summary .sum-yu a {float:right; width:94px; height:29px; overflow:hidden; background:url(../images2013/bg_new_hospital.gif) no-repeat -94px 0;}
+.summary .sum-yu a:hover {background-position:0 0;}
+
+.recommend_cons{width:680px; background: #fafbfd url(../images2013/tj_linebg.png) no-repeat left top; margin-top:10px; position:relative;}
+.recommend_cons i{ position:absolute; background:url(../images2013/tuijian_ico.gif) no-repeat; width:29px; height:44px; top:0; left:0;}
+.recommend_cons ul{ padding:2px 5px 0 35px; overflow:hidden;}
+.recommend_cons ul li{float:left; width:560px; overflow:hidden;_zoom:1; line-height:24px; background: url(../images/bg_line_x.gif) no-repeat left bottom; padding:2px 0 8px 80px; vertical-align:bottom; position:relative;}
+.recommend_cons ul li span{ float:left; background:url(../images2013/web_icons.gif) no-repeat right -240px; padding-right:13px; margin-right:15px; position:absolute; left:5px; top:8px;}
+.recommend_cons ul li cite{display:inline-block;height:22px; overflow:hidden; color:#666; margin:6px 16px -6px 0; *margin-bottom:0; white-space:nowrap;}
+.recommend_cons ul li cite a{ float:left; font-size:14px; margin-right:5px;}
+.recommend_cons ul li cite dl{ float:left; line-height:22px; height:22px; overflow:hidden; cursor:default;}
+.recommend_cons ul li cite dl dd{ float:left; background:url(../images2013/textbg.gif) repeat-x 0 -22px;line-height:22px; height:22px; padding-top:1px \9;}
+.recommend_cons ul li cite dl dd.d_l{ background-position:0 0; width:8px; display:block;}
+.recommend_cons ul li cite dl dd.d_r{ background-position: right -44px; width:5px; display:block;}
+.recommend_cons ul li p{margin-top:6px\9; *margin-top:0; color:#666;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {.recommend_cons ul li p{margin-top:8px;}}
+.recommend_cons ul li p em{ color:#333; font-weight:normal;}
+.recommend_cons ul li .view_more{}
+.recommend_cons ul li.noline {width:640px; height:0; padding:0; margin-top:-1px; _margin-top:-3px; border-top:1px solid #FAFBFD; background:0;}
+ 
+.keeshi {width:680px; overflow:hidden;}
+.keeshi dl {float:left; width:594px; overflow:hidden; padding:12px 0 13px 86px; font:12px/22px SimSun; background:url(../images2013/bg_line_x.gif) no-repeat left bottom; position:relative;}
+.keeshi dl dt {float:left; width:72px; overflow:hidden; padding-right:14px; text-align:right; position:absolute; left:0; top:13px;}
+.keeshi dl dt i {font-weight:bold; color:#43A2D0; position:absolute; right:0; top:0; cursor:default;}
+.keeshi dl dt a {color:#333; text-decoration:none;}
+.keeshi dl dt a:hover {color:#f60; text-decoration:underline;}
+.keeshi dl dd {float:left; width:290px; height:22px; overflow:hidden; margin-left:6px; _margin-left:3px; white-space:nowrap; text-overflow:ellipsis; color:#999; cursor:default;}
+.keeshi dl dd font {font-size:12px; font-family:Verdana; color:#f90;}
+.keeshi .keeshi-line {float:left; width:680px; height:0; overflow:hidden; margin-top:-1px; border-top:1px solid #fff; position:relative;}
+
+.subTit{color:#666;margin:10px 10px 0;float:left;}
+.subTit em,.askUl li .askTime i{font-family:Verdana; color:#f60;}
+.AandA{overflow:hidden;clear:both;}
+.AandA dt{border:#d9e6eb solid 1px;border-width:1px 0;background:url(../images2013/n_boxTbg.png);height:35px;line-height:35px;padding:0 12px;margin-top:15px;clear:both;}
+.AandA dt i{color:#666;}
+.AandA dd{overflow:hidden;clear:both;}
+.askTop{height:29px;line-height:29px;border-bottom:#e5e5e5 solid 1px;overflow:hidden;}
+.AandA .ask1,.AandA .ask2{display:block;width:315px;float:left;padding:0 10px;color:#666;height:33px;}
+.AandA .ask2{width:325px;float:right;}
+.askUl li{height:33px;line-height:33px;border-bottom:#d8d8d8 dashed 1px;overflow:hidden;clear:both;float:left;width:680px;}
+.askUl li .askTime{background:url(http://image.39.net/daoyi/images/bg_points.gif) no-repeat 0 -359px;padding-left:18px;float:left;display:block;}
+.askUl li .askB1,.askUl li .askB2{display:inline-block;text-align:right;background:url(../images2013/n_ib1.png);text-align:center;color:#fff;height:18px;line-height:18px;float:right;width:53px;margin-top:8px;text-decoration:none;}
+.askUl li .askB1:hover{background:url(../images2013/n_ib12.png);}
+.askUl li .askB2{background:url(../images2013/n_ib2.png);}
+.askUl li .askB2:hover{background:url(../images2013/n_ib22.png);}
+.askUl li.liHover{background:#f6f9fa;}
+
+.map-cha {float:right; padding-left:18px; margin:9px 10px 0; display:inline; background:url(../images2013/bg_points.gif) no-repeat 0 -917px; background-position:0 -919px\9;} 
+.map-tu {width:278px; height:166px; overflow:hidden; margin-bottom:10px; border:1px solid #D9E6EB; border-top:none;}
+
+.tupian {display:block; width:680px; height:34px; overflow:hidden; margin-top:10px; background:url(../images2013/bg_titles.jpg) no-repeat 0 -35px;}
+.tupian h3 {float:left; margin-left:36px; display:inline; font:bold 14px/35px SimSun;}
+.tupian .gd {float:right; margin:12px 14px 0; display:inline;}
+.tus {width:680px; overflow:hidden; padding-bottom:16px;}
+.tus li {float:left; width:120px; height:114px; overflow:hidden; margin:17px 25px 0; display:inline;}
+.tus li img {float:left; width:120px; height:90px;}
+.tus li span {float:left; width:120px; height:14px; overflow:hidden; padding-top:10px; text-align:center; white-space:nowrap; text-overflow:ellipsis;}
+
+.no-open-tips {width:678px; overflow:hidden; margin-top:10px; border:1px solid #F7DAB2; line-height:70px; text-align:center; background:#FDF9EE; color:#666;}
+.no-open-tips i {color:#E47101;}
+.no-open-msg {width:658px; overflow:hidden; padding:20px 10px; border:1px solid #D9E6EB; border-top:none; position:relative;}
+.no-open-msg span {float:left; width:100%; overflow:hidden; font-size:14px; line-height:34px; text-indent:18px; background:url("images/bg-no-open-yue.gif") no-repeat;}
+.no-open-msg .s1 {background-position:0 10px;}
+.no-open-msg .s2 {background-position:0 -26px;}
+.no-open-msg .gai {display:block; height:24px; padding:0 10px; margin-top:-12px; border-radius:12px; line-height:24px; background:#E1EFF9; color:#69A0BF; position:absolute; right:10px; top:50%;}
+.no-open-msg .gai:hover {background:#98BCD4; color:#fff; text-decoration:none;}
+.no-open-yue {width:658px; overflow:hidden; padding:0 10px 10px; border:1px solid #D9E6EB; border-top:none; cursor:default;}
+.no-open-yue ul {width:100%; overflow:hidden;}
+.no-open-yue ul li {float:left; width:100%; overflow:hidden; padding:15px 0; border-bottom:1px dotted #D8D8D8;}
+.no-open-yue ul li img {float:left; width:120px; height:90px; margin-right:10px;}
+.no-open-yue ul li .yy-msg {float:left; width:320px; overflow:hidden; line-height:22px;}
+.no-open-yue ul li .yy-msg strong {float:left; width:100%; overflow:hidden; padding-bottom:2px; white-space:nowrap; text-overflow:ellipsis;}
+.no-open-yue ul li .yy-msg cite {float:left; width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; color:#333;}
+.no-open-yue ul li .yy-msg p {float:left; width:100%; overflow:hidden; color:#999;}
+.no-open-yue ul li .yy-msg p a {color:#999;}
+.no-open-yue ul li .yy-yue {float:right; width:94px; overflow:hidden; padding-top:10px; text-align:center;}
+.no-open-yue ul li .yy-yue p {width:100%; overflow:hidden; padding-top:10px; line-height:18px; color:#666;}
+.no-open-yue ul li .yy-yue p i {margin-right:6px; font-size:18px; font-family:verdana; color:#f60;}
+.no-open-yue .no-yy {width:100%; height:121px; overflow:hidden; text-align:center; line-height:110px; color:#999;}
+.no-open-gd {width:100%; overflow:hidden; margin-top:-1px; border-top:1px solid #fff; background:#fff; position:relative;}
+.no-open-gd a {display:block; width:656px; height:24px; overflow:hidden; border:1px solid #F7DAB2; border-radius:13px; line-height:24px; text-align:center; background:#FDF9EE; color:#333;}
+.no-open-gd a i {font-weight:bold; color:#E47101;}
+.no-open-gd a:hover {text-decoration:none; background:#FDF5E3;}
+

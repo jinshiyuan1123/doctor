@@ -10,52 +10,26 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
 
-			<title>宿迁市中医院网上预约挂号_宿迁市中医院地址电话_39就医助手</title>
-	  	
-	          <meta name="keywords" content="宿迁市中医院，宿迁市中医院预约挂号，宿迁市中医院网上挂号，宿迁市中医院电话">
-	 	
-	 	      <meta name="description" content="【39就医助手】为宿迁市中医院网上预约挂号统一平台,系统为您提供宿迁市中医院地址电话、专家信息、就医指南及专家在线咨询、网上挂号预约等特色服务。39就医助手，智慧您的医疗。">	
-	    
-
-<link href="http://image.39.net/preview/yyk_keshi/css/hospital_layout.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="/Public/home/favicon.ico" />
+<title>择医网</title>
+<link href="/Public/home/css/list/hospital_layout.css" rel="stylesheet" type="text/css">
 
 <meta http-equiv="Cache-Control" content="no-transform " />
-<link href="http://image.39.net/daoyi/css/dy_base.css?v=2014111410" type="text/css" rel="stylesheet" />
-<link href="http://image.39.net/daoyi/css/yyk_keshi.css?20160829" type="text/css" rel="stylesheet"/>
-<link href="http://image.39.net/daoyi/css/dy_hospital.css" rel="stylesheet" type="text/css">
-<link href="http://image.39.net/daoyi/css/yyk_doc.css" type="text/css" rel="stylesheet"/>
-<script src="http://image.39.net/preview/yyk_keshi/js/jquery-1.11.0.min.js" type="text/javascript"></script>
-<script src="http://image.39.net/preview/yyk_keshi/js/jquery.slide.js" type="text/javascript" ></script>
-<SCRIPT src="http://image.39.net/preview/yyk_keshi/js/jquery.cycle.all.min.js" type=text/javascript></SCRIPT>
-<SCRIPT src="http://image.39.net/preview/yyk_keshi/js/lunbo.js" type=text/javascript></SCRIPT>
-<script src="http://image.39.net/daoyi/js/yyk_keshi.js" type="text/javascript"></script>
-<script type="text/javascript" src="/js/jquery.cookies.js"></script>
-<script type="text/javascript" src="/js/Namespace.js"></script>
-<script type="text/javascript" src="/js/common/Page.js"></script>
+<link href="/Public/home/css/list/dy_base.css?v=2014111410" type="text/css" rel="stylesheet" />
+<!-- <link href="http://image.39.net/daoyi/css/yyk_keshi.css?20160829" type="text/css" rel="stylesheet"/> -->
+
+<link href="/Public/home/css/list/yyk_keshi.css?20160829" type="text/css" rel="stylesheet"/>
+
+<link href="/Public/home/css/list/dy_hospital.css" rel="stylesheet" type="text/css">
+
+
 <base target="_blank" />
 
 
-  <!--[if lte IE 6]>
-  <script type="text/javascript" src="http://image.39.net/js/DD_belatedPNG_0.0.8a-min.js"></script>
-  <script>
-    DD_belatedPNG.fix('.png_bg');
-  </script>
-  <![endif]-->
 </head>
 <body>
-<script type="text/javascript" src="/js/common.js"></script>
-	
-<script type="text/javascript" src="/js/top.js"></script>
-<script type="text/javascript" src="https://my.39.net/js/Passport.js"></script>
 
-<!--[if lte IE 6]>
-<script type="text/javascript" src="http://image.39.net/client/jfpp/js/DD_belatedPNG_0.0.8a-min.js"></script>
-<script type="text/javascript">DD_belatedPNG.fix('.newbot,.newbot .newbot_close,.newbot .newbot_con');</script>
-<![endif]-->
-	<!-- 非合作方医院屏蔽底部浮动栏咨询 v5.6.4 -->
-	
-		<script type="text/javascript" src="http://kefu.39.net/js/entrycheck.js"></script>
-	
+
 <div class="sysa">
 </div>
 
@@ -70,10 +44,10 @@
     <!--未登录-->
     <div class="art_navlogin" id="newLoginBox" style="display:block;">
               <span class="n_reg">
-                <a href="javascript:void(0);" target="_self" onclick="goToMyReg();" title="注册">注册</a>
+                <a href="<?php echo U('home/index/yyregister');?>" target="_self"  title="注册">注册</a>
             </span>
 			<span class="n_login sbtn"  id="top_loginbox">
-				<cite><a href="javascript:void(0);" target="_self" onclick="javascript:loginBox.Show();" title="登录">登录</a></cite>
+				<cite><a href="<?php echo U('home/index/yylogin');?>" target="_self" onclick="javascript:loginBox.Show();" title="登录">登录</a></cite>
 			</span>
     </div>
 
@@ -104,133 +78,8 @@
 </div>
 <!-- 预约表单页不广告 -->
 
-		<div class="wrap">
-			
-			    <span id='tonglanSpan' class="tonglan" style="display: block;"> 
-					<script type="text/javascript">//<![CDATA[
-					ac_as_id = 5009;
-					ac_format = 0;
-					ac_mode = 1;
-					ac_group_id = 1;
-					ac_server_base_url = "d-test.39.net/";
-					//]]></script>
-					<script type="text/javascript" src="http://image.39.net/style/style.js"></script>
-			    
-			    </span>
-		    
-		</div>
-	   
-<!--登录弹窗-->
-<div id="loginBox" class="loginBox loginBox2" style="display:none;">
-	<div class="tc_box">
-		<a href="javascript:loginBox.Close();window.location.reload();" target="_self" title="关闭" class="tc_box_close png"></a>
-		<div class="tc_box_tit"><h3 class="on">登录39通行证</h3><i style="width:30%;"></i></div>
-		<div class="tc_box_con">
-		 <form action="" method="post">
-		 <input type="hidden" id="topMobileChkSum" name="topMobileChkSum" value="null" />
-         <input type="hidden" id="topTokenChkSum" name="topTokenChkSum" value="null" />
-         <input type="hidden" id="topEmailChkSum" name="topEmailChkSum" value="null" />
-         <input type="hidden" id="topSecurityCodeChkSum" name="topSecurityCodeChkSum" value="null" />
-         <input type="hidden" id="jizhuC" name="jizhuC" value="0" />
-         <input type="hidden" id="xiaciC" name="xiaciC" value="0" />
-		 <ul class="tc_box_form fl">
-				<li>
-					<span class="input-tit">账号&nbsp;</span><input id="top_login_mobile" type="text" class="input-txt" value="手机号、邮箱、用户名" /><i id="top_login_mobile_tip"></i>
-				</li>
-				<li class="error-msg"><i></i></li>
-				<li>
-					<span class="input-tit">密码&nbsp;</span><input id="top_login_password" type="password" class="input-txt"/><i id="top_login_password_tip_else"></i>
-				</li>
-				<li class="error-msg"><a href="http://my.39.net/passport/findPwd.aspx" class="forget_psw">忘记密码？</a><i id="top_login_password_tip"></i></li>
-				<li>
-					<input type="button" id="top_loginButton" class="loginBtn" value="登录" />
-				</li>
-				<li class="no-reg">
-					<p>还没有账号，<a href="javascript:void(0);" target="_self" onclick="goToMyReg();" title="注册">立即注册>></a></p>
-					<p>或使用第三方账号登录
-						<a class="login-icon login-icon-qq" href="javaScript:void(0);" onclick="Passport.LoginQQ({ BackUrl: 'self'});return false;"></a>
-						<a class="login-icon login-icon-wb" href="javaScript:void(0);" onclick="Passport.LoginWeibo({ BackUrl: 'self'});return false;"></a>
-						<a class="login-icon login-icon-wx" href="javascript:void(0);" onclick="Passport.LoginWeixin({ BackUrl: 'self'});return false;"></a></p>
-				</li>
-			</ul>
-		  </form>
-		   <div class="ewmbox fr">
-		  		<p class="pt"><b>简洁无广告 号源更新快</b></p>
-		  		<p><span>扫描下载APP</span></p>
-		  </div>
-		</div>
-	</div>
-</div>
-<!--注册-->
-<div id="topZcBox" class="zcBox" style="display: none;">
-	<div class="tc_box tc_box_zc">
-		<a href="javascript:topZcBox.Close();;" target="_self" title="关闭" class="tc_box_close png"></a>
-		<div class="tc_box_tit">
-			<h3 id="zc_mobile" class="on">手机注册</h3>
-			<h3 id="zc_email" >邮箱注册</h3>
-			<i></i>
-		</div>
-		<div class="tc_box_conwrap">
-			<div id="zc_conbox" class="tc_box_conbox">
-				
-				<!--手机注册-->
-				<div class="tc_box_form" id="zc_mobile_box">
-					 <form action="" method="post">
-					 <ul class="tc_box_form">
-							<li>
-								<span class="input-tit">手机号码&nbsp;</span><input id="top_zc_phone" type="text" class="input-txt" value="手机号码" /><i id="top_zc_mobile_tip"></i>
-							</li>
-							<li id="top_zc_mobile_span" class="error-msg"></li>
-							<li class="tools">
-								<input type="button" id="top_zc_send" onclick="topSendSecurity('top_zc_phone')" class="input-btn" value="获取验证码" /><input id="top_zc_token" type="text" class="input-txt2" value="验证码"/>
-								<i id="top_zc_token_tip"></i>
-							</li>
-							<li>
-								<span class="input-tit">密码&nbsp;</span><input id="top_zc_mobile_password_one" type="password" class="input-txt" style="color:#333" value=""/><span id="top_mobile_mima" class="input-infos">密码</span><i id="top_zc_mobile_password_one_tip"></i>
-							</li>
-							<li id="top_zc_mobile_password_one_span" class="error-msg"></li>
-							<li>
-								<span class="input-tit">确认密码&nbsp;</span><input id="top_zc_mobile_password_two" type="password" class="input-txt" style="color:#333" value=""/><span id="top_mobile_mima_two" class="input-infos">确认密码</span><i id="top_zc_mobile_password_two_tip"></i>
-							</li>
-							<li class="error-msg"><i id="top_zc_mobile_password_two_span"></i></li>
-							<li class="f_btns_bar">
-								<input type="button" id="mobileZc" class="loginBtn" value="注册" onClick="topMobileZc();" />
-							</li>
+	
 
-							<li class="no-reg">已有账号，<a href="javascript:topZcBox.Close();loginBox.Show();" target="_self">立即登录>></a></li>
-						</ul>
-					  </form>
-				</div>
-				<!--手机注册 end-->
-				<!--邮箱注册-->
-				<div class="tc_box_form" id="zc_email_box">
-					 <form action="" method="post">
-					 <ul class="tc_box_form">
-							<li>
-								<span class="input-tit">邮箱地址&nbsp;</span><input id="top_zc_Email" type="text" class="input-txt" value="邮箱" /><i id="top_zc_Email_tip"></i>
-							</li>
-							<li id="top_zc_Email_span" class="error-msg"></li>
-							<li>
-								<span class="input-tit">密码&nbsp;</span><input id="top_zc_Email_password_one" type="password" class="input-txt" style="color:#333" value=""/><span id="top_email_mima" class="input-infos">密码</span><i id="top_zc_Email_password_one_tip"></i>
-							</li>
-							<li id="top_zc_Email_password_one_span" class="error-msg"></li>
-							<li>
-								<span class="input-tit">确认密码&nbsp;</span><input id="top_zc_Email_password_two" type="password" class="input-txt" style="color:#333" value=""/><span id="top_email_mima_two" class="input-infos">确认密码</span><i id="top_zc_Email_password_two_tip"></i>
-							</li>
-							<li class="error-msg"><i id="top_zc_Email_password_two_span"></i></li>
-							<li class="f_btns_bar">
-								<input type="button" id="emailZcButton" class="loginBtn" value="注册" onClick="topEmailZc();" />
-							</li>
-
-							<li class="no-reg">还没有账号，<a href="javascript:topZcBox.Close();loginBox.Show();" target="_self">立即登录>></a></li>
-						</ul>
-					  </form>
-				</div>
-				<!--邮箱注册 end-->
-			</div>
-		</div>
-	</div>
-</div>
 <!-- 验证邮箱 -->
 <div id="topYzBox" class="yzBox" style="display: none;">
 	<div class="tc_box">
@@ -278,7 +127,11 @@
 <link type="text/css" rel="stylesheet" href="http://image.39.net/daoyi/css/yyk_search.css"/>
 <div class="keshi-header" style="height:108px;">
     <div class="logo">
-        <div><a href="/" title="就医助手" target="_blank">就医助手</a></div>
+        <div>
+
+        	<a style="height:79px;"href="<?php echo U('home/index/index');?>" title="择医网" target="_blank">择医网
+        </a>
+    </div>
     </div>
     <div class="serach">
         <form onsubmit='return false' target="_blank">
@@ -311,7 +164,7 @@
 <div class="jy_hspt_add" id="hospial_location">
 
 	
-			您的位置： <a href="/">就医助手</a> > <a href="/suqian/" title="宿迁挂号网">宿迁挂号网</a> >
+			您的位置： <a href="<?php echo U('home/index/index');?>">择医网</a> > <a href="/suqian/" title="宿迁挂号网">宿迁挂号网</a> >
 		
 </div>
 <div class="jy_hspt_intro">
@@ -356,158 +209,6 @@
     </ul>
 </div>
  
-<script type="text/javascript" src="http://kefu.39.net/js/entrycheck.js"></script>
-<script type="text/javascript">
-var hosId="1cd60";
-var hosHref = '/xq/zonghe/1cd60.html';
-var hosName = '宿迁市中医院';
-$(function(){
-	selectMenu();
-	getUserLikes();
-	getCountFavorite();
-	var reUrl = window.location.href;
-	var feedBackUrl = $("#feedBack").attr("href");
-	feedBackUrl += reUrl;
-	$("#feedBack").attr("href", feedBackUrl);
-});
-
-function selectMenu(){
-	var curUrl = location.href;
-	$("#keshi_menu_holder .now").removeClass("now");
-	if(curUrl.indexOf("_")>-1 && curUrl.indexOf(".html")>-1){
-		var str = curUrl.substring(curUrl.indexOf("_"),curUrl.indexOf(".html"));
-		$("#keshi_menu_holder a").each(function(){
-			var aHref = $(this).attr("href")+""
-			if(aHref.indexOf(str)>-1){
-				$(this).parent().addClass("now");
-				var menuName = $(this).text();
-				if(str.indexOf("detail")>-1){
-					menuName = "医院概况";
-					if("false"=="true"){
-						menuName = "医院资讯";
-					}
-					if("false"=="true"){
-						menuName = "医院环境";
-					}
-				} 
-				$("#hospial_location").append(" <a target='_self' href='"+hosHref+"'>"+hosName+"</a> > "+menuName);
-			} 
-		});
-	} else {
-		$("#hospial_location").append(hosName);
-		$("#keshi_menu_holder a").first().parent().addClass("now");
-	}
-}
-
-//统计赞
-function getUserLikes(){
-	$.ajax({
-		url:'/user/getUserLikesCount.json',
-		async:false,
-		data:'hosHexId='+hosId,
-		success:function(result){
-			if(result.status==100){
-				if(result.objCount>0){
-					$("#top_zan").html('<b></b>赞'+result.objCount+'<i>+1</i');
-				} 
-			}
-		}
-	});
-}
-
-//统计关注
-function getCountFavorite(){
-	$.ajax({
-		url:"/user/getCountFavorite.json",
-		async:false,
-		data:"type=2&hosId="+hosId,
-		success:function(result){
-			if(result.count>0){
-				$('.btn a.btn-att').addClass('btn-att-ed');	 
-				$('#favoriteId').val(result.favoriteId);
-			}
-		}
-	});
-}
-
-
-function favorite(){
-	if($('.btn a.btn-att').is('.btn-att-ed')){
-		var favoriteId = $("#favoriteId").val();
-		delFavorite(favoriteId);
-	}else{
-		addFavorite();
-	}
-}
-
-//添加关注
-function addFavorite(){
-	$.ajax({
-		url:"/user/addFavorite.json",
-		async:false,
-		data:"type=2&hosId="+hosId,
-		success:function(result){
-			if(result.status==100){
-				$('.btn a.btn-att').addClass('btn-att-ed');
-				$('#favoriteId').val(result.favoriteId);
-			}else if(result.status==110)
-		}
-	});
-}
-
-//删除关注
-function delFavorite(favoriteId){
-	$.ajax({
-		url:"/user/delFavorite.json",
-		async:false,
-		data:"&favoriteId="+favoriteId,
-		success:function(result){
-			if(result.status==100){
-				$('.btn a.btn-att').removeClass('btn-att-hover');
-				$('.btn a.btn-att').removeClass('btn-att-ed');
-			}else if(result.status==110)
-		}
-	});
-}
-
-
-//点赞
-function addLikes(){
-	$.ajax({
-		url:'/user/addLikes.json',
-		async:false,
-		data:'hosHexId='+hosId,
-		error:function(errResult){
-			console.log(errResult);
-		},
-		success:function(result){
-			if(result.status==100){
-				if(result.userCount == 0){
-					$("#top_zan").html('<b></b>赞'+result.objCount+'<i>+1</i');
-					$('.btn a.btn-fav').find('i').show().animate({top: -40, opacity: 0}, 1000);
-				} else {
-					alert(result.tip);
-				}
-			}
-		}
-	});
-}
-
-
-
-
-var hospitalId = '20648'; //医生ID
-
-var hisHos = $.cookies.get("hisHos")+"";
-if(hisHos == null || hisHos == 'null') {
-	$.cookies.set("hisHos", hospitalId);
-}else {
-	hisHos  = hisHos + "#" + hospitalId;
-	$.cookies.set("hisHos", hisHos);
-}
-hisHos = $.cookies.get("hisHos")+"";
-
-</script>
 
 
 		
@@ -1212,337 +913,47 @@ ac_server_base_url = "d-test.39.net/";
 					</div>
 				</div>
                 
-                <!--
-                <div class="hspt_r_ad2">
-                	<img src="http://image.39.net/preview/yyk_keshi/images/ad2.jpg" />
-                </div>
-                -->
+           
                 
             </div>
             
             <div class="clean"></div>
         </div>
     </div>
-  <script type="text/javascript">
-       var ids ='289837,199142,199140,199141,199138,199136,199137';
-       var hospitalId='20648';
-       if(ids!=''){
-    	   var ajaxUrl = "/ajax/doctorRegisterFalg.jsonp?doctorId=" + ids;
-    	   if(hospitalId!=''){
-    		   ajaxUrl = ajaxUrl + "&hospitalId=" + hospitalId;
-    	   }
-    	   $.ajax({
-    		   url:ajaxUrl,
-    		   async:true,
-    		   cache:false,
-    		   type: "get",
-    		   dataType: "json",
-    		   success : function(data){
-    			   var arrayList =data.list;
-    			   if($.isArray(arrayList)){
-    				   $.each(arrayList, function(idx, element) {
-    					   if(element.REGISTER_FLAG =='Y'){
-        					   var html = "<a href='/doctor/"+element.ID+".html' title='预约该医生'><i class='yue'></i></a>";
-        					   if($(".doctor"+element.ID).length>0){
-        						   $(".doctor"+element.ID).append(html);
-        					   }   
-    					   }
-    				   });
-    			   }
-    		   }
-    	   });
-       }
-       var hospitalHex = '1cd80,1cd64,1cd72,f9a1c,fc83b';
-       if(hospitalHex!=''){
-    	   var ajaxUrl = "/ajax/hospitalRegisterFalg.jsonp?hospitalId="+hospitalHex;
-    	   $.ajax({
-    		   url:ajaxUrl,
-    		   async:true,
-    		   cache:false,
-    		   type: "get",
-    		   dataType: "json",
-    		   success : function(data){
-    			   var arrayList =data.list;
-    			   if($.isArray(arrayList)){
-    				   $.each(arrayList, function(idx, element) {
-    					   if(element.REGISTER_FLAG =='Y'){
-        					   var html = "&nbsp;<img alt='' src='http://image.39.net/preview/yyk_keshi/images/yue_icon.jpg'>"
-        					   if($("#hospital"+element.HEX_ID).length>0){
-        						   $("#hospital"+element.HEX_ID).append(html);
-        					   }   
-    					   }
-    				   });
-    			   }
-    		   }
-    	   });    	   
-        }
-       
-       
-       
-  </script>    
+  
     
     
-    
-		<div style="padding:20px 0 0; width:1000px; margin:0 auto;position:relative;overflow:hidden;">
-				<!-- 6059：就医助手-医生终端页-底部通栏 类型：固定广告位 尺寸：1000x90 -->
-				<script type="text/javascript">//<![CDATA[
-				ac_as_id = 6059;
-				ac_format = 0;
-				ac_mode = 1;
-				ac_group_id = 1;
-				ac_server_base_url = "d-test.39.net/";
-				//]]></script>
-				<script type="text/javascript" src="http://image.39.net/style/style.js"></script>
-		</div>
-	
+		
 
 
-<div class="footwrap">
-<!--增设底部 20140915 begin-->
-<div class="footwrap footwrap-2016">
-		<div class="jyzs_foot_k clearfix">
-			<div class="item1">
-				<h3>关注或联系我们</h3>
-				<div class="clearfix bbb">
-					<div class="aa_item a3">
-						<s></s><a href="http://weibo.com/yyk39">39健康网就医助手</a>
-					</div>
-					<div class="aa_item a2">
-						<s></s><a href="javascript:;">商务合作：020-85501999</a>
-					</div>
-					<!-- qq群屏蔽掉 -->
-					<!-- <div class="aa_item a5">
-						<s></s><a href="javascript:;">用户反馈QQ群：537351472</a>
-					</div> -->
-					<!-- v5.5去除人工导诊入口 -->
-					<!--  
-					<div class="aa_item a4">
-						<s></s><a class="zxdz" href="http://kefu.39.net/chat/home.do"></a>
-					</div>
-					-->
-				</div>
-			</div>
-			<!-- <div class="item2">
-				<h3>就医助手APP</h3>
-				<div class="clearfix">
-					<img class="adwx"
-						src="http://pimg.39.net/PictureLib/A/f76/20150825/org_482455.png">
-					<p>掌上预约挂号、问医生、用药查询，与万千病友交流</p>
-					<a class="mfxz" href="http://m.39.net/jyzs/"></a>
-				</div>
-			</div>
-			<div class="item2" style="width: 274px">
-				<h3>就医助手微信公众号</h3>
-				<div class="clearfix">
-					<img class="adwx"
-						src="http://pimg.39.net/PictureLib/A/f76/20160328/org_634079.png">
-					<p style="padding-right: 0;">第一时间知晓新鲜热辣的健康资讯，不错过任何一次精彩活动。</p>
-					<div class="kswb"></div>
-				</div>
-			</div> -->
-			<div class="item2">				
-				<div class="clearfix">
-					<img class="adwx" src="http://pimg.39.net/PictureLib/A/f76/20160328/org_634079.png">
-					<h3>就医助手</h3>
-			        <p>医院医生推荐  I  预约挂号</p>
-			        <p>第一时间知晓最新的健康资讯。</p>
-				</div>
-			</div>
-			<div class="item2" style="width: 274px">
-				<div class="clearfix">
-					<img class="adwx" src="https://image.39.net/dist/common/jbk/pc/code.jpg">
-					<h3>39健康网</h3>
-					<p style="padding-right: 0;">健康科普｜权威内容｜医生观点</p>
-					<p style="padding-right: 0;">每天获取最新鲜的健康科普内容。</p>
-			   </div>
-		    </div>
-		</div>
-	</div>
-	<!-- pc就医助手广告位都要添加上 “广告” -->
-	<script src="http://image.39.net/art2013/js/ad-icon.js" type="text/javascript"></script>
-	<script>
-		(function($) {
-			$(".a1").hover(function() {
-				$(".wx_k").show();
-			}, function() {
-				$(".wx_k").hide();
-			});
-		})(jQuery);
-	</script>
-</div>
 <!--增设底部 20140915 end-->
 </div>
 
-<style>
-.footwrap{ background: #f1f6f7; padding:15px 0;}
-.footwrap .jyzs_foot_k{ float:none; margin:0 auto;}
-#bottominfo{}
-#bottominfo hr{ display:none;}
-footer.wrap-link{ border-bottom:0 none; }
-.netpolice ul{ overflow:hidden; width:234px; margin:0 auto;}
-.netpolice li{ float:left; background: #f8f8f8; border-radius:5px;}
-.enter{ width: 106px; height: 40px; border: 1px solid #ededed; text-align: center; padding: 8px 12px; margin-right:20px;  }
-.enter a{ display:block;}
-.enter img{ display: inline-block; width: 100%; margin-top: -9px;}
-.netpolice .np{ width:68px; height:56px; border: 1px solid #ededed;}
-.netpolice .np.offline{ background:url("https://image.39.net/netpolice/offline.png") center no-repeat #f8f8f8; background-size:75% auto;}
-.netpolice .np.online{ background:url("https://image.39.net/netpolice/online.png") center no-repeat #f8f8f8; background-size:75% auto;}
-</style>
 
 <div class="bottominfo" id="bottominfo" style="padding-top:10px;">
-	<hr style="width:970px;color:#bbb;" size="1" />
-	<a href="http://corp.39.net/info/about.html" rel="nofollow">网站简介</a> | 
-    <a href="http://news.39.net/mtbd/" rel="nofollow">媒体报道</a> | 
-    <a href="http://emarketing.39.net/" rel="nofollow">网络营销</a> | 
-    <a href="http://corp.39.net/info/product.html" rel="nofollow">产品中心</a> | 
-    <a href="http://job.39.net/" rel="nofollow">人才招聘</a> | 
-    <a href="http://corp.39.net/info/contact.html" rel="nofollow">联系方式</a> | 
-    <a href="http://yyk.39.net/map/">网站地图</a> | 
-    <a href="http://yyk.39.net/page/feedback.html" rel="nofollow">问题反馈</a> | 
-    <a href="http://yyk.39.net/help/" rel="nofollow">帮助中心</a> | 
-    <a href="http://wapyyk.39.net/">手机网页</a><br />
-Copyright  &copy; 2000-2018　39.net All Rights Reserved.　39健康网 <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action" rel="nofollow">粤ICP备10060494</a> <a href="http://www.beian.gov.cn/" rel="nofollow">粤公网安备 44010602000144号</a> <a href="http://corp.39.net/info/disclaimer.html" rel="nofollow">版权所有</a>
+	<hr style="width:970px;color:#bbb;" size="1">
+	<a href="<?php echo U('home/index/about');?>" rel="nofollow">关于我们</a> | 
+    <a href="" rel="nofollow">媒体报道</a> | 
+    <a href=" rel="nofollow">网络营销</a> | 
+    <a href="" rel="nofollow">产品中心</a> | 
+    <a href="" rel="nofollow">人才招聘</a> | 
+    <a href="" rel="nofollow">联系方式</a> | 
+    <a href=""></a> | 
+    <a href="" rel="nofollow">问题反馈</a> | 
+    <a href="" rel="nofollow">帮助中心</a> | 
+    <a href=""></a><br>
+Copyright  © 2000-2018　39.net All Rights Reserved.　本文由择医网作者上传并发布，择医网仅提供信息发布平台。文章仅代表作者个人观点，不代表百度立场。未经作者许可，不得转载。
+         
+ <a href="" rel="nofollow">ICP备案</a> <a href="/" rel="nofollow">公安备案</a> <a href="" rel="nofollow">版权所有</a>
 </div>
-<script src="http://image.39.net/tools/djan.js" type="text/javascript"></script>
-<script src="http://image.39.net/tools/bdtj_yyk.js" type="text/javascript"></script>
 
-<div class="netpolice wrap"> 
-   <ul>
-       <li class="enter"><a target="_blank" href="http://58.62.173.137/impeach.php?appid=68&sign=b6b5f07aa7a591aecbfa36ad7ab72d24"><img src="https://image.39.net/netpolice/inform.png" alt="" /></a></li>
-       <!-- 网警上线class切换成online -->
-       <li class="np offline"></li>
-   </ul>
-</div>
 </div>
 	</div>
 	
 
-<div class="online_lead">
-<!-- 非合作方医院屏蔽底部浮动栏咨询 v5.6.4 -->
-
-	<ul>
-    	<!-- <li>
-            <a class="ewm_icon" href="javaScript:;"></a>
-            <div class="ewm_main" id="ewm_main" style="display: block;">
-                <div class="ewm_main_arrow"></div>
-                <img src="http://pimg.39.net/PictureLib/A/f76/20160505/org_647523.png">
-                <p>号源更新快</p>
-                <p>随时问医生</p>
-                <p style="line-height: 1;font-size: 18px; margin: 0 0 -4px; text-align: right;"><span style="cursor: pointer;" onclick="document.getElementById('ewm_main').style.display='none'">×</span></p>
-            </div>
- 		</li> -->
-        <li><a class="feedback" href="javaScript:;" id="feedBackHref"></a></li>
-        <li class="last_li"><a class="return_top" href="#" target="_self"></a></li>
-    </ul>
-</div>
-<script src="http://image.39.net/preview/yyk_keshi/js/jquery-powerSwitch.js"></script>
-<script type="text/javascript">
-$(".ewm_icon").hover(
-	function(){
-		$(".ewm_main").show();
-	},
-	function(){
-		$(".ewm_main").hide();
-	}
-)
-$(".tabJustHover").powerSwitch({ classAdd: "tab_on", eventType: "hover", onSwitch: function(target) { var img = target.find("img").get(0); if (img && !img.src) { img.src = img.getAttribute("data-src"); } } });
 
 
-$(function(){
-	$(".leaveAMessage").bind({"click":leaveAMessageFunc});
-});
-
-function getCookie(objName)
- } 
-
-function leaveAMessageFunc(){
-	 var pid = getCookie("pid");
-	 if(pid==undefined){
-		 loginBox.Show();
-	 }else{
-		 $.ajax({
-			 type : "POST",
-			 url : "/user/GetUserExpandJson.json",
-			 async : false,
-			 dataType : "json",
-			 data : {"pid":pid},
-			 success : function(expand){
-					if(expand){
-						window.location.href="http://kefu.39.net/chat/home.do"; 
-					}else{
-						var lb_tel_check = new LightBox("lb_tel_check");//手机校验弹窗
-						lb_tel_check.Show();
-						document.getElementById('newbot').style.display='none';
-					}
-				}
-		 });
-	 }
-}
-
-var reUrl = window.location.href;
-$("#feedBackHref").click(function(){
-	window.location.href = "/page/feedback.html?resourceType=2&reUrl="+reUrl;
-});
-
-</script>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        //关闭预约挂号提示
-        $(".yy_tips .t_close").click(function(){
-            $(".yy_tips").hide();
-        });
-    });
-	
-</script>
 
 
-<script type="text/javascript">
-$(function() {
-	if (!window.jyzsPage)
-		window.jyzsPage = new jyzs.common.Page();
-	jyzsPage.tidai('#res li', 'li1', 'li2', 'li3');
-});
-</script>
-
-<script type="text/javascript">
-    function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
-        var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
-        var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
-        var openTip = oOpenTip || "";
-        var shutTip = oShutTip || "";
-        if(targetObj.className!="shut"){
-            if(shutAble) return;
-            targetObj.className="shut";
-            if(openTip && shutTip){
-                sourceObj.innerHTML = shutTip;
-            }
-        } else {
-            targetObj.className="open";
-            if(openTip && shutTip){
-                sourceObj.innerHTML = openTip;
-            }
-        }
-    }
-</script>
-
-<script type="text/javascript">
-    
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-73778648-1', 'auto');
-	  ga('send', 'pageview');
-	  
-</script>
-
-
-<script type="text/javascript">
-<!--
-document.write("<script data-proxy=\"http://dy.health.cnwest.com/page/partner/proxy.html\" data-timer=\"2000\" data-frameid=\"partnerframe\" src=\"http://dy.health.cnwest.com/js/iframe.js\">"+"</"+"script>");
-//-->
-</script>
 </body>
 </html>
