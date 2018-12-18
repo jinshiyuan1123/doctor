@@ -164,7 +164,7 @@
                           
 <ul class="g-clear main-menu-nav">
 <li class="hot">
-    <a class="own-tab" target="_blank" href="" monitor="public_menu,home_menu,ask">健康资讯</a>
+    <a class="own-tab" target="_blank" href="<?php echo U('home/index/allorder');?>?class=健康资讯" monitor="public_menu,home_menu,ask">健康资讯</a>
 
 </li>
 <li><a target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">网站公告</a></li>
