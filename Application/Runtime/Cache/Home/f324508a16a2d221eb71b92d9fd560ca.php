@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>择医网(挂号网)-互联网医院在线诊疗平台</title>
+    <title>择医网(挂号网)- 网上在线挂号预约平台</title>
     <meta name="keywords" content="挂号网,择医网,互联网医院,预约挂号,网上预约,网上挂号,网上预约挂号,在线问诊,在线咨询,健康资讯,医院挂号,医院预约,专家门诊" />
     <meta name="description" content="择医网,互联网医院国家试点平台,聚合了全国重点医院,学科带头人,副主任以上的医师,提供预约挂号,在线诊疗,电子处方,在线配药全方位服务。找大专家,上择医网。" />
     <link rel="alternate" media="only screen and (max-width: 640px)" href="/m">
@@ -248,7 +248,7 @@
 
 
   <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">优选音乐</a>
-  	<ul>
+  	<!-- <ul>
     <li><a href="<?php echo U('home/index/allorder');?>?class=演唱会" target="_blank">演唱会</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=影视" target="_blank">影视</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=校园" target="_blank">校园</a></li>
@@ -262,7 +262,7 @@
     <li><a href="<?php echo U('home/index/allorder');?>?class=民谣" target="_blank">民谣</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=专辑" target="_blank">专辑</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=古典" target="_blank">古典</a></li>
-</ul>
+</ul> -->
   </li>
 
    <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a>
@@ -379,28 +379,42 @@
                             <li class="focus-pannel" style="background:#ffa4a7;">
                                 <div class="banner-container J_BannerCtn">
                                     <a target="_blank" href="#" monitor="home_activity,advmain,slideitem">
-                                        <img class="main-banner J_MainBanner" src="/Public/home/images/P-1.1.1-800-350.jpg" data-img="/Public/home/images/P-1.1.1-800-350.jpg" width="800" height="350">
+                                        <img class="main-banner J_MainBanner" src="/Public/home/images/img/1.jpg" data-img="/Public/home/images/img/1.jpg" width="800" height="350">
                                     </a>
                                 </div>
                             </li>
                             <li class="focus-pannel" style="background:#fca03d;">
                                 <div class="banner-container J_BannerCtn">
                                     <a target="_blank" href="#" monitor="home_activity,advmain,slideitem">
-                                        <img class="main-banner J_MainBanner" src="/Public/home/images/P-1.1.1PCBANNER800-350.jpg" data-img="/Public/home/images/P-1.1.1PCBANNER800-350.jpg" width="800" height="350">
+                                        <img class="main-banner J_MainBanner" src="/Public/home/images/img/2.jpg" data-img="/Public/home/images/img/2.jpg" width="800" height="350">
                                     </a>
                                 </div>
                             </li>
                             <li class="focus-pannel" style="background:#182F86;">
                                 <div class="banner-container J_BannerCtn">
                                     <a target="_blank" href="#" monitor="home_activity,advmain,slideitem">
-                                        <img class="main-banner J_MainBanner" src="/Public/home/images/999888.jpg" data-img="/Public/home/images/999888.jpg" width="800" height="350">
+                                        <img class="main-banner J_MainBanner" src="/Public/home/images/img/3.jpg" data-img="/Public/home/images/img/3.jpg" width="800" height="350">
                                     </a>
                                 </div>
                             </li>
                             <li class="focus-pannel" style="background:#6234CA;">
                                 <div class="banner-container J_BannerCtn">
                                     <a target="_blank" href="#" monitor="home_activity,advmain,slideitem">
-                                        <img class="main-banner J_MainBanner" src="/Public/home/images/111222.jpg" data-img="/Public/home/images/111222.jpg" width="800" height="350">
+                                        <img class="main-banner J_MainBanner" src="/Public/home/images/img/4.jpg" data-img="/Public/home/images/img/4.jpg" width="800" height="350">
+                                    </a>
+                                </div>
+                            </li>
+                             <li class="focus-pannel" style="background:#6234CA;">
+                                <div class="banner-container J_BannerCtn">
+                                    <a target="_blank" href="#" monitor="home_activity,advmain,slideitem">
+                                        <img class="main-banner J_MainBanner" src="/Public/home/images/img/4.jpg" data-img="/Public/home/images/img/5.jpg" width="800" height="350">
+                                    </a>
+                                </div>
+                            </li>
+                             <li class="focus-pannel" style="background:#6234CA;">
+                                <div class="banner-container J_BannerCtn">
+                                    <a target="_blank" href="#" monitor="home_activity,advmain,slideitem">
+                                        <img class="main-banner J_MainBanner" src="/Public/home/images/img/4.jpg" data-img="/Public/home/images/img/6.jpg" width="800" height="350">
                                     </a>
                                 </div>
                             </li>
