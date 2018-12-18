@@ -117,6 +117,7 @@ class SupplierController extends HisBaseController
                 'phone' => $sid['contact_telephone'],
                 'true_name' => $sid['address'],
                 'checkid' => $sid['checkid'],
+                'url'      => $sid['editurl'],
                 'textarea' => htmlspecialchars_decode($sid['textarea']),
 
             ];

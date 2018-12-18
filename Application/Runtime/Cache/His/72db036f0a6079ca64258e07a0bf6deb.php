@@ -333,6 +333,12 @@
 				</span>
                 <input class="form-control" type="text" disabled="disabled" name="editContactMobile" placeholder="" maxlength="11" onkeyup="value=value.replace(/[^\d^\.]+/g,'')">
             </div>
+             <div class="input-group listSeaForm wb100 mt10">
+                <span class="input-group-btn">
+                    <span class="btn">医院网址：</span>
+                </span>
+                <input class="form-control" type="text"  name="editurl" placeholder="" maxlength="11" onkeyup="value=value.replace(/[^\d^\.]+/g,'')">
+            </div>
             <div class="input-group listSeaForm wb100 mt10">
 				<span class="input-group-btn">
 					<span class="btn">是否审核：</span>
@@ -450,7 +456,7 @@
                         $(":input[name='editContactName']").val(data.data.mobile);
                         $(":input[name='editContactPhone']").val(data.data.phone);
                         $(":input[name='editContactMobile']").val(data.data.ip);
-
+                         $(":input[name='editurl']").val(data.data.url);
                         if(data.data.checkid == '0'){
                             var ids = $(".editAccounts").val();
                             $("#editlists").attr("selected",true);
@@ -474,6 +480,7 @@
             var supplier_name = $(":input[name='editSupplier']").val();
             var contact_name = $(":input[name='editContactName']").val();
             var contact_mobile = $(":input[name='editContactMobile']").val();
+             var editurl = $(":input[name='editurl']").val();
             var contact_telephone = $(":input[name='editContactPhone']").val();
             var checkid =   $("#isshow").val();
             var address = $(":input[name='editAddress']").val();
@@ -482,7 +489,7 @@
             
             $.post("<?php echo U('/Supplier/editSupplier');?>",
                 {"supplier_name":supplier_name,"contact_name":contact_name,"contact_mobile":contact_mobile,"contact_telephone":contact_telephone,
-                "checkid":checkid,"address":address,"sid":sid,"textarea":textarea},
+                "checkid":checkid,"address":address,"sid":sid,"textarea":textarea,"editurl":editurl},
                 function (data) {
                     if (data.status == 'success') {
                         getSupplierLists('',_supplier_page);
