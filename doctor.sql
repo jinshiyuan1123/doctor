@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-12-17 00:42:21
+Date: 2018-12-18 14:48:55
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -3743,7 +3743,7 @@ CREATE TABLE `dzm_his_dictionary` (
   PRIMARY KEY (`did`),
   KEY `parent_id` (`parent_id`),
   KEY `hid` (`hid`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8 COMMENT='字典表';
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8 COMMENT='字典表';
 
 -- ----------------------------
 -- Records of dzm_his_dictionary
@@ -3777,6 +3777,8 @@ INSERT INTO `dzm_his_dictionary` VALUES ('26', '热门排行', '16', '1', '1', '
 INSERT INTO `dzm_his_dictionary` VALUES ('27', '医院公开', '16', '1', '1', '1544967210', '0', '', '0');
 INSERT INTO `dzm_his_dictionary` VALUES ('28', '医院视频', '16', '1', '1', '1544968595', '0', '', '0');
 INSERT INTO `dzm_his_dictionary` VALUES ('29', 'mv影视', '16', '1', '1', '1544968887', '0', '', '0');
+INSERT INTO `dzm_his_dictionary` VALUES ('30', '医院信息', '16', '1', '1', '1545102520', '0', '', '0');
+INSERT INTO `dzm_his_dictionary` VALUES ('31', '保健器材', '16', '1', '1', '1545112962', '0', '', '0');
 
 -- ----------------------------
 -- Table structure for dzm_his_doctor
@@ -4008,7 +4010,7 @@ CREATE TABLE `dzm_his_inspectionfee` (
   KEY `hid` (`hid`) USING BTREE,
   KEY `inspection_name` (`inspection_name`) USING BTREE,
   KEY `class` (`class`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8 COMMENT='检查项目费用表';
+) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COMMENT='检查项目费用表';
 
 -- ----------------------------
 -- Records of dzm_his_inspectionfee
@@ -4035,7 +4037,8 @@ INSERT INTO `dzm_his_inspectionfee` VALUES ('25', '1', '1', '医院信息化整�
 INSERT INTO `dzm_his_inspectionfee` VALUES ('26', '1', '1', '影视色彩的音乐mv', '医院公开', '1', '<p></p>', '1', '1544968988', '1544974191', '', '27');
 INSERT INTO `dzm_his_inspectionfee` VALUES ('27', '1', '1', '医院公开特大消息', '医院公开', '1', '<p>医院公开特大消医院公开特大消息医院公开特大消息医院公开特大消息医院公开特大消息息</p>', '1', '1544975453', '0', '', '27');
 INSERT INTO `dzm_his_inspectionfee` VALUES ('28', '1', '1', '保卫处党支部组织党员群众参观改革开放40年成果展', '医院公开', '1', '<p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 14px; white-space: normal;\"><span style=\"margin: 0px; padding: 0px;\">&nbsp;按照院党委工作部署要求，保卫处党支部积极谋划，于12月11日、12日分批组织全处党员群众赴国家博物馆参观改革开放40周年成果展。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 14px; white-space: normal;\"><span style=\"margin: 0px; padding: 0px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 保卫处党支部王长春书记对支部主题党日活动高度重视，提前谋划，召开支委会确定了参观形式及日期。随后向党总支进行报备。保卫处全体党员群众对参观主题党日活动积极性高涨，全处除值班和生病请假的同志，全部积极报名参加。</span></p><p><br/></p>', '1', '1544976570', '0', '', '27');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('29', '1', '1', '重温延安精神 践行延安精神', '医院公开', '1', '<p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 14px; white-space: normal;\"><span style=\"margin: 0px; padding: 0px;\">2018年10月31日-11月2日，我荣幸参加了由北京医院党委<span style=\"margin: 0px; padding: 0px;\">书记</span>汪耀带队，共43名同志在延安举行的“不忘初心、牢记使命”党务干部暨预备党员培训班。虽然培训班结束了，但这次延安的培训、寻根之旅将激励着我不忘初心、牢记使命、永远奋斗。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 14px; white-space: normal;\"><span style=\"margin: 0px; padding: 0px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我们首先聆听了延安干部培训学院副院长康琪教授《中共中央在延安十三年》专题讲座。革命圣地延安，既是红军长征胜利的落脚点，也是建立抗日民族统一战线，赢得抗日战争胜利，进而夺取全国胜利的解放战争的出发点。从1935年到1948年，毛泽东等老一辈无产阶级革命家就是在这里生活和战斗了13个春秋，他们运筹帷幄，决胜千里，领导和指挥了中国的抗日战争和解放战争，奠定了中华人民共和国的坚固基石。毛泽东选集1-4卷共159篇文章中有112篇是在延安时期写成的，占总数的70%，谱写了可歌可泣的伟大的历史篇章。</span></p><p><br/></p>', '1', '1544978009', '0', '', '27');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('29', '1', '1', '重温延安精神 践行延安精神', '医院公开', '1', '<p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: \"><span style=\"margin: 0px; padding: 0px;\"><img width=\"530\" height=\"340\" src=\"http://api.map.baidu.com/staticimage?center=118.81493,34.11662&zoom=14&width=530&height=340&markers=118.798689,34.116261\"/>2018年10月31日-11月2日，我荣幸参加了由北京医院党委<span style=\"margin: 0px; padding: 0px;\">书记</span>汪耀带队，共43名同志在延安举行的“不忘初心、牢记使命”党务干部暨预备党员培训班。虽然培训班结束了，但这次延安的培训、寻根之旅将激励着我不忘初心、牢记使命、永远奋斗。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: \"><span style=\"margin: 0px; padding: 0px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我们首先聆听了延安干部培训学院副院长康琪教授《中共中央在延安十三年》专题讲座。革命圣地延安，既是红军长征胜利的落脚点，也是建立抗日民族统一战线，赢得抗日战争胜利，进而夺取全国胜利的解放战争的出发点。从1935年到1948年，毛泽东等老一辈无产阶级革命家就是在这里生活和战斗了13个春秋，他们运筹帷幄，决胜千里，领导和指挥了中国的抗日战争和解放战争，奠定了中华人民共和国的坚固基石。毛泽东选集1-4卷共159篇文章中有112篇是在延安时期写成的，占总数的70%，谱写了可歌可泣的伟大的历史篇章。</span></p><p><br/></p>', '1', '1544978009', '1545100677', '', '27');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('30', '1', '1', '保健器材之唤起了', '保健器材', '1', '<p>test,大是大非上的方式的方式对方受到福斯的</p>', '1', '1545112995', '0', '', '31');
 
 -- ----------------------------
 -- Table structure for dzm_his_inventory
@@ -5407,6 +5410,7 @@ CREATE TABLE `dzm_his_supplier` (
   `contact_telephone` varchar(20) NOT NULL DEFAULT '' COMMENT '联系人电话',
   `bank_account` varchar(50) NOT NULL DEFAULT '' COMMENT '银行账号',
   `address` varchar(100) NOT NULL DEFAULT '' COMMENT '供应商地址',
+  `textarea` longtext,
   `ip` varchar(255) NOT NULL,
   `hospital_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '医院id',
   `create_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
@@ -5421,8 +5425,8 @@ CREATE TABLE `dzm_his_supplier` (
 -- ----------------------------
 -- Records of dzm_his_supplier
 -- ----------------------------
-INSERT INTO `dzm_his_supplier` VALUES ('1', '协和医院', '王大锤', '15100010002', '010-00010002', '622021706004742103', '沭阳', '127.0.0.1', '1', '1511949274', '1544944084');
-INSERT INTO `dzm_his_supplier` VALUES ('2', '中心医院', '李斯', '13776848127', '0527-83856745', '234342', '沭阳', '127.0.0.1', '1', '1543231196', '0');
+INSERT INTO `dzm_his_supplier` VALUES ('1', '协和医院', '王大锤', '15100010002', '010-00010002', '622021706004742103', '沭阳', 'sdfsdf', '127.0.0.1', '1', '1511949274', '1544944084');
+INSERT INTO `dzm_his_supplier` VALUES ('2', '中心医院', '李斯', '13776848127', '0527-83856745', '234342', '沭阳', null, '127.0.0.1', '1', '1543231196', '0');
 
 -- ----------------------------
 -- Table structure for dzm_his_transaction_record
@@ -5680,6 +5684,7 @@ CREATE TABLE `dzm_his_yydoctor` (
   `mobile` varchar(255) NOT NULL DEFAULT '' COMMENT '邮箱',
   `password` varchar(255) NOT NULL DEFAULT '',
   `hospital` varchar(255) NOT NULL DEFAULT '' COMMENT '医院',
+  `textarea` longtext,
   `department` varchar(255) DEFAULT NULL COMMENT '科室',
   `rank` varchar(255) DEFAULT NULL COMMENT '医生级别',
   `job` varchar(255) NOT NULL COMMENT '职位',
@@ -5695,14 +5700,15 @@ CREATE TABLE `dzm_his_yydoctor` (
   `ask_price` decimal(10,2) DEFAULT '0.00' COMMENT '咨询价格',
   PRIMARY KEY (`id`),
   KEY `uid` (`uid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COMMENT='医生基本信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COMMENT='医生基本信息表';
 
 -- ----------------------------
 -- Records of dzm_his_yydoctor
 -- ----------------------------
-INSERT INTO `dzm_his_yydoctor` VALUES ('1', '王小军', '0', '130000', '0', '石家庄市', '83856745', '13141589223', '$2y$12$qyrPtYAv8qCJT0Bc9wiNru9tu3SZj3XEmb87H/UhB7FGwp9zEt.6C', '中心医院', null, '1', '', '1', '127.0.0.1', '', '1544931350', '1544931350', '', '2', '', '', '0.00');
-INSERT INTO `dzm_his_yydoctor` VALUES ('2', '十多万', '0', '130000', '0', '石家庄市', '83856745', '13141589223', '$2y$12$C3Wt9J7NVz46vI44BG1Ule1pv386XylcD3sIOhE0sVN5I3HFC39Jy', '南山医院', null, '1', '', '0', '127.0.0.1', '', '1544931453', '1544931453', '', '2', '', '', '0.00');
-INSERT INTO `dzm_his_yydoctor` VALUES ('3', '史蒂芬', '0', '140000', '0', '阳泉市', '83856745', '13141589203', '$2y$12$dtrTtoFfkknOW/aCULO9iO5H/oVInKSiguYV23fkBUILdl88pwkPi', '北京医院', null, '1', '', '1', '127.0.0.1', '', '1544931617', '1544931617', '', '2', '', '', '0.00');
+INSERT INTO `dzm_his_yydoctor` VALUES ('1', '王小军', '0', '130000', '0', '石家庄市', '83856745', '13141589223', '$2y$12$qyrPtYAv8qCJT0Bc9wiNru9tu3SZj3XEmb87H/UhB7FGwp9zEt.6C', '中心医院', '<p><img width=\"530\" height=\"340\" src=\"http://api.map.baidu.com/staticimage?center=118.802863,34.116271&zoom=14&width=530&height=340&markers=118.782166,34.115195\"/></p>', null, '1', '', '1', '127.0.0.1', '', '1544931350', '1544931350', '', '2', '', '', '0.00');
+INSERT INTO `dzm_his_yydoctor` VALUES ('2', '十多万', '0', '130000', '0', '石家庄市', '83856744', '13141589223', '$2y$12$C3Wt9J7NVz46vI44BG1Ule1pv386XylcD3sIOhE0sVN5I3HFC39Jy', '仁慈医院', '<p><img width=\"530\" height=\"340\" src=\"http://api.map.baidu.com/staticimage?center=118.810273,34.126539&zoom=14&width=530&height=340&markers=118.802081,34.127137\"/></p>', null, '1', '', '0', '127.0.0.1', '', '1544931453', '1544931453', '', '2', '', '', '0.00');
+INSERT INTO `dzm_his_yydoctor` VALUES ('3', '史蒂芬', '0', '140000', '0', '阳泉市', '83856743', '13141589203', '$2y$12$dtrTtoFfkknOW/aCULO9iO5H/oVInKSiguYV23fkBUILdl88pwkPi', '北京医院', null, null, '1', '', '1', '127.0.0.1', '', '1544931617', '1544931617', '', '2', '', '', '0.00');
+INSERT INTO `dzm_his_yydoctor` VALUES ('4', '史蒂芬', '0', '140000', '0', '阳泉市', '83856743', '13141589203', '$2y$12$dtrTtoFfkknOW/aCULO9iO5H/oVInKSiguYV23fkBUILdl88pwkPi', '协和医院', '<p><img width=\"530\" height=\"340\" src=\"http://api.map.baidu.com/staticimage?center=118.812717,34.119606&zoom=14&width=530&height=340&markers=118.798488,34.116498\"/></p>', null, '1', '', '1', '127.0.0.1', '', '1544931617', '1544931617', '', '2', '', '', '0.00');
 
 -- ----------------------------
 -- Table structure for dzm_patient
