@@ -51,7 +51,7 @@
 			<div class="g-left title">医院登录</div>
 		</div>
 		<div class="form-container">
-			<form action="<?php echo U('home/index/docLogin');?>" onsubmit="return checkPost();" method="post" >
+			<form action="<?php echo U('home/index/yydocLogin');?>" onsubmit="return checkPost();" method="post" >
 				<div class="g-tips-box-error hide J_ErrorCtn">
 					<span class="gi gi-error"></span>
 					<span class="content">

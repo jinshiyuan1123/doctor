@@ -946,6 +946,40 @@ public function recursived($meta,$flag,$count )
      
     }
 
+     public function yydocLogin()
+    {
+      $data = I('post.');
+      $mobile = $data['loginId'];
+      $password = $data['password'];
+      $verify_code = $data['validCode'];
+      
+      $verify = new \Think\Verify();
+      if(!$verify->check($verify_code)){
+            
+         $this->error('验证码错误！');
+        }
+
+      $user = M('his_yydoctor')->where(['mobile'=>$mobile])->find();
+   
+      if (decrypt_password($password, $user['password']) === false) {
+            $this->error('密码错误');
+      }
+      if (empty($user)) {
+            $this->error('账号不存在');
+      }
+     
+      $res = M('his_doctor')->where(['mobile'=>$mobile])->save(['update_time'=>NOW_TIME]);
+     
+        if (!$res) {
+            $this->error('登录失败，请重新登录');
+        }
+
+      unset($user['password']);
+      session('home_user_info', $user);
+      $this->redirect('/home/index/yydoctorhome');
+     
+    }
+
      public function docLogout()
     {
         session_unset('home_user_info');
@@ -1116,6 +1150,10 @@ public function recursived($meta,$flag,$count )
     }
 
     public function yydoctorhome(){
+      $data = I('post.');
+     
+      $user= M('his_yydoctor')->where()->find();
+      $this->assign('user',session('home_user_info'));
       $this->display(':yydoctorhome');
     }
 

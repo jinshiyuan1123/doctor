@@ -158,7 +158,7 @@
 		</div>
 		<div class="info">
 			<div class="basic-info">
-				<h1>{$docname}&nbsp;</h1>
+				<h1>&nbsp;<if condition="$user.hospital eq true">{$user.hospital}<else/>{$docname}</if></h1>
 				<span></span>
 			</div>
 			<div class="dept-info">

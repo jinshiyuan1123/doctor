@@ -113,7 +113,23 @@
 					<span class="gh-search-input J_AutoHospital"><input type="text" id="hospitalName" autocomplete="off" name="hospitalName" class="form-input" value='' placeholder="请输入您所在的医院名称"></span>
 					<input type="hidden" name="hospitalId" class="J_HiddenHospitalId" value="">
 				</li>
-				
+				<!-- <li>
+					<label class="item-name"><em>*</em>科&nbsp;&nbsp;室</label>
+					<span class="gh-search-input J_AutoDept"><input type="text" id="hospdeptName" autocomplete="off" name="hospdeptName" value='' class="form-input" placeholder="请输入您所在的科室名称"></span>
+					<input type="hidden" name="deptId" class="J_HiddenDeptId" value="">
+				</li> -->
+				<!-- <li class="major" style="position:relative;z-index:2;width: 450px;">
+					<label class="item-name"><em>*</em>职&nbsp;&nbsp;称</label>
+					<input type="text" id="titleType" autocomplete="off" name="titleTypeName" class="form-input" placeholder="请输入您的职称" value=''><span class="arrow J_MajorArrow"><i></i></span>
+					<ul class="pro-list J_MajorList">
+						<li><a href="javascript:;" data-id="1">主任医师</a></li>
+						<li><a href="javascript:;" data-id="3">副主任医师</a></li>
+						<li><a href="javascript:;" data-id="2">主治医师</a></li>
+						<li><a href="javascript:;" data-id="4">医师</a></li>
+						<li><a href="javascript:;" data-id="5">住院医师</a></li>
+					</ul>
+					<input type="hidden" name="titleType" class="J_HiddenProId" value="">
+				</li> -->
 				<li>
 					<label class="item-name">固&nbsp;&nbsp;话</label>
 					<span class="gh-search-input "><input type="text" maxlength="5"  name="areaCode" class="form-input" style="width:80px;" placeholder="区号" />&nbsp;&nbsp;<input type="text"  class="form-input" name="phone" value="" style="width:205px;" placeholder="请输入您的医院固定电话"  /></span>
