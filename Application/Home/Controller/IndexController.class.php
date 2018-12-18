@@ -111,7 +111,7 @@ function getCity($ip = '')
         $res7 = M('his_inspectionfee')->where("class='$class7' ")->limit(6)->select();
         $res8 = M('his_inspectionfee')->where("class='$class8' ")->limit(6)->select();
          $res9 = M('his_inspectionfee')->where("class='$class9' ")->limit(6)->select();
-         $row = M('his_supplier')->where()->limit(4)->select();
+         $row = M('his_yydoctor')->where()->limit(4)->select();
          $this->assign('rowlist',$row);
         
         $this->assign('reslist',$res);
