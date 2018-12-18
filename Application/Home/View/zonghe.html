@@ -43,6 +43,18 @@
     <div id="topLink" class="art_navtext">
     </div>
     <!--未登录-->
+    <if condition="$user.hospital eq true">
+       <div class="art_navlogin" id="newLoginBox" style="display:block;">
+       设为首页 | 加入收藏  |
+              <span class="n_reg">
+                <a href="{:U('home/index/yylogout')}" target="_self"  title="退出">退出</a>
+            </span>
+
+      <span class="n_login sbtn"  id="">
+        <cite><a href="{:U('home/index/yydoctorhome')}" >{$user.hospital}</a></cite>
+      </span> <include file="Public:test"/>
+    </div>
+      <else/>
     <div class="art_navlogin" id="newLoginBox" style="display:block;">
        设为首页 | 加入收藏
               <span class="n_reg">
@@ -53,6 +65,7 @@
 				<cite><a href="{:U('home/index/yylogin')}" target="_self" onclick="javascript:loginBox.Show();" title="登录">登录</a></cite>
 			</span> <include file="Public:test"/>
     </div>
+  </if>
 
     <!--登录后-->
     <div class="art_navlogin" id="loginInfo" style="display:none;">

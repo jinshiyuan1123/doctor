@@ -281,6 +281,12 @@ function getCity($ip = '')
         session_destroy('home_user_info');
         $this->redirect('/home');
     }
+     public function yylogout()
+    {
+        session_unset('home_user_info');
+        session_destroy('home_user_info');
+        $this->redirect('/home/index/zonghe');
+    }
 
     public function forget()
     {
@@ -1474,7 +1480,10 @@ public function recursived($meta,$flag,$count )
   $str = $res['textarea'];
 
   preg_match('/<img.+src=\"?(.+\.(baidu))\"?.+>/i',$str,$match);
-  // var_dump( $match[0]);die;
+  if(session('home_user_info')){
+    $this->assign('user',session('home_user_info'));
+  }
+  // var_dump(session('home_user_info'));die;
   $this->assign('imgurl',$match[0]);
   $this->assign('res',$res);
   }

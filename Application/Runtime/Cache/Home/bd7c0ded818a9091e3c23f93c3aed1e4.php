@@ -43,6 +43,40 @@
     <div id="topLink" class="art_navtext">
     </div>
     <!--未登录-->
+    <?php if($user["hospital"] == true): ?><div class="art_navlogin" id="newLoginBox" style="display:block;">
+       设为首页 | 加入收藏  |
+              <span class="n_reg">
+                <a href="<?php echo U('home/index/logout');?>" target="_self"  title="退出">退出</a>
+            </span>
+
+      <span class="n_login sbtn"  id="">
+        <cite><a href="<?php echo U('home/index/yydoctorhome');?>" ><?php echo ($user["hospital"]); ?></a></cite>
+      </span> 
+  
+  <link rel="stylesheet" href="/Public/home/dist/css/share.min.css">
+
+
+
+  <ol>
+   
+    <li class="row">
+      <div id="share-2">分享:</div>
+    </li>
+   
+   
+  </ol>
+
+<script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.js"></script>
+<script src="/Public/home/dist/js/jquery.share.min.js"></script>
+<script>
+$('#share-1').share();
+$('#share-2').share({sites: ['qzone', 'qq', 'weibo','wechat']});
+$('#share-3').share();
+$('#share-4').share();
+</script>
+
+    </div>
+      <?php else: ?>
     <div class="art_navlogin" id="newLoginBox" style="display:block;">
        设为首页 | 加入收藏
               <span class="n_reg">
@@ -75,7 +109,7 @@ $('#share-3').share();
 $('#share-4').share();
 </script>
 
-    </div>
+    </div><?php endif; ?>
 
     <!--登录后-->
     <div class="art_navlogin" id="loginInfo" style="display:none;">

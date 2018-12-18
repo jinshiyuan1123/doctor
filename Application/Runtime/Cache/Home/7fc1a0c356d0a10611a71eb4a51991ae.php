@@ -171,7 +171,7 @@
 		</div>
 		<div class="info">
 			<div class="basic-info">
-				<h1>&nbsp;<?php if($user["hospital"] == false): echo ($user["hospital"]); else: ?>22<?php echo ($docname); endif; ?></h1>
+				<h1>&nbsp;<?php if($user["hospital"] == true): echo ($user["hospital"]); else: echo ($docname); endif; ?></h1>
 				<span></span>
 			</div>
 			<div class="dept-info">
