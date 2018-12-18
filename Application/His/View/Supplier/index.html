@@ -1,4 +1,9 @@
 <!-- MAIN -->
+<style type="text/css">
+    .bombBox{
+        position: relative;
+    }
+</style>
 <div class="main">
     <!-- MAIN CONTENT -->
     <div class="main-content">
@@ -77,6 +82,8 @@
 				</span>
                 <input class="form-control" type="text" name="addAccount" placeholder="">
             </div>
+              <include file="Public:edit"/>
+            <textarea id="wordtype" name="wordtype" style="display: none"></textarea>
             <a class="btn btn-primary determine wb100 mt20 add">确认</a>
         </div>
     </div>
@@ -129,6 +136,19 @@
             </select>
                 <!-- <input type="text" name="editAccount" placeholder=""> -->
             </div>
+             <div class="input-group listSeaForm wb100 mt10">
+                <span class="input-group-btn">
+                    <span class="btn">文章内容：</span>
+                </span>
+                <!-- <textarea class="form-control" name="editUnit" value="" id="editUnit" cols="20" rows="6"></textarea> -->
+                <!-- <input  type="text" id="" name="unit" value="" placeholder=""> -->
+            </div>
+           
+               
+             <textarea id="myEditor" name="myEditor" style="">
+              
+             </textarea>
+            <input type="hidden" id="editInsId" name="ins_id" value="">
             <input class="form-control" type="hidden" name="editSid">
             <a class="btn btn-primary determine wb100 mt20 edit">确认</a>
         </div>
@@ -179,6 +199,8 @@
         });
         //添加医院保存
         $(document).on('click', '.add', function(){
+             var word = document.getElementById('wordtype').innerHTML=UE.getEditor('editor').getContent();
+            
             var supplier_name = $(":input[name='addSupplier']").val();
             var contact_name = $(":input[name='addContactName']").val();
             var contact_mobile = $(":input[name='addContactMobile']").val();
@@ -212,6 +234,9 @@
                 {'sid':sid},
                 function (data) {
                     if (data.status == 'success') {
+                          $("#myEditor").val(data.data.textarea);
+                         UE.getEditor('myEditor');
+
                         $(":input[name='editSupplier']").val(data.data.hospital);
                         $(":input[name='editAddress']").val(data.data.true_name);
                         $(":input[name='editContactName']").val(data.data.mobile);
@@ -245,10 +270,11 @@
             var checkid =   $("#isshow").val();
             var address = $(":input[name='editAddress']").val();
             var sid = $(":input[name='editSid']").val();
-            // console.info(supplier_name);
+              var textarea = document.getElementById('myEditor').innerHTML=UE.getEditor('myEditor').getContent();
+            
             $.post("{:U('/Supplier/editSupplier')}",
                 {"supplier_name":supplier_name,"contact_name":contact_name,"contact_mobile":contact_mobile,"contact_telephone":contact_telephone,
-                "checkid":checkid,"address":address,"sid":sid},
+                "checkid":checkid,"address":address,"sid":sid,"textarea":textarea},
                 function (data) {
                     if (data.status == 'success') {
                         getSupplierLists('',_supplier_page);

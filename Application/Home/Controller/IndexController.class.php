@@ -438,6 +438,31 @@ function getCity($ip = '')
         $this->display(':fastorder');
    }
 
+    public function allorder(){
+        $class = I('get.class');
+        // $res = M('his_inspectionfee')->where("class='$class'")->select();
+         $m = M('his_inspectionfee');      
+        $where = "class='$class'";
+        $count = $m->where($where)->count();
+      
+        $p = $this->getpage($count,10);
+        // var_dump($p);die;
+        // $list = $m->field(true)->where($where)->order('id')->limit($p->firstRow, $p->listRows)->select();
+       $list = $m->field(true)->where($where)->order('ins_id')->limit($p->firstRow, $p->listRows)->select();
+       // p($list);die;
+        $this->assign('page', $p->show()); // 赋值分页输出
+        $this->assign('res',$list);
+        $this->display(':allorder');
+   }
+    public function allorderlist(){
+     // Vendor('./admin/index.html');
+    $id = I('get.ins_id');
+
+    $res = M('his_inspectionfee')->where("ins_id='$id'")->find();
+    $this->assign('res',$res);
+    $this->display(':allorderlist');
+   }
+
    public function fastorderlist(){
      // Vendor('./admin/index.html');
     $id = I('get.id');
@@ -1254,6 +1279,7 @@ public function recursived($meta,$flag,$count )
       $data = I('get.');
       $where = $data['ins_id'];
       $res = M('his_inspectionfee')->where("ins_id='$where'")->find();
+      
       $this->assign('reslist',$res);
       $this->display(':topic');
     }
@@ -1399,6 +1425,22 @@ public function recursived($meta,$flag,$count )
  
  function zonghe()
  {
+  $id =I('get.id');
+  $key = I('get.key');
+  if($key){
+     $ress = M('his_yydoctor')->where("hospital='$key'")->find();
+     // var_dump($ress);die;
+     $this->assign('res',$ress);
+  }else{
+  $res = M('his_yydoctor')->where("id='$id'")->find();
+  $str = $res['textarea'];
+
+  preg_match('/<img.+src=\"?(.+\.(baidu))\"?.+>/i',$str,$match);
+  // var_dump( $match[0]);die;
+  $this->assign('imgurl',$match[0]);
+  $this->assign('res',$res);
+  }
+ 
   $this->display(':zonghe');
  }
 

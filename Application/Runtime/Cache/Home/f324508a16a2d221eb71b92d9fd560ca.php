@@ -202,7 +202,7 @@
 </li>
   <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">医疗器械</a>
 <ul>
-	 <li><a href="#" target="_blank">保健器材</a></li>
+	 <li><a href="<?php echo U('home/index/allorder');?>?class=保健器材" target="_blank">保健器材</a></li>
     <li><a href="#" target="_blank">康复设备</a></li>
     <li><a href="#" target="_blank">护理设备</a></li>
     <li><a href="#" target="_blank">医疗器械</a></li>

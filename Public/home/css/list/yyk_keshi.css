@@ -26,12 +26,12 @@ a:hover { text-decoration: underline; color: #f60; }
 .keshi-header .logo a:hover { text-decoration: none; color: #333; }
 .keshi-header .serach { float: right; width: 448px; overflow: hidden; margin-top: 20px; }
 .keshi-header .serach-tab { float: left; width: 100%; overflow: hidden; }
-.keshi-header .serach-tab a { float: left; width: 68px; height: 21px; overflow: hidden; margin-right: 2px; font-size: 14px; line-height: 22px; text-align: center; font-family: "Microsoft YaHei", simsun; text-decoration: none; background: url(../images/yyk_keshi_search.gif) no-repeat 200px 200px; color: #999; }
+.keshi-header .serach-tab a { float: left; width: 68px; height: 21px; overflow: hidden; margin-right: 2px; font-size: 14px; line-height: 22px; text-align: center; font-family: "Microsoft YaHei", simsun; text-decoration: none; background: url(../../images/yyk_keshi_search.gif) no-repeat 200px 200px; color: #999; }
 .keshi-header .serach-tab a:hover { background-position: -68px 0; color: #fff; }
 .keshi-header .serach-tab a.now, .keshi-header .serach-tab a.now:hover { background-position: 0 0; color: #fff; cursor: default; }
 .keshi-header .serach-in { float: left; height: 37px; position: relative; }
 .keshi-header .serach input { float: left; font-family: "Microsoft YaHei", simsun; }
-.keshi-header .serach .tit { width: 320px; height: 37px; margin: 0; padding: 0 15px 0 35px; border: none; font-size: 12px; line-height: 37px; background: url("../images/yyk_keshi_search.gif") no-repeat 0 -22px; color: #999; }
+.keshi-header .serach .tit { width: 320px; height: 37px; margin: 0; padding: 0 15px 0 35px; border: none; font-size: 12px; line-height: 37px; background: url("../../images/yyk_keshi_search.gif") no-repeat 0 -22px; color: #999; }
 .keshi-header .serach .btn { width: 78px; height: 37px; margin: 0; padding: 0; border: none; font-size: 16px; color: #fff; cursor: pointer; }
 .keshi-header .serach .btn1 { border-radius: 0 3px 3px 0; background: #1E9EB9; }
 .keshi-header .serach .btn1:hover { background: #22B1D0; }

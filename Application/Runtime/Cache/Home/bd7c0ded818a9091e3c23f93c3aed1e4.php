@@ -1,8 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-
-
-
-<!DOCTYPE PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="mobile-agent" content="format=html5;url=http://wapyyk.39.net/xq/zonghe/1cd60.html" />
@@ -16,15 +12,20 @@
 
 <meta http-equiv="Cache-Control" content="no-transform " />
 <link href="/Public/home/css/list/dy_base.css?v=2014111410" type="text/css" rel="stylesheet" />
-<!-- <link href="http://image.39.net/daoyi/css/yyk_keshi.css?20160829" type="text/css" rel="stylesheet"/> -->
+<!-- <link href="/daoyi/css/yyk_keshi.css?20160829" type="text/css" rel="stylesheet"/> -->
 
 <link href="/Public/home/css/list/yyk_keshi.css?20160829" type="text/css" rel="stylesheet"/>
 
 <link href="/Public/home/css/list/dy_hospital.css" rel="stylesheet" type="text/css">
-
+   <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
 
 <base target="_blank" />
-
+<style type="text/css">
+  #imgurl img{
+    width:235px;
+    height: 250px
+  }
+</style>
 
 </head>
 <body>
@@ -43,12 +44,37 @@
     </div>
     <!--未登录-->
     <div class="art_navlogin" id="newLoginBox" style="display:block;">
+       设为首页 | 加入收藏
               <span class="n_reg">
                 <a href="<?php echo U('home/index/yyregister');?>" target="_self"  title="注册">注册</a>
             </span>
+
 			<span class="n_login sbtn"  id="top_loginbox">
 				<cite><a href="<?php echo U('home/index/yylogin');?>" target="_self" onclick="javascript:loginBox.Show();" title="登录">登录</a></cite>
-			</span>
+			</span> 
+  
+  <link rel="stylesheet" href="/Public/home/dist/css/share.min.css">
+
+
+
+  <ol>
+   
+    <li class="row">
+      <div id="share-2">分享:</div>
+    </li>
+   
+   
+  </ol>
+
+<script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.js"></script>
+<script src="/Public/home/dist/js/jquery.share.min.js"></script>
+<script>
+$('#share-1').share();
+$('#share-2').share({sites: ['qzone', 'qq', 'weibo','wechat']});
+$('#share-3').share();
+$('#share-4').share();
+</script>
+
     </div>
 
     <!--登录后-->
@@ -117,14 +143,14 @@
 	.fc_box2{ margin-left: 510px;}
 </style>
 	<!-- pc就医助手广告位都要添加上 “广告” -->
-	<script src="http://image.39.net/art2013/js/ad-icon.js" type="text/javascript"></script>
+	<script src="/art2013/js/ad-icon.js" type="text/javascript"></script>
 
 <script type="text/javascript" src="/js/login.js"></script>
 
 <script type="text/javascript" src="/js/template.js"></script>
 
 	
-<link type="text/css" rel="stylesheet" href="http://image.39.net/daoyi/css/yyk_search.css"/>
+<link type="text/css" rel="stylesheet" href="/daoyi/css/yyk_search.css"/>
 <div class="keshi-header" style="height:108px;">
     <div class="logo">
         <div>
@@ -137,24 +163,16 @@
         <form onsubmit='return false' target="_blank">
         	<input type="hidden" value="0" id="type" name="type">
         	<span class="serach-tab">
-                <a id="searchType2" href="javascript:void(0)" target="_self" class="now" title="">找医生</a>
-                <a id="searchType" href="javascript:void(0)" target="_self" title="">找医院</a>
+                <a id="searchType2" href="javascript:void(0)" target="_self" class="now" title="">找医院</a>
+                <!-- <a id="searchType" href="javascript:void(0)" target="_self" title="">找医院</a> -->
             </span>
             <div class="serach-in">
-                <label><input onkeypress="searchKeyPress();" autocomplete="off" id="searchKey" name="searchKey" type="text" class="tit" value="输入疾病名、科室或医生名" onblur="if(this.value==''){ this.value=this.defaultValue,this.style.color='#999'}" onfocus="if(this.value==this.defaultValue || this.value=='输入疾病名、科室或医院名' || this.value=='输入疾病名、科室或医生名'){ this.value='',this.style.color='#333'}" /></label>
+                <label><input id="searchKey" name="searchKey" type="text" class="tit" value="" placeholder="输入疾病名、科室或医院名"/></label>
                 <i class="loading" style="display:none;"></i>
-                <label><input id="searchButton" type="button" class="btn btn1" value="搜索" title="搜索"/></label>
+                <label><input target="_blank" id="searchButton" onclick="checkpost();" type="button" class="btn btn1" value="搜索" title="搜索"/></label>
             </div>
         </form>
-        <div class="so-tag">
-	        <a href="http://yyk.39.net/hospitals/fuke/">妇科</a>
-	        <a href="http://yyk.39.net/hospitals/erke/">儿科 </a>
-	        <a href="http://yyk.39.net/hospitals/pifuke/">皮肤科</a>
-	        <a href="http://yyk.39.net/hospitals/zhongyike/">中医科</a>
-	        <a href="http://yyk.39.net/hospitals/tangniaobing/">糖尿病 </a>
-	        <a href="http://yyk.39.net/hospitals/guanxinbing/">冠心病 </a>
-	        <!-- <a class="c-orange" href="http://m.39.net/jyzs/?ref=yyksearch">39就医助手APP</a> -->
-		</div>
+       
     </div>
 </div>
 <script type="text/javascript" src="/js/search/keyDownWithoutTips.js"></script>
@@ -170,21 +188,21 @@
 <div class="jy_hspt_intro">
 	<div class="jy_hspt_intro_m">
         <div class="l">
-            <h2>宿迁市中医院<span><i class='pink_link'>三级</i><i class='green_link'>医保定点医院</i><i class='blue_link'>中医院</i></span></h2>
+            <h2><?php echo ($res["hospital"]); ?><span><i class='pink_link'>三级</i><i class='green_link'>医保定点医院</i><i class='blue_link'>中医院</i></span></h2>
             
             <p>别名：宿迁中医院，市中医院&nbsp;</p>
             
         </div>
         <div class="r">
-        	 <div class="btn">
+        	 <!-- <div class="btn">
         	 	<input id="favoriteId" type="hidden" name="favoriteId" value="" />
         	 	<a id="top_zan" class="btn-fav" href="javascript:addLikes();" target="_self"><b></b>点赞<i>+1</i></a>
         	 	<a class="btn-att" href="javascript:favorite();" target="_self"><b></b>
         	 		<span class="att-ing">关注TA</span>
         	 		<span class="att-ed"><i>已关注</i><i class="att-ed-hover">取消关注</i></span>
         	 	</a>
-        	 </div>
-             <div class="edit"><a id="feedBack" target="_blank" href="/page/feedback.html?reUrl=">纠正或补充信息</a></div>
+        	 </div> -->
+             <!-- <div class="edit"><a id="feedBack" target="_blank" href="/page/feedback.html?reUrl=">纠正或补充信息</a></div> -->
              <script>
              $('body').on('mouseenter', '.btn-att-ed', function(){
                  $(this).addClass('btn-att-hover');	 
@@ -220,14 +238,14 @@
         		<!-- 投放广告 -->
                	
 <div>
-	<script type="text/javascript" src="http://app-g.39.net/rel/k13.php?id=5115&keyword=宿迁市中医院"></script>
+	<script type="text/javascript" src="http://app-g.39.net/rel/k13.php?id=5115&keyword=<?php echo ($res["hospital"]); ?>"></script>
 </div>
 
 				
 <div class="hspt_left_p1">
    	<div class="hspt_infor">
        	<div class="l">
-			<img title="宿迁市中医院" src="http://image.39.net/daoyi/images/pics/default_yy.gif" alt="宿迁市中医院logo" />
+			<img title="<?php echo ($res["hospital"]); ?>" src="/Public/home/images/default_yy.gif" alt="<?php echo ($res["hospital"]); ?>logo" />
         </div>
         <div class="r">
         	<table width="0" border="0">
@@ -235,27 +253,30 @@
                <tr>
                  <th style="width:70px;" scope="row">医院简介：</th>
                  <td>
-                 <P>宿迁市中医院是国家三级乙等中医医院...
+                 <P><?php echo ($res["hospital"]); ?>是国家三级乙等中医医院...
       </td>
-                 <td style="width:80px;"><a href="/hospital/1cd60_detail.html">详细介绍>></a></td>
                </tr>
               
               <tr>
                 <th scope="row">医院地址：</th>
                 <td>总院:江苏省宿迁市洪泽湖东路;分院:江苏...
      </td>
-                <td><a href="/hospital/1cd60_map.html">路线查询>></a></td>
               </tr>
               
               
                 <tr>
                 	<th scope="row"style="vertical-align: top;">医院电话：</th>
-                	<td><p>办公电话：0527-84480999&nbsp;   
+                	<td><p>办公电话：<?php echo ($res["phone"]); ?>&nbsp;   
                         	</p>
                 	</td>
-                	<td style="vertical-align: top;"><a href="/hospital/1cd60_guides.html">就医指南>></a>&nbsp;</td>
                 </tr>
+                <tr>
+                  <th scope="row"style="vertical-align: top;">医院网址：</th>
+                  <td><p>www.baidu.com&nbsp;   
+                          </p>
+                  </td>
                 
+                </tr>
             </table>
 
         </div>
@@ -322,7 +343,7 @@
 		ac_group_id = 1;
 		ac_server_base_url = "d-test.39.net/";
 		//]]></script>
-		<script type="text/javascript" src="http://image.39.net/style/style.js"></script>
+		<script type="text/javascript" src="/style/style.js"></script>
 		</div>
 	
  <div class="hspt_left_p2">
@@ -773,7 +794,7 @@ ac_mode = 1;
 ac_group_id = 1;
 ac_server_base_url = "d-test.39.net/";
 //]]></script>
-<script type="text/javascript" src="http://image.39.net/style/style.js"></script>
+<script type="text/javascript" src="/style/style.js"></script>
 </div>
 						</div>
 					</div>
@@ -782,7 +803,7 @@ ac_server_base_url = "d-test.39.net/";
                 <div class="hspt_r_map">
                 	<h3>医院地图</h3>
                     <div class="hspt_r_map_m">
-                    	<a href="/hospital/1cd60_map.html" title="查看"><img src="http://api.map.baidu.com/staticimage?width=224&height=224&center=&markers=118.336896,33.959243&zoom=15&markerStyles=s,A,0xff0000" /></a>
+                    	<a href="" title="查看" id="imgurl" ><?php echo ($imgurl); ?></a>
                     </div>
                 </div>
                 
@@ -864,7 +885,7 @@ $(function() {
 			for(var i=0; i<result.lookedHospitalList.length; i++) {
 				vHtml += '<li><h4><a href="/'+result.lookedHospitalList[i].ABBREVIATION.AREA_ABBREVIATION  + '/' + result.lookedHospitalList[i].ABBREVIATION.NATURE_ABBREVIATION + '/' + result.lookedHospitalList[i].HEX_ID + '.html" title="' + result.lookedHospitalList[i].NAME + '">' + result.lookedHospitalList[i].NAME;
 				if(result.lookedHospitalList[i].REGISTER_FLAG=='Y'){
-					vHtml += '&nbsp;<img alt="" src="http://image.39.net/preview/yyk_keshi/images/yue_icon.jpg">';
+					vHtml += '&nbsp;<img alt="" src="/preview/yyk_keshi/images/yue_icon.jpg">';
 				}
 				vHtml += '</a></h4><p>';
 				if(result.lookedHospitalList[i].TAGs.length>0){
@@ -906,7 +927,7 @@ ac_mode = 1;
 ac_group_id = 1;
 ac_server_base_url = "d-test.39.net/";
 //]]></script>
-<script type="text/javascript" src="http://image.39.net/style/style.js"></script>
+<script type="text/javascript" src="/style/style.js"></script>
 </div>
 
 						</div>
@@ -932,13 +953,13 @@ ac_server_base_url = "d-test.39.net/";
 
 <div class="bottominfo" id="bottominfo" style="padding-top:10px;">
 	<hr style="width:970px;color:#bbb;" size="1">
+  
 	<a href="<?php echo U('home/index/about');?>" rel="nofollow">关于我们</a> | 
-    <a href="" rel="nofollow">媒体报道</a> | 
-    <a href=" rel="nofollow">网络营销</a> | 
-    <a href="" rel="nofollow">产品中心</a> | 
-    <a href="" rel="nofollow">人才招聘</a> | 
-    <a href="" rel="nofollow">联系方式</a> | 
-    <a href=""></a> | 
+    <a href="" rel="nofollow">媒体医院在线客服：QQ 电话</a> | 
+    <a href="" rel="nofollow">对医院意见反馈：QQ，微信 </a> | 
+    <a href="" rel="nofollow">版权投诉：（联系网站）QQ （联系医院）QQ </a> | 
+    <a href="" rel="nofollow">账号申诉：QQ：1569602446 </a> | 
+  
     <a href="" rel="nofollow">问题反馈</a> | 
     <a href="" rel="nofollow">帮助中心</a> | 
     <a href=""></a><br>
@@ -949,7 +970,14 @@ Copyright  © 2000-2018　39.net All Rights Reserved.　本文由择医网作者
 
 </div>
 	</div>
-	
+	<script type="text/javascript">
+   function checkpost(){
+    var key = $("#searchKey").val();
+    if(key){
+       window.location.href='<?php echo U('home/index/zonghe');?>'+'?key='+key+'&searchType=search'; 
+    }
+   } 
+  </script>
 
 
 

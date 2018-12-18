@@ -108,6 +108,7 @@ class SupplierController extends HisBaseController
             // if (preg_match('/\\d+/', I('post.contact_name','','htmlspecialchars'))) $this->ajaxError('联系人姓名不包含数字');
             //保存编辑的供应商
             $sid = I('post.');
+            // p($sid);die;
             $data['update_time'] = time();
             $pidlist= $sid['sid'];
             $data = [
@@ -116,6 +117,7 @@ class SupplierController extends HisBaseController
                 'phone' => $sid['contact_telephone'],
                 'true_name' => $sid['address'],
                 'checkid' => $sid['checkid'],
+                'textarea' => htmlspecialchars_decode($sid['textarea']),
 
             ];
             // p($sid);die;
