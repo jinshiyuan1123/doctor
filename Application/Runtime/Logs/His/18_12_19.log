@@ -6847,3 +6847,60 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
 
+[ 2018-12-19T21:44:08+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+
+[ 2018-12-19T21:44:11+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+
+[ 2018-12-19T21:44:40+08:00 ] 127.0.0.1 /his
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000486s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004117s ]
+
+[ 2018-12-19T21:44:41+08:00 ] 127.0.0.1 /index.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000594s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003888s ]
+SQL: SELECT b.userid AS uid,b.* FROM dzm_his_wxmp b  WHERE b.userid=1 [ RunTime:0.0364s ]
+NOTIC: [8] Undefined index: status D:\phpStudy2018\WWW\doctor\Application\His\Controller\LoginController.class.php 第 104 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.011173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.011402s ]
+NOTIC: [8] Undefined variable: qr_img D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\ecda27f47c7a7285d99b700a6d1c0c12.php 第 44 行.
+NOTIC: [8] Undefined variable: qr_img D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\ecda27f47c7a7285d99b700a6d1c0c12.php 第 45 行.
+NOTIC: [8] Undefined variable: qr_img D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\ecda27f47c7a7285d99b700a6d1c0c12.php 第 48 行.
+NOTIC: [8] Undefined variable: qr_img D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\ecda27f47c7a7285d99b700a6d1c0c12.php 第 50 行.
+NOTIC: [8] Undefined variable: qr_img D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\ecda27f47c7a7285d99b700a6d1c0c12.php 第 61 行.
+NOTIC: [8] Undefined variable: qr_img_content D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\ecda27f47c7a7285d99b700a6d1c0c12.php 第 95 行.
+NOTIC: [8] Undefined variable: enid D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\ecda27f47c7a7285d99b700a6d1c0c12.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.182105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.182324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004132s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.004649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004467s ]
+
+[ 2018-12-19T21:44:57+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+
