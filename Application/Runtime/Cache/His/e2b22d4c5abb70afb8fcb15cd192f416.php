@@ -99,6 +99,24 @@
 
                 </select>
             </div>
+            <div class="input-group listSeaForm wb100 mt10">
+                <span class="input-group-btn">
+                    <span class="btn">文章摘要：</span>
+                </span>
+                <input class="form-control" type="text" id="addmake" name="addmake" value="" placeholder="">
+            </div>
+            <div class="input-group listSeaForm wb100 mt10">
+                <span class="input-group-btn">
+                    <span class="btn">文章来源：</span>
+                </span>
+                <input class="form-control" type="text" id="addsocure" name="addsocure" value="" placeholder="">
+            </div>
+            <div class="input-group listSeaForm wb100 mt10">
+                <span class="input-group-btn">
+                    <span class="btn">文章作者：</span>
+                </span>
+                <input class="form-control" type="text" id="adduser" name="adduser" value="" placeholder="">
+            </div>
              <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
                     <span class="btn">显示：</span>
@@ -338,6 +356,24 @@
 
                 </select>
             </div>
+             <div class="input-group listSeaForm wb100 mt10">
+                <span class="input-group-btn">
+                    <span class="btn">文章摘要：</span>
+                </span>
+                <input class="form-control" type="text" id="addmakes" name="addmake" value="" placeholder="">
+            </div>
+            <div class="input-group listSeaForm wb100 mt10">
+                <span class="input-group-btn">
+                    <span class="btn">文章来源：</span>
+                </span>
+                <input class="form-control" type="text" id="addsocures" name="addsocure" value="" placeholder="">
+            </div>
+            <div class="input-group listSeaForm wb100 mt10">
+                <span class="input-group-btn">
+                    <span class="btn">文章作者：</span>
+                </span>
+                <input class="form-control" type="text" id="addusers" name="adduser" value="" placeholder="">
+            </div>
             <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
                     <span class="btn">显示：</span>
@@ -460,6 +496,9 @@
             var word = document.getElementById('wordtype').innerHTML=UE.getEditor('editor').getContent();
             
             var inspection_name = $('#addInspectionName').val();
+            var addmake = $('#addmake').val();
+            var addsocure = $('#addsocure').val();
+            var adduser = $('#adduser').val();
             var class_id = $('#addClass option:selected').val();
              var bluelists = $("#bluelists").prop("checked",true);
              if(bluelists){
@@ -478,7 +517,7 @@
             // alert(cost);
             var unit = $('#addUnit').val();
             $.post("<?php echo U('/Inspectionfee/addInspection');?>",
-                {"inspection_name":inspection_name,"class_id":class_id,"unit_price":unit_price,"cost":cost,"unit":unit,"word":word},
+                {"inspection_name":inspection_name,"class_id":class_id,"unit_price":unit_price,"cost":cost,"unit":unit,"word":word,"addmake":addmake,"addsocure":addsocure,"adduser":adduser},
                 function (data) {
                     if (data.status=='success') {
                         getInspectionLists('', _inspection_page);
@@ -533,6 +572,9 @@
                         $('#editCost').val(data.data.inspectionInfo.cost);
                         $('#editUnit').val(data.data.inspectionInfo.unit);
                         $('#editInsId').val(data.data.inspectionInfo.ins_id);
+                        var addmake = $('#addmakes').val(data.data.inspectionInfo.make);
+                        var addsocure = $('#addsocures').val(data.data.inspectionInfo.socure);
+                        var adduser = $('#addusers').val(data.data.inspectionInfo.user);
                         var html = '<select class="form-control" id="editClass" name="class_id"><option value=""';
                         if (data.data.inspectionInfo.class_id == 0) {
                             html += 'selected';
@@ -563,7 +605,9 @@
             var class_id = $('#editClass option:selected').val();
             var class_name = $('#editClass option:selected').html();
             var unit_price = $('input:radio[name=blues]:checked').val();
-           
+            var addmake = $('#addmakes').val();
+            var addsocure = $('#addsocures').val();
+            var adduser = $('#addusers').val();
             var cost = $('input:radio[name=blue]:checked').val();
             var unit = $('#editUnit').val();
             var ins_id = $('#editInsId').val();
@@ -571,7 +615,7 @@
             var word = document.getElementById('myEditor').innerHTML=UE.getEditor('myEditor').getContent();
             
             $.post("<?php echo U('/Inspectionfee/editInspection');?>",
-                {"inspection_name":inspection_name,"class_id":class_id,"unit_price":unit_price,"cost":cost,"unit":unit,'ins_id':ins_id,"word":word},
+                {"inspection_name":inspection_name,"class_id":class_id,"unit_price":unit_price,"cost":cost,"unit":unit,'ins_id':ins_id,"word":word,"addmake":addmake,"addsocure":addsocure,"adduser":adduser},
                 function (data) {
                     if (data.status=='success') {
                         var html = '<tr id="'+ins_id+'"><td>'+id+'</td>' +

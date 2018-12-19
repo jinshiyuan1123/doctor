@@ -153,7 +153,7 @@ $('#share-4').share();
               <i class="pre-icon">&nbsp;&nbsp;&nbsp;</i>     
               <input type="hidden" id="uidlistid" value="<?php echo ($res["id"]); ?>" name="uidlistid">
               <a target="_blank" href="" style="color: #333;text-decoration:none;"><span class="content" title="<?php echo ($res["title"]); ?>"></span><?php echo ($res["title"]); ?></a>
-              <span class="date" style="float: right;"><?php echo (date('Y-m-d',$res["createtime"])); ?>&nbsp;&nbsp;</span>
+              <span class="date" style="float: right;"><?php echo (date('Y年m月d日 H时i分s秒',$res["createtime"])); ?>&nbsp;&nbsp;</span>
             </div>
             <div class="answer g-clear" style="">
               <i class="pre-icon"></i>

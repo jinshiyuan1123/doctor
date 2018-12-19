@@ -152,7 +152,11 @@ $('#share-4').share();
               <i class="pre-icon">&nbsp;&nbsp;&nbsp;</i>     
               <input type="hidden" id="uidlistid" value="<?php echo ($res["ins_id"]); ?>" name="uidlistid">
               <!-- <a target="_blank" href="" style="color: #333;text-decoration:none;"><span class="content" title="<?php echo ($res["inspection_name"]); ?>"></span><?php echo ($res["inspection_name"]); ?></a> -->
-              <span class="date" style="float: right;"><?php echo (date('Y-m-d',$res["create_time"])); ?>&nbsp;&nbsp;</span>
+              <span class="date" style="float: right;"><?php echo (date('Y年m月d日 H时i分s秒',$res["create_time"])); ?>&nbsp;&nbsp;</span>
+              <br>
+               <span class="date" style="float: right;">文章来源：<?php echo ($res["socure"]); ?>&nbsp;&nbsp;</span>
+               <br>
+                <span class="date" style="float: right;">发布者：<?php echo ($res["user"]); ?>&nbsp;&nbsp;</span>
             </div>
             <div class="answer g-clear" style="">
               <i class="pre-icon"></i>

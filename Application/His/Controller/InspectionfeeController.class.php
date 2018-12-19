@@ -89,6 +89,9 @@ class InspectionfeeController extends HisBaseController
                 'class'                =>  $class ? $class['dictionary_name'] : '系统默认',
                 'class_id'             =>  $class ? $class['did'] : 0,
                 'create_time'          =>  time(),
+                'make'                 => I('post.addmake'),
+                'socure'               => I('post.addsocure'),
+                'user'                 => I('post.adduser'),
             );
             $result = $this->inspectionfee_model->addInspection($data);
             if ($result) {
@@ -160,6 +163,9 @@ class InspectionfeeController extends HisBaseController
                 'class'                =>  $class,
                 'class_id'             =>  $class_id,
                 'update_time'          =>  time(),
+                'make'                 => I('post.addmake'),
+                'socure'               => I('post.addsocure'),
+                'user'                 => I('post.adduser'),
             );
             $map = [
                 'ins_id' => $insId,
