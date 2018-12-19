@@ -101,6 +101,7 @@ function getCity($ip = '')
         $class4 ="医院公开";
         $class5 = "医院动态";
         $class6 ="医院健康";
+        $user = "择医网讲堂";
         $res = M('his_inspectionfee')->where("class='$class' ")->limit(6)->select();
         $res1 = M('his_inspectionfee')->where("class='$class1' ")->limit(6)->select();
         $res2 = M('his_inspectionfee')->where("class='$class2' ")->limit(6)->select();
@@ -110,7 +111,8 @@ function getCity($ip = '')
          $res6 = M('his_inspectionfee')->where("class='$class6' ")->limit(6)->select();
         $res7 = M('his_inspectionfee')->where("class='$class7' ")->limit(6)->select();
         $res8 = M('his_inspectionfee')->where("class='$class8' ")->limit(6)->select();
-         $res9 = M('his_inspectionfee')->where("class='$class9' ")->limit(6)->select();
+        $res9 = M('his_inspectionfee')->where("class='$class9' ")->limit(6)->select();
+        $res10 = M('his_inspectionfee')->where("class='$user' ")->limit(3)->select();
          $row = M('his_yydoctor')->where()->limit(4)->select();
          $this->assign('rowlist',$row);
         
@@ -124,6 +126,7 @@ function getCity($ip = '')
         $this->assign('reslist7',$res7);
         $this->assign('reslist8',$res8);
         $this->assign('reslist9',$res9);
+        $this->assign('reslist10',$res10);
         $this->assign('region',$getip['region']);
         $this->assign('city',$getip['city']);
         $this->display(':index');

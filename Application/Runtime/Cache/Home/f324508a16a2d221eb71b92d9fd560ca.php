@@ -2137,8 +2137,14 @@ $(document).ready(function(){
                             </div>
                             <div class="wy-video" id="J_VideoHook">
                                 <p class="module">择医网讲堂
-                                    <span></span><a href="#">更多</a></p>
-
+                                    <span></span><a href="<?php echo U('home/index/topiclist');?>?class=择医网讲堂" target="_blank">更多</a></p>
+                                    <?php if(is_array($reslist10)): foreach($reslist10 as $key=>$vo): ?><li style="list-style-type:none">
+                                                <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($vo["ins_id"]); ?>" class="title" title="经常跷二郎腿对身体有害吗？">
+                                                    <span class="sort-number" style="color:#377bee"><?php echo ($key+1); ?></span>
+                                                    <span class="content"><?php echo ($vo["inspection_name"]); ?></span>
+                                                </a>
+                                    </li>
+                                  &nbsp;<?php endforeach; endif; ?>
                             </div>
                         </div>
                     </div>
