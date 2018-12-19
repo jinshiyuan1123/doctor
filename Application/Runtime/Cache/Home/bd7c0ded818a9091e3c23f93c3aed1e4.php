@@ -46,7 +46,7 @@
     <?php if($user["hospital"] == true): ?><div class="art_navlogin" id="newLoginBox" style="display:block;">
        设为首页 | 加入收藏  |
               <span class="n_reg">
-                <a href="<?php echo U('home/index/logout');?>" target="_self"  title="退出">退出</a>
+                <a href="<?php echo U('home/index/yylogout');?>" target="_self"  title="退出">退出</a>
             </span>
 
       <span class="n_login sbtn"  id="">

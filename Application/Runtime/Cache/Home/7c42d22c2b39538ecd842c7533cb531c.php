@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 
-    <title>网上医院医生论坛-择医网(挂号网)</title>
+    <title>择医网(挂号网)- 网上在线挂号预约平台</title>
     <meta name="keywords" content="医生论坛,网上挂号,医院挂号,问诊咨询,医院,挂号官网,挂号平台,网上医生论坛" />
     <meta name="description" content="网上医生论坛，在线挂号，择医网集团(原挂号网),互联网医院国家试点平台,为您提供查询全国医院门诊时间、预约专家号、在线咨询医生，全国三甲医院的精准查询和重点医院医生论坛服务，让您在线预约医院更快捷，看病问诊更方便。" />
     <link rel="canonical" href="https://www.guahao.com/expert/fastorder" />
@@ -106,140 +106,14 @@
                     <span class="gh-search-tips"></span>
                 </div>
             </div>
-            <div class="gh-home-menu J_NewMenu">
 
-            <!-- 
-<ul class="g-clear main-menu-nav">
-<li class="hot">
-    <a class="own-tab" target="_blank" href="<?php echo U('home/index/allorder');?>?class=健康资讯" monitor="public_menu,home_menu,ask">健康资讯</a>
-
-</li>
-<li><a target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">网站公告</a></li>
-<li><a target="_blank" target="_blank" href="<?php echo U('home/index/hospital');?>" >在线咨询</a></li>
-<li class="authority"><a class="own-tab" target="_blank" target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow">医生论坛</a>
-
-</li>
-<li data-subnav="sub-nav-welife"><a target="_blank" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">
-健康</a>
-<ul>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=养生" target="_blank">养生</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=健康" target="_blank">健康</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=两性" target="_blank">两性</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=减肥" target="_blank">减肥</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=美容" target="_blank">美容</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=饮食" target="_blank">饮食</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=母婴" target="_blank">母婴</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=运动" target="_blank">运动</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=百科" target="_blank">百科</a></li>
-</ul>
-</li>
-
-
-<li><a target="_blank" href="<?php echo U('home/index/allorder');?>?class=医药直通车" target="_blank" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">医药直通车</a>
-<ul>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=中药材" target="_blank">中药材</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=中药饮片" target="_blank">中药饮片</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=中成药" target="_blank">中成药</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=化学药品" target="_blank">化学药品</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=生物制品" target="_blank">生物制品</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=外用剂" target="_blank">外用剂</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=保健品" target="_blank">保健品</a></li>
-  
-</ul>	
-</li>
-  <li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">医疗器械</a>
-<ul>
-	 <li><a href="<?php echo U('home/index/allorder');?>?class=保健器材" target="_blank">保健器材</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=康复设备" target="_blank">康复设备</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=护理设备" target="_blank">护理设备</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=医疗器械" target="_blank">医疗器械</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=电子仪器" target="_blank">电子仪器</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=分析仪器" target="_blank">分析仪器</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=一次性用品" target="_blank">一次性用品</a></li>
-   
-</ul>
-  </li>
-
-   <li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">宣传耗材</a>
-
-   </li>
-
-
-</ul>
-<div></div>
-<ul class="g-clear main-menu-nav">
-<li class="hot">
-    <a  target="_blank" href="" >慈善</a>
-    <ul>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=求助" target="_blank">求助</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=捐助" target="_blank">捐助</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=活动" target="_blank">活动</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=公开" target="_blank">公开</a></li>
-    
-</ul>
-</li>
-<li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">健康视频</a>
-	<ul>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=健康" target="_blank">健康</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=养生" target="_blank">养生</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=减肥" target="_blank">减肥</a></li>
-     <li><a href="<?php echo U('home/index/allorder');?>?class=生活" target="_blank">生活</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=饮食" target="_blank">饮食</a></li>
-  
-</ul>
-</li>
-<li><a target="_blank" target="_blank" href="<?php echo U('home/index/allorder');?>?class=搞笑视频" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,preciseorder">搞笑视频</a>
-	
-</li>
-
-
-
-  <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">优选音乐</a>
-  	<ul>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=演唱会" target="_blank">演唱会</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=影视" target="_blank">影视</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=校园" target="_blank">校园</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=儿歌" target="_blank">儿歌</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=网络" target="_blank">网络</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=外语" target="_blank">外语</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=怀旧" target="_blank">怀旧</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=摇滚" target="_blank">摇滚</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=流行" target="_blank">流行</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=情感" target="_blank">情感</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=民谣" target="_blank">民谣</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=专辑" target="_blank">专辑</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=古典" target="_blank">古典</a></li>
-</ul>
-  </li>
-
-   <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a>
-<ul>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=演唱会" target="_blank">演唱会</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=影视" target="_blank">影视</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=校园" target="_blank">校园</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=儿歌" target="_blank">儿歌</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=网络" target="_blank">网络</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=外语" target="_blank">外语</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=怀旧" target="_blank">怀旧</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=摇滚" target="_blank">摇滚</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=流行" target="_blank">流行</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=情感" target="_blank">情感</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=民谣" target="_blank">民谣</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=专辑" target="_blank">专辑</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=古典" target="_blank">古典</a></li>
-</ul>
-   </li>
-
-
-</ul> -->
-        </div>
 
         <div id="gc">
 
 
             <div class="gp-fastorder" id="g-cfg">
                 <div id="g-breadcrumb">
-                    <a href="#">首页</a>&gt;
+                    <a href="<?php echo U('home/index/index');?>">首页</a>&gt;
                     <span>医生论坛</span>
                 </div>
                 <div class="g-container">
@@ -250,6 +124,29 @@
                 </div>
                        
          
+  
+  <link rel="stylesheet" href="/Public/home/dist/css/share.min.css">
+
+
+
+  <ol>
+   
+    <li class="row">
+      <div id="share-2">分享:</div>
+    </li>
+   
+   
+  </ol>
+
+<script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.js"></script>
+<script src="/Public/home/dist/js/jquery.share.min.js"></script>
+<script>
+$('#share-1').share();
+$('#share-2').share({sites: ['qzone', 'qq', 'weibo','wechat']});
+$('#share-3').share();
+$('#share-4').share();
+</script>
+
         <div style="margin-top: 8px;"></div>
                     <li style=" list-style-type:none;font-size:15px">
             <div class="ask g-clear" style=" ">

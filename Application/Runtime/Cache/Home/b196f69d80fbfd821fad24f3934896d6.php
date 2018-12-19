@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 
-    <title>网上医院医生论坛-择医网(挂号网)</title>
+    <title>择医网(挂号网)- 网上在线挂号预约平台</title>
     <meta name="keywords" content="医生论坛,网上挂号,医院挂号,问诊咨询,医院,挂号官网,挂号平台,网上医生论坛" />
     <meta name="description" content="网上医生论坛，在线挂号，择医网集团(原挂号网),互联网医院国家试点平台,为您提供查询全国医院门诊时间、预约专家号、在线咨询医生，全国三甲医院的精准查询和重点医院医生论坛服务，让您在线预约医院更快捷，看病问诊更方便。" />
     <link rel="canonical" href="https://www.guahao.com/expert/fastorder" />
@@ -98,7 +98,7 @@
     <a class="own-tab" target="_blank" href="<?php echo U('home/index/allorder');?>?class=健康资讯" monitor="public_menu,home_menu,ask">健康资讯</a>
 
 </li>
-<li><a target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">网站公告</a></li>
+<li><a target="_blank" href="<?php echo U('home/index/allorder');?>?class=网站公告" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">网站公告</a></li>
 <li><a target="_blank" target="_blank" href="<?php echo U('home/index/hospital');?>" >在线咨询</a></li>
 <li class="authority"><a class="own-tab" target="_blank" target="_blank" href="<?php echo U('home/index/fastorder');?>" rel="nofollow">医生论坛</a>
 
@@ -144,7 +144,7 @@
 </ul>
   </li>
 
-   <li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">宣传耗材</a>
+   <li><a target="_blank" href="<?php echo U('home/index/allorder');?>?class=宣传耗材" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">宣传耗材</a>
 
    </li>
 
@@ -179,7 +179,7 @@
 
 
   <li><a target="_blank" href="/Public/music" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">优选音乐</a>
-  	<ul>
+  	<!-- <ul>
     <li><a href="<?php echo U('home/index/allorder');?>?class=演唱会" target="_blank">演唱会</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=影视" target="_blank">影视</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=校园" target="_blank">校园</a></li>
@@ -193,7 +193,7 @@
     <li><a href="<?php echo U('home/index/allorder');?>?class=民谣" target="_blank">民谣</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=专辑" target="_blank">专辑</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=古典" target="_blank">古典</a></li>
-</ul>
+</ul> -->
   </li>
 
    <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a>
@@ -223,7 +223,7 @@
 
             <div class="gp-fastorder" id="g-cfg">
                 <div id="g-breadcrumb">
-                    <a href="#">首页</a>&gt;
+                    <a href="<?php echo U('home/index/index');?>">首页</a>&gt;
                     <span>医生论坛</span>
                 </div>
                 <div class="g-container">
