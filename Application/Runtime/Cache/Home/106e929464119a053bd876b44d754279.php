@@ -236,7 +236,7 @@
 
             <div class="gp-fastorder" id="g-cfg">
                 <div id="g-breadcrumb">
-                    <a href="#">首页</a>&gt;
+                    <a href="<?php echo U('home/index/index');?>">首页</a>&gt;
                     <span><?php echo ($res["0"]["class"]); ?></span>
                 </div>
                 <div class="g-container">
@@ -250,7 +250,7 @@
                     <i class="pre-icon">&nbsp;&nbsp;&nbsp;</i>  
                     <i><?php echo ($key+1); ?>.</i>  
                     <!-- <span>12-14</span> -->
-                    <a  href="<?php echo U('home/index/allorderlist');?>?ins_id=<?php echo ($vo["ins_id"]); ?>" title="<?php echo ($vo["inspection_name"]); ?>" target="_blank"><?php echo ($vo["inspection_name"]); ?></a>
+                    <a  href="<?php echo U('home/index/allorderlist');?>?ins_id=<?php echo ($vo["ins_id"]); ?>" title="<?php echo ($vo["inspection_name"]); ?>" target="_blank"><?php if($vo["make"] == true): echo ($vo["make"]); else: echo ($vo["inspection_name"]); endif; ?></a>
                       <span class="date" style="float: right;"><?php echo (date('Y-m-d',$vo["create_time"])); ?>&nbsp;&nbsp;</span>
                 </li>
             </ul>
