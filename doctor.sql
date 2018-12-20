@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : www
+Source Server         : localhost
 Source Server Version : 50553
 Source Host           : localhost:3306
 Source Database       : doctor
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-12-18 14:48:55
+Date: 2018-12-20 09:21:58
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -24,8 +24,8 @@ CREATE TABLE `dzm_his_areas` (
   `areaid` varchar(20) NOT NULL,
   `area` varchar(50) NOT NULL,
   `cityid` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3145 DEFAULT CHARSET=utf8 COMMENT='行政区域县区信息表';
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=3145 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='行政区域县区信息表';
 
 -- ----------------------------
 -- Records of dzm_his_areas
@@ -2828,8 +2828,8 @@ CREATE TABLE `dzm_his_auth_group` (
   `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '是否显示：1为显示，2不显示',
   `is_manage` tinyint(1) NOT NULL DEFAULT '1' COMMENT '1需要验证权限 2 不需要验证权限',
   `rules` text NOT NULL COMMENT '用户组拥有的规则id， 多个规则',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COMMENT='用户组表';
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='用户组表';
 
 -- ----------------------------
 -- Records of dzm_his_auth_group
@@ -2853,7 +2853,7 @@ CREATE TABLE `dzm_his_auth_group_access` (
   UNIQUE KEY `uid_group_id` (`uid`,`group_id`) USING BTREE,
   KEY `uid` (`uid`) USING BTREE,
   KEY `group_id` (`group_id`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COMMENT='用户组与用户关联表';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 ROW_FORMAT=FIXED COMMENT='用户组与用户关联表';
 
 -- ----------------------------
 -- Records of dzm_his_auth_group_access
@@ -2880,8 +2880,8 @@ CREATE TABLE `dzm_his_auth_rule` (
   `status` tinyint(1) NOT NULL DEFAULT '1',
   `condition` char(100) NOT NULL DEFAULT '',
   `order_list` int(255) DEFAULT '0' COMMENT '排序字段',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=229 DEFAULT CHARSET=utf8mb4 COMMENT='用户权限表';
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=229 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC COMMENT='用户权限表';
 
 -- ----------------------------
 -- Records of dzm_his_auth_rule
@@ -3057,12 +3057,12 @@ CREATE TABLE `dzm_his_batches_of_inventory` (
   `batches_of_inventory_verifier_date` varchar(20) DEFAULT NULL COMMENT '审核日期',
   `create_time` int(11) NOT NULL COMMENT '创建时间',
   `update_time` int(11) DEFAULT NULL COMMENT '更新时间',
-  PRIMARY KEY (`batches_of_inventory_id`),
+  PRIMARY KEY (`batches_of_inventory_id`) USING BTREE,
   KEY `company_id` (`company_id`) USING BTREE,
   KEY `supplier_id` (`supplier_id`) USING BTREE,
   KEY `purchasing_agent_id` (`purchasing_agent_id`) USING BTREE,
   KEY `batches_of_inventory_verifier` (`batches_of_inventory_verifier`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='批次库存表';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='批次库存表';
 
 -- ----------------------------
 -- Records of dzm_his_batches_of_inventory
@@ -3089,7 +3089,7 @@ CREATE TABLE `dzm_his_care_history` (
   `case_result` text COMMENT '诊断信息',
   `doctor_tips` text COMMENT '医生建议',
   `memo` text COMMENT '备注',
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`) USING BTREE,
   KEY `hospital_id` (`hospital_id`) USING BTREE,
   KEY `doctor_id` (`doctor_id`) USING BTREE,
   KEY `patient_id` (`patient_id`) USING BTREE,
@@ -3098,7 +3098,7 @@ CREATE TABLE `dzm_his_care_history` (
   KEY `case_date` (`case_date`) USING BTREE,
   KEY `case_code` (`case_code`) USING BTREE,
   KEY `addtime` (`addtime`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='历史病历';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='历史病历';
 
 -- ----------------------------
 -- Records of dzm_his_care_history
@@ -3129,7 +3129,7 @@ CREATE TABLE `dzm_his_care_order` (
   `case_code` varchar(32) DEFAULT NULL COMMENT '诊断编号',
   `use_tips` text COMMENT '服药要求',
   `memo` text COMMENT '备注',
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`) USING BTREE,
   KEY `hospital_id` (`hospital_id`) USING BTREE,
   KEY `doctor_id` (`doctor_id`) USING BTREE,
   KEY `patient_id` (`patient_id`) USING BTREE,
@@ -3138,7 +3138,7 @@ CREATE TABLE `dzm_his_care_order` (
   KEY `dzm_his_care_order_care_history_id_index` (`care_history_id`) USING BTREE,
   KEY `status` (`status`) USING BTREE,
   KEY `pkg_id` (`pkg_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='处方列表';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='处方列表';
 
 -- ----------------------------
 -- Records of dzm_his_care_order
@@ -3165,13 +3165,13 @@ CREATE TABLE `dzm_his_care_order_sub` (
   `amount` decimal(10,2) DEFAULT '0.00' COMMENT '金额',
   `tips` varchar(255) DEFAULT NULL COMMENT '特殊要求，备注',
   `listorder` int(10) unsigned DEFAULT '0' COMMENT '排序',
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`) USING BTREE,
   KEY `fid` (`fid`) USING BTREE,
   KEY `listorder` (`listorder`) USING BTREE,
   KEY `goods_id` (`goods_id`) USING BTREE,
   KEY `type_id` (`type_id`) USING BTREE,
   KEY `pkg_id` (`pkg_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COMMENT='开诊用药明细';
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='开诊用药明细';
 
 -- ----------------------------
 -- Records of dzm_his_care_order_sub
@@ -3196,11 +3196,11 @@ CREATE TABLE `dzm_his_care_paylog` (
   `pay_amount` decimal(10,2) DEFAULT '0.00' COMMENT '支付金额',
   `status` tinyint(1) unsigned DEFAULT '0' COMMENT '状态，0未支付，1已支付',
   `addtime` int(10) unsigned DEFAULT '0' COMMENT '添加时间',
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`) USING BTREE,
   KEY `pkg_id` (`pkg_id`) USING BTREE,
   KEY `platform_code` (`platform_code`) USING BTREE,
   KEY `status` (`status`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='支付收费记录';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='支付收费记录';
 
 -- ----------------------------
 -- Records of dzm_his_care_paylog
@@ -3226,7 +3226,7 @@ CREATE TABLE `dzm_his_care_pkg` (
   `status` tinyint(1) unsigned DEFAULT '0' COMMENT '状态:0未支付，1已支付，2确认收款，3申请退款，4已退款,5部分支付,6完成交易（如：已发药），7部分退款',
   `addtime` int(10) unsigned DEFAULT '0' COMMENT '插入时间',
   `op_place` tinyint(1) unsigned DEFAULT '0' COMMENT '操作地点：1售药，2查检项目，3附加费用，4挂号，，，，',
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`) USING BTREE,
   UNIQUE KEY `order_code` (`order_code`) USING BTREE,
   KEY `hospital_id` (`hospital_id`) USING BTREE,
   KEY `doctor_id` (`doctor_id`) USING BTREE,
@@ -3235,9 +3235,9 @@ CREATE TABLE `dzm_his_care_pkg` (
   KEY `status` (`status`) USING BTREE,
   KEY `type_id` (`type_id`) USING BTREE,
   KEY `addtime` (`addtime`) USING BTREE,
-  KEY `op_place` (`op_place`),
-  KEY `registration_id` (`registration_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='收费总表';
+  KEY `op_place` (`op_place`) USING BTREE,
+  KEY `registration_id` (`registration_id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='收费总表';
 
 -- ----------------------------
 -- Records of dzm_his_care_pkg
@@ -3263,12 +3263,12 @@ CREATE TABLE `dzm_his_care_refundlog` (
   `adm_uid` int(10) unsigned DEFAULT '0' COMMENT '处理人id',
   `adm_ip` varchar(32) DEFAULT NULL COMMENT '处理人ip',
   `adm_memo` varchar(255) DEFAULT NULL COMMENT '备注',
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`) USING BTREE,
   KEY `pkg_id` (`pkg_id`) USING BTREE,
   KEY `platform_code` (`platform_code`) USING BTREE,
   KEY `status` (`status`) USING BTREE,
-  KEY `adm_uid` (`adm_uid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='退款记录';
+  KEY `adm_uid` (`adm_uid`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='退款记录';
 
 -- ----------------------------
 -- Records of dzm_his_care_refundlog
@@ -3294,13 +3294,13 @@ CREATE TABLE `dzm_his_cash_out` (
   `adm_ip` varchar(32) DEFAULT NULL COMMENT '处理人ip',
   `adm_memo` varchar(255) DEFAULT NULL COMMENT '处理人意见',
   `adm_time` int(10) unsigned DEFAULT '0' COMMENT '处理时间',
-  PRIMARY KEY (`id`),
-  KEY `hospital_id` (`hospital_id`),
-  KEY `user_id` (`user_id`),
-  KEY `status` (`status`),
-  KEY `type_id` (`type_id`),
-  KEY `adm_uid` (`adm_uid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户提现申请';
+  PRIMARY KEY (`id`) USING BTREE,
+  KEY `hospital_id` (`hospital_id`) USING BTREE,
+  KEY `user_id` (`user_id`) USING BTREE,
+  KEY `status` (`status`) USING BTREE,
+  KEY `type_id` (`type_id`) USING BTREE,
+  KEY `adm_uid` (`adm_uid`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户提现申请';
 
 -- ----------------------------
 -- Records of dzm_his_cash_out
@@ -3315,8 +3315,8 @@ CREATE TABLE `dzm_his_cities` (
   `cityid` varchar(20) NOT NULL,
   `city` varchar(50) NOT NULL,
   `provinceid` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=346 DEFAULT CHARSET=utf8 COMMENT='行政区域地州市信息表';
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=346 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='行政区域地州市信息表';
 
 -- ----------------------------
 -- Records of dzm_his_cities
@@ -3681,8 +3681,8 @@ CREATE TABLE `dzm_his_demo_doctor` (
   `hasfix` varchar(255) DEFAULT NULL COMMENT '擅长',
   `about` text COMMENT '关于',
   `case` varchar(255) DEFAULT NULL COMMENT '简介',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='公示信息--医生';
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='公示信息--医生';
 
 -- ----------------------------
 -- Records of dzm_his_demo_doctor
@@ -3696,8 +3696,8 @@ CREATE TABLE `dzm_his_demo_patient` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `pname` varchar(32) DEFAULT NULL,
   `mobile` varchar(32) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='公众数据--患者';
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='公众数据--患者';
 
 -- ----------------------------
 -- Records of dzm_his_demo_patient
@@ -3714,10 +3714,10 @@ CREATE TABLE `dzm_his_department` (
   `department_name` varchar(50) NOT NULL COMMENT '科室名称',
   `department_number` varchar(50) NOT NULL COMMENT '科室编号',
   `hid` int(10) NOT NULL COMMENT '医院id',
-  PRIMARY KEY (`did`),
+  PRIMARY KEY (`did`) USING BTREE,
   KEY `editdate` (`update_time`) USING BTREE,
-  KEY `department_name` (`department_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='科室表';
+  KEY `department_name` (`department_name`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='科室表';
 
 -- ----------------------------
 -- Records of dzm_his_department
@@ -3740,10 +3740,10 @@ CREATE TABLE `dzm_his_dictionary` (
   `update_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '编辑时间',
   `number` varchar(255) NOT NULL DEFAULT '' COMMENT '诊断编号',
   `is_del` tinyint(2) NOT NULL DEFAULT '0' COMMENT '是否删除',
-  PRIMARY KEY (`did`),
-  KEY `parent_id` (`parent_id`),
-  KEY `hid` (`hid`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8 COMMENT='字典表';
+  PRIMARY KEY (`did`) USING BTREE,
+  KEY `parent_id` (`parent_id`) USING BTREE,
+  KEY `hid` (`hid`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='字典表';
 
 -- ----------------------------
 -- Records of dzm_his_dictionary
@@ -3768,17 +3768,16 @@ INSERT INTO `dzm_his_dictionary` VALUES ('17', '项目单位', '3', '0', '0', '1
 INSERT INTO `dzm_his_dictionary` VALUES ('18', '人员分类', '4', '0', '0', '1508983676', '0', '', '0');
 INSERT INTO `dzm_his_dictionary` VALUES ('19', '中草药', '11', '0', '0', '1508983676', '0', '', '0');
 INSERT INTO `dzm_his_dictionary` VALUES ('20', '中成药', '11', '0', '0', '1508983676', '0', '', '0');
-INSERT INTO `dzm_his_dictionary` VALUES ('21', '谣言粉碎机', '16', '1', '1', '1511948889', '1543458066', '', '0');
-INSERT INTO `dzm_his_dictionary` VALUES ('22', '就医攻略', '16', '1', '1', '1511948943', '1543458058', '', '0');
-INSERT INTO `dzm_his_dictionary` VALUES ('23', '中医养生', '16', '1', '1', '1543458073', '0', '', '0');
 INSERT INTO `dzm_his_dictionary` VALUES ('24', '名医直通车', '16', '1', '1', '1543458102', '0', '', '0');
 INSERT INTO `dzm_his_dictionary` VALUES ('25', '择医网讲堂', '16', '1', '1', '1543458134', '0', '', '0');
 INSERT INTO `dzm_his_dictionary` VALUES ('26', '热门排行', '16', '1', '1', '1543458176', '0', '', '0');
 INSERT INTO `dzm_his_dictionary` VALUES ('27', '医院公开', '16', '1', '1', '1544967210', '0', '', '0');
 INSERT INTO `dzm_his_dictionary` VALUES ('28', '医院视频', '16', '1', '1', '1544968595', '0', '', '0');
-INSERT INTO `dzm_his_dictionary` VALUES ('29', 'mv影视', '16', '1', '1', '1544968887', '0', '', '0');
+INSERT INTO `dzm_his_dictionary` VALUES ('29', 'mv', '16', '1', '1', '1544968887', '1545117031', '', '0');
 INSERT INTO `dzm_his_dictionary` VALUES ('30', '医院信息', '16', '1', '1', '1545102520', '0', '', '0');
 INSERT INTO `dzm_his_dictionary` VALUES ('31', '保健器材', '16', '1', '1', '1545112962', '0', '', '0');
+INSERT INTO `dzm_his_dictionary` VALUES ('32', '健康资讯', '16', '1', '1', '1545117021', '0', '', '0');
+INSERT INTO `dzm_his_dictionary` VALUES ('36', '网站公告', '16', '1', '1', '1545186438', '0', '', '0');
 
 -- ----------------------------
 -- Table structure for dzm_his_doctor
@@ -3807,16 +3806,16 @@ CREATE TABLE `dzm_his_doctor` (
   `typelist` varchar(255) NOT NULL,
   `type1` varchar(255) DEFAULT '' COMMENT '"2","3","4","5","6","7","8"分别代表医生,护士,挂号员,收费员,发药员,财务, 其他人员',
   `ask_price` decimal(10,2) DEFAULT '0.00' COMMENT '咨询价格',
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`) USING BTREE,
   KEY `uid` (`uid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COMMENT='医生基本信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='医生基本信息表';
 
 -- ----------------------------
 -- Records of dzm_his_doctor
 -- ----------------------------
-INSERT INTO `dzm_his_doctor` VALUES ('1', '', null, '', '0', '0', '0', '13141589223', '$2y$12$uSv5Ek4qF7nkmbxmsqVrkuCY4uUq.A4LtPRow6GIzgJJcA6VYzszW', '协和医院', null, '3', '', '127.0.0.1', '', '1543235676', '1544333782', '', '2', '', '2', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('2', '方法', '0', '', '0', '0', '0', '13141589223', '$2y$12$8aLaRV0WMeVHIZpmzi4xCOANVFPGaLA66ozEiAcLCax89tWvNitD2', '协和医院', '', '1', '', '127.0.0.1', '', '1543240548', '1544333782', '', '2', '7', '2', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('3', '测试', '0', '', '0', '0', '0', '13141589223', '$2y$12$3sab.fPjhPHMvCGXl1ijJuguegZE3yUfGAqYbziXlgLwiUzx4ILc.', '协和医院', '', '2', '', '127.0.0.1', '', '1543247335', '1544333782', '', '2', '7', '', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('1', '', null, '', '0', '0', '0', '13141589223', '$2y$12$uSv5Ek4qF7nkmbxmsqVrkuCY4uUq.A4LtPRow6GIzgJJcA6VYzszW', '协和医院', null, '3', '', '127.0.0.1', '', '1543235676', '1545119048', '', '2', '', '2', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('2', '方法', '0', '', '0', '0', '0', '13141589223', '$2y$12$8aLaRV0WMeVHIZpmzi4xCOANVFPGaLA66ozEiAcLCax89tWvNitD2', '协和医院', '', '1', '', '127.0.0.1', '', '1543240548', '1545119048', '', '2', '7', '2', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('3', '测试', '0', '', '0', '0', '0', '13141589223', '$2y$12$3sab.fPjhPHMvCGXl1ijJuguegZE3yUfGAqYbziXlgLwiUzx4ILc.', '协和医院', '', '2', '', '127.0.0.1', '', '1543247335', '1545119048', '', '2', '7', '', '0.00');
 INSERT INTO `dzm_his_doctor` VALUES ('4', '王守道', '0', '130000', '0', '唐山市', '83856745', '13141589203', '$2y$12$Mtv3mGq3i92VRMsFyTrSGu5/4yzBHS6lRCYkvu3GhCsLC8iC1pHuW', '中心医院', '', '1', '医生', '127.0.0.1', '', '1544332507', '1544845179', '', '2', '7', '', '0.00');
 INSERT INTO `dzm_his_doctor` VALUES ('5', '多的', '0', '130000', '0', '秦皇岛市', '83856745', '13141589556', '$2y$12$yIoudEjifKHjW5X8a9cWWuAybiLyJAq62ejyS3NPxV8WXNpL3x1ei', '但是', null, '1', '士大夫', '127.0.0.1', '', '1544346481', '1544346481', '', '2', '', '', '0.00');
 
@@ -3838,9 +3837,9 @@ CREATE TABLE `dzm_his_doctorlist` (
   `process` varchar(255) NOT NULL COMMENT '是否显示',
   `uid` int(11) NOT NULL COMMENT '用户表userid',
   `ask_price` decimal(10,2) DEFAULT '0.00' COMMENT '咨询价格',
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`) USING BTREE,
   KEY `uid` (`uid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COMMENT='医生文章信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='医生文章信息表';
 
 -- ----------------------------
 -- Records of dzm_his_doctorlist
@@ -3869,9 +3868,9 @@ CREATE TABLE `dzm_his_doctors` (
   `updatetime` int(10) NOT NULL COMMENT '修改时间',
   `uid` int(11) NOT NULL COMMENT '用户表userid',
   `ask_price` decimal(10,2) DEFAULT '0.00' COMMENT '咨询价格',
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`) USING BTREE,
   KEY `uid` (`uid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COMMENT='医生基本信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='医生基本信息表';
 
 -- ----------------------------
 -- Records of dzm_his_doctors
@@ -3897,9 +3896,9 @@ CREATE TABLE `dzm_his_hospital` (
   `owner_post` varchar(50) NOT NULL DEFAULT '' COMMENT '所属者职务',
   `major_field` varchar(255) NOT NULL DEFAULT '' COMMENT '专业方向',
   `introduction` varchar(255) NOT NULL DEFAULT '' COMMENT '诊所简介',
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`) USING BTREE,
   KEY `uid` (`hid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COMMENT='HIS医院基本信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='HIS医院基本信息表';
 
 -- ----------------------------
 -- Records of dzm_his_hospital
@@ -3919,10 +3918,10 @@ CREATE TABLE `dzm_his_hospital_doctor_relation` (
   `physicianid` int(10) NOT NULL COMMENT '医生id',
   `right_list` text NOT NULL COMMENT '权限',
   `title_level` int(10) NOT NULL COMMENT '职称',
-  PRIMARY KEY (`rid`),
+  PRIMARY KEY (`rid`) USING BTREE,
   KEY `editdate` (`update_time`) USING BTREE,
   KEY `dzm_his_info_23_physicianid_index` (`physicianid`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='医生与医院关联表';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='医生与医院关联表';
 
 -- ----------------------------
 -- Records of dzm_his_hospital_doctor_relation
@@ -3938,11 +3937,11 @@ CREATE TABLE `dzm_his_hospital_medicines_relation` (
   `hospital_id` int(10) NOT NULL COMMENT '医院id',
   `create_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
-  PRIMARY KEY (`hmr_id`),
+  PRIMARY KEY (`hmr_id`) USING BTREE,
   KEY `editdate` (`update_time`) USING BTREE,
   KEY `dzm_his_info_23_physicianid_index` (`hospital_id`) USING BTREE,
-  KEY `medicines_id` (`medicines_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=42 DEFAULT CHARSET=utf8 COMMENT='医院药品关联表';
+  KEY `medicines_id` (`medicines_id`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=42 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='医院药品关联表';
 
 -- ----------------------------
 -- Records of dzm_his_hospital_medicines_relation
@@ -4004,41 +4003,41 @@ CREATE TABLE `dzm_his_inspectionfee` (
   `cost` varchar(255) NOT NULL DEFAULT '0.00' COMMENT '项目成本',
   `create_time` int(10) NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(10) NOT NULL DEFAULT '0' COMMENT '修改时间',
+  `make` varchar(255) DEFAULT NULL COMMENT '摘要',
+  `socure` varchar(255) DEFAULT NULL COMMENT '来源',
+  `user` varchar(255) DEFAULT NULL COMMENT '作者',
   `unit` longtext NOT NULL COMMENT '内容',
   `class_id` int(10) NOT NULL DEFAULT '0' COMMENT '类别id',
   UNIQUE KEY `pre_id` (`ins_id`) USING BTREE,
   KEY `hid` (`hid`) USING BTREE,
   KEY `inspection_name` (`inspection_name`) USING BTREE,
   KEY `class` (`class`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COMMENT='检查项目费用表';
+) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='检查项目费用表';
 
 -- ----------------------------
 -- Records of dzm_his_inspectionfee
 -- ----------------------------
-INSERT INTO `dzm_his_inspectionfee` VALUES ('7', '1', '1', '警惕冬季高发病，守护宝宝健康入冬', '就医攻略', '是', null, '新', '1543464112', '1543464302', '秋风中，申城弥漫着沁人心脾的桂花香。老饕们的至爱大闸蟹亦应市而上。秋天是个收获的季节。收获之后意味着贮藏，故而秋冬相连，不仅仅是季节的更替。中医认为秋收冬藏。冬藏的正是秋气肃降之下的阳气。阳气者，人身之大宝也。“天之一丸红日，人之一息真阳”。真阳足则人体康健。对重视身体健康的人士来说，如何在冬令贮藏真气之季保养阳气着实应该引起重视。而中医的滋补膏方确是一种好方法。', '22');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('10', '1', '1', '秋风起，蟹脚痒；冬令至，膏滋俏', '中医养生', '是', null, '', '1543472337', '0', '从古至今，国人都十分重视“立冬”。在北方，立冬有吃倭瓜饺子的风俗；台湾立冬有“羊肉炉”、“姜母鸭”进补习惯。苏州人在立冬的时候常吃什么呢？7日，苏州博物馆（苏州民俗博物馆）研究员沈建东告诉记者，保健进补是“老苏州”立冬的主要习俗。 　　 　　 冬令进补吃膏滋是苏州人过立冬的老传统。在旧时苏州，一些大户人家还用红参、桂圆、核桃肉，在冬季烧汤喝，有补气活血助阳的功效。通常每到立冬节气，苏州中医院以及一些老字号药房都会专门开设进补门诊，为市民煎熬膏药，销售冬令滋补保健品。 【绿之韵胶囊】www.lvzhiyun.cn 　　 　　 此外，苏州人自秋天开始，便强调每天吃些白果、栗子等坚果，温肺益气。近些年在立冬前，苏州各处羊肉店也纷纷开张，“吃个羊肉火锅、喝碗羊汤暖暖身”，也是非常惬意的。 　　 　　 沈建东告诉记者，立冬之后，农历十月就马上到了，农历十月伊始，“老苏州”们便纷纷开始忙碌准备冬天的储备食物，如小麦来酿冬酿酒、腌制蔬菜等。此时，江南还有“西风响，蟹脚痒，蟹立冬，影无踪”的谚语，喜欢吃螃蟹的苏州人到了农历十月也开始变换吃法儿，所谓的“九月雌、十月雄”是说到了农历十月就要吃雄的螃蟹了', '23');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('8', '1', '1', '医生说｜脾胃不好膏方来调！冬季进补正当时', '就医攻略', '是', null, '', '1543471585', '0', '对于肝脏的保护、保养一直是很多人都非常关心的事情，做好养肝、护肝的相关事宜，不只是对肝脏好，对整个五脏六腑的调节也是好的。当前，肝脏疾病不断涌现出来，肝脏一旦出现损伤，带来的影响是很多人无法接受的。\n而脂肪肝是最常见的肝脏疾病，需要大家认清楚，了解脂肪肝是什么，能够让人更好的保健？', '22');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('9', '1', '1', '手机放口袋会杀精吗？', '谣言粉碎机', '是', null, '热', '1543472176', '0', '目前，患上脂肪肝的中老年人越来越多，需要引起大家的关注，肝细胞中的脂肪堆积不断增多，引起了脂肪发生病变，脂肪在其中起到了非常重要的推波助澜作用。\n\n正常情况下，健康的肝脏是需要少量的脂肪，例如，甘油三酯、磷脂、胆固醇等，这些成分约占肝脏的5%。但是，一旦肝脏中的脂肪含量超标，甚至达到了50%，那么就可能形成了脂肪肝。\n\n出现了脂肪肝，除了通过服药治疗外，正确的饮食显得更加重要，有些食物能吃，有些食物不能吃。\n\n出现脂肪肝，吃什么好？\n\n1、豆制品\n\n作为蛋白质非常优质的食物，豆制品适合大家食用，通过食用豆制品，能够吸收大豆蛋白，能够降低血清总胆固醇、甘油三酯的含量，对保护肝脏，避免肝脏中脂肪含量高非常好。\n\n2、枸杞\n\n吃枸杞除了能补肾之外，对于养肝、护肝也是好的，通过吃枸杞，能够吸收甜茶碱，有效的避免肝脏中脂肪堆积过多，对防治脂肪肝非常好。\n\n如果你本身就有肝脏炎症，也可以吃一点枸杞，进行保护肝脏，不要多，每天15g即可，干嚼、泡水都可以。', '21');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('11', '1', '1', '医生手术间隙“累趴”照刷屏朋友圈 称是工作常态', '名医直通车', '1', '', '1', '1543472961', '1544339169', '', '24');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('12', '1', '1', '中日友好医院里“人机对战” AI完胜皮肤科医生', '名医直通车', '1', '<p>\n    <br/>\n</p>\n<p>\n    标题测试\n</p>\n<p>\n    <img src=\"/ueditor/php/upload/image/20181209/1544286262110010.png\" title=\"1544286262110010.png\" alt=\"a.png\"/>\n</p>\n<p>\n  <li>达成册封</li>\n  海关监管就\n</p>\n<p>\n    就会空喊口号\n</p>\n<p>\n    很快很快就\n</p>', '1', '1543473201', '1544286908', '日前，一场特殊的较量在中日友好医院展开。\n\n对阵的一方是来自北京、云南、内蒙古等地的10名皮肤科医生，另一方是首款黄色人种皮肤肿瘤人工智能辅助决策系统——优智AI系统。竞赛科目是皮肤肿瘤的诊断成功率，包括皮肤肿瘤性质及肿瘤名称。比赛开始前，中国人民解放军总医院皮肤病医院孟如松教授拿出60组皮肤肿瘤病例资料，现场随机抽取10组图片，让医师与优智AI系统同时作答，正确答案以病理诊断为金标准。\n\n十分钟后，优智AI系统的良性分类符合率达100%，恶性符合率为75%，平均符合率达到了90%；而医生组对应则分别为76%，62.5%和63%。AI完胜皮肤科医生。\n\n孟如松表示，“人机对战”的结果表明，优智AI系统已经完成了应用于临床的功能实现，能够为皮肤科医生，尤其是基层皮肤科医生和低年资皮肤科医生的临床工作实现有效助力。\n\n对于人类医生逊于AI系统的结果，皮肤病专家并不感到意外。\n\n2017年，斯坦福大学在《自然》杂志上发表了一份关于皮肤肿瘤机器深度学习的研究。结果显示，深度学习在良恶性3分类和疾病大类9分类任务上的符合率分别可达72.1%和55.4%。而针对同样的分类识别，专业医生平均符合率分别为65.8%和54.2%。\n\n“由于皮肤病的临床表现多位于肌肤暴露部位，很多疾病可以通过查看临床图片、皮肤镜图片、病理切片等影像资料来进行判断。”北京大学人民医院皮肤科主任张建中教授表示，通过海量图片的学习，皮肤科是最适合远程医疗和人工智能的医疗领域。', '24');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('13', '1', '1', 'test', '中医养生', 'test', null, 'test', '1544271416', '0', 'ste', '0');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('14', '1', '1', 'test22', '中医养生', 'test', null, 'test2df', '1544273565', '0', 'fdd', '26');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('15', '1', '1', '文章', '热门排行', '是', '&lt;p&gt;史蒂芬孙的&lt;img src=&quot;/ueditor/php/upload/image/20181208/1544273798138971.jpg&quot; title=&quot;1544273798138971.jpg&quot; alt=&quot;8jp.jpg&quot;/&gt;&lt;/p&gt;', '热', '1544273800', '0', '似懂非懂是', '26');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('16', '1', '1', 'sdf', '择医网讲堂', 'ss', '&amp;lt;p&amp;gt;sdf&amp;lt;img src=&amp;quot;/ueditor/php/upload/image/20181208/1544273868118070.png&amp;quot; title=&amp;quot;1544273868118070.png&amp;quot; alt=&amp;quot;222.png&amp;quot;/&amp;gt;&amp;lt;/p&amp;gt;', 'ss', '1544273869', '0', 'sdf', '25');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('17', '1', '1', '电饭锅', '热门排行', '1', '<p><img src=\"/ueditor/php/upload/image/20181208/1544280734251865.png\" title=\"1544280734251865.png\" alt=\"a.png\"/></p><p><img src=\"/ueditor/php/upload/image/20181208/1544280769808739.png\" title=\"1544280769808739.png\" alt=\"pic.png\"/></p><p><img src=\"/ueditor/php/upload/image/20181208/1544280792641905.png\" title=\"1544280792641905.png\" alt=\"222.png\"/></p>', '1', '1544274192', '1544284685', '士大夫', '26');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('18', '1', '1', '股份', '系统默认', '1', '', '0', '1544285755', '0', '', '0');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('19', '1', '1', '特色', '系统默认', '1', '', '0', '1544285768', '0', '', '0');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('20', '1', '1', '特色的说法', '择医网讲堂', '1', '<p>士大夫</p>', '1', '1544286011', '0', '士大夫', '25');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('21', '1', '1', '特色忒', '系统默认', '0', '<p>史蒂芬孙的</p>', '1', '1544286038', '1544286061', '对方答复', '0');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('22', '1', '1', '特色22', '名医直通车', '1', '<p>dfsd</p>', '2', '1544286109', '1544665840', '', '24');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('23', '1', '1', 'test222', '热门排行', '1', '', '0', '1544340112', '1544340126', '', '26');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('24', '1', '1', '医院好消息,医院巨变！国家突然宣布一个好消息!关系到每个人', '医院公开', '1', '<p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\">“互联网+医疗健康”。曾经听起来，这一切是何等地遥远。然而，今天，这一切将不再是科幻小说，不再是阅读理解，不再是新闻标题，不再是互联网上跃动的字节，而是实实在在的宿命。</p><p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\">刚刚，广东省宣布：加快发展“互联网+医疗健康”，将符合条件的互联网诊疗服务纳入医保支付范围。</p><p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\">这也就是说，很快，医保可以支付互联网诊疗的费用了，大家在网上看病将变得更方便了！</p><p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\"><img src=\"/ueditor/php/upload/image/20181216/1544967292108440.jpg\" title=\"1544967292108440.jpg\" alt=\"yYYBAFvm3dyAYaBCAAChy4RIJcU791.jpg\"/></p><p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\">广东这一创举，并不是一个简单的个案。今年4月，国务院常务会议就已发出号令：要发展“互联网+医疗健康”措施，提高医疗服务效率，让患者少跑腿、更便利。</p><p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\">是的，你没有看错：一场浩浩荡荡，从广州到全国的医院变革打响了！互联网，要正式“+”到了医疗上了。这场变化，关系中国所有人，关系到我们最重要、最关切的东西：健康！</p><p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\">要知道，健康是1，其他是0；没有1，后面有多少0都没有意义；只有1存在，0的存在才有意义。</p><p><br/></p>', '1', '1544967295', '0', '', '27');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('25', '1', '1', '医院信息化整体解决方案', '医院公开', '1', '<p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">1.1<span style=\"box-sizing: border-box; outline: 0px; word-wrap: break-word; font-weight: 700; border: 0px;\">国内医院信息化现状分析</span></p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">根据卫生部的相关统计，国内75%的医院已建或正在建设HIS（医院信息系统）。从地区分布看，存在着严重的不平衡。华东地区医院建设HIS比例接近90%，其它大部分地区在45～60%之间，西部地区和东北地区则相地更低；从医院规模看，省级医院建设HIS的比例达到95%，地市级医院建设HIS的比例为70%，县级医院为50%。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">总体来说，由于多方面的原因，我国医院的IT应用相较其他行业依然处于落后状态。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">经过近几年的发展，医院逐渐加深了对信息化建设重要意义的理解，认识到信息化建设是改善管理、提高医院竞争力的重要手段。同时，随着医疗改革的深入开展、医院市场化程度的提高和信息技术的进步，无论从医院横向业务还是医院纵向管理，信息系统都将会在医院扮演愈来愈重要的角色。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">1.2<span style=\"box-sizing: border-box; outline: 0px; word-wrap: break-word; font-weight: 700; border: 0px;\">医院信息化建设普遍面临的困境</span></p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">1.2.1无法满足医院的个性化需求</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">目前绝大部分开发商的HIS产品都是以可用技术为驱动开发的，其产品成长和完善过程只是在过去的初级应用架构基础上，借助一些新出现的技术，对产品进行局部或整体翻新。极少采用“自顶向下”的整体系统设计思想及结构体系，产品对外表现出明显的“乱”和“差”，长期陷于无休止的项目化修改和维护工作当中。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">无数案例证明，项目化无法实现真正的个性化。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">真正的个性化必须基于强大的产品通用性，通过科学、灵活、高效、安全的个性化工具和相应技术保障体系来实现。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">1.2.2无法满足经营与决策的需求</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">完善的医院信息系统应提供利用挖掘数据的规律来指导经营管理的能力，使其真正成为一个闭环的、可持续发展的自适应系统。基于数据分析的量化结论及规律，才是医院创造核心价值的动力源泉。经营决策层迫切需要能够诊断医院经营中存在问题的量化分析结果及预测分析模型。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">1.2.3系统集成度低</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">医院信息系统划分越来越细、越来越专业，相应的也对系统的集成度提出了更高的要求。如果在同一医疗机构内存在不同厂商的信息化产品，必然也就存在着集成和整合的问题，而一旦处理不好也就会给管理者带来无穷无尽的烦恼，包括流程和业务应用的完全融合和协同，数据查询、分析的方便性和透明度，操作界面的整合与易用性，产品的升级与服务，各接口及厂商之间的协调等等，不胜枚举。国内由于多厂商产品之间集成的问题造成项目失败的医院信息化案例比比皆是。</p><p><br/></p>', '1', '1544968461', '0', '', '27');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('26', '1', '1', '影视色彩的音乐mv', '医院公开', '1', '<p></p>', '1', '1544968988', '1544974191', '', '27');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('27', '1', '1', '医院公开特大消息', '医院公开', '1', '<p>医院公开特大消医院公开特大消息医院公开特大消息医院公开特大消息医院公开特大消息息</p>', '1', '1544975453', '0', '', '27');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('28', '1', '1', '保卫处党支部组织党员群众参观改革开放40年成果展', '医院公开', '1', '<p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 14px; white-space: normal;\"><span style=\"margin: 0px; padding: 0px;\">&nbsp;按照院党委工作部署要求，保卫处党支部积极谋划，于12月11日、12日分批组织全处党员群众赴国家博物馆参观改革开放40周年成果展。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 14px; white-space: normal;\"><span style=\"margin: 0px; padding: 0px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 保卫处党支部王长春书记对支部主题党日活动高度重视，提前谋划，召开支委会确定了参观形式及日期。随后向党总支进行报备。保卫处全体党员群众对参观主题党日活动积极性高涨，全处除值班和生病请假的同志，全部积极报名参加。</span></p><p><br/></p>', '1', '1544976570', '0', '', '27');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('29', '1', '1', '重温延安精神 践行延安精神', '医院公开', '1', '<p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: \"><span style=\"margin: 0px; padding: 0px;\"><img width=\"530\" height=\"340\" src=\"http://api.map.baidu.com/staticimage?center=118.81493,34.11662&zoom=14&width=530&height=340&markers=118.798689,34.116261\"/>2018年10月31日-11月2日，我荣幸参加了由北京医院党委<span style=\"margin: 0px; padding: 0px;\">书记</span>汪耀带队，共43名同志在延安举行的“不忘初心、牢记使命”党务干部暨预备党员培训班。虽然培训班结束了，但这次延安的培训、寻根之旅将激励着我不忘初心、牢记使命、永远奋斗。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: \"><span style=\"margin: 0px; padding: 0px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我们首先聆听了延安干部培训学院副院长康琪教授《中共中央在延安十三年》专题讲座。革命圣地延安，既是红军长征胜利的落脚点，也是建立抗日民族统一战线，赢得抗日战争胜利，进而夺取全国胜利的解放战争的出发点。从1935年到1948年，毛泽东等老一辈无产阶级革命家就是在这里生活和战斗了13个春秋，他们运筹帷幄，决胜千里，领导和指挥了中国的抗日战争和解放战争，奠定了中华人民共和国的坚固基石。毛泽东选集1-4卷共159篇文章中有112篇是在延安时期写成的，占总数的70%，谱写了可歌可泣的伟大的历史篇章。</span></p><p><br/></p>', '1', '1544978009', '1545100677', '', '27');
-INSERT INTO `dzm_his_inspectionfee` VALUES ('30', '1', '1', '保健器材之唤起了', '保健器材', '1', '<p>test,大是大非上的方式的方式对方受到福斯的</p>', '1', '1545112995', '0', '', '31');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('7', '1', '1', '警惕冬季高发病，守护宝宝健康入冬', '就医攻略', '是', null, '新', '1543464112', '1543464302', null, null, null, '秋风中，申城弥漫着沁人心脾的桂花香。老饕们的至爱大闸蟹亦应市而上。秋天是个收获的季节。收获之后意味着贮藏，故而秋冬相连，不仅仅是季节的更替。中医认为秋收冬藏。冬藏的正是秋气肃降之下的阳气。阳气者，人身之大宝也。“天之一丸红日，人之一息真阳”。真阳足则人体康健。对重视身体健康的人士来说，如何在冬令贮藏真气之季保养阳气着实应该引起重视。而中医的滋补膏方确是一种好方法。', '22');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('10', '1', '1', '秋风起，蟹脚痒；冬令至，膏滋俏', '中医养生', '是', null, '', '1543472337', '0', null, null, null, '从古至今，国人都十分重视“立冬”。在北方，立冬有吃倭瓜饺子的风俗；台湾立冬有“羊肉炉”、“姜母鸭”进补习惯。苏州人在立冬的时候常吃什么呢？7日，苏州博物馆（苏州民俗博物馆）研究员沈建东告诉记者，保健进补是“老苏州”立冬的主要习俗。 　　 　　 冬令进补吃膏滋是苏州人过立冬的老传统。在旧时苏州，一些大户人家还用红参、桂圆、核桃肉，在冬季烧汤喝，有补气活血助阳的功效。通常每到立冬节气，苏州中医院以及一些老字号药房都会专门开设进补门诊，为市民煎熬膏药，销售冬令滋补保健品。 【绿之韵胶囊】www.lvzhiyun.cn 　　 　　 此外，苏州人自秋天开始，便强调每天吃些白果、栗子等坚果，温肺益气。近些年在立冬前，苏州各处羊肉店也纷纷开张，“吃个羊肉火锅、喝碗羊汤暖暖身”，也是非常惬意的。 　　 　　 沈建东告诉记者，立冬之后，农历十月就马上到了，农历十月伊始，“老苏州”们便纷纷开始忙碌准备冬天的储备食物，如小麦来酿冬酿酒、腌制蔬菜等。此时，江南还有“西风响，蟹脚痒，蟹立冬，影无踪”的谚语，喜欢吃螃蟹的苏州人到了农历十月也开始变换吃法儿，所谓的“九月雌、十月雄”是说到了农历十月就要吃雄的螃蟹了', '23');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('8', '1', '1', '医生说｜脾胃不好膏方来调！冬季进补正当时', '就医攻略', '是', null, '', '1543471585', '0', null, null, null, '对于肝脏的保护、保养一直是很多人都非常关心的事情，做好养肝、护肝的相关事宜，不只是对肝脏好，对整个五脏六腑的调节也是好的。当前，肝脏疾病不断涌现出来，肝脏一旦出现损伤，带来的影响是很多人无法接受的。\n而脂肪肝是最常见的肝脏疾病，需要大家认清楚，了解脂肪肝是什么，能够让人更好的保健？', '22');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('9', '1', '1', '手机放口袋会杀精吗？', '谣言粉碎机', '是', null, '热', '1543472176', '0', null, null, null, '目前，患上脂肪肝的中老年人越来越多，需要引起大家的关注，肝细胞中的脂肪堆积不断增多，引起了脂肪发生病变，脂肪在其中起到了非常重要的推波助澜作用。\n\n正常情况下，健康的肝脏是需要少量的脂肪，例如，甘油三酯、磷脂、胆固醇等，这些成分约占肝脏的5%。但是，一旦肝脏中的脂肪含量超标，甚至达到了50%，那么就可能形成了脂肪肝。\n\n出现了脂肪肝，除了通过服药治疗外，正确的饮食显得更加重要，有些食物能吃，有些食物不能吃。\n\n出现脂肪肝，吃什么好？\n\n1、豆制品\n\n作为蛋白质非常优质的食物，豆制品适合大家食用，通过食用豆制品，能够吸收大豆蛋白，能够降低血清总胆固醇、甘油三酯的含量，对保护肝脏，避免肝脏中脂肪含量高非常好。\n\n2、枸杞\n\n吃枸杞除了能补肾之外，对于养肝、护肝也是好的，通过吃枸杞，能够吸收甜茶碱，有效的避免肝脏中脂肪堆积过多，对防治脂肪肝非常好。\n\n如果你本身就有肝脏炎症，也可以吃一点枸杞，进行保护肝脏，不要多，每天15g即可，干嚼、泡水都可以。', '21');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('11', '1', '1', '医生手术间隙“累趴”照刷屏朋友圈 称是工作常态', '名医直通车', '1', '', '1', '1543472961', '1544339169', null, null, null, '', '24');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('12', '1', '1', '中日友好医院里“人机对战” AI完胜皮肤科医生', '名医直通车', '1', '<p>\n    <br/>\n</p>\n<p>\n    标题测试\n</p>\n<p>\n    <img src=\"/ueditor/php/upload/image/20181209/1544286262110010.png\" title=\"1544286262110010.png\" alt=\"a.png\"/>\n</p>\n<p>\n  <li>达成册封</li>\n  海关监管就\n</p>\n<p>\n    就会空喊口号\n</p>\n<p>\n    很快很快就\n</p>', '1', '1543473201', '1544286908', null, null, null, '日前，一场特殊的较量在中日友好医院展开。\n\n对阵的一方是来自北京、云南、内蒙古等地的10名皮肤科医生，另一方是首款黄色人种皮肤肿瘤人工智能辅助决策系统——优智AI系统。竞赛科目是皮肤肿瘤的诊断成功率，包括皮肤肿瘤性质及肿瘤名称。比赛开始前，中国人民解放军总医院皮肤病医院孟如松教授拿出60组皮肤肿瘤病例资料，现场随机抽取10组图片，让医师与优智AI系统同时作答，正确答案以病理诊断为金标准。\n\n十分钟后，优智AI系统的良性分类符合率达100%，恶性符合率为75%，平均符合率达到了90%；而医生组对应则分别为76%，62.5%和63%。AI完胜皮肤科医生。\n\n孟如松表示，“人机对战”的结果表明，优智AI系统已经完成了应用于临床的功能实现，能够为皮肤科医生，尤其是基层皮肤科医生和低年资皮肤科医生的临床工作实现有效助力。\n\n对于人类医生逊于AI系统的结果，皮肤病专家并不感到意外。\n\n2017年，斯坦福大学在《自然》杂志上发表了一份关于皮肤肿瘤机器深度学习的研究。结果显示，深度学习在良恶性3分类和疾病大类9分类任务上的符合率分别可达72.1%和55.4%。而针对同样的分类识别，专业医生平均符合率分别为65.8%和54.2%。\n\n“由于皮肤病的临床表现多位于肌肤暴露部位，很多疾病可以通过查看临床图片、皮肤镜图片、病理切片等影像资料来进行判断。”北京大学人民医院皮肤科主任张建中教授表示，通过海量图片的学习，皮肤科是最适合远程医疗和人工智能的医疗领域。', '24');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('13', '1', '1', 'test', '中医养生', 'test', null, 'test', '1544271416', '0', null, null, null, 'ste', '0');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('14', '1', '1', 'test22', '中医养生', 'test', null, 'test2df', '1544273565', '0', null, null, null, 'fdd', '26');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('15', '1', '1', '文章', '热门排行', '是', '&lt;p&gt;史蒂芬孙的&lt;img src=&quot;/ueditor/php/upload/image/20181208/1544273798138971.jpg&quot; title=&quot;1544273798138971.jpg&quot; alt=&quot;8jp.jpg&quot;/&gt;&lt;/p&gt;', '热', '1544273800', '0', null, null, null, '似懂非懂是', '26');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('16', '1', '1', 'sdf', '择医网讲堂', 'ss', '&amp;lt;p&amp;gt;sdf&amp;lt;img src=&amp;quot;/ueditor/php/upload/image/20181208/1544273868118070.png&amp;quot; title=&amp;quot;1544273868118070.png&amp;quot; alt=&amp;quot;222.png&amp;quot;/&amp;gt;&amp;lt;/p&amp;gt;', 'ss', '1544273869', '0', null, null, null, 'sdf', '25');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('33', '1', '1', '三七保健热汹涌而来 听听专家怎么说', '择医网讲堂', '1', '<p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-align: center; color: rgb(72, 72, 72); font-family: 微软雅黑;\">　<a href=\"http://www.zgywcm.com/data/attachment/portal/201812/17/182658e1fx7m4xxxc4bxc1.jpg\" target=\"_blank\" style=\"word-wrap: break-word; margin: 0px; padding: 0px; text-decoration: none; color: rgb(102, 102, 102); font-family: Tahoma, Arial, Helvetica, snas-serif; font-size: 14px;\"><img src=\"/ueditor/php/upload/image/20181219/1545187943.jpg\"/></a></p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-align: left; color: rgb(72, 72, 72); font-family: 微软雅黑;\">示意图</p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\">&nbsp; &nbsp; &nbsp; &nbsp;现在，随着生活水平的逐步提高，人民群众的养生意识也越来越强，一些保健食品也随之成了公众的宠儿，就拿人们耳熟能详的三七粉来说，目前有关三七养生的科普文章铺天盖地，甚至被商家包装成了无所不治的“神药”。其实，三七在最初时主要应用于外伤止血，如今竟然常常出现在预防肿瘤、防癌治癌的广告宣传中，这里无疑有夸张、炒作的商业行为和成分在里面。</p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\">　　那么，对于人们来说，三七到底有什么功效？有没有禁忌症？如何服用才更科学合理？近日在接受记者采访时，黑龙江省大庆油田总医院器械卫材管理中心副主任、副主任药师姚晓颖对这些问题进行了解读；同时她还指出，“是药三分毒”，再好的中草药也有适应症，即便没毒，随意服食对身体也没有任何益处。要结合自己身体的具体情况，按医生和药师的意见开方用药，才会收到养生保健的效果。</p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\"><strong style=\"word-wrap: break-word; margin: 0px; padding: 0px;\">三七究竟是个啥</strong></p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\">　　姚晓颖介绍说，三七又名田七、金不换，为五加科植物三七的干燥根。秋季花开前采挖，洗净，分开主根、支根及茎基，干燥。支根习称“筋条”，茎基也称“剪口”。三七性温，味甘、微苦，归肝、胃经，适合于散瘀止血、消肿定痛等，有“止血而不留瘀，化瘀而不伤正”的特点，对人体内外各种出血，无论有无瘀滞均可使用，单服或外用皆有良效。临床中主要用于咯血、吐血、衄血、便血、崩漏、外伤出血及胸腹刺痛、跌扑肿痛等，为外科、伤科的常用药物，号称“金疮要药”，我国著名的“云南白药”中即含有本品。</p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\">　　可以说，三七全身都是宝，除了常用的根，其茎、花、叶也均可入药。《本草新编》一书指出：“三七根，止血之神药也。无论上、中、下之血，凡有外越者，一味独用亦效，加入于补血补气药中则更神；盖此药得补而无沸腾之患，补药得此而有安静之休也。”三七花，性凉，味甘，可清热、平肝、降压，用于急性咽喉炎、头昏、目眩、耳鸣等，可适量开水冲泡当茶饮。三七叶，也有止血消炎的作用。</p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\">　　而从药理学角度分析，三七的化学成分与人参相似，主要含有皂苷类及黄酮类。姚晓颖介绍说，从三七绒根总皂苷中，可分离出多种皂苷元，主要是人参二醇和人参三醇类皂苷, 总皂苷含量高达12% ,单体有9种人参皂苷，其他尚有槲皮素、β类固醇、多肽素和多糖及铝、铁、铷、锶等20种有益于人体的微量元素。因为三七与人参的已知化学成分相似，故二者药理作用亦颇近似。</p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\"><strong style=\"word-wrap: break-word; margin: 0px; padding: 0px;\">好药也有适应症</strong></p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\">　　俗话说“是药三分毒”。三七虽是良药，但使用不当，仍有引发不良反应的可能，不是人人都能随意使用的。如同人参，不是谁都可以进补一样。用其药必有其证，方能受益，否则适得其反。</p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\">　　姚晓颖指出，三七有止血不留瘀的特长，对出血兼有瘀滞者尤为适宜。但是以下四类人群不建议应用三七：一是孕妇；二是女性月经过多而无瘀血者，《本草从新》中明确告诫，“能损新血，无瘀者勿用”；三是对人参、西洋参、三七过敏的人；四是少年儿童不宜长期摄取。姚晓颖建议，无论吃三七粉养生，还是用三七治病，都应该在专业医生及临床药师指导下，且不可过量。《中国药典》（2015版）对三七明确注明用量为3~9克，一次1~3克，研末冲服，不能多吃，保健不超3克即可。</p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\">　　长期大剂量滥用三七，易产生多种不良反应，如口唇干燥、热感、情绪不安、失眠等；个别人会有恶心、呕吐和出血倾向等，如痰中带血、鼻衄、齿龈出血、月经增多等；当剂量增大时，可表现为上腹烧灼感，面部口周发麻，继则四肢发麻、头晕；大剂量时，甚至影响人体心脏传导系统，感觉心悸、出汗，乃至心律不齐、房室传导阻滞；而对三七过敏的人，还可呈现皮肤红斑、瘙痒、疱疹等。一旦发生这些问题，必须立即停药。</p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\">　　此外，有部分人在服用三七的同时，辅用其他的活血化瘀中成药，或是西药抗凝药，建议这类人在用药前一定要向医生或专业药师咨询，切勿盲目自行联合用药，以避免毒副反应。</p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\"><strong style=\"word-wrap: break-word; margin: 0px; padding: 0px;\">三七真伪咋辨识</strong></p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\">　　姚晓颖提醒，人们如果需要服用三七或三七粉，一定要选择正规的医院或药店购买。</p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\">　　三七属于贵重药材，市场价格很高，所以掺假、掺伪的问题比较多。市面上有用菊科有毒的“土三七”冒充五加科无毒的真三七，“土三七”内含吡咯烷生物碱成分，可造成肝窦和肝小静脉的内皮细胞损伤，导致肝小静脉阻塞，酿成严重的肝损伤。</p><p style=\"word-wrap: break-word; margin-top: 0px; margin-bottom: 12px; padding: 0px; border: 0px; white-space: normal; background-color: rgb(255, 255, 255); color: rgb(72, 72, 72); font-family: 微软雅黑; text-align: left;\">　　在购买三七时，如何鉴别真伪？姚晓颖分享了一个顺口溜：“三七铜皮铁骨身，质结体重皮易分，味苦回甜花鼓形。”其中，“铜皮铁骨”指三七药材表面光亮灰黄似铜色，断面棕黑似铁色，形同铜皮包铁骨，而俗称铜皮铁骨；“皮易分”指的是其断面有放射状纹里，皮部与木质部易于分离；“花鼓形”指的是三七外形的瘤状突起。（<span style=\"color: rgb(54, 54, 54); font-family: \">来自: 中国中医药报</span> 衣晓峰 李华妍）</p><p><br/></p>', '1', '1545187975', '1545201846', null, null, null, '', '25');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('20', '1', '1', '特色的说法', '择医网讲堂', '1', '<p>士大夫</p>', '1', '1544286011', '0', null, null, null, '士大夫', '25');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('23', '1', '1', 'test222', '热门排行', '1', '', '0', '1544340112', '1544340126', null, null, null, '', '26');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('24', '1', '1', '医院好消息,医院巨变！国家突然宣布一个好消息!关系到每个人', '医院公开', '1', '<p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\">“互联网+医疗健康”。曾经听起来，这一切是何等地遥远。然而，今天，这一切将不再是科幻小说，不再是阅读理解，不再是新闻标题，不再是互联网上跃动的字节，而是实实在在的宿命。</p><p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\">刚刚，广东省宣布：加快发展“互联网+医疗健康”，将符合条件的互联网诊疗服务纳入医保支付范围。</p><p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\">这也就是说，很快，医保可以支付互联网诊疗的费用了，大家在网上看病将变得更方便了！</p><p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\"><img src=\"/ueditor/php/upload/image/20181216/1544967292108440.jpg\" title=\"1544967292108440.jpg\" alt=\"yYYBAFvm3dyAYaBCAAChy4RIJcU791.jpg\"/></p><p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\">广东这一创举，并不是一个简单的个案。今年4月，国务院常务会议就已发出号令：要发展“互联网+医疗健康”措施，提高医疗服务效率，让患者少跑腿、更便利。</p><p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\">是的，你没有看错：一场浩浩荡荡，从广州到全国的医院变革打响了！互联网，要正式“+”到了医疗上了。这场变化，关系中国所有人，关系到我们最重要、最关切的东西：健康！</p><p style=\"-webkit-tap-highlight-color: transparent; margin-top: 15px; margin-bottom: 0px; padding: 0px; -webkit-appearance: none; font-family: Helvetica, Arial, &quot;PingFang SC&quot;, SimHei, SimSun, sans-serif; font-size: 18px; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5em !important;\">要知道，健康是1，其他是0；没有1，后面有多少0都没有意义；只有1存在，0的存在才有意义。</p><p><br/></p>', '1', '1544967295', '0', null, null, null, '', '27');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('25', '1', '1', '医院信息化整体解决方案', '医院公开', '1', '<p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">1.1<span style=\"box-sizing: border-box; outline: 0px; word-wrap: break-word; font-weight: 700; border: 0px;\">国内医院信息化现状分析</span></p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">根据卫生部的相关统计，国内75%的医院已建或正在建设HIS（医院信息系统）。从地区分布看，存在着严重的不平衡。华东地区医院建设HIS比例接近90%，其它大部分地区在45～60%之间，西部地区和东北地区则相地更低；从医院规模看，省级医院建设HIS的比例达到95%，地市级医院建设HIS的比例为70%，县级医院为50%。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">总体来说，由于多方面的原因，我国医院的IT应用相较其他行业依然处于落后状态。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">经过近几年的发展，医院逐渐加深了对信息化建设重要意义的理解，认识到信息化建设是改善管理、提高医院竞争力的重要手段。同时，随着医疗改革的深入开展、医院市场化程度的提高和信息技术的进步，无论从医院横向业务还是医院纵向管理，信息系统都将会在医院扮演愈来愈重要的角色。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">1.2<span style=\"box-sizing: border-box; outline: 0px; word-wrap: break-word; font-weight: 700; border: 0px;\">医院信息化建设普遍面临的困境</span></p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">1.2.1无法满足医院的个性化需求</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">目前绝大部分开发商的HIS产品都是以可用技术为驱动开发的，其产品成长和完善过程只是在过去的初级应用架构基础上，借助一些新出现的技术，对产品进行局部或整体翻新。极少采用“自顶向下”的整体系统设计思想及结构体系，产品对外表现出明显的“乱”和“差”，长期陷于无休止的项目化修改和维护工作当中。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">无数案例证明，项目化无法实现真正的个性化。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">真正的个性化必须基于强大的产品通用性，通过科学、灵活、高效、安全的个性化工具和相应技术保障体系来实现。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">1.2.2无法满足经营与决策的需求</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">完善的医院信息系统应提供利用挖掘数据的规律来指导经营管理的能力，使其真正成为一个闭环的、可持续发展的自适应系统。基于数据分析的量化结论及规律，才是医院创造核心价值的动力源泉。经营决策层迫切需要能够诊断医院经营中存在问题的量化分析结果及预测分析模型。</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">1.2.3系统集成度低</p><p style=\"box-sizing: border-box; outline: 0px; padding: 0px; margin-top: 0px; margin-bottom: 16px; color: rgb(25, 25, 25); line-height: 26px; overflow-x: auto; word-wrap: break-word; white-space: normal; border: 0px; font-family: &quot;PingFang SC&quot;, Arial, 微软雅黑, 宋体, simsun, sans-serif; background-color: rgb(255, 255, 255);\">医院信息系统划分越来越细、越来越专业，相应的也对系统的集成度提出了更高的要求。如果在同一医疗机构内存在不同厂商的信息化产品，必然也就存在着集成和整合的问题，而一旦处理不好也就会给管理者带来无穷无尽的烦恼，包括流程和业务应用的完全融合和协同，数据查询、分析的方便性和透明度，操作界面的整合与易用性，产品的升级与服务，各接口及厂商之间的协调等等，不胜枚举。国内由于多厂商产品之间集成的问题造成项目失败的医院信息化案例比比皆是。</p><p><br/></p>', '1', '1544968461', '0', null, null, null, '', '27');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('26', '1', '1', '影视色彩的音乐mv', '医院公开', '1', '<p></p>', '1', '1544968988', '1544974191', null, null, null, '', '27');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('27', '1', '1', '医院公开特大消息', '医院公开', '1', '<p>医院公开特大消医院公开特大消息医院公开特大消息医院公开特大消息医院公开特大消息息</p>', '1', '1544975453', '0', null, null, null, '', '27');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('28', '1', '1', '保卫处党支部组织党员群众参观改革开放40年成果展', '医院公开', '1', '<p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 14px; white-space: normal;\"><span style=\"margin: 0px; padding: 0px;\">&nbsp;按照院党委工作部署要求，保卫处党支部积极谋划，于12月11日、12日分批组织全处党员群众赴国家博物馆参观改革开放40周年成果展。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 14px; white-space: normal;\"><span style=\"margin: 0px; padding: 0px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 保卫处党支部王长春书记对支部主题党日活动高度重视，提前谋划，召开支委会确定了参观形式及日期。随后向党总支进行报备。保卫处全体党员群众对参观主题党日活动积极性高涨，全处除值班和生病请假的同志，全部积极报名参加。</span></p><p><br/></p>', '1', '1544976570', '0', null, null, null, '', '27');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('29', '1', '1', '重温延安精神 践行延安精神', '医院公开', '1', '<p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: \"><span style=\"margin: 0px; padding: 0px;\"><img width=\"530\" height=\"340\" src=\"http://api.map.baidu.com/staticimage?center=118.81493,34.11662&zoom=14&width=530&height=340&markers=118.798689,34.116261\"/>2018年10月31日-11月2日，我荣幸参加了由北京医院党委<span style=\"margin: 0px; padding: 0px;\">书记</span>汪耀带队，共43名同志在延安举行的“不忘初心、牢记使命”党务干部暨预备党员培训班。虽然培训班结束了，但这次延安的培训、寻根之旅将激励着我不忘初心、牢记使命、永远奋斗。</span></p><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: \"><span style=\"margin: 0px; padding: 0px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 我们首先聆听了延安干部培训学院副院长康琪教授《中共中央在延安十三年》专题讲座。革命圣地延安，既是红军长征胜利的落脚点，也是建立抗日民族统一战线，赢得抗日战争胜利，进而夺取全国胜利的解放战争的出发点。从1935年到1948年，毛泽东等老一辈无产阶级革命家就是在这里生活和战斗了13个春秋，他们运筹帷幄，决胜千里，领导和指挥了中国的抗日战争和解放战争，奠定了中华人民共和国的坚固基石。毛泽东选集1-4卷共159篇文章中有112篇是在延安时期写成的，占总数的70%，谱写了可歌可泣的伟大的历史篇章。</span></p><p><br/></p>', '1', '1544978009', '1545100677', null, null, null, '', '27');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('32', '1', '1', '【择医网】公告：入驻择医网新媒体平台', '网站公告', '1', '<p style=\"text-align: center;\"><img src=\"/ueditor/php/upload/image/20181219/1545210366228498.png\" title=\"1545210366228498.png\" alt=\"1545186515.png\"/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 欢迎使用择医网新媒体平台服务，请您仔细阅读以下全部内容,如您不同意《择医网新媒体平台服务协议》（以下简称“本协议”）任意内容的，请不要使用本服务。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 在注册过程中点击“同意”等按钮、及注册后登录和使用时，均表明您已完全充分理解、同意并接受本协议，愿意遵守本协议及择医网新媒体平台公示的各项规则、规范的全部内容，若不同意则可停止注册、登录或使用择医网新媒体平台。此后，您不得以未阅读本协议内容作任何形式的抗辩。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 择医网新媒体平台的所有权、经营管理权归沭阳县马厂镇阳网传媒服务部所有。择医网客户端有权根据法律规范及运营的合理需要，不断修改和完善本协议及服务内容。如您继续使用本服务，即意味着同意并自愿遵守修改后的服务协议。</p><p><br/></p><p style=\"text-align: left;\">&nbsp;</p><p style=\"text-align: left;\">&nbsp; &nbsp; 一、定义</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 1.1 您：指提交有效申请并注册后，在择医网新媒体平台登录、上传、发布、提供链接等以各种形式传播内容（包括文字、图片、音频、视频、图表、漫画等）的自然人、法人或其他组织。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 1.2 择医网客户端：是沭阳县马厂镇阳网传媒服务部出品的一款互联网资讯与服务类应用。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 1.3 择医网新媒体平台：是沭阳县马厂镇阳网传媒服务部客户端对自然人、法人或其他组织包括但不限于媒体及内容合作伙伴所开放的内容分发渠道。您注册择医网新媒体平台后可以通过择医网新媒体平台上传发布内容，向用户传播信息、与用户交流互动等。择医网客户端是提供网络信息存储空间的网络服务提供者。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 1.4 用户：指所有直接或间接使用择医网客户端新媒体平台提供的相关服务的用户。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 二、帐户注册和使用</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 2.1 在注册、使用和管理平台帐户时，请您使用真实、准确、合法、有效的相关身份证明材料及必要信息（包括您的姓名及电子邮件地址、联系电话、联系地址等），以便择医网新媒体平台在必要时与您联系，并注意及时更新。为使您更好地使用择医网新媒体平台的各项服务，请您按照相关法律规定及择医网新媒体平台要求完成实名认证。您应当对您提供的帐号资料的真实性、合法性、准确性和有效性独立承担责任。如因此给择医网新媒体平台或第三方造成损害的，您应当依法予以赔偿。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 2.2 为保障用户和公司利益，择医网客户端有权核查您提交的相关材料（如自然人身份证照片、企业法人营业执照照片、事业单位法人证书照片、公司官方声明/说明等）后再决定是否核准您的注册申请。若您提交的材料或填写的信息不完整或不准确，则您可能无法使用本服务或在使用过程中受到限制。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 2.3 您所设置的帐户名不得违反国家法律法规及择医网客户端平台规则关于帐户名的管理规定，否则择医网客户端可对您的帐户名进行暂停使用或注销等处理，并向主管机关报告。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 2.4 您理解并承诺，您的帐户名称、头像和简介等注册信息中不得出现违法和不良信息，没有冒用、关联机构或社会名人，您在帐户注册过程中需遵守法律法规、社会主义制度、国家利益、公民合法权益、公共秩序、社会道德风尚和信息真实性等内容。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 2.5 您同意并授权，为了更好的为您提供服务以及确保您的帐户安全，择医网客户端可以根据您提供的手机号码、身份证号码等信息，向全国公民身份号码查询服务中心、电信运营商、金融服务机构等可靠单位发起用户身份真实性、用户征信记录、用户手机号码有效性状态等情况的查询。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 2.6 择医网新媒体平台帐号的所有权归沭阳县马厂镇阳网传媒服务部所有，您注册申请通过后，您将拥有择医网客户端新媒体平台帐号的使用权，可以登录并在择医网新媒体平台上制作、复制、发布、传播信息及服务。平台帐号的所有权归沭阳县马厂镇阳网传媒服务部所有，公司有权根据国家法律法规与相关管理部门要求及因经营需要进行改动。同时，禁止任何赠与、借用、租用、转让或售卖帐号等的行为。如您违反本协议内容，择医网客户端有权对该帐户进行暂停使用、注销或停止提供服务等处理，且不承担任何法律责任，由此导致的包括并不限于您通讯中断、资料和内容等清空等损失由您自行承担。</p><p style=\"text-align: left;\">&nbsp;</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 三、用户个人信息保护</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 3.1 为了更好地为您提供服务和帮助、保护您的合法权益，请您保证申请服务时所提供的信息是真实、准确、合法、有效的，并注意及时更新，以免在使用过程中受到限制或无法使用。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 3.2 择医网客户端将保护用户个人信息作为公司发展的最基本原则之一，未经您的同意，不会向其他任何公司、组织或个人披露您的个人信息，法律法规另有规定的除外。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 3.3 沭阳县马厂镇阳网传媒服务部邀请您和择医网客户端共同努力，保护上亿用户的切身利益。请您在使用医网客新媒体平台的过程中，不要以搜集、复制、存储、传播等任何方式使用其他用户的个人信息，否则，由此产生的后果需您自行承担。</p><p><br/></p><p style=\"text-align: left;\">&nbsp;</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 四、您的权利和义务</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 4.1 您需要对注册和使用时提交的信息及材料真实性、准确性、合法性、有效性负责，如因此引起的问题，由您承担全部法律责任。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 4.2 请您妥善保管您的帐户信息，并对此帐户下发生的一切活动承担全部法律责任。不向任何第三方透露帐户或密码信息，如出现或怀疑帐号和密码遭到他人使用，请尽快通知择医网客户端，以免您的利益受到损失。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 4.3 请您保证对在择医网新媒体平台制作、复制、上传、发布、传播的任何内容享有合法权益，若您发布的内容发生权利纠纷或侵犯了任何第三方的合法权益，需您承担全部法律责任。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 4.4 请您遵守本协议的各项条款，并正确、适当地使用、运营、管理此平台账号，如您违反本协议中的任何条款，择医网客户端有权在任何时候依据本协议中止或终止对您提供服务。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 4.5 如您注册择医网帐号后连续六个月不登录该帐号，为避免资源浪费，择医网客户端有权收回该帐号，因此带来的损失将由您自行承担。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 4.6 您的言行应遵守《计算机信息网络国际联网安全保护管理办法》、《互联网信息服务管理办法》、《互联网电子公告服务管理规定》、《维护互联网安全的决定》、《互联网新闻信息服务管理规定》等相关法律规定，您使用择医网客户端新媒体平台过程中所制作、复制、上传、发布、传播的任何内容，包括但不限于帐户头像、名称、用户说明、注册信息及其他资料，或文字、语音、图片、视频、图文、图表、漫画等发送、回复消息、评论和相关链接页面，以及其他使用择医网客户端帐户新媒体平台服务所产生的内容，不得包含如下法律、法规和政策禁止的内容：</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (1) 反对宪法所确定的基本原则的；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (2) 危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (3) 损害国家荣誉和利益的；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (4) 煽动民族仇恨、民族歧视，破坏民族团结的；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (5) 破坏国家宗教政策，宣扬邪教和封建迷信的；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (6) 散布谣言，扰乱社会秩序，破坏社会稳定的；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (7) 散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (8) 侮辱或者诽谤他人，侵害他人合法权益的；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (9) 含有法律、法规和政策禁止的其他内容的信息。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 4.7 为保证择医网客户端的正常运营及用户的良好体验，请您不要利用择医网客户端新媒体平台制作、复制、上传、发布、传播如下内容：</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (1) 含有任何性或性暗示以及任何其他低俗类信息；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (2) 骚扰、垃圾广告；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (3) 涉及他人隐私、个人信息或资料的任何信息；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (4) 侵害他人名誉权、肖像权、知识产权、商业秘密等合法权利的任何信息；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (5) 含有其他干扰择医网客户端正常运营、侵犯其他用户或其他第三方合法权益内容的信息。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 4.8 为确保择医网客户端和用户的利益，您请在使用本平台时，不要进行如下行为（该行为是指使用择医网客户端帐户新媒体平台所进行的任何行为，包括但不限于注册登录、帐号运营、管理及推广以及其他行为）：</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (1) 提交、发布虚假信息，或冒充、利用他人名义进行相关活动；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (2) 强制、诱导其他用户关注、点击链接页面或分享信息；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (3) 虚构事实、隐瞒真相以误导、欺骗他人；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (4) 侵害他人名誉权、肖像权、知识产权、商业秘密等合法权利；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (5) 未经择医网客户端书面许可使用插件、外挂或其他第三方工具、服务接入本服务和相关系统；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (6) 利用择医网客户端新媒体平台及帐户从事违法犯罪活动；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (7) 制作、发布与以上行为相关的方法、工具，或对此类方法、工具进行运营或传播；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; (8) 其他违反法律法规规定、侵犯其他用户合法权益、干扰产品正常运营或未经择医网客户端明示授权的行为。</p><p style=\"text-align: left;\">&nbsp; &nbsp; 4.9 请您在任何情况下都不要私自使用择医网客户端的包括但不限于“择医网新媒体平台”的任何商标、服务标记、商号、域名、网站名称或其他显著品牌特征等。未经择医网客户端事先书面同意，您不得将本平台标识以任何方式展示、使用或申请注册商标、进行域名注册等，也不得实施向他人明示或暗示有权展示、使用、或其他有权处理本平台标识的行为。您由于非法使用本平台标识给本平台或他人造成损失的，由您承担相关法律责任。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 4.10 若您需对择医网客户端新媒体平台内容创作衍生品或投放商业广告，请您另外提交书面授权申请，在符合条件且得到择医网客户端同意下，您方可通过该平台进行广告或推广等商业活动。</p><p><br/></p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 五、择医网客户端的权利和义务</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 5.1 为保障用户和公司的利益，择医网客户端有权对您注册时提交的材料和信息进行审查，并有权要求您改正或补充相关材料，请您理解。如果您拒绝改正或补充相关材料，您可能无法使用本服务。择医网客户端的审查不代表对您提交的材料和信息的真实性、准确性、真实性、合法性负责。您应当对该材料和信息独立承担责任，如因此给沭阳县马厂镇阳网传媒服务部或第三方造成损害的，您应当承担法律责任并予以赔偿。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 5.2 择医网客户端为沭阳县马厂镇阳网传媒服务部新媒体平台的开发、运营提供技术支持，并对该平台的开发和运营等过程中产生的所有数据和信息等享有全部权利。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 5.3 如果您停止使用本服务或服务被终止或取消，择医网客户端有权自主决定是否从服务器上永久地删除您的数据且无需向您返还任何数据。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 5.4沭阳县马厂镇阳网传媒服务部保留对违反规定者随时暂停、限制、终止或撤销择医网客户端新媒体平台服务的权利。公司可通过网页公告、电子邮件、电话或信件传送等方式向您发出通知，通知在发送时即视为已送达收件人，届时公司无需向您承担任何责任。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 5.5 您充分理解并同意：本服务中可能包括择医网客户端针对个人或企业推出的信息发布或品牌推广服务，您同意沭阳县马厂镇阳网传媒服务部客户端有权在择医网客户端新媒体平台显示平台和/或第三方供应商、合作伙伴的商业广告或商业信息。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 六、知识产权</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 6.1 在本服务中，由您通过择医网新媒体平台上传、发布的任何内容的知识产权归属您或原始著作权人所有，以上内容您授权沭阳县马厂镇阳网传媒服务部客户端使用并授权择医网客户端有权以沭阳县马厂镇阳网传媒服务部客户端自己的名义或委托专业第三方对侵犯以上内容著作权的行为进行维权，维权形式包括但不限于：监测侵权行为、发送维权函、提起诉讼或仲裁、调解、和解等任何方式，甲方可对维权事宜做出决策并独立实施。择医网客户端在本服务中提供的内容（包括但不限于网页、文字、图片、音频、视频、图表等）的知识产权属于择医网客户端所有。择医网客户端提供本服务时所依托的软件的著作权、专利权及其他知识产权均归沭阳县马厂镇阳网传媒服务部所有。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 6.2 您应当是在注册资料中提交的网站的合法权利人。您充分的理解并同意，为提高您的网站内容曝光率，本协议的合作范围是您提交的网站的全部内容。除非您另有明确表示，您在注册时点击同意，即表明您同意授权沭阳县马厂镇阳网传媒服务部客户端收录、链接您网站中的已有及将来的全部内容，并通过系统以您的注册帐户自动发布。如您对授权范围另有需求可以书面方式通知沭阳县马厂镇阳网传媒服务部并另行签订授权协议。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 6.3 您理解并且同意，为持续改善择医网新媒体平台为您提供的各项服务，您授予沭阳县马厂镇阳网传媒服务部及其关联方、合作方对您上传发布的任何内容具有全世界范围内的、永久的、不可撤销的、免费的、非独家的使用权。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 6.4 本服务所包含的内容的知识产权均受到法律保护，未经沭阳县马厂镇阳网传媒服务部、用户或相关权利人书面许可，任何人不得以任何形式进行使用或创造相关衍生作品。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 七、隐私政策</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 7.1 您知悉并同意：个人隐私信息是指能够对您进行个人辨识或涉及个人通信的信息，包括您的真实姓名、身份证号、手机号码、银行账户、IP地址等。非个人隐私信息是指您对本服务的操作状态以及使用习惯等一些明确且客观反映在本平台服务器端的基本记录信息和其他一切个人隐私信息范围外的普通信息，以及您同意公开的上述隐私信息。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 7.2 因您使用平台不同服务内容时，为保证功能服务的完整体验，产品可能会收集到您的地理位置、读取您的通讯录、开启您使用工具的摄像头、话筒，如您不希望开启相关功能，可停止使用对应服务，择医网客户端不会开启与您使用的服务无关的功能。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 7.3 本平台不对外公开或向第三方提供您的注册资料及用户在使用网络服务时存储在本网站的非公开内容，但下列情况除外：</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; （1）事先获得您的明确授权；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; （2）根据有关的法律法规要求；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; （3）按照相关政府主管部门的要求；</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; （4）该第三方同意承担与本平台同等的保护隐私的责任。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 7.4 在不透露您隐私资料的前提下，本平台有权对整个用户数据库进行分析并对用户数据库进行商业上的利用。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 7.5 为了运营和改善择医网客户端新媒体平台的技术和服务，便于本平台向您及用户提供更好的体验和提高服务质量，择医网客户端将可能会自行收集使用或向第三方提供您的非个人隐私信息。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 八、法律责任</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 8.1 若您提交的注册信息和材料不真实、不完整、不合法或无效，那么导致或产生的一切法律责任由您承担。择医网客户端有权随时封禁或删除您的平台帐号，以及中止或终止为您提供择医网客户端新媒体平台的相关服务。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 8.2 您理解并认可，择医网新媒体平台为提供信息分享、传播及获取的平台，您在使用择医网新媒体平台时，请您自行对内容加以判断，并承担因使用内容而引起的所有风险。您须为自己注册帐户下的一切行为负责，包括您所发表内容的真实性、合法性、准确性、有效性，以及承担因账号使用、运营、管理行为产生的结果。您应对择医网客户端新媒体平台中的内容自行加以判断，并承担因使用内容而引起的所有风险，包括因对内容真实性、合法性、准确性、有效性的依赖而产生的风险。择医网客户端无法且不会对因您的行为而导致的损失或损害承担责任。 如果您发现任何人违反本协议规定或以其他不当的方式使用择医网新媒体平台服务，请立即举报或投诉，择医网客户端将依法进行处理。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 8.3 对违反有关法律法规或本协议规定的行为，择医网客户端将依法律规定及上述规则等加以合理判断进行处理，对违法违规的任何人士采取适当的法律行动，并依据法律法规保存有关信息并向有关部门报告等。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 8.4 若您上传、发布的内容或其他在择医网新媒体平台上从事的行为侵害他人利益并引发第三方的任何索赔、要求或赔偿的，需由您承担全部法律责任。若因此给沭阳县马厂镇阳网传媒服务部或第三方造成任何损失，您应负责赔偿并使之免受损害，损失包括但不限于诉讼费用、律师费用、和解费用、罚款或生效法律文书中规定的损害赔偿金额及其他直接或间接支出费用。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 8.5 若择医网客户端发现您不当使用本平台帐号或因您的帐号被他人举报投诉时，择医网客户端有权不经通知随时删除相关内容，并视行为情节对违规帐号进行处理，处理方式包括但不限于警告、删除部分或全部订阅用户、限制或禁止使用全部或部分功能、帐号封禁甚至注销，并有权视具体情况而公告处理结果。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 8.6 因技术故障等不可抗事件影响到服务的正常运行的，本平台及其合作单位承诺在第一时间内与相关单位配合，及时处理进行修复，但您因第三方如电信部门的通讯线路故障、技术问题、网络、电脑故障、系统不稳定性及其他各种不可抗力原因而遭受的一切损失，本平台及其合作单位不承担责任。</p><p><br/></p><p style=\"text-align: left;\">&nbsp;</p><p style=\"text-align: left;\">&nbsp; &nbsp;九、甲方平台整体服务项目说明</p><p style=\"text-align: left;\">&nbsp; &nbsp;9.1 甲方为乙方提供的具体服务项目为：图文发布，视频发布，在线支付，挂号功能及独立后台操作服务等。</p><p style=\"text-align: left;\">&nbsp; &nbsp;</p><p style=\"text-align: left;\">&nbsp;</p><p style=\"text-align: left;\">&nbsp; &nbsp;十 、双方权利和义务&nbsp;</p><p style=\"text-align: left;\">&nbsp; &nbsp;11.1 乙方应根据合同约定的服务费用及付款条件，按时向甲方支付相应的服务费用。</p><p style=\"text-align: left;\">&nbsp; &nbsp;11.2 乙方对执行时间和渠道位置有变更，需要在执行前至少2个工作日通知甲方并协商沟通.</p><p style=\"text-align: left;\">&nbsp; &nbsp;11.3 因乙方延迟交付甲方所需材料与服务费用，导致甲方延期给与后台发布功能， 甲方可不承担违约责任，但不影响双方在签约合同有效期间内应履行的其他义务。</p><p style=\"text-align: left;\">&nbsp; &nbsp;</p><p style=\"text-align: left;\">&nbsp; &nbsp;十一、违约责任</p><p style=\"text-align: left;\">&nbsp; &nbsp; &nbsp; 甲乙双方应按照本协议约定严格履行义务，任何一方违约，应承担违约责任，给对方造成损失的，违约方均应当依法向守约方支付全面足额的赔偿。 除本协议约定外，任何一方中途不得退出合作。 &nbsp;</p><p style=\"text-align: left;\">&nbsp; &nbsp;十二、合同的解除和终止</p><p style=\"text-align: left;\">&nbsp; &nbsp;12.1 双方发生下列情况时，双方可协商解除本合同，双方互不承担违约责任。</p><p style=\"text-align: left;\">&nbsp; &nbsp;12.1(1) 一方在合同期限未满时向另一方提出解除合同申请，经对方同意的。</p><p style=\"text-align: left;\">&nbsp; &nbsp;12.1(2)如因地震、洪水、战争等不可抗力行为，致使一方不能按本合同的约定全部或部分的履行其在本合同中的义务的。</p><p style=\"text-align: left;\">&nbsp; &nbsp;12.2 双方发生下列情况时，守约方有权解除本合同，违约方应承担违约责任。</p><p style=\"text-align: left;\">&nbsp; &nbsp;12.2(1) 乙方未在本合同约定的付款时间内支付服务费的。&nbsp;</p><p style=\"text-align: left;\">&nbsp; &nbsp;12.2(2) 甲方没有按本合同约定内容提供相应的服务。</p><p style=\"text-align: left;\">&nbsp; &nbsp;12.3本合同的任何变更均应以书面制成，在站内信息栏显示后方生效。本合同的提前终止，必须由双方一致同意。&nbsp;</p><p style=\"text-align: left;\">&nbsp; &nbsp;12.4 本合同提前终止不影响此前双方因履行本合同而已经享有的权利和/或承担的义务，该等权利和义务包括但不限于：</p><p style=\"text-align: left;\">&nbsp; &nbsp;12.4(1)如甲方已经按照合同规定提供服务，乙方应就甲方服务符合约定的内容向甲方支付费用。</p><p style=\"text-align: left;\">&nbsp; &nbsp;12.41(2)如乙方按照合同规定已经支付的款项超过甲方的服务对应折算的费用，甲方应当将超出部分退还给乙方。</p><p style=\"text-align: left;\">&nbsp; &nbsp;12.4(3)违约方因其违约行为应承担的违约责任。&nbsp;</p><p style=\"text-align: left;\">&nbsp; &nbsp;&nbsp;</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp;十三、合同的生效及其他&nbsp;</p><p style=\"text-align: left;\">&nbsp; &nbsp;13.1 在本合同期内，未经对方书面同意，本合同项下权利义务不能转移至第三方。</p><p style=\"text-align: left;\">&nbsp; &nbsp;13.2 本合同任何一条或数条条款，根据任何适用的法律被认定是无效的、不合法的或不能执行的，本合同其他条款的效力、合法性和可执行性不受任何影响或损害，并仍然完全有效；该等无效的、不合法的和不能执行的条款应以有效的、合法的和能执行且最能表达该等无效、不合法或不能执行的条款本意的条款替代。</p><p style=\"text-align: left;\">&nbsp; 13.3 对本合同未尽事宜的补充或对本协议的修改，双方经协商一致可签署补充协议，补充协议为本合同之有效组成部分。本合同附件、补充协议与本合同具有同等法律效力。本合同内容与补充协议不一致以补充协议为准。补充协议未约定事项依照本合同执行。&nbsp;</p><p style=\"text-align: left;\">&nbsp;</p><p style=\"text-align: left;\">&nbsp; &nbsp;</p><p style=\"text-align: left;\">&nbsp; &nbsp;十四、其他约定</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp;14.1 您使用本服务即视为您已阅读并同意受本协议的约束。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp;14.2 必要时择医网客户端会对本协议的部分内容进行修改。修改后，将在页面显著位置提示协议有更新，您应及时查看更新后的协议。如果您同意接受修改后的协议，您可以继续使用择医网客户端新媒体平台；如果您不接受则应停止使用择医网客户端新媒体平台服务。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 14.3 您和择医网客户端均是独立的主体，在任何情况下本协议不构成双方之间的代理、合伙、合营或雇佣关系。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp; 14.4 本协议的成立、生效、履行、解释及纠纷解决，都适用于中华人民共和国的法律。本协议条款无论因何种原因部分无效或不可执行，其余条款仍有效，对双方具有约束力。</p><p><br/></p><p style=\"text-align: left;\">&nbsp; &nbsp;14.5 如双方就本协议内容或其执行发生任何争议，双方应尽量友好协商解决。协商不成时，任何一方均应向择医网客户端所在地有管辖权的人民法院提起诉讼。</p><p><br/></p>', '1', '1545187055', '1545210377', '水电费', '百度贴吧', '小李子', '', '36');
+INSERT INTO `dzm_his_inspectionfee` VALUES ('34', '1', '1', '特冲太岁', '网站公告', '1', '<p>当时发</p>', '1', '1545212288', '1545212616', '水电费', '百度贴吧', '王嘉尔', '', '36');
 
 -- ----------------------------
 -- Table structure for dzm_his_inventory
@@ -4056,10 +4055,10 @@ CREATE TABLE `dzm_his_inventory` (
   `inventory_prescription_total_amount` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '处方额',
   `early_warning` varchar(50) NOT NULL DEFAULT '0' COMMENT '库存预警',
   `update_time` int(11) NOT NULL COMMENT '更新时间',
-  PRIMARY KEY (`inventory_id`),
+  PRIMARY KEY (`inventory_id`) USING BTREE,
   KEY `hmr_id` (`hmr_id`) USING BTREE,
   KEY `company_id` (`company_id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COMMENT='库存表';
+) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='库存表';
 
 -- ----------------------------
 -- Records of dzm_his_inventory
@@ -4111,8 +4110,8 @@ CREATE TABLE `dzm_his_ly` (
   `ip` varchar(255) DEFAULT NULL,
   `likeIPs` text,
   `display` int(11) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of dzm_his_ly
@@ -4157,8 +4156,8 @@ CREATE TABLE `dzm_his_mchpay` (
   `addtime` int(10) unsigned DEFAULT '0' COMMENT '添加时间',
   `status` tinyint(1) unsigned DEFAULT '0' COMMENT '状态：0未处理，1成功，2失败，3异常',
   `memo` varchar(255) DEFAULT NULL COMMENT '备注',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='提现付款记录，微信企业付款记录';
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='提现付款记录，微信企业付款记录';
 
 -- ----------------------------
 -- Records of dzm_his_mchpay
@@ -4180,11 +4179,11 @@ CREATE TABLE `dzm_his_medicines` (
   `create_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '修改时间',
   `producter` varchar(50) DEFAULT '' COMMENT '生产厂家',
-  PRIMARY KEY (`medicines_id`),
+  PRIMARY KEY (`medicines_id`) USING BTREE,
   KEY `goods_sn` (`medicines_number`) USING BTREE,
   KEY `last_update` (`update_time`) USING BTREE,
-  KEY `medicines_name` (`medicines_name`)
-) ENGINE=MyISAM AUTO_INCREMENT=530 DEFAULT CHARSET=utf8 COMMENT='药品信息表';
+  KEY `medicines_name` (`medicines_name`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=530 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='药品信息表';
 
 -- ----------------------------
 -- Records of dzm_his_medicines
@@ -4741,14 +4740,14 @@ CREATE TABLE `dzm_his_member` (
   `money_lock` decimal(10,2) DEFAULT '0.00' COMMENT '冻结中余额',
   `recomment_code` varchar(255) DEFAULT '' COMMENT '邀请码',
   `update_time` int(10) DEFAULT '0' COMMENT '修改时间',
-  PRIMARY KEY (`uid`),
+  PRIMARY KEY (`uid`) USING BTREE,
   KEY `qrid` (`qrid`) USING BTREE,
   KEY `user_name` (`user_name`) USING BTREE,
   KEY `status` (`status`) USING BTREE,
   KEY `p_id` (`p_id`) USING BTREE,
   KEY `type` (`type`) USING BTREE,
   KEY `department_id` (`department_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COMMENT='HIS用户表';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='HIS用户表';
 
 -- ----------------------------
 -- Records of dzm_his_member
@@ -4769,8 +4768,8 @@ CREATE TABLE `dzm_his_operation_log` (
   `operation` varchar(64) NOT NULL COMMENT '具体操作',
   `details` varchar(100) NOT NULL,
   `optime` int(10) NOT NULL DEFAULT '0' COMMENT '操作时间',
-  PRIMARY KEY (`oid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='诊所系统操作记录表';
+  PRIMARY KEY (`oid`) USING BTREE
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='诊所系统操作记录表';
 
 -- ----------------------------
 -- Records of dzm_his_operation_log
@@ -4790,14 +4789,14 @@ CREATE TABLE `dzm_his_patient_credit` (
   `qa_id2` int(10) unsigned DEFAULT '0' COMMENT '使用于哪个问题id',
   `addtime` int(10) unsigned DEFAULT '0' COMMENT '添加时间',
   `uptime` int(10) unsigned DEFAULT '0' COMMENT '更新时间',
-  PRIMARY KEY (`id`),
-  KEY `hospital_id` (`hospital_id`),
-  KEY `patient_id` (`patient_id`),
-  KEY `doctor_id` (`doctor_id`),
-  KEY `status` (`status`),
-  KEY `qa_id2` (`qa_id2`),
-  KEY `qa_id` (`qa_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户免费提问额度';
+  PRIMARY KEY (`id`) USING BTREE,
+  KEY `hospital_id` (`hospital_id`) USING BTREE,
+  KEY `patient_id` (`patient_id`) USING BTREE,
+  KEY `doctor_id` (`doctor_id`) USING BTREE,
+  KEY `status` (`status`) USING BTREE,
+  KEY `qa_id2` (`qa_id2`) USING BTREE,
+  KEY `qa_id` (`qa_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户免费提问额度';
 
 -- ----------------------------
 -- Records of dzm_his_patient_credit
@@ -4824,9 +4823,9 @@ CREATE TABLE `dzm_his_patient_file` (
   `create_time` int(10) NOT NULL DEFAULT '0' COMMENT '创建时间',
   `personal_info` varchar(100) NOT NULL DEFAULT '' COMMENT '个人史',
   `family_info` varchar(100) NOT NULL DEFAULT '' COMMENT '家族史',
-  PRIMARY KEY (`file_id`),
+  PRIMARY KEY (`file_id`) USING BTREE,
   UNIQUE KEY `patient_id` (`patient_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='患者用户档案表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='患者用户档案表';
 
 -- ----------------------------
 -- Records of dzm_his_patient_file
@@ -4848,9 +4847,9 @@ CREATE TABLE `dzm_his_prescription_extracharges` (
   `create_time` int(10) NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(10) NOT NULL DEFAULT '0' COMMENT '修改时间',
   UNIQUE KEY `pre_id` (`pre_id`) USING BTREE,
-  KEY `extracharges_name` (`extracharges_name`),
-  KEY `hid` (`hid`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='处方附加费用表';
+  KEY `extracharges_name` (`extracharges_name`) USING BTREE,
+  KEY `hid` (`hid`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='处方附加费用表';
 
 -- ----------------------------
 -- Records of dzm_his_prescription_extracharges
@@ -4875,8 +4874,8 @@ CREATE TABLE `dzm_his_product` (
   `plike` varchar(255) DEFAULT NULL,
   `time` varchar(255) DEFAULT NULL,
   `create_time` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of dzm_his_product
@@ -4898,8 +4897,8 @@ CREATE TABLE `dzm_his_provinces` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `provinceid` varchar(20) NOT NULL,
   `province` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=35 DEFAULT CHARSET=utf8 COMMENT='省份信息表';
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=35 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='省份信息表';
 
 -- ----------------------------
 -- Records of dzm_his_provinces
@@ -4955,10 +4954,10 @@ CREATE TABLE `dzm_his_purchase` (
   `purchase_prescription_total_amount` decimal(10,2) NOT NULL COMMENT '采购处方总额',
   `create_time` int(11) NOT NULL COMMENT '创建时间',
   `hmr_id` int(10) unsigned DEFAULT '0',
-  PRIMARY KEY (`purchase_id`),
+  PRIMARY KEY (`purchase_id`) USING BTREE,
   KEY `medicines_id` (`medicines_id`) USING BTREE,
   KEY `batches_of_inventory_id` (`batches_of_inventory_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8 COMMENT='采购信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='采购信息表';
 
 -- ----------------------------
 -- Records of dzm_his_purchase
@@ -5038,10 +5037,10 @@ CREATE TABLE `dzm_his_registeredfee` (
   `registeredfee_aggregate_amount` decimal(8,2) unsigned NOT NULL COMMENT '挂号费用总金额',
   `numberOfSub` int(5) NOT NULL COMMENT '子费用数量',
   `create_time` int(10) NOT NULL COMMENT '创建时间',
-  PRIMARY KEY (`reg_id`),
+  PRIMARY KEY (`reg_id`) USING BTREE,
   KEY `mid` (`mid`) USING BTREE,
   KEY `company_id` (`company_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='挂号费用表';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='挂号费用表';
 
 -- ----------------------------
 -- Records of dzm_his_registeredfee
@@ -5058,9 +5057,9 @@ CREATE TABLE `dzm_his_registeredfee_sub` (
   `reg_id` int(10) unsigned NOT NULL COMMENT '挂号费用ID',
   `sub_registeredfee_name` varchar(255) NOT NULL COMMENT '挂号费用子名称',
   `sub_registeredfee_fee` decimal(8,2) NOT NULL COMMENT '子费用 ',
-  PRIMARY KEY (`reg_sub_id`),
+  PRIMARY KEY (`reg_sub_id`) USING BTREE,
   KEY `reg_id` (`reg_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='挂号费用子表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='挂号费用子表';
 
 -- ----------------------------
 -- Records of dzm_his_registeredfee_sub
@@ -5088,7 +5087,7 @@ CREATE TABLE `dzm_his_registration` (
   `create_time` int(11) NOT NULL,
   `update_time` int(11) NOT NULL COMMENT '更新时间',
   `pkg_id` int(10) unsigned DEFAULT '0' COMMENT '收费总表care_pkg.id',
-  PRIMARY KEY (`registration_id`),
+  PRIMARY KEY (`registration_id`) USING BTREE,
   KEY `patient_id` (`patient_id`) USING BTREE,
   KEY `physician_id` (`physician_id`) USING BTREE,
   KEY `operator_id` (`operator_id`) USING BTREE,
@@ -5098,7 +5097,7 @@ CREATE TABLE `dzm_his_registration` (
   KEY `registration_status` (`registration_status`) USING BTREE,
   KEY `scheduling_id` (`scheduling_id`) USING BTREE,
   KEY `pkg_id` (`pkg_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='门诊挂号';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='门诊挂号';
 
 -- ----------------------------
 -- Records of dzm_his_registration
@@ -5119,12 +5118,12 @@ CREATE TABLE `dzm_his_scheduling` (
   `end_time_this_week` varchar(50) NOT NULL COMMENT '本周结束时间',
   `create_time` int(11) NOT NULL COMMENT '创建时间',
   `update_time` int(11) NOT NULL COMMENT '更新时间',
-  PRIMARY KEY (`scheduling_id`),
+  PRIMARY KEY (`scheduling_id`) USING BTREE,
   KEY `physicianid` (`physicianid`) USING BTREE,
   KEY `department_id` (`department_id`) USING BTREE,
   KEY `company_id` (`company_id`) USING BTREE,
   KEY `start_time_this_week` (`start_time_this_week`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='我的排班';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='我的排班';
 
 -- ----------------------------
 -- Records of dzm_his_scheduling
@@ -5143,10 +5142,10 @@ CREATE TABLE `dzm_his_scheduling_subsection` (
   `scheduling_subsection_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `subsection_type` int(2) NOT NULL COMMENT '每天的时段：上午：1；下午：2；晚上：3；',
   `scheduling_id` int(10) NOT NULL COMMENT '排班id',
-  PRIMARY KEY (`scheduling_subsection_id`),
+  PRIMARY KEY (`scheduling_subsection_id`) USING BTREE,
   KEY `subsection_type` (`subsection_type`) USING BTREE,
   KEY `scheduling_id` (`scheduling_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COMMENT='排班时段表';
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='排班时段表';
 
 -- ----------------------------
 -- Records of dzm_his_scheduling_subsection
@@ -5177,12 +5176,12 @@ CREATE TABLE `dzm_his_scheduling_week` (
   `week` int(2) NOT NULL COMMENT '星期一：1；星期二：2；星期三：3；星期四：4；星期五：5；星期六：6；星期日：0',
   `registeredfee_id` int(10) DEFAULT NULL COMMENT '挂号费用ID',
   `scheduling_subsection_id` int(10) unsigned NOT NULL COMMENT '排班分段ID',
-  PRIMARY KEY (`scheduling_week_id`),
+  PRIMARY KEY (`scheduling_week_id`) USING BTREE,
   KEY `date` (`date`) USING BTREE,
   KEY `week` (`week`) USING BTREE,
   KEY `registeredfee_id` (`registeredfee_id`) USING BTREE,
   KEY `scheduling_subsection_id` (`scheduling_subsection_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8 COMMENT='排班星期表';
+) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='排班星期表';
 
 -- ----------------------------
 -- Records of dzm_his_scheduling_week
@@ -5305,8 +5304,8 @@ CREATE TABLE `dzm_his_sms_log` (
   `status` smallint(2) DEFAULT '1' COMMENT '1.发送成功2发送失败',
   `type` tinyint(4) DEFAULT '1' COMMENT '1注册验证码，2，其他',
   `error_info` varchar(255) DEFAULT '' COMMENT '发送失败的错误信息',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='短信发送记录表';
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC COMMENT='短信发送记录表';
 
 -- ----------------------------
 -- Records of dzm_his_sms_log
@@ -5331,8 +5330,8 @@ CREATE TABLE `dzm_his_storage_log` (
   `old_prescription_price` decimal(10,2) NOT NULL COMMENT '原处方价',
   `operation_module` tinyint(3) NOT NULL COMMENT '操作模块；采购：1，审核：2',
   `create_time` int(11) NOT NULL COMMENT '创建时间',
-  PRIMARY KEY (`log_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8 COMMENT='入库操作log日志表';
+  PRIMARY KEY (`log_id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='入库操作log日志表';
 
 -- ----------------------------
 -- Records of dzm_his_storage_log
@@ -5415,12 +5414,12 @@ CREATE TABLE `dzm_his_supplier` (
   `hospital_id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '医院id',
   `create_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '创建时间',
   `update_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '更新时间',
-  PRIMARY KEY (`sid`),
+  PRIMARY KEY (`sid`) USING BTREE,
   KEY `hospital_id` (`hospital_id`) USING BTREE,
   KEY `update_time` (`update_time`) USING BTREE,
-  KEY `supplier_name` (`supplier_name`),
-  KEY `contact_name` (`contact_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='供应商表';
+  KEY `supplier_name` (`supplier_name`) USING BTREE,
+  KEY `contact_name` (`contact_name`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='供应商表';
 
 -- ----------------------------
 -- Records of dzm_his_supplier
@@ -5445,12 +5444,12 @@ CREATE TABLE `dzm_his_transaction_record` (
   `ip` varchar(32) DEFAULT NULL COMMENT '交易IP',
   `memo` varchar(128) DEFAULT NULL COMMENT '事由',
   `pkg_id` int(10) unsigned DEFAULT '0' COMMENT '相关订单id',
-  PRIMARY KEY (`id`),
-  KEY `operator_id` (`operator_id`),
-  KEY `hospital_id` (`hospital_id`),
-  KEY `user_id` (`user_id`),
-  KEY `type_id` (`type_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户收支记录';
+  PRIMARY KEY (`id`) USING BTREE,
+  KEY `operator_id` (`operator_id`) USING BTREE,
+  KEY `hospital_id` (`hospital_id`) USING BTREE,
+  KEY `user_id` (`user_id`) USING BTREE,
+  KEY `type_id` (`type_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='用户收支记录';
 
 -- ----------------------------
 -- Records of dzm_his_transaction_record
@@ -5476,8 +5475,8 @@ CREATE TABLE `dzm_his_user` (
   `create_time` int(10) NOT NULL COMMENT '注册时间',
   `update_time` int(10) NOT NULL COMMENT '修改时间',
   `ask_price` decimal(10,2) DEFAULT '0.00' COMMENT '咨询价格',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COMMENT='医生基本信息表';
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='医生基本信息表';
 
 -- ----------------------------
 -- Records of dzm_his_user
@@ -5500,8 +5499,8 @@ CREATE TABLE `dzm_his_video` (
   `plike` varchar(255) DEFAULT NULL,
   `time` varchar(255) DEFAULT NULL,
   `create_time` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of dzm_his_video
@@ -5523,10 +5522,10 @@ CREATE TABLE `dzm_his_work_log` (
   `cookie` varchar(255) DEFAULT NULL COMMENT '操作者cookie',
   `ip` varchar(32) DEFAULT NULL COMMENT '操作IP',
   `dev_info` varchar(255) DEFAULT NULL COMMENT '开发信息',
-  PRIMARY KEY (`id`),
-  KEY `tab_name` (`tab_name`),
-  KEY `rel_id` (`rel_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='重要操作记录';
+  PRIMARY KEY (`id`) USING BTREE,
+  KEY `tab_name` (`tab_name`) USING BTREE,
+  KEY `rel_id` (`rel_id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='重要操作记录';
 
 -- ----------------------------
 -- Records of dzm_his_work_log
@@ -5555,10 +5554,10 @@ CREATE TABLE `dzm_his_wxmp` (
   `app_id` varchar(32) DEFAULT NULL COMMENT '支付宝app_id',
   `merchant_private_key` text COMMENT '支付宝商户私钥，您的原始格式RSA私钥',
   `alipay_public_key` text COMMENT '支付宝公钥',
-  PRIMARY KEY (`id`),
-  KEY `userid` (`userid`),
-  KEY `appid` (`appid`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='微信公众平台信息';
+  PRIMARY KEY (`id`) USING BTREE,
+  KEY `userid` (`userid`) USING BTREE,
+  KEY `appid` (`appid`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='微信公众平台信息';
 
 -- ----------------------------
 -- Records of dzm_his_wxmp
@@ -5576,11 +5575,11 @@ CREATE TABLE `dzm_his_wxopenid` (
   `userid` int(10) unsigned DEFAULT NULL COMMENT '用户id',
   `usertype` tinyint(1) unsigned DEFAULT '0' COMMENT '用户类型，0系统管理员，1诊所医院，2医生，3患者',
   `addtime` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`),
-  KEY `openid` (`openid`),
-  KEY `userid` (`userid`),
-  KEY `appid` (`appid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='绑定微信openid和用户id的关系';
+  PRIMARY KEY (`id`) USING BTREE,
+  KEY `openid` (`openid`) USING BTREE,
+  KEY `userid` (`userid`) USING BTREE,
+  KEY `appid` (`appid`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='绑定微信openid和用户id的关系';
 
 -- ----------------------------
 -- Records of dzm_his_wxopenid
@@ -5595,8 +5594,8 @@ CREATE TABLE `dzm_his_wxopenid_cache` (
   `appid` varchar(32) DEFAULT NULL COMMENT '微信appid',
   `openid` varchar(64) DEFAULT NULL COMMENT '微信openid',
   `url` varchar(255) DEFAULT NULL COMMENT 'openid获取成功后跳转的url',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='openid跨域名获取';
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='openid跨域名获取';
 
 -- ----------------------------
 -- Records of dzm_his_wxopenid_cache
@@ -5613,12 +5612,12 @@ CREATE TABLE `dzm_his_wxqr` (
   `url` varchar(255) DEFAULT NULL COMMENT '微信二维码内容',
   `appid` varchar(32) DEFAULT NULL,
   `userid` int(10) unsigned DEFAULT '0' COMMENT '绑定用户id',
-  PRIMARY KEY (`id`),
-  KEY `hospital_id` (`hospital_id`),
-  KEY `qr_id` (`qr_id`),
-  KEY `appid` (`appid`),
-  KEY `userid` (`userid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='保存微信永久二维码及用户关系';
+  PRIMARY KEY (`id`) USING BTREE,
+  KEY `hospital_id` (`hospital_id`) USING BTREE,
+  KEY `qr_id` (`qr_id`) USING BTREE,
+  KEY `appid` (`appid`) USING BTREE,
+  KEY `userid` (`userid`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='保存微信永久二维码及用户关系';
 
 -- ----------------------------
 -- Records of dzm_his_wxqr
@@ -5635,9 +5634,9 @@ CREATE TABLE `dzm_his_wxqrlogin` (
   `status` tinyint(1) unsigned DEFAULT '0' COMMENT '状态，0等待，1已扫，2完成',
   `createdate` date DEFAULT NULL,
   `openid` varchar(32) DEFAULT NULL COMMENT '微信openid',
-  PRIMARY KEY (`id`),
-  KEY `createdate` (`createdate`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='微信扫码登录';
+  PRIMARY KEY (`id`) USING BTREE,
+  KEY `createdate` (`createdate`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='微信扫码登录';
 
 -- ----------------------------
 -- Records of dzm_his_wxqrlogin
@@ -5659,11 +5658,11 @@ CREATE TABLE `dzm_his_wx_menu` (
   `appid` varchar(32) DEFAULT NULL,
   `pagepath` varchar(255) DEFAULT NULL COMMENT '小程序的页面路径',
   `listorder` int(10) unsigned DEFAULT '0' COMMENT '排序 ASC',
-  PRIMARY KEY (`id`),
-  KEY `hospital_id` (`hospital_id`),
-  KEY `pid` (`pid`),
+  PRIMARY KEY (`id`) USING BTREE,
+  KEY `hospital_id` (`hospital_id`) USING BTREE,
+  KEY `pid` (`pid`) USING BTREE,
   KEY `listorder` (`listorder`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='保存微信公众平台菜单';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='保存微信公众平台菜单';
 
 -- ----------------------------
 -- Records of dzm_his_wx_menu
@@ -5698,9 +5697,9 @@ CREATE TABLE `dzm_his_yydoctor` (
   `typelist` varchar(255) NOT NULL,
   `type1` varchar(255) DEFAULT '' COMMENT '"2","3","4","5","6","7","8"分别代表医生,护士,挂号员,收费员,发药员,财务, 其他人员',
   `ask_price` decimal(10,2) DEFAULT '0.00' COMMENT '咨询价格',
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`) USING BTREE,
   KEY `uid` (`uid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COMMENT='医生基本信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='医生基本信息表';
 
 -- ----------------------------
 -- Records of dzm_his_yydoctor
@@ -5736,12 +5735,12 @@ CREATE TABLE `dzm_patient` (
   `district_id` int(11) DEFAULT '0' COMMENT '县区id',
   `allergy_info` varchar(100) DEFAULT NULL COMMENT '过敏信息',
   `is_del` tinyint(1) DEFAULT '0' COMMENT '是否移除 0：正常 1：删除',
-  PRIMARY KEY (`patient_id`),
-  KEY `dzm_patient_hostpital_id_index` (`hospital_id`),
-  KEY `dzm_patient_last_login_time_index` (`last_login_time`),
-  KEY `name` (`name`),
-  KEY `tel` (`mobile`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='患者用户表';
+  PRIMARY KEY (`patient_id`) USING BTREE,
+  KEY `dzm_patient_hostpital_id_index` (`hospital_id`) USING BTREE,
+  KEY `dzm_patient_last_login_time_index` (`last_login_time`) USING BTREE,
+  KEY `name` (`name`) USING BTREE,
+  KEY `tel` (`mobile`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='患者用户表';
 
 -- ----------------------------
 -- Records of dzm_patient

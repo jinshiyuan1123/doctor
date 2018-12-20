@@ -43,38 +43,51 @@
 
     <div id="g-wrapper" class="g-wrapper ">
         <div id="gh">
-            <!--[if lt IE 8]>
-<div class="g-browser-update">你的浏览器实在太旧了，为了更加安全和方便地进行挂号，推荐您升级浏览器：<a target="_blank" href="http://browsehappy.com">立即升级</a></div>
-<![endif]-->
-            <div class="gh-nav">
-                <div class="container g-clear">
-                    <div class="g-left">
-                        <span class="text">您好
-		                  15768472001</span>
-                        <a href="member.html" rel="nofollow">个人中心</a>
+             <div class="gh-nav">
+    <div class="container g-clear">
+        <div class="g-left">
+            <?php if(!session('home_user_info')): ?><span class="text">您好！ 请</span>
+                <span class="login"></span>
+                <a href="<?php echo U('home/index/login');?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,login">登录</a>
+                <span class="line">|</span>
+                <a target="_blank" href="<?php echo U('home/index/register');?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,signin">注册</a>
+                <a href="<?php echo U('home/index/doctorlogin');?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" class="doctor-login" monitor="public_head,publick_head,doctoruser"><i style="right:6px"><img src="/Public/home/doctor-login.png"></i>我是医生</a>
 
-                        <span class="line">|</span>
-                        <a href="#" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,order">预约单</a>
-                        <span class="line">|</span>
-                        <a href="" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,myfollow">我的关注</a>
-                        <span class="line">|</span>
-                        <a href="" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,logout">退出</a>
+                 <a href="<?php echo U('home/index/yylogin');?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" class="doctor-login" monitor="public_head,publick_head,doctoruser"><i style="right:6px"><img src="/Public/home/images/default_yy.png"></i>医院入住</a>
+            <?php else: ?>
+
+                     <span class="text">您好
+                         <?php echo session('home_user_info.mobile');?>
+                          </span> 
+                         
+                     <a href=" <?php if($docmobile): echo U('home/index/doctorhome'); else: echo U('home/index/orderlist'); endif; ?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,mycenter">个人中心</a>
+                       
+                    <span class="line">|</span>
+                    <a href="https://www.guahao.com/my/orderlist" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,order">预约单</a> 
+                    <span class="line">|</span>
+                    <a href="https://www.guahao.com/my/favorite/list" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,myfollow">我的关注</a> 
+                    <span class="line">|</span> 
+                    <a href="<?php echo U('/home/index/logout');?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,logout">退出</a><?php endif; ?>
+        </div>
+        
+        
+          <div class="g-right">
+                <a href="" rel="nofollow" class="dl-guide J_SeoGuide" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,appdload">
+                    收藏本站    
+                    <span>
+                        <img src="https://static.guahao.cn/front/portal-pc-static/img/index-appQRcode.png?v=20170505" alt="">
+                    </span>
+                </a>
+                <span class="line">|</span>
 
 
-                    </div>
+          
+            <a href="tencent://message/?Site=baidu.com&uin=1569602446&Menu=yes" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" id="helpCenter" target="_blank" monitor="public_head,publick_head,cscenter">客服中心</a>
+            
 
-
-                    <div class="g-right">
-                        <a href="/" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" class="go-home" monitor="public_head,publick_head,wy_home"><i></i>择医网首页</a>
-                        <span class="line">|</span>
-
-
-                        <a href="fastcancel.html" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,ordercancel">快速取消订单</a>
-                        <span class="line">|</span>
-                        <a href="help.html">客服中心</a>
-                    </div>
-                </div>
-            </div>
+        </div>
+      </div> 
+  </div>
             <div class="gh-main">
                 <div class="container g-clear">
                     <div class="gh-logo ">
