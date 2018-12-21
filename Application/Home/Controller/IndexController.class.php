@@ -94,10 +94,17 @@ function getCity($ip = '')
        
         $ip = $this->getIP();
         $getip = $this->getCity($ip);
-        $class="就医攻略";
-        $class1="谣言粉碎机";
-        $class2="中医养生";
-        $class3="名医直通车";
+        $class="养生";
+        $class1="健康";
+        $class2="两性";
+        $class3="减肥";
+        $list1 ="美容";
+         $list2 ="饮食";
+         $list3 ="母婴";
+         $list4 = "运动";
+         $list5 ="百科";
+
+
         $class4 ="医院公开";
         $class5 = "医院动态";
         $class6 ="医院健康";
@@ -114,6 +121,12 @@ function getCity($ip = '')
         $res9 = M('his_inspectionfee')->where("class='$class9' ")->limit(6)->select();
         $res10 = M('his_inspectionfee')->where("class='$user' ")->limit(3)->select();
          $row = M('his_yydoctor')->where()->limit(4)->select();
+        $listrow1 = M('his_inspectionfee')->where("class='$list1' ")->limit(6)->select();
+        $listrow2 = M('his_inspectionfee')->where("class='$list2' ")->limit(6)->select();
+        $listrow3 = M('his_inspectionfee')->where("class='$list3' ")->limit(6)->select();
+        $listrow4 = M('his_inspectionfee')->where("class='$list4' ")->limit(6)->select();
+        $listrow5 = M('his_inspectionfee')->where("class='$list5' ")->limit(6)->select();
+       
          $this->assign('rowlist',$row);
         
         $this->assign('reslist',$res);
@@ -121,6 +134,12 @@ function getCity($ip = '')
         $this->assign('reslist2',$res2);
         $this->assign('reslist3',$res3);
         $this->assign('reslist4',$res4);
+        $this->assign('listrow1',$listrow1);
+         $this->assign('listrow2',$listrow2);
+         $this->assign('listrow3',$listrow3);
+         $this->assign('listrow4',$listrow4);
+         $this->assign('listrow1',$listrow5);
+       
         $this->assign('reslist5',$res5);
         $this->assign('reslist6',$res6);
         $this->assign('reslist7',$res7);
