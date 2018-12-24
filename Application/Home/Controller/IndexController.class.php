@@ -120,15 +120,16 @@ function getCity($ip = '')
         $res8 = M('his_inspectionfee')->where("class='$class8' ")->limit(6)->select();
         $res9 = M('his_inspectionfee')->where("class='$class9' ")->limit(6)->select();
         $res10 = M('his_inspectionfee')->where("class='$user' ")->limit(3)->select();
-         $row = M('his_yydoctor')->where()->limit(4)->select();
+         $rowdoctor= M('his_doctor')->where()->limit(3)->select();
+          $row = M('his_yydoctor')->where()->limit(3)->select();
         $listrow1 = M('his_inspectionfee')->where("class='$list1' ")->limit(6)->select();
         $listrow2 = M('his_inspectionfee')->where("class='$list2' ")->limit(6)->select();
         $listrow3 = M('his_inspectionfee')->where("class='$list3' ")->limit(6)->select();
         $listrow4 = M('his_inspectionfee')->where("class='$list4' ")->limit(6)->select();
         $listrow5 = M('his_inspectionfee')->where("class='$list5' ")->limit(6)->select();
        
+         $this->assign('rowdoctor',$rowdoctor);
          $this->assign('rowlist',$row);
-        
         $this->assign('reslist',$res);
         $this->assign('reslist1',$res1);
         $this->assign('reslist2',$res2);
@@ -221,11 +222,13 @@ function getCity($ip = '')
         if (!IS_POST) {
             $this->error('非法注册');
         }    
+
         $mobile = I('post.mobile', '', '/^[1][3,4,5,7,8][0-9]{9}$/');
         if (empty($mobile)) {
             $this->error('手机号错误');
         }
         $user = M('his_user')->where(['mobile'=>$mobile])->find();
+        // var_dump($user);die;
         if ($user) {
             $this->error('该手机号已注册');
         }
@@ -233,7 +236,7 @@ function getCity($ip = '')
         if (empty($password)) {
             $this->error('密码错误');
         }
-        
+          // var_dump(22);die;
         $db_password = encrypt_password($password);
 
         $data = array(
@@ -243,7 +246,9 @@ function getCity($ip = '')
             'create_time'=>NOW_TIME,
             'update_time'=>NOW_TIME,
         );
+        // var_dump($data);die;
         $res = M('his_user')->add($data);
+
         if (!$res) {
             $this->error('注册失败！');
         }

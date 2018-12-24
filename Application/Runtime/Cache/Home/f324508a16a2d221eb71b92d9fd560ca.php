@@ -761,9 +761,7 @@
             <a href="/internet/hospital" class="gbn gbt-orange" monitor="home,ask_more,find_spask" target="_blank">找专家问诊</a>
            
         </div>
-        <a target="_blank" href="" class="volunteer seo-anchor-text" onmousedown="return _smartlog(this,'JRYZ')" monitor="home_activity,todayask,todayask">
-            今日义诊
-        </a>    
+        
     </div>
     <div class="g-grid-left">
         <div class="consult-bar">
@@ -779,7 +777,7 @@
         </div>
 
 
-        <div class="consult-list J_ConsultList" data-tab-url="/homepage/hpconsult/expertList/">
+        <div class="consult-list J_ConsultList" style="height: 400px" data-tab-url="/homepage/hpconsult/expertList/">
             <div class="tabs">
                 <ul class="g-clear J_Nav">
                     <li data-id="7f67f180-cff3-11e1-831f-5cf9dd2e7135" id="name1" class="on" style="width: 76px;"><a href="/expert/7f67f180-cff3-11e1-831f-5cf9dd2e7135/内科">内科</a><span></span></li>
@@ -1527,25 +1525,9 @@
  </div>
 
 
-
-
         </div>
     </div>
-    <!-- <div class="g-grid-right"> 
-        <div class="freeconsultation">
-            <a href="/internet/hospital" class="url-wrap" monitor="home,ask_more,find_spask" target="_blank"><img src="/Public/home/images/1111.png" alt=""></a>
-            <a href="/internet/hospital" class="gbn gbt-orange" monitor="home,ask_more,find_spask" target="_blank">找专家问诊</a>
-           
-               <img src="/Public/home/images/290.png" alt="">
-           
-        </div>
-        <a target="_blank" href="" class="volunteer seo-anchor-text" onmousedown="return _smartlog(this,'JRYZ')" monitor="home_activity,todayask,todayask">
-            今日义诊
-        </a>    
-    </div> -->
-
-    </div>
-    </div> 
+   
 <script>
 $(document).ready(function(){
 
@@ -2564,10 +2546,10 @@ $(document).ready(function(){
             </span>
                     </div>
                     <div class="main-ctn g-clear">
-                        <div class="g-grid-left" style="width:1200px">
+                        <div class="g-grid-left" style="width:1200px;border-style:solid;">
                            
-                            <div class="news-main g-clear">
-                                 <?php if(is_array($rowlist)): foreach($rowlist as $key=>$vo): ?><div class="news-item medical-strategy J_medicalStrategy" style="width:200px;border-right: 1px dotted #f9fbf9">
+                            <div class="news-main g-clear" style="float:left;width:580px;border-radius: 5px;border:1px solid #e4e4e4">
+                                 <?php if(is_array($rowlist)): foreach($rowlist as $key=>$vo): ?><div class="news-item medical-strategy J_medicalStrategy" style="width:150px;border-right: 1px dotted #f9fbf9;">
                                     
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="<?php echo U('home/index/zonghe');?>?id=<?php echo ($vo["id"]); ?>">
@@ -2577,16 +2559,23 @@ $(document).ready(function(){
                                     </div><br/>
                                        <?php echo ($vo["hospital"]); ?><br/>
                                        二级甲等
-                                </div><?php endforeach; endif; ?>
-                              
-
-                               
-                                    <h5><li style="float:right;list-style:none"><a href="<?php echo U('home/index/zonghelist');?>" target="_blank">更多</a></li></h5>
-                                   
-                             
-                              
-                                
+                                </div><?php endforeach; endif; ?>  
                             </div>
+                         <div class="news-main g-clear" style="float:left;width:10px;border-top: 2px solid rgb(255, 255, 255);"> </div>
+
+                            <div class="news-main g-clear" style="float:left;width:580px;border-radius: 5px;border:1px solid #e4e4e4"> 
+                                <?php if(is_array($rowdoctor)): foreach($rowdoctor as $key=>$vo): ?><div class="news-item medical-strategy J_medicalStrategy" style="width:150px;border-right: 1px dotted #f9fbf9;">
+                                    
+                                    <div class="focus-single g-clear">
+                                        <a target="_blank" href="<?php echo U('home/index/zonghe');?>?id=<?php echo ($vo["id"]); ?>">
+                                            <img src="/Public/home/images/doctorlist.png" alt="">
+                                        </a>
+                                        
+                                    </div><br/>
+                                       <?php echo ($vo["hospital"]); ?><br/>
+                                       二级甲等
+                                </div><?php endforeach; endif; ?>  </div>
+
                         </div>
                        
                     </div>

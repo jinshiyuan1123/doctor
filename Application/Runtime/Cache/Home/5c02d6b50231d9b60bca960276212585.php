@@ -1,12 +1,12 @@
-
+<?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE HTML>
 <html>
     <head>
         <link rel="dns-prefetch" href="https://static.guahao.cn">   
          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <script src="__PUBLIC_HIS__/vendor/jquery/jquery.min.js"></script>
-    <script src="__PUBLIC_HIS__/vendor/layer/layer.js"></script>
+    <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
+    <script src="/Public/his/vendor/layer/layer.js"></script>
     <script src="http://static.geetest.com/static/tools/gt.js"></script>
 
     <title>注册 | 择医(挂号网)-互联网医院在线诊疗平台</title>
@@ -17,14 +17,14 @@
 <meta name="mobile-agent" content="format=html5; url=https://wy.guahao.com/user/login">
 <meta http-equiv="Cache-Control" content="no-transform" />
 
-  <link rel="shortcut icon" href="__PUBLIC_HOME__/favicon.ico" />
+  <link rel="shortcut icon" href="/Public/home/favicon.ico" />
 
     <link rel="stylesheet" href="https://static.guahao.cn/front/portal-pc-static/css/portal.base.min.css?v=1542352557776f11" type="text/css"/>
-    <link rel="stylesheet" href="__PUBLIC_HOME__/css/portal.basic.min.css?v=1542352557776f11" type="text/css"/>
-    <link rel="stylesheet" href="__PUBLIC_HOME__/css/portal.hdd.min.css?v=1542352557776f11" type="text/css"/>
-    <link rel="stylesheet" href="__PUBLIC_HOME__/css/portal.content.min.css?v=1542352557776f11" type="text/css"/>
-    <link rel="stylesheet" href="__PUBLIC_HOME__/css/style.min.css?v=1542352557776f11" type="text/css"/>
-    <link rel="stylesheet" href="__PUBLIC_HOME__/css/animate.min.css?v=20141222" type="text/css"/>
+    <link rel="stylesheet" href="/Public/home/css/portal.basic.min.css?v=1542352557776f11" type="text/css"/>
+    <link rel="stylesheet" href="/Public/home/css/portal.hdd.min.css?v=1542352557776f11" type="text/css"/>
+    <link rel="stylesheet" href="/Public/home/css/portal.content.min.css?v=1542352557776f11" type="text/css"/>
+    <link rel="stylesheet" href="/Public/home/css/style.min.css?v=1542352557776f11" type="text/css"/>
+    <link rel="stylesheet" href="/Public/home/css/animate.min.css?v=20141222" type="text/css"/>
 
 
 <script  type="text/javascript">
@@ -67,14 +67,14 @@
     </div>
     <div class="main-box J_MainBox">
         <div class="nav g-clear">
-            <li class="main-current J_MainTab"><a href="{:U('home/index/login')}">登录</a>&nbsp;&nbsp;<i>▪</i>&nbsp;&nbsp;<span>注册</span></li>
+            <li class="main-current J_MainTab"><a href="<?php echo U('home/index/login');?>">登录</a>&nbsp;&nbsp;<i>▪</i>&nbsp;&nbsp;<span>注册</span></li>
             <li class="download-normal">扫一扫</li>
         </div>
         <div class="tab-list">
             <div class="tab-listcon J_TabList">
                 <div class="tab-main g-clear J_TabMain">
                     <div class="form-container">
-                        <form id="userForm" name="userForm" method="post" onsubmit="return CheckPost();" action="{:U('home/index/Registerfee')}">
+                        <form id="userForm" name="userForm" method="post" onsubmit="return CheckPost();" action="<?php echo U('home/index/Registerfee');?>">
                             <div class="msg-container" >
                                 <div class="g-tips-box-error hide">
                                     <span class="gi gi-error"></span>
@@ -112,8 +112,8 @@
                                         <input type="checkbox" id="agreement" class="required"/>已阅读并同意
                                     </label>
                                     <p class="agreement-content policy-info">
-                                        <a href="{:U('home/index/agreement')}" target="_blank" class="Textr">《择医用户注册协议》</a>
-                                        <a href="{:U('home/index/privacy_policy')}" target="_blank">《法律声明及隐私权政策》</a>
+                                        <a href="<?php echo U('home/index/agreement');?>" target="_blank" class="Textr">《择医用户注册协议》</a>
+                                        <a href="<?php echo U('home/index/privacy_policy');?>" target="_blank">《法律声明及隐私权政策》</a>
                                     </p>
                                 </li>
                             </ul>
@@ -140,8 +140,8 @@
                                         <input type="checkbox" id="agreement2" class="required"/>已阅读并同意
                                     </label>
                                     <p class="agreement-content policy-info">
-                                        <a href="{:U('/home/index/agreement')}" target="_blank" class="Textr">《择医用户注册协议》</a>
-                                        <a href="{:U('home/index/privacy_policy')}" target="_blank">《法律声明及隐私权政策》</a>
+                                        <a href="<?php echo U('/home/index/agreement');?>" target="_blank" class="Textr">《择医用户注册协议》</a>
+                                        <a href="<?php echo U('home/index/privacy_policy');?>" target="_blank">《法律声明及隐私权政策》</a>
                                     </p>
                                 </li>
                                 <li class="action-bar ml105">
@@ -299,7 +299,7 @@
 
 </div>
 <script type="text/javascript">
-    var enid = '{$enid}';
+    var enid = '<?php echo ($enid); ?>';
 
     var js_Geetest_ok = 0;
     var _captchaObj;
@@ -322,7 +322,7 @@
 
         };
         // 获取验证码
-        $.get("{:U('/home/Login/geetest_show_verify')}", function (data) {
+        $.get("<?php echo U('/home/Login/geetest_show_verify');?>", function (data) {
             // 使用initGeetest接口
             // 参数1：配置参数，与创建Geetest实例时接受的参数一致
             // 参数2：回调，回调的第一个参数验证码对象，之后可以使用它做appendTo之类的事件
