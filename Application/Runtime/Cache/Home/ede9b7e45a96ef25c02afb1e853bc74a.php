@@ -1,15 +1,15 @@
-
+<?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE HTML>
 <html>
 	<head>
 		<link rel="dns-prefetch" href="http://img.guahao.com">	
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="shortcut icon" href="__PUBLIC_HOME__/favicon.ico" />
+<link rel="shortcut icon" href="/Public/home/favicon.ico" />
 
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/wen/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/wen/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
- <script src="__PUBLIC_HIS__/vendor/jquery/jquery.min.js"></script>
-    <script src="__PUBLIC_HIS__/vendor/layer/layer.js"></script>
+	<link rel="stylesheet" href="/Public/home/css/wen/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/wen/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
+ <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
+    <script src="/Public/his/vendor/layer/layer.js"></script>
 
 
 	
@@ -51,7 +51,7 @@
 		</ul>
 	</div>
 	<div class="form-container">
-		<form id="" name=""  method="post" action="{:U('home/index/yyregistersucc')}">
+		<form id="" name=""  method="post" action="<?php echo U('home/index/yyregistersucc');?>">
 			<div class="msg-container">
 				<div class="g-tips-box-succ hide">
 					<span class="gi gi-succ"></span>
@@ -69,8 +69,8 @@
 				</li>
 				<li>
 					<label class="item-name"><em>*</em>姓&nbsp;&nbsp;名</label>
-					<input type="hidden" name="mobile" value="{$mobile}">
-					<input type="hidden" name="password" value="{$password}">
+					<input type="hidden" name="mobile" value="<?php echo ($mobile); ?>">
+					<input type="hidden" name="password" value="<?php echo ($password); ?>">
 					<input type="text" id="doctorName" autocomplete="off" name="doctorName" class="form-input loginId" placeholder="请输入您的真实姓名" value=""/>
 				</li>
 				<li class="major-small g-clear" style="position:relative;z-index:3;">
@@ -85,15 +85,11 @@
 						
 						  <select class=" " id="province" name="province" style="width:164px;height:42px;">
 							<option value="0" id="sel_text" >
-                            <if condition="$region">
-                            {$region}
-                            <else/>
-                            请选择...
-                            </if>
+                            <?php if($region): echo ($region); ?>
+                            <?php else: ?>
+                            请选择...<?php endif; ?>
                             </option>
-                            <foreach name="province" item="val">
-                           <option value="{$val.provinceid}" >{$val['province']}</option>
-                            </foreach>
+                            <?php if(is_array($province)): foreach($province as $key=>$val): ?><option value="<?php echo ($val["provinceid"]); ?>" ><?php echo ($val['province']); ?></option><?php endforeach; endif; ?>
 						</select >
 					
 						<ul class="pro-list J_ProvinceList">
@@ -102,11 +98,9 @@
 					<div class="major  g-left">
 						 <select class="city jscitys " id="cities" name="cities" style="width:164px;height:42px;">
 							<option value="" id="">
-                            <if condition="$city">
-                            {$city}
-                            <else/>
-                            请选择...
-                            </if>
+                            <?php if($city): echo ($city); ?>
+                            <?php else: ?>
+                            请选择...<?php endif; ?>
                             </option>
                            
 						</select>

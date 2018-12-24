@@ -28,8 +28,100 @@
     <link rel="stylesheet" href="/Public/home/css/animate.min.css?v=20141222" type="text/css" />
     <script type="text/javascript" src="/Public/home/js/jquery.js"></script>
   
+ <style type="text/css">
+        .gips-container
+{
+    height: 70px;
+    width: 252px;
+    position: absolute;
+}
+.gips-body
+{
+    color: White;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 10px;
+    width: 420px;
+    height: 139px;
+    padding: 10px;
+    padding-right:20px;
+    position: relative;
+    float: left;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    z-index: 1;
+    behavior: url(PIE.htc);
+}
 
+.gips-body.red
+{
+    background-color: #CB2026;
+}
+
+.gips-close
+{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 90%;
+}
+.gips-icon
+{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px;
+    position: absolute;
+}
+/*icon at the bottom */
+.gips-icon-bottom
+{
+    margin-left: 12px;
+}
+
+.gips-icon-bottom.red
+{
+    border-color: #CB2026 transparent transparent transparent;
+}
+
+
+/*icon at the top*/
+
+.gips-icon-top
+{
+    margin-left: 12px;
+}
+
+.gips-icon-top.red
+{
+    border-color: transparent transparent #CB2026 transparent;
+}
+
+/*icon at the left*/
+
+.gips-icon-left
+{
+    margin-top: 12px; /*   float: left;*/
+}
+
+.gips-icon-left.red
+{
+    border-color: transparent #CB2026 transparent transparent;
+}
+
+/*icon at the right*/
+
+
+.gips-icon-right.red
+{
+    border-color: transparent transparent transparent #CB2026;
+}
+
+
+    </style>
  
+
 
     <link rel="stylesheet" href="/Public/home/css/list/fastorder.css?v=1537871245ee1e9f" type="text/css" />
 
@@ -237,7 +329,7 @@
             <div class="gp-fastorder" id="g-cfg">
                 <div id="g-breadcrumb">
                     <a href="<?php echo U('home/index/index');?>">首页</a>&gt;
-                    <span><?php echo ($res["0"]["class"]); ?></span>
+                    <span><?php echo ($res["0"]["class"]); ?></span> 
                 </div>
                 <div class="g-container">
                     <div class="fastorder-wrap">
@@ -250,13 +342,151 @@
                     <i class="pre-icon">&nbsp;&nbsp;&nbsp;</i>  
                     <i><?php echo ($key+1); ?>.</i>  
                     <!-- <span>12-14</span> -->
-                    <a  href="<?php echo U('home/index/allorderlist');?>?ins_id=<?php echo ($vo["ins_id"]); ?>" title="" target="_blank"><?php if($vo["make"] == true): echo ($vo["make"]); else: echo ($vo["inspection_name"]); endif; ?></a>
+                    <input type="hidden" name="" id="makeid<?php echo ($vo["ins_id"]); ?>"  value="<?php echo ($vo["make"]); ?>">
+                    <input type="hidden" name="" id="imageurl<?php echo ($vo["ins_id"]); ?>" value='<?php echo ($vo["textarea"]); ?>'>
+                    <a  href="<?php echo U('home/index/allorderlist');?>?ins_id=<?php echo ($vo["ins_id"]); ?>" id="ins_id<?php echo ($vo["ins_id"]); ?>" class="edit btn-primary btn-sm mr10 inspectionItemEditBtn" dataType="<?php echo ($vo["ins_id"]); ?>" target="_blank" ><?php if($vo["make"] == true): echo ($vo["inspection_name"]); ?>
+                        <?php else: echo ($vo["inspection_name"]); endif; ?></a>
                       <span class="date" style="float: right;"><?php echo (date('Y-m-d',$vo["create_time"])); ?>&nbsp;&nbsp;</span>
                 </li>
-            </ul>
+            </ul><?php endif; endforeach; endif; ?>           
+     <script  type="text/javascript">
+
+// $(document).ready(function(){
+//   $(".edit").hover(function(){
+//     var datalist = $(this).attr('dataType');
+//     // alert(datalist);
+//     },function(){
+   
+//   });
+// });
+            
+        (function ($) {
+          $(".edit").hover(function(){
+    var datalist = $(this).attr('dataType');
+    var texts = $("#makeid"+datalist).val();
+        var strs = $("#imageurl"+datalist).val();
+         var imgReg = /<img.*?(?:>|\/>)/gi;
+        //匹配src属性
+        var srcReg = /src=[\'\"]?([^\'\"]*)[\'\"]?/i;
+        var arr = strs.match(srcReg);
+        var imgs = arr[1];
+     
+       // alert(strs);
+    $.fn.extend({
+        gips: function (options) {
+          
+            var settings = $.extend({ delay: 500, autoHide: false, pause: 500, animationSpeed: 500, placement: 'top', theme: 'purple', imagePath: imgs, text: texts }, options);
+            return this.each(function () {
+                var control = $(this);
+                var iconDirection = 'top';
+                if (settings.placement == 'top')
+                    iconDirection = 'bottom';
+                if (settings.placement == 'bottom')
+                    iconDirection = 'top';
+                if (settings.placement == 'left')
+                    iconDirection = 'right';
+                if (settings.placement == 'right')
+                    iconDirection = 'left';
+
+                var closebtn = '';
+                if (!settings.autoHide)
+                    closebtn = '<img src="' + settings.imagePath + '" class="gips-close" alt="close" />';
+                var toolTipContainer = $('<div class="gips-container"><div class="gips-body ' + settings.theme + '"><img src="'+settings.imagePath+'" style="float:left;height:130px;width:130px;">&nbsp;&nbsp;' + settings.text + '' +
+                                        '' + closebtn + '</div><div class="gips-icon gips-icon-' + iconDirection + ' ' + settings.theme + '"></div></div>');
+
+                control.before(toolTipContainer);
+                var delay = settings.delay;
+                var toolTip = toolTipContainer;
+                toolTip.css({display:'none'}).find('div').css({ display: 'none', opacity: 0 });
+                var toolTipBody = $('.gips-body', toolTipContainer);
+                var toolTipIcon = $('.gips-icon', toolTipContainer);
+                var placement = settings.placement;
+                var interval;
+                control.mouseover(function () {
+                    var position = $(this).offset();
+                    var left = position.left;
+                    var top = position.top;
+                    if (placement == 'top') {
+                        top -= toolTip.height();
+                        var iconTop = toolTip.height();
+                        toolTipIcon.css('top', iconTop - toolTipIcon.outerHeight());
+                    }
+                    if (placement == 'bottom') {
+                        top += $(this).height() + toolTipIcon.outerHeight();
+                        var iconTop = toolTip.position().top;
+                        toolTipIcon.css('top', -toolTipIcon.outerHeight());
+                    }
+                    if (placement == 'left') {
+                        //triangle placement
+                        left -= toolTip.outerWidth();
+                        var iconLeft = toolTipBody.position().left + toolTipBody.outerWidth();
+                        toolTipIcon.css('left', iconLeft);
+                    }
+                    if (placement == 'right') {
+                        left += $(this).outerWidth();
+                        //triangle placement
+                        toolTipBody.css('left', toolTipIcon.outerWidth());
+                        toolTipIcon.css('left', 0);
+                    }
+                    toolTip.css({ left: left, top: top });
+                    interval = setTimeout(function () {
+                        showToolTip(toolTip);
+                    }, delay);
+                }).mouseout(function () {
+                    if (!settings.autoHide) {
+                        clearTimeout(interval);
+                    }
+                }).keydown(function () {
+                    clearTimeout(interval);
+                });
+
+                $('.gips-close', toolTipContainer).click(function () {
+                    hideToolTip(toolTip);
+                });
+
+                function showToolTip(toolTip) {
+                    //toolTip.fadeIn('slow');
+                    toolTip.css({ display: '' }).find('div').css('display', '').stop(false, true).animate({ opacity: 1 }, settings.animationSpeed, function () {
+                        if (settings.autoHide) {
+                            setTimeout(function () {
+                                hideToolTip(toolTip);
+                            }, settings.pause);
+                        }
+                    });
+                }
+                function hideToolTip(toolTip) {
+                    //                    toolTip.fadeOut('slow');
+                    toolTip.css({ display: 'none' }).find('div').stop(false, true).animate({ opacity: 0 }, settings.animationSpeed, function () {
+                        $(this).css('display', 'none');
+                    });
+                }
+
+            });
+        }
+    });
        
-                  
-        <div style="margin-top: 8px;"></div><?php endif; endforeach; endif; ?>
+    },function(){
+   
+  });
+ 
+
+       
+})(jQuery);
+    $(document).ready(function () {
+         $(".edit").hover(function(){
+    var datalist = $(this).attr('dataType');
+           
+             $('#ins_id'+datalist).gips({'theme': 'red',autoHide: true, placement: 'bottom' });
+        
+        });
+     });
+
+</script>
+ 
+ 
+        
+        <div style="margin-top: 8px;"></div>
+    
     <div style="float:right;"> 
         <tr class="content" style="">
                 <td colspan="3" bgcolor="#FFFFFF"><div class="pages">
@@ -351,5 +581,7 @@
       </script>
       
 </body>
+          
+
 
 </html>

@@ -425,10 +425,10 @@ function getCity($ip = '')
         $smsapi = "http://api.smsbao.com/";
         $user = "jinshiyuan1123"; //短信平台帐号
         $pass = md5("w134789"); //短信平台密码
-        $content="【择医网】您的验证码为".$num."，在5分钟内有效";//要发送的短信内容，随便设置
-        $phone = $phonenum;//要发送短信的手机号码
-        $sendurl = $smsapi."sms?u=".$user."&p=".$pass."&m=".$phone."&c=".urlencode($content);//固定格式
-        $result =file_get_contents($sendurl);//固定格式
+        // $content="【择医网】您的验证码为".$num."，在5分钟内有效";//要发送的短信内容，随便设置
+        // $phone = $phonenum;//要发送短信的手机号码
+        // $sendurl = $smsapi."sms?u=".$user."&p=".$pass."&m=".$phone."&c=".urlencode($content);//固定格式
+        // $result =file_get_contents($sendurl);//固定格式
         echo $num;
    }
 
@@ -477,10 +477,26 @@ function getCity($ip = '')
         // var_dump($p);die;
         // $list = $m->field(true)->where($where)->order('id')->limit($p->firstRow, $p->listRows)->select();
        $list = $m->field(true)->where($where)->order('ins_id')->limit($p->firstRow, $p->listRows)->select();
-       // p($list);die;
+      
+     
+     
+       $this->assign('pagelist',$count);
         $this->assign('page', $p->show()); // 赋值分页输出
         $this->assign('res',$list);
         $this->display(':allorder');
+   }
+
+   public function allordertop(){
+    
+       $class = I('get.');
+      
+        // $res = M('his_inspectionfee')->where("class='$class'")->select();
+         $m = M('his_inspectionfee');      
+        $where = "class='$class'";
+      
+       $list = $m->order('ins_id')->select();
+       var_dump($list);
+       return $list;
    }
     public function allorderlist(){
      // Vendor('./admin/index.html');
