@@ -74,15 +74,15 @@ function getCity($ip = '')
     return $data;   
   }
 
-    public function index()
-    {
-        $ip = $this->getIP();
-        $getip = $this->getCity($ip);
+    // public function index()
+    // {
+    //     $ip = $this->getIP();
+    //     $getip = $this->getCity($ip);
       
-        $this->assign('region',$getip['region']);
-        $this->assign('city',$getip['city']);
-        $this->display(':index');
-    }
+    //     $this->assign('region',$getip['region']);
+    //     $this->assign('city',$getip['city']);
+    //     $this->display(':index');
+    // }
 
 
     public function register()
