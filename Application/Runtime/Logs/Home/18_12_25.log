@@ -445,3 +445,33 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000682s ]
 
+[ 2018-12-25T10:16:38+08:00 ] 127.0.0.1 /index.php/home/index/allorder?class=%E7%BD%91%E7%AB%99%E5%85%AC%E5%91%8A
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0195s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dzm_his_inspectionfee` WHERE ( class='网站公告' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `ins_id`,`mid`,`hid`,`inspection_name`,`class`,`unit_price`,`textarea`,`cost`,`create_time`,`update_time`,`make`,`socure`,`user`,`unit`,`class_id` FROM `dzm_his_inspectionfee` WHERE ( class='网站公告' ) ORDER BY ins_id LIMIT 0,10   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
