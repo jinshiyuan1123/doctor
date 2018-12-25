@@ -139,7 +139,7 @@ function getCity($ip = '')
          $this->assign('listrow2',$listrow2);
          $this->assign('listrow3',$listrow3);
          $this->assign('listrow4',$listrow4);
-         $this->assign('listrow1',$listrow5);
+         $this->assign('listrow5',$listrow5);
        
         $this->assign('reslist5',$res5);
         $this->assign('reslist6',$res6);

@@ -2116,7 +2116,7 @@ $(document).ready(function(){
                             </div>
                             <div class="focus-list">
                             <ul>
-                            <?php if(is_array($reslilistrow5st2)): foreach($reslilistrow5st2 as $key=>$val): if($val['class'] == '百科'): if($val['unit_price'] == '1'): ?><li>
+                            <?php if(is_array($listrow5)): foreach($listrow5 as $key=>$val): if($val['class'] == '百科'): if($val['unit_price'] == '1'): ?><li>
                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                             <i class="dot"></i>
                             <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -2573,7 +2573,7 @@ $(document).ready(function(){
                                         
                                     </div><br/>
                                        <?php echo ($vo["hospital"]); ?><br/>
-                                       二级甲等
+                                       医生
                                 </div><?php endforeach; endif; ?>  </div>
 
                         </div>
