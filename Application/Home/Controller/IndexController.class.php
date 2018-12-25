@@ -1536,7 +1536,7 @@ public function recursived($meta,$flag,$count )
 
  function zonghelist()
  {
-  $res = M('his_supplier')->where()->select();
+  $res = M('his_yydoctor')->where()->select();
   $this->assign('reslist',$res);
   $this->display(':zonghelist');
  }

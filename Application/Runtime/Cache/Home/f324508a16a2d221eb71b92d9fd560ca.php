@@ -2549,6 +2549,7 @@ $(document).ready(function(){
                         <div class="g-grid-left" style="width:1200px;border-style:solid;">
                            
                             <div class="news-main g-clear" style="float:left;width:580px;border-radius: 5px;border:1px solid #e4e4e4">
+                                 <h5 style="padding: 0px 23px 20px 17px;font-size: 18px;font-weight: normal;color: #666;">&nbsp;&nbsp;推荐医院<li style="float:right;list-style:none;font-size: 10px;"><a href="<?php echo U('home/index/zonghelist');?>" target="_blank">更多</a>&nbsp;</li></h5>
                                  <?php if(is_array($rowlist)): foreach($rowlist as $key=>$vo): ?><div class="news-item medical-strategy J_medicalStrategy" style="width:150px;border-right: 1px dotted #f9fbf9;">
                                     
                                     <div class="focus-single g-clear">
@@ -2563,7 +2564,8 @@ $(document).ready(function(){
                             </div>
                          <div class="news-main g-clear" style="float:left;width:10px;border-top: 2px solid rgb(255, 255, 255);"> </div>
 
-                            <div class="news-main g-clear" style="float:left;width:580px;border-radius: 5px;border:1px solid #e4e4e4"> 
+                            <div class="news-main g-clear" style="float:left;width:580px;border-radius: 5px;border:1px solid #e4e4e4">
+                             <h5 style="padding: 0px 23px 20px 17px;font-size: 18px;font-weight: normal;color: #666;">&nbsp;&nbsp;推荐医生<li style="float:right;list-style:none;font-size: 10px;"><a href="<?php echo U('home/index/topiclist');?>?class=医院公开" target="_blank">更多</a>&nbsp;</li></h5> 
                                 <?php if(is_array($rowdoctor)): foreach($rowdoctor as $key=>$vo): ?><div class="news-item medical-strategy J_medicalStrategy" style="width:150px;border-right: 1px dotted #f9fbf9;">
                                     
                                     <div class="focus-single g-clear">
