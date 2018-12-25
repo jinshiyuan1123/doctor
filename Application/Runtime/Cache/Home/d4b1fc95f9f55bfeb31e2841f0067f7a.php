@@ -1,15 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit();?>
-
-
-
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
 	    
 	<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
-	<title>张百中医生预约挂号_沭阳县人民医院张百中大夫出诊时间_39就医助手</title>
-	<meta name="Keywords" content="张百中医生，张百中挂号，张百中大夫，出诊时间" />
-	<meta name="Description" content="【39就医助手】为您提供沭阳县人民医院内科张百中医生的个人简介、擅长疾病、出诊时间表、挂号预约电话、就诊评价等信息,同时提供沭阳县人民医院张百中大夫网上预约挂号服务，帮助您解决挂号难题，轻松挂号预约。【39就医助手】，智慧您的医疗。"/>
+	<title>择医网(挂号网)- 网上在线挂号预约平台</title>
+ <meta name="keywords" content="挂号网,择医网,互联网医院,预约挂号,网上预约,网上挂号,网上预约挂号,在线问诊,在线咨询,健康资讯,医院挂号,医院预约,专家门诊" />
+    <meta name="description" content="择医网,互联网医院国家试点平台,聚合了全国重点医院,学科带头人,副主任以上的医师,提供预约挂号,在线诊疗,电子处方,在线配药全方位服务。找大专家,上择医网。" />
 	    <link href="/Public/home/css/topic/dy_base.css?v=2014111410" type="text/css" rel="stylesheet" />
 	    <link type="text/css" rel="stylesheet" href="/Public/home/css/topic/yyk_keshi.css?20160829"/>
 	    <link type="text/css" rel="stylesheet" href="/Public/home/css/topic/yyk_doc.css"/>
@@ -927,47 +923,7 @@ document.write("<script data-proxy=\"http://dy.health.cnwest.com/page/partner/pr
 
 <div class="footwrap">
 <!--增设底部 20140915 begin-->
-<div class="footwrap footwrap-2016">
-		<div class="jyzs_foot_k clearfix">
-			<div class="item1">
-				<h3>关注或联系我们</h3>
-				<div class="clearfix bbb">
-					<div class="aa_item a3">
-						<s></s><a href="http://weibo.com/yyk39">39健康网就医助手</a>
-					</div>
-					<div class="aa_item a2">
-						<s></s><a href="javascript:;">商务合作：020-85501999</a>
-					</div>
-					<!-- qq群屏蔽掉 -->
-					<!-- <div class="aa_item a5">
-						<s></s><a href="javascript:;">用户反馈QQ群：537351472</a>
-					</div> -->
-					<!-- v5.5去除人工导诊入口 -->
-					<!--  
-					<div class="aa_item a4">
-						<s></s><a class="zxdz" href="http://kefu.39.net/chat/home.do"></a>
-					</div>
-					-->
-				</div>
-			</div>
-			<div class="item2">				
-				<div class="clearfix">
-					<img class="adwx" src="http://pimg.39.net/PictureLib/A/f76/20160328/org_634079.png">
-					<h3>就医助手</h3>
-			        <p>医院医生推荐  I  预约挂号</p>
-			        <p>第一时间知晓最新的健康资讯。</p>
-				</div>
-			</div>
-			<div class="item2" style="width: 274px">
-				<div class="clearfix">
-					<img class="adwx" src="https://image.39.net/dist/common/jbk/pc/code.jpg">
-					<h3>39健康网</h3>
-					<p style="padding-right: 0;">健康科普｜权威内容｜医生观点</p>
-					<p style="padding-right: 0;">每天获取最新鲜的健康科普内容。</p>
-			   </div>
-		    </div>
-		</div>
-	</div>
+
 	<!-- pc就医助手广告位都要添加上 “广告” -->
 	<script src="http://image.39.net/art2013/js/ad-icon.js" type="text/javascript"></script>
 	<script>
