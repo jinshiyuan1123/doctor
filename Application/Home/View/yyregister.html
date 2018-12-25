@@ -141,7 +141,84 @@
 		</div>	
 		<!-- end of #g-wrapper -->
 		
-<script type="text/javascript" src="http://www.zzw0527.com/testlist/doctor.min.js"></script>
+<script type="text/javascript" >
+	
+function checkPost(){
+	var mobile = $("#mobile").val();
+	var reg=/^[1][3678]\d{9}/;
+	if(mobile==''){
+		layer.msg('手机不能为空');
+		return false;
+	}
+	if(!reg.test(mobile)){
+		layer.msg('手机格式错误');
+		return false;
+	}
+	var smsCodes = $("#validCode").val();
+    if(smsCodes==''){
+         layer.msg('请点输入验证码！');
+        return false;
+    }
+    var smsCode = $("#smsCode").val();
+    if(smsCode ==''){
+    	layer.msg('短信验证码不能为空');
+    }
+
+     var codelist = $("#codelist").val();
+         
+       if(codelist != smsCode){
+        layer.msg('验证码输入错误');
+        return false;
+       }
+
+	 var agreement =document.getElementById("agreement").checked;
+    if(!agreement){
+        layer.msg('阅读并同意服务协议及隐私权政策后进行下一步！');
+            return false;
+    }
+	
+}
+//发送验证码函数
+    function sendsms(e){
+    var phone = $('#mobile').val();//手机号码
+      $.post( 
+        "/home/index/checkcode.php",//传递的方法
+        {phone:phone},//参数
+        function (res){
+            $("#codelist").val(res);
+         
+          },
+          'json'
+        )
+        /*发送验证码功能*/
+        countdown(e);                                   //若发送验证码成功，则调用倒计时函数
+    }
+    //倒计时函数
+    var time = 60;
+    function countdown(e){
+
+        if (time == 0) {
+            //e.setAttribute('disabled',false);         对没有disbaled属性的span标签，此方法无效
+            e.setAttribute("onclick","sendsms(this)");
+            $("#validate_span").html("获取验证码");
+            time = 10;
+        }else{
+            //e.attr('disabled',true);                  对没有disbaled属性的span标签，此方法也无效
+            //e.setAttribute("onclick", '');            这样写也可以
+            e.removeAttribute("onclick");
+            $("#validate_span").html("重新发送(" + time + ")");
+            time--;
+            setTimeout(function() {
+                countdown(e)
+            },1000)
+        }
+
+
+
+   
+    }
+
+</script>
 
 	</body>
 </html>
