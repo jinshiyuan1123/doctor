@@ -1779,7 +1779,7 @@ $(document).ready(function(){
 </script>
 
 
-           <div class="g-container landing-section news-section">
+   <div class="g-container landing-section news-section">
                     <div class="title-bar">
                          <!-- <h2>医院入住</h2> -->
                         <span class="slogan">
@@ -1825,7 +1825,6 @@ $(document).ready(function(){
                        
                     </div>
                 </div>
-
                  
               <div class="g-container landing-section news-section">
                     <div class="title-bar">
@@ -2519,15 +2518,7 @@ $(document).ready(function(){
                     </div>
                 </div>
 
-                
-            </div>
-            <div class="helpqs-list hide">
-
-            </div>
-
-        </div>
-
-          <div id="gf">
+                   <div id="gf">
             <div class="g-container">
                 <div class="g-footer g-clear">
                     <a class="logo g-left" href="/" onmousedown="return _smartlog(this,'BTM')"></a>
@@ -2582,6 +2573,15 @@ $(document).ready(function(){
             </div>
         </div>
 
+
+            </div>
+            <div class="helpqs-list hide">
+
+            </div>
+
+        </div>
+
+       
 
         <div id="gm-bg"></div>
         <div id="gm-mask">
