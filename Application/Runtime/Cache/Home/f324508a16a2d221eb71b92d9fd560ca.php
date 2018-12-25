@@ -2569,7 +2569,7 @@ $(document).ready(function(){
                                 <?php if(is_array($rowdoctor)): foreach($rowdoctor as $key=>$vo): ?><div class="news-item medical-strategy J_medicalStrategy" style="width:150px;border-right: 1px dotted #f9fbf9;">
                                     
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="<?php echo U('home/index/zonghe');?>?id=<?php echo ($vo["id"]); ?>">
+                                        <a target="_blank" href="<?php echo U('home/index/yishen');?>?id=<?php echo ($vo["id"]); ?>">
                                             <img src="/Public/home/images/doctorlist.png" alt="">
                                         </a>
                                         

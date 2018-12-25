@@ -1547,6 +1547,16 @@ public function recursived($meta,$flag,$count )
   $this->assign('reslist',$res);
   $this->display(':yishenlist');
  }
+
+ function yishen()
+ {
+  $id = I('get.id');
+  $data = "id='$id'";
+  $res = M('his_doctor')->where($data)->find();
+  $this->assign('res',$res);
+  // var_dump($res);
+  $this->display(':yishen');
+ }
  
   
 
