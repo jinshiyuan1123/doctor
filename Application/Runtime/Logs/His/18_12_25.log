@@ -5201,3 +5201,308 @@ INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000702s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001790s ]
 ERR: 无法加载控制器:Hospital
 
+[ 2018-12-25T12:26:27+08:00 ] 127.0.0.1 /Public/home/css/topic/common/common.css?_=1540800883543
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000426s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002074s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-12-25T12:26:27+08:00 ] 127.0.0.1 /bbs/img/topic/article-grey.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+
+[ 2018-12-25T12:26:27+08:00 ] 127.0.0.1 /bbs/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+
+[ 2018-12-25T12:28:12+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+
+[ 2018-12-25T12:28:12+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+
+
+[ 2018-12-25T12:28:12+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2018-12-25T12:28:12+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+
+[ 2018-12-25T12:28:23+08:00 ] 127.0.0.1 /Public/home/img/expert_2015/sprite20170112.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/img/v2/index-banner.jpg?v=2017_04_28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/css/images/img-index.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png?v=20170505
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/img/internethospital/opened.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/img/search/more-dot.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/img/consult.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/css/images/yyk_serach_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /Public/home/img/rightbar-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /img/v2/hp2.png?_=20140624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+
+[ 2018-12-25T12:31:17+08:00 ] 127.0.0.1 /json/white/area/provinces
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000374s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001705s ]
+ERR: 无法加载控制器:Json
+
+[ 2018-12-25T12:31:20+08:00 ] 127.0.0.1 /Public/home/css/topic/common/common.css?_=1540800883543
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000342s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-12-25T12:31:20+08:00 ] 127.0.0.1 /bbs/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-12-25T12:31:20+08:00 ] 127.0.0.1 /bbs/img/topic/article-grey.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /img/v2/1px-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /img/v2/sprites.png?_=20131125
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/img/v2/index-banner.jpg?v=2017_04_28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/css/images/img-index.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png?v=20170505
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/img/2015/home/ask.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/css/images/yyk_serach_arrow.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/img/internethospital/opened.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/img/search/more-dot.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/img/consult.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /Public/home/img/rightbar-bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /img/v2/hp2.png?_=20140624
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+
+[ 2018-12-25T12:31:44+08:00 ] 127.0.0.1 /json/white/area/provinces
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000546s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002222s ]
+ERR: 无法加载控制器:Json
+
+[ 2018-12-25T12:31:47+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+
+[ 2018-12-25T12:31:47+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+
+[ 2018-12-25T12:31:47+08:00 ] 127.0.0.1 /Public/home/img/2015/home/nav_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+
+[ 2018-12-25T12:31:47+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+
+[ 2018-12-25T12:31:47+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+
+[ 2018-12-25T12:32:14+08:00 ] 127.0.0.1 /Public/home/img/2015/home/doctor-login.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+
+[ 2018-12-25T12:32:14+08:00 ] 127.0.0.1 /Public/home/img/2015/home/home-sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2018-12-25T12:32:14+08:00 ] 127.0.0.1 /Public/home/img/spritesheet.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+
+[ 2018-12-25T12:32:14+08:00 ] 127.0.0.1 /Public/home/img/weDoctor.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+

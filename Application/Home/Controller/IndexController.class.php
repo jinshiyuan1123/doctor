@@ -1540,6 +1540,13 @@ public function recursived($meta,$flag,$count )
   $this->assign('reslist',$res);
   $this->display(':zonghelist');
  }
+
+ function yishenlist(){
+
+  $res = M('his_doctor')->select();
+  $this->assign('reslist',$res);
+  $this->display(':yishenlist');
+ }
  
   
 
