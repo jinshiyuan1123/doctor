@@ -741,7 +741,7 @@
 
                 </div>
                
-                  
+                    
 
    <div class="g-container landing-section consult-section " data-lazy-url="">
         
@@ -1457,70 +1457,7 @@
           </li></ul></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href=""></a><a class="bx-next" href=""></a></div></div></div>
 </div>
 
-<div class="consult-show">
-<ul class="J_ConsultShow">
-        <li>
-            <div class="ask g-clear">
-              <i class="pre-icon">问</i>
-              <a target="_blank" href="/consult/detail/12438233" style="color: #333;text-decoration:none;"><span class="content" title="月经走后10天又出血了，不知道是第二次来月经还是异常出血。已经做过彩超">月经走后10天又出血了，不知道是第二次来月经还是异常出血。已经做过彩超</span></a>
-              <span class="date">时间：2017-06-26</span>
-            </div>
-            <div class="answer g-clear" style="display: block;">
-              <i class="pre-icon">答</i>
-              <div class="inner g-clear">
-                <i class="arrow"></i>
-                <a target="_blank" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000" monitor="">
-                    <img class="portrait" src="https://kano.guahao.cn/Bde2680340_image140.jpg" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" alt="韩凤英" height="35" width="35">
-                </a>
-                <p>
-                  <span class="doc-info"><a target="_blank" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000">韩凤英</a>&nbsp;副主任医师&nbsp;&nbsp;中国人民解放军第474医院-妇产科</span>
-                  <span class="doc-answer">从B超和你的未次月经时间看，不排除这次出血是排卵期出血，你不用紧张，口服抗炎、止血药物5天，观察观察。&nbsp;&nbsp;<a target="_blank" href="/consult/detail/12438233" monitor="home,ask,rate">详细</a></span>
-                </p>
-              </div>
-            </div>
-        </li>
-        <li>
-            <div class="ask g-clear">
-              <i class="pre-icon">问</i>
-              <a target="_blank" href="/consult/detail/12634918" style="color: #333;text-decoration:none;"><span class="content" title="医生，我最后一次经期是2017年5月15号！6月17号早上查出怀孕，中午开始感冒发烧有点咳嗽！发烧一直持续到18号下午才退烧！温度一直都在38.2度左右！最高就是39.4！几个小时！医生没让吃药！让物理降温！听说前三个月感冒发烧会导致胎儿畸形！所以我这胎还能要吗！">医生，我最后一次经期是2017年5月15号！6月17号早上查出怀孕，中午开始感冒发烧有点咳嗽！发烧一直持续到18号下午才退烧！温度一直都在38.2度左右！最高就是39.4！几个小时！医生没让吃药！让物理降温！听说前三个月感冒发烧会导致胎儿畸形！所以我这胎还能要吗！</span></a>
-              <span class="date">时间：2017-06-26</span>
-            </div>
-            <div class="answer g-clear">
-              <i class="pre-icon">答</i>
-              <div class="inner g-clear">
-                <i class="arrow"></i>
-                <a target="_blank" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000" monitor="">
-                    <img class="portrait" src="https://kano.guahao.cn/Bde2680340_image140.jpg" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" alt="韩凤英" height="35" width="35">
-                </a>
-                <p>
-                  <span class="doc-info"><a target="_blank" href="/expert/3993d23f-7c7a-4f8b-ac29-3651aa6d7a5b000">韩凤英</a>&nbsp;副主任医师&nbsp;&nbsp;中国人民解放军第474医院-妇产科</span>
-                  <span class="doc-answer">从你的未次月经算，你才孕36天，因时间太短，建议一周后复查B超，以明确宫内孕。孕早期感冒发烧多少对胚胎是有影响...&nbsp;&nbsp;<a target="_blank" href="/consult/detail/12634918" monitor="home,ask,rate">详细</a></span>
-                </p>
-              </div>
-            </div>
-        </li>
-        <li>
-            <div class="ask g-clear">
-              <i class="pre-icon">问</i>
-              <a target="_blank" href="/consult/detail/10782672" style="color: #333;text-decoration:none;"><span class="content" title="外阴长疙瘩，会疼，白带异常">外阴长疙瘩，会疼，白带异常</span></a>
-              <span class="date">时间：2017-05-06</span>
-            </div>
-            <div class="answer g-clear">
-              <i class="pre-icon">答</i>
-              <div class="inner g-clear">
-                <i class="arrow"></i>
-                <a target="_blank" href="/expert/45558090-a2e5-44a2-b573-6911626c5901000" monitor="">
-                    <img class="portrait" src="https://kano.guahao.cn/MiQ2828568_image140.jpg?timestamp=1469714574274" onerror="this.src='https://static.guahao.cn/img/character/doc-f-l.png?_=20121223';" alt="刁斌" height="35" width="35">
-                </a>
-                <p>
-                  <span class="doc-info"><a target="_blank" href="/expert/45558090-a2e5-44a2-b573-6911626c5901000">刁斌</a>&nbsp;主任医师&nbsp;&nbsp;北部战区总医院-妇科</span>
-                  <span class="doc-answer">外阴小疙瘩 痒 可能霉菌性阴道炎 没有性生活就口服氟康唑150 毫克 72 小时一次 2次就可以&nbsp;&nbsp;<a target="_blank" href="/consult/detail/10782672" monitor="home,ask,rate">详细</a></span>
-                </p>
-              </div>
-            </div>
-        </li>
-      </ul>  
-    </div>
+
 </div>
  </div>
 
@@ -1842,6 +1779,52 @@ $(document).ready(function(){
 </script>
 
 
+           <div class="g-container landing-section news-section">
+                    <div class="title-bar">
+                         <!-- <h2>医院入住</h2> -->
+                        <span class="slogan">
+            <!-- 关注健康，享受生活！ -->
+                <a href="#" style="display:none">寻找医言堂“好医生” 找的就是您！
+                </a>
+            </span>
+                    </div>
+                    <div class="main-ctn g-clear">
+                        <div class="g-grid-left" style="width:1200px;border-style:solid;">
+                           
+                            <div class="news-main g-clear" style="float:left;width:580px;border-radius: 5px;border:1px solid #e4e4e4">
+                                 <h5 style="padding: 0px 23px 20px 17px;font-size: 18px;font-weight: normal;color: #666;">&nbsp;&nbsp;推荐医院<li style="float:right;list-style:none;font-size: 10px;"><a href="<?php echo U('home/index/zonghelist');?>" target="_blank">更多</a>&nbsp;</li></h5>
+                                 <?php if(is_array($rowlist)): foreach($rowlist as $key=>$vo): ?><div class="news-item medical-strategy J_medicalStrategy" style="width:150px;border-right: 1px dotted #f9fbf9;">
+                                    
+                                    <div class="focus-single g-clear">
+                                        <a target="_blank" href="<?php echo U('home/index/zonghe');?>?id=<?php echo ($vo["id"]); ?>">
+                                            <img src="/Public/home/images/default_yy.gif" alt="">
+                                        </a>
+                                        
+                                    </div><br/>
+                                       <?php echo ($vo["hospital"]); ?><br/>
+                                       二级甲等
+                                </div><?php endforeach; endif; ?>  
+                            </div>
+                         <div class="news-main g-clear" style="float:left;width:10px;border-top: 2px solid rgb(255, 255, 255);"> </div>
+
+                            <div class="news-main g-clear" style="float:left;width:580px;border-radius: 5px;border:1px solid #e4e4e4">
+                             <h5 style="padding: 0px 23px 20px 17px;font-size: 18px;font-weight: normal;color: #666;">&nbsp;&nbsp;推荐医生<li style="float:right;list-style:none;font-size: 10px;"><a href="<?php echo U('home/index/yishenlist');?>" target="_blank">更多</a>&nbsp;</li></h5> 
+                                <?php if(is_array($rowdoctor)): foreach($rowdoctor as $key=>$vo): ?><div class="news-item medical-strategy J_medicalStrategy" style="width:150px;border-right: 1px dotted #f9fbf9;">
+                                    
+                                    <div class="focus-single g-clear">
+                                        <a target="_blank" href="<?php echo U('home/index/yishen');?>?id=<?php echo ($vo["id"]); ?>">
+                                            <img src="/Public/home/images/doctorlist.png" alt="">
+                                        </a>
+                                        
+                                    </div><br/>
+                                       <?php echo ($vo["hospital"]); ?><br/>
+                                       医生
+                                </div><?php endforeach; endif; ?>  </div>
+
+                        </div>
+                       
+                    </div>
+                </div>
 
                  
               <div class="g-container landing-section news-section">
@@ -2536,53 +2519,7 @@ $(document).ready(function(){
                     </div>
                 </div>
 
-                   <div class="g-container landing-section news-section">
-                    <div class="title-bar">
-                         <h2>医院入住</h2>
-                        <span class="slogan">
-            <!-- 关注健康，享受生活！ -->
-                <a href="#" style="display:none">寻找医言堂“好医生” 找的就是您！
-                </a>
-            </span>
-                    </div>
-                    <div class="main-ctn g-clear">
-                        <div class="g-grid-left" style="width:1200px;border-style:solid;">
-                           
-                            <div class="news-main g-clear" style="float:left;width:580px;border-radius: 5px;border:1px solid #e4e4e4">
-                                 <h5 style="padding: 0px 23px 20px 17px;font-size: 18px;font-weight: normal;color: #666;">&nbsp;&nbsp;推荐医院<li style="float:right;list-style:none;font-size: 10px;"><a href="<?php echo U('home/index/zonghelist');?>" target="_blank">更多</a>&nbsp;</li></h5>
-                                 <?php if(is_array($rowlist)): foreach($rowlist as $key=>$vo): ?><div class="news-item medical-strategy J_medicalStrategy" style="width:150px;border-right: 1px dotted #f9fbf9;">
-                                    
-                                    <div class="focus-single g-clear">
-                                        <a target="_blank" href="<?php echo U('home/index/zonghe');?>?id=<?php echo ($vo["id"]); ?>">
-                                            <img src="/Public/home/images/default_yy.gif" alt="">
-                                        </a>
-                                        
-                                    </div><br/>
-                                       <?php echo ($vo["hospital"]); ?><br/>
-                                       二级甲等
-                                </div><?php endforeach; endif; ?>  
-                            </div>
-                         <div class="news-main g-clear" style="float:left;width:10px;border-top: 2px solid rgb(255, 255, 255);"> </div>
-
-                            <div class="news-main g-clear" style="float:left;width:580px;border-radius: 5px;border:1px solid #e4e4e4">
-                             <h5 style="padding: 0px 23px 20px 17px;font-size: 18px;font-weight: normal;color: #666;">&nbsp;&nbsp;推荐医生<li style="float:right;list-style:none;font-size: 10px;"><a href="<?php echo U('home/index/yishenlist');?>" target="_blank">更多</a>&nbsp;</li></h5> 
-                                <?php if(is_array($rowdoctor)): foreach($rowdoctor as $key=>$vo): ?><div class="news-item medical-strategy J_medicalStrategy" style="width:150px;border-right: 1px dotted #f9fbf9;">
-                                    
-                                    <div class="focus-single g-clear">
-                                        <a target="_blank" href="<?php echo U('home/index/yishen');?>?id=<?php echo ($vo["id"]); ?>">
-                                            <img src="/Public/home/images/doctorlist.png" alt="">
-                                        </a>
-                                        
-                                    </div><br/>
-                                       <?php echo ($vo["hospital"]); ?><br/>
-                                       医生
-                                </div><?php endforeach; endif; ?>  </div>
-
-                        </div>
-                       
-                    </div>
-                </div>
-
+                
             </div>
             <div class="helpqs-list hide">
 
