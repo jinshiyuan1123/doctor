@@ -109,24 +109,24 @@ function getCity($ip = '')
         $class5 = "医院动态";
         $class6 ="医院健康";
         $user = "择医网讲堂";
-        $res = M('his_inspectionfee')->where("class='$class' ")->limit(6)->select();
-        $res1 = M('his_inspectionfee')->where("class='$class1' ")->limit(6)->select();
-        $res2 = M('his_inspectionfee')->where("class='$class2' ")->limit(6)->select();
-        $res3 = M('his_inspectionfee')->where("class='$class3' ")->limit(6)->select();
-        $res4 = M('his_inspectionfee')->where("class='$class4' ")->limit(6)->select();
-        $res5 = M('his_inspectionfee')->where("class='$class5' ")->limit(6)->select();
-         $res6 = M('his_inspectionfee')->where("class='$class6' ")->limit(6)->select();
-        $res7 = M('his_inspectionfee')->where("class='$class7' ")->limit(6)->select();
-        $res8 = M('his_inspectionfee')->where("class='$class8' ")->limit(6)->select();
-        $res9 = M('his_inspectionfee')->where("class='$class9' ")->limit(6)->select();
-        $res10 = M('his_inspectionfee')->where("class='$user' ")->limit(3)->select();
-         $rowdoctor= M('his_doctor')->where()->limit(3)->select();
-          $row = M('his_yydoctor')->where()->limit(3)->select();
-        $listrow1 = M('his_inspectionfee')->where("class='$list1' ")->limit(6)->select();
-        $listrow2 = M('his_inspectionfee')->where("class='$list2' ")->limit(6)->select();
-        $listrow3 = M('his_inspectionfee')->where("class='$list3' ")->limit(6)->select();
-        $listrow4 = M('his_inspectionfee')->where("class='$list4' ")->limit(6)->select();
-        $listrow5 = M('his_inspectionfee')->where("class='$list5' ")->limit(6)->select();
+        $res = M('his_inspectionfee')->where("class='$class' ")->order('ins_id desc')->limit(6)->select();
+        $res1 = M('his_inspectionfee')->where("class='$class1' ")->order('ins_id desc')->limit(6)->select();
+        $res2 = M('his_inspectionfee')->where("class='$class2' ")->order('ins_id desc')->limit(6)->select();
+        $res3 = M('his_inspectionfee')->where("class='$class3' ")->order('ins_id desc')->limit(6)->select();
+        $res4 = M('his_inspectionfee')->where("class='$class4' ")->order('ins_id desc')->limit(6)->select();
+        $res5 = M('his_inspectionfee')->where("class='$class5' ")->order('ins_id desc')->limit(6)->select();
+         $res6 = M('his_inspectionfee')->where("class='$class6' ")->order('ins_id desc')->limit(6)->select();
+        $res7 = M('his_inspectionfee')->where("class='$class7' ")->order('ins_id desc')->limit(6)->select();
+        $res8 = M('his_inspectionfee')->where("class='$class8' ")->order('ins_id desc')->limit(6)->select();
+        $res9 = M('his_inspectionfee')->where("class='$class9' ")->order('ins_id desc')->limit(6)->select();
+        $res10 = M('his_inspectionfee')->where("class='$user' ")->order('ins_id desc')->limit(3)->select();
+         $rowdoctor= M('his_doctor')->where()->order('id desc')->limit(3)->select();
+          $row = M('his_yydoctor')->where()->order('id desc')->limit(3)->select();
+        $listrow1 = M('his_inspectionfee')->where("class='$list1' ")->order('ins_id desc')->limit(6)->select();
+        $listrow2 = M('his_inspectionfee')->where("class='$list2' ")->order('ins_id desc')->limit(6)->select();
+        $listrow3 = M('his_inspectionfee')->where("class='$list3' ")->order('ins_id desc')->limit(6)->select();
+        $listrow4 = M('his_inspectionfee')->where("class='$list4' ")->order('ins_id desc')->limit(6)->select();
+        $listrow5 = M('his_inspectionfee')->where("class='$list5' ")->order('ins_id desc')->limit(6)->select();
        
          $this->assign('rowdoctor',$rowdoctor);
          $this->assign('rowlist',$row);
@@ -476,12 +476,12 @@ function getCity($ip = '')
         // $res = M('his_inspectionfee')->where("class='$class'")->select();
          $m = M('his_inspectionfee');      
         $where = "class='$class'";
-        $count = $m->where($where)->count();
+        $count = $m->where($where)->order('ins_id desc')->count();
       
         $p = $this->getpage($count,10);
         // var_dump($p);die;
         // $list = $m->field(true)->where($where)->order('id')->limit($p->firstRow, $p->listRows)->select();
-       $list = $m->field(true)->where($where)->order('ins_id')->limit($p->firstRow, $p->listRows)->select();
+       $list = $m->field(true)->where($where)->order('ins_id desc')->limit($p->firstRow, $p->listRows)->select();
       
      
      
@@ -499,8 +499,8 @@ function getCity($ip = '')
          $m = M('his_inspectionfee');      
         $where = "class='$class'";
       
-       $list = $m->order('ins_id')->select();
-       var_dump($list);
+       $list = $m->order('ins_id desc')->select();
+       // var_dump($list);
        return $list;
    }
     public function allorderlist(){
@@ -1422,7 +1422,7 @@ public function recursived($meta,$flag,$count )
 
   public function topiclist (){
     $class = I('get.class');
-    $data = M('his_inspectionfee')->where("class='$class'")->select();
+    $data = M('his_inspectionfee')->where("class='$class'")->order('ins_id desc')->select();
     $this->assign('datalist',$data);
     $this->display(':topiclist');
   }
