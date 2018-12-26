@@ -2080,36 +2080,9 @@ $(document).ready(function(){
                             </li><?php endif; endif; endforeach; endif; ?>
                             </ul>
                             </div>
-                            </div>     
-<div class="news-item health-preserve J_healthPreserve">
-                            <h5>百科<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=百科" target="_blank">更多</a></li></h5>
-                            <div class="focus-single g-clear">
-                            <a target="_blank" href="#">
-                            <img src="/Public/home/images/bottom-default.png">
-                            </a>
-                            <div class="text">
-                            <a target="_blank" href="#" class="title">中医望诊，一眼就看出有什么病</a>
-                            <span class="summary">
-                            脸色反应气血的兴衰　　面部的色泽是气血通过经络上注于面而表现出来的，气血的盛衰及运行情况，必定会从面色上反映出来　　脸色...
-                            <a target="_blank" href="#">[详细]
-                            </a>
-                            </span>
-                            </div>
-                            </div>
-                            <div class="focus-list">
-                            <ul>
-                            <?php if(is_array($listrow5)): foreach($listrow5 as $key=>$val): if($val['class'] == '百科'): if($val['unit_price'] == '1'): ?><li>
-                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
-                            <i class="dot"></i>
-                            <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
-                            <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
-                            <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
-                            </a>
-                            <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                            </li><?php endif; endif; endforeach; endif; ?>
-                            </ul>
-                            </div>
-                            </div>
+                            </div>   
+
+
 
 
                           <!--   <div class="news-item health-hot J_healthHot">
@@ -2154,6 +2127,36 @@ $(document).ready(function(){
 
 
                             </div>
+                            <div class="news-main g-clear" style="border-top: 2px solid #ffffff;">
+                            <div class="news-item health-preserve J_healthPreserve">
+                            <h5>百科<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=百科" target="_blank">更多</a></li></h5>
+                            <div class="focus-single g-clear">
+                            <a target="_blank" href="#">
+                            <img src="/Public/home/images/bottom-default.png">
+                            </a>
+                            <div class="text">
+                            <a target="_blank" href="#" class="title">中医望诊，一眼就看出有什么病</a>
+                            <span class="summary">
+                            脸色反应气血的兴衰　　面部的色泽是气血通过经络上注于面而表现出来的，气血的盛衰及运行情况，必定会从面色上反映出来　　脸色...
+                            <a target="_blank" href="#">[详细]
+                            </a>
+                            </span>
+                            </div>
+                            </div>
+                            <div class="focus-list">
+                            <ul>
+                            <?php if(is_array($listrow5)): foreach($listrow5 as $key=>$val): if($val['class'] == '百科'): if($val['unit_price'] == '1'): ?><li>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
+                            <i class="dot"></i>
+                            <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
+                            <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                            <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                            </a>
+                            <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
+                            </li><?php endif; endif; endforeach; endif; ?>
+                            </ul>
+                            </div>
+                            </div></div>
                         </div>
                         <div class="g-grid-right">
                             <div class="hot-topic J_hotTopic">
