@@ -1959,6 +1959,10 @@ $(document).ready(function(){
                                         </ul>
                                     </div>
                                 </div>
+
+                            </div>
+
+                        <div class="news-main g-clear" style="border-top: 2px solid #ffffff;">     
                     <div class="news-item health-preserve J_healthPreserve ">
                             <h5>美容<li style="float:right;list-style:none;"><a href="<?php echo U('home/index/topiclist');?>?class=美容" target="_blank">更多</a></li></h5>
                             <div class="focus-single g-clear">
@@ -1988,9 +1992,7 @@ $(document).ready(function(){
                             </ul>
                             </div>
                             </div>
-
-
-                            <div class="news-item health-hot J_healthHot">
+                            <div class="news-item health-hot J_healthHot ">
 
                             <h5>饮食<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=饮食" target="_blank">更多</a></li></h5>
 
@@ -2019,7 +2021,9 @@ $(document).ready(function(){
                             </li><?php endif; endif; endforeach; endif; ?>
                             </ul>
                             </div>
-                            </div>     
+                            </div>    </div>
+
+                         <div class="news-main g-clear" style="border-top: 2px solid #ffffff;">
                            <div class="news-item health-preserve J_healthPreserve">
                             <h5>母婴<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=母婴" target="_blank">更多</a></li></h5>
                             <div class="focus-single g-clear">
@@ -2051,7 +2055,10 @@ $(document).ready(function(){
                             </div>
 
 
-                            <div class="news-item health-hot J_healthHot">
+
+
+
+                            <div class="news-item rumor-crusher J_rumorCrusher">
 
                             <h5>运动<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=运动" target="_blank">更多</a></li></h5>
 
@@ -2080,53 +2087,11 @@ $(document).ready(function(){
                             </li><?php endif; endif; endforeach; endif; ?>
                             </ul>
                             </div>
-                            </div>   
+                            </div>   </div>
 
 
 
 
-                          <!--   <div class="news-item health-hot J_healthHot">
-
-                            <h5>名医直通车<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=中医养生" target="_blank">更多</a></li></h5>
-
-                            <div class="focus-single g-clear">
-                            <a target="_blank" href="#" monitor="home_health_refer,doctordirect,doctor_text">
-                            <img src="/Public/home/images/rLn44885969.png" alt="脂肪肝不能吃肉？教你靠谱的护肝指南" onmousedown="return _smartlog(this,'INF')">
-                            </a>
-                            <div class="text">
-                            <a target="_blank" href="#" class="title" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">脂肪肝不能吃肉？教你靠谱的护肝指南</a>
-                            <span class="summary">
-                            关于脂肪肝的传闻，你听过几个？  胖的人才会得脂肪肝！ 脂肪肝就是油脂吃太多了，所以得了脂肪肝就不能
-                            <a target="_blank" href="#" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">[详细]</a>
-                            </span>
-                            </div>
-                            </div>
-                            <div class="focus-list">
-                            <ul>
-                            <?php if(is_array($reslist3)): foreach($reslist3 as $key=>$val): if($val['class'] == '名医直通车'): if($val['unit_price'] == '1'): ?><li>
-                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
-                            <i class="dot"></i>
-                            <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
-                            <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
-                            <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
-                            </a>
-                            <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                            </li><?php endif; endif; endforeach; endif; ?>
-                            </ul>
-                            </div>
-                            </div>     
-     
- -->
-
-
-
-
-
-
-
-
-
-                            </div>
                             <div class="news-main g-clear" style="border-top: 2px solid #ffffff;">
                             <div class="news-item health-preserve J_healthPreserve">
                             <h5>百科<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=百科" target="_blank">更多</a></li></h5>
@@ -2163,136 +2128,32 @@ $(document).ready(function(){
                                 <p class="module">
                                     热门排行
                                     <span class="operation">
-                    <a href="javascript:;" data-tagId="1" class="active">每周</a>
+                    <a href="javascript:;" id="weekid"  class="active">每周</a>
                     <span class=""></span>
-                                    <a href="javascript:;" data-tagId="2">每月</a>
+                                    <a href="javascript:;" id="monthid" >每月</a>
                                     </span>
                                 </p>
                                 <div class="J_hotTopicList">
                                     <div class="focus-list">
-                                        <ul>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="记录正畸之路，一起见证更美的你！">
-                                                    <span class="sort-number">1</span>
-                                                    <span class="content">记录正畸之路，一起见证更美的你！</span>
+                                        <ul class="classweek">
+                                             <?php if(is_array($listhot)): foreach($listhot as $key=>$vo): ?><li>
+                                                <a target="_blank" href="<?php echo U('home/index/allorderlist');?>?ins_id=<?php echo ($vo["ins_id"]); ?>" class="title" title="<?php echo ($vo["inspection_name"]); ?>">
+                                                    <span class="sort-number"><?php echo ($key+1); ?></span>
+                                                    <span class="content"><?php echo ($vo["inspection_name"]); ?></span>
                                                 </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="每天走一万步，真的健康吗？">
-                                                    <span class="sort-number">2</span>
-                                                    <span class="content">每天走一万步，真的健康吗？</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="什么样的手麻要警惕？这是身体的报警信号！">
-                                                    <span class="sort-number">3</span>
-                                                    <span class="content">什么样的手麻要警惕？这是身体的报警信号！</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="又双叒叕流产！怎么才能保住宝宝？">
-                                                    <span class="sort-number">4</span>
-                                                    <span class="content">又双叒叕流产！怎么才能保住宝宝？</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="一周啪7次，为啥还是怀不上？">
-                                                    <span class="sort-number">5</span>
-                                                    <span class="content">一周啪7次，为啥还是怀不上？</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="私处颜色深浅，到底跟什么有关？">
-                                                    <span class="sort-number">6</span>
-                                                    <span class="content">私处颜色深浅，到底跟什么有关？</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="怀孕10天后，孕妈常见5大明显征兆!">
-                                                    <span class="sort-number">7</span>
-                                                    <span class="content">怀孕10天后，孕妈常见5大明显征兆!</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="睡觉流口水 要警惕五种病">
-                                                    <span class="sort-number">8</span>
-                                                    <span class="content">睡觉流口水 要警惕五种病</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="&amp;ldquo;糖尿病前期干预&amp;rdquo;，您需要知道的5要点">
-                                                    <span class="sort-number">9</span>
-                                                    <span class="content">&ldquo;糖尿病前期干预&rdquo;，您需要知道的5要点</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="经常跷二郎腿对身体有害吗？">
-                                                    <span class="sort-number">10</span>
-                                                    <span class="content">经常跷二郎腿对身体有害吗？</span>
-                                                </a>
-                                            </li>
+                                            </li><?php endforeach; endif; ?>
                                         </ul>
-                                        <ul style="display: none;">
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="射精=性高潮？你不知道的真相">
-                                                    <span class="sort-number">1</span>
-                                                    <span class="content">射精=性高潮？你不知道的真相</span>
+                                        <ul class="classmonth" style="display: none;">
+                                             <?php if(is_array($listhot1)): foreach($listhot1 as $key=>$vo): ?><li>
+                                                 <a target="_blank" href="<?php echo U('home/index/allorderlist');?>?ins_id=<?php echo ($vo["ins_id"]); ?>" class="title" title="<?php echo ($vo["inspection_name"]); ?>">
+                                                    <span class="sort-number"><?php echo ($key+1); ?></span>
+                                                    <span class="content"><?php echo ($vo["inspection_name"]); ?></span>
                                                 </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="私处颜色深浅，到底跟什么有关？">
-                                                    <span class="sort-number">2</span>
-                                                    <span class="content">私处颜色深浅，到底跟什么有关？</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="什么样的手麻要警惕？这是身体的报警信号！">
-                                                    <span class="sort-number">3</span>
-                                                    <span class="content">什么样的手麻要警惕？这是身体的报警信号！</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="胸闷气短是怎么回事">
-                                                    <span class="sort-number">4</span>
-                                                    <span class="content">胸闷气短是怎么回事</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="睡硬板床真的对腰好吗？">
-                                                    <span class="sort-number">5</span>
-                                                    <span class="content">睡硬板床真的对腰好吗？</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="肾阴虚的症状">
-                                                    <span class="sort-number">6</span>
-                                                    <span class="content">肾阴虚的症状</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="经常挖鼻子会让鼻孔变大吗？">
-                                                    <span class="sort-number">7</span>
-                                                    <span class="content">经常挖鼻子会让鼻孔变大吗？</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="脂肪肝不能吃肉？教你靠谱的护肝指南">
-                                                    <span class="sort-number">8</span>
-                                                    <span class="content">脂肪肝不能吃肉？教你靠谱的护肝指南</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="睡觉时手机放床头，真的会辐射伤脑吗？">
-                                                    <span class="sort-number">9</span>
-                                                    <span class="content">睡觉时手机放床头，真的会辐射伤脑吗？</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="#" class="title" title="记录正畸之路，一起见证更美的你！">
-                                                    <span class="sort-number">10</span>
-                                                    <span class="content">记录正畸之路，一起见证更美的你！</span>
-                                                </a>
-                                            </li>
+                                            </li><?php endforeach; endif; ?>
+                                           
+                                           
+                                            
+                                           
                                         </ul>
                                     </div>
                                 </div>
@@ -2311,6 +2172,23 @@ $(document).ready(function(){
                         </div>
                     </div>
                 </div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+       $("#weekid").hover(function(){
+        $(".classweek").css('display','block');
+        $(".classmonth").css('display','none');
+       });
+
+       $("#monthid").hover(function(){
+         $(".classweek").css('display','none');
+        $(".classmonth").css('display','block');
+        $("#monthid").addClass('active');
+        $("#weekid").removeClass('active');
+       });
+
+    });
+</script>
 
                    <div class="g-container landing-section news-section">
                     <div class="title-bar">

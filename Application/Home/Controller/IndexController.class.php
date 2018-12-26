@@ -127,20 +127,24 @@ function getCity($ip = '')
         $listrow3 = M('his_inspectionfee')->where("class='$list3' ")->order('ins_id desc')->limit(6)->select();
         $listrow4 = M('his_inspectionfee')->where("class='$list4' ")->order('ins_id desc')->limit(6)->select();
         $listrow5 = M('his_inspectionfee')->where("class='$list5' ")->order('ins_id desc')->limit(6)->select();
-       
-         $this->assign('rowdoctor',$rowdoctor);
-         $this->assign('rowlist',$row);
+        $listhot = M('his_inspectionfee')->where()->order('ins_id desc')->limit(10)->select();
+        $listhot1 = M('his_inspectionfee')->where()->order('ins_id asc')->limit(10)->select();
+        $this->assign('listhot',$listhot);
+        $this->assign('listhot1',$listhot1);
+        
+        $this->assign('rowdoctor',$rowdoctor);
+        $this->assign('rowlist',$row);
         $this->assign('reslist',$res);
         $this->assign('reslist1',$res1);
         $this->assign('reslist2',$res2);
         $this->assign('reslist3',$res3);
         $this->assign('reslist4',$res4);
         $this->assign('listrow1',$listrow1);
-         $this->assign('listrow2',$listrow2);
-         $this->assign('listrow3',$listrow3);
-         $this->assign('listrow4',$listrow4);
-         $this->assign('listrow5',$listrow5);
-       
+        $this->assign('listrow2',$listrow2);
+        $this->assign('listrow3',$listrow3);
+        $this->assign('listrow4',$listrow4);
+        $this->assign('listrow5',$listrow5);
+
         $this->assign('reslist5',$res5);
         $this->assign('reslist6',$res6);
         $this->assign('reslist7',$res7);
