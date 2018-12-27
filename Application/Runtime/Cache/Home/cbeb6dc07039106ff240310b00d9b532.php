@@ -9,7 +9,7 @@
 	<title>登录 | 择医(挂号网)-互联网医院在线诊疗平台</title>
 			   	<meta name="keywords" content="择医登录,挂号网登录" />
 			   	<meta name="description" content="择医（挂号网）注册页面，择医（挂号网）怎么注册使用 - 择医（www.guahao.com）致力于打造实名医患交流的互联网健康服务平台。聚合了全国超过3900家重点医院，建立了全国三级医院30万名医生的专长库，是您合作的首选平台。" />
-<link rel="canonical" href="https://www.guahao.com/user/login"/>
+<link rel="canonical" href="/user/login"/>
 <link rel="alternate" media="only screen and (max-width: 640px)" href="https://wy.guahao.com/mobile/login">
 <meta name="mobile-agent" content="format=html5; url=https://wy.guahao.com/mobile/login">
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -28,27 +28,6 @@
     <script src="/Public/his/vendor/layer/layer.js"></script>
 
 
-<script  type="text/javascript">
-	$GF = [];
-
-	GreenLine = {};
-	// 打点日志全局变量
-	GreenLine.Log = {
-		url:'https://track.guahao.cn/blank.gif?',
-		requestMethod:'GET',
-		loginId:'',
-		perSessiionId:'1542528638096018725013172',
-		shortSessionId:'1542528638101',
-		referurl:'http://www.sou.com/home',
-		userAgent:'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
-		errorEventName:'portal_pc_js_error',
-		token: "",
-		monitorLog : false
-	}
-	// 老的埋点，已废弃，后面统一删除HTML上的埋点
-	function _smartlog(link,mod){return true;};
-</script>
- 
 		 
 		<style>
 			html, body{
@@ -76,7 +55,7 @@
 			<div class="tab-listcon J_TabList">
 				<div class="tab-main g-clear J_TabMain">
 					<div class="form-container">
-						<form action="<?php echo U('home/index/doLogin');?>" method="post" onsubmit="return Checkbox();">
+						<form action="<?php echo U('home/index/doLogin');?>" onsubmit="return Checkbox();" method="post" >
 							<!-- <form action="" method="post" onsubmit="return Checkbox();"> -->
 							<div class="g-tips-box-error hide">
 								<span class="gi gi-error"></span>
@@ -123,29 +102,29 @@
 							<span>下载APP</span>
 						</div>
                         <div class="qrcode-wrapper secondary">
-                            <img src="https://static.guahao.cn/front/portal-pc-static/img/qr/drain/wechat-subscription.jpg">
+                            <img src="/Public/home/images/baner130.jpg" style="height:132px;">
                             <span>关注公众号</span>
                         </div>
 						<h5>使用第三方登录平台</h5>
 						<p class="third-platform J_LoginList">
 						
-						    <a href="https://www.guahao.com/partners/qq/login" class="icon-qq J_Social" monitor="other_login,other_login,qq">QQ</a>
-                            <a href="https://www.guahao.com/tblogin/tbfastlogin" class="icon-taobao" monitor="other_login,other_login,taobao">淘宝</a>
-                            <a href="https://www.guahao.com/alipayFastLogin/getFastLoginInfo" class="icon-alipay J_Social" monitor="other_login,other_login,zhifubao">支付宝</a>
-                            <a href="https://www.guahao.com/partners/weixin/login" class="icon-weixin J_Social" monitor="other_login,other_login,weixin">微信</a>
-                            <a href="https://www.guahao.com/partners/sina/fastlogin" class="noMrgR icon-sina J_Social" monitor="other_login,other_login,sina">新浪微博</a>
+						    <a href="/partners/qq/login" class="icon-qq J_Social" monitor="other_login,other_login,qq">QQ</a>
+                            <a href="/tblogin/tbfastlogin" class="icon-taobao" monitor="other_login,other_login,taobao">淘宝</a>
+                            <a href="/alipayFastLogin/getFastLoginInfo" class="icon-alipay J_Social" monitor="other_login,other_login,zhifubao">支付宝</a>
+                            <a href="/partners/weixin/login" class="icon-weixin J_Social" monitor="other_login,other_login,weixin">微信</a>
+                            <a href="/partners/sina/fastlogin" class="noMrgR icon-sina J_Social" monitor="other_login,other_login,sina">新浪微博</a>
                         
 						</p>
 						<div class="go-home">
-							 <a href="https://www.guahao.com" monitor="userlogin,userlogin,home_back">返回首页</a>
+							 <a href="" monitor="userlogin,userlogin,home_back">返回首页</a>
 						</div>
 					</div>
 				</div>
 				<div class="tab-download g-clear J_TabDownload">
 					<div class="qr-inner">
 						<ul class="g-clear">
-							<li><img src="https://static.guahao.cn/front/portal-pc-static/img/account/v3/qr-user.png" alt=""><p>下载<a href="https://www.guahao.com/intro/userapp" monitor="scan_download,scan_download,user_app">择医APP</a></p></li>
-							<li class="wy-qr"><img src="https://static.guahao.cn/front/portal-pc-static/img/account/v3/qr-doctor.png" alt=""><p>下载<a href="https://www.guahao.com/intro/drapp" monitor="scan_download,scan_download,doctor_app">择医生APP</a></p></li>
+							<li><img src="https://static.guahao.cn/front/portal-pc-static/img/account/v3/qr-user.png" alt=""><p>下载<a href="/intro/userapp" monitor="scan_download,scan_download,user_app">择医APP</a></p></li>
+							<li class="wy-qr"><img src="https://static.guahao.cn/front/portal-pc-static/img/account/v3/qr-doctor.png" alt=""><p>下载<a href="/intro/drapp" monitor="scan_download,scan_download,doctor_app">择医生APP</a></p></li>
 						</ul>
 					</div>
 				</div>
@@ -185,105 +164,7 @@
 </div>
 </div>
  <script type="text/javascript">
-       
-    var enid = '<?php echo ($enid); ?>';
-
-    var js_Geetest_ok = 0;
-    var _captchaObj;
-
-    $(function () {
-
-
-        var handler = function (captchaObj) {
-            _captchaObj = captchaObj;
-            // 将验证码加到id为captcha的元素里
-            captchaObj.appendTo("#captcha");
-
-
-            captchaObj.onSuccess(function () {
-
-                js_Geetest_ok = 1;
-
-            });
-
-
-        };
-        // 获取验证码
-        $.get("<?php echo U('His/Login/geetest_show_verify');?>", function (data) {
-
-            // 使用initGeetest接口
-            // 参数1：配置参数，与创建Geetest实例时接受的参数一致
-            // 参数2：回调，回调的第一个参数验证码对象，之后可以使用它做appendTo之类的事件
-            initGeetest({
-                gt: data.gt,
-                challenge: data.challenge,
-                product: "float", // 产品形式
-                offline: !data.success
-            }, handler);
-
-
-        }, 'json');
-
-
-        //选项卡切换
-        $('.tabBtn > li').click(function () {
-            $(this).addClass('on').siblings('li').removeClass('on').closest('.tabBtn');
-            $(this).closest('.tabBtn').siblings('.tabBox').find('> li').eq($(this).index()).addClass('on').siblings('li').removeClass('on');
-        });
-
-        if (enid.length > 0) check_qr_scan(enid);
-
-        $("#btn_submit").click(function () {
-            var u = $("#mobile_alias").val();
-            var p = $("#signin-password").val();
-            var test = $('.geetest_challenge').val();
-            var geetest_challenge = $('.geetest_challenge').val();
-            var geetest_validate = $('.geetest_validate').val();
-            var geetest_seccode = $('.geetest_seccode').val();
-
-
-            if (u == '' || u.length == 0) {
-                layer.msg('请填写手机号或邮箱');
-                return false;
-            }
-
-            if (p == '' || p.length == 0) {
-                layer.msg('请填写登录密码');
-                return false;
-            }
-            // if (js_Geetest_ok == 0) {
-            //     layer.msg('请点击验证码验证');
-            //     return false;
-            // }
-
-            var f = $('input[type=hidden]').val();
-
-            $.post('/login/userlogin', {
-                u: u,
-                p: p,
-                __hash__: f,
-                geetest_challenge: geetest_challenge,
-                geetest_validate: geetest_validate,
-                geetest_seccode:geetest_seccode
-            }, function (res) {
-
-                if (res.status != 0){
-                    js_Geetest_ok=0;
-                    _captchaObj.reset();
-                }
-
-                if (res.status == 0) {
-                    var d = res.data;
-                    window.location.href = '/login/enlogin?enuid=' + d.enuid;
-                } else if (res.status == 5) {
-                    layer.msg(res.msg);
-                } else {
-                    layer.msg(res.msg);
-                }
-            }, 'json');
-
-        });
-    });
+ // alert(99);
 function Checkbox() {
 
             var u = $("#mobile").val();
@@ -294,6 +175,15 @@ function Checkbox() {
                 layer.msg('请填写手机号或邮箱');
                 return false;
             }
+
+            // alert(u);
+            $.post("<?php echo U('home/index/checkuser');?>",{"u":u},function(data){
+            	console.info(data);
+            	if(data=='0'){
+            		layer.msg("用户名不存在");
+            		return false;
+            	}
+            })
 
             if(p==''||p.length==0){
                 layer.msg('请填写登录密码');

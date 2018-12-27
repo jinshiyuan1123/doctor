@@ -1,15 +1,15 @@
-
+<?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE HTML>
 <html>
 	<head>
 		<link rel="dns-prefetch" href="http://img.guahao.com">	
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="shortcut icon" href="__PUBLIC_HOME__/favicon.ico" />
+<link rel="shortcut icon" href="/Public/home/favicon.ico" />
 <!-- External CSS -->
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
- <script src="__PUBLIC_HIS__/vendor/jquery/jquery.min.js"></script>
-    <script src="__PUBLIC_HIS__/vendor/layer/layer.js"></script>
+	<link rel="stylesheet" href="/Public/home/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
+ <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
+    <script src="/Public/his/vendor/layer/layer.js"></script>
 <script  type="text/javascript">
 	// $GF { Array } - functions defined in pages which has no module. The collected functions will be defined in page directly.
 	$GF = [];
@@ -44,14 +44,14 @@
 	<div class="big-bg J_BigBg"></div>
 	<div class="main-box J_MainBox">
 		<div class="box-header g-clear">
-			<a class="g-left logo" href="{:U('home/index/index')}">
+			<a class="g-left logo" href="<?php echo U('home/index/index');?>">
 				<!--默认乌镇互联网医院-->
-				<img src="__PUBLIC_HOME__/images/logolist.jpg" style="width: auto;">
+				<img src="/Public/home/images/logolist.jpg" style="width: auto;">
 			</a>
 			<div class="g-left title">医院登录</div>
 		</div>
 		<div class="form-container">
-			<form action="{:U('home/index/yydocLogin')}" onsubmit="return checkPost();" method="post" >
+			<form action="<?php echo U('home/index/yydocLogin');?>" onsubmit="return checkPost();" method="post" >
 				<div class="g-tips-box-error hide J_ErrorCtn">
 					<span class="gi gi-error"></span>
 					<span class="content">
@@ -69,7 +69,7 @@
 						<label class="item-name">密&nbsp;&nbsp;&nbsp;码</label>
 						<input type="password"  id="password" name="password" value="" class="form-input" placeholder="密码" maxlength="20" tabindex="2">
 						<div class="fo-pwd">
-							<a href="{:U('home/index/docforget')}" class="forget-ps" target="_blank">忘记密码？</a>
+							<a href="<?php echo U('home/index/docforget');?>" class="forget-ps" target="_blank">忘记密码？</a>
 						</div>
 						
 					</li>
@@ -95,8 +95,8 @@
 					</li>
                     <li class="auto-login policy-info">
                         登录即表示您已阅读并同意
-                        <a href="{:U('home/index/doctorlist')}" target="_blank">《择医医院注册协议》</a><br>
-                       <!--  <a href="{:U('home/index/privacy_policylist')}" target="_blank">《法律声明及隐私权政策》</a> -->
+                        <a href="<?php echo U('home/index/doctorlist');?>" target="_blank">《择医医院注册协议》</a><br>
+                       <!--  <a href="<?php echo U('home/index/privacy_policylist');?>" target="_blank">《法律声明及隐私权政策》</a> -->
                     </li>
 					<li class="action-bar">
 					 <input type="submit" value="登&nbsp;录" class="btn btn-success btn-lg" style="height:50px;border:2px;">
@@ -105,7 +105,7 @@
 			</form>
 		</div>
 		<div class="register">
-			<a href="{:U('home/index/yyregister')}">免费注册<i></i></a>
+			<a href="<?php echo U('home/index/yyregister');?>">免费注册<i></i></a>
 		</div>
 		<div class="qr-wrapper">
 			<div class="show-qrcode J_SwitchQrCode" data-show="false"><a title="下载APP" href="javascript:;"></a></div>
@@ -134,7 +134,7 @@ function checkPost(){
 		layer.msg('用户名不能为空');
 		return false;
 	}
-	  $.post("{:U('home/index/checkhospital')}",{"mobile":loginId},function(data){
+	  $.post("<?php echo U('home/index/checkhospital');?>",{"mobile":loginId},function(data){
             	console.info(data);
             	if(data=='0'){
             		layer.msg("用户名不存在");

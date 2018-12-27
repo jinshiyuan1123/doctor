@@ -2058,7 +2058,7 @@ $(document).ready(function(){
 
 
 
-                            <div class="news-item rumor-crusher J_rumorCrusher">
+                            <div class="news-item health-hot J_healthHot">
 
                             <h5>运动<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=运动" target="_blank">更多</a></li></h5>
 

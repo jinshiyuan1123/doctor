@@ -306,6 +306,16 @@ function getCity($ip = '')
         $this->redirect('/home');
     }
 
+    public function checkuser()
+    {
+      $id = I('post.u');
+      $res = M('his_user')->where("mobile='$id'")->find();
+      if($res){
+        echo 1;
+      }else{
+        echo 0;
+      }
+    }
     public function logout()
     {
         session_unset('home_user_info');
@@ -999,6 +1009,17 @@ public function recursived($meta,$flag,$count )
      
     }
 
+    public function checkdoctor()
+    {
+      $id = I('post.mobile');
+      $res = M('his_doctor')->where("mobile='$id'")->find();
+      if($res){
+        echo 1;
+      }else{
+        echo 0;
+      }
+    }
+
      public function yydocLogin()
     {
       $data = I('post.');
@@ -1031,6 +1052,16 @@ public function recursived($meta,$flag,$count )
       session('home_user_info', $user);
       $this->redirect('/home/index/yydoctorhome');
      
+    }
+    public function checkhospital()
+    {
+       $id = I('post.mobile');
+      $res = M('his_yydoctor')->where("mobile='$id'")->find();
+      if($res){
+        echo 1;
+      }else{
+        echo 0;
+      }
     }
 
      public function docLogout()
