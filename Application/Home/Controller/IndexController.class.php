@@ -25,6 +25,7 @@ class IndexController extends BaseController {
         $phone = $user['mobile'];
         $res = M('his_user')->where("mobile='$phone'")->find();
         $doc = M('his_doctor')->where("mobile='$phone'")->find();
+        $yydoc = M('his_yydoctor')->where("mobile='$phone'")->find();
         $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
         $localhost  ='http://'.$_SERVER['HTTP_HOST'];
         $this->assign('pic',$pic);
@@ -32,6 +33,7 @@ class IndexController extends BaseController {
         $this->assign('docname',$doc['true_name']);
         $this->assign('hospital',$doc['hospital']);
         $this->assign('docmobile',$doc['mobile']);
+        $this->assign('yydocmobile',$yydoc['mobile']);
         $this->assign('localhost', $localhost);
         $this->assign('sex',$res['sex']);
         $this->assign('age',$res['age']);
@@ -1208,10 +1210,12 @@ public function recursived($meta,$flag,$count )
 
 
       );
-      $res = M('his_doctor')->add($res);
-      if(!$res){
+      $ress = M('his_doctor')->add($res);
+      if(!$ress){
         $this->error('内容保存有误');
       }
+         unset($res['password']);
+      session('home_user_info', $res);
       $this->assign('mobile',$data['mobile']);
       $this->assign('true_name',$data['true_name']);
       $this->display(':registersucc');
@@ -1247,10 +1251,12 @@ public function recursived($meta,$flag,$count )
 
 
       );
-      $res = M('his_yydoctor')->add($res);
-      if(!$res){
+      $ress = M('his_yydoctor')->add($res);
+      if(!$ress){
         $this->error('内容保存有误');
       }
+        unset($res['password']);
+      session('home_user_info', $res);
       $this->assign('mobile',$data['mobile']);
       $this->assign('true_name',$data['true_name']);
       $this->display(':yyregistersucc');
@@ -1258,6 +1264,14 @@ public function recursived($meta,$flag,$count )
 
     public function doctorhome()
     {
+          $data = I('post.');
+     
+      $user= M('his_doctor')->where()->find();
+      $res = session('home_user_info');
+      // var_dump($res);
+      $this->assign('user',$res);
+      $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
+      $this->assign('pic',$pic);
       $this->display(':doctorhome');
     }
 
@@ -1349,7 +1363,10 @@ public function recursived($meta,$flag,$count )
       $data = I('post.');
      
       $user= M('his_yydoctor')->where()->find();
-      $this->assign('user',session('home_user_info'));
+      $res = session('home_user_info');
+      $this->assign('user',$res);
+      $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
+      $this->assign('pic',$pic);
       $this->display(':yyauthprofile');
     }
      public function yyhead_pic_settings()
@@ -1374,10 +1391,27 @@ public function recursived($meta,$flag,$count )
     {
       $this->display(':authaccout');
     }
+    
+     public function yyauthaccout()
+    {
+     $res = session('home_user_info');
+      $this->assign('user',$res);
+      $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
+      $this->assign('pic',$pic);
+      $this->display(':yyauthaccout');
+    }
 
     public function authtomod()
     {
       $this->display(':authtomod');
+    }
+      public function yyauthtomod()
+    {
+         $res = session('home_user_info');
+      $this->assign('user',$res);
+      $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
+      $this->assign('pic',$pic);
+      $this->display(':yyauthtomod');
     }
 
      public function savereset() 
@@ -1398,6 +1432,27 @@ public function recursived($meta,$flag,$count )
         
         if($res){
             $this->success('密码修改成功',U('/home/index/doctorhome'));
+        }
+    }
+
+     public function yysavereset() 
+    {
+        // $mobile = I('post.oldPassword');
+        $user = session('home_user_info');
+        $mobile = $user['mobile'];
+        $pass = I('post.newPassword');
+
+        if (strlen($pass) < 6) {
+            $this->error('密码不能少于6位');
+        }
+        $data =array();
+     
+        $data['password'] = encrypt_password($pass);
+       
+        $res = M('his_yydoctor')->where("mobile='$mobile'")->save($data);
+        
+        if($res){
+            $this->success('密码修改成功',U('/home/index/yydoctorhome'));
         }
     }
 
@@ -1448,8 +1503,19 @@ public function recursived($meta,$flag,$count )
       $data = I('get.');
       $where = $data['ins_id'];
       $res = M('his_inspectionfee')->where("ins_id='$where'")->find();
-      
+
+      $articlelist = M('his_inspectionfee')->where()->limit(4)->select();
+     $articlelists = M('his_inspectionfee')->where()->order('ins_id desc')->limit(4)->select();
+     $arr = array();
+     $arr['ins_id'] = array('gt',12);
+     // $arr['ins_id'] = array('lt',34);
+     $recommend = M('his_inspectionfee')->where($arr)->limit(6)->select();
+     // var_dump(count($recommend));die;
+      $this->assign('recommend',$recommend);
+
+      $this->assign('articlelists',$articlelists);
       $this->assign('reslist',$res);
+      $this->assign('articlelist',$articlelist);
       $this->display(':topic');
     }
 

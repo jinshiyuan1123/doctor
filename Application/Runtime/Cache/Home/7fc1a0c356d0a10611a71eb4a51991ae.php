@@ -4,9 +4,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="shortcut icon" href="/Public/home/favicon.ico" />
-    <link rel="stylesheet" href="/Public/home/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
-    <link rel="stylesheet" href="/Public/home/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
-
+<!-- External CSS -->
+	<link rel="stylesheet" href="/Public/home/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
 <script  type="text/javascript">
 	// $GF { Array } - functions defined in pages which has no module. The collected functions will be defined in page directly.
 	$GF = [];
@@ -20,18 +20,17 @@
 </script>
 
 	
-				<link rel="stylesheet" href="/Public/home/css/home-new.css?v=1541078824a18cef" type="text/css"/>
-		        <meta name="keywords" content="" />
-		        <meta name="description" content="" />
+		        <meta name="keywords" content="择医" />
+		        <meta name="description" content="择医" />
 		
-		    <title><?php echo ($user["hospital"]); ?> | 择医</title>
+		    <title>医院个人资料 | 择医</title>
 	</head>
 	
 	<body>
 		<!-- #g-wrapper -->
 		<div id="g-wrapper" class="gc-new">
 			<!-- #gh -->
-	 <div class="g-header-new noprint">
+			 <div class="g-header-new noprint">
     <div class="notice"  id="J_Notify" style="display: none;">
         <div class="center" class="">
             <div class="notice-contain">
@@ -163,34 +162,37 @@
             <!-- end of #gh -->
             <div class="g-container">
 				
-<div class="g-menubar noprint" style="margin-top:82px;">
+<div class="g-menubar noprint">
 	<!-- 医生个人简介 -->
 	<div  class="top">
 		<div class="head-box">
-                        <img src="<?php if($user.pic): echo ($pic); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
+                       <img src="<?php if($user["pic"] == true): echo ($pic); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
 		</div>
 		<div class="info">
 			<div class="basic-info">
-				<h1>&nbsp;<?php if($user["hospital"] == true): echo ($user["hospital"]); else: echo ($docname); endif; ?></h1>
+				<h1><?php echo ($user["hospital"]); ?></h1>
 				<span></span>
 			</div>
 			<div class="dept-info">
-				         		<span class="dept"></span>
-				         		<span class="dept"></span>
+				         <!-- 		上海中医药大学附属龙华医院<span class="dept"></span>
+				         		<span class="dept">1222室</span> -->
 			</div>
-			<a href="#" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
+			<a href="" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
 		</div>
 	</div>
 
 	<ul class="menu-parent-box">
-			<li class="menu-parent active"><a href="<?php echo U('home/index/yydoctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
+			<li class="menu-parent "><a href="<?php echo U('home/index/yydoctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
 					<li class="menu-parent ">
-					<a href="javascript:;" class="hasChild J_ParentMenu">
-						<i style="background: url(/Public/home/images/J5t37110059.png) no-repeat"></i>
+					<a href="javascript:;"
+					
+					
+					class="hasChild J_ParentMenu">
+						<i style="background: url(https://kano.guahao.cn/J5t37110059) no-repeat"></i>
 						
 					     账号设置
 						</a>
-									<div class="menu-child-box hide">
+								<div class="menu-child-box hide">
 									   	<a class="menu-child " href="<?php echo U('home/index/yyauthprofile');?>" monitor=""
 										  >
 										   
@@ -214,23 +216,22 @@
 					
 					
 					class="hasChild J_ParentMenu">
-						<i style="background: url(/Public/home/images/FIU37110407.png) no-repeat"></i>
+						<i style="background: url(https://kano.guahao.cn/FIU37110407) no-repeat"></i>
 						
 					     帮助与反馈
 						</a>
 									<div class="menu-child-box hide">
-									   	<a class="menu-child " href="<?php echo U('home/index/authoperation');?>" 
+									   	<a class="menu-child " href="h<?php echo U('home/index/authoperation');?>" 
 										  >
 										   
 								   		操作手册</a>
-									   	<a class="menu-child " href="<?php echo U('home/index/article');?>" >
+									   	<a class="menu-child " href="#" >
 										   
-								   		我的文章</a>
+								   		联系客服</a>
 									   	<a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
 										  >
 										   
 								   		常见问题</a>
-                                          
 									</div>
 					</li>
 	</ul>
@@ -240,15 +241,90 @@
 				
 
 
-<div id="gc" class="gp-home-new gp-home-index" data-module="home">
-    <input type="hidden" id="falseExceptionFlag" name="falseExceptionFlag" value="">
-    <input type="hidden" id="initiAlexceptionFlag" name="initiAlexceptionFlag" value="">
-    <input type="hidden" id="bizId" name="bizId" value="">
-    
-    <!-- end of .gc-mask -->
-</div>
+	<div id="gc" class="gp-doc-profile"  data-module="doc-operate">
+		<div class="gc-mask">
+			<div class="content-admin g-clear g-content">
+				<div id="g-breadcrumb">
+				    <a href="https://doctor.guahao.com/home">首页</a>&gt;
+			        <span>个人首页 &gt;</span>
+			        <span>个人资料</span>
+			  	</div>
+				<div class="g-content-widget g-tab">
+					<!-- <div class="config-tab">
+						<a href="javascript:;" class="active" monitor="doctorweb,accountset_top,myinfo">个人资料</a>
+						<a href="<?php echo U('home/index/head_pic_settings');?>" monitor="doctorweb,accountset_top,headpic">头像设置</a>
+						<a href="<?php echo U('home/index/authaccout');?>" monitor="doctorweb,accountset_top,info">账号信息</a>
+						<a href="<?php echo U('home/index/authtomod');?>" monitor="doctorweb,accountset_top,password">修改密码</a>
+					</div> -->
+					<div class="content-warp">
+						     	 	  <input type="hidden" name="originalTitleName" value="" />
+						     	 	  <input type="hidden" name="originalTitleType"  value="">
+						     	 	  <input type="hidden" name="titleTypeStatus" value="-1">
+						     	 	  
+						     	 	  <input type="hidden" name="originalScienceTitleName" value="" />
+						     	 	  <input type="hidden" name="originalScienceTitleType" value="">
+						     	 	  <input type="hidden" name="titleTypeStatus" value="-1">
+					         <form  name="doctorInfo" id="doc_profile_form"  class="gfm-inline" method="POST">
+						       <input type="hidden" value="/auth/profile" name="loginTarget">
+					     	 <div class="g-tips-box-error hide">
+						   		<span class="gi gi-error"></span>
+						   		<span class="tips-text"></span>
+						   	</div>
+				  			<div class="g-tips-box-succ hide">
+								<span class="gi gi-succ"></span>
+							   	<span class="tips-text"></span>
+							</div>
+					     	 <ul>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item">
+					     	 			<label style="line-height: 60px;">头像：</label>
+					     	 			<div class="cert-preview g-clear J_CertPreview">
+					     	 				<div class="preview-item">
+					     	 					 <img src="<?php if($user["pic"] == true): echo ($pic); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
+					     	 				</div>
+					     	 			</div>
+					     	 		</div>
+					     	 	</li>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item ">
+						     	 	  	<label>登录名：</label>
+						     	 	 	 <span class="gfm-left"><?php echo ($user["mobile"]); ?></span>
+						     	 	 </div>
+					     	 	</li>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item ">
+						     	 	  <label>真实姓名：</label>
+						     	 	  <span class="gfm-left"><?php echo ($user["true_name"]); ?></span>
+						     	 	 </div>
+					     	 	</li>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item ">
+						     	 	  <label>医院名称： </label>
+						     	 	 	<?php echo ($user["hospital"]); ?>
+						     	 	 </div>
+					     	 	</li>
+					     	 	
+					     	 	
+					     	 
+					     	 	<li class="gfm-action g-clear">
+					     	 		<div class="gfm-item ">
+						     	 		 <label>&nbsp;</label>
+						     	 		 <span class="gfm-left">
+						     	 			<a class="gbn gbt-blue1" href="javascript:;"  id="doUpdate" monitor="doctorweb,accountset_myinfo,refresh">更新</a>
+						     	 		 </span>
+					     	 		 </div>
+					     	 	</li>
+					     	 </ul>
+					    </form>
+					</div>
 
-
+				</div>
+			</div>
+		</div>
+		<!-- end of .gp-doc-profile -->
+	</div>
+	<!-- end of #gc -->
+<span id="gi_page_totop" class="gi gi-page-totop"></span>
 
 				<!-- end of #gc -->
 				<div class="clear"></div>
@@ -268,10 +344,10 @@
 	//打点日志全局变量
 	$GLog = {
 		requestMethod:'GET',
-		loginId:'DK5vQrU2ewNdSlDVH8u54tDaWKQpCMfwf0XiUR8i/MCw7xc22bjSMw==',
+		loginId:'nPuS8fU8D/OwSYgBHuytSD2a94FM1t6yua5UQIInwpIEhwBSJw8iRQ==',
 		perSessiionId:'154303338518820178067151',
 		shortSessionId:'',
-		referurl:'https://doctor.guahao.com/auth/doctor/improveinfo',
+		referurl:'https://doctor.guahao.com/home',
 		userAgent:'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
 		logUrl: 'https://trackweb.guahao.cn/blank.gif',
 		debug: false,

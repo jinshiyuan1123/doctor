@@ -74,7 +74,7 @@
                          <?php echo session('home_user_info.mobile');?>
                           </span> 
                          
-                     <a href=" <?php if($docmobile): echo U('home/index/doctorhome'); else: echo U('home/index/orderlist'); endif; ?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,mycenter">个人中心</a>
+                     <a href=" <?php if($docmobile == true): echo U('home/index/doctorhome');?><elseif condition='$yydocmobile eq true'><?php else: echo U('home/index/yydoctorhome'); endif; ?>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,mycenter">个人中心</a>
                        
                     <span class="line">|</span>
                     <a href="https://www.guahao.com/my/orderlist" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,order">预约单</a> 

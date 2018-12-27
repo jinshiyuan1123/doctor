@@ -21,8 +21,8 @@
 
 	
 				<link rel="stylesheet" href="/Public/home/css/home-new.css?v=1541078824a18cef" type="text/css"/>
-		        <meta name="keywords" content="李旭峰" />
-		        <meta name="description" content="李旭峰" />
+		        <meta name="keywords" content="" />
+		        <meta name="description" content="" />
 		
 		    <title><?php echo ($docname); ?> | 择医</title>
 	</head>
@@ -167,16 +167,15 @@
 	<!-- 医生个人简介 -->
 	<div  class="top">
 		<div class="head-box">
-                        <img src="/Public/home/images/pYf27810846.png?timeStamp=1543037600522" alt="李旭峰大夫" class="head-img"/>
+                        <img src="/Public/home/images/pYf27810846.png?timeStamp=1543037600522" alt="" class="head-img"/>
 		</div>
 		<div class="info">
 			<div class="basic-info">
-				<h1><?php echo ($docname); ?>&nbsp;</h1>
+				<h1><?php echo ($user["true_name"]); ?>&nbsp;</h1>
 				<span></span>
 			</div>
 			<div class="dept-info">
-				         		<?php echo ($hospital); ?><span class="dept"></span>
-				         		<span class="dept"></span>
+				         	
 			</div>
 			<a href="#" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
 		</div>

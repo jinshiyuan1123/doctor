@@ -16,7 +16,7 @@
                          {:session('home_user_info.mobile')}
                           </span> 
                          
-                     <a href=" <if condition='$docmobile'>{:U('home/index/doctorhome')}<else/>{:U('home/index/orderlist')}</if>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,mycenter">个人中心</a>
+                     <a href=" <if condition='$docmobile eq true'>{:U('home/index/doctorhome')}<elseif condition='$yydocmobile eq true'><else/>{:U('home/index/yydoctorhome')}</if>" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,mycenter">个人中心</a>
                        
                     <span class="line">|</span>
                     <a href="https://www.guahao.com/my/orderlist" rel="nofollow" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,order">预约单</a> 

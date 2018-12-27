@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="shortcut icon" href="__PUBLIC_HOME__/favicon.ico" />
     <meta name="baidu-site-verification" content="Rk9zXLfIEQ" />
-    <title>医生说｜糖尿病也能治愈！它的最佳治愈期你错过了吗？ - 择医网（挂号网）</title>
+    <title>{$reslist.inspection_name} - 择医网（挂号网）</title>
     <meta charset="utf-8">
     <meta name="description" content="糖尿病，绝大多数人应该都不陌生，这是一个“哪怕我自己不是糖尿病患者，我身边亲朋好友都一定会有几个是”的病！大家普遍认为糖尿病是一辈子的病，没法根治，但其实，糖尿。医生说的文章" />
     <meta name="mobile-agent" content="format=html5; url=https://sns.guahao.com/topic/yWOls32914951727316993" />
@@ -40,19 +40,16 @@
             <div class="g-wenzhang">
                 <div class="g-title">
                         <span class="g-icon">原创</span>
-                    <span class="span-title">医生说｜{$reslist.inspection_name}</span>
+                    <span class="span-title">{$reslist.inspection_name}</span>
                 </div>
                 <div class="g-time">
                     <span class="span-time">{$reslist.create_time|date='Y-m-d H:i',###}</span>
-                    <span class="span-yyt">【健康号】</span>
-                    <span class="span-zz">
-                            医生说
-                    </span>
+                   
                 </div>
                 <hr class="division">
-                    <div class="g-daoyu">
+                   <!--  <div class="g-daoyu">
                         <span class="J_filter">拒绝糖尿病，从干预糖尿病前期开始！</span>
-                    </div>
+                    </div> -->
                     <div id="J_TopicContent" class="g-zw">
                     {$reslist.unit}
                     {$reslist.textarea}
@@ -85,42 +82,20 @@
                         <span>相关推荐:</span>
                     </div>
                     <div class="tj-list">
-                            <div class="tj-content">
-                            <a class="img-con-div" href="" id="J_relatedImgCon">
-                                <img class="tj-img" src="__PUBLIC_HOME__/images/default-cover.png" style="width:260px;height:153px;">
-                            </a>
-                            <a href="/topic/vIDim26461660889841665" target="_blank" class="tj-title" title="结果发现喝醋者能使餐后血糖下降">结果发现喝醋者能使餐后血糖下降</a>
-                        </div>
-                            <div class="tj-content">
-                            <a class="img-con-div" href="" id="J_relatedImgCon">
-                                <img class="tj-img" src="__PUBLIC_HOME__/images/default-cover.png" style="width:260px;height:153px;">
-                            </a>
-                            <a href="/topic/bnCiA188326" target="_blank" class="tj-title" title="高血糖饮食禁忌有什么？">高血糖饮食禁忌有什么？</a>
-                        </div>
+                       
+                           <foreach name="recommend" item="vo" >
                             <div class="tj-content tj-last">
-                            <a class="img-con-div" href="" id="J_relatedImgCon">
+                            <a class="img-con-div" href="{:U('home/index/allorderlist')}?ins_id={$vo.ins_id}" id="J_relatedImgCon">
                                 <img class="tj-img" src="__PUBLIC_HOME__/images/default-cover.png" style="width:260px;height:153px;">
+                                
                             </a>
-                            <a href="/topic/UVDzI189880" target="_blank" class="tj-title" title="七招帮你搞定高血糖">七招帮你搞定高血糖</a>
+                            <a href="{:U('home/index/allorderlist')}?ins_id={$vo.ins_id}" target="_blank" class="tj-title" title="">{$vo.inspection_name}</a>
                         </div>
-                            <div class="tj-content">
-                            <a class="img-con-div" href="" id="J_relatedImgCon">
-                                <img class="tj-img" src="__PUBLIC_HOME__/images/default-cover.png" style="width:260px;height:153px;" >
-                            </a>
-                            <a href="/topic/puJRQ177553" target="_blank" class="tj-title" title="尿糖和血糖，谁才是导致糖尿病的罪魁祸首？">尿糖和血糖，谁才是导致糖尿病的罪魁祸首？</a>
-                        </div>
-                            <div class="tj-content">
-                            <a class="img-con-div" href="" id="J_relatedImgCon">
-                                <img class="tj-img" src="__PUBLIC_HOME__/images/default-cover.png" style="width:260px;height:153px;">
-                            </a>
-                            <a href="/topic/qEuya111085" target="_blank" class="tj-title" title="高血糖饮食清单">高血糖饮食清单</a>
-                        </div>
-                            <div class="tj-content tj-last">
-                            <a class="img-con-div" href="" id="J_relatedImgCon">
-                                <img class="tj-img" src="__PUBLIC_HOME__/images/default-cover.png" style="width:260px;height:153px;">
-                            </a>
-                            <a href="/topic/ycHcr201816" target="_blank" class="tj-title" title="引起空腹高血糖的原因，不能只知其一不知其二">引起空腹高血糖的原因，不能只知其一不知其二</a>
-                        </div>
+                           
+                           </foreach>
+                           
+                           
+                          
                     </div>
                 </div>
         </div>
@@ -131,7 +106,7 @@
                         <img class="doc-pic-container" style="width:140px;;" src="__PUBLIC_HOME__/images/1511164061343.jpg">
                    <a class="doc-pic-container" style="height: 0" href=""></a>
                     <div class="doc-name">
-                        <span>医生说</span>
+                        <span>择医网</span>
                     </div>
                     <div class="doc-jianjie doc-scroll">
                         <label>简介:</label>
@@ -141,118 +116,47 @@
             </div>
                 <div class="g-doc-article">
                     <div class="arc-title">
-                        <span>Ta最近的文章</span>
+                        <span>最近的文章</span>
                     </div>
                     <hr  class="lin-sx">
                     <div class="arc-list">
-                            <a class="arc-label" href="" target="_blank">
+                        <foreach name="articlelist" item="vo" >
+                            <a class="arc-label" href="{:U('home/index/allorderlist')}?ins_id={$vo.ins_id}" target="_blank">
                                 <div class="d-arc-text">
                                 <span class="arc-text">
                                         <span class="arc-icon"></span>
-                                医生说｜脾胃不好膏方来调！冬季进补正当时
+                               {$vo.inspection_name}
                                 </span>
                                 </div>
-                                <span class="arc-hover">
+                               <!--  <span class="arc-hover">
                                 脾胃病不能吃膏方？那是你没吃对！
                                     <span class="arc-all">全文</span>
-                                </span>
+                                </span> -->
                             </a>
                                 <hr  class="lin-xx">
-                            <a class="arc-label" href="" target="_blank">
-                                <div class="d-arc-text">
-                                <span class="arc-text">
-                                        <span class="arc-icon"></span>
-                                医生说｜糖尿病也能治愈！它的最佳治愈期你错过了吗？
-                                </span>
-                                </div>
-                                <span class="arc-hover">
-                                拒绝糖尿病，从干预糖尿病前期开始！
-                                    <span class="arc-all">全文</span>
-                                </span>
-                            </a>
-                                <hr  class="lin-xx">
-                            <a class="arc-label" href="" target="_blank">
-                                <div class="d-arc-text">
-                                <span class="arc-text">
-                                        <span class="arc-icon"></span>
-                                医生说｜男人排尿有问题是肾不好？可能是尿道出了问题！
-                                </span>
-                                </div>
-                                <span class="arc-hover">
-                                治愈尿道狭窄，解决男人的尴尬。
-                                    <span class="arc-all">全文</span>
-                                </span>
-                            </a>
-                                <hr  class="lin-xx">
-                            <a class="arc-label" href="" target="_blank">
-                                <div class="d-arc-text">
-                                <span class="arc-text">
-                                        <span class="arc-icon"></span>
-                                【科普时间】备孕宝典：当“妈”不难
-                                </span>
-                                </div>
-                                <span class="arc-hover">
-                                怀孕这件事，也要讲科学~
-                                    <span class="arc-all">全文</span>
-                                </span>
-                            </a>
+                            </foreach>
+                          
+                           
                     </div>
                 </div>
                 <div class="g-doc-article">
                     <div class="arc-title"><span>热门文章</span></div>
                     <hr  class="lin-sx">
                     <div class="arc-list">
-                            <a class="arc-label" href="" target="_blank">
+                          <foreach name="articlelist" item="vo" >
+                            <a class="arc-label" href="{:U('home/index/allorderlist')}?ins_id={$vo.ins_id}" target="_blank">
                                 <div class="d-arc-text">
                                 <span class="arc-text">
                                         <span class="arc-icon"></span>
-                                医生说｜糖尿病也能治愈！它的最佳治愈期你错过了吗？
+                                {$vo.inspection_name}
                                 </span>
                                 </div>
-                                <span class="arc-hover">
-                                拒绝糖尿病，从干预糖尿病前期开始！
-                                    <span class="arc-all">全文</span>
-                                </span>
+                                
                             </a>
                                 <hr  class="lin-xx">
-                            <a class="arc-label" href="" target="_blank">
-                                <div class="d-arc-text">
-                                <span class="arc-text">
-                                        <span class="arc-icon"></span>
-                                医生说｜男人排尿有问题是肾不好？可能是尿道出了问题！
-                                </span>
-                                </div>
-                                <span class="arc-hover">
-                                治愈尿道狭窄，解决男人的尴尬。
-                                    <span class="arc-all">全文</span>
-                                </span>
-                            </a>
-                                <hr  class="lin-xx">
-                            <a class="arc-label" href="" target="_blank">
-                                <div class="d-arc-text">
-                                <span class="arc-text">
-                                        <span class="arc-icon"></span>
-                                著名主持人李咏患癌去世，癌症该如何预防？
-                                </span>
-                                </div>
-                                <span class="arc-hover">
-                                昨天，一条令人震惊而又悲痛的消息传遍了整个网络：央视著名主持人李咏去...
-                                    <span class="arc-all">全文</span>
-                                </span>
-                            </a>
-                                <hr  class="lin-xx">
-                            <a class="arc-label" href="" target="_blank">
-                                <div class="d-arc-text">
-                                <span class="arc-text">
-                                        <span class="arc-icon"></span>
-                                女子被不栓狗绳的狗主人殴打至骨折
-                                </span>
-                                </div>
-                                <span class="arc-hover">
-                                最近杭州一则“女子被不栓狗绳的狗主人殴打至骨折”的新闻引发舆论关注。...
-                                    <span class="arc-all">全文</span>
-                                </span>
-                            </a>
+                            </foreach>
+                           
+                             
                     </div>
                 </div>
             </div>

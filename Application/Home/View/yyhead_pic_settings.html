@@ -152,7 +152,7 @@
 	<!-- 医生个人简介 -->
 	<div  class="top">
 		<div class="head-box">
-                        <img src="<if condition='$user.pic'>{$pic}<else/>__PUBLIC_HOME__/images/default_yy.gif?timeStamp=1543037600522</if>" alt="" class="head-img"/>
+                        <img src="<if condition='$user.pic eq true'>{$pic}<else/>__PUBLIC_HOME__/images/default_yy.gif?timeStamp=1543037600522</if>" alt="" class="head-img"/>
 		</div>
 		<div class="info">
 			<div class="basic-info">
@@ -178,19 +178,19 @@
 					     账号设置
 						</a>
 									<div class="menu-child-box hide">
-									   	<a class="menu-child " href="{:U('home/index/authprofile')}" monitor="doctorweb,menu,accountset_myinfo"
+									   	<a class="menu-child " href="{:U('home/index/yyauthprofile')}" monitor="doctorweb,menu,accountset_myinfo"
 										  >
 										   
 								   		个人资料</a>
-									   	<a class="menu-child active" href="{:U('home/index/head_pic_settings')}" monitor="doctorweb,menu,accountset_pichead"
+									   	<a class="menu-child active" href="{:U('home/index/yyhead_pic_settings')}" monitor="doctorweb,menu,accountset_pichead"
 										  >
 										   
 								   		头像设置</a>
-									   	<a class="menu-child " href="{:U('home/index/authaccout')}" monitor="doctorweb,menu,accountset_info"
+									   	<a class="menu-child " href="{:U('home/index/yyauthaccout')}" monitor="doctorweb,menu,accountset_info"
 										  >
 										   
 								   		账号信息</a>
-									   	<a class="menu-child " href="{:U('home/index/authtomod')}" monitor="doctorweb,menu,accountset_password"
+									   	<a class="menu-child " href="{:U('home/index/yyauthtomod')}" monitor="doctorweb,menu,accountset_password"
 										  >
 										   
 								   		修改密码</a>
@@ -235,10 +235,10 @@
 		  	</div>
 			<div class="g-content-widget g-tab">
 			  	<div class="config-tab">
-					<a href="{:U('home/index/authprofile')}" monitor="doctorweb,accountset_top,myinfo">个人资料</a>
+					<a href="{:U('home/index/yyauthprofile')}" monitor="doctorweb,accountset_top,myinfo">个人资料</a>
 					<a href="javascript:;" class="active" monitor="doctorweb,accountset_top,headpic">头像设置</a>
-					<a href="{:U('home/index/authaccout')}" monitor="doctorweb,accountset_top,info">账号信息</a>
-					<a href="{:U('home/index/authtomod')}" monitor="doctorweb,accountset_top,password">修改密码</a>
+					<a href="{:U('home/index/yyauthaccout')}" monitor="doctorweb,accountset_top,info">账号信息</a>
+					<a href="{:U('home/index/yyauthtomod')}" monitor="doctorweb,accountset_top,password">修改密码</a>
 				</div>
 				<div class="content-warp">
 					<div class="content">

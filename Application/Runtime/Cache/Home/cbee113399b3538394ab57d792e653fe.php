@@ -166,7 +166,7 @@
 	<!-- 医生个人简介 -->
 	<div  class="top">
 		<div class="head-box">
-                       <img src="/Public/home/images/default_yy.gif?timeStamp=1543037600522" alt="" class="head-img"/>
+                       <img src="<?php if($user["pic"] == true): echo ($pic); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
 		</div>
 		<div class="info">
 			<div class="basic-info">
@@ -182,7 +182,7 @@
 	</div>
 
 	<ul class="menu-parent-box">
-			<li class="menu-parent "><a href="<?php echo U('home/index/doctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
+			<li class="menu-parent "><a href="<?php echo U('home/index/yydoctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
 					<li class="menu-parent ">
 					<a href="javascript:;"
 					
@@ -250,12 +250,12 @@
 			        <span>个人资料</span>
 			  	</div>
 				<div class="g-content-widget g-tab">
-					<div class="config-tab">
+					<!-- <div class="config-tab">
 						<a href="javascript:;" class="active" monitor="doctorweb,accountset_top,myinfo">个人资料</a>
 						<a href="<?php echo U('home/index/head_pic_settings');?>" monitor="doctorweb,accountset_top,headpic">头像设置</a>
 						<a href="<?php echo U('home/index/authaccout');?>" monitor="doctorweb,accountset_top,info">账号信息</a>
 						<a href="<?php echo U('home/index/authtomod');?>" monitor="doctorweb,accountset_top,password">修改密码</a>
-					</div>
+					</div> -->
 					<div class="content-warp">
 						     	 	  <input type="hidden" name="originalTitleName" value="" />
 						     	 	  <input type="hidden" name="originalTitleType"  value="">
@@ -280,7 +280,7 @@
 					     	 			<label style="line-height: 60px;">头像：</label>
 					     	 			<div class="cert-preview g-clear J_CertPreview">
 					     	 				<div class="preview-item">
-					     	 					<img class="preview-img" src="/Public/home/images/default_yy.gif?timeStamp=1543037600522"/>
+					     	 					 <img src="<?php if($user["pic"] == true): echo ($pic); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
 					     	 				</div>
 					     	 			</div>
 					     	 		</div>
@@ -288,62 +288,24 @@
 					     	 	<li class="g-clear">
 					     	 		<div class="gfm-item ">
 						     	 	  	<label>登录名：</label>
-						     	 	 	 <span class="gfm-left">13776848129</span>
+						     	 	 	 <span class="gfm-left"><?php echo ($user["mobile"]); ?></span>
 						     	 	 </div>
 					     	 	</li>
 					     	 	<li class="g-clear">
 					     	 		<div class="gfm-item ">
 						     	 	  <label>真实姓名：</label>
-						     	 	  <span class="gfm-left">李旭峰</span>
+						     	 	  <span class="gfm-left"><?php echo ($user["true_name"]); ?></span>
 						     	 	 </div>
 					     	 	</li>
 					     	 	<li class="g-clear">
 					     	 		<div class="gfm-item ">
-						     	 	  <label>行政职称： </label>
-						     	 	 	主任医师
-						     	 	 </div>
-					     	 	</li>
-					     	 	<li class="g-clear">
-					     	 		<div class="gfm-item ">
-						     	 	  	<label>资格证明：</label>
-						     	 	  	<span class="gfm-left">请上传专业技术资格证书(职称证)证明</span>
-						     	 	  	<div class="cert-img J_Handleimgs">
-											<a class="J_AddCertimgs" >
-												<i class="icon-add"></i>
-													<input type="text" name="titleImages" class="upload-img" value="" />
-											</a>
-						     	 	  	</div>
+						     	 	  <label>医院名称： </label>
+						     	 	 	<?php echo ($user["hospital"]); ?>
 						     	 	 </div>
 					     	 	</li>
 					     	 	
-					     	 	<li class="g-clear">
-					     	 		<div class="gfm-item">
-						     	 	    <label>性别：</label>
-										<input type="radio" name="gender" value="1"  />男
-										<input type="radio" name="gender" value="2"  />女
-						     	 	</div>
-					     	 	</li>
-					     	 	<li class="g-clear">
-					     	 		<div class="gfm-item">
-					     	 			<label>执业点：</label>
-					     	 			<span class="gfm-left">上海中医药大学附属龙华医院&nbsp;1222室</span>
-					     	 		</div>
-					     	 	</li>
-					     	 	<li class="g-clear">
-					     	 		<div class="gfm-item ">
-						     	 	  <label><i>*</i>擅长：</label>
-						     	 	  <textarea  class="gfm-left" id="featureContent" name="feature"  data-required="1" pattern="^(.|\n){20,}$" data-message="除去首尾空格，不能少于20个字"></textarea>
-						     	 	   <span class="comment-limit">
-						                 	最多可以输入<i>2000</i>字，您还可以输入<i><span class="num">2000</span></i> 字
-						               </span>
-						     	 	 </div>
-					     	 	</li>
-					     	 	<li class="g-clear">
-					     	 		<div class="gfm-item ">
-						     	 	  <label><i>*</i>简介：</label>
-						     	 	  <textarea rows="" cols=""  class="gfm-left" name="intro"  id="introContent" data-required="1" pattern="^(.|\n){20,}$" data-message="除去首尾空格，不能少于20个字"></textarea>
-						     	 	 </div>
-					     	 	</li>
+					     	 	
+					     	 
 					     	 	<li class="gfm-action g-clear">
 					     	 		<div class="gfm-item ">
 						     	 		 <label>&nbsp;</label>

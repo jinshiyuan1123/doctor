@@ -290,7 +290,7 @@ $('#share-4').share();
         </div>
 <div class="g-bottom">
      <div id="gf">
-            <div class="g-container">
+            <div class="g-container" style="border-top: 1px solid #e4e4e4;width:1200px;">
                 <div class="g-footer g-clear">
                     <a class="logo g-left" href="/" onmousedown="return _smartlog(this,'BTM')"></a>
                     <div class="links g-left">
