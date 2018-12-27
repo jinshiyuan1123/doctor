@@ -23,7 +23,7 @@
 		        <meta name="keywords" content="择医" />
 		        <meta name="description" content="择医" />
 		
-		    <title>医生个人资料 | 择医</title>
+		    <title>医院个人资料 | 择医</title>
 	</head>
 	
 	<body>
@@ -166,7 +166,7 @@
 	<!-- 医生个人简介 -->
 	<div  class="top">
 		<div class="head-box">
-                       <img src="<?php if($user["pic"] == true): echo ($pic); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
+                       <img src="<?php if($pic == true): echo ($pic); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
 		</div>
 		<div class="info">
 			<div class="basic-info">

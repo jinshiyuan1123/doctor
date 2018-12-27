@@ -1364,11 +1364,11 @@ public function recursived($meta,$flag,$count )
      public function yyauthprofile()
     {
       $data = I('post.');
-     
-      $user= M('his_yydoctor')->where()->find();
       $res = session('home_user_info');
-      $this->assign('user',$res);
-      $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
+      $id = $res['id'];
+      $user= M('his_yydoctor')->where("id='$id'")->find();
+      $this->assign('user',$user);
+      $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$user['pic'];
       $this->assign('pic',$pic);
       $this->display(':yyauthprofile');
     }
