@@ -3733,3 +3733,44 @@ INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002122s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.004087s ]
 ERR: 无法加载控制器:Json
 
+[ 2018-12-28T00:37:58+08:00 ] 127.0.0.1 /Public/home/img/account/bg-doctor.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+
+[ 2018-12-28T00:37:58+08:00 ] 127.0.0.1 /Public/home/img/account/show-qr.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+
+[ 2018-12-28T00:37:58+08:00 ] 127.0.0.1 /Public/home/img/account/double-arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002027s ]
+
+[ 2018-12-28T00:38:01+08:00 ] 127.0.0.1 /Public/home/img/account/dark-line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+
+[ 2018-12-28T00:38:01+08:00 ] 127.0.0.1 /Public/home/img/account/register-icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000558s ]
+
+[ 2018-12-28T00:38:01+08:00 ] 127.0.0.1 /Public/home/img/account/light-line.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+
+[ 2018-12-28T00:38:07+08:00 ] 127.0.0.1 /json/white/area/provinces
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000744s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003979s ]
+ERR: 无法加载控制器:Json
+

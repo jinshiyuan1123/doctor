@@ -113,7 +113,7 @@
                                     </label>
                                     <p class="agreement-content policy-info">
                                         <a href="<?php echo U('home/index/agreement');?>" target="_blank" class="Textr">《择医用户注册协议》</a>
-                                        <a href="<?php echo U('home/index/privacy_policy');?>" target="_blank">《法律声明及隐私权政策》</a>
+                                        <a href="<?php echo U('home/index/allorderlist');?>?ins_id=32" target="_blank">《法律声明及隐私权政策》</a>
                                     </p>
                                 </li>
                             </ul>
@@ -141,7 +141,7 @@
                                     </label>
                                     <p class="agreement-content policy-info">
                                         <a href="<?php echo U('/home/index/agreement');?>" target="_blank" class="Textr">《择医用户注册协议》</a>
-                                        <a href="<?php echo U('home/index/privacy_policy');?>" target="_blank">《法律声明及隐私权政策》</a>
+                                        <a href="<?php echo U('home/index/allorderlist');?>?ins_id=32" target="_blank">《法律声明及隐私权政策》</a>
                                     </p>
                                 </li>
                                 <li class="action-bar ml105">
@@ -152,22 +152,24 @@
                     </div>
                     <div class="third-login">
                         <i class="or">或</i>
-                        <div class="qrcode-wrapper">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <!--  <div class="qrcode-wrapper">
                             <img src="https://static.guahao.cn/front/portal-pc-static/img/qr/drain/app-login.jpg">
                             <span>下载APP</span>
-                        </div>
+                        </div> -->
                         <div class="qrcode-wrapper secondary">
-                            <img src="https://static.guahao.cn/front/portal-pc-static/img/qr/drain/wechat-subscription.jpg">
+                            <img src="/Public/home/images/baner130.jpg">
                             <span>关注公众号</span>
                         </div>
                         <h5>使用第三方登录平台</h5>
                         <p class="third-platform">
                         
-                            <a href="https://www.guahao.com/partners/qq/login" class="icon-qq J_Social" monitor="other_login,other_login,qq">QQ</a>
-                        <a href="https://www.guahao.com/tblogin/tbfastlogin" class="icon-taobao" monitor="other_login,other_login,taobao">淘宝</a>
-                        <a href="https://www.guahao.com/alipayFastLogin/getFastLoginInfo" class="icon-alipay J_Social" monitor="other_login,other_login,zhifubao">支付宝</a>
-                        <a href="https://www.guahao.com/partners/weixin/login" class="icon-weixin J_Social" monitor="other_login,other_login,weixin">微信</a>
-                        <a href="https://www.guahao.com/partners/sina/fastlogin" class="noMrgR icon-sina J_Social" monitor="other_login,other_login,sina">新浪微博</a>
+                            <a href="" class="icon-qq J_Social" monitor="other_login,other_login,qq">QQ</a>
+                        <a href="" class="icon-taobao" monitor="other_login,other_login,taobao">淘宝</a>
+                        <a href="" class="icon-alipay J_Social" monitor="other_login,other_login,zhifubao">支付宝</a>
+                        <a href="" class="icon-weixin J_Social" monitor="other_login,other_login,weixin">微信</a>
+                        <a href="" class="noMrgR icon-sina J_Social" monitor="other_login,other_login,sina">新浪微博</a>
                         
                      
                         </p>
@@ -185,7 +187,7 @@
                     </div>
                 </div>
             </div>
-            <div class="switch-login"><a href="http://doctor.guahao.com/register/doctor" monitor="userlogin,doctor_log,doctorlog">医生</a></div>
+            <div class="switch-login"><a href="<?php echo U('home/index/yylogin');?>" monitor="userlogin,doctor_log,doctorlog">医生</a></div>
         </div>
     </div>
     <div class="footer J_footer">
