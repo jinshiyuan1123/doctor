@@ -1,15 +1,15 @@
-
+<?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE HTML>
 <html>
 	<head>
 		<link rel="dns-prefetch" href="http://img.guahao.com">	
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="shortcut icon" href="__PUBLIC_HOME__/favicon.ico" />
+<link rel="shortcut icon" href="/Public/home/favicon.ico" />
 <!-- External CSS -->
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
-	 <script src="__PUBLIC_HIS__/vendor/jquery/jquery.min.js"></script>
-    <script src="__PUBLIC_HIS__/vendor/layer/layer.js"></script>
+	<link rel="stylesheet" href="/Public/home/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
+	 <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
+    <script src="/Public/his/vendor/layer/layer.js"></script>
 <!--[if IE 6]>
 <link rel="stylesheet" type="text/css" href="https://img.guahao.com/front/hps-pc-static/css/hack/ie6.css?v=1.3"/>
 <![endif]-->
@@ -70,7 +70,7 @@
 			<a href="http://www.guahao.com/register/mobile">我是用户，用户注册<i></i></a>
 		</div>
 		<div class="form-container">
-			<form id="userForm" name="userForm" method="post" onsubmit="return checkPost()" action="{:U('home/index/doctorsubmit')}">
+			<form id="userForm" name="userForm" method="post" onsubmit="return checkPost()" action="<?php echo U('home/index/doctorsubmit');?>">
 				<div class="msg-container">
 					<div class="g-tips-box-error hide">
 				   		<span class="gi gi-error"></span>
@@ -117,8 +117,8 @@
 					<li class="agreement">
 						<label class="agreement-content" for="agreement">	<input type="checkbox" id="agreement" />已阅读并同意</label><br>
 						<p class="agreement-content policy-info">
-							<a href="{:U('home/index/doctorlist')}" target="_blank" class="Textr">《择医医生注册协议》</a>
-                            <a href="{:U('home/index/privacy_policylist')}" target="_blank">《法律声明及隐私权政策》</a>
+							<a href="<?php echo U('home/index/doctorlist');?>" target="_blank" class="Textr">《择医医生注册协议》</a>
+                            <a href="<?php echo U('home/index/privacy_policylist');?>" target="_blank">《法律声明及隐私权政策》</a>
 						</p>
 					</li>
 					<li class="action-bar ml105">
@@ -128,9 +128,9 @@
 					</li>
 				</ul>
 			</form>
-			<div class="login">已经拥有账号，<a href="{:U('home/index/doctorlogin')}">直接登录</a></div>	
+			<div class="login">已经拥有账号，<a href="<?php echo U('home/index/doctorlogin');?>">直接登录</a></div>	
 			<a href="" target="_blank">
-				<img alt="" src="__PUBLIC_HOME__/images/zhucezn.png" class="zhucezn">
+				<img alt="" src="/Public/home/images/zhucezn.png" class="zhucezn">
 			</a>
 			
 		</div>
@@ -142,10 +142,10 @@
 		<!-- end of #g-wrapper -->
 		
 <script type="text/javascript" >
-
+	
 function checkPost(){
 	var mobile = $("#mobile").val();
-	var reg=/^[1][35678]\d{9}/;
+	var reg=/^[1][3678]\d{9}/;
 	if(mobile==''){
 		layer.msg('手机不能为空');
 		return false;

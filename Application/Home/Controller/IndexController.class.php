@@ -941,6 +941,34 @@ public function recursived($meta,$flag,$count )
 
       }
 
+       public function yysavepic()
+    {
+     
+      $pic = $_FILES['upload_file'];
+      $user = session('home_user_info');
+      $phone = $user['mobile'];
+      $data = array();
+     
+      $imgname = $pic['name'];
+      $tmp = $pic['tmp_name'];
+      $image = explode('.',$imgname);
+    
+      $images = $filepath.$imgname;
+
+     
+      $filepath = 'Public/home/pic/';
+      if(move_uploaded_file($tmp,$filepath.$imgname)){
+          // echo "上传成功";
+      }else{
+          echo "上传失败";
+      }
+       $data['pic'] = $filepath.$images;
+      $row = M('his_yydoctor')->where("mobile='$phone'")->save($data);
+      $this->success('上传成功');
+
+      }
+
+
 
     function download($url, $path = '')
     {
@@ -1237,7 +1265,10 @@ public function recursived($meta,$flag,$count )
       $data = I('post.');
      
       $user= M('his_yydoctor')->where()->find();
-      $this->assign('user',session('home_user_info'));
+      $res = session('home_user_info');
+      $this->assign('user',$res);
+      $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
+      $this->assign('pic',$pic);
       $this->display(':yydoctorhome');
     }
 
@@ -1315,7 +1346,23 @@ public function recursived($meta,$flag,$count )
 
      public function yyauthprofile()
     {
+      $data = I('post.');
+     
+      $user= M('his_yydoctor')->where()->find();
+      $this->assign('user',session('home_user_info'));
       $this->display(':yyauthprofile');
+    }
+     public function yyhead_pic_settings()
+    {
+      //   $data = I('post.');
+     
+      // $user= M('his_yydoctor')->where()->find();
+      $res = session('home_user_info');
+      $this->assign('user',$res);
+      $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
+      $this->assign('pic',$pic);
+      // var_dump(session('home_user_info'));
+      $this->display(':yyhead_pic_settings');
     }
 
     public function head_pic_settings()

@@ -153,16 +153,16 @@
 	<!-- 医生个人简介 -->
 	<div  class="top">
 		<div class="head-box">
-                        <img src="https://img.guahao.com/portal_upload/userheadpic/pYf27810846_180x180.?timeStamp=1543037844164" alt="李旭峰大夫" class="head-img"/>
+                       <img src="__PUBLIC_HOME__/images/default_yy.gif?timeStamp=1543037600522" alt="" class="head-img"/>
 		</div>
 		<div class="info">
 			<div class="basic-info">
-				<h1>李旭峰&nbsp;</h1>
+				<h1>{$user.hospital}</h1>
 				<span></span>
 			</div>
 			<div class="dept-info">
-				         		上海中医药大学附属龙华医院<span class="dept"></span>
-				         		<span class="dept">1222室</span>
+				         <!-- 		上海中医药大学附属龙华医院<span class="dept"></span>
+				         		<span class="dept">1222室</span> -->
 			</div>
 			<a href="" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
 		</div>
@@ -179,20 +179,20 @@
 						
 					     账号设置
 						</a>
-									<div class="menu-child-box hide">
-									   	<a class="menu-child active" href="{:U('home/index/authprofile')}" monitor="doctorweb,menu,accountset_myinfo"
+								<div class="menu-child-box hide">
+									   	<a class="menu-child " href="{:U('home/index/yyauthprofile')}" monitor=""
 										  >
 										   
 								   		个人资料</a>
-									   	<a class="menu-child " href="{:U('home/index/head_pic_settings')}" monitor="doctorweb,menu,accountset_pichead"
+									   	<a class="menu-child " href="{:U('home/index/yyhead_pic_settings')}" monitor="doctorweb,menu,accountset_pichead"
 										  >
 										   
 								   		头像设置</a>
-									   	<a class="menu-child " href="h{:U('home/index/authaccout')}" monitor="doctorweb,menu,accountset_info"
+									   	<a class="menu-child " href="{:U('home/index/yyauthaccout')}" monitor="doctorweb,menu,accountset_info"
 										  >
 										   
 								   		账号信息</a>
-									   	<a class="menu-child " href="{:U('home/index/authtomod')}" monitor="doctorweb,menu,accountset_password"
+									   	<a class="menu-child " href="{:U('home/index/yyauthtomod')}" monitor="doctorweb,menu,accountset_password"
 										  >
 										   
 								   		修改密码</a>
@@ -267,9 +267,7 @@
 					     	 			<label style="line-height: 60px;">头像：</label>
 					     	 			<div class="cert-preview g-clear J_CertPreview">
 					     	 				<div class="preview-item">
-					     	 					<img class="preview-img" src="
-					     	 														https://img.guahao.com/portal_upload/userheadpic/pYf27810846_180x180.?timeStamp=1543037843789
-"/>
+					     	 					<img class="preview-img" src="__PUBLIC_HOME__/images/default_yy.gif?timeStamp=1543037600522"/>
 					     	 				</div>
 					     	 			</div>
 					     	 		</div>
