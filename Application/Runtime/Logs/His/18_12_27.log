@@ -5180,3 +5180,422 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001504s ]
 
+[ 2018-12-27T23:55:00+08:00 ] 127.0.0.1 /index.php/Member/userList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000439s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002106s ]
+SQL: SHOW COLUMNS FROM `dzm_his_auth_group_access` [ RunTime:0.0370s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dzm_his_auth_group_access a INNER JOIN dzm_his_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `dzm_his_auth_rule` [ RunTime:0.0060s ]
+SQL: SELECT `condition`,`menu_name` FROM `dzm_his_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','114','115','116','117','118','119','120','121','122','123','124','125','126','127','128','129','130','131','132','133','134','135','136','137','138','84','85','86','89','87','88','141','142','143','144','145','139','148','149','223','224','225','266','227','228') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dzm_his_member` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `dzm_his_supplier` [ RunTime:0.0054s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\His\Controller\MemberController.class.php on line 357 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_supplier`  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dzm_his_member` WHERE `p_id` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_department` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dzm_his_department` WHERE `hid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_department` WHERE `hid` = 1 ORDER BY create_time desc,update_time desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_auth_group` [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dzm_his_auth_group` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_auth_group` WHERE `status` = 1 ORDER BY is_manage DESC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000323s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000372s ]
+NOTIC: [8] Undefined variable: pager_str D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\29d97a9caacf483ee0bf59b3674462e9.php 第 107 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\29d97a9caacf483ee0bf59b3674462e9.php 第 130 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\29d97a9caacf483ee0bf59b3674462e9.php 第 130 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\29d97a9caacf483ee0bf59b3674462e9.php 第 130 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\29d97a9caacf483ee0bf59b3674462e9.php 第 130 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\29d97a9caacf483ee0bf59b3674462e9.php 第 130 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\29d97a9caacf483ee0bf59b3674462e9.php 第 130 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\29d97a9caacf483ee0bf59b3674462e9.php 第 130 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\His\29d97a9caacf483ee0bf59b3674462e9.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001567s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2018-12-27T23:55:01+08:00 ] 127.0.0.1 /index.php/Member/userList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000736s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003430s ]
+SQL: SHOW COLUMNS FROM `dzm_his_auth_group_access` [ RunTime:0.0190s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dzm_his_auth_group_access a INNER JOIN dzm_his_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_auth_rule` [ RunTime:0.0070s ]
+SQL: SELECT `condition`,`menu_name` FROM `dzm_his_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','114','115','116','117','118','119','120','121','122','123','124','125','126','127','128','129','130','131','132','133','134','135','136','137','138','84','85','86','89','87','88','141','142','143','144','145','139','148','149','223','224','225','266','227','228') AND `type` = 1 AND `status` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `dzm_his_member` [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM dzm_his_member hm LEFT JOIN dzm_his_doctor hd ON hm.uid = hd.uid LEFT JOIN dzm_his_department hde ON hm.department_id = hde.did LEFT JOIN dzm_his_auth_group ag ON hm.type = ag.id  WHERE `p_id` = '1' AND hm.status = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT hm.uid,hm.create_time,hd.id,hd.mobile,hm.user_name,hd.true_name,hd.sex,hd.age,hde.department_name,ag.title FROM dzm_his_member hm LEFT JOIN dzm_his_doctor hd ON hm.uid = hd.uid LEFT JOIN dzm_his_department hde ON hm.department_id = hde.did LEFT JOIN dzm_his_auth_group ag ON hm.type = ag.id  WHERE `p_id` = '1' AND hm.status = 1 ORDER BY hm.create_time desc LIMIT 0,10   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0048s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\His\Model\HisMemberModel.class.php on line 356 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_doctor`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: rank D:\phpStudy2018\WWW\doctor\Application\His\Controller\MemberController.class.php 第 345 行.
+
+[ 2018-12-27T23:55:24+08:00 ] 127.0.0.1 /index.php/Member/doctorlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000402s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_auth_group_access` [ RunTime:0.0175s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM dzm_his_auth_group_access a INNER JOIN dzm_his_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_auth_rule` [ RunTime:0.0480s ]
+SQL: SELECT `condition`,`menu_name` FROM `dzm_his_auth_rule` WHERE `id` IN ('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','90','91','92','93','94','95','96','97','98','99','100','101','102','103','104','105','106','107','108','109','110','111','112','113','114','115','116','117','118','119','120','121','122','123','124','125','126','127','128','129','130','131','132','133','134','135','136','137','138','84','85','86','89','87','88','141','142','143','144','145','139','148','149','223','224','225','266','227','228') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dzm_his_member` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `dzm_his_doctorlist`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001598s ]
+
+[ 2018-12-27T23:55:54+08:00 ] 127.0.0.1 /Public/home/img/account/bg-doctor.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+
+[ 2018-12-27T23:55:54+08:00 ] 127.0.0.1 /Public/home/img/account/show-qr.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+
+[ 2018-12-27T23:55:54+08:00 ] 127.0.0.1 /Public/home/img/account/double-arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header2_rmb.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header2_wen.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/account/upload_btn.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header2_fangwen.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-refresh.png?20160708
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/header_new/header2_yuyue.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-qkzx.png?20171128
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-spwz.png?20171128
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-insurance-1.png?20160719
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/icon-teacher.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-more.png?20160708
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-insurance-3.png?20160719
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-insurance-2.png?20160719
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+
+[ 2018-12-27T23:56:14+08:00 ] 127.0.0.1 /Public/home/img/personal-web/index/icon-twwz.png?20171128
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+
+[ 2018-12-27T23:56:17+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-blue-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+
+[ 2018-12-27T23:56:21+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+
+[ 2018-12-27T23:56:22+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+
+[ 2018-12-27T23:56:22+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+
+[ 2018-12-27T23:56:22+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002392s ]
+
+[ 2018-12-27T23:56:22+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+
+[ 2018-12-27T23:56:22+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002652s ]
+
+[ 2018-12-27T23:56:22+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+
+[ 2018-12-27T23:56:22+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-blue-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+
+[ 2018-12-27T23:56:25+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+
+[ 2018-12-27T23:56:25+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+
+[ 2018-12-27T23:56:25+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+
+[ 2018-12-27T23:56:25+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+
+[ 2018-12-27T23:56:25+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+
+[ 2018-12-27T23:56:25+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+
+[ 2018-12-27T23:56:25+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001205s ]
+
+[ 2018-12-27T23:58:58+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+
+[ 2018-12-27T23:58:58+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+
+[ 2018-12-27T23:58:58+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+
+[ 2018-12-27T23:58:58+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+
+[ 2018-12-27T23:58:58+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+
+[ 2018-12-27T23:58:58+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+
+[ 2018-12-27T23:58:58+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+
+[ 2018-12-27T23:58:58+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-blue-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001140s ]
+
+[ 2018-12-27T23:59:18+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+
+[ 2018-12-27T23:59:18+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+
+[ 2018-12-27T23:59:18+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+
+[ 2018-12-27T23:59:18+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+
+[ 2018-12-27T23:59:18+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+
+[ 2018-12-27T23:59:18+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2018-12-27T23:59:18+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003027s ]
+
+[ 2018-12-27T23:59:18+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-blue-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+
+[ 2018-12-27T23:59:53+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_help.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2018-12-27T23:59:53+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_setting.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+
+[ 2018-12-27T23:59:53+08:00 ] 127.0.0.1 /Public/home/img/sprites1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+
+[ 2018-12-27T23:59:53+08:00 ] 127.0.0.1 /Public/home/img/header_new/header_off.png?20170215
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+
+[ 2018-12-27T23:59:53+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-grsy.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+
+[ 2018-12-27T23:59:53+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white.png?20160707
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+
+[ 2018-12-27T23:59:53+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-white-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+
+[ 2018-12-27T23:59:54+08:00 ] 127.0.0.1 /Public/home/img/personal-web/menu-bar/icon-arrow-blue-s.png?20161020
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+

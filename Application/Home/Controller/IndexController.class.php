@@ -1287,8 +1287,9 @@ public function recursived($meta,$flag,$count )
     }
 
     public function article(){
-      $res = M('his_doctorlist')->select();
-      $this->assign('res',$res);
+      $res = session('home_user_info');
+      $reslist = M('his_doctorlist')->where("uid='$res[id]'")->order('id desc')->select();
+      $this->assign('reslist',$reslist);
       $this->display(':article');
     }
 
@@ -1315,12 +1316,14 @@ public function recursived($meta,$flag,$count )
 
     public function addarticle(){
       $res = I('post.');
+      $reid = session('home_user_info');
       $data = array(
         'textarea' => htmlspecialchars_decode($res['word']),
         'title'    => $res['titlelist'],
          'top'     => $res['toplist'],
          'socure'  => $res['blues'],
          'type'    => $res['namelist'],
+         'uid'     => $reid['id'],
          'createtime' => time(),
          'updatetime' => time(),
       );

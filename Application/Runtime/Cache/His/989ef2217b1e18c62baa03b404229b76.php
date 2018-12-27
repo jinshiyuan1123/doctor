@@ -1,4 +1,48 @@
-<!-- MAIN -->
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html lang="en">
+<head>
+    <link href="/Public/home/favicon.ico" rel="shortcut icon">
+    <title><?php echo C('TITLE');?></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="/Public/his/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Public/his/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Public/his/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="/Public/his/vendor/chartist/css/chartist-custom.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/Public/his/css/main.css?<?php echo time();?>">
+    <!-- <link rel="stylesheet" type="text/css" href="http://www.zzw0527.com/testlist/main.css?<?php echo time();?>"> -->
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="/Public/his/css/demo.css?<?php echo time();?>">
+    <!-- public -->
+    <link rel="stylesheet" href="/Public/his/css/public.css?<?php echo time();?>">
+
+    <!-- ICONS >
+    <link rel="apple-touch-icon" sizes="76x76" href="/Public/his/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="__PUBLIC_ROBOT__/img/favicon.png"-->
+    <link rel="stylesheet" type="text/css" href="/Public/his/vendor/datetimepicker/jquery.datetimepicker.css"/>
+
+    <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
+    <script src="/Public/his/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Public/his/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/Public/his/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="/Public/his/vendor/chartist/js/chartist.min.js"></script>
+    <script src="/Public/his/scripts/klorofil-common.js"></script>
+    <script src="/Public/his/vendor/datetimepicker/jquery.datetimepicker.js"></script>
+    <script src="/Public/his/js/public.js?<?php echo time();?>"></script>
+    <script src="/Public/his/js/check.form.js?<?php echo time();?>"></script>
+    <script src="/Public/his/vendor/layer/layer.js"></script>
+    <!--<script src="/Public/his/js/echarts.min.js"></script>-->
+
+
+</head>
+<body>
+
+
+<!-- WRAPPER -->
+    <!-- MAIN -->
 <!-- MAIN -->
 <div class="main">
     <!-- MAIN CONTENT -->
@@ -29,22 +73,20 @@
                         </tr>
                         </thead>
                         <tbody id="tbodyApp">
-                        <foreach name="res" item="val">
-                        <input type="hidden" id="uid" value="{$val.id}">
+                        <?php if(is_array($res)): foreach($res as $key=>$val): ?><input type="hidden" id="uid" value="<?php echo ($val["id"]); ?>">
                         <tr>
-                        <td>{$val.id}</td>
-                        <td>{$val.title}</td>
-                        <td>{$val.type}</td>
-                        <!-- <td>{$val.socure}</td> -->
+                        <td><?php echo ($val["id"]); ?></td>
+                        <td><?php echo ($val["title"]); ?></td>
+                        <td><?php echo ($val["type"]); ?></td>
+                        <!-- <td><?php echo ($val["socure"]); ?></td> -->
                       
                       
-                        <td><if condition="$val.process eq 1">已审核<else/>未审核</if></td>
-                        <!-- <td>{$val.top}</td> -->
-                        <td>{$val.createtime|date='Y-m-d',###}</td>
-                        <td><button type="button" class="btn btn-primary btn-sm mr10 supplierEdit" data-sid="{$val.id}">编辑</button><button type="button" class="btn btn-default btn-sm delete" data-sid="{$val.id}">删除</button>
+                        <td><?php if($val["process"] == 1): ?>已审核<?php else: ?>未审核<?php endif; ?></td>
+                        <!-- <td><?php echo ($val["top"]); ?></td> -->
+                        <td><?php echo (date('Y-m-d',$val["createtime"])); ?></td>
+                        <td><button type="button" class="btn btn-primary btn-sm mr10 supplierEdit" data-sid="<?php echo ($val["id"]); ?>">编辑</button><button type="button" class="btn btn-default btn-sm delete" data-sid="<?php echo ($val["id"]); ?>">删除</button>
                         </td>
-                        </tr>
-                        </foreach>
+                        </tr><?php endforeach; endif; ?>
                         </tbody>
                     </table>
                 </div>
@@ -114,7 +156,7 @@ function UnixToDate(unixTime, isFull, timeZone) {
                 var major_field = $(":input[name='major_field']").val();
                 var address = $(":input[name='address']").val();
                 var introduction = $("#introduction").val();
-                $.post("{:U('/Member/myHospitalInfo')}",
+                $.post("<?php echo U('/Member/myHospitalInfo');?>",
                     { "major_field": major_field,'address':address,'introduction':introduction},
                     function (data) {
                         if (data.status=='success') {
@@ -134,7 +176,7 @@ function UnixToDate(unixTime, isFull, timeZone) {
             var sid = $(this).attr('data-sid');
             $("#uid").val(sid)
            // alert(sid);
-            $.get("{:U('/Member/doctorlist')}",
+            $.get("<?php echo U('/Member/doctorlist');?>",
                 {'sid':sid},
                 function (data) {
                   
@@ -152,7 +194,7 @@ function UnixToDate(unixTime, isFull, timeZone) {
           var uidlist = $("input[name='shenheid']:checked").val();
           // alert(uid);alert(uidlist);
           
-            $.post("{:U('/Member/doctorlist')}",
+            $.post("<?php echo U('/Member/doctorlist');?>",
                 {"uid":uid,
                "uidlist":uidlist},
                 function (data) {
@@ -172,7 +214,7 @@ function UnixToDate(unixTime, isFull, timeZone) {
             var search = $(":input[name='search']").val();
             var sid = $(this).attr('data-sid');
             promptBox('是否确定删除？', function () {
-                $.post("{:U('/Member/removelist')}",
+                $.post("<?php echo U('/Member/removelist');?>",
                     {"sid": sid},
 
                     function (data) {
@@ -187,3 +229,12 @@ function UnixToDate(unixTime, isFull, timeZone) {
         });
     });
 </script>
+<!-- END WRAPPER -->
+
+<script type="text/javascript">
+    if(parent.endLoad){
+        parent.endLoad();
+    }
+</script>
+</body>
+</html>

@@ -1,12 +1,12 @@
-
+<?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE HTML>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="shortcut icon" href="__PUBLIC_HOME__/favicon.ico" />
+<link rel="shortcut icon" href="/Public/home/favicon.ico" />
 <!-- External CSS -->
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
 <script  type="text/javascript">
 	// $GF { Array } - functions defined in pages which has no module. The collected functions will be defined in page directly.
 	$GF = [];
@@ -20,7 +20,7 @@
 </script>
 
 	
-				<link rel="stylesheet" href="__PUBLIC_HOME__/css/wens/questions.css?v=1541078824a18cef" type="text/css"/>
+				<link rel="stylesheet" href="/Public/home/css/wens/questions.css?v=1541078824a18cef" type="text/css"/>
 		
 		    <title>我的文章 | 择医网</title>
 	</head>
@@ -28,7 +28,42 @@
 	<body>
 		<!-- #g-wrapper -->
 		<div id="g-wrapper" class="gc-new">
-			 <include file="Public:dochead" />
+			 <div class="g-header-new noprint">
+    <div class="notice"  id="J_Notify" style="display: none;">
+        <div class="center" class="">
+            <div class="notice-contain">
+                <span class="bell-icon"></span>
+                <span class="title">公告：</span>
+                <div id="J_NotifyBox" class="wrapper" style="">
+                    <div class="move-box" style="" >
+                        <span class="content J_Content" href="javascript:;"></span>
+                    </div>
+                    <div class="move-box2" style="display: none;" >
+                        <span class="content J_Content" href="javascript:;"></span>
+                    </div>
+                </div>
+                <span class="close-icon J_NoticeClose"></span>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <a class="logo" href="<?php echo U('home/index/index');?>">
+            <img src="/Public/home/images/logolist.jpg?_=123456" alt="logo">
+        </a>
+        <div class="nav">
+                    <span>欢迎您
+                            ,&nbsp;<?php echo ($docname); ?>
+                    </span>
+                <a href="#" target="_blank" class="help" title="联系客服" monitor="doctorweb,menu_top,wy_robot"><b class="border">联系客服</b></a>
+                <a href="<?php echo U('home/index/authprofile');?>" class="setting" title="账号设置" monitor="doctorweb,menu_top,accountset"><b class="border">账号设置</b></a>
+                <a href="<?php echo U('home/index/yydocLogout');?>" class="logout j-out-system" title="退出" monitor="doctorweb,menu_top,exit"><b>退出</b></a>
+                <input type="hidden" class="j-out-url" value="" />
+        </div>
+    </div>
+    <div class="gm-box-off-out hide">
+        <p style="text-align: center;">您还在接诊状态，确定退出登录?</p>
+    </div>
+</div>
 <script type="text/javascript">
     $GF.push(function() {
         //文字跑马灯
@@ -68,27 +103,7 @@
             },
             success: function(res) {
                 if(res.flag == 0) {
-                    if(res.item) {//查询结果
-                        var dataObj = res.item;
-                        $('.move-box .J_Content').html(dataObj.content);
-                        $('.move-box2 .J_Content').html(dataObj.content);
-                        //html方法插入的内容，直接拿宽度拿不到
-                        setTimeout(function(){
-                            var outWidth = $('#J_NotifyBox').outerWidth();
-                            var box1 = $('#J_NotifyBox .move-box'),box2 = $('#J_NotifyBox .move-box2');
-                            var inWidth = box1.outerWidth();
-                            //顶部通知超过一行，自动滚动播放
-                            if(inWidth > outWidth){
-                                var left1 = 0;
-                                var left2 = inWidth;
-                                var difference = outWidth - inWidth;
-                                function move(){
-                                    box2.show();
-                                    var item2Left = box2.css('left');
-                                    var item1Left = box1.css('left');
-                                    left1 = left1-1;
-                                    left2 = left2-1;
-                                    box1.css({'left':left1+40+'px'});
+                    if(res.item) );
                                     box2.css({'left':left2+40+'px'}); 
                                     if(parseInt(item1Left) == difference){
                                         left2 = outWidth;
@@ -133,9 +148,7 @@
                         console.log('没有配置公告');
                     }
                 }
-                else {//没有配置公告
-                    console.log('没有配置公告');
-                }
+                else 
             },
             error: function(){
                 console.log('公告接口失败');
@@ -155,11 +168,11 @@
 		</div>
 		<div class="info">
 			<div class="basic-info">
-				<h1>{$user.true_name}&nbsp;</h1>
+				<h1><?php echo ($user["true_name"]); ?>&nbsp;</h1>
 				<span></span>
 			</div>
 			<div class="dept-info">
-				         		{$user.hospital}<span class="dept"></span>
+				         		<?php echo ($user["hospital"]); ?><span class="dept"></span>
 				         		<span class="dept"></span>
 			</div>
 			<a href="#" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
@@ -167,7 +180,7 @@
 	</div>
 
 	<ul class="menu-parent-box">
-			<li class="menu-parent "><a href="{:U('home/index/doctorhome')}" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
+			<li class="menu-parent "><a href="<?php echo U('home/index/doctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
 					<li class="menu-parent ">
 					<a href="javascript:;"
 					
@@ -178,19 +191,19 @@
 					     账号设置
 						</a>
 									<div class="menu-child-box hide">
-									   	<a class="menu-child " href="{:U('home/index/authprofile')}" monitor="doctorweb,menu,accountset_myinfo"
+									   	<a class="menu-child " href="<?php echo U('home/index/authprofile');?>" monitor="doctorweb,menu,accountset_myinfo"
 										  >
 										   
 								   		个人资料</a>
-									   	<a class="menu-child " href="{:U('home/index/head_pic_settings')}" monitor="doctorweb,menu,accountset_pichead"
+									   	<a class="menu-child " href="<?php echo U('home/index/head_pic_settings');?>" monitor="doctorweb,menu,accountset_pichead"
 										  >
 										   
 								   		头像设置</a>
-									   	<a class="menu-child " href="{:U('home/index/authaccout')}" monitor="doctorweb,menu,accountset_info"
+									   	<a class="menu-child " href="<?php echo U('home/index/authaccout');?>" monitor="doctorweb,menu,accountset_info"
 										  >
 										   
 								   		账号信息</a>
-									   	<a class="menu-child " href="{:U('home/index/authtomod')}" monitor="doctorweb,menu,accountset_password"
+									   	<a class="menu-child " href="<?php echo U('home/index/authtomod');?>" monitor="doctorweb,menu,accountset_password"
 										  >
 										   
 								   		修改密码</a>
@@ -206,7 +219,7 @@
 					     帮助与反馈
 						</a>
 									<div class="menu-child-box hide">
-									   	<a class="menu-child " href="{:U('home/index/authoperation')}" 
+									   	<a class="menu-child " href="<?php echo U('home/index/authoperation');?>" 
 										  >
 										   
 								   		操作手册</a>
@@ -231,14 +244,14 @@
 	<div class="gc-mask">
 		<div class="content-admin g-clear g-content">
 			<div id="g-breadcrumb">
-				<a href="{:U('home/index/doctorhome')}">首页</a>&gt;
+				<a href="<?php echo U('home/index/doctorhome');?>">首页</a>&gt;
 				<a href="#">帮助与反馈</a>&gt;
 				<span>我的文章</span>
 			</div>
 			<div class="g-tab g-content-widget">
                 <div class="questions-list">
                 	<div class="search-box">
-                    	<a href="{:U('home/index/articlelist')}">
+                    	<a href="<?php echo U('home/index/articlelist');?>">
                     	<button type="submit" class="search-button" style="width:160px;border-radius: 2px;">发布文章</button>
                     	</a>
                     	<ul class="search-result J_ResultBox"></ul>
@@ -248,15 +261,12 @@
 	                    <div class="item" >
 	                    	<h5 class="item-h5">文章</h5>
 	                    	<ul>
-	                    	<foreach name="reslist" item="vo">
-                    					<li class="item-li"><a href="{:U('home/index/editorarticle')}?id={$vo.id}" target="_blank">{$vo.title}</a><span style="color:">&nbsp;&nbsp;&nbsp; <if condition="$vo.process eq 1"><span style="color:#f60">已审核</span><else/>待审核</if></span></li>
+	                    	<?php if(is_array($reslist)): foreach($reslist as $key=>$vo): ?><li class="item-li"><a href="<?php echo U('home/index/editorarticle');?>?id=<?php echo ($vo["id"]); ?>" target="_blank"><?php echo ($vo["title"]); ?></a><span style="color:">&nbsp;&nbsp;&nbsp; <?php if($vo["process"] == 1): ?><span style="color:#f60">已审核</span><?php else: ?>待审核<?php endif; ?></span></li>
 
                     					<!-- <li class="item-li"><a href="#s/?subId=774&parentId=-999" target="_blank"> 认证审核需要多久的时间？</a></li>
                     					<li class="item-li"><a href="#s/?subId=779&parentId=-999" target="_blank">忘记密码，如何找回？</a></li>
                     					<li class="item-li"><a href="#s/?subId=780&parentId=-999" target="_blank">如何修改密码？</a></li>
-                    					<li class="item-li"><a href="#s/?subId=782&parentId=-999" target="_blank">择医生app端和网页端的医生账号是否一样？</a></li> -->
-                    					
-							</foreach>
+                    					<li class="item-li"><a href="#s/?subId=782&parentId=-999" target="_blank">择医生app端和网页端的医生账号是否一样？</a></li> --><?php endforeach; endif; ?>
 	                    	</ul>
 	                    </div>
 			                    

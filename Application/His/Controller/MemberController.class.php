@@ -178,6 +178,7 @@ class MemberController extends HisBaseController
             $data = array(
                 'process'=>$id['uidlist'],
             );
+            // var_dump($data);
             $row = M('his_doctorlist')->where("id='$id[uid]'")->save($data);
             if($row){
                 $this->ajaxSuccess('审核成功');
@@ -185,6 +186,7 @@ class MemberController extends HisBaseController
                 $this->ajaxError('审核失败');
             }
         }
+
         $res = M('his_doctorlist')->select();
         $this->assign('res',$res);
         $this->display();
