@@ -340,3 +340,494 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001503s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001644s ]
 
+[ 2018-12-28T00:26:03+08:00 ] 127.0.0.1 /index.php/home/index/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000500s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002345s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0294s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `dzm_his_doctorlist` WHERE ( uid='8' ) ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: user D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\Home\f55505c75af99e87030e10e7794f8c82.php 第 171 行.
+NOTIC: [8] Undefined variable: user D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\Home\f55505c75af99e87030e10e7794f8c82.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001186s ]
+
+[ 2018-12-28T00:26:05+08:00 ] 127.0.0.1 /index.php/home/index/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000707s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002872s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0255s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `dzm_his_doctorlist` WHERE ( uid='8' ) ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Undefined variable: user D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\Home\f55505c75af99e87030e10e7794f8c82.php 第 171 行.
+NOTIC: [8] Undefined variable: user D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\Home\f55505c75af99e87030e10e7794f8c82.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2018-12-28T00:26:07+08:00 ] 127.0.0.1 /index.php/home/index/articlelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000405s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002570s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2018-12-28T00:26:45+08:00 ] 127.0.0.1 /index.php/home/index/addarticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000383s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002047s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0415s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0052s ]
+SQL: INSERT INTO `dzm_his_doctorlist` (`textarea`,`title`,`top`,`socure`,`type`,`uid`,`createtime`,`updatetime`) VALUES ('<p>百度题本说道的说法是对对方跟对方</p>','小李子','1','1','百度贴吧','8','1545928005','1545928005') [ RunTime:0.0971s ]
+
+[ 2018-12-28T00:26:47+08:00 ] 127.0.0.1 /index.php/home/index/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000335s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002099s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0348s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctorlist` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `dzm_his_doctorlist` WHERE ( uid='8' ) ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined variable: user D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\Home\f55505c75af99e87030e10e7794f8c82.php 第 171 行.
+NOTIC: [8] Undefined variable: user D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\Home\f55505c75af99e87030e10e7794f8c82.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2018-12-28T00:27:47+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000414s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002134s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0282s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='养生'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='健康'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='两性'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='减肥'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: class7 D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 121 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: class8 D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 122 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: class9 D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 123 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='择医网讲堂'  ) ORDER BY ins_id desc LIMIT 3   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 125 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_doctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 126 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_yydoctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='美容'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='饮食'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='母婴'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='运动'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='百科'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 132 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id desc LIMIT 10   [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 133 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id asc LIMIT 10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001393s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2018-12-28T00:28:04+08:00 ] 127.0.0.1 /index.php/home/index/topic?ins_id=85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000654s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003634s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0496s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( ins_id='85' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 1510 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` LIMIT 4   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 1511 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE `ins_id` > 12 LIMIT 6   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001178s ]
+
+[ 2018-12-28T00:28:50+08:00 ] 127.0.0.1 /index.php/home/index/topic?ins_id=85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000392s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002082s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( ins_id='85' ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 1510 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` LIMIT 4   [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 1511 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id desc LIMIT 4   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE `ins_id` > 12 LIMIT 6   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2018-12-28T00:29:07+08:00 ] 127.0.0.1 /index.php/home/index/topic?ins_id=82
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000276s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001859s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( ins_id='82' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 1510 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` LIMIT 4   [ RunTime:0.0006s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 1511 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id desc LIMIT 4   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE `ins_id` > 12 LIMIT 6   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2018-12-28T00:29:36+08:00 ] 127.0.0.1 /index.php/home/index/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000354s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002152s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0274s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13521715071' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] session_destroy() expects exactly 0 parameters, 1 given D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 324 行.
+
+[ 2018-12-28T00:29:36+08:00 ] 127.0.0.1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000701s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003200s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 83 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 87 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='养生'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='健康'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='两性'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='减肥'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class7 D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 121 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class8 D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 122 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: class9 D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 123 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class=''  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='择医网讲堂'  ) ORDER BY ins_id desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 125 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_doctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 126 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_yydoctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='美容'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='饮食'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='母婴'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='运动'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='百科'  ) ORDER BY ins_id desc LIMIT 6   [ RunTime:0.0009s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 132 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id desc LIMIT 10   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 133 and defined D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id asc LIMIT 10   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: region D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 156 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 157 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001330s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001419s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000825s ]
+
+[ 2018-12-28T00:29:39+08:00 ] 127.0.0.1 /index.php/home/index/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000395s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001962s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0524s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Undefined variable: enid D:\phpStudy2018\WWW\doctor\Application\Runtime\Cache\Home\5c02d6b50231d9b60bca960276212585.php 第 302 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2018-12-28T00:29:40+08:00 ] 127.0.0.1 /index.php/home/Login/geetest_show_verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001449s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000494s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001421s ]
+
+[ 2018-12-28T00:29:57+08:00 ] 127.0.0.1 /index.php/home/Login/geetest_show_verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002455s ]
+
