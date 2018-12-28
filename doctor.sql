@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : www
+Source Server         : localhost
 Source Server Version : 50553
 Source Host           : localhost:3306
 Source Database       : doctor
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-12-28 00:31:57
+Date: 2018-12-28 17:26:16
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -3870,6 +3870,12 @@ CREATE TABLE `dzm_his_doctor` (
   `rank` varchar(255) DEFAULT NULL COMMENT '医生级别',
   `job` varchar(255) NOT NULL COMMENT '职位',
   `pic` varchar(255) NOT NULL,
+  `card` varchar(255) NOT NULL COMMENT '身份证',
+  `ispic` varchar(255) NOT NULL COMMENT '上传图片审核',
+  `pic4` varchar(255) NOT NULL COMMENT '专业技术资格证',
+  `pic3` varchar(255) NOT NULL COMMENT '医师资格证',
+  `pic2` varchar(255) NOT NULL COMMENT '身份证反面',
+  `pic1` varchar(255) NOT NULL COMMENT '身份证正面',
   `ip` varchar(255) NOT NULL,
   `room` text NOT NULL COMMENT '科室',
   `create_time` int(10) NOT NULL COMMENT '注册时间',
@@ -3886,11 +3892,11 @@ CREATE TABLE `dzm_his_doctor` (
 -- ----------------------------
 -- Records of dzm_his_doctor
 -- ----------------------------
-INSERT INTO `dzm_his_doctor` VALUES ('1', '', null, '', '0', '0', '0', '13141589223', '$2y$12$uSv5Ek4qF7nkmbxmsqVrkuCY4uUq.A4LtPRow6GIzgJJcA6VYzszW', '协和医院', null, '3', '', '', '127.0.0.1', '', '1543235676', '1545119048', '', '2', '', '2', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('2', '方法', '0', '', '0', '0', '0', '13141589223', '$2y$12$8aLaRV0WMeVHIZpmzi4xCOANVFPGaLA66ozEiAcLCax89tWvNitD2', '协和医院', '', '1', '', '', '127.0.0.1', '', '1543240548', '1545119048', '', '2', '7', '2', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('3', '测试', '0', '', '0', '0', '0', '13141589223', '$2y$12$3sab.fPjhPHMvCGXl1ijJuguegZE3yUfGAqYbziXlgLwiUzx4ILc.', '协和医院', '', '2', '', '', '127.0.0.1', '', '1543247335', '1545119048', '', '2', '7', '', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('4', '王守道', '0', '130000', '0', '唐山市', '83856745', '13141589203', '$2y$12$Mtv3mGq3i92VRMsFyTrSGu5/4yzBHS6lRCYkvu3GhCsLC8iC1pHuW', '中心医院', '', '1', '医生', '', '127.0.0.1', '', '1544332507', '1544845179', '', '2', '7', '', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('5', '多的', '0', '130000', '0', '秦皇岛市', '83856745', '13141589556', '$2y$12$yIoudEjifKHjW5X8a9cWWuAybiLyJAq62ejyS3NPxV8WXNpL3x1ei', '但是', null, '1', '士大夫', '', '127.0.0.1', '', '1544346481', '1544346481', '', '2', '', '', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('1', '', null, '', '0', '0', '0', '13141589223', '$2y$12$uSv5Ek4qF7nkmbxmsqVrkuCY4uUq.A4LtPRow6GIzgJJcA6VYzszW', '协和医院', null, '3', '', '', '', '', '', '', '', '', '127.0.0.1', '', '1543235676', '1545119048', '', '2', '', '2', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('2', '方法', '0', '', '0', '0', '0', '13141589223', '$2y$12$8aLaRV0WMeVHIZpmzi4xCOANVFPGaLA66ozEiAcLCax89tWvNitD2', '协和医院', '', '1', '', '', '', '', '', '', '', '', '127.0.0.1', '', '1543240548', '1545119048', '', '2', '7', '2', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('3', '测试', '0', '', '0', '0', '0', '13141589223', '$2y$12$3sab.fPjhPHMvCGXl1ijJuguegZE3yUfGAqYbziXlgLwiUzx4ILc.', '协和医院', '', '2', '', '', '', '', '', '', '', '', '127.0.0.1', '', '1543247335', '1545119048', '', '2', '7', '', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('4', '王守道', '0', '130000', '0', '唐山市', '83856745', '13141589203', '$2y$12$Mtv3mGq3i92VRMsFyTrSGu5/4yzBHS6lRCYkvu3GhCsLC8iC1pHuW', '中心医院', '', '1', '医生', '', '', '', '', '', '', '', '127.0.0.1', '', '1544332507', '1544845179', '', '2', '7', '', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('5', '汪士铎', '0', '130000', '0', '秦皇岛市', '83856745', '13141589556', '$2y$12$yIoudEjifKHjW5X8a9cWWuAybiLyJAq62ejyS3NPxV8WXNpL3x1ei', '南京医院', null, '1', '医生', '', '3245234', '1', './public/home/images/uploads/15459861514937.jpg', './public/home/images/uploads/15459861512948.jpg', './public/home/images/uploads/15459861518701.jpg', './public/home/images/uploads/15459861512948.jpg', '127.0.0.1', '', '1544346481', '1545960148', '', '2', '', '', '0.00');
 
 -- ----------------------------
 -- Table structure for dzm_his_doctorlist
