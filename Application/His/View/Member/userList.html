@@ -31,6 +31,8 @@
                                     <th>职务</th>
                                     <th>加入时间</th>
                                     <th>IP</th>
+                                    <th>认证审核</th>
+                                    <th>审核</th>
                                     <th>操作</th>
                                 </tr>
                                 </thead>
@@ -338,7 +340,27 @@
 </div>
 <!-- 已禁用人数弹框 end -->
 <!-- END MAIN -->
-
+<!-- 编辑弹框 start -->
+<div class="bombBox" id="editSupplierBomb" style="display: none;">
+    <div class="bombContent editSupplierBomb whiteBg" style="min-width: 400px;">
+        <div class="bombTit">医生认证申请审核<i class="fa fa-remove"></i></div>
+        <div class="ftc pd10">
+            <input type="hidden" id="uidlists" name="" value="">
+            <div class="input-group listSeaForm wb100">
+                <span class="input-group-btn">
+                    <span class="btn">审核：</span>
+                    
+                </span>
+                未审核：<input type="radio" name="shenheid"  value="0">&nbsp;
+                   已审核：  <input type="radio" name="shenheid"  value="1">
+            </div>
+           
+            <input class="form-control" type="hidden" name="editSid">
+            <a class="btn btn-primary determine wb100 mt20 edit">确认</a>
+        </div>
+    </div>
+    <a><div class="bombMask"></div></a>
+</div>
 <script>
     parent.layer.closeAll();
     var _userListPage = 1;
@@ -352,6 +374,7 @@
             var _self  = $(this);
             promptBox('确定删除吗？', function () {
                     var uid =  _self.attr('uid');
+
                     $.post('{:U("Member/removeUser")}',{uid:uid},function (data) {
                         if(data.status=='success'){
                             remindBox(data.msg);
@@ -764,11 +787,19 @@
                             }else if(val.rank =='14'){
                                  html += "<td>其他</td>";
                             }
-                          
+
                             html += "<td>"+timeToDate(new Date(val.create_time * 1000))+"</td>";
                             html +="<td>"+val.ip+"</td>";
-                            html +="<td><button type='button' uid='"+val.id+"' class='btn btn-success btn-sm doctorEditBtn'>编辑</button> " ;
-                            html +="<button type='button' uid='"+val.id+"' class='btn btn-default btn-sm deleteBtn'>禁用</button></td>" ;
+                            if(val.ispic=='1'){
+                                html+="<td>已审核</td>";
+                            }else if(val.ispic=='0'||val.ispic==''){
+                                  html+="<td>未审核</td>";
+                            }
+                            html +="<td><button type='button' uid='"+val.id+"' class='btn btn-success btn-sm EditBtn'>认证申请</button> " ;
+                              html +="<td><button type='button' uid='"+val.id+"' class='btn btn-success btn-sm doctorEditBtn'>编辑</button> " ;
+
+                            html +="<button type='button' uid='"+val.id+"' class='btn btn-default btn-sm deleteBtn'>删除</button></td>" ;
+
                             html +="</tr>";
                         });
                         _userListPage=data.msg.page;
@@ -851,7 +882,39 @@
 
         })
     }
+ $(document).on('click', '.EditBtn', function () {
+           
+            $('#editSupplierBomb').show(0);
+             var sid = $(this).attr('uid');
+            $("#uidlists").val(sid)
+           // alert(sid);
+          
+              // 取消或者关闭
+            $('#editSupplierBomb .bombMask, #editSupplierBomb .fa-remove').one('click', function(event) {
+                $(this).closest('#editSupplierBomb').hide(0);
+                $('body').removeAttr('style');
+            });
+ });
 
+  $(document).on('click', '.edit', function(){
+          var uid=  $("#uidlists").val();
+          var uidlist = $("input[name='shenheid']:checked").val();
+         
+            $.get("{:U('/Member/userList')}",
+                {"uid":uid,
+               "uidlist":uidlist},
+                function (data) {
+                  
+                    if (data.status == 'success') {
+                       
+                        // getSupplierLists('',_supplier_page);
+                        $('#editSupplierBomb').hide(0);
+                    }
+                    remindBox(data.msg);
+                   window.location.reload();//刷新当前页面.
+                },
+            'json');
+        });
 
 
 </script>

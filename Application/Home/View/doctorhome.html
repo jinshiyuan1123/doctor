@@ -144,18 +144,19 @@
     <div class="gc-mask">
         <div class="g-content">
             <input type="hidden" name="isOpenHealthyNum" id="isOpenHealthyNum" value="0" />
-            <input type="hidden" name="jkhUrl" id="jkhUrl" value="https://jkh.guahao.com/register/doctor_info">
+          
 		             <div class="g-tab g-apply J_DoctorVerify">
-                <form id="J_VerifyForm" name="verifyForm" method="post" enctype="multipart/form-data" action="/auth/doctor/verify/submit">
+                <form id="J_VerifyForm" name="verifyForm" method="post" enctype="multipart/form-data" action="{:U('home/index/uploads')}">
+                      <input type="hidden" name="doctorid" id="jkhUrl" value="{$user.id}">
                     <div class="tab-title">认证申请
                             <span class="small-title">认证后您将可以使用咨询、对症预约等功能</span>
-                                <button class="J_Submit" type="button">提交审核</button>
+                                <button class="J_Submit" type="submit">提交审核</button>
                     </div>
                     <div class="tab-body verify-main">
                             <div class="action">
                                 <p class="tip">请提交真实信息（以下证件一种或多种），我们将对您的信息严格保密    格式要求：支持.jpg .jpeg .bmp .gif .png格式照片，大小不超过2M</p>
                                 <div class="input-line">
-                                    身份证号：<input type="text" name="certNo" maxlength="18" data-required="1" pattern="^(\d{15}$|\d{18}$|\d{17}(\d|X|x))$" data-message="请输入正确的身份证号码"><span></span>
+                                    身份证号：<input type="text" name="card" maxlength="18" data-required="1" pattern="^(\d{15}$|\d{18}$|\d{17}(\d|X|x))$" value="{$user.card}" data-message="请输入正确的身份证号码"><span></span>
                                 </div>
 
                                 <div class="img-box">
@@ -174,8 +175,14 @@
                                             <div class="button-box">
                                                 <a href="javascript:;" class="J_Btn updateImg select-file">
                                                     <i class="addImg"></i>
-                                                    <input type="file" name="certificate1" class="upload-input J_CertUpload sfz">
+                                                    <input type="file" name="myFile1" class="upload-input J_CertUpload sfz" onChange="preview(this)">
+                                                    <if condition="$pic1 eq true">
+                                                        <img src="{$pic1}" id="previewimg" width="50px" height="40px"/>
+                                                        <if condition="$user.ispic eq 1">审核成功<else/>待审核</if>
+                                                    <else/>
+                                                     <img src="" id="previewimg" width="50px" height="40px"/>
                                                     <p class="box-text">点击上传身份证正面照</p>
+                                                </if>
                                                 </a>
                                                 <a href="javascript:;" class="del J_Del">删除</a>
                                                 <div class="cert-preview g-clear J_CertPreview"></div>
@@ -185,8 +192,14 @@
                                             <div class="button-box">
                                                 <a href="javascript:;" class="J_Btn updateImg select-file">
                                                     <i class="addImg"></i>
-                                                    <input type="file" name="certificate1" class="upload-input J_CertUpload sfz">
+                                                    <input type="file" name="myFile2" class="upload-input J_CertUpload sfz" onChange="preview1(this)">
+                                                    <if condition="$pic2 eq true">
+                                                        <img src="{$pic2}" id="previewimg1" width="50px" height="40px"/>
+                                                        <if condition="$user.ispic eq 1">审核成功<else/>待审核</if>
+                                                    <else/>
+                                                      <img src="" id="previewimg1" width="50px" height="40px"/>
                                                     <p class="box-text">点击上传身份证反面照</p>
+                                                </if>
                                                 </a>
                                                 <a href="javascript:;" class="del J_Del">删除</a>
                                                 <div class="cert-preview g-clear J_CertPreview"></div>
@@ -208,8 +221,14 @@
                                             <div class="button-box">
                                                 <a href="javascript:;" class="J_Btn updateImg select-file">
                                                     <i class="addImg"></i>
-                                                    <input type="file" name="certificate1" class="upload-input J_CertUpload">
+                                                    <input type="file" name="myFile3" class="upload-input J_CertUpload" onChange="preview2(this)">
+                                                     <if condition="$pic3 eq true">
+                                                        <img src="{$pic3}" id="previewimg2" width="50px" height="40px"/>
+                                                        <if condition="$user.ispic eq 1">审核成功<else/>待审核</if>
+                                                    <else/>
+                                                      <img src="" id="previewimg2" width="50px" height="40px"/>
                                                     <p class="box-text">点击上传证件照</p>
+                                                </if>
                                                 </a>
                                                 <a href="javascript:;" class="del J_Del">删除</a>
                                                 <div class="cert-preview g-clear J_CertPreview"></div>
@@ -230,8 +249,14 @@
                                             <div class="button-box">
                                                 <a href="javascript:;" class="J_Btn updateImg select-file">
                                                     <i class="addImg"></i>
-                                                    <input type="file" name="certificate1" class="upload-input J_CertUpload">
+                                                    <input type="file" name="myFile4" class="upload-input J_CertUpload" onChange="preview3(this)">
+                                                     <if condition="$pic4 eq true">
+                                                        <img src="{$pic4}" id="previewimg3" width="50px" height="40px"/>
+                                                        <if condition="$user.ispic eq 1">审核成功<else/>待审核</if>
+                                                    <else/>
+                                                      <img src="" id="previewimg3" width="50px" height="40px"/>
                                                     <p class="box-text">点击上传证件照</p>
+                                                </if>
                                                 </a>
                                                 <a href="javascript:;" class="del J_Del">删除</a>
                                                 <div class="cert-preview g-clear J_CertPreview"></div>
@@ -458,6 +483,22 @@
               $(".J_Examplelists").css('display','none');
         });
     });
+      function preview(obj){
+                var img = document.getElementById("previewimg");
+                img.src = window.URL.createObjectURL(obj.files[0]);
+            }
+      function preview1(obj){
+                var img = document.getElementById("previewimg1");
+                img.src = window.URL.createObjectURL(obj.files[0]);
+            }
+      function preview2(obj){
+                var img = document.getElementById("previewimg2");
+                img.src = window.URL.createObjectURL(obj.files[0]);
+            }
+      function preview3(obj){
+                var img = document.getElementById("previewimg3");
+                img.src = window.URL.createObjectURL(obj.files[0]);
+            }
 </script>
 
 

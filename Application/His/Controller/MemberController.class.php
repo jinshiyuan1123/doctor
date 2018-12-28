@@ -339,6 +339,17 @@ class MemberController extends HisBaseController
         if($p_id !=0 && $type==1){//拥有管理权限的医生
             $uid = $p_id;
         }
+        if(IS_GET){
+            $ispic = I('get.uidlist');
+            $id = I('get.uid');
+            $data = array('ispic'=>$ispic);
+            $listrow =M('his_doctor')->where("id='$id'")->save($data);
+            if($listrow){
+                $list = $this->member_model->getUserList($uid,1,$search);
+                
+                $this->ajaxSuccess($list);;
+            }
+        }
         if(IS_AJAX){//分页使用
             $action  = I('post.action','');
             if($action=='userList'){
@@ -401,11 +412,11 @@ class MemberController extends HisBaseController
      */
     public function removeUser(){
         $uid = I('post.uid',"",'intval');
-        if($uid==$this->userInfo['uid']){
-            $this->ajaxError('自己不能移除自己');
-        }
+        // if($uid==$this->userInfo['uid']){
+        //     $this->ajaxError('自己不能移除自己');
+        // }
         $sid = I('post.sid','','intval');
-        $res = M('his_product')->where("id='$sid'")->delete();
+        $res = M('his_doctor')->where("id='$uid'")->delete();
         if(!$res){
             $this->ajaxError('移除失败');
         }
