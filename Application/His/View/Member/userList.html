@@ -795,8 +795,14 @@
                             }else if(val.ispic=='0'||val.ispic==''){
                                   html+="<td>未审核</td>";
                             }
-                            html +="<td><button type='button' uid='"+val.id+"' class='btn btn-success btn-sm EditBtn'>认证申请</button> " ;
-                              html +="<td><button type='button' uid='"+val.id+"' class='btn btn-success btn-sm doctorEditBtn'>编辑</button> " ;
+                            if(val.pic1!='' && val.pic2!=''&&val.pic3!=''&&val.pic4 !=''){
+                                html +="<td><button type='button' uid='"+val.id+"' class='btn btn-success btn-sm EditBtn'>认证申请</button> " ;
+                            }else{
+                                html +="<td><button type='button' uid='"+val.id+"' class='btn  btn-sm '>认证申请</button> " ;
+ 
+                            }
+                           
+                            html +="<td><button type='button' uid='"+val.id+"' class='btn btn-success btn-sm doctorEditBtn'>编辑</button> " ;
 
                             html +="<button type='button' uid='"+val.id+"' class='btn btn-default btn-sm deleteBtn'>删除</button></td>" ;
 
