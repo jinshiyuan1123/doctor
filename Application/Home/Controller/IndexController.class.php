@@ -111,7 +111,10 @@ function getCity($ip = '')
         $class5 = "医院动态";
         $class6 ="医院健康";
         $user = "择医网讲堂";
-        $res = M('his_inspectionfee')->where("class='$class' ")->order('ins_id desc')->limit(6)->select();
+      
+        $res = M('his_inspectionfee')->where("class='$class'")->order('ins_id desc')->limit(6)->select();
+       
+        $istitle = M('his_inspectionfee')->where("class='$class'")->where("istitle='1'")->order('ins_id desc')->find();
         $res1 = M('his_inspectionfee')->where("class='$class1' ")->order('ins_id desc')->limit(6)->select();
         $res2 = M('his_inspectionfee')->where("class='$class2' ")->order('ins_id desc')->limit(6)->select();
         $res3 = M('his_inspectionfee')->where("class='$class3' ")->order('ins_id desc')->limit(6)->select();
@@ -122,21 +125,31 @@ function getCity($ip = '')
         $res8 = M('his_inspectionfee')->where("class='$class8' ")->order('ins_id desc')->limit(6)->select();
         $res9 = M('his_inspectionfee')->where("class='$class9' ")->order('ins_id desc')->limit(6)->select();
         $res10 = M('his_inspectionfee')->where("class='$user' ")->order('ins_id desc')->limit(3)->select();
-         $rowdoctor= M('his_doctor')->where()->order('id desc')->limit(3)->select();
-          $row = M('his_yydoctor')->where()->order('id desc')->limit(3)->select();
+         $rowdoctor= M('his_doctor')->order('id desc')->limit(3)->select();
+          $row = M('his_yydoctor')->order('id desc')->limit(3)->select();
         $listrow1 = M('his_inspectionfee')->where("class='$list1' ")->order('ins_id desc')->limit(6)->select();
         $listrow2 = M('his_inspectionfee')->where("class='$list2' ")->order('ins_id desc')->limit(6)->select();
         $listrow3 = M('his_inspectionfee')->where("class='$list3' ")->order('ins_id desc')->limit(6)->select();
         $listrow4 = M('his_inspectionfee')->where("class='$list4' ")->order('ins_id desc')->limit(6)->select();
         $listrow5 = M('his_inspectionfee')->where("class='$list5' ")->order('ins_id desc')->limit(6)->select();
-        $listhot = M('his_inspectionfee')->where()->order('ins_id desc')->limit(10)->select();
-        $listhot1 = M('his_inspectionfee')->where()->order('ins_id asc')->limit(10)->select();
+        $listhot = M('his_inspectionfee')->order('ins_id desc')->limit(10)->select();
+        $listhot1 = M('his_inspectionfee')->order('ins_id asc')->limit(10)->select();
         $this->assign('listhot',$listhot);
         $this->assign('listhot1',$listhot1);
         
         $this->assign('rowdoctor',$rowdoctor);
         $this->assign('rowlist',$row);
         $this->assign('reslist',$res);
+       
+
+        $substr = mb_substr($istitle['make'],0,70);
+        $substrlist = mb_substr($istitle['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$istitle['textarea'],$match);
+        
+
+        $this->assign('substr',$substr);
+        $this->assign('imgurl',$match[0]);
+        $this->assign('substrlist',$substrlist);
         $this->assign('reslist1',$res1);
         $this->assign('reslist2',$res2);
         $this->assign('reslist3',$res3);

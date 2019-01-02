@@ -1842,12 +1842,13 @@ $(document).ready(function(){
                                     <h5>养生<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=养生" target="_blank">更多</a></li></h5> 
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="#">
-                                            <img src="/Public/home/images/1536026134780.jpg" alt="又双叒叕流产！怎么才能保住宝宝？">
+                                            <?php echo ($imgurl); ?>
+                                          
                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">又双叒叕流产！怎么才能保住宝宝？</a>
+                                            <a target="_blank" href="#" class="title"><?php echo ($substrlist); ?></a>
                                             <span class="summary">
-                                    对于一个期待成为母亲的女性而言，不孕是很痛苦的，但比之更痛苦的，是怀孕后却保不住自己的宝宝第一胎，雀跃着欢喜着，宝宝没保...
+                                   <?php echo ($substr); ?>
                                         <a target="_blank" href="#">[详细]
                                     </a>
                                 </span>
@@ -1856,7 +1857,7 @@ $(document).ready(function(){
                                     <div class="focus-list">
                                         <ul>
                                             
-                                          <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '养生'): if($val['unit_price'] == '1'): ?><li>
+                                          <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '养生'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -1864,7 +1865,7 @@ $(document).ready(function(){
                                                     <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                                            </li><?php endif; endif; endforeach; endif; ?>
+                                            </li><?php endif; endif; endif; endforeach; endif; ?>
                                         </ul>
                                     </div>
                                 </div>
