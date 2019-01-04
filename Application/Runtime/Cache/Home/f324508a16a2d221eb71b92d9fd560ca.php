@@ -1841,15 +1841,15 @@ $(document).ready(function(){
                                 <div class="news-item medical-strategy J_medicalStrategy">
                                     <h5>养生<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=养生" target="_blank">更多</a></li></h5> 
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
+                                        <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist[0]['ins_id']); ?>">
                                             <?php echo ($imgurl); ?>
                                           
                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title"><?php echo ($substrlist); ?></a>
+                                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist[0]['ins_id']); ?>" class="title"><?php echo ($substrlist); ?></a>
                                             <span class="summary">
                                    <?php echo ($substr); ?>
-                                        <a target="_blank" href="#">[详细]
+                                        <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist[0]['ins_id']); ?>">[详细]
                                     </a>
                                 </span>
                                         </div>
@@ -1873,21 +1873,21 @@ $(document).ready(function(){
                                 <div class="news-item rumor-crusher J_rumorCrusher">
                                     <h5>健康<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=健康" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
+                                        <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist1[0]['ins_id']); ?>">
+                                             <?php echo ($imgurl1); ?>
                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">每天走一万步，真的健康吗？</a>
+                                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist1[0]['ins_id']); ?>" class="title"><?php echo ($substrlist1); ?></a>
                                             <span class="summary">
-                                    每个人心中都有一个更美好的自己：健康、苗条、充满活力而运动，可以帮助你实现这样的自己自从“每天一万步”这个活动出现后，大...
-                                    <a target="_blank" href="#">[详细]
+                                   <?php echo ($substr1); ?>
+                                        <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist1[0]['ins_id']); ?>">[详细]
                                     </a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <?php if(is_array($reslist1)): foreach($reslist1 as $key=>$val): if($val['class'] == '健康'): if($val['unit_price'] == '1'): ?><li>
+                                            <?php if(is_array($reslist1)): foreach($reslist1 as $key=>$val): if($val['class'] == '健康'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -1895,7 +1895,7 @@ $(document).ready(function(){
                                                     <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                                            </li><?php endif; endif; endforeach; endif; ?>
+                                            </li><?php endif; endif; endif; endforeach; endif; ?>
                                            
                                         </ul>
                                     </div>
@@ -1903,21 +1903,21 @@ $(document).ready(function(){
                                 <div class="news-item health-preserve J_healthPreserve">
                                     <h5>两性<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=两性" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="/Public/home/images/bottom-default.png">
+                                        <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist2[0]['ins_id']); ?>">
+                                            <?php echo ($imgurl2); ?>
                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">中医望诊，一眼就看出有什么病</a>
+                                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist2[0]['ins_id']); ?>" class="title"><?php echo ($substrlist2); ?></a>
                                             <span class="summary">
-                            脸色反应气血的兴衰　　面部的色泽是气血通过经络上注于面而表现出来的，气血的盛衰及运行情况，必定会从面色上反映出来　　脸色...
-                            <a target="_blank" href="#">[详细]
-                            </a>
+                             <?php echo ($substr2); ?>
+                                        <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist2[0]['ins_id']); ?>">[详细]
+                                    </a>
                         </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                             <?php if(is_array($reslist2)): foreach($reslist2 as $key=>$val): if($val['class'] == '两性'): if($val['unit_price'] == '1'): ?><li>
+                                             <?php if(is_array($reslist2)): foreach($reslist2 as $key=>$val): if($val['class'] == '两性'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -1925,7 +1925,7 @@ $(document).ready(function(){
                                                     <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                                            </li><?php endif; endif; endforeach; endif; ?>
+                                            </li><?php endif; endif; endif; endforeach; endif; ?>
                                         </ul>
                                     </div>
                                 </div>
@@ -1935,20 +1935,21 @@ $(document).ready(function(){
                                         <h5>减肥<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=减肥" target="_blank">更多</a></li></h5>
                                     
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#" monitor="home_health_refer,doctordirect,doctor_text">
-                                            <img src="/Public/home/images/rLn44885969.png" alt="脂肪肝不能吃肉？教你靠谱的护肝指南" onmousedown="return _smartlog(this,'INF')">
+                                        <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist3[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl3); ?>
                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">脂肪肝不能吃肉？教你靠谱的护肝指南</a>
+                                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist3[0]['ins_id']); ?>" class="title"><?php echo ($substrlist3); ?></a>
                                             <span class="summary">
-                                关于脂肪肝的传闻，你听过几个？  胖的人才会得脂肪肝！ 脂肪肝就是油脂吃太多了，所以得了脂肪肝就不能
-                                <a target="_blank" href="#" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">[详细]</a>
+                                <?php echo ($substr3); ?>
+                                        <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist3[0]['ins_id']); ?>">[详细]
+                                    </a>
                             </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                             <?php if(is_array($reslist3)): foreach($reslist3 as $key=>$val): if($val['class'] == '减肥'): if($val['unit_price'] == '1'): ?><li>
+                                             <?php if(is_array($reslist3)): foreach($reslist3 as $key=>$val): if($val['class'] == '减肥'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -1956,7 +1957,7 @@ $(document).ready(function(){
                                                     <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                                            </li><?php endif; endif; endforeach; endif; ?>
+                                            </li><?php endif; endif; endif; endforeach; endif; ?>
                                         </ul>
                                     </div>
                                 </div>
@@ -1967,21 +1968,21 @@ $(document).ready(function(){
                     <div class="news-item health-preserve J_healthPreserve ">
                             <h5>美容<li style="float:right;list-style:none;"><a href="<?php echo U('home/index/topiclist');?>?class=美容" target="_blank">更多</a></li></h5>
                             <div class="focus-single g-clear">
-                            <a target="_blank" href="#">
-                            <img src="/Public/home/images/bottom-default.png">
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow1[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl4); ?>
                             </a>
                             <div class="text">
-                            <a target="_blank" href="#" class="title">中医望诊，一眼就看出有什么病</a>
+                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow1[0]['ins_id']); ?>" class="title"><?php echo ($substrlist4); ?></a>
                             <span class="summary">
-                            脸色反应气血的兴衰　　面部的色泽是气血通过经络上注于面而表现出来的，气血的盛衰及运行情况，必定会从面色上反映出来　　脸色...
-                            <a target="_blank" href="#">[详细]
+                           <?php echo ($substr4); ?>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow1[0]['ins_id']); ?>">[详细]
                             </a>
                             </span>
                             </div>
                             </div>
                             <div class="focus-list">
                             <ul>
-                            <?php if(is_array($listrow1)): foreach($listrow1 as $key=>$val): if($val['class'] == '美容'): if($val['unit_price'] == '1'): ?><li>
+                            <?php if(is_array($listrow1)): foreach($listrow1 as $key=>$val): if($val['class'] == '美容'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                             <i class="dot"></i>
                             <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -1989,7 +1990,7 @@ $(document).ready(function(){
                             <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                             </a>
                             <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                            </li><?php endif; endif; endforeach; endif; ?>
+                            </li><?php endif; endif; endif; endforeach; endif; ?>
                             </ul>
                             </div>
                             </div>
@@ -1998,20 +1999,21 @@ $(document).ready(function(){
                             <h5>饮食<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=饮食" target="_blank">更多</a></li></h5>
 
                             <div class="focus-single g-clear">
-                            <a target="_blank" href="#" monitor="home_health_refer,doctordirect,doctor_text">
-                            <img src="/Public/home/images/rLn44885969.png" alt="脂肪肝不能吃肉？教你靠谱的护肝指南" onmousedown="return _smartlog(this,'INF')">
+                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow2[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl5); ?>
                             </a>
                             <div class="text">
-                            <a target="_blank" href="#" class="title" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">脂肪肝不能吃肉？教你靠谱的护肝指南</a>
+                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow2[0]['ins_id']); ?>" class="title"><?php echo ($substrlist5); ?></a>
                             <span class="summary">
-                            关于脂肪肝的传闻，你听过几个？  胖的人才会得脂肪肝！ 脂肪肝就是油脂吃太多了，所以得了脂肪肝就不能
-                            <a target="_blank" href="#" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">[详细]</a>
+                            <?php echo ($substr5); ?>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow2[0]['ins_id']); ?>">[详细]
+                            </a>
                             </span>
                             </div>
                             </div>
                             <div class="focus-list">
                             <ul>
-                            <?php if(is_array($listrow2)): foreach($listrow2 as $key=>$val): if($val['class'] == '饮食'): if($val['unit_price'] == '1'): ?><li>
+                            <?php if(is_array($listrow2)): foreach($listrow2 as $key=>$val): if($val['class'] == '饮食'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                             <i class="dot"></i>
                             <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -2019,7 +2021,7 @@ $(document).ready(function(){
                             <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                             </a>
                             <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                            </li><?php endif; endif; endforeach; endif; ?>
+                            </li><?php endif; endif; endif; endforeach; endif; ?>
                             </ul>
                             </div>
                             </div>    </div>
@@ -2028,21 +2030,21 @@ $(document).ready(function(){
                            <div class="news-item health-preserve J_healthPreserve">
                             <h5>母婴<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=母婴" target="_blank">更多</a></li></h5>
                             <div class="focus-single g-clear">
-                            <a target="_blank" href="#">
-                            <img src="/Public/home/images/bottom-default.png">
+                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow3[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl6); ?>
                             </a>
                             <div class="text">
-                            <a target="_blank" href="#" class="title">中医望诊，一眼就看出有什么病</a>
+                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow3[0]['ins_id']); ?>" class="title"><?php echo ($substrlist6); ?></a>
                             <span class="summary">
-                            脸色反应气血的兴衰　　面部的色泽是气血通过经络上注于面而表现出来的，气血的盛衰及运行情况，必定会从面色上反映出来　　脸色...
-                            <a target="_blank" href="#">[详细]
+                             <?php echo ($substr6); ?>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow3[0]['ins_id']); ?>">[详细]
                             </a>
                             </span>
                             </div>
                             </div>
                             <div class="focus-list">
                             <ul>
-                            <?php if(is_array($listrow3)): foreach($listrow3 as $key=>$val): if($val['class'] == '母婴'): if($val['unit_price'] == '1'): ?><li>
+                            <?php if(is_array($listrow3)): foreach($listrow3 as $key=>$val): if($val['class'] == '母婴'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                             <i class="dot"></i>
                             <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -2050,7 +2052,7 @@ $(document).ready(function(){
                             <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                             </a>
                             <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                            </li><?php endif; endif; endforeach; endif; ?>
+                            </li><?php endif; endif; endif; endforeach; endif; ?>
                             </ul>
                             </div>
                             </div>
@@ -2064,20 +2066,21 @@ $(document).ready(function(){
                             <h5>运动<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=运动" target="_blank">更多</a></li></h5>
 
                             <div class="focus-single g-clear">
-                            <a target="_blank" href="#" monitor="home_health_refer,doctordirect,doctor_text">
-                            <img src="/Public/home/images/rLn44885969.png" alt="脂肪肝不能吃肉？教你靠谱的护肝指南" onmousedown="return _smartlog(this,'INF')">
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow4[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl7); ?>
                             </a>
                             <div class="text">
-                            <a target="_blank" href="#" class="title" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">脂肪肝不能吃肉？教你靠谱的护肝指南</a>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow4[0]['ins_id']); ?>" class="title"><?php echo ($substrlist7); ?></a>
                             <span class="summary">
-                            关于脂肪肝的传闻，你听过几个？  胖的人才会得脂肪肝！ 脂肪肝就是油脂吃太多了，所以得了脂肪肝就不能
-                            <a target="_blank" href="#" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">[详细]</a>
+                            <?php echo ($substr7); ?>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow4[0]['ins_id']); ?>">[详细]
+                            </a>
                             </span>
                             </div>
                             </div>
                             <div class="focus-list">
                             <ul>
-                            <?php if(is_array($listrow4)): foreach($listrow4 as $key=>$val): if($val['class'] == '运动'): if($val['unit_price'] == '1'): ?><li>
+                            <?php if(is_array($listrow4)): foreach($listrow4 as $key=>$val): if($val['class'] == '运动'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                             <i class="dot"></i>
                             <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -2085,7 +2088,7 @@ $(document).ready(function(){
                             <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                             </a>
                             <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                            </li><?php endif; endif; endforeach; endif; ?>
+                            </li><?php endif; endif; endif; endforeach; endif; ?>
                             </ul>
                             </div>
                             </div>   </div>
@@ -2097,21 +2100,21 @@ $(document).ready(function(){
                             <div class="news-item health-preserve J_healthPreserve">
                             <h5>百科<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=百科" target="_blank">更多</a></li></h5>
                             <div class="focus-single g-clear">
-                            <a target="_blank" href="#">
-                            <img src="/Public/home/images/bottom-default.png">
+                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow5[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl8); ?>
                             </a>
                             <div class="text">
-                            <a target="_blank" href="#" class="title">中医望诊，一眼就看出有什么病</a>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow5[0]['ins_id']); ?>" class="title"><?php echo ($substrlist8); ?></a>
                             <span class="summary">
-                            脸色反应气血的兴衰　　面部的色泽是气血通过经络上注于面而表现出来的，气血的盛衰及运行情况，必定会从面色上反映出来　　脸色...
-                            <a target="_blank" href="#">[详细]
+                            <?php echo ($substr8); ?>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow5[0]['ins_id']); ?>">[详细]
                             </a>
                             </span>
                             </div>
                             </div>
                             <div class="focus-list">
                             <ul>
-                            <?php if(is_array($listrow5)): foreach($listrow5 as $key=>$val): if($val['class'] == '百科'): if($val['unit_price'] == '1'): ?><li>
+                            <?php if(is_array($listrow5)): foreach($listrow5 as $key=>$val): if($val['class'] == '百科'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                             <i class="dot"></i>
                             <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -2119,7 +2122,7 @@ $(document).ready(function(){
                             <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                             </a>
                             <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                            </li><?php endif; endif; endforeach; endif; ?>
+                            </li><?php endif; endif; endif; endforeach; endif; ?>
                             </ul>
                             </div>
                             </div></div>
@@ -2206,30 +2209,31 @@ $(document).ready(function(){
                                 <div class="news-item medical-strategy J_medicalStrategy" style="width:300px;border-right: 1px dotted #f9fbf9">
                                     <h5>医院公开<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=医院公开" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="/Public/home/images/1536026134780.jpg" alt="又双叒叕流产！怎么才能保住宝宝？">
-                                        </a>
+                                         <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist4[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl11); ?>
+                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">又流产！怎么保住宝宝？</a>
+                                           <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist4[0]['ins_id']); ?>" class="title"><?php echo ($substrlist11); ?></a>
                                             <span class="summary">
-                                    对于一个期待成为母亲的女性而言，不孕是很痛苦的，但比之更痛苦的，是怀孕后却保不住自己的宝宝第一胎，雀跃着欢喜着，宝宝没保...
-                                        <a target="_blank" href="#">[详细]
-                                    </a>
+                                     <?php echo ($substr11); ?>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist4[0]['ins_id']); ?>">[详细]
+                            </a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
                                             
-                                          <?php if(is_array($reslist4)): foreach($reslist4 as $key=>$val): if($val['class'] == '医院公开'): if($val['unit_price'] == '1'): ?><li>
+                                          <?php if(is_array($reslist4)): foreach($reslist4 as $key=>$val): if($val['class'] == '医院公开'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
                                                     <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
                                                     <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                     <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                                 </a>
-                                                <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                                            </li><?php endif; endif; endforeach; endif; ?>
+                                               
+                                            </li><?php endif; endif; endif; endforeach; endif; ?>
                                         </ul>
                                     </div>
                                 </div>
@@ -2237,29 +2241,30 @@ $(document).ready(function(){
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="width:300px">
                                     <h5>医院动态<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=医院动态" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
-                                        </a>
+                                         <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist5[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl22); ?>
+                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">每天走一万步，真的健康吗？</a>
+                                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist5[0]['ins_id']); ?>" class="title"><?php echo ($substrlist22); ?></a>
                                             <span class="summary">
-                                    每个人心中都有一个更美好的自己：健康、苗条、充满活力而运动，可以帮助你实现这样的自己自从“每天一万步”这个活动出现后，大...
-                                    <a target="_blank" href="#">[详细]
-                                    </a>
+                                     <?php echo ($substr22); ?>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist5[0]['ins_id']); ?>">[详细]
+                            </a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <?php if(is_array($reslist5)): foreach($reslist5 as $key=>$val): if($val['class'] == '医院动态'): if($val['unit_price'] == '1'): ?><li>
+                                            <?php if(is_array($reslist5)): foreach($reslist5 as $key=>$val): if($val['class'] == '医院动态'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
                                                     <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
                                                     <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                      <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                                 </a>
-                                                <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                                            </li><?php endif; endif; endforeach; endif; ?>
+                                              
+                                            </li><?php endif; endif; endif; endforeach; endif; ?>
                                            
                                         </ul>
                                     </div>
@@ -2268,29 +2273,29 @@ $(document).ready(function(){
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="">
                                     <h5>医院健康<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=医院健康" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
-                                        </a>
+                                        <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist6[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl33); ?>
+                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">每天走一万步，真的健康吗？</a>
+                                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist6[0]['ins_id']); ?>" class="title"><?php echo ($substrlist33); ?></a>
                                             <span class="summary">
-                                    每个人心中都有一个更美好的自己：健康、苗条、充满活力而运动，可以帮助你实现这样的自己自从“每天一万步”这个活动出现后，大...
-                                    <a target="_blank" href="#">[详细]
-                                    </a>
+                                    <?php echo ($substr33); ?>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist6[0]['ins_id']); ?>">[详细]</a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <?php if(is_array($reslist6)): foreach($reslist6 as $key=>$val): if($val['class'] == '医院健康'): if($val['unit_price'] == '1'): ?><li>
+                                            <?php if(is_array($reslist6)): foreach($reslist6 as $key=>$val): if($val['class'] == '医院健康'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
                                                     <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
                                                     <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                     <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                                 </a>
-                                                <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                                            </li><?php endif; endif; endforeach; endif; ?>
+                                               
+                                            </li><?php endif; endif; endif; endforeach; endif; ?>
                                            
                                         </ul>
                                     </div>
@@ -2304,30 +2309,30 @@ $(document).ready(function(){
                                 <div class="news-item medical-strategy J_medicalStrategy" style="width:300px;border-right: 1px dotted #f9fbf9">
                                     <h5>医院党建<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=就医攻略" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="/Public/home/images/1536026134780.jpg" alt="又双流产！怎么保住宝宝？">
-                                        </a>
+                                         <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist7[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl44); ?>
+                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">又双流产！怎么保住宝宝？</a>
+                                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist7[0]['ins_id']); ?>" class="title"><?php echo ($substrlist44); ?></a>
                                             <span class="summary">
-                                    对于一个期待成为母亲的女性而言，不孕是很痛苦的，但比之更痛苦的，是怀孕后却保不住自己的宝宝第一胎，雀跃着欢喜着，宝宝没保...
-                                        <a target="_blank" href="#">[详细]
-                                    </a>
+                                    <?php echo ($substr44); ?>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist7[0]['ins_id']); ?>">[详细]</a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
                                             
-                                          <?php if(is_array($reslist7)): foreach($reslist7 as $key=>$val): if($val['class'] == '医院党建'): if($val['unit_price'] == '1'): ?><li>
+                                          <?php if(is_array($reslist7)): foreach($reslist7 as $key=>$val): if($val['class'] == '医院党建'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
                                                     <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
                                                     <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                    <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                                 </a>
-                                                <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                                            </li><?php endif; endif; endforeach; endif; ?>
+                                                
+                                            </li><?php endif; endif; endif; endforeach; endif; ?>
                                         </ul>
                                     </div>
                                 </div>
@@ -2335,29 +2340,29 @@ $(document).ready(function(){
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="width:300px">
                                     <h5>医院视频<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=医院视频" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
-                                        </a>
+                                       <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist8[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl55); ?>
+                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">每天走一万步，真的健康吗？</a>
+                                           <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist8[0]['ins_id']); ?>" class="title"><?php echo ($substrlist55); ?></a>
                                             <span class="summary">
-                                    每个人心中都有一个更美好的自己：健康、苗条、充满活力而运动，可以帮助你实现这样的自己自从“每天一万步”这个活动出现后，大...
-                                    <a target="_blank" href="#">[详细]
-                                    </a>
+                                   <?php echo ($substr55); ?>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist8[0]['ins_id']); ?>">[详细]</a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '医院视频'): if($val['unit_price'] == '1'): ?><li>
+                                            <?php if(is_array($reslist8)): foreach($reslist8 as $key=>$val): if($val['class'] == '医院视频'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
                                                     <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
                                                     <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                                                    <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
                                                 </a>
-                                                <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                                            </li><?php endif; endif; endforeach; endif; ?>
+                                                
+                                            </li><?php endif; endif; endif; endforeach; endif; ?>
                                            
                                         </ul>
                                     </div>
@@ -2366,21 +2371,20 @@ $(document).ready(function(){
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="">
                                     <h5>我拍拍<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=我拍拍" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="/Public/home/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
-                                        </a>
+                                          <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist9[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl66); ?>
+                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">每天走一万步，真的健康吗？</a>
+                                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist9[0]['ins_id']); ?>" class="title"><?php echo ($substrlist66); ?></a>
                                             <span class="summary">
-                                    每个人心中都有一个更美好的自己：健康、苗条、充满活力而运动，可以帮助你实现这样的自己自从“每天一万步”这个活动出现后，大...
-                                    <a target="_blank" href="#">[详细]
-                                    </a>
+                                    <?php echo ($substr66); ?>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($reslist9[0]['ins_id']); ?>">[详细]</a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <?php if(is_array($reslist)): foreach($reslist as $key=>$val): if($val['class'] == '我拍拍'): if($val['unit_price'] == '1'): ?><li>
+                                            <?php if(is_array($reslist9)): foreach($reslist9 as $key=>$val): if($val['class'] == '我拍拍'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
                                                 <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
                                                     <i class="dot"></i>
                                                     <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
@@ -2388,7 +2392,7 @@ $(document).ready(function(){
                                                     <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
                                                 </a>
                                                 <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
-                                            </li><?php endif; endif; endforeach; endif; ?>
+                                            </li><?php endif; endif; endif; endforeach; endif; ?>
                                            
                                         </ul>
                                     </div>

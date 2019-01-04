@@ -14,15 +14,15 @@
                                 <div class="news-item medical-strategy J_medicalStrategy">
                                     <h5>养生<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=养生" target="_blank">更多</a></li></h5> 
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
+                                        <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist[0]['ins_id']}">
                                             {$imgurl}
                                           
                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">{$substrlist}</a>
+                                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist[0]['ins_id']}" class="title">{$substrlist}</a>
                                             <span class="summary">
                                    {$substr}
-                                        <a target="_blank" href="#">[详细]
+                                        <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist[0]['ins_id']}">[详细]
                                     </a>
                                 </span>
                                         </div>
@@ -60,23 +60,24 @@
                                 <div class="news-item rumor-crusher J_rumorCrusher">
                                     <h5>健康<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=健康" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="__PUBLIC_HOME__/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
+                                        <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist1[0]['ins_id']}">
+                                             {$imgurl1}
                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">每天走一万步，真的健康吗？</a>
+                                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist1[0]['ins_id']}" class="title">{$substrlist1}</a>
                                             <span class="summary">
-                                    每个人心中都有一个更美好的自己：健康、苗条、充满活力而运动，可以帮助你实现这样的自己自从“每天一万步”这个活动出现后，大...
-                                    <a target="_blank" href="#">[详细]
+                                   {$substr1}
+                                        <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist1[0]['ins_id']}">[详细]
                                     </a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <foreach name="reslist1" item="val">
+                                            <foreach name="reslist1" item="val" key="key">
                                           <if condition="$val['class'] eq '健康'">
                                           <if condition="$val['unit_price'] eq '1'">
+                                            <if condition="$key gt 0">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
@@ -94,6 +95,7 @@
                                             </li>
                                             </if>
                                           </if>
+                                      </if>
                                           </foreach>
                                            
                                         </ul>
@@ -102,23 +104,24 @@
                                 <div class="news-item health-preserve J_healthPreserve">
                                     <h5>两性<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=两性" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="__PUBLIC_HOME__/images/bottom-default.png">
+                                        <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist2[0]['ins_id']}">
+                                            {$imgurl2}
                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">中医望诊，一眼就看出有什么病</a>
+                                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist2[0]['ins_id']}" class="title">{$substrlist2}</a>
                                             <span class="summary">
-                            脸色反应气血的兴衰　　面部的色泽是气血通过经络上注于面而表现出来的，气血的盛衰及运行情况，必定会从面色上反映出来　　脸色...
-                            <a target="_blank" href="#">[详细]
-                            </a>
+                             {$substr2}
+                                        <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist2[0]['ins_id']}">[详细]
+                                    </a>
                         </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                             <foreach name="reslist2" item="val">
+                                             <foreach name="reslist2" item="val" key="key">
                                           <if condition="$val['class'] eq '两性'">
                                           <if condition="$val['unit_price'] eq '1'">
+                                            <if condition="$key gt 0">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
@@ -136,6 +139,7 @@
                                             </li>
                                             </if>
                                           </if>
+                                      </if>
                                           </foreach>
                                         </ul>
                                     </div>
@@ -146,22 +150,24 @@
                                         <h5>减肥<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=减肥" target="_blank">更多</a></li></h5>
                                     
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#" monitor="home_health_refer,doctordirect,doctor_text">
-                                            <img src="__PUBLIC_HOME__/images/rLn44885969.png" alt="脂肪肝不能吃肉？教你靠谱的护肝指南" onmousedown="return _smartlog(this,'INF')">
+                                        <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist3[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl3}
                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">脂肪肝不能吃肉？教你靠谱的护肝指南</a>
+                                             <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist3[0]['ins_id']}" class="title">{$substrlist3}</a>
                                             <span class="summary">
-                                关于脂肪肝的传闻，你听过几个？  胖的人才会得脂肪肝！ 脂肪肝就是油脂吃太多了，所以得了脂肪肝就不能
-                                <a target="_blank" href="#" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">[详细]</a>
+                                {$substr3}
+                                        <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist3[0]['ins_id']}">[详细]
+                                    </a>
                             </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                             <foreach name="reslist3" item="val">
+                                             <foreach name="reslist3" item="val" key="key">
                                           <if condition="$val['class'] eq '减肥'">
                                            <if condition="$val['unit_price'] eq '1'">
+                                            <if condition="$key gt 0">
                                           
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
@@ -180,6 +186,7 @@
                                             </li>
                                             </if>
                                           </if>
+                                      </if>
                                           </foreach>
                                         </ul>
                                     </div>
@@ -191,23 +198,24 @@
                     <div class="news-item health-preserve J_healthPreserve ">
                             <h5>美容<li style="float:right;list-style:none;"><a href="{:U('home/index/topiclist')}?class=美容" target="_blank">更多</a></li></h5>
                             <div class="focus-single g-clear">
-                            <a target="_blank" href="#">
-                            <img src="__PUBLIC_HOME__/images/bottom-default.png">
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow1[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl4}
                             </a>
                             <div class="text">
-                            <a target="_blank" href="#" class="title">中医望诊，一眼就看出有什么病</a>
+                             <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow1[0]['ins_id']}" class="title">{$substrlist4}</a>
                             <span class="summary">
-                            脸色反应气血的兴衰　　面部的色泽是气血通过经络上注于面而表现出来的，气血的盛衰及运行情况，必定会从面色上反映出来　　脸色...
-                            <a target="_blank" href="#">[详细]
+                           {$substr4}
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow1[0]['ins_id']}">[详细]
                             </a>
                             </span>
                             </div>
                             </div>
                             <div class="focus-list">
                             <ul>
-                            <foreach name="listrow1" item="val">
+                            <foreach name="listrow1" item="val" key="key">
                             <if condition="$val['class'] eq '美容'">
                             <if condition="$val['unit_price'] eq '1'">
+                            <if condition="$key gt 0">
                             <li>
                             <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                             <i class="dot"></i>
@@ -223,6 +231,7 @@
                             </a>
                             <span class="date">{$val['create_time']|date='Y-m-d',###}</span>
                             </li>
+                            </if>
                             </if>
                             </if>
                             </foreach>
@@ -234,23 +243,24 @@
                             <h5>饮食<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=饮食" target="_blank">更多</a></li></h5>
 
                             <div class="focus-single g-clear">
-                            <a target="_blank" href="#" monitor="home_health_refer,doctordirect,doctor_text">
-                            <img src="__PUBLIC_HOME__/images/rLn44885969.png" alt="脂肪肝不能吃肉？教你靠谱的护肝指南" onmousedown="return _smartlog(this,'INF')">
+                             <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow2[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl5}
                             </a>
                             <div class="text">
-                            <a target="_blank" href="#" class="title" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">脂肪肝不能吃肉？教你靠谱的护肝指南</a>
+                             <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow2[0]['ins_id']}" class="title">{$substrlist5}</a>
                             <span class="summary">
-                            关于脂肪肝的传闻，你听过几个？  胖的人才会得脂肪肝！ 脂肪肝就是油脂吃太多了，所以得了脂肪肝就不能
-                            <a target="_blank" href="#" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">[详细]</a>
+                            {$substr5}
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow2[0]['ins_id']}">[详细]
+                            </a>
                             </span>
                             </div>
                             </div>
                             <div class="focus-list">
                             <ul>
-                            <foreach name="listrow2" item="val">
+                            <foreach name="listrow2" item="val" key="key">
                             <if condition="$val['class'] eq '饮食'">
                             <if condition="$val['unit_price'] eq '1'">
-
+                            <if condition="$key gt 0">
                             <li>
                             <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                             <i class="dot"></i>
@@ -268,6 +278,7 @@
                             </li>
                             </if>
                             </if>
+                        </if>
                             </foreach>
                             </ul>
                             </div>
@@ -277,23 +288,24 @@
                            <div class="news-item health-preserve J_healthPreserve">
                             <h5>母婴<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=母婴" target="_blank">更多</a></li></h5>
                             <div class="focus-single g-clear">
-                            <a target="_blank" href="#">
-                            <img src="__PUBLIC_HOME__/images/bottom-default.png">
+                             <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow3[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl6}
                             </a>
                             <div class="text">
-                            <a target="_blank" href="#" class="title">中医望诊，一眼就看出有什么病</a>
+                             <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow3[0]['ins_id']}" class="title">{$substrlist6}</a>
                             <span class="summary">
-                            脸色反应气血的兴衰　　面部的色泽是气血通过经络上注于面而表现出来的，气血的盛衰及运行情况，必定会从面色上反映出来　　脸色...
-                            <a target="_blank" href="#">[详细]
+                             {$substr6}
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow3[0]['ins_id']}">[详细]
                             </a>
                             </span>
                             </div>
                             </div>
                             <div class="focus-list">
                             <ul>
-                            <foreach name="listrow3" item="val">
+                            <foreach name="listrow3" item="val" key="key">
                             <if condition="$val['class'] eq '母婴'">
                             <if condition="$val['unit_price'] eq '1'">
+                            <if condition="$key gt 0">
                             <li>
                             <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                             <i class="dot"></i>
@@ -311,6 +323,7 @@
                             </li>
                             </if>
                             </if>
+                        </if>
                             </foreach>
                             </ul>
                             </div>
@@ -325,23 +338,24 @@
                             <h5>运动<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=运动" target="_blank">更多</a></li></h5>
 
                             <div class="focus-single g-clear">
-                            <a target="_blank" href="#" monitor="home_health_refer,doctordirect,doctor_text">
-                            <img src="__PUBLIC_HOME__/images/rLn44885969.png" alt="脂肪肝不能吃肉？教你靠谱的护肝指南" onmousedown="return _smartlog(this,'INF')">
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow4[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl7}
                             </a>
                             <div class="text">
-                            <a target="_blank" href="#" class="title" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">脂肪肝不能吃肉？教你靠谱的护肝指南</a>
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow4[0]['ins_id']}" class="title">{$substrlist7}</a>
                             <span class="summary">
-                            关于脂肪肝的传闻，你听过几个？  胖的人才会得脂肪肝！ 脂肪肝就是油脂吃太多了，所以得了脂肪肝就不能
-                            <a target="_blank" href="#" onmousedown="return _smartlog(this,'INF')" monitor="home_health_refer,doctordirect,doctor_text">[详细]</a>
+                            {$substr7}
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow4[0]['ins_id']}">[详细]
+                            </a>
                             </span>
                             </div>
                             </div>
                             <div class="focus-list">
                             <ul>
-                            <foreach name="listrow4" item="val">
+                            <foreach name="listrow4" item="val" key="key">
                             <if condition="$val['class'] eq '运动'">
                             <if condition="$val['unit_price'] eq '1'">
-
+                            <if condition="$key gt 0">
                             <li>
                             <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                             <i class="dot"></i>
@@ -359,6 +373,7 @@
                             </li>
                             </if>
                             </if>
+                        </if>
                             </foreach>
                             </ul>
                             </div>
@@ -371,23 +386,24 @@
                             <div class="news-item health-preserve J_healthPreserve">
                             <h5>百科<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=百科" target="_blank">更多</a></li></h5>
                             <div class="focus-single g-clear">
-                            <a target="_blank" href="#">
-                            <img src="__PUBLIC_HOME__/images/bottom-default.png">
+                             <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow5[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl8}
                             </a>
                             <div class="text">
-                            <a target="_blank" href="#" class="title">中医望诊，一眼就看出有什么病</a>
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow5[0]['ins_id']}" class="title">{$substrlist8}</a>
                             <span class="summary">
-                            脸色反应气血的兴衰　　面部的色泽是气血通过经络上注于面而表现出来的，气血的盛衰及运行情况，必定会从面色上反映出来　　脸色...
-                            <a target="_blank" href="#">[详细]
+                            {$substr8}
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow5[0]['ins_id']}">[详细]
                             </a>
                             </span>
                             </div>
                             </div>
                             <div class="focus-list">
                             <ul>
-                            <foreach name="listrow5" item="val">
+                            <foreach name="listrow5" item="val" key="key">
                             <if condition="$val['class'] eq '百科'">
                             <if condition="$val['unit_price'] eq '1'">
+                            <if condition="$key gt 0">
                             <li>
                             <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                             <i class="dot"></i>
@@ -405,6 +421,7 @@
                             </li>
                             </if>
                             </if>
+                        </if>
                             </foreach>
                             </ul>
                             </div>

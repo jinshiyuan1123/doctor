@@ -13,24 +13,25 @@
                                 <div class="news-item medical-strategy J_medicalStrategy" style="width:300px;border-right: 1px dotted #f9fbf9">
                                     <h5>医院公开<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=医院公开" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="__PUBLIC_HOME__/images/1536026134780.jpg" alt="又双叒叕流产！怎么才能保住宝宝？">
-                                        </a>
+                                         <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist4[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl11}
+                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">又流产！怎么保住宝宝？</a>
+                                           <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist4[0]['ins_id']}" class="title">{$substrlist11}</a>
                                             <span class="summary">
-                                    对于一个期待成为母亲的女性而言，不孕是很痛苦的，但比之更痛苦的，是怀孕后却保不住自己的宝宝第一胎，雀跃着欢喜着，宝宝没保...
-                                        <a target="_blank" href="#">[详细]
-                                    </a>
+                                     {$substr11}
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist4[0]['ins_id']}">[详细]
+                            </a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
                                             
-                                          <foreach name="reslist4" item="val">
+                                          <foreach name="reslist4" item="val" key="key">
                                           <if condition="$val['class'] eq '医院公开'">
                                           <if condition="$val['unit_price'] eq '1'">
+                                            <if condition="$key gt 0">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
@@ -43,10 +44,12 @@
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>
+                                                     <span class="date">{$val['create_time']|date='Y-m-d',###}</span>
                                                 </a>
-                                                <span class="date">{$val['create_time']|date='Y-m-d',###}</span>
+                                               
                                             </li>
                                             </if>
+                                        </if>
                                           </if>
                                           </foreach>
                                         </ul>
@@ -56,23 +59,24 @@
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="width:300px">
                                     <h5>医院动态<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=医院动态" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="__PUBLIC_HOME__/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
-                                        </a>
+                                         <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist5[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl22}
+                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">每天走一万步，真的健康吗？</a>
+                                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist5[0]['ins_id']}" class="title">{$substrlist22}</a>
                                             <span class="summary">
-                                    每个人心中都有一个更美好的自己：健康、苗条、充满活力而运动，可以帮助你实现这样的自己自从“每天一万步”这个活动出现后，大...
-                                    <a target="_blank" href="#">[详细]
-                                    </a>
+                                     {$substr22}
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist5[0]['ins_id']}">[详细]
+                            </a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <foreach name="reslist5" item="val">
+                                            <foreach name="reslist5" item="val" key="key">
                                           <if condition="$val['class'] eq '医院动态'">
                                           <if condition="$val['unit_price'] eq '1'">
+                                            <if condition="$key gt 0">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
@@ -85,11 +89,13 @@
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>
+                                                      <span class="date">{$val['create_time']|date='Y-m-d',###}</span>
                                                 </a>
-                                                <span class="date">{$val['create_time']|date='Y-m-d',###}</span>
+                                              
                                             </li>
                                             </if>
                                           </if>
+                                      </if>
                                           </foreach>
                                            
                                         </ul>
@@ -99,23 +105,23 @@
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="">
                                     <h5>医院健康<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=医院健康" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="__PUBLIC_HOME__/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
-                                        </a>
+                                        <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist6[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl33}
+                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">每天走一万步，真的健康吗？</a>
+                                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist6[0]['ins_id']}" class="title">{$substrlist33}</a>
                                             <span class="summary">
-                                    每个人心中都有一个更美好的自己：健康、苗条、充满活力而运动，可以帮助你实现这样的自己自从“每天一万步”这个活动出现后，大...
-                                    <a target="_blank" href="#">[详细]
-                                    </a>
+                                    {$substr33}
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist6[0]['ins_id']}">[详细]</a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <foreach name="reslist6" item="val">
+                                            <foreach name="reslist6" item="val" key="key">
                                           <if condition="$val['class'] eq '医院健康'">
                                           <if condition="$val['unit_price'] eq '1'">
+                                            <if condition="$key gt 0">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
@@ -128,11 +134,13 @@
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>
+                                                     <span class="date">{$val['create_time']|date='Y-m-d',###}</span>
                                                 </a>
-                                                <span class="date">{$val['create_time']|date='Y-m-d',###}</span>
+                                               
                                             </li>
                                             </if>
                                           </if>
+                                      </if>
                                           </foreach>
                                            
                                         </ul>
@@ -147,24 +155,24 @@
                                 <div class="news-item medical-strategy J_medicalStrategy" style="width:300px;border-right: 1px dotted #f9fbf9">
                                     <h5>医院党建<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=就医攻略" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="__PUBLIC_HOME__/images/1536026134780.jpg" alt="又双流产！怎么保住宝宝？">
-                                        </a>
+                                         <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist7[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl44}
+                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">又双流产！怎么保住宝宝？</a>
+                                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist7[0]['ins_id']}" class="title">{$substrlist44}</a>
                                             <span class="summary">
-                                    对于一个期待成为母亲的女性而言，不孕是很痛苦的，但比之更痛苦的，是怀孕后却保不住自己的宝宝第一胎，雀跃着欢喜着，宝宝没保...
-                                        <a target="_blank" href="#">[详细]
-                                    </a>
+                                    {$substr44}
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist7[0]['ins_id']}">[详细]</a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
                                             
-                                          <foreach name="reslist7" item="val">
+                                          <foreach name="reslist7" item="val" key="key">
                                           <if condition="$val['class'] eq '医院党建'">
                                           <if condition="$val['unit_price'] eq '1'">
+                                            <if condition="$key gt 0">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
@@ -177,11 +185,13 @@
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>
+                                                    <span class="date">{$val['create_time']|date='Y-m-d',###}</span>
                                                 </a>
-                                                <span class="date">{$val['create_time']|date='Y-m-d',###}</span>
+                                                
                                             </li>
                                             </if>
                                           </if>
+                                      </if>
                                           </foreach>
                                         </ul>
                                     </div>
@@ -190,23 +200,23 @@
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="width:300px">
                                     <h5>医院视频<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=医院视频" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="__PUBLIC_HOME__/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
-                                        </a>
+                                       <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist8[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl55}
+                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">每天走一万步，真的健康吗？</a>
+                                           <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist8[0]['ins_id']}" class="title">{$substrlist55}</a>
                                             <span class="summary">
-                                    每个人心中都有一个更美好的自己：健康、苗条、充满活力而运动，可以帮助你实现这样的自己自从“每天一万步”这个活动出现后，大...
-                                    <a target="_blank" href="#">[详细]
-                                    </a>
+                                   {$substr55}
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist8[0]['ins_id']}">[详细]</a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <foreach name="reslist" item="val">
+                                            <foreach name="reslist8" item="val" key="key">
                                           <if condition="$val['class'] eq '医院视频'">
                                           <if condition="$val['unit_price'] eq '1'">
+                                            <if condition="$key gt 0">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
@@ -219,11 +229,13 @@
                                                     <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
                                                     
                                                     </if>
+                                                    <span class="date">{$val['create_time']|date='Y-m-d',###}</span>
                                                 </a>
-                                                <span class="date">{$val['create_time']|date='Y-m-d',###}</span>
+                                                
                                             </li>
                                             </if>
                                           </if>
+                                      </if>
                                           </foreach>
                                            
                                         </ul>
@@ -233,23 +245,23 @@
                                 <div class="news-item rumor-crusher J_rumorCrusher" style="">
                                     <h5>我拍拍<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=我拍拍" target="_blank">更多</a></li></h5>
                                     <div class="focus-single g-clear">
-                                        <a target="_blank" href="#">
-                                            <img src="__PUBLIC_HOME__/images/1535596388286.jpg" alt="每天走一万步，真的健康吗？">
-                                        </a>
+                                          <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist9[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl66}
+                                         </a>
                                         <div class="text">
-                                            <a target="_blank" href="#" class="title">每天走一万步，真的健康吗？</a>
+                                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist9[0]['ins_id']}" class="title">{$substrlist66}</a>
                                             <span class="summary">
-                                    每个人心中都有一个更美好的自己：健康、苗条、充满活力而运动，可以帮助你实现这样的自己自从“每天一万步”这个活动出现后，大...
-                                    <a target="_blank" href="#">[详细]
-                                    </a>
+                                    {$substr66}
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$reslist9[0]['ins_id']}">[详细]</a>
                                 </span>
                                         </div>
                                     </div>
                                     <div class="focus-list">
                                         <ul>
-                                            <foreach name="reslist" item="val">
+                                            <foreach name="reslist9" item="val" key="key">
                                           <if condition="$val['class'] eq '我拍拍'">
                                           <if condition="$val['unit_price'] eq '1'">
+                                            <if condition="$key gt 0">
                                             <li>
                                                 <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
                                                     <i class="dot"></i>
@@ -267,6 +279,7 @@
                                             </li>
                                             </if>
                                           </if>
+                                      </if>
                                           </foreach>
                                            
                                         </ul>
