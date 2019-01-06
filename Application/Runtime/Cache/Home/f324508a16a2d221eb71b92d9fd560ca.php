@@ -89,7 +89,8 @@
                 <a href="" rel="nofollow" class="dl-guide J_SeoGuide" onmousedown="return _smartlog(this,'TOP')" monitor="public_head,publick_head,appdload">
                     收藏本站    
                     <span>
-                        <img src="https://static.guahao.cn/front/portal-pc-static/img/index-appQRcode.png?v=20170505" alt="">
+                        <!-- <img src="https://static.guahao.cn/front/portal-pc-static/img/index-appQRcode.png?v=20170505" alt=""> -->
+                        <img src="/Public/home/images/indexappQRcode.png" alt="">
                     </span>
                 </a>
                 <span class="line">|</span>
