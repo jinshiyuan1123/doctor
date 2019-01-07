@@ -1,12 +1,12 @@
-
+<?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE HTML>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="shortcut icon" href="__PUBLIC_HOME__/favicon.ico" />
+<link rel="shortcut icon" href="/Public/home/favicon.ico" />
 <!-- External CSS -->
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
-	<link rel="stylesheet" href="__PUBLIC_HOME__/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
+	<link rel="stylesheet" href="/Public/home/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
 <script  type="text/javascript">
 	// $GF { Array } - functions defined in pages which has no module. The collected functions will be defined in page directly.
 	$GF = [];
@@ -29,7 +29,43 @@
 	<body>
 		<!-- #g-wrapper -->
 		<div id="g-wrapper" class="gc-new">
-	 <include file="Public:dochead" />
+			<!-- #gh -->
+			 <div class="g-header-new noprint">
+    <div class="notice"  id="J_Notify" style="display: none;">
+        <div class="center" class="">
+            <div class="notice-contain">
+                <span class="bell-icon"></span>
+                <span class="title">公告：</span>
+                <div id="J_NotifyBox" class="wrapper" style="">
+                    <div class="move-box" style="" >
+                        <span class="content J_Content" href="javascript:;"></span>
+                    </div>
+                    <div class="move-box2" style="display: none;" >
+                        <span class="content J_Content" href="javascript:;"></span>
+                    </div>
+                </div>
+                <span class="close-icon J_NoticeClose"></span>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <a class="logo" href="<?php echo U('home/index/index');?>">
+            <img src="/Public/home/images/logolist.jpg?_=123456" alt="logo">
+        </a>
+        <div class="nav">
+                    <span>欢迎您
+                            ,&nbsp;<?php echo ($user["hospital"]); ?>
+                    </span>
+                <a href="#" target="_blank" class="help" title="联系客服" monitor="doctorweb,menu_top,wy_robot"><b class="border">联系客服</b></a>
+              
+                <a href="<?php echo U('home/index/yydocLogout');?>" class="logout j-out-system" title="退出" monitor="doctorweb,menu_top,exit"><b>退出</b></a>
+                <input type="hidden" class="j-out-url" value="" />
+        </div>
+    </div>
+    <div class="gm-box-off-out hide">
+        <p style="text-align: center;">您还在接诊状态，确定退出登录?</p>
+    </div>
+</div>
 <script type="text/javascript">
     $GF.push(function() {
         //文字跑马灯
@@ -69,27 +105,7 @@
             },
             success: function(res) {
                 if(res.flag == 0) {
-                    if(res.item) {//查询结果
-                        var dataObj = res.item;
-                        $('.move-box .J_Content').html(dataObj.content);
-                        $('.move-box2 .J_Content').html(dataObj.content);
-                        //html方法插入的内容，直接拿宽度拿不到
-                        setTimeout(function(){
-                            var outWidth = $('#J_NotifyBox').outerWidth();
-                            var box1 = $('#J_NotifyBox .move-box'),box2 = $('#J_NotifyBox .move-box2');
-                            var inWidth = box1.outerWidth();
-                            //顶部通知超过一行，自动滚动播放
-                            if(inWidth > outWidth){
-                                var left1 = 0;
-                                var left2 = inWidth;
-                                var difference = outWidth - inWidth;
-                                function move(){
-                                    box2.show();
-                                    var item2Left = box2.css('left');
-                                    var item1Left = box1.css('left');
-                                    left1 = left1-1;
-                                    left2 = left2-1;
-                                    box1.css({'left':left1+40+'px'});
+                    if(res.item) );
                                     box2.css({'left':left2+40+'px'}); 
                                     if(parseInt(item1Left) == difference){
                                         left2 = outWidth;
@@ -134,9 +150,7 @@
                         console.log('没有配置公告');
                     }
                 }
-                else {//没有配置公告
-                    console.log('没有配置公告');
-                }
+                else 
             },
             error: function(){
                 console.log('公告接口失败');
@@ -152,22 +166,23 @@
 	<!-- 医生个人简介 -->
 	<div  class="top">
 		<div class="head-box">
-                            <img src="<if condition='$user.pic eq true'>{$pic}<else/>__PUBLIC_HOME__/images/default_yy.gif?timeStamp=1543037600522</if>" alt="" class="head-img"/>
+                       <img src="<?php if($user["pic"] == true): echo ($pic); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
 		</div>
 		<div class="info">
 			<div class="basic-info">
-				<h1>{$user.hospital}</h1>
+				<h1><?php echo ($user["hospital"]); ?></h1>
 				<span></span>
 			</div>
 			<div class="dept-info">
-				         		
+				         <!-- 		上海中医药大学附属龙华医院<span class="dept"></span>
+				         		<span class="dept">1222室</span> -->
 			</div>
-			<a href="#" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
+			<a href="" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
 		</div>
 	</div>
 
 	<ul class="menu-parent-box">
-			<li class="menu-parent "><a href="{:U('home/index/yydoctorhome')}" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
+			<li class="menu-parent "><a href="<?php echo U('home/index/yydoctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
 					<li class="menu-parent ">
 					<a href="javascript:;"
 					
@@ -177,20 +192,20 @@
 						
 					     账号设置
 						</a>
-									<div class="menu-child-box hide">
-									   	<a class="menu-child " href="{:U('home/index/yyauthprofile')}" monitor="doctorweb,menu,accountset_myinfo"
+								<div class="menu-child-box hide">
+									   	<a class="menu-child " href="<?php echo U('home/index/yyauthprofile');?>" monitor=""
 										  >
 										   
 								   		个人资料</a>
-									   	<a class="menu-child " href="{:U('home/index/yyhead_pic_settings')}" monitor="doctorweb,menu,accountset_pichead"
+									   	<a class="menu-child " href="<?php echo U('home/index/yyhead_pic_settings');?>" monitor="doctorweb,menu,accountset_pichead"
 										  >
 										   
 								   		头像设置</a>
-									   	<a class="menu-child active" href="{:U('home/index/yyauthaccout')}" monitor="doctorweb,menu,accountset_info"
+									   	<a class="menu-child " href="<?php echo U('home/index/yyauthaccout');?>" monitor="doctorweb,menu,accountset_info"
 										  >
 										   
 								   		账号信息</a>
-									   	<a class="menu-child " href="{:U('home/index/yyauthtomod')}" monitor="doctorweb,menu,accountset_password"
+									   	<a class="menu-child " href="<?php echo U('home/index/yyauthtomod');?>" monitor="doctorweb,menu,accountset_password"
 										  >
 										   
 								   		修改密码</a>
@@ -206,14 +221,14 @@
 					     帮助与反馈
 						</a>
 									<div class="menu-child-box hide">
-									   	<a class="menu-child " href="{:U('home/index/authoperation')}" 
+									   	<a class="menu-child " href="h<?php echo U('home/index/authoperation');?>" 
 										  >
 										   
 								   		操作手册</a>
-									   	<a class="menu-child " href="#" m>
+									   	<a class="menu-child " href="#" >
 										   
 								   		联系客服</a>
-									   	<a class="menu-child " href="{:U('home/index/faqlist')}" 
+									   	<a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
 										  >
 										   
 								   		常见问题</a>
@@ -224,38 +239,91 @@
 
 				<!-- #gc -->
 				
-<div id="gc" class="gp-consult-list" data-module="consult-manage">
-	<div class="gc-mask">
-		<div class="content-admin g-clear g-content">
-			<div id="g-breadcrumb">
-			    <a href="https://doctor.guahao.com/home">首页</a>&gt;
-		        <span>账号设置</span>&gt;
-		        <span>账号信息</span>
-		  	</div>
-			<div class="g-content-widget g-tab">
-				<div class="config-tab">
-					<a href="{:U('home/index/yyauthprofile')}" monitor="doctorweb,accountset_top,myinfo">个人资料</a>
-					<a href="{:U('home/index/yyhead_pic_settings')}" monitor="doctorweb,accountset_top,headpic">头像设置</a>
-					<a href="javascript:;" class="active" monitor="doctorweb,accountset_top,info">账号信息</a>
-					<a href="{:U('home/index/yyauthtomod')}" monitor="doctorweb,accountset_top,password">修改密码</a>
-				</div>
-				<div class="content-warp" style="margin-top:0px;">
-					<div class="gfm-inline">
-						<ul class="account-info-box">
-							<li class="js-cardName"><label>账号：</label><span class="J_name">
-							{$user.hospital}</span></li>
-							<li><label>绑定手机号：</label><span class="J_cardName">
-							{$user.mobile}</span></li>
-							<li class="js-cardId"><label>邮箱地址：</label><span class="J_cardNO"></span></li>
-						</ul>
+
+
+	<div id="gc" class="gp-doc-profile"  data-module="doc-operate">
+		<div class="gc-mask">
+			<div class="content-admin g-clear g-content">
+				<div id="g-breadcrumb">
+				    <a href="https://doctor.guahao.com/home">首页</a>&gt;
+			        <span>个人首页 &gt;</span>
+			        <span>个人资料</span>
+			  	</div>
+				<div class="g-content-widget g-tab">
+					<!-- <div class="config-tab">
+						<a href="javascript:;" class="active" monitor="doctorweb,accountset_top,myinfo">个人资料</a>
+						<a href="<?php echo U('home/index/head_pic_settings');?>" monitor="doctorweb,accountset_top,headpic">头像设置</a>
+						<a href="<?php echo U('home/index/authaccout');?>" monitor="doctorweb,accountset_top,info">账号信息</a>
+						<a href="<?php echo U('home/index/authtomod');?>" monitor="doctorweb,accountset_top,password">修改密码</a>
+					</div> -->
+					<div class="content-warp">
+						     	 	  <input type="hidden" name="originalTitleName" value="" />
+						     	 	  <input type="hidden" name="originalTitleType"  value="">
+						     	 	  <input type="hidden" name="titleTypeStatus" value="-1">
+						     	 	  
+						     	 	  <input type="hidden" name="originalScienceTitleName" value="" />
+						     	 	  <input type="hidden" name="originalScienceTitleType" value="">
+						     	 	  <input type="hidden" name="titleTypeStatus" value="-1">
+					         <form  name="doctorInfo" id="doc_profile_form"  class="gfm-inline" method="POST">
+						       <input type="hidden" value="/auth/profile" name="loginTarget">
+					     	 <div class="g-tips-box-error hide">
+						   		<span class="gi gi-error"></span>
+						   		<span class="tips-text"></span>
+						   	</div>
+				  			<div class="g-tips-box-succ hide">
+								<span class="gi gi-succ"></span>
+							   	<span class="tips-text"></span>
+							</div>
+					     	 <ul>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item">
+					     	 			<label style="line-height: 60px;">头像：</label>
+					     	 			<div class="cert-preview g-clear J_CertPreview">
+					     	 				<div class="preview-item">
+					     	 					 <img src="<?php if($user["pic"] == true): echo ($pic); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
+					     	 				</div>
+					     	 			</div>
+					     	 		</div>
+					     	 	</li>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item ">
+						     	 	  	<label>登录名：</label>
+						     	 	 	 <span class="gfm-left"><?php echo ($user["mobile"]); ?></span>
+						     	 	 </div>
+					     	 	</li>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item ">
+						     	 	  <label>真实姓名：</label>
+						     	 	  <span class="gfm-left"><?php echo ($user["true_name"]); ?></span>
+						     	 	 </div>
+					     	 	</li>
+					     	 	<li class="g-clear">
+					     	 		<div class="gfm-item ">
+						     	 	  <label>医院名称： </label>
+						     	 	 	<?php echo ($user["hospital"]); ?>
+						     	 	 </div>
+					     	 	</li>
+					     	 	
+					     	 	
+					     	 
+					     	 	<li class="gfm-action g-clear">
+					     	 		<div class="gfm-item ">
+						     	 		 <label>&nbsp;</label>
+						     	 		 <span class="gfm-left">
+						     	 			<a class="gbn gbt-blue1" href="javascript:;"  id="doUpdate" monitor="doctorweb,accountset_myinfo,refresh">更新</a>
+						     	 		 </span>
+					     	 		 </div>
+					     	 	</li>
+					     	 </ul>
+					    </form>
 					</div>
+
 				</div>
 			</div>
 		</div>
+		<!-- end of .gp-doc-profile -->
 	</div>
-	<!-- end of .gc-mask -->
-</div>
-<!-- end of #gc -->
+	<!-- end of #gc -->
 <span id="gi_page_totop" class="gi gi-page-totop"></span>
 
 				<!-- end of #gc -->
@@ -276,10 +344,10 @@
 	//打点日志全局变量
 	$GLog = {
 		requestMethod:'GET',
-		loginId:'Jpdycqdt4wPlFYIhpolDHKljbGEUUtQ8Mtk3U3obwMHKaPnalqOf8A==',
+		loginId:'nPuS8fU8D/OwSYgBHuytSD2a94FM1t6yua5UQIInwpIEhwBSJw8iRQ==',
 		perSessiionId:'154303338518820178067151',
 		shortSessionId:'',
-		referurl:'https://doctor.guahao.com/auth/account',
+		referurl:'https://doctor.guahao.com/home',
 		userAgent:'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
 		logUrl: 'https://trackweb.guahao.cn/blank.gif',
 		debug: false,

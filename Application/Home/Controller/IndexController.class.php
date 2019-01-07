@@ -1398,10 +1398,10 @@ public function recursived($meta,$flag,$count )
 
     public function yydoctorhome(){
       $data = I('post.');
-     
-      $user= M('his_yydoctor')->where()->find();
       $res = session('home_user_info');
-      $this->assign('user',$res);
+      $user= M('his_yydoctor')->where("uid='$res[id]'")->find();
+     
+      $this->assign('user',$user);
       $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
       $this->assign('pic',$pic);
       $this->display(':yydoctorhome');

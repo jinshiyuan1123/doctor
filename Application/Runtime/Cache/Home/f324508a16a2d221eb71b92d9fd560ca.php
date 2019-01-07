@@ -234,11 +234,11 @@
 </li>
 <li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">健康视频</a>
 	<ul>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=健康" target="_blank">健康</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=养生" target="_blank">养生</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=减肥" target="_blank">减肥</a></li>
-     <li><a href="<?php echo U('home/index/allorder');?>?class=生活" target="_blank">生活</a></li>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=饮食" target="_blank">饮食</a></li>
+    <li><a href="<?php echo U('home/index/allorder');?>?class=健康视频" target="_blank">健康视频</a></li>
+    <li><a href="<?php echo U('home/index/allorder');?>?class=养生视频" target="_blank">养生视频</a></li>
+    <li><a href="<?php echo U('home/index/allorder');?>?class=减肥视频" target="_blank">减肥视频</a></li>
+     <li><a href="<?php echo U('home/index/allorder');?>?class=生活视频" target="_blank">生活视频</a></li>
+    <li><a href="<?php echo U('home/index/allorder');?>?class=饮食视频" target="_blank">饮食视频</a></li>
   
 </ul>
 </li>
