@@ -110,28 +110,31 @@ function getCity($ip = '')
         $class4 ="医院公开";
         $class5 = "医院动态";
         $class6 ="医院健康";
+        $class7 ="医院党建";
+        $class8 = "医院视频";
+        $class9 ="我拍拍";
         $user = "择医网讲堂";
       
-        $res = M('his_inspectionfee')->where("class='$class'")->order('ins_id desc')->limit(6)->select();
+        $res = M('his_inspectionfee')->where("class='$class'")->order('ins_id desc')->limit(7)->select();
        
-        $istitle = M('his_inspectionfee')->where("class='$class'")->where("istitle='1'")->order('ins_id desc')->find();
-        $res1 = M('his_inspectionfee')->where("class='$class1' ")->order('ins_id desc')->limit(6)->select();
-        $res2 = M('his_inspectionfee')->where("class='$class2' ")->order('ins_id desc')->limit(6)->select();
-        $res3 = M('his_inspectionfee')->where("class='$class3' ")->order('ins_id desc')->limit(6)->select();
-        $res4 = M('his_inspectionfee')->where("class='$class4' ")->order('ins_id desc')->limit(6)->select();
-        $res5 = M('his_inspectionfee')->where("class='$class5' ")->order('ins_id desc')->limit(6)->select();
-         $res6 = M('his_inspectionfee')->where("class='$class6' ")->order('ins_id desc')->limit(6)->select();
-        $res7 = M('his_inspectionfee')->where("class='$class7' ")->order('ins_id desc')->limit(6)->select();
-        $res8 = M('his_inspectionfee')->where("class='$class8' ")->order('ins_id desc')->limit(6)->select();
-        $res9 = M('his_inspectionfee')->where("class='$class9' ")->order('ins_id desc')->limit(6)->select();
+        // $istitle = M('his_inspectionfee')->where("class='$class'")->where("istitle='1'")->order('ins_id desc')->find();
+        $res1 = M('his_inspectionfee')->where("class='$class1' ")->order('ins_id desc')->limit(7)->select();
+        $res2 = M('his_inspectionfee')->where("class='$class2' ")->order('ins_id desc')->limit(7)->select();
+        $res3 = M('his_inspectionfee')->where("class='$class3' ")->order('ins_id desc')->limit(7)->select();
+        $res4 = M('his_inspectionfee')->where("class='$class4' ")->order('ins_id desc')->limit(7)->select();
+        $res5 = M('his_inspectionfee')->where("class='$class5' ")->order('ins_id desc')->limit(7)->select();
+         $res6 = M('his_inspectionfee')->where("class='$class6' ")->order('ins_id desc')->limit(7)->select();
+        $res7 = M('his_inspectionfee')->where("class='$class7' ")->order('ins_id desc')->limit(7)->select();
+        $res8 = M('his_inspectionfee')->where("class='$class8' ")->order('ins_id desc')->limit(7)->select();
+        $res9 = M('his_inspectionfee')->where("class='$class9' ")->order('ins_id desc')->limit(7)->select();
         $res10 = M('his_inspectionfee')->where("class='$user' ")->order('ins_id desc')->limit(3)->select();
          $rowdoctor= M('his_doctor')->order('id desc')->limit(3)->select();
           $row = M('his_yydoctor')->order('id desc')->limit(3)->select();
-        $listrow1 = M('his_inspectionfee')->where("class='$list1' ")->order('ins_id desc')->limit(6)->select();
-        $listrow2 = M('his_inspectionfee')->where("class='$list2' ")->order('ins_id desc')->limit(6)->select();
-        $listrow3 = M('his_inspectionfee')->where("class='$list3' ")->order('ins_id desc')->limit(6)->select();
-        $listrow4 = M('his_inspectionfee')->where("class='$list4' ")->order('ins_id desc')->limit(6)->select();
-        $listrow5 = M('his_inspectionfee')->where("class='$list5' ")->order('ins_id desc')->limit(6)->select();
+        $listrow1 = M('his_inspectionfee')->where("class='$list1' ")->order('ins_id desc')->limit(7)->select();
+        $listrow2 = M('his_inspectionfee')->where("class='$list2' ")->order('ins_id desc')->limit(7)->select();
+        $listrow3 = M('his_inspectionfee')->where("class='$list3' ")->order('ins_id desc')->limit(7)->select();
+        $listrow4 = M('his_inspectionfee')->where("class='$list4' ")->order('ins_id desc')->limit(7)->select();
+        $listrow5 = M('his_inspectionfee')->where("class='$list5' ")->order('ins_id desc')->limit(7)->select();
         $listhot = M('his_inspectionfee')->order('ins_id desc')->limit(10)->select();
         $listhot1 = M('his_inspectionfee')->order('ins_id asc')->limit(10)->select();
         $this->assign('listhot',$listhot);
@@ -142,14 +145,108 @@ function getCity($ip = '')
         $this->assign('reslist',$res);
        
 
-        $substr = mb_substr($istitle['make'],0,70);
-        $substrlist = mb_substr($istitle['inspection_name'], 0,20);
-         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$istitle['textarea'],$match);
-        
+        $substr = mb_substr($res[0]['make'],0,70);
+        $substrlist = mb_substr($res[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$res[0]['textarea'],$match);
+         $substr1 = mb_substr($res1[0]['make'],0,70);
+        $substrlist1 = mb_substr($res1[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$res1[0]['textarea'],$match1);
+           $substr2 = mb_substr($res2[0]['make'],0,70);
+        $substrlist2 = mb_substr($res2[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$res2[0]['textarea'],$match2);
+          $substr3 = mb_substr($res3[0]['make'],0,70);
+        $substrlist3 = mb_substr($res3[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$res3[0]['textarea'],$match3);
+            $substr4 = mb_substr($listrow1[0]['make'],0,70);
+        $substrlist4 = mb_substr($listrow1[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$listrow1[0]['textarea'],$match4);
+           $substr5 = mb_substr($listrow2[0]['make'],0,70);
+        $substrlist5 = mb_substr($listrow2[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$listrow2[0]['textarea'],$match5);
+           $substr6 = mb_substr($listrow3[0]['make'],0,70);
+        $substrlist6 = mb_substr($listrow3[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$listrow3[0]['textarea'],$match6);
+            $substr7 = mb_substr($listrow4[0]['make'],0,70);
+        $substrlist7 = mb_substr($listrow4[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$listrow4[0]['textarea'],$match7);
+          $substr8 = mb_substr($listrow5[0]['make'],0,70);
+        $substrlist8 = mb_substr($listrow5[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$listrow5[0]['textarea'],$match8);
+
+
+          $substr11 = mb_substr($res4[0]['make'],0,70);
+        $substrlist11 = mb_substr($res4[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$res4[0]['textarea'],$match11);
+           $substr22 = mb_substr($res5[0]['make'],0,70);
+        $substrlist22 = mb_substr($res5[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$res5[0]['textarea'],$match22);
+            $substr33 = mb_substr($res6[0]['make'],0,70);
+        $substrlist33 = mb_substr($res6[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$res6[0]['textarea'],$match33);
+           $substr44 = mb_substr($res7[0]['make'],0,70);
+        $substrlist44 = mb_substr($res7[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$res7[0]['textarea'],$match44);
+           $substr55 = mb_substr($res8[0]['make'],0,70);
+        $substrlist55 = mb_substr($res8[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$res8[0]['textarea'],$match55);
+            $substr66 = mb_substr($res9[0]['make'],0,70);
+        $substrlist66 = mb_substr($res9[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$res9[0]['textarea'],$match66);
 
         $this->assign('substr',$substr);
         $this->assign('imgurl',$match[0]);
         $this->assign('substrlist',$substrlist);
+        $this->assign('substr1',$substr1);
+        $this->assign('imgurl1',$match1[0]);
+        $this->assign('substrlist1',$substrlist1);
+
+         $this->assign('substr2',$substr2);
+        $this->assign('imgurl2',$match2[0]);
+        $this->assign('substrlist2',$substrlist2);
+
+         $this->assign('substr3',$substr3);
+        $this->assign('imgurl3',$match3[0]);
+        $this->assign('substrlist3',$substrlist3);
+         $this->assign('substr4',$substr4);
+        $this->assign('imgurl4',$match4[0]);
+        $this->assign('substrlist4',$substrlist4);
+         $this->assign('substr5',$substr5);
+        $this->assign('imgurl5',$match5[0]);
+        $this->assign('substrlist5',$substrlist5);
+         $this->assign('substr6',$substr6);
+        $this->assign('imgurl6',$match6[0]);
+        $this->assign('substrlist6',$substrlist6);
+          $this->assign('substr7',$substr7);
+        $this->assign('imgurl7',$match7[0]);
+        $this->assign('substrlist7',$substrlist7);
+
+          $this->assign('substr8',$substr8);
+        $this->assign('imgurl8',$match8[0]);
+        $this->assign('substrlist8',$substrlist8);
+         $this->assign('substr11',$substr11);
+        $this->assign('imgurl11',$match11[0]);
+        $this->assign('substrlist11',$substrlist11);
+          $this->assign('substr22',$substr22);
+        $this->assign('imgurl22',$match22[0]);
+        $this->assign('substrlist22',$substrlist22);
+         $this->assign('substr33',$substr33);
+        $this->assign('imgurl33',$match33[0]);
+        $this->assign('substrlist33',$substrlist33);
+         $this->assign('substr44',$substr44);
+        $this->assign('imgurl44',$match44[0]);
+        $this->assign('substrlist44',$substrlist44);
+          $this->assign('substr55',$substr55);
+        $this->assign('imgurl55',$match55[0]);
+        $this->assign('substrlist55',$substrlist55);
+          $this->assign('substr66',$substr66);
+        $this->assign('imgurl66',$match66[0]);
+        $this->assign('substrlist66',$substrlist66);
+
+
+
+
+
+
         $this->assign('reslist1',$res1);
         $this->assign('reslist2',$res2);
         $this->assign('reslist3',$res3);
