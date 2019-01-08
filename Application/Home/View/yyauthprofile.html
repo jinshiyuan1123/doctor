@@ -153,7 +153,7 @@
 	<!-- 医生个人简介 -->
 	<div  class="top">
 		<div class="head-box">
-                       <img src="<if condition='$pic eq true'>{$pic}<else/>__PUBLIC_HOME__/images/default_yy.gif?timeStamp=1543037600522</if>" alt="" class="head-img"/>
+                       <img src="<if condition='empty($pic) eq true'>{$pic}<else/>__PUBLIC_HOME__/images/default_yy.gif?timeStamp=1543037600522</if>" alt="" class="head-img"/>
 		</div>
 		<div class="info">
 			<div class="basic-info">
