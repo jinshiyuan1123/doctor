@@ -162,7 +162,7 @@
             var did = $("#departmentEditBomb :input[name='did']").val();
             var sid_name = $("#ranks option:selected").text();
 
-            var ranklist = $("#ranks ").val();alert(ranklist);
+            var ranklist = $("#ranks ").val();
             $.post("{:U('/Department/editDepartment')}",
                 { "department_name": departmentName,'did':did,"ranklist":ranklist,"sid_name":sid_name},
                 function (data) {
