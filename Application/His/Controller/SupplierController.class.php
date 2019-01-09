@@ -125,7 +125,13 @@ class SupplierController extends HisBaseController
            
             $result = M('his_yydoctor')->where("id='$pidlist'")->save($data);
             if ($result) {
-                $this->ajaxSuccess('修改成功');
+              
+                 $result = M('his_yydoctor')->where("id='$pidlist'")->find();
+                 if($result['checkid'] == '1'){
+                    $ispic= array('ispic'=>1);
+                    $result = M('his_edithospital')->where("sid='$pidlist'")->save($ispic);
+                 }
+                 $this->ajaxSuccess('修改成功');
             } elseif ($this->supplier_model->getError()) {
                 $this->ajaxError($this->supplier_model->getError());
             } else {

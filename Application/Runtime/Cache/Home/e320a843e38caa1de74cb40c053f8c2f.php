@@ -20,17 +20,15 @@
 </script>
 
 	
-		        <meta name="keywords" content="择医" />
-		        <meta name="description" content="择医" />
 		
-		    <title>医院个人资料 | 择医</title>
+		    <title>操作手册 | 择医</title>
 	</head>
 	
 	<body>
 		<!-- #g-wrapper -->
 		<div id="g-wrapper" class="gc-new">
 			<!-- #gh -->
-			 <div class="g-header-new noprint">
+				 <div class="g-header-new noprint">
     <div class="notice"  id="J_Notify" style="display: none;">
         <div class="center" class="">
             <div class="notice-contain">
@@ -166,23 +164,23 @@
 	<!-- 医生个人简介 -->
 	<div  class="top">
 		<div class="head-box">
-                       <img src="<?php if(empty($pic) == true): echo ($pic); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
+                        <img src="https://img.guahao.com/portal_upload/userheadpic/pYf27810846_180x180.?timeStamp=1543038741277" alt="李旭峰大夫" class="head-img"/>
 		</div>
 		<div class="info">
 			<div class="basic-info">
-				<h1><?php echo ($user["hospital"]); ?></h1>
+				<h1>李旭峰&nbsp;</h1>
 				<span></span>
 			</div>
 			<div class="dept-info">
-				         <!-- 		上海中医药大学附属龙华医院<span class="dept"></span>
-				         		<span class="dept">1222室</span> -->
+				         		上海中医药大学附属龙华医院<span class="dept"></span>
+				         		<span class="dept">1222室</span>
 			</div>
-			<a href="" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
+			<a href="#" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
 		</div>
 	</div>
 
 	<ul class="menu-parent-box">
-			<li class="menu-parent "><a href="<?php echo U('home/index/yydoctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
+			<li class="menu-parent "><a href="<?php echo U('home/index/doctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
 					<li class="menu-parent ">
 					<a href="javascript:;"
 					
@@ -192,20 +190,20 @@
 						
 					     账号设置
 						</a>
-								<div class="menu-child-box hide">
-									   	<a class="menu-child " href="<?php echo U('home/index/yyauthprofile');?>" monitor=""
+									<div class="menu-child-box hide">
+									   	<a class="menu-child " href="<?php echo U('home/index/authprofile');?>" monitor="doctorweb,menu,accountset_myinfo"
 										  >
 										   
 								   		个人资料</a>
-									   	<a class="menu-child " href="<?php echo U('home/index/yyhead_pic_settings');?>" monitor="doctorweb,menu,accountset_pichead"
+									   	<a class="menu-child " href="<?php echo U('home/index/head_pic_settings');?>" monitor="doctorweb,menu,accountset_pichead"
 										  >
 										   
 								   		头像设置</a>
-									   	<a class="menu-child " href="<?php echo U('home/index/yyauthaccout');?>" monitor="doctorweb,menu,accountset_info"
+									   	<a class="menu-child " href="<?php echo U('home/index/authaccout');?>" monitor="doctorweb,menu,accountset_info"
 										  >
 										   
 								   		账号信息</a>
-									   	<a class="menu-child " href="<?php echo U('home/index/yyauthtomod');?>" monitor="doctorweb,menu,accountset_password"
+									   	<a class="menu-child " href="<?php echo U('home/index/authtomod');?>" monitor="doctorweb,menu,accountset_password"
 										  >
 										   
 								   		修改密码</a>
@@ -221,109 +219,169 @@
 					     帮助与反馈
 						</a>
 									<div class="menu-child-box hide">
-									   <!-- 	<a class="menu-child " href="h<?php echo U('home/index/authoperation');?>" 
+									   	<a class="menu-child active" href="<?php echo U('home/index/authoperation');?>" 
 										  >
 										   
-								   		操作手册</a> -->
+								   		操作手册</a>
 									   	<a class="menu-child " href="#" >
 										   
 								   		联系客服</a>
-									   <!-- 	<a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
+									   	<a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
 										  >
 										   
-								   		常见问题</a> -->
+								   		常见问题</a>
 									</div>
 					</li>
 	</ul>
 </div>
 
 				<!-- #gc -->
-				
+				<!-- #gc -->
 
-
-	<div id="gc" class="gp-doc-profile"  data-module="doc-operate">
-		<div class="gc-mask">
-			<div class="content-admin g-clear g-content">
-				<div id="g-breadcrumb">
-				    <a href="https://doctor.guahao.com/home">首页</a>&gt;
-			        <span>账号设置 &gt;</span>
-			        <span>个人资料</span>
-			  	</div>
-				<div class="g-content-widget g-tab">
-					<!-- <div class="config-tab">
-						<a href="javascript:;" class="active" monitor="doctorweb,accountset_top,myinfo">个人资料</a>
-						<a href="<?php echo U('home/index/head_pic_settings');?>" monitor="doctorweb,accountset_top,headpic">头像设置</a>
-						<a href="<?php echo U('home/index/authaccout');?>" monitor="doctorweb,accountset_top,info">账号信息</a>
-						<a href="<?php echo U('home/index/authtomod');?>" monitor="doctorweb,accountset_top,password">修改密码</a>
-					</div> -->
-					<div class="content-warp">
-						     	 	  <input type="hidden" name="originalTitleName" value="" />
-						     	 	  <input type="hidden" name="originalTitleType"  value="">
-						     	 	  <input type="hidden" name="titleTypeStatus" value="-1">
-						     	 	  
-						     	 	  <input type="hidden" name="originalScienceTitleName" value="" />
-						     	 	  <input type="hidden" name="originalScienceTitleType" value="">
-						     	 	  <input type="hidden" name="titleTypeStatus" value="-1">
-					         <form  name="doctorInfo" id="doc_profile_form"  class="gfm-inline" method="POST">
-						       <input type="hidden" value="/auth/profile" name="loginTarget">
-					     	 <div class="g-tips-box-error hide">
-						   		<span class="gi gi-error"></span>
-						   		<span class="tips-text"></span>
-						   	</div>
-				  			<div class="g-tips-box-succ hide">
-								<span class="gi gi-succ"></span>
-							   	<span class="tips-text"></span>
-							</div>
-					     	 <ul>
-					     	 	<li class="g-clear">
-					     	 		<div class="gfm-item">
-					     	 			<label style="line-height: 60px;">头像：</label>
-					     	 			<div class="cert-preview g-clear J_CertPreview">
-					     	 				<div class="preview-item">
-					     	 					 <img src="<?php if($user["pic"] == true): echo ($pic); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
-					     	 				</div>
-					     	 			</div>
-					     	 		</div>
-					     	 	</li>
-					     	 	<li class="g-clear">
-					     	 		<div class="gfm-item ">
-						     	 	  	<label>登录名：</label>
-						     	 	 	 <span class="gfm-left"><?php echo ($user["mobile"]); ?></span>
-						     	 	 </div>
-					     	 	</li>
-					     	 	<li class="g-clear">
-					     	 		<div class="gfm-item ">
-						     	 	  <label>真实姓名：</label>
-						     	 	  <span class="gfm-left"><?php echo ($user["true_name"]); ?></span>
-						     	 	 </div>
-					     	 	</li>
-					     	 	<li class="g-clear">
-					     	 		<div class="gfm-item ">
-						     	 	  <label>医院名称： </label>
-						     	 	 	<?php echo ($user["hospital"]); ?>
-						     	 	 </div>
-					     	 	</li>
-					     	 	
-					     	 	
-					     	 
-					     	 	<li class="gfm-action g-clear">
-					     	 		<div class="gfm-item ">
-						     	 		 <label>&nbsp;</label>
-						     	 		 <span class="gfm-left">
-						     	 			<a class="gbn gbt-blue1" href="javascript:;"  id="doUpdate" monitor="doctorweb,accountset_myinfo,refresh">更新</a>
-						     	 		 </span>
-					     	 		 </div>
-					     	 	</li>
-					     	 </ul>
-					    </form>
-					</div>
-
+<div id="gc" class="gp-manual" data-module="">
+	<div class="gc-mask">
+		<div class="content-admin g-clear g-content">
+			<div id="g-breadcrumb">
+				<a href="<?php echo U('home/index/doctorhome');?>">首页</a>&gt;
+				<a href="#">帮助与反馈</a>&gt;
+				<span>操作手册</span>
+			</div>
+			<div class="g-tab g-content-widget">
+				<div class="manual-content">
+					<div class="manual-head">择医医生个人网站操作手册</div>
+					<div class="manual-catalogue">
+			    		<ul class="catalogue-list">
+			    			<li>
+			    				<a href="#1" class="lever1 lever-clear">一、我的公告</a>
+			    				<div><a href="#1" class="lever2">1-1.发布公告</a></div>
+			    			</li>
+			    			<li>
+			    				<a href="#2" class="lever1">二、我的文章</a>
+			    				<div><a href="#2" class="lever2">2-1.发布文章</a></div>
+			    			</li>
+			    			<li>
+			    				<a href="#3" class="lever1">三、健康直播间</a>
+			    				<div><a href="#3" class="lever2">3-1.进入讲堂</a></div>
+			    				<div><a href="#4" class="lever2">3-2.填写信息-创建直播</a></div>
+			    				<div><a href="#5" class="lever2">3-3.到达直播时间，进入直播</a></div>
+			    				<div><a href="#6" class="lever2">3-4.首次使用，下载安装</a></div>
+			    				<div><a href="#7" class="lever2">3-5.使用课件，加载讲义</a></div>
+			    			</li>
+			    		</ul>
+			    		<ul class="catalogue-list">
+			    			<li>
+			    				<a href="#8" class="lever1 lever-clear">四、问诊工作台</a>
+			    				<div><a href="#8" class="lever2">4-1.进入诊室，开始接诊</a></div>
+			    				<div><a href="#9" class="lever2">4-2.选择患者，查看病情</a></div>
+			    				<div><a href="#10" class="lever2">4-3.在线沟通，及时诊疗</a></div>
+			    				<div><a href="#11" class="lever2">4-4.完成问诊，查看记录</a></div>
+			    			</li>
+			    			<li>
+			    				<a href="#12" class="lever1">五、医生收入</a>
+			    				<div><a href="#13" class="lever2">5-1.我的收入</a></div>
+			    				<div><a href="#14" class="lever2">5-2.我的银行卡及管理入口</a></div>
+			    				<div><a href="#15" class="lever2">5-3.收入详情</a></div>
+			    				<div><a href="#16" class="lever2">5-4.实际发放记录</a></div>
+			    				<div><a href="#17" class="lever2">5-5.收入说明及如何提高收入</a></div>
+			    			</li>
+			    		</ul>
+			    		<ul class="catalogue-list">
+			    			<li>
+			    				<div><a href="#18" class="lever2">5-6.结算明细</a></div>
+			    				<div><a href="#19" class="lever2">5-7.结算明细-订单明细</a></div>
+			    				<a href="#20" class="lever1">六、我收到的心意</a>
+			    				<div><a href="#20" class="lever2">6-1.查看患者赠送心意</a></div>
+			    				<div><a href="#21" class="lever2">6-2.锦旗内容介绍</a></div>
+			    				<div><a href="#22" class="lever2">6-3.行医保障的三种保险类型</a></div>
+			    				<div><a href="#23" class="lever2">6-4.购买保障</a></div>
+			    				<div><a href="#24" class="lever2">6-5.查看已投保的保障</a></div>
+			    			</li>
+			    		</ul>
+			    	</div>
+				</div>
+				<div class="manual-detail">
+					    	<a name="1">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-1.jpg?_=20170512" class="manual-img" />
+							</a>
+					    	<a name="2">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-2.jpg?_=20170512" class="manual-img" />
+							</a>
+					    	<a name="3">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-3.jpg?_=20170512" class="manual-img" />
+							</a>
+					    	<a name="4">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-4.jpg?_=20170512" class="manual-img" />
+							</a>
+					    	<a name="5">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-5.jpg?_=20170512" class="manual-img" />
+							</a>
+					    	<a name="6">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-6.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="6">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-7.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="7">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-8.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="8">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-9.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="9">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-10.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="10">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-11.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="11">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-12.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="12">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-13.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="13">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-14.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="14">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-15.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="15">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-16.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="16">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-17.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="17">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-18.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="18">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-19.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="19">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-20.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="20">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-21.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="21">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-22.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="22">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-23.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="23">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-24.jpg?_=20170512" class="manual-img" />
+							</a>
+							<a name="24">
+								<img src="https://img.guahao.com/front/hps-pc-static/img/personal-web/manual/manual-25.jpg?_=20170512" class="manual-img" />
+							</a>
 				</div>
 			</div>
-		</div>
-		<!-- end of .gp-doc-profile -->
+	    </div>
 	</div>
-	<!-- end of #gc -->
+	<!-- end of .gc-mask -->
+</div>
+<!-- end of #gc -->
 <span id="gi_page_totop" class="gi gi-page-totop"></span>
 
 				<!-- end of #gc -->
@@ -344,10 +402,10 @@
 	//打点日志全局变量
 	$GLog = {
 		requestMethod:'GET',
-		loginId:'nPuS8fU8D/OwSYgBHuytSD2a94FM1t6yua5UQIInwpIEhwBSJw8iRQ==',
+		loginId:'5Wmfja2xtClQWQjED/z2I7U9Qx5QIiTnYHp+nAkt3eoTX/pZZBv6zA==',
 		perSessiionId:'154303338518820178067151',
 		shortSessionId:'',
-		referurl:'https://doctor.guahao.com/home',
+		referurl:'https://doctor.guahao.com/auth/tomod',
 		userAgent:'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
 		logUrl: 'https://trackweb.guahao.cn/blank.gif',
 		debug: false,

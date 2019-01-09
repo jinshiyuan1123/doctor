@@ -29,6 +29,7 @@ class IndexController extends BaseController {
         $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
         $localhost  ='http://'.$_SERVER['HTTP_HOST'];
         $this->assign('pic',$pic);
+        // $this->assign('user',$user);var_dump($user);
         $this->assign('username',$res['username']);
         $this->assign('docname',$doc['true_name']);
         $this->assign('hospital',$doc['hospital']);
@@ -1399,8 +1400,7 @@ public function recursived($meta,$flag,$count )
     public function yydoctorhome(){
       $data = I('post.');
       $res = session('home_user_info');
-      $user= M('his_yydoctor')->where("uid='$res[id]'")->find();
-     
+      $user= M('his_yydoctor')->where("id='$res[id]'")->find();
       $this->assign('user',$user);
       $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
       $this->assign('pic',$pic);
@@ -1519,8 +1519,18 @@ public function recursived($meta,$flag,$count )
      public function yyauthaccout()
     {
      $res = session('home_user_info');
-      $this->assign('user',$res);
+      $this->assign('user',$res); 
       $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
+      $id = $res['id'];
+      if($id){
+          $row = M('his_edithospital')->where("sid='$id'")->find();
+          $pic = mb_substr($row['pic'],1);
+          $pic1 = mb_substr($row['pic1'],1);
+          $this->assign('pic',$pic);
+          $this->assign('pic1',$pic1);
+          $this->assign('row',$row);
+      }
+    
       $this->assign('pic',$pic);
       $this->display(':yyauthaccout');
     }
@@ -1833,58 +1843,92 @@ public function recursived($meta,$flag,$count )
  function uploads()
  {
 
-header('content-type:text/html;charset=utf-8');
-include_once 'upload.func.php';
-$id = I('post.');
-$card = $id['card'];
-$docid = $id['doctorid'];
+    header('content-type:text/html;charset=utf-8');
+    include_once 'upload.func.php';
+    $id = I('post.');
+    $card = $id['card'];
+    $docid = $id['doctorid'];
 
-$files = getFiles();
+    $files = getFiles();
 
 
-foreach($files as $fileInfo) {
+    foreach($files as $fileInfo) {
 
-    $res = uploadFile($fileInfo);
-    // var_dump($res);
-   $destlist[] = $res['dest'];
-    // echo $res['mes'],'<br/>';
- 
-    if(isset($res['dest'])) {
-        $uploadFiles[] = $res['dest'];
-    }
-}
-$data = array(
-    'card'=>$card,
-    'pic1'=>$destlist[0],
-    'pic2'=>$destlist[1],
-    'pic3'=>$destlist[2],
-    'pic4'=>$destlist[3],
-    'ispic'=>0,
-);
-
- $reslist = M('his_doctor')->where("id='$docid'")->save($data);
-if($reslist){
-            $this->success('提交成功，等待管理员审核！',U('/home/index/doctorhome'));
+        $res = uploadFile($fileInfo);
+        // var_dump($res);
+       $destlist[] = $res['dest'];
+        // echo $res['mes'],'<br/>';
+     
+        if(isset($res['dest'])) {
+            $uploadFiles[] = $res['dest'];
         }
-//过滤掉上传失败的文件
-/**
- * array_values() 函数返回一个包含给定数组中所有键值的数组，但不保留键名。
- * 提示：被返回的数组将使用数值键，从 0 开始并以 1 递增。
- */
-/**
- * array_filter() 函数用回调函数过滤数组中的值。
- * 该函数把输入数组中的每个键值传给回调函数。如果回调函数返回 true，
- * 则把输入数组中的当前键值返回结果数组中。数组键名保持不变。
- */
-//这里使用array_filter过滤掉数组中的空内容
-// if(isset($uploadFiles)) {
-//     $uploadFiles=array_filter($uploadFiles);
- 
-//     print_r($uploadFiles);
-// }
-die;
+    }
+    $data = array(
+        'card'=>$card,
+        'pic1'=>$destlist[0],
+        'pic2'=>$destlist[1],
+        'pic3'=>$destlist[2],
+        'pic4'=>$destlist[3],
+        'ispic'=>0,
+    );
+
+     $reslist = M('his_doctor')->where("id='$docid'")->save($data);
+    if($reslist){
+                $this->success('提交成功，等待管理员审核！',U('/home/index/doctorhome'));
+            }
+
+    die;
  }
- 
+  function uploadlists()
+ {
+
+    header('content-type:text/html;charset=utf-8');
+    include_once 'upload.func.php';
+    $data = I('post.');
+    $files = getFiles();
+    foreach($files as $fileInfo) {
+        $res = uploadFile($fileInfo);
+       $destlist[] = $res['dest'];
+        if(isset($res['dest'])) {
+            $uploadFiles[] = $res['dest'];
+        }
+    }
+    $res = session('home_user_info');
+  
+    $datalist = array(
+      'sid' => $res['id'],
+      'province' => $data['province'],
+      'cities' => $data['cities'],
+      'source' => $data['source'],
+      'username' => $data['username'],
+      'level' => $data['level'],
+      'quality' => $data['quality'],
+      'type' => $data['type'],
+      'url' => $data['url'],
+      'dnum' => $data['dnum'],
+      'dnums'=> $data['dnums'],
+      'path' => $data['path'],
+      'pic' => $uploadFiles[0],
+      'pic1' => $uploadFiles[1],
+      'user' => $data['user'],
+      'userid'=> $data['userid'],
+      'email' => $data['email'],
+      'mobile' => $data['mobile'],
+      'info' => $data['info'],
+      'office' =>$data['office'],
+      'order' => $data['order'],
+      'create_time'=>time(),
+
+    );
+
+
+     $reslist = M('his_edithospital')->add($datalist);
+    if($reslist){
+          $this->success('提交成功，等待管理员审核！',U('/home/index/yydoctorhome'));
+     }
+
+
+ }
   
 
 }

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2019-01-09 10:22:49
+Date: 2019-01-09 16:11:20
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -3902,10 +3902,10 @@ CREATE TABLE `dzm_his_doctor` (
 -- ----------------------------
 -- Records of dzm_his_doctor
 -- ----------------------------
-INSERT INTO `dzm_his_doctor` VALUES ('1', '水电费', '0', '', '2', '0', '0', '13141589223', '$2y$12$rLAPbeqh6cHq/kGjmXhTU.vIm6A54pU2FIGiF90rBQ7d8n0pTVYK6', '协和医院', '', '3', '', '', '', '', '', '', '', '', '127.0.0.1', '', '1543235676', '1546823760', '', '2', '7', '2', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('3', '测试', '0', '', '0', '0', '0', '13141589223', '$2y$12$3sab.fPjhPHMvCGXl1ijJuguegZE3yUfGAqYbziXlgLwiUzx4ILc.', '协和医院', '', '2', '', '', '', '', '', '', '', '', '127.0.0.1', '', '1543247335', '1546823760', '', '2', '7', '', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('4', '王守道', '0', '130000', '0', '唐山市', '83856745', '13141589203', '$2y$12$Mtv3mGq3i92VRMsFyTrSGu5/4yzBHS6lRCYkvu3GhCsLC8iC1pHuW', '中心医院', '', '1', '医生', '', '', '', '1', '1', '1', '1', '127.0.0.1', '', '1544332507', '1544845179', '', '2', '7', '', '0.00');
-INSERT INTO `dzm_his_doctor` VALUES ('5', '汪士铎', '0', '130000', '0', '秦皇岛市', '83856745', '13141589556', '$2y$12$yIoudEjifKHjW5X8a9cWWuAybiLyJAq62ejyS3NPxV8WXNpL3x1ei', '南京医院', null, '1', '医生', '', '3245234', '1', './public/home/images/uploads/15459861514937.jpg', './public/home/images/uploads/15459861512948.jpg', './public/home/images/uploads/15459861518701.jpg', './public/home/images/uploads/15459861512948.jpg', '127.0.0.1', '', '1544346481', '1545960148', '', '2', '', '', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('1', '水电费', '0', '', '2', '0', '0', '13141589223', '$2y$12$rLAPbeqh6cHq/kGjmXhTU.vIm6A54pU2FIGiF90rBQ7d8n0pTVYK6', '协和医院', '', '3', '', '', '', '', '', '', '', '', '127.0.0.1', '', '1543235676', '1547012722', '', '2', '7', '2', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('3', '测试', '0', '', '0', '0', '0', '13141589223', '$2y$12$3sab.fPjhPHMvCGXl1ijJuguegZE3yUfGAqYbziXlgLwiUzx4ILc.', '协和医院', '', '2', '', '', '', '', '', '', '', '', '127.0.0.1', '', '1543247335', '1547012722', '', '2', '7', '', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('4', '王守道', '0', '130000', '0', '唐山市', '83856745', '13141589203', '$2y$12$Mtv3mGq3i92VRMsFyTrSGu5/4yzBHS6lRCYkvu3GhCsLC8iC1pHuW', '中心医院', '', '1', '医生', '', '', '0', './public/home/images/uploads/15470127929436.jpg', './public/home/images/uploads/15470127929756.jpg', './public/home/images/uploads/15470127928195.jpg', './public/home/images/uploads/15470127929980.jpg', '127.0.0.1', '', '1544332507', '1547012844', '', '2', '7', '', '0.00');
+INSERT INTO `dzm_his_doctor` VALUES ('5', '汪士铎', '0', '130000', '2', '秦皇岛市', '83856745', '13141589556', '$2y$12$7LjF/IPrcFX0oVs1T3e7V.vMpm5hM7ksXdZ6zwcDo.1NuosxOWByW', '南京医院', '', '1', '医生', '', '3245234', '1', './public/home/images/uploads/15459861514937.jpg', './public/home/images/uploads/15459861512948.jpg', './public/home/images/uploads/15459861518701.jpg', './public/home/images/uploads/15459861512948.jpg', '127.0.0.1', '', '1544346481', '1547011457', '', '2', '7', '', '0.00');
 
 -- ----------------------------
 -- Table structure for dzm_his_doctorlist
@@ -3966,6 +3966,45 @@ CREATE TABLE `dzm_his_doctors` (
 -- ----------------------------
 INSERT INTO `dzm_his_doctors` VALUES ('1', '张三', '25', '', '0', '0', '0', '', '', '', '', '', '1511949108', '0', '2', '0.00');
 INSERT INTO `dzm_his_doctors` VALUES ('2', '当时发', '140000', null, '$2y$12$n97x7Fue6SddXflXIPYO9.2hUli2gTMM96LdAuluI5fjSklVCeYXW', '0', '13141589203', '登山泛水', '', '医生', '0527', '83856745', '1543045946', '1543117928', '2', '0.00');
+
+-- ----------------------------
+-- Table structure for dzm_his_edithospital
+-- ----------------------------
+DROP TABLE IF EXISTS `dzm_his_edithospital`;
+CREATE TABLE `dzm_his_edithospital` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '用户id',
+  `ispic` int(11) DEFAULT '0' COMMENT '是否审核',
+  `province` varchar(255) DEFAULT '' COMMENT '所属省份',
+  `cities` varchar(255) NOT NULL DEFAULT '0' COMMENT '所属区域',
+  `source` varchar(11) NOT NULL DEFAULT '0' COMMENT '合作来源',
+  `username` varchar(255) NOT NULL DEFAULT '' COMMENT '医院名称',
+  `level` varchar(255) NOT NULL DEFAULT '' COMMENT '医院等级',
+  `quality` varchar(255) NOT NULL DEFAULT '' COMMENT '医院性质',
+  `type` varchar(255) DEFAULT NULL COMMENT '医院类型',
+  `url` varchar(255) DEFAULT NULL COMMENT '医院官网',
+  `dnum` varchar(255) DEFAULT NULL COMMENT '日内诊量',
+  `dnums` varchar(255) NOT NULL COMMENT '日预约量',
+  `path` varchar(255) DEFAULT NULL COMMENT '对外预约途径',
+  `pic` varchar(255) NOT NULL COMMENT '对外预约途径',
+  `pic1` varchar(255) NOT NULL COMMENT '评级证明证书',
+  `user` varchar(255) NOT NULL COMMENT '联系人',
+  `sid` varchar(255) NOT NULL COMMENT '医院id',
+  `userid` int(11) NOT NULL COMMENT '联系职位',
+  `email` varchar(255) DEFAULT NULL COMMENT '邮箱',
+  `mobile` varchar(255) DEFAULT NULL COMMENT '手机号',
+  `info` longtext COMMENT '医院简介',
+  `office` varchar(500) DEFAULT NULL COMMENT '特色科室',
+  `order` varchar(500) DEFAULT NULL COMMENT '合作意向',
+  `create_time` varchar(255) NOT NULL,
+  `update_time` varchar(255) DEFAULT '',
+  PRIMARY KEY (`id`) USING BTREE,
+  KEY `uid` (`userid`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='医生基本信息表';
+
+-- ----------------------------
+-- Records of dzm_his_edithospital
+-- ----------------------------
+INSERT INTO `dzm_his_edithospital` VALUES ('1', '1', '试试', '11', '11', '11', '11', '11', '11', '11', '11', '11', '11', './public/home/images/uploads/15470196003122.png', './public/home/images/uploads/15470196005981.jpg', '11', '7', '11', '1314158920@qq.com', '13141589203', '是的', '11', '第三方', '1547019600', '');
 
 -- ----------------------------
 -- Table structure for dzm_his_hospital
@@ -5829,17 +5868,18 @@ CREATE TABLE `dzm_his_yydoctor` (
   `ask_price` decimal(10,2) DEFAULT '0.00' COMMENT '咨询价格',
   PRIMARY KEY (`id`) USING BTREE,
   KEY `uid` (`uid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='医生基本信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='医生基本信息表';
 
 -- ----------------------------
 -- Records of dzm_his_yydoctor
 -- ----------------------------
-INSERT INTO `dzm_his_yydoctor` VALUES ('1', '王小军', '0', '130000', '0', '石家庄市', '83856745', '13141589223', '$2y$12$qyrPtYAv8qCJT0Bc9wiNru9tu3SZj3XEmb87H/UhB7FGwp9zEt.6C', '中心医院', '<p><img width=\"530\" height=\"340\" src=\"http://api.map.baidu.com/staticimage?center=118.802863,34.116271&zoom=14&width=530&height=340&markers=118.782166,34.115195\"/></p>', null, '1', '', '1', '', '127.0.0.1', '', '1544931350', '1544931350', '', '2', '', '', '0.00');
+INSERT INTO `dzm_his_yydoctor` VALUES ('1', '王小军', '0', '130000', '0', '石家庄市', '83856745', '13141589224', '111111', '中心医院', '<p><img width=\"530\" height=\"340\" src=\"http://api.map.baidu.com/staticimage?center=118.802863,34.116271&zoom=14&width=530&height=340&markers=118.782166,34.115195\"/></p>', null, '1', '', '1', '', '127.0.0.1', '', '1544931350', '1544931350', '', '2', '', '', '0.00');
 INSERT INTO `dzm_his_yydoctor` VALUES ('2', '十多万', '0', '130000', '0', '石家庄市', '83856744', '13141589223', '$2y$12$C3Wt9J7NVz46vI44BG1Ule1pv386XylcD3sIOhE0sVN5I3HFC39Jy', '仁慈医院', '<p><img width=\"530\" height=\"340\" src=\"http://api.map.baidu.com/staticimage?center=118.810273,34.126539&zoom=14&width=530&height=340&markers=118.802081,34.127137\"/></p>', null, '1', '', '0', '', '127.0.0.1', '', '1544931453', '1544931453', '', '2', '', '', '0.00');
 INSERT INTO `dzm_his_yydoctor` VALUES ('3', '史蒂芬', '0', '140000', '0', '阳泉市', '83856743', '13141589203', '$2y$12$dtrTtoFfkknOW/aCULO9iO5H/oVInKSiguYV23fkBUILdl88pwkPi', '北京医院', null, null, '1', '', '1', '', '127.0.0.1', '', '1544931617', '1544931617', '', '2', '', '', '0.00');
 INSERT INTO `dzm_his_yydoctor` VALUES ('4', '史蒂芬', '0', '140000', '0', '阳泉市', '83856743', '13141589203', '$2y$12$dtrTtoFfkknOW/aCULO9iO5H/oVInKSiguYV23fkBUILdl88pwkPi', '协和医院', '<p><img width=\"530\" height=\"340\" src=\"http://api.map.baidu.com/staticimage?center=118.812717,34.119606&zoom=14&width=530&height=340&markers=118.798488,34.116498\"/></p>', null, '1', '', '1', '', '127.0.0.1', '', '1544931617', '1544931617', '', '2', '', '', '0.00');
 INSERT INTO `dzm_his_yydoctor` VALUES ('5', '林先生', '0', '320000', '0', '宿迁市', '', '18360094765', '$2y$12$x8mdZtGEZCFaxHwHNXMYoe3FvepFHZfcGjqdRJFJT5BrSqogY66Zq', '沭阳中医院', null, null, '1', '', '0', '', '49.89.114.205', '', '1545374464', '1545374464', '', '2', '', '', '0.00');
 INSERT INTO `dzm_his_yydoctor` VALUES ('6', '魏义林', '0', '0', '0', '', '83558630', '18118063338', '$2y$12$ghonC8fPb/ktNe72uysuUeg9I6PoYWqQKScAMaDD/EhFmNRdzMuAK', '沭阳永红医院', null, null, '1', '', '0', '', '112.23.9.92', '', '1545819073', '1545819073', '', '2', '', '', '0.00');
+INSERT INTO `dzm_his_yydoctor` VALUES ('7', '中山大', '0', '140000', '0', '长治市', '', '13776848129', '$2y$12$fttnli4Tom570WhHahP60.B/kXgaLEiN828eNMoP/K7I0wlJE/VXe', '中山大医院', '', null, '1', '', '1', '', '127.0.0.1', '', '1547011661', '1547011661', '', '2', '', '', '0.00');
 
 -- ----------------------------
 -- Table structure for dzm_patient

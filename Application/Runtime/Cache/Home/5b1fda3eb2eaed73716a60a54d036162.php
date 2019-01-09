@@ -56,7 +56,7 @@
                             ,&nbsp;<?php echo ($docname); ?>
                     </span>
                 <a href="#" target="_blank" class="help" title="联系客服" monitor="doctorweb,menu_top,wy_robot"><b class="border">联系客服</b></a>
-                <a href="<?php echo U('home/index/authprofile');?>" class="setting" title="账号设置" monitor="doctorweb,menu_top,accountset"><b class="border">账号设置</b></a>
+                <a href="<?php echo U('home/index/yyauthprofile');?>" class="setting" title="账号设置" monitor="doctorweb,menu_top,accountset"><b class="border">账号设置</b></a>
                 <a href="<?php echo U('home/index/yydocLogout');?>" class="logout j-out-system" title="退出" monitor="doctorweb,menu_top,exit"><b>退出</b></a>
                 <input type="hidden" class="j-out-url" value="" />
         </div>
@@ -219,17 +219,17 @@
 					     帮助与反馈
 						</a>
 									<div class="menu-child-box hide">
-									   	<a class="menu-child " href="<?php echo U('home/index/authoperation');?>" 
+									   <!-- 	<a class="menu-child " href="<?php echo U('home/index/authoperation');?>" 
 										  >
 										   
-								   		操作手册</a>
+								   		操作手册</a> -->
 									   	<a class="menu-child " href="#" >
 										   
 								   		联系客服</a>
-									   	<a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
+									   <!-- 	<a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
 										  >
 										   
-								   		常见问题</a>
+								   		常见问题</a> -->
 									</div>
 					</li>
 	</ul>

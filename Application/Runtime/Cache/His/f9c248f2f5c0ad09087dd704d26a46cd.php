@@ -104,7 +104,7 @@
         <div class="ftc">
             <div class="fublBox mt20"><span>添加医院：</span>
                <select class="form-control form-itmeB" id="ranks">
-                <?php if(is_array($rankList)): foreach($rankList as $k=>$v): ?><option value="<?php echo ($v["sid"]); ?>"><?php echo ($v["supplier_name"]); ?></option><?php endforeach; endif; ?>
+                <?php if(is_array($rankList)): foreach($rankList as $k=>$_value): ?><option value="<?php echo ($_vaule["sid"]); ?>"><?php echo ($v["supplier_name"]); ?></option><?php endforeach; endif; ?>
                 </select>
             </div>
             <div class="fublBox mt20"><span>科室名称：</span>
@@ -202,7 +202,7 @@
             var did = $("#departmentEditBomb :input[name='did']").val();
             var sid_name = $("#ranks option:selected").text();
 
-            var ranklist = $("#ranks ").val();alert(ranklist);
+            var ranklist = $("#ranks ").val();
             $.post("<?php echo U('/Department/editDepartment');?>",
                 { "department_name": departmentName,'did':did,"ranklist":ranklist,"sid_name":sid_name},
                 function (data) {
