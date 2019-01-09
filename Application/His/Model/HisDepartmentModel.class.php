@@ -95,6 +95,8 @@ class HisDepartmentModel extends BaseModel
                 'department_name' => $data['department_name'],
                 'department_number' => $data['department_number'],
                 'hid' => $data['hid'],
+                'sid' => $data['sid'],
+                'sid_name' => $data['sid_name'],
                 'create_time' => $data['create_time']
             );
             $result = $this->add($arr);
@@ -130,6 +132,8 @@ class HisDepartmentModel extends BaseModel
             if ($department = $this->where($map)->find()) {
                 $updateData['department_name'] = $data['department_name'];
                 $updateData['update_time'] = $data['update_time'];
+                $updateData['sid'] = $data['sid'];
+                $updateData['sid_name'] = $data['sid_name'];
                 $result = $this->where($map)->save($updateData);
                 if($result) {
                     $this->commit();

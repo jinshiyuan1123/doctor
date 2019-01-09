@@ -38,6 +38,8 @@ class DepartmentController extends HisBaseController
         } else {
             $search = array();
         }
+        $res = M('his_supplier')->where()->select();
+        $this->assign('rankList',$res);
         //取出科室列表
         $hospitalId = $this->hospitalInfo['uid'];
         $departmentList = $this->department_model->getDepartmentList($hospitalId, $search);
@@ -65,17 +67,20 @@ class DepartmentController extends HisBaseController
             );
             $departmentList = $this->department_model->getDepartment($condition);
             foreach ($departmentList as $key => $value) {
-                if ($value['department_name'] == $data['department_name']) {
-                    $this->ajaxError('科室名称已存在');
-                }
+                // if ($value['department_name'] == $data['department_name']) {
+                //     $this->ajaxError('科室名称已存在');
+                // }
             }
             //生成科室编号
             $departmentNum = $this->makeDepartmentNum($startTime, $endTime);
+
             //保存添加科室
             $data = [
                 'department_name' => $data['department_name'],
                 'department_number' => $departmentNum,
                 'hid' => $hospitalId,
+                'sid' => $data['ranklist'],
+                'sid_name' => $data['sid_name'],
                 'create_time' => time(),
             ];
             $res = $this->department_model->addData($data);
@@ -112,6 +117,8 @@ class DepartmentController extends HisBaseController
             //保存编辑科室
             $condition['did'] = I('post.did','','intval');
             $data['update_time'] = time();
+            $data['sid'] = $data['ranklist'];
+            $data['sid_name'] = $data['sid_name'];
             $res = $this->department_model->updateData($condition, $data);
             if ($res) {
                 $this->ajaxSuccess('修改成功');

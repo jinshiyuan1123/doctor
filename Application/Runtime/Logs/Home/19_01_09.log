@@ -1,0 +1,190 @@
+[ 2019-01-09T09:16:06+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000210s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] file_get_contents(http://ip.taobao.com/service/getIpInfo.php?ip=127.0.0.1): failed to open stream: HTTP request failed! HTTP/1.1 502 Bad Gateway
+ D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 83 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 84 行.
+NOTIC: [8] Trying to get property of non-object D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 87 行.
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='养生' ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='健康'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='两性'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='减肥'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院党建'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院视频'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='我拍拍'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='择医网讲堂'  ) ORDER BY ins_id desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_doctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='美容'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='饮食'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='母婴'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='运动'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='百科'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id asc LIMIT 10   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 178 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 180 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 181 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 183 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 184 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 187 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 188 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 189 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 190 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 191 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 193 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 227 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 230 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 233 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 236 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 239 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 242 行.
+NOTIC: [8] Undefined index: region D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 266 行.
+NOTIC: [8] Undefined index: city D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 267 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000724s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000748s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2213 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2217 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2220 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2245 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2249 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2252 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2277 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2281 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2284 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2313 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2317 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2320 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2344 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2348 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2351 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2375 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2379 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2019-01-09T09:33:55+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000217s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='养生' ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='健康'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='两性'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='减肥'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院党建'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院视频'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='我拍拍'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='择医网讲堂'  ) ORDER BY ins_id desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_doctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='美容'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='饮食'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='母婴'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='运动'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='百科'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id asc LIMIT 10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 177 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 178 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 180 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 181 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 183 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 184 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 187 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 188 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 189 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 190 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 191 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 193 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 227 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 230 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 233 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 236 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 239 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 242 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000724s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000749s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2213 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2217 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2220 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2245 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2249 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2252 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2277 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2281 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2284 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2313 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2317 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2320 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2344 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2348 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2351 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2375 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2379 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
