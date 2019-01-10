@@ -162,7 +162,7 @@
 							<li><label>绑定手机号：</label><span class="J_cardName">
 							<?php echo ($user["mobile"]); ?></span></li>
 							<li class="js-cardId"><label>邮箱地址：</label><span class="J_cardNO"></span></li>
-							<li class="js-cardId"><label>医院认证：</label><a href="" class="J_cardNO" id="btnid">添加</a></li>
+							<li class="js-cardId"><label>医院认证：</label><span class="J_cardNO" id="btnid">添加</span></li>
 						</ul>
 					</div>
 				</div>
