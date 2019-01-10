@@ -162,11 +162,11 @@
 							<li><label>绑定手机号：</label><span class="J_cardName">
 							<?php echo ($user["mobile"]); ?></span></li>
 							<li class="js-cardId"><label>邮箱地址：</label><span class="J_cardNO"></span></li>
-							<li class="js-cardId"><label>医院认证：</label><span class="J_cardNO" id="btnid">添加</span></li>
+							<li class="js-cardId"><label>医院认证：</label><a  class="J_cardNO" id="btnid">添加</a></li>
 						</ul>
 					</div>
 				</div>
-				<div id="gcid" class="gp-home-new gp-home-index" data-module="home" style="display: none">
+				<div id="gcid" class="gp-home-new gp-home-index" data-module="home" style="display: ">
     <input type="hidden" id="falseExceptionFlag" name="falseExceptionFlag" value="">
     <input type="hidden" id="initiAlexceptionFlag" name="initiAlexceptionFlag" value="">
     <input type="hidden" id="bizId" name="bizId" value="">
@@ -175,7 +175,7 @@
             <input type="hidden" name="isOpenHealthyNum" id="isOpenHealthyNum" value="0" />
           
 		             <div class="g-tab g-apply J_DoctorVerify">
-                <form id="J_VerifyForm" name="verifyForm" method="post" enctype="multipart/form-data" action="<?php echo U('home/index/uploadlists');?>">
+                <form id="J_VerifyForm" name="verifyForm" onsubmit="return Checkpost();" method="post" enctype="multipart/form-data" action="<?php echo U('home/index/uploadlists');?>">
                       <input type="hidden" name="doctorid" id="jkhUrl" value="<?php echo ($user["id"]); ?>"><span class="tab-title" id="closeid">关闭</span>
                     <div class="tab-title">认证申请
                             <span class="small-title">认证后您将可以使用咨询、对症预约等功能</span>
@@ -203,6 +203,7 @@
                                                     <i class="addImg"></i>
                                                     <input type="file" name="myFile1" class="upload-input J_CertUpload sfz" onChange="preview(this)">
                                                     <?php if(!empty($pic) == true): ?><img src="<?php echo ($pic); ?>" id="previewimg" width="50px" height="40px"/>
+                                                        <input type="hidden" name="piclist0" value="<?php echo ($pic); ?>">
                                                         <?php if($row["ispic"] == 1): ?>审核成功<?php else: ?>待审核<?php endif; ?>
                                                     <?php else: ?>
                                                      <img src="" id="previewimg" width="50px" height="40px"/>
@@ -218,6 +219,7 @@
                                                     <i class="addImg"></i>
                                                     <input type="file" name="myFile2" class="upload-input J_CertUpload sfz" onChange="preview1(this)">
                                                     <?php if(!empty($pic1) == true): ?><img src="<?php echo ($pic1); ?>" id="previewimg1" width="50px" height="40px"/>
+                                                         <input type="hidden" name="piclist1" value="<?php echo ($pic1); ?>">
                                                         <?php if($row["ispic"] == 1): ?>审核成功<?php else: ?>待审核<?php endif; ?>
                                                     <?php else: ?>
                                                       <img src="" id="previewimg1" width="50px" height="40px"/>
@@ -230,42 +232,42 @@
                                     </div>
                                    
                                   <div class="input-line">
-                                    所属省份：<input type="text" name="province" maxlength="18" data-required="1"  value="<?php echo ($row["province"]); ?>" placeholder="请输入省份" ><span></span>
-                                       所属区域：<input type="text" name="cities" maxlength="18" placeholder="请输入区域" value="<?php echo ($row["cities"]); ?>"><span></span>
+                                    所属省份： <a style="color:red">(必填*)</a>&nbsp;&nbsp;<input type="text" id="province" name="province"  data-required="1"  value="<?php echo ($row["province"]); ?>" placeholder="请输入省份" >&nbsp;&nbsp;
+                                       所属区域：<a style="color:red">(必填*)</a>&nbsp;&nbsp;<input type="text" id="cities" name="cities"  placeholder="请输入区域" value="<?php echo ($row["cities"]); ?>"><span></span>
                                 </div>
                                 <div class="input-line">
-                                    合作来源：<input type="text" name="source" maxlength="18" placeholder="例如：百度,支付宝等" value="<?php echo ($row["source"]); ?>"><span></span>
-                                     医院名称：<input type="text" name="username" maxlength="18" value="<?php echo ($row["username"]); ?>"><span></span>
+                                    合作来源：<a style="opacity:0;">(非必填)</a>&nbsp;<input type="text" name="source"  placeholder="例如：百度,支付宝等" value="<?php echo ($row["source"]); ?>"><span></span>&nbsp;&nbsp;
+                                     医院名称：<a style="color:red">(必填*)</a>&nbsp;&nbsp;<input type="text" id="username" name="username"  value="<?php echo ($row["username"]); ?>"><span></span>
                                 </div>
                                   <div class="input-line">
-                                    医院等级：<input type="text" name="level" maxlength="18" value="<?php echo ($row["level"]); ?>" ><span></span>
-                                     医院性质：<input type="text" name="quality" maxlength="18" value="<?php echo ($row["quality"]); ?>"><span></span>
+                                    医院等级：<a style="color:red">(必填*)</a>&nbsp;&nbsp;&nbsp;<input type="text" id="level" name="level"  value="<?php echo ($row["level"]); ?>" ><span></span>&nbsp;&nbsp;
+                                     医院性质：<a style="color:red">(必填*)</a>&nbsp;&nbsp;<input type="text" id="quality" name="quality"  value="<?php echo ($row["quality"]); ?>"><span></span>
                                 </div>
                                 <div class="input-line">
-                                    医院类型：<input type="text" name="type" maxlength="18" value="<?php echo ($row["type"]); ?>"><span></span>
-                                     医院官网：<input type="text" name="url" maxlength="18" value="<?php echo ($row["url"]); ?>" ><span></span>
+                                    医院类型：<a style="color:red">(必填*)</a>&nbsp;&nbsp;&nbsp;<input type="text" id="type" name="type"  value="<?php echo ($row["type"]); ?>"><span></span>&nbsp;&nbsp;
+                                     医院官网：<a style="opacity:0;">(非必填)</a><input type="text" name="url"  value="<?php echo ($row["url"]); ?>" ><span></span>
                                 </div>
                                   <div class="input-line">
-                                    日内诊量：<input type="text" name="dnum" maxlength="18" value="<?php echo ($row["dnum"]); ?>" ><span></span>
-                                     日预约量：<input type="text" name="dnums" maxlength="18" value="<?php echo ($row["dnums"]); ?>"><span></span>
+                                    日内诊量：<a style="color:red">(必填*)</a>&nbsp;&nbsp;&nbsp;<input type="text" id="dnum" name="dnum"  value="<?php echo ($row["dnum"]); ?>" ><span></span>&nbsp;&nbsp;
+                                     日预约量：<a style="color:red">(必填*)</a>&nbsp;&nbsp;<input type="text" id="dnums" name="dnums"  value="<?php echo ($row["dnums"]); ?>"><span></span>
                                 </div>
                                 <div class="input-line">
-                                    对外预约途径：<input type="text" name="path" maxlength="18" value="<?php echo ($row["path"]); ?>"><span></span>
-                                     联系人：<input type="text" name="user" maxlength="18" value="<?php echo ($row["user"]); ?>"><span></span>
+                                    对外预约途径：<a style="opacity:0;"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="path"  value="<?php echo ($row["path"]); ?>"><span></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                     联系人：<a style="color:red">(必填*)</a>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="user" name="user"  value="<?php echo ($row["user"]); ?>"><span></span>&nbsp;&nbsp;
                                 </div>
                                   <div class="input-line">
-                                    联系职位：<input type="text" name="userid" maxlength="18" value="<?php echo ($row["userid"]); ?>" ><span></span>
-                                     电话：<input type="text" name="mobile" maxlength="18"  placeholder ="请输入正确的手机号码" value="<?php echo ($row["mobile"]); ?>"><span></span>
+                                    联系职位：<a style="opacity:0;">(非必填)</a>&nbsp;<input type="text" name="userid"  value="<?php echo ($row["userid"]); ?>" ><span></span><a style="opacity:0;">(非填)</a>
+                                     电话：<a style="color:red">(必填*)</a>&nbsp;&nbsp;<input type="text" id="mobile" name="mobile"   placeholder ="请输入正确的手机号码" value="<?php echo ($row["mobile"]); ?>"><span></span>&nbsp;&nbsp;
                                 </div>
                                 <div class="input-line">
-                                    邮箱：<input type="text" name="email" maxlength="18" value="<?php echo ($row["email"]); ?>"><span></span>
+                                    邮箱：<a style="color:red">(必填*)</a><a style="opacity:0;">(非)</a>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="email" name="email"  value="<?php echo ($row["email"]); ?>"><span></span>
                                     
                                 </div>
                                   <div class="input-line">
-                                    特色科室：<input type="text" name="office" maxlength="18" value="<?php echo ($row["office"]); ?>"><span></span>
+                                    特色科室：<a style="color:red">(必填*)</a>&nbsp;&nbsp;&nbsp;<input type="text" id="office" name="office"  value="<?php echo ($row["office"]); ?>"><span></span>
                                 </div>
                               <div class="comment_label">
-                            <label for="comment">医院简介:</label>
+                            <label for="comment">医院简介:<a style="color:red">(必填*)</a>&nbsp;&nbsp;</label>
                         </div>
                         <div class="comment_textarea">
                             <textarea id="info" placeholder="请输入医院简介" name="info" cols="80" rows="4" maxlength="500"><?php echo ($row["info"]); ?></textarea>
@@ -415,7 +417,94 @@
                 var img = document.getElementById("previewimg3");
                 img.src = window.URL.createObjectURL(obj.files[0]);
             }
+    function Checkpost(){
+    	var previewimg = $("#previewimg").attr('src');
+    	var previewimg1 = $("#previewimg1").attr('src');
+    	var province = $("#province").val();
+    	var cities = $("#cities").val();
+    	var username = $("#username").val();
+    	var level = $("#level").val();
+    	var quality = $("#quality").val();
+    	var type = $("#type").val();
+    	var dnum = $("#dnum").val();
+    	var dnums = $("#dnums").val();
+    	var user = $("#user").val();
+    	var mobile = $("#mobile").val();
+    	var email = $("#email").val();
+    	var office = $("#office").val();
 
+    	var info = $("#info").val();
+    	if(previewimg.length==0){
+    		layer.msg('医疗执业许可证不能为空');
+    		return false;
+    	}
+    	if(previewimg1.length==0){
+    		layer.msg('评级证明证书不能为空');
+    		return false;
+    	}
+    	if(province ==''){
+    		layer.msg('所属省份不能为空');
+    		return false;
+    	}
+    	if(cities ==''){
+    		layer.msg('所属区域不能为空');
+    		return false;
+    	}
+    	if(username ==''){
+    		layer.msg('医院名称不能为空');
+    		return false;
+    	}
+    	if(level ==''){
+    		layer.msg('医院等级不能为空');
+    		return false;
+    	}
+    	if(quality ==''){
+    		layer.msg('医院性质不能为空');
+    		return false;
+    	}
+    	if(type ==''){
+    		layer.msg('医院类型不能为空');
+    		return false;
+    	}
+    	if(dnum ==''){
+    		layer.msg('日内诊量不能为空');
+    		return false;
+    	}
+    	if(dnums ==''){
+    		layer.msg('日预约量不能为空');
+    		return false;
+    	}
+    	if(user ==''){
+    		layer.msg('联系人不能为空');
+    		return false;
+    	}
+    	if(mobile ==''){
+    		layer.msg('手机号不能为空');
+    		return false;
+    	}
+    	var pattern = /^1[34578]\d{9}$/;
+        if(!pattern.test(mobile)){
+        	layer.msg('手机号格式错误');
+    		return false;
+        }
+    	if(email ==''){
+    		layer.msg('邮箱不能为空');
+    		return false;
+    	}
+    	var reg = /^([\.a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;
+    	 if(!reg.test(email)){
+    	 	layer.msg('邮箱格式错误');
+    		return false;
+    	 }
+    	if(office ==''){
+    		layer.msg('特色科室不能为空');
+    		return false;
+    	}
+    	if(info==''){
+    		layer.msg('医院简介不能为空');
+    		return false;
+    	}
+    }
 </script>
 </div>
 

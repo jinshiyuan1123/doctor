@@ -116,7 +116,7 @@ class SupplierController extends HisBaseController
                 'mobile' => $sid['contact_name'],
                 'phone' => $sid['contact_telephone'],
                 'true_name' => $sid['address'],
-                'checkid' => $sid['checkid'],
+                'checkid' => 0,
                 'url'      => $sid['editurl'],
                 'textarea' => htmlspecialchars_decode($sid['textarea']),
 
@@ -125,13 +125,12 @@ class SupplierController extends HisBaseController
            
             $result = M('his_yydoctor')->where("id='$pidlist'")->save($data);
             if ($result) {
-              
                  $result = M('his_yydoctor')->where("id='$pidlist'")->find();
                  if($result['checkid'] == '1'){
                     $ispic= array('ispic'=>1);
                     $result = M('his_edithospital')->where("sid='$pidlist'")->save($ispic);
                  }
-                 $this->ajaxSuccess('修改成功');
+                $this->ajaxSuccess('修改成功');
             } elseif ($this->supplier_model->getError()) {
                 $this->ajaxError($this->supplier_model->getError());
             } else {
@@ -144,6 +143,25 @@ class SupplierController extends HisBaseController
         }
     }
 
+     public function editSupplierlist()
+    {
+        $data = I('get.');
+        $uidlist = array('checkid'=>$data['uidlist']);
+         $result = M('his_yydoctor')->where("id='$data[uid]'")->save($uidlist);
+        if ($result) {
+                 $result = M('his_yydoctor')->where("id='$data[uid]'")->find();
+                 if($result['checkid'] == '1'){
+                    $ispic= array('ispic'=>1);
+                    $result = M('his_edithospital')->where("sid='$data[uid]'")->save($ispic);
+                 }elseif($result['checkid'] == '0'){
+                      $ispic= array('ispic'=>0);
+                    $result = M('his_edithospital')->where("sid='$data[uid]'")->save($ispic);
+                 }
+                $this->ajaxSuccess('修改成功');
+            }else{
+                $this->ajaxError('修改失败');
+            }
+    }
     /**
      * 供应商删除
      * Author: doreen

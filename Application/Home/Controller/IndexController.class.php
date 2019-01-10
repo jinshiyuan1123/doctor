@@ -1520,7 +1520,7 @@ public function recursived($meta,$flag,$count )
     {
      $res = session('home_user_info');
       $this->assign('user',$res); 
-      $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
+      $pic11 = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
       $id = $res['id'];
       if($id){
           $row = M('his_edithospital')->where("sid='$id'")->find();
@@ -1531,7 +1531,7 @@ public function recursived($meta,$flag,$count )
           $this->assign('row',$row);
       }
     
-      $this->assign('pic',$pic);
+      $this->assign('pic11',$pic11);
       $this->display(':yyauthaccout');
     }
 
@@ -1894,7 +1894,35 @@ public function recursived($meta,$flag,$count )
         }
     }
     $res = session('home_user_info');
-  
+   $edit = M('his_edithospital')->where("sid='$res[id]'")->find();
+   if($edit){
+     $datalist = array(
+      'sid' => $res['id'],
+      'province' => $data['province'],
+      'cities' => $data['cities'],
+      'source' => $data['source'],
+      'username' => $data['username'],
+      'level' => $data['level'],
+      'quality' => $data['quality'],
+      'type' => $data['type'],
+      'url' => $data['url'],
+      'dnum' => $data['dnum'],
+      'dnums'=> $data['dnums'],
+      'path' => $data['path'],
+      'pic' => $uploadFiles[0]?$uploadFiles[0]:$data['piclist0'],
+      'pic1' => $uploadFiles[1]?$uploadFiles[1]:$data['piclist1'],
+      'user' => $data['user'],
+      'userid'=> $data['userid'],
+      'email' => $data['email'],
+      'mobile' => $data['mobile'],
+      'info' => $data['info'],
+      'office' =>$data['office'],
+      'order' => $data['order'],
+      'update_time'=>time(),
+
+    );
+     $reslist = M('his_edithospital')->where("sid='$edit[sid]'")->save($datalist);
+   }else{
     $datalist = array(
       'sid' => $res['id'],
       'province' => $data['province'],
@@ -1920,11 +1948,10 @@ public function recursived($meta,$flag,$count )
       'create_time'=>time(),
 
     );
-
-
      $reslist = M('his_edithospital')->add($datalist);
+   }
     if($reslist){
-          $this->success('提交成功，等待管理员审核！',U('/home/index/yydoctorhome'));
+          $this->success('提交成功，等待管理员审核！',U('/home/index/yyauthaccout'));
      }
 
 
