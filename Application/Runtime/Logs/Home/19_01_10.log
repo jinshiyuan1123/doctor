@@ -1,0 +1,79 @@
+[ 2019-01-10T09:05:05+08:00 ] 127.0.0.1 /index.php/home/index/yyauthaccout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000247s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0221s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0298s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 206 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 233 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 234 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 237 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 238 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 241 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 242 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 245 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 246 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 249 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 250 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 253 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 254 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 257 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 258 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 261 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 265 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 271 行.
+NOTIC: [8] Undefined variable: row D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\c8e2ab1548766c3fe01002477b5bea9a.php 第 277 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2019-01-10T09:05:22+08:00 ] 127.0.0.1 /index.php/home/index/yyauthaccout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000188s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006018s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_edithospital` [ RunTime:0.0718s ]
+SQL: SELECT * FROM `dzm_his_edithospital` WHERE ( sid='7' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
