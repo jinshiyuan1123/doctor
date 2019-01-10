@@ -574,6 +574,7 @@ $(document).on('click', '.EditBtn', function () {
         $.post("<?php echo U('/Supplier/Index');?>",
             {'search':search,'p':page},
             function(data){
+
                 if (data.status == 'success') {
                     
                     if (data.data) {
@@ -585,7 +586,7 @@ $(document).on('click', '.EditBtn', function () {
                             }else{
                                 item.checkid='否';
                             }
-                           // console.info(item);
+
                             var id = i + 1;
                             html += '<tr>' +
                                 '<td>'+id+'</td>' +
@@ -594,11 +595,15 @@ $(document).on('click', '.EditBtn', function () {
                                 '<td>'+item.mobile+'</td>' +
                                 '<td>'+item.phone+'</td>' +
                                 '<td>'+item.ip+'</td>' +
-                                '<td>'+item.checkid+'</td>' +
-                                
-                                "<td><button type='button' uid='"+item.id+"' class='btn btn-success btn-sm EditBtn'>认证申请</button> " +
+                                '<td>'+item.checkid+'</td>' ;
+                                if(item.id== item.sidlist){
+                                      html += "<td><button type='button' uid='"+item.id+"' class='btn btn-success btn-sm EditBtn'>认证申请</button> " ;
+                                }else{
+                                      html += "<td><button type='button' uid='"+item.id+"' class='btn  btn-sm '>认证申请</button> " ;
+                                }
+                              
                                
-                                '<td>'+timeToDate(new Date(item.create_time * 1000))+'</td>' +
+                              html +=  '<td>'+timeToDate(new Date(item.create_time * 1000))+'</td>' +
                                 '<td><button type="button" class="btn btn-primary btn-sm mr10 supplierEdit" data-sid="'+item.id+'">编辑</button>' +
                                 '<button type="button" class="btn btn-default btn-sm delete" data-sid="'+item.id+'">删除</button></td></tr>';
                         });

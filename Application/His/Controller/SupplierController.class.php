@@ -40,6 +40,14 @@ class SupplierController extends HisBaseController
         //获取供应商列表
         $hospitalId = $this->hospitalInfo['uid'];
         $res = M('his_yydoctor')->select();
+         foreach($res as $kk=>$vv){
+            $list = M('his_edithospital')->where("sid='$vv[id]'")->find();
+            if($list['sid']==$vv['id']){
+                $res[$kk]['sidlist']=$list['sid'];
+
+            }
+
+        } 
         $supplierLists = $res;
         // var_dump($res);
         // $supplierLists = $this->supplier_model->getSupplierLists($hospitalId, $search);

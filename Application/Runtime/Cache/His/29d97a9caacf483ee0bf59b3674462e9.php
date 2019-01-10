@@ -753,6 +753,7 @@
         $.post("<?php echo U('Member/userList');?>",
             { "search": search, 'p':page, 'pagesize':10,'action':'userList'},
             function (data) {
+                console.info(data);
                 if (data.status=='success') {
                     if (data.msg.count > 0) {
                         var html = "";
