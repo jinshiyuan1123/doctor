@@ -1,4 +1,4 @@
-<!DOCTYPE PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="mobile-agent" content="format=html5;url=http://wapyyk.39.net/xq/zonghe/1cd60.html" />
@@ -6,18 +6,18 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
 
-		<link rel="shortcut icon" href="__PUBLIC_HOME__/favicon.ico" />
+		<link rel="shortcut icon" href="/Public/home/favicon.ico" />
 <title>择医网</title>
-<link href="__PUBLIC_HOME__/css/list/hospital_layout.css" rel="stylesheet" type="text/css">
+<link href="/Public/home/css/list/hospital_layout.css" rel="stylesheet" type="text/css">
 
 <meta http-equiv="Cache-Control" content="no-transform " />
-<link href="__PUBLIC_HOME__/css/list/dy_base.css?v=2014111410" type="text/css" rel="stylesheet" />
+<link href="/Public/home/css/list/dy_base.css?v=2014111410" type="text/css" rel="stylesheet" />
 <!-- <link href="/daoyi/css/yyk_keshi.css?20160829" type="text/css" rel="stylesheet"/> -->
 
-<link href="__PUBLIC_HOME__/css/list/yyk_keshi.css?20160829" type="text/css" rel="stylesheet"/>
+<link href="/Public/home/css/list/yyk_keshi.css?20160829" type="text/css" rel="stylesheet"/>
 
-<link href="__PUBLIC_HOME__/css/list/dy_hospital.css" rel="stylesheet" type="text/css">
-   <script src="__PUBLIC_HIS__/vendor/jquery/jquery.min.js"></script>
+<link href="/Public/home/css/list/dy_hospital.css" rel="stylesheet" type="text/css">
+   <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
 
 <base target="_blank" />
 <style type="text/css">
@@ -43,29 +43,73 @@
     <div id="topLink" class="art_navtext">
     </div>
     <!--未登录-->
-    <if condition="$user.hospital eq true">
-       <div class="art_navlogin" id="newLoginBox" style="display:block;">
+    <?php if($user["hospital"] == true): ?><div class="art_navlogin" id="newLoginBox" style="display:block;">
        设为首页 | 加入收藏  |
               <span class="n_reg">
-                <a href="{:U('home/index/yylogout')}" target="_self"  title="退出">退出</a>
+                <a href="<?php echo U('home/index/yylogout');?>" target="_self"  title="退出">退出</a>
             </span>
 
       <span class="n_login sbtn"  id="">
-        <cite><a href="{:U('home/index/yydoctorhome')}" >{$user.hospital}</a></cite>
-      </span> <include file="Public:test"/>
+        <cite><a href="<?php echo U('home/index/yydoctorhome');?>" ><?php echo ($user["hospital"]); ?></a></cite>
+      </span> 
+  
+  <link rel="stylesheet" href="/Public/home/dist/css/share.min.css">
+
+
+
+  <ol>
+   
+    <li class="row">
+      <div id="share-2">分享:</div>
+    </li>
+   
+   
+  </ol>
+
+<script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.js"></script>
+<script src="/Public/home/dist/js/jquery.share.min.js"></script>
+<script>
+$('#share-1').share();
+$('#share-2').share({sites: ['qzone', 'qq', 'weibo','tencent','wechat']});
+$('#share-3').share();
+$('#share-4').share();
+</script>
+
     </div>
-      <else/>
+      <?php else: ?>
     <div class="art_navlogin" id="newLoginBox" style="display:block;">
        设为首页 | 加入收藏
               <span class="n_reg">
-                <a href="{:U('home/index/yyregister')}" target="_self"  title="注册">注册</a>
+                <a href="<?php echo U('home/index/yyregister');?>" target="_self"  title="注册">注册</a>
             </span>
 
 			<span class="n_login sbtn"  id="top_loginbox">
-				<cite><a href="{:U('home/index/yylogin')}" target="_self" onclick="javascript:loginBox.Show();" title="登录">登录</a></cite>
-			</span> <include file="Public:test"/>
-    </div>
-  </if>
+				<cite><a href="<?php echo U('home/index/yylogin');?>" target="_self" onclick="javascript:loginBox.Show();" title="登录">登录</a></cite>
+			</span> 
+  
+  <link rel="stylesheet" href="/Public/home/dist/css/share.min.css">
+
+
+
+  <ol>
+   
+    <li class="row">
+      <div id="share-2">分享:</div>
+    </li>
+   
+   
+  </ol>
+
+<script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.js"></script>
+<script src="/Public/home/dist/js/jquery.share.min.js"></script>
+<script>
+$('#share-1').share();
+$('#share-2').share({sites: ['qzone', 'qq', 'weibo','tencent','wechat']});
+$('#share-3').share();
+$('#share-4').share();
+</script>
+
+    </div><?php endif; ?>
 
     <!--登录后-->
     <div class="art_navlogin" id="loginInfo" style="display:none;">
@@ -145,7 +189,7 @@
     <div class="logo">
         <div>
 
-        	<a style="height:79px;"href="{:U('home/index/index')}" title="择医网" target="_blank">择医网
+        	<a style="height:79px;"href="<?php echo U('home/index/index');?>" title="择医网" target="_blank">择医网
         </a>
     </div>
     </div>
@@ -172,15 +216,15 @@
 <div class="jy_hspt_add" id="hospial_location">
 
 	
-			您的位置： <a href="{:U('home/index/index')}">择医网</a> > <a href="/" title="择医挂号网">择医挂号网</a> >
+			您的位置： <a href="<?php echo U('home/index/index');?>">择医网</a> > <a href="/" title="择医挂号网">择医挂号网</a> >
 		
 </div>
 <div class="jy_hspt_intro">
 	<div class="jy_hspt_intro_m">
         <div class="l">
-            <h2>{$res.hospital}<span><i class='pink_link'><if condition="$reslist.level eq true">{$reslist.level}<else/>三级</if></i><i class='green_link'>医保定点医院</i><i class='blue_link'>中医院</i></span></h2>
+            <h2><?php echo ($res["hospital"]); ?><span><i class='pink_link'><?php if($reslist["level"] == true): echo ($reslist["level"]); else: ?>三级<?php endif; ?></i><i class='green_link'>医保定点医院</i><i class='blue_link'>中医院</i></span></h2>
             
-            <p>别名：{$res.hospital}&nbsp;</p>
+            <p>别名：<?php echo ($res["hospital"]); ?>&nbsp;</p>
             
         </div>
         <div class="r">
@@ -206,13 +250,12 @@
 </div>
 <div class="keshi-menu" id="keshi_menu_holder">
     <ul>
-        <li><a href="/" title="首  页" target="_self">首  页</a></li>
-        <li><a href="{:U('home/index/zongheinfo')}?id={$res.id}" title="详细介绍" target="_self">详细介绍</a></li>
-        <li><a href="/" title="科室列表" target="_self">科室列表</a></li>
-        <li><a href="/" title="专家介绍" target="_self">推荐专家<i></i></a></li>
-        <li><a href="/" title="就医指南" target="_self">就医指南</a></li>
-        <li><a href="" title="就诊评价" target="_self">就诊评价</a></li>
-        <li><a class="orange_link" href="" title="预约挂号" target="_self">预约挂号</a></li>
+        <li><a href="/xq/zonghe/1cd60.html" title="首  页" target="_self">首  页</a></li>
+        <li><a href="/hospital/1cd60_detail.html" title="详细介绍" target="_self">详细介绍</a></li>
+        <li><a href="/hospital/1cd60_labs.html" title="科室列表" target="_self">科室列表</a></li>
+        <li><a href="/hospital/1cd60_doctors.html" title="专家介绍" target="_self">推荐专家<i></i></a></li>
+        <li><a href="/hospital/1cd60_guides.html" title="就医指南" target="_self">就医指南</a></li><li><a href="/hospital/1cd60_comments.html" title="就诊评价" target="_self">就诊评价</a></li>
+        <li><a class="orange_link" href="/hospital/1cd60_registers.html" title="预约挂号" target="_self">预约挂号</a></li>
         <!-- 非合作方医院屏蔽底部浮动栏咨询 v5.6.4 -->
         
     </ul>
@@ -229,14 +272,14 @@
         		<!-- 投放广告 -->
                	
 <div>
-	<script type="text/javascript" src="http://app-g.39.net/rel/k13.php?id=5115&keyword={$res.hospital}"></script>
+	<script type="text/javascript" src="http://app-g.39.net/rel/k13.php?id=5115&keyword=<?php echo ($res["hospital"]); ?>"></script>
 </div>
 
 				
 <div class="hspt_left_p1">
    	<div class="hspt_infor">
        	<div class="l">
-			<img title="{$res.hospital}" src="__PUBLIC_HOME__/images/default_yy.gif" alt="{$res.hospital}logo" />
+			<img title="<?php echo ($res["hospital"]); ?>" src="/Public/home/images/default_yy.gif" alt="<?php echo ($res["hospital"]); ?>logo" />
         </div>
         <div class="r">
         	<table width="0" border="0">
@@ -244,20 +287,20 @@
               
               <tr>
                 <th scope="row">医院地址：</th>
-                <td>{$reslist.address}
+                <td><?php echo ($reslist["address"]); ?>
      </td>
               </tr>
               
               
                 <tr>
                 	<th scope="row"style="vertical-align: top;">医院电话：</th>
-                	<td><p>{$reslist.mobile}&nbsp;   
+                	<td><p><?php echo ($reslist["mobile"]); ?>&nbsp;   
                         	</p>
                 	</td>
                 </tr>
                 <tr>
                   <th scope="row"style="vertical-align: top;">医院网址：</th>
-                  <td><p>{$reslist.url}&nbsp;   
+                  <td><p><?php echo ($reslist["url"]); ?>&nbsp;   
                           </p>
                   </td>
                 
@@ -266,8 +309,8 @@
                <tr>
                  <th style="width:70px;" scope="row">医院简介：</th>
                  <td>
-                 <P>{$infolist}...
-                  <a href="{:U('home/index/zongheinfo')}?id={$res.id}" onmousedown="return _smartlog(this,'JIANJIE')">更多</a>
+                 <P><?php echo ($infolist); ?>...
+                  <a href="<?php echo U('home/index/zongheinfo');?>?id=<?php echo ($res["id"]); ?>" onmousedown="return _smartlog(this,'JIANJIE')">更多</a>
       </td>
                </tr>
             </table>
@@ -796,7 +839,7 @@ ac_server_base_url = "d-test.39.net/";
                 <div class="hspt_r_map">
                 	<h3>医院地图</h3>
                     <div class="hspt_r_map_m">
-                    	<a href="" title="查看" id="imgurl" >{$imgurl}</a>
+                    	<a href="" title="查看" id="imgurl" ><?php echo ($imgurl); ?></a>
                     </div>
                 </div>
                 
@@ -947,7 +990,7 @@ ac_server_base_url = "d-test.39.net/";
 <div class="bottominfo" id="bottominfo" style="padding-top:10px;">
 	<hr style="width:970px;color:#bbb;" size="1">
   
-	<a href="{:U('home/index/about')}" rel="nofollow">关于我们</a> | 
+	<a href="<?php echo U('home/index/about');?>" rel="nofollow">关于我们</a> | 
     <a href="" rel="nofollow">媒体医院在线客服：QQ 电话</a> | 
     <a href="" rel="nofollow">对医院意见反馈：QQ，微信 </a> | 
     <a href="" rel="nofollow">版权投诉：（联系网站）QQ （联系医院）QQ </a> | 
@@ -967,7 +1010,7 @@ Copyright  © 2000-2018　39.net All Rights Reserved.　本文由择医网作者
    function checkpost(){
     var key = $("#searchKey").val();
     if(key){
-       window.location.href='{:U('home/index/zonghe')}'+'?key='+key+'&searchType=search'; 
+       window.location.href='<?php echo U('home/index/zonghe');?>'+'?key='+key+'&searchType=search'; 
     }
    } 
   </script>

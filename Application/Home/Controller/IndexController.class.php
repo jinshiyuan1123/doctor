@@ -1802,6 +1802,7 @@ public function recursived($meta,$flag,$count )
      $this->assign('res',$ress);
   }else{
   $res = M('his_yydoctor')->where("id='$id'")->find();
+  $reslist = M('his_edithospital')->where("sid='$id'")->find();
   $str = $res['textarea'];
 
   preg_match('/<img.+src=\"?(.+\.(baidu))\"?.+>/i',$str,$match);
@@ -1811,14 +1812,27 @@ public function recursived($meta,$flag,$count )
   // var_dump(session('home_user_info'));die;
   $this->assign('imgurl',$match[0]);
   $this->assign('res',$res);
+  $infolist = mb_substr($reslist['info'],0,30);
+  $this->assign('infolist',$infolist);
+  $this->assign('reslist',$reslist);
   }
  
   $this->display(':zonghe');
  }
 
+ function zongheinfo()
+ {
+   $id =I('get.id');
+  $res = M('his_yydoctor')->where("id='$id'")->find();
+  $reslist = M('his_edithospital')->where("sid='$id'")->find();
+  $this->assign('reslist',$reslist);
+  $this->assign('res',$res);
+  $this->display(':zongheinfo');
+ }
+
  function zonghelist()
  {
-  $res = M('his_yydoctor')->where()->select();
+  $res = M('his_yydoctor')->where('checkid=1')->select();
   $this->assign('reslist',$res);
   $this->display(':zonghelist');
  }
@@ -1914,6 +1928,7 @@ public function recursived($meta,$flag,$count )
       'user' => $data['user'],
       'userid'=> $data['userid'],
       'email' => $data['email'],
+      'address' => $data['address'],
       'mobile' => $data['mobile'],
       'info' => $data['info'],
       'office' =>$data['office'],
@@ -1941,6 +1956,7 @@ public function recursived($meta,$flag,$count )
       'user' => $data['user'],
       'userid'=> $data['userid'],
       'email' => $data['email'],
+      'address' => $data['address'],
       'mobile' => $data['mobile'],
       'info' => $data['info'],
       'office' =>$data['office'],

@@ -67,7 +67,7 @@
 	<!-- 医生个人简介 -->
 	<div  class="top">
 		<div class="head-box">
-                            <img src="<?php if($user["pic"] == true): echo ($pic); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
+                            <img src="<?php if($user["pic"] == true): echo ($pic11); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
 		</div>
 		<div class="info">
 			<div class="basic-info">
@@ -260,8 +260,8 @@
                                      电话：<a style="color:red">(必填*)</a>&nbsp;&nbsp;<input type="text" id="mobile" name="mobile"   placeholder ="请输入正确的手机号码" value="<?php echo ($row["mobile"]); ?>"><span></span>&nbsp;&nbsp;
                                 </div>
                                 <div class="input-line">
-                                    邮箱：<a style="color:red">(必填*)</a><a style="opacity:0;">(非)</a>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="email" name="email"  value="<?php echo ($row["email"]); ?>"><span></span>
-                                    
+                                    邮箱：<a style="color:red">(必填*)</a><a style="opacity:0;">(非)</a>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="email" name="email"  value="<?php echo ($row["email"]); ?>"><span></span>&nbsp;&nbsp;
+                                     医院地址：<a style="color:red">(必填*)</a>&nbsp;&nbsp;&nbsp;<input type="text" id="address" name="address"  value="<?php echo ($row["address"]); ?>"><span></span>
                                 </div>
                                   <div class="input-line">
                                     特色科室：<a style="color:red">(必填*)</a>&nbsp;&nbsp;&nbsp;<input type="text" id="office" name="office"  value="<?php echo ($row["office"]); ?>"><span></span>
@@ -431,6 +431,7 @@
     	var user = $("#user").val();
     	var mobile = $("#mobile").val();
     	var email = $("#email").val();
+        var address = $("#address").val();
     	var office = $("#office").val();
 
     	var info = $("#info").val();
@@ -483,10 +484,10 @@
     		return false;
     	}
     	var pattern = /^1[34578]\d{9}$/;
-        if(!pattern.test(mobile)){
-        	layer.msg('手机号格式错误');
-    		return false;
-        }
+      //   if(!pattern.test(mobile)){
+      //   	layer.msg('手机号格式错误');
+    		// return false;
+      //   }
     	if(email ==''){
     		layer.msg('邮箱不能为空');
     		return false;
@@ -496,6 +497,10 @@
     	 	layer.msg('邮箱格式错误');
     		return false;
     	 }
+         if(address ==''){
+            layer.msg('医院地址不能为空');
+            return false;
+        }
     	if(office ==''){
     		layer.msg('特色科室不能为空');
     		return false;

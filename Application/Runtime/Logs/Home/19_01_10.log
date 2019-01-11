@@ -5252,3 +5252,599 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
 
+[ 2019-01-10T14:40:17+08:00 ] 127.0.0.1 /Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000220s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='养生' ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0064s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='健康'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='两性'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='减肥'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院党建'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院视频'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='我拍拍'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='择医网讲堂'  ) ORDER BY ins_id desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_doctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='美容'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='饮食'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='母婴'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='运动'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='百科'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id asc LIMIT 10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 178 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 180 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 181 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 183 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 184 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 187 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 188 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 189 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 190 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 191 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 193 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 195 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 228 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 231 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 234 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 243 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000721s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000745s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2213 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2217 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2220 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2245 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2249 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2252 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2277 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2281 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2284 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2313 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2317 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2320 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2344 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2348 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2351 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2375 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2379 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2019-01-10T14:40:19+08:00 ] 127.0.0.1 /index.php/home/index/yydoctorhome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000251s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2019-01-10T14:40:25+08:00 ] 127.0.0.1 /index.php/home/index/yyauthaccout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000164s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_edithospital` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_edithospital` WHERE ( sid='7' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2019-01-10T14:40:25+08:00 ] 127.0.0.1 /index.php/home/index/public/home/images/uploads/15470906103296.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2019-01-10T14:40:42+08:00 ] 127.0.0.1 /index.php/home/index/uploadlists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000219s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_edithospital` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_edithospital` WHERE ( sid='7' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `dzm_his_edithospital` SET `sid`='7',`province`='试试44',`cities`='11',`source`='11',`username`='11',`level`='11',`quality`='11',`type`='11',`url`='11',`dnum`='11',`dnums`='11',`path`='11',`pic`='./public/home/images/uploads/15471024424084.jpg',`pic1`='./public/home/images/uploads/15471024421085.png',`user`='11',`userid`='11',`email`='1314158920@qq.com',`mobile`='13141589203',`info`='是的33',`office`='11',`order`='第三方',`update_time`='1547102442' WHERE ( sid='7' ) [ RunTime:0.0276s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+
+[ 2019-01-10T14:40:43+08:00 ] 127.0.0.1 /index.php/home/index/yyauthaccout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000164s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_edithospital` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `dzm_his_edithospital` WHERE ( sid='7' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2019-01-10T14:50:03+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000162s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='养生' ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='健康'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='两性'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='减肥'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院党建'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院视频'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='我拍拍'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='择医网讲堂'  ) ORDER BY ins_id desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_doctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='美容'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='饮食'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='母婴'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='运动'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='百科'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id asc LIMIT 10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 178 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 180 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 181 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 183 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 184 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 187 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 188 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 189 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 190 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 191 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 193 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 195 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 228 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 231 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 234 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 243 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000751s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000773s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2213 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2217 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2220 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2245 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2249 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2252 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2277 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2281 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2284 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2313 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2317 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2320 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2344 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2348 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2351 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2375 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2379 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2019-01-10T14:50:12+08:00 ] 127.0.0.1 /index.php/home/index/zonghelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000200s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 1821 and defined D:\phpStudy2018\PHPTutorial\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\PHPTutorial\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\PHPTutorial\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\PHPTutorial\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_yydoctor`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2019-01-10T14:50:16+08:00 ] 127.0.0.1 /index.php/home/index/zonghelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000204s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php on line 1821 and defined D:\phpStudy2018\PHPTutorial\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1797 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\PHPTutorial\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1805 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\PHPTutorial\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1808 行.
+NOTIC: [8] Undefined variable: where D:\phpStudy2018\PHPTutorial\WWW\doctor\ThinkPHP\Library\Think\Model.class.php 第 1816 行.
+SQL: SELECT * FROM `dzm_his_yydoctor`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2019-01-10T14:52:03+08:00 ] 127.0.0.1 /index.php/home/index/zonghelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000241s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( checkid=1 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2019-01-10T14:52:20+08:00 ] 127.0.0.1 /index.php/home/index/zonghelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000161s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( checkid=1 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2019-01-10T14:52:23+08:00 ] 127.0.0.1 /index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000223s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_inspectionfee` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='养生' ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='健康'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='两性'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='减肥'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院公开'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院动态'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院健康'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院党建'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='医院视频'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='我拍拍'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='择医网讲堂'  ) ORDER BY ins_id desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_doctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` ORDER BY id desc LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='美容'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='饮食'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='母婴'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='运动'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` WHERE ( class='百科'  ) ORDER BY ins_id desc LIMIT 7   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id desc LIMIT 10   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `dzm_his_inspectionfee` ORDER BY ins_id asc LIMIT 10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 178 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 180 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 181 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 182 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 183 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 184 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 185 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 186 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 187 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 188 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 189 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 190 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 191 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 192 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 193 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 195 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 228 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 231 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 234 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 237 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 240 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 243 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000748s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000771s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2213 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2217 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2220 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2245 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2249 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2252 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2277 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2281 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2284 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2313 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2317 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2320 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2344 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2348 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2351 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2375 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2379 行.
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\f324508a16a2d221eb71b92d9fd560ca.php 第 2382 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2019-01-10T14:52:27+08:00 ] 127.0.0.1 /index.php/home/index/zonghe?id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000175s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( id='7' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 1812 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2019-01-10T14:54:25+08:00 ] 127.0.0.1 /index.php/home/index/zonghe?key=%E5%8C%97%E4%BA%AC%E5%8C%BB%E9%99%A2&searchType=search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000169s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::error() should be compatible with Think\Controller::error($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Home\Controller\IndexController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `dzm_his_user` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `dzm_his_user` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_doctor` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `dzm_his_doctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dzm_his_yydoctor` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( mobile='13776848129' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `dzm_his_yydoctor` WHERE ( hospital='北京医院' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.021096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.021138s ]
+NOTIC: [8] Undefined variable: user D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\bd7c0ded818a9091e3c23f93c3aed1e4.php 第 46 行.
+NOTIC: [8] Undefined variable: imgurl D:\phpStudy2018\PHPTutorial\WWW\doctor\Application\Runtime\Cache\Home\bd7c0ded818a9091e3c23f93c3aed1e4.php 第 840 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
