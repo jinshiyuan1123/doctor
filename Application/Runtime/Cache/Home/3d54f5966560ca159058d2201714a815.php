@@ -1,27 +1,27 @@
 <?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="shortcut icon" href="/Public/home/favicon.ico" />
     <link rel="stylesheet" href="/Public/home/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
     <link rel="stylesheet" href="/Public/home/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
 
   <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
     <script src="/Public/his/vendor/layer/layer.js"></script>
-	
-				<link rel="stylesheet" href="/Public/home/css/home-new.css?v=1541078824a18cef" type="text/css"/>
-		        <meta name="keywords" content="" />
-		        <meta name="description" content="" />
-		
-		    <title><?php echo ($docname); ?> | 择医</title>
-	</head>
-	
-	<body>
-		<!-- #g-wrapper -->
-		<div id="g-wrapper" class="gc-new">
-			<!-- #gh -->
-	 <div class="g-header-new noprint">
+    
+                <link rel="stylesheet" href="/Public/home/css/home-new.css?v=1541078824a18cef" type="text/css"/>
+                <meta name="keywords" content="" />
+                <meta name="description" content="" />
+        
+            <title><?php echo ($docname); ?> | 择医</title>
+    </head>
+    
+    <body>
+        <!-- #g-wrapper -->
+        <div id="g-wrapper" class="gc-new">
+            <!-- #gh -->
+     <div class="g-header-new noprint">
     <div class="notice"  id="J_Notify" style="display: none;">
         <div class="center" class="">
             <div class="notice-contain">
@@ -61,82 +61,82 @@
 
             <!-- end of #gh -->
             <div class="g-container">
-				
+                
 <div class="g-menubar noprint" style="margin-top:82px;">
-	<!-- 医生个人简介 -->
-	<div  class="top">
-		<div class="head-box">
+    <!-- 医生个人简介 -->
+    <div  class="top">
+        <div class="head-box">
                         <img src="/Public/home/images/pYf27810846.png?timeStamp=1543037600522" alt="" class="head-img"/>
-		</div>
-		<div class="info">
-			<div class="basic-info">
-				<h1><?php echo ($user["true_name"]); ?>&nbsp;</h1>
-				<span></span>
-			</div>
-			<div class="dept-info">
-				         	
-			</div>
-			<a href="#" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
-		</div>
-	</div>
+        </div>
+        <div class="info">
+            <div class="basic-info">
+                <h1><?php echo ($user["true_name"]); ?>&nbsp;</h1>
+                <span></span>
+            </div>
+            <div class="dept-info">
+                            
+            </div>
+            <a href="#" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
+        </div>
+    </div>
 
-	<ul class="menu-parent-box">
-			<li class="menu-parent active"><a href="<?php echo U('home/index/doctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
-					<li class="menu-parent ">
-					<a href="javascript:;" class="hasChild J_ParentMenu">
-						<i style="background: url(/Public/home/images/J5t37110059.png) no-repeat"></i>
-						
-					     账号设置
-						</a>
-									<div class="menu-child-box hide">
-									   	<a class="menu-child " href="<?php echo U('home/index/authprofile');?>" monitor=""
-										  >
-										   
-								   		个人资料</a>
+    <ul class="menu-parent-box">
+            <li class="menu-parent active"><a href="<?php echo U('home/index/doctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
+                    <li class="menu-parent ">
+                    <a href="javascript:;" class="hasChild J_ParentMenu">
+                        <i style="background: url(/Public/home/images/J5t37110059.png) no-repeat"></i>
+                        
+                         账号设置
+                        </a>
+                                    <div class="menu-child-box hide">
+                                        <a class="menu-child " href="<?php echo U('home/index/authprofile');?>" monitor=""
+                                          >
+                                           
+                                        个人资料</a>
 
-									   	<a class="menu-child " href="<?php echo U('home/index/head_pic_settings');?>" monitor="doctorweb,menu,accountset_pichead"
-										  >
-										   
-								   		头像设置</a>
-									   	<a class="menu-child " href="<?php echo U('home/index/authaccout');?>" monitor="doctorweb,menu,accountset_info"
-										  >
-										   
-								   		账号信息</a>
-									   	<a class="menu-child " href="<?php echo U('home/index/authtomod');?>" monitor="doctorweb,menu,accountset_password"
-										  >
-										   
-								   		修改密码</a>
-									</div>
-					</li>
-					<li class="menu-parent ">
-					<a href="javascript:;"
-					
-					
-					class="hasChild J_ParentMenu">
-						<i style="background: url(/Public/home/images/FIU37110407.png) no-repeat"></i>
-						
-					     帮助与反馈
-						</a>
-									<div class="menu-child-box hide">
-									   	<a class="menu-child " href="<?php echo U('home/index/authoperation');?>" 
-										  >
-										   
-								   		操作手册</a>
-									   	<a class="menu-child " href="<?php echo U('home/index/article');?>" >
-										   
-								   		我的文章</a>
-									   	<a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
-										  >
-										   
-								   		常见问题</a>
+                                        <a class="menu-child " href="<?php echo U('home/index/head_pic_settings');?>" monitor="doctorweb,menu,accountset_pichead"
+                                          >
+                                           
+                                        头像设置</a>
+                                        <a class="menu-child " href="<?php echo U('home/index/authaccout');?>" monitor="doctorweb,menu,accountset_info"
+                                          >
+                                           
+                                        账号信息</a>
+                                        <a class="menu-child " href="<?php echo U('home/index/authtomod');?>" monitor="doctorweb,menu,accountset_password"
+                                          >
+                                           
+                                        修改密码</a>
+                                    </div>
+                    </li>
+                    <li class="menu-parent ">
+                    <a href="javascript:;"
+                    
+                    
+                    class="hasChild J_ParentMenu">
+                        <i style="background: url(/Public/home/images/FIU37110407.png) no-repeat"></i>
+                        
+                         帮助与反馈
+                        </a>
+                                    <div class="menu-child-box hide">
+                                        <a class="menu-child " href="<?php echo U('home/index/authoperation');?>" 
+                                          >
+                                           
+                                        操作手册</a>
+                                        <a class="menu-child " href="<?php echo U('home/index/article');?>" >
+                                           
+                                        我的文章</a>
+                                        <a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
+                                          >
+                                           
+                                        常见问题</a>
                                           
-									</div>
-					</li>
-	</ul>
+                                    </div>
+                    </li>
+    </ul>
 </div>
 
-				<!-- #gc -->
-				
+                <!-- #gc -->
+                
 
 
 <!-- .gp-home -->
@@ -146,28 +146,28 @@
             <h1>个人网站访问量</h1>
             <div class="info">
                 <i class="fangwen"></i>
-                	<h4>暂无数据</h4>
+                    <h4>暂无数据</h4>
             </div>
         </div>
         <div class="item">
             <h1>我的问诊量</h1>
             <div class="info">
-	            <i class="wen"></i>
-	            	<h4>暂无数据</h4>
+                <i class="wen"></i>
+                    <h4>暂无数据</h4>
             </div>
         </div>
         <div class="item">
             <h1>我的预约量</h1>
             <div class="info">
                 <i class="yuyue"></i>
-	            	<h4>暂无数据</h4>
+                    <h4>暂无数据</h4>
             </div>
         </div>
         <div class="item">
             <h1>我的收入</h1>
             <div class="info">
                 <i class="rmb"></i>
-	            	<h4>暂无数据</h4>
+                    <h4>暂无数据</h4>
             </div>
         </div>
     </div>
@@ -180,7 +180,7 @@
         <div class="g-content">
             <input type="hidden" name="isOpenHealthyNum" id="isOpenHealthyNum" value="0" />
           
-		             <div class="g-tab g-apply J_DoctorVerify">
+                     <div class="g-tab g-apply J_DoctorVerify">
                 <form id="J_VerifyForm" name="verifyForm" method="post" enctype="multipart/form-data" action="<?php echo U('home/index/uploads');?>">
                       <input type="hidden" name="doctorid" id="jkhUrl" value="<?php echo ($user["id"]); ?>">
                     <div class="tab-title">认证申请
@@ -324,7 +324,7 @@
                     </div>
                 </div>
             </div>
-				            <div class="g-tab gp-qkcollege">
+                            <div class="g-tab gp-qkcollege">
                 <div class="tab-title">全科学院<i><a target="_blank" href="/webqk/index" monitor="doctorweb, institute, enter">进入全科学院&gt;&gt;</a></i></div>
                 <div class="tab-body">
                     <ul class="qk-teacher">
@@ -336,7 +336,7 @@
                                 </div>
                                 <p class="t-header"><i class="icon-teacher"></i>全科学院特约讲师</p>
                                 <p class="t-detail">
-								扈峻峰	副主任医师	杭州市江干区凯旋街道社区卫生服务中心
+                                扈峻峰 副主任医师   杭州市江干区凯旋街道社区卫生服务中心
 
                                 </p>
                             </a>
@@ -350,7 +350,7 @@
                                 </div>
                                 <p class="t-header"><i class="icon-teacher"></i>全科学院特约讲师</p>
                                 <p class="t-detail">
-								杨秉辉  教授  复旦大学附属中山医院全科医学科
+                                杨秉辉  教授  复旦大学附属中山医院全科医学科
                                 </p>
                             </a>
                         </li>
@@ -362,7 +362,7 @@
                                 </div>
                                 <p class="t-header"><i class="icon-teacher"></i>全科学院特约讲师</p>
                                 <p class="t-detail">
-								张勘 	处长 	上海市卫生计生委科教处
+                                张勘  处长  上海市卫生计生委科教处
 
                                 </p>
                             </a>
@@ -477,20 +477,20 @@
 
 
 
-				<!-- end of #gc -->
-				<div class="clear"></div>
-			</div>
-			<!-- #gf -->
-			<div id="gf" class="gf-new">
-	<div class="g-container">
-		<p>网友、医生言论仅代表其个人观点，不代表本站同意其说法，本站不承担由此引起的法律责任</p>	
-		<p>择医提供平台支持 Copyright 2011-2018版权所有。&nbsp;&nbsp;浙ICP备12034511号</p>
-	</div>
+                <!-- end of #gc -->
+                <div class="clear"></div>
+            </div>
+            <!-- #gf -->
+            <div id="gf" class="gf-new">
+    <div class="g-container">
+        <p>网友、医生言论仅代表其个人观点，不代表本站同意其说法，本站不承担由此引起的法律责任</p>    
+        <p>择医提供平台支持 Copyright 2011-2018版权所有。&nbsp;&nbsp;浙ICP备12034511号</p>
+    </div>
 </div>
-			<!-- end of #gf -->
-		</div>	
-		<!-- end of #g-wrapper -->
-		
+            <!-- end of #gf -->
+        </div>  
+        <!-- end of #g-wrapper -->
+        
 <script type="text/javascript">
     $(document).ready(function(){
         $('.J_Show').hover(function(){
@@ -529,5 +529,5 @@
 </script>
 
 
-	</body>
+    </body>
 </html>

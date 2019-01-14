@@ -221,7 +221,7 @@
 					     帮助与反馈
 						</a>
 									<div class="menu-child-box hide">
-									   <!-- 	<a class="menu-child " href="h<?php echo U('home/index/authoperation');?>" 
+									   	<!-- <a class="menu-child " href="h<?php echo U('home/index/authoperation');?>" 
 										  >
 										   
 								   		操作手册</a> -->
@@ -245,7 +245,7 @@
 		<div class="gc-mask">
 			<div class="content-admin g-clear g-content">
 				<div id="g-breadcrumb">
-				    <a href="https://doctor.guahao.com/home">首页</a>&gt;
+				    <a href="<?php echo U('home/index/index');?>">首页</a>&gt;
 			        <span>账号设置 &gt;</span>
 			        <span>个人资料</span>
 			  	</div>
@@ -347,7 +347,7 @@
 		loginId:'nPuS8fU8D/OwSYgBHuytSD2a94FM1t6yua5UQIInwpIEhwBSJw8iRQ==',
 		perSessiionId:'154303338518820178067151',
 		shortSessionId:'',
-		referurl:'https://doctor.guahao.com/home',
+		referurl:'<?php echo U('home/index/index');?>',
 		userAgent:'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
 		logUrl: 'https://trackweb.guahao.cn/blank.gif',
 		debug: false,

@@ -61,6 +61,7 @@
                         <tr>
                             <th>序号</th>
                             <th>医院名称</th>
+                            <th>科分类</th>
                             <th>科室名称</th>
                             <th>科室编号</th>
                             <th>操作</th>
@@ -83,7 +84,18 @@
         <div class="ftc">
             <div class="fublBox mt20"><span>添加医院：</span>
                <select class="form-control form-itmeB" id="rank">
-                <?php if(is_array($rankList)): foreach($rankList as $k=>$v): ?><option value="<?php echo ($v["sid"]); ?>"><?php echo ($v["supplier_name"]); ?></option><?php endforeach; endif; ?>
+                <?php if(is_array($rankList)): foreach($rankList as $k=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["hospital"]); ?></option><?php endforeach; endif; ?>
+                </select>
+            </div>
+            <div class="fublBox mt20"><span>添加科分类：</span>
+               <select class="form-control form-itmeB" id="rankadd">
+               
+                    <option >添加科分类</option>
+                    <option value="内科">内科</option>
+                    <option value="外科">外科</option>
+                    <option value="妇儿">妇儿</option>
+                    <option value="其他">其他</option>
+                
                 </select>
             </div>
               <div class="fublBox mt20"><span>科室名称：</span>
@@ -104,7 +116,18 @@
         <div class="ftc">
             <div class="fublBox mt20"><span>添加医院：</span>
                <select class="form-control form-itmeB" id="ranks">
-                <?php if(is_array($rankList)): foreach($rankList as $k=>$v): ?><option value="<?php echo ($v["sid"]); ?>"><?php echo ($v["supplier_name"]); ?></option><?php endforeach; endif; ?>
+                <?php if(is_array($rankList)): foreach($rankList as $k=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["hospital"]); ?></option><?php endforeach; endif; ?>
+                </select>
+            </div>
+            <div class="fublBox mt20"><span>添加科分类：</span>
+               <select class="form-control form-itmeB" id="rankedit">
+               
+                    <option >添加科分类</option>
+                    <option value="内科">内科</option>
+                    <option value="外科">外科</option>
+                    <option value="妇儿">妇儿</option>
+                    <option value="其他">其他</option>
+                
                 </select>
             </div>
             <div class="fublBox mt20"><span>科室名称：</span>
@@ -172,9 +195,10 @@
         $(document).on('click', '.add', function(){
             var departmentName = $("#departmentAddBomb :input[name='department_name']").val();
             var sid_name = $("#rank option:selected").text();
+            var ksname = $("#rankadd").find("option:selected").attr('value');
             var ranklist = $("#rank ").val();
             $.post("<?php echo U('/Department/addDepartment');?>",
-                { "department_name": departmentName,"ranklist":ranklist,"sid_name":sid_name},
+                { "department_name": departmentName,"ranklist":ranklist,"sid_name":sid_name,"ksname":ksname},
                 function (data) {
                     if (data.status=='success') {
                         getLists('',_department_page);
@@ -189,6 +213,7 @@
         $(document).on('click', '.departmentEdit', function () {
             $("#departmentEditBomb :input[name='department_name']").val($(this).attr('data-name'));
             $("#departmentEditBomb :input[name='did']").val($(this).attr('data-did'));
+
             $('#departmentEditBomb').show(0);
             // 取消或者关闭
             $('#departmentEditBomb .bombMask, #departmentEditBomb .fa-remove').one('click', function(event) {
@@ -201,12 +226,13 @@
             var departmentName = $("#departmentEditBomb :input[name='department_name']").val();
             var did = $("#departmentEditBomb :input[name='did']").val();
             var sid_name = $("#ranks option:selected").text();
-
+             var ksname = $("#rankedit").find("option:selected").attr('value');
             var ranklist = $("#ranks ").val();
             $.post("<?php echo U('/Department/editDepartment');?>",
-                { "department_name": departmentName,'did':did,"ranklist":ranklist,"sid_name":sid_name},
+                { "department_name": departmentName,'did':did,"ranklist":ranklist,"sid_name":sid_name,"ksname":ksname},
                 function (data) {
                     if (data.status=='success') {
+                         getLists('',_department_page);
                         $("#"+did).html(departmentName);
                         $("#edit"+did).attr('data-name', departmentName);
                         $('#departmentEditBomb').hide(0);
@@ -246,6 +272,7 @@
                                 '<td>'+id+'</td>' +
                                 '<td id="'+item.sid+'">'+item.sid_name+'</td>' +
                                 '<td id="'+item.did+'">'+item.department_name+'</td>' +
+                                '<td id"'+item.ksname+'">'+item.ksname+'</td>'+
                                 '<td>'+item.department_number+'</td>' +
                                 '<td>' +
                                 '<button type="button" class="btn btn-primary btn-sm mr10 departmentEdit" data-did="'+item.did+'" data-name="'+item.department_name+'" id="edit'+item.did+'">编辑</button>' +

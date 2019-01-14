@@ -155,12 +155,11 @@
 </li>
 <li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">健康视频</a>
 	<ul>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=健康视频" target="_blank">健康视频</a></li>
+     <li><a href="<?php echo U('home/index/allorder');?>?class=健康视频" target="_blank">健康视频</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=养生视频" target="_blank">养生视频</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=减肥视频" target="_blank">减肥视频</a></li>
      <li><a href="<?php echo U('home/index/allorder');?>?class=生活视频" target="_blank">生活视频</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=饮食视频" target="_blank">饮食视频</a></li>
-  
 </ul>
 </li>
 <li><a target="_blank" target="_blank" href="<?php echo U('home/index/allorder');?>?class=搞笑视频" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,preciseorder">搞笑视频</a>
@@ -187,7 +186,7 @@
 </ul> -->
   </li>
 
-   <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a>
+   <li><a target="_blank" >微视频</a>
 <ul>
     <li><a href="<?php echo U('home/index/allorder');?>?class=演唱会" target="_blank">演唱会</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=影视" target="_blank">影视</a></li>

@@ -89,7 +89,7 @@
 <script src="/Public/home/dist/js/jquery.share.min.js"></script>
 <script>
 $('#share-1').share();
-$('#share-2').share({sites: ['qzone', 'qq', 'weibo','wechat']});
+$('#share-2').share({sites: ['qzone', 'qq', 'weibo','tencent','wechat']});
 $('#share-3').share();
 $('#share-4').share();
 </script>
@@ -132,7 +132,7 @@ $('#share-4').share();
                         <label>简介:</label>
                         <span>择医官方健康号，专家医生深度科普，一篇文章讲透一个疾病。</span>
                     </div>
-                        <a class="doc-health-btn" href="/health/kiBvB60135221">去Ta主页</a>
+                        <a class="doc-health-btn" href="<?php echo U('home/index/fastorder');?>">去Ta主页</a>
             </div>
                 <div class="g-doc-article">
                     <div class="arc-title">

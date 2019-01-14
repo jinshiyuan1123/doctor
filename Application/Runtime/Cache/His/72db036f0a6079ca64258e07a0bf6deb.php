@@ -90,41 +90,41 @@
         <div class="bombTit">医院维护<i class="fa fa-remove"></i></div>
         <div class="ftc pd10">
             <div class="input-group listSeaForm wb100">
-                <span class="input-group-btn">
-                    <span class="btn">医院名称：</span>
-                </span>
+				<span class="input-group-btn">
+					<span class="btn">医院名称：</span>
+				</span>
                 <input class="form-control" type="text" name="addSupplier" placeholder="" onkeyup="value=value.replace(/[^\a-zA-Z\u4E00-\u9FA5]/g,'')"
                        onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\a-zA-Z\u4E00-\u9FA5]/g,''))">
             </div>
             <div class="input-group listSeaForm wb100 mt10">
-                <span class="input-group-btn">
-                    <span class="btn">医院地址：</span>
-                </span>
+				<span class="input-group-btn">
+					<span class="btn">医院地址：</span>
+				</span>
                 <input class="form-control" type="text" name="addAddress" placeholder="">
             </div>
             <div class="input-group listSeaForm wb100 mt10">
-                <span class="input-group-btn">
-                    <span class="btn">联系人姓名：</span>
-                </span>
+				<span class="input-group-btn">
+					<span class="btn">联系人姓名：</span>
+				</span>
                 <input class="form-control" type="text" name="addContactName" placeholder="" onkeyup="value=value.replace(/[^\a-zA-Z\u4E00-\u9FA5]/g,'')"
                        onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\a-zA-Z\u4E00-\u9FA5]/g,''))">
             </div>
             <div class="input-group listSeaForm wb100 mt10">
-                <span class="input-group-btn">
-                    <span class="btn">座机号：</span>
-                </span>
+				<span class="input-group-btn">
+					<span class="btn">座机号：</span>
+				</span>
                 <input class="form-control" type="text" name="addContactPhone" placeholder="例：010-65528101">
             </div>
             <div class="input-group listSeaForm wb100 mt10">
-                <span class="input-group-btn">
-                    <span class="btn">手机号：</span>
-                </span>
+				<span class="input-group-btn">
+					<span class="btn">手机号：</span>
+				</span>
                 <input class="form-control" type="text" name="addContactMobile" placeholder="" maxlength="11" onkeyup="value=value.replace(/[^\d^\.]+/g,'')">
             </div>
             <div class="input-group listSeaForm wb100 mt10">
-                <span class="input-group-btn">
-                    <span class="btn">银行账号：</span>
-                </span>
+				<span class="input-group-btn">
+					<span class="btn">银行账号：</span>
+				</span>
                 <input class="form-control" type="text" name="addAccount" placeholder="">
             </div>
               <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
@@ -305,45 +305,52 @@
         <div class="bombTit">医院维护<i class="fa fa-remove"></i></div>
         <div class="ftc pd10">
             <div class="input-group listSeaForm wb100">
-                <span class="input-group-btn">
-                    <span class="btn">医院名称：</span>
-                </span>
+				<span class="input-group-btn">
+					<span class="btn">医院名称：</span>
+				</span>
                 <input class="form-control" type="text" name="editSupplier" value="22" >
             </div>
             <div class="input-group listSeaForm wb100 mt10">
-                <span class="input-group-btn">
-                    <span class="btn">联系人：</span>
-                </span>
+				<span class="input-group-btn">
+					<span class="btn">联系人：</span>
+				</span>
                 <input class="form-control" type="text" name="editAddress" placeholder="">
             </div>
             <div class="input-group listSeaForm wb100 mt10">
-                <span class="input-group-btn">
-                    <span class="btn">手机：</span>
-                </span>
+				<span class="input-group-btn">
+					<span class="btn">手机：</span>
+				</span>
                 <input class="form-control" type="text" name="editContactName" >
             </div>
             <div class="input-group listSeaForm wb100 mt10">
-                <span class="input-group-btn">
-                    <span class="btn">座机号：</span>
-                </span>
+				<span class="input-group-btn">
+					<span class="btn">座机号：</span>
+				</span>
                 <input class="form-control" type="text" name="editContactPhone" placeholder="例：010-65528101">
             </div>
             <div class="input-group listSeaForm wb100 mt10">
-                <span class="input-group-btn">
-                    <span class="btn">ip：</span>
-                </span>
+				<span class="input-group-btn">
+					<span class="btn">ip：</span>
+				</span>
                 <input class="form-control" type="text" disabled="disabled" name="editContactMobile" placeholder="" maxlength="11" onkeyup="value=value.replace(/[^\d^\.]+/g,'')">
             </div>
              <div class="input-group listSeaForm wb100 mt10">
                 <span class="input-group-btn">
                     <span class="btn">医院网址：</span>
                 </span>
-                <input class="form-control" type="text"  name="editurl" placeholder="" maxlength="11" onkeyup="value=value.replace(/[^\d^\.]+/g,'')">
+                <input class="form-control" type="text"  name="editurl" placeholder="" >
+            </div>
+            <div class="input-group listSeaForm wb100 mt10">
+                <span class="input-group-btn">
+                    <span class="btn">就医指南:</span>
+                </span>
+                
+                <textarea class="form-control" id="b-strong" rows="2" maxlength="500" placeholder=""></textarea>
             </div>
            <!--  <div class="input-group listSeaForm wb100 mt10">
-                <span class="input-group-btn">
-                    <span class="btn">是否审核：</span>
-                </span>
+				<span class="input-group-btn">
+					<span class="btn">是否审核：</span>
+				</span>
             <select  class="form-control" id="isshow">
             <option value ="1" name="editAccount" id="editids" class="editAccountid">是</option>
             <option value ="0" name="editAccount" id="editlists" class="editAccountid">否</option>
@@ -388,7 +395,7 @@
                    已审核：  <input type="radio" name="shenheid"  value="1">
             </div>
            
-            <input class="form-control" type="hidden" name="editSid">
+            <input class="form-control" type="hidden" name="editSid" value="">
             <a class="btn btn-primary determine wb100 mt20 editlist">确认</a>
         </div>
     </div>
@@ -479,6 +486,7 @@
                         $(":input[name='editContactPhone']").val(data.data.phone);
                         $(":input[name='editContactMobile']").val(data.data.ip);
                          $(":input[name='editurl']").val(data.data.url);
+                          $("#b-strong").val(data.data.bstrong);
                         if(data.data.checkid == '0'){
                             var ids = $(".editAccounts").val();
                             $("#editlists").attr("selected",true);
@@ -503,15 +511,16 @@
             var contact_name = $(":input[name='editContactName']").val();
             var contact_mobile = $(":input[name='editContactMobile']").val();
              var editurl = $(":input[name='editurl']").val();
+              var bstrong =  $("#b-strong").val();
             var contact_telephone = $(":input[name='editContactPhone']").val();
             var checkid =   $("#isshow").val();
             var address = $(":input[name='editAddress']").val();
             var sid = $(":input[name='editSid']").val();
               var textarea = document.getElementById('myEditor').innerHTML=UE.getEditor('myEditor').getContent();
-            
+            // alert(sid);
             $.post("<?php echo U('/Supplier/editSupplier');?>",
                 {"supplier_name":supplier_name,"contact_name":contact_name,"contact_mobile":contact_mobile,"contact_telephone":contact_telephone,
-                "checkid":checkid,"address":address,"sid":sid,"textarea":textarea,"editurl":editurl},
+                "checkid":checkid,"address":address,"sid":sid,"textarea":textarea,"editurl":editurl,"bstrong":bstrong},
                 function (data) {
                     if (data.status == 'success') {
                         getSupplierLists('',_supplier_page);
@@ -574,7 +583,6 @@ $(document).on('click', '.EditBtn', function () {
         $.post("<?php echo U('/Supplier/Index');?>",
             {'search':search,'p':page},
             function(data){
-
                 if (data.status == 'success') {
                     
                     if (data.data) {
@@ -586,7 +594,7 @@ $(document).on('click', '.EditBtn', function () {
                             }else{
                                 item.checkid='否';
                             }
-
+                           // console.info(item);
                             var id = i + 1;
                             html += '<tr>' +
                                 '<td>'+id+'</td>' +
@@ -601,9 +609,7 @@ $(document).on('click', '.EditBtn', function () {
                                 }else{
                                       html += "<td><button type='button' uid='"+item.id+"' class='btn  btn-sm '>认证申请</button> " ;
                                 }
-                              
-                               
-                              html +=  '<td>'+timeToDate(new Date(item.create_time * 1000))+'</td>' +
+                               html += '<td>'+timeToDate(new Date(item.create_time * 1000))+'</td>' +
                                 '<td><button type="button" class="btn btn-primary btn-sm mr10 supplierEdit" data-sid="'+item.id+'">编辑</button>' +
                                 '<button type="button" class="btn btn-default btn-sm delete" data-sid="'+item.id+'">删除</button></td></tr>';
                         });

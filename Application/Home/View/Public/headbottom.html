@@ -380,8 +380,104 @@
                             </div>   </div>
 
 
+                         <div class="news-main g-clear" style="border-top: 2px solid #ffffff;">
+                           <div class="news-item health-preserve J_healthPreserve">
+                            <h5>百科<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=百科" target="_blank">更多</a></li></h5>
+                            <div class="focus-single g-clear">
+                              <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow5[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl8}
+                            </a>
+                            <div class="text">
+                             <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow5[0]['ins_id']}" class="title">{$substrlist8}</a>
+                            <span class="summary">
+                            {$substr8}
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow5[0]['ins_id']}">[详细]
+                            </a>
+                            </span>
+                            </div>
+                            </div>
+                            <div class="focus-list">
+                            <ul>
+                             <foreach name="listrow5" item="val" key="key">
+                            <if condition="$val['class'] eq '百科'">
+                            <if condition="$val['unit_price'] eq '1'">
+                            <if condition="$key gt 0">
+                            <li>
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
+                            <i class="dot"></i>
+                            <div class="focus-forhot">{$val['inspection_name']}</div>
+                            <if condition="$val['cost'] eq '1'">
+                            <img src="__PUBLIC_HOME__/images/new.png" alt="">
+
+                            </if>
+                            <if condition="$val['cost'] eq '2'">
+                            <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
+
+                            </if>
+                            </a>
+                            <span class="date">{$val['create_time']|date='Y-m-d',###}</span>
+                            </li>
+                            </if>
+                            </if>
+                        </if>
+                            </foreach>
+                            </ul>
+                            </div>
+                            </div>
 
 
+
+
+
+                            <div class="news-item health-hot J_healthHot">
+
+                            <h5>资讯<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=健康资讯" target="_blank">更多</a></li></h5>
+
+                            <div class="focus-single g-clear">
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow6[0]['ins_id']}" monitor="home_health_refer,doctordirect,doctor_text">
+                                            {$imgurl9}
+                            </a>
+                            <div class="text">
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow6[0]['ins_id']}" class="title">{$substrlist9}</a>
+                            <span class="summary">
+                            {$substr9}
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$listrow6[0]['ins_id']}">[详细]
+                            </a>
+                            </span>
+                            </div>
+                            </div>
+                            <div class="focus-list">
+                            <ul>
+                            <foreach name="listrow6" item="val" key="key">
+                            <if condition="$val['class'] eq '健康资讯'">
+                            <if condition="$val['unit_price'] eq '1'">
+                            <if condition="$key gt 0">
+                            <li>
+                            <a target="_blank" href="{:U('home/index/topic')}?ins_id={$val['ins_id']}" class="title" title="{$val['inspection_name']}">
+                            <i class="dot"></i>
+                            <div class="focus-forhot">{$val['inspection_name']}</div>
+                            <if condition="$val['cost'] eq '1'">
+                            <img src="__PUBLIC_HOME__/images/new.png" alt="">
+
+                            </if>
+                            <if condition="$val['cost'] eq '2'">
+                            <img src="__PUBLIC_HOME__/images/hot.gif" alt="">
+
+                            </if>
+                            </a>
+                            <span class="date">{$val['create_time']|date='Y-m-d',###}</span>
+                            </li>
+                            </if>
+                            </if>
+                        </if>
+                            </foreach>
+                            </ul>
+                            </div>
+                            </div>   </div>
+
+
+
+<!-- 
                             <div class="news-main g-clear" style="border-top: 2px solid #ffffff;">
                             <div class="news-item health-preserve J_healthPreserve">
                             <h5>百科<li style="float:right;list-style:none"><a href="{:U('home/index/topiclist')}?class=百科" target="_blank">更多</a></li></h5>
@@ -425,8 +521,10 @@
                             </foreach>
                             </ul>
                             </div>
-                            </div></div>
+                            </div></div> -->
                         </div>
+
+
                         <div class="g-grid-right">
                             <div class="hot-topic J_hotTopic">
                                 <p class="module">

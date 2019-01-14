@@ -219,14 +219,14 @@
 					     帮助与反馈
 						</a>
 									<div class="menu-child-box hide">
-									   <!-- 	<a class="menu-child " href="<?php echo U('home/index/authoperation');?>" 
+									  <!--  	<a class="menu-child " href="<?php echo U('home/index/authoperation');?>" 
 										  >
 										   
 								   		操作手册</a> -->
 									   	<a class="menu-child " href="#" >
 										   
 								   		联系客服</a>
-									   <!-- 	<a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
+									   	<!-- <a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
 										  >
 										   
 								   		常见问题</a> -->

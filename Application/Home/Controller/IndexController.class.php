@@ -29,7 +29,6 @@ class IndexController extends BaseController {
         $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
         $localhost  ='http://'.$_SERVER['HTTP_HOST'];
         $this->assign('pic',$pic);
-        // $this->assign('user',$user);var_dump($user);
         $this->assign('username',$res['username']);
         $this->assign('docname',$doc['true_name']);
         $this->assign('hospital',$doc['hospital']);
@@ -106,6 +105,7 @@ function getCity($ip = '')
          $list3 ="母婴";
          $list4 = "运动";
          $list5 ="百科";
+          $list6 ="健康资讯";
 
 
         $class4 ="医院公开";
@@ -136,6 +136,7 @@ function getCity($ip = '')
         $listrow3 = M('his_inspectionfee')->where("class='$list3' ")->order('ins_id desc')->limit(7)->select();
         $listrow4 = M('his_inspectionfee')->where("class='$list4' ")->order('ins_id desc')->limit(7)->select();
         $listrow5 = M('his_inspectionfee')->where("class='$list5' ")->order('ins_id desc')->limit(7)->select();
+        $listrow6 = M('his_inspectionfee')->where("class='$list6' ")->order('ins_id desc')->limit(7)->select();
         $listhot = M('his_inspectionfee')->order('ins_id desc')->limit(10)->select();
         $listhot1 = M('his_inspectionfee')->order('ins_id asc')->limit(10)->select();
         $this->assign('listhot',$listhot);
@@ -173,6 +174,10 @@ function getCity($ip = '')
           $substr8 = mb_substr($listrow5[0]['make'],0,70);
         $substrlist8 = mb_substr($listrow5[0]['inspection_name'], 0,20);
          preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$listrow5[0]['textarea'],$match8);
+
+           $substr9 = mb_substr($listrow6[0]['make'],0,70);
+        $substrlist9 = mb_substr($listrow6[0]['inspection_name'], 0,20);
+         preg_match('/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/i',$listrow6[0]['textarea'],$match9);
 
 
           $substr11 = mb_substr($res4[0]['make'],0,70);
@@ -224,6 +229,12 @@ function getCity($ip = '')
           $this->assign('substr8',$substr8);
         $this->assign('imgurl8',$match8[0]);
         $this->assign('substrlist8',$substrlist8);
+
+          $this->assign('substr9',$substr9);
+        $this->assign('imgurl9',$match9[0]);
+        $this->assign('substrlist9',$substrlist9);
+        
+
          $this->assign('substr11',$substr11);
         $this->assign('imgurl11',$match11[0]);
         $this->assign('substrlist11',$substrlist11);
@@ -257,6 +268,8 @@ function getCity($ip = '')
         $this->assign('listrow3',$listrow3);
         $this->assign('listrow4',$listrow4);
         $this->assign('listrow5',$listrow5);
+        $this->assign('listrow6',$listrow6);
+
 
         $this->assign('reslist5',$res5);
         $this->assign('reslist6',$res6);
@@ -276,7 +289,7 @@ function getCity($ip = '')
 
     public function register()
     {
-    	$this->display(':register');
+        $this->display(':register');
     }
     
 
@@ -1399,10 +1412,13 @@ public function recursived($meta,$flag,$count )
 
     public function yydoctorhome(){
       $data = I('post.');
+     
       $res = session('home_user_info');
       $user= M('his_yydoctor')->where("id='$res[id]'")->find();
+
+     
       $this->assign('user',$user);
-      $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
+      $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$user['pic'];
       $this->assign('pic',$pic);
       $this->display(':yydoctorhome');
     }
@@ -1495,12 +1511,10 @@ public function recursived($meta,$flag,$count )
     }
      public function yyhead_pic_settings()
     {
-      //   $data = I('post.');
-     
-      // $user= M('his_yydoctor')->where()->find();
-      $res = session('home_user_info');
-      $this->assign('user',$res);
-      $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
+       $res = session('home_user_info');
+      $user= M('his_yydoctor')->where("id='$res[id]'")->find();
+      $this->assign('user',$user);
+      $pic = "http://".$_SERVER['HTTP_HOST'].'/'.$user['pic'];
       $this->assign('pic',$pic);
       // var_dump(session('home_user_info'));
       $this->display(':yyhead_pic_settings');
@@ -1518,7 +1532,7 @@ public function recursived($meta,$flag,$count )
     
      public function yyauthaccout()
     {
-     $res = session('home_user_info');
+      $res = session('home_user_info');
       $this->assign('user',$res); 
       $pic11 = "http://".$_SERVER['HTTP_HOST'].'/'.$res['pic'];
       $id = $res['id'];
@@ -1792,7 +1806,7 @@ public function recursived($meta,$flag,$count )
   }
  
  
- function zonghe()
+  function zonghe()
  {
   $id =I('get.id');
   $key = I('get.key');
@@ -1828,6 +1842,48 @@ public function recursived($meta,$flag,$count )
   $this->assign('reslist',$reslist);
   $this->assign('res',$res);
   $this->display(':zongheinfo');
+ }
+
+  function guides()
+ {
+   $id =I('get.id');
+  $res = M('his_yydoctor')->where("id='$id'")->find();
+  $reslist = M('his_edithospital')->where("sid='$id'")->find();
+  $this->assign('reslist',$reslist);
+  $this->assign('res',$res);
+  $this->display(':guides');
+ }
+
+ function zonghekeshi(){
+   $id =I('get.id');
+  $res = M('his_yydoctor')->where("id='$id'")->find();
+  $reslist = M('his_edithospital')->where("sid='$id'")->find();
+  $name = $res['hospital'];
+  $ksname = M('his_department')->where("sid_name='$name'")->select();
+  $this->assign('ksname',$ksname);
+  $this->assign('reslist',$reslist);
+  $this->assign('res',$res);
+  $this->display(':zonghekeshi');
+ }
+
+ function zonghejia(){
+   $id =I('get.id');
+  $res = M('his_yydoctor')->where("id='$id'")->find();
+  $reslist = M('his_edithospital')->where("sid='$id'")->find();
+  $name = $res['hospital'];
+  $ksname = M('his_doctor')->where("hospital='$name'")->select();
+  $this->assign('ksname',$ksname);
+  $this->assign('reslist',$reslist);
+  $this->assign('res',$res);
+  $this->display(':zonghejia');
+ }
+ function zonghepijia(){
+   $id =I('get.id');
+  $res = M('his_yydoctor')->where("id='$id'")->find();
+  $reslist = M('his_edithospital')->where("sid='$id'")->find();
+  $this->assign('reslist',$reslist);
+  $this->assign('res',$res);
+  $this->display(':zonghepijia');
  }
 
  function zonghelist()

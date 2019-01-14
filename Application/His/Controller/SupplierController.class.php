@@ -40,7 +40,7 @@ class SupplierController extends HisBaseController
         //获取供应商列表
         $hospitalId = $this->hospitalInfo['uid'];
         $res = M('his_yydoctor')->select();
-         foreach($res as $kk=>$vv){
+        foreach($res as $kk=>$vv){
             $list = M('his_edithospital')->where("sid='$vv[id]'")->find();
             if($list['sid']==$vv['id']){
                 $res[$kk]['sidlist']=$list['sid'];
@@ -126,10 +126,11 @@ class SupplierController extends HisBaseController
                 'true_name' => $sid['address'],
                 'checkid' => 0,
                 'url'      => $sid['editurl'],
+                'bstrong' => $sid['bstrong'],
                 'textarea' => htmlspecialchars_decode($sid['textarea']),
 
             ];
-            // p($sid);die;
+            // p($pidlist);die;
            
             $result = M('his_yydoctor')->where("id='$pidlist'")->save($data);
             if ($result) {

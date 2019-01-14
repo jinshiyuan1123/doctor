@@ -28,6 +28,8 @@
                                     <th>年龄</th>
                                     <th>电话</th>
                                     <th>医院</th>
+                                    <th>科分类</th>
+                                    <th>科室</th>
                                     <th>职务</th>
                                     <th>加入时间</th>
                                     <th>IP</th>
@@ -114,9 +116,9 @@
         <div class="bombTit">添加医生<i class="fa fa-remove"></i></div>
         <div class="pd20">
             <div class="input-group listSeaForm mt10 wb100">
-				<span class="input-group-btn">
-					<span class="btn">姓名：</span>
-				</span>
+                <span class="input-group-btn">
+                    <span class="btn">姓名：</span>
+                </span>
                 <input class="form-control" type="text" value="" id="true_name"  placeholder="请填写姓名">
             </div>
             <div class="input-group listSeaForm mt10 wb100">
@@ -126,14 +128,29 @@
                 <select class="form-control" id="department">
                     <option value="0">请选择医院</option>
                     <foreach name="memberlist" item="v">
-                    <option value="{$v.supplier_name}">{$v.supplier_name}</option>
+                    <option value="{$v.hospital}">{$v.hospital}</option>
                     </foreach>
                 </select>
             </div>
             <div class="input-group listSeaForm mt10 wb100">
-				<span class="input-group-btn">
-					<span class="btn">科室：</span>
-				</span>
+                <span class="input-group-btn">
+                    <span class="btn">科分类：</span>
+                </span>
+                <select class="form-control" id="departmentadd">
+                  
+                    <option >科分类</option>
+                    <option value="内科">内科</option>
+                    <option value="外科">外科</option>
+                    <option value="妇儿">妇儿</option>
+                    <option value="其他">其他</option>
+                
+               
+                </select>
+            </div>
+            <div class="input-group listSeaForm mt10 wb100">
+                <span class="input-group-btn">
+                    <span class="btn">科室：</span>
+                </span>
                 <select class="form-control" id="department_id">
                     <option value="0">请选择科室</option>
                     <foreach name="departmentList" item="v">
@@ -142,9 +159,9 @@
                 </select>
             </div>
             <div class="input-group listSeaForm mt10 wb100">
-				<span class="input-group-btn">
-					<span class="btn">级别：</span>
-				</span>
+                <span class="input-group-btn">
+                    <span class="btn">级别：</span>
+                </span>
                 <select class="form-control" id="rank">
                 <foreach name="rankList" item="v" key="k">
                     <option value="{$k}">{$v}</option>
@@ -152,15 +169,15 @@
                 </select>
             </div>
             <div class="input-group listSeaForm mt10 wb100">
-				<span class="input-group-btn">
-					<span class="btn">手机号：</span>
-				</span>
+                <span class="input-group-btn">
+                    <span class="btn">手机号：</span>
+                </span>
                 <input class="form-control" type="number" id="user_name" value="" placeholder="请输入手机号">
             </div>
             <div class="input-group listSeaForm mt10 wb100">
-				<span class="input-group-btn">
-					<span class="btn">年龄：</span>
-				</span>
+                <span class="input-group-btn">
+                    <span class="btn">年龄：</span>
+                </span>
                 <input class="form-control" type="number" id="a-age" min="1" max="150" value="" >
             </div>
             <div class="mt10">
@@ -200,15 +217,15 @@
             <div class="clearfix">
                 <div class="l" style="width: 290px;">
                     <div class="input-group listSeaForm mt10 wb100">
-						<span class="input-group-btn">
-							<span class="btn">姓名：</span>
-						</span>
+                        <span class="input-group-btn">
+                            <span class="btn">姓名：</span>
+                        </span>
                         <input class="form-control" type="text" id="b-true-name" value="" placeholder="请填写姓名">
                     </div>
                     <div class="input-group listSeaForm mt10 wb100">
-						<span class="input-group-btn">
-							<span class="btn">性别：</span>
-						</span>
+                        <span class="input-group-btn">
+                            <span class="btn">性别：</span>
+                        </span>
                         <select class="form-control" id="b-sex">
                             <option value="0">请选择性别</option>
                             <option value="2">女</option>
@@ -217,22 +234,22 @@
                     </div>
 
                     <div class="input-group listSeaForm mt10 wb100">
-						<span class="input-group-btn">
-							<span class="btn">手机号：</span>
-						</span>
+                        <span class="input-group-btn">
+                            <span class="btn">手机号：</span>
+                        </span>
                         <input class="form-control" id="b-phone" type="text" value="" placeholder="请输入手机号" disabled="disabled">
                     </div>
                     <div class="input-group listSeaForm mt10 wb100">
-						<span class="input-group-btn">
-							<span class="btn">密码：</span>
-						</span>
+                        <span class="input-group-btn">
+                            <span class="btn">密码：</span>
+                        </span>
                         <!-- <a class="btn btn-primary" id="b-reset-password">重置密码</a> -->
                         <input class="form-control" id="password" type="text" value="" placeholder="请输入密码" >
                     </div>
                     <div class="input-group listSeaForm mt10 wb100">
-						<span class="input-group-btn">
-							<span class="btn">年龄：</span>
-						</span>
+                        <span class="input-group-btn">
+                            <span class="btn">年龄：</span>
+                        </span>
                         <input class="form-control" type="number" id="b-age" min="1" max="150"  value="" />
                     </div>
                 </div>
@@ -244,21 +261,34 @@
                 </div>
                 </form>
             </div>
+             <div class="input-group listSeaForm mt10 wb100">
+                <span class="input-group-btn">
+                    <span class="btn">科分类：</span>
+                </span>
+                <select class="form-control" id="departmentedit">
+                    <option value="内科">内科</option>
+                    <option value="外科">外科</option>
+                    <option value="妇儿">妇儿</option>
+                    <option value="其他">其他</option>
+                
+            
+                </select>
+            </div>
             <div class="input-group listSeaForm mt10 wb100">
-				<span class="input-group-btn">
-					<span class="btn">科室：</span>
-				</span>
+                <span class="input-group-btn">
+                    <span class="btn">科室：</span>
+                </span>
                 <select class="form-control" id="b-department_id">
                     <option value="0">请选择科室</option>
                     <foreach name="departmentList" item="v">
-                        <option value="{$v.did}">{$v.department_name}</option>
+                        <option value="{$v.did}" data_obj="{$v.department_name}">{$v.department_name}</option>
                     </foreach>
                 </select>
             </div>
             <div class="input-group listSeaForm mt10 wb100">
-				<span class="input-group-btn">
-					<span class="btn">级别：</span>
-				</span>
+                <span class="input-group-btn">
+                    <span class="btn">级别：</span>
+                </span>
                 <select class="form-control" id="b-rank">
                     <foreach name="rankList" item="v" key="k">
                         <option value="{$k}">{$v}</option>
@@ -406,6 +436,7 @@
                 var user_name = $('#user_name').val();
                 var true_name = $("#true_name").val();
                 var department = $("#department").val();
+                 var ksname = $("#departmentadd").find('option:selected').val();
                 var department_id = $("#department_id").val();
                 var type = $('input:radio:checked').val();
                 var rank = $("#rank").val();
@@ -445,7 +476,7 @@
                     return false;
                 }
                 $.post('{:U("Member/addUser")}',{user_name:user_name,true_name:true_name,
-                    age:age,department_id:department_id,department:department,rank:rank,type:type},
+                    age:age,department_id:department_id,department:department,rank:rank,type:type,ksname:ksname},
                     function (data) {
                      if(data.status=='success'){
                          remindBox('添加成功');
@@ -478,6 +509,7 @@
                  var type = data.typelist;
                  var uid = data.id;
                  var age = data.age;
+                 var ksname = data.ksname;
 
 
                  var src = "{:C('UPLOAD_DOCTOR')}"+pic;
@@ -495,6 +527,7 @@
                   $("#b-introduction").val(introduction);
                   $("#b-strong").val(strong);
                   $("#b-age").val(age);
+                  $("#departmentedit").val(ksname);
                   $("#password").val();
                   $(':radio[name="b-type"]').eq(type-2).attr("checked",true);
             })
@@ -506,11 +539,16 @@
                 var true_name = $("#b-true-name").val();
                 var sex = $("#b-sex").val();
                 var department_id = $("#b-department_id").val();
+                 var keshi = $("#b-department_id").find("option:selected").attr('data_obj');
+                 // alert(department_id);
+                 // alert(keshi);
                 var rank = $("#b-rank").val();
                 var introduction = $("#b-introduction").val();
                 var strong = $("#b-strong").val();
                 var type = $("input[name='b-type']:checked").val();
                 var age = $("#b-age").val();
+                var ksname = $("#departmentedit").find('option:selected').val();
+                // alert(ksname);
                 var password = $("#password").val();
                 if(true_name.length==0 || true_name.length>6){
                     remindBox('姓名不能为空,并且不能多于6位');
@@ -528,19 +566,19 @@
                     remindBox('科室不能为空');
                     return false;
                 }
-                if(password==''){
-                    remindBox('密码不能为空');
-                    return false;
-                }
-                if(password.length<6){
-                    remindBox('密码不能少于6位');
-                    return false;
-                }
+                // if(password==''){
+                //     remindBox('密码不能为空');
+                //     return false;
+                // }
+                // if(password.length<6){
+                //     remindBox('密码不能少于6位');
+                //     return false;
+                // }
 
 
                 $.post("{:U('Member/editUser')}", {
                     true_name: true_name, sex: sex, department_id: department_id,age:age,
-                rank:rank,introduction:introduction,strong:strong,type:type,uid:uid,picture:picture,password:password},function (data) {
+                rank:rank,introduction:introduction,strong:strong,type:type,uid:uid,picture:picture,password:password,keshi:keshi,ksname:ksname},function (data) {
                         if(data.status=='success'){
                             remindBox("修改成功");
                             window.location.reload();
@@ -735,7 +773,6 @@
         $.post("{:U('Member/userList')}",
             { "search": search, 'p':page, 'pagesize':10,'action':'userList'},
             function (data) {
-                console.info(data);
                 if (data.status=='success') {
                     if (data.msg.count > 0) {
                         var html = "";
@@ -758,6 +795,8 @@
                             }
                             html += "<td>"+val.mobile+"</td>";
                             html += "<td>"+val.hospital+"</td>";
+                            html +="<td>"+val.ksname+"</td>";
+                            html +="<td>"+val.keshi+"</td>";
 
                             if(val.rank == '1'){
                                   html += "<td>主治医师</td>";
@@ -796,14 +835,13 @@
                             }else if(val.ispic=='0'||val.ispic==''){
                                   html+="<td>未审核</td>";
                             }
-                            if(val.pic1!='' && val.pic2!=''&&val.pic3!=''&&val.pic4 !=''){
+                             if(val.pic1!='' && val.pic2!=''&&val.pic3!=''&&val.pic4 !=''){
                                 html +="<td><button type='button' uid='"+val.id+"' class='btn btn-success btn-sm EditBtn'>认证申请</button> " ;
                             }else{
                                 html +="<td><button type='button' uid='"+val.id+"' class='btn  btn-sm '>认证申请</button> " ;
  
                             }
-                           
-                            html +="<td><button type='button' uid='"+val.id+"' class='btn btn-success btn-sm doctorEditBtn'>编辑</button> " ;
+                              html +="<td><button type='button' uid='"+val.id+"' class='btn btn-success btn-sm doctorEditBtn'>编辑</button> " ;
 
                             html +="<button type='button' uid='"+val.id+"' class='btn btn-default btn-sm deleteBtn'>删除</button></td>" ;
 

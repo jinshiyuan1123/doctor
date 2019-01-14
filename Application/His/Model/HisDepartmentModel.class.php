@@ -97,6 +97,7 @@ class HisDepartmentModel extends BaseModel
                 'hid' => $data['hid'],
                 'sid' => $data['sid'],
                 'sid_name' => $data['sid_name'],
+                'ksname' => $data['ksname'],
                 'create_time' => $data['create_time']
             );
             $result = $this->add($arr);
@@ -133,6 +134,7 @@ class HisDepartmentModel extends BaseModel
                 $updateData['department_name'] = $data['department_name'];
                 $updateData['update_time'] = $data['update_time'];
                 $updateData['sid'] = $data['sid'];
+                $updateData['ksname'] = $data['ksname'];
                 $updateData['sid_name'] = $data['sid_name'];
                 $result = $this->where($map)->save($updateData);
                 if($result) {

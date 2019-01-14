@@ -1,28 +1,28 @@
 <?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="shortcut icon" href="/Public/home/favicon.ico" />
 <!-- External CSS -->
-	<link rel="stylesheet" href="/Public/home/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
-	<link rel="stylesheet" href="/Public/home/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
-	<link rel="stylesheet" href="/Public/home/css/home-new.css?v=1541078824a18cef" type="text/css"/>
+    <link rel="stylesheet" href="/Public/home/css/eops.base.min.css?v=1541078824a18cef" type="text/css"/>
+    <link rel="stylesheet" href="/Public/home/css/eops.content.min.css?v=1541078824a18cef" type="text/css"/>
+    <link rel="stylesheet" href="/Public/home/css/home-new.css?v=1541078824a18cef" type="text/css"/>
  <script src="/Public/his/vendor/jquery/jquery.min.js"></script>
     <script src="/Public/his/vendor/layer/layer.js"></script>
-	
+    
 
-	
-		        <meta name="keywords" content="择医" />
-		        <meta name="description" content="择医" />
-		
-		    <title>医院个人资料 | 择医</title>
-	</head>
-	
-	<body>
-		<!-- #g-wrapper -->
-		<div id="g-wrapper" class="gc-new">
-	 <div class="g-header-new noprint">
+    
+                <meta name="keywords" content="择医" />
+                <meta name="description" content="择医" />
+        
+            <title>医院个人资料 | 择医</title>
+    </head>
+    
+    <body>
+        <!-- #g-wrapper -->
+        <div id="g-wrapper" class="gc-new">
+     <div class="g-header-new noprint">
     <div class="notice"  id="J_Notify" style="display: none;">
         <div class="center" class="">
             <div class="notice-contain">
@@ -62,111 +62,112 @@
 
             <!-- end of #gh -->
             <div class="g-container">
-				
+                
 <div class="g-menubar noprint">
-	<!-- 医生个人简介 -->
-	<div  class="top">
-		<div class="head-box">
+    <!-- 医生个人简介 -->
+    <div  class="top">
+        <div class="head-box">
                             <img src="<?php if($user["pic"] == true): echo ($pic11); else: ?>/Public/home/images/default_yy.gif?timeStamp=1543037600522<?php endif; ?>" alt="" class="head-img"/>
-		</div>
-		<div class="info">
-			<div class="basic-info">
-				<h1><?php echo ($user["hospital"]); ?></h1>
-				<span></span>
-			</div>
-			<div class="dept-info">
-				         		
-			</div>
-			<a href="#" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
-		</div>
-	</div>
+        </div>
+        <div class="info">
+            <div class="basic-info">
+                <h1><?php echo ($user["hospital"]); ?></h1>
+                <span></span>
+            </div>
+            <div class="dept-info">
+                                
+            </div>
+            <a href="#" class="more-info" monitor="doctorweb,menu,personal_data">个人资料</a>
+        </div>
+    </div>
 
-	<ul class="menu-parent-box">
-			<li class="menu-parent "><a href="<?php echo U('home/index/yydoctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
-					<li class="menu-parent ">
-					<a href="javascript:;"
-					
-					
-					class="hasChild J_ParentMenu">
-						<i style="background: url(https://kano.guahao.cn/J5t37110059) no-repeat"></i>
-						
-					     账号设置
-						</a>
-									<div class="menu-child-box hide">
-									   	<a class="menu-child " href="<?php echo U('home/index/yyauthprofile');?>" monitor="doctorweb,menu,accountset_myinfo"
-										  >
-										   
-								   		个人资料</a>
-									   	<a class="menu-child " href="<?php echo U('home/index/yyhead_pic_settings');?>" monitor="doctorweb,menu,accountset_pichead"
-										  >
-										   
-								   		头像设置</a>
-									   	<a class="menu-child active" href="<?php echo U('home/index/yyauthaccout');?>" monitor="doctorweb,menu,accountset_info"
-										  >
-										   
-								   		账号信息</a>
-									   	<a class="menu-child " href="<?php echo U('home/index/yyauthtomod');?>" monitor="doctorweb,menu,accountset_password"
-										  >
-										   
-								   		修改密码</a>
-									</div>
-					</li>
-					<li class="menu-parent ">
-					<a href="javascript:;"
-					
-					
-					class="hasChild J_ParentMenu">
-						<i style="background: url(https://kano.guahao.cn/FIU37110407) no-repeat"></i>
-						
-					     帮助与反馈
-						</a>
-									<div class="menu-child-box hide">
-									  <!--  	<a class="menu-child " href="<?php echo U('home/index/authoperation');?>" 
-										  >
-										   
-								   		操作手册</a> -->
-									   	<a class="menu-child " href="#" m>
-										   
-								   		联系客服</a>
-									 <!--   	<a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
-										  >
-										   
-								   		常见问题</a> -->
-									</div>
-					</li>
-	</ul>
+    <ul class="menu-parent-box">
+            <li class="menu-parent "><a href="<?php echo U('home/index/yydoctorhome');?>" monitor="doctorweb,menu,hmpg"><i class="grsy"></i>个人首页</a></li>
+                    <li class="menu-parent ">
+                    <a href="javascript:;"
+                    
+                    
+                    class="hasChild J_ParentMenu">
+                        <i style="background: url(https://kano.guahao.cn/J5t37110059) no-repeat"></i>
+                        
+                         账号设置
+                        </a>
+                                    <div class="menu-child-box hide">
+                                        <a class="menu-child " href="<?php echo U('home/index/yyauthprofile');?>" monitor="doctorweb,menu,accountset_myinfo"
+                                          >
+                                           
+                                        个人资料</a>
+                                        <a class="menu-child " href="<?php echo U('home/index/yyhead_pic_settings');?>" monitor="doctorweb,menu,accountset_pichead"
+                                          >
+                                           
+                                        头像设置</a>
+                                        <a class="menu-child active" href="<?php echo U('home/index/yyauthaccout');?>" monitor="doctorweb,menu,accountset_info"
+                                          >
+                                           
+                                        账号信息</a>
+                                        <a class="menu-child " href="<?php echo U('home/index/yyauthtomod');?>" monitor="doctorweb,menu,accountset_password"
+                                          >
+                                           
+                                        修改密码</a>
+                                    </div>
+                    </li>
+                    <li class="menu-parent ">
+                    <a href="javascript:;"
+                    
+                    
+                    class="hasChild J_ParentMenu">
+                        <i style="background: url(https://kano.guahao.cn/FIU37110407) no-repeat"></i>
+                        
+                         帮助与反馈
+                        </a>
+                                    <div class="menu-child-box hide">
+                                      <!--      <a class="menu-child " href="<?php echo U('home/index/authoperation');?>" 
+                                          >
+                                           
+                                        操作手册</a> -->
+                                        <a class="menu-child " href="#" m>
+                                           
+                                        联系客服</a>
+                                     <!--       <a class="menu-child " href="<?php echo U('home/index/faqlist');?>" 
+                                          >
+                                           
+                                        常见问题</a> -->
+                                    </div>
+                    </li>
+    </ul>
 </div>
 
-				<!-- #gc -->
-				
+                <!-- #gc -->
+                
 <div id="gc" class="gp-consult-list" data-module="consult-manage">
-	<div class="gc-mask">
-		<div class="content-admin g-clear g-content">
-			<div id="g-breadcrumb">
-			    <a href="https://doctor.guahao.com/home">首页</a>&gt;
-		        <span>账号设置</span>&gt;
-		        <span>账号信息</span>
-		  	</div>
-			<div class="g-content-widget g-tab">
-				<div class="config-tab">
-					<a href="<?php echo U('home/index/yyauthprofile');?>" monitor="doctorweb,accountset_top,myinfo">个人资料</a>
-					<a href="<?php echo U('home/index/yyhead_pic_settings');?>" monitor="doctorweb,accountset_top,headpic">头像设置</a>
-					<a href="javascript:;" class="active" monitor="doctorweb,accountset_top,info">账号信息</a>
-					<a href="<?php echo U('home/index/yyauthtomod');?>" monitor="doctorweb,accountset_top,password">修改密码</a>
-				</div>
-				<div class="content-warp" style="margin-top:0px;">
-					<div class="gfm-inline">
-						<ul class="account-info-box">
-							<li class="js-cardName"><label>账号：</label><span class="J_name">
-							<?php echo ($user["hospital"]); ?></span></li>
-							<li><label>绑定手机号：</label><span class="J_cardName">
-							<?php echo ($user["mobile"]); ?></span></li>
-							<li class="js-cardId"><label>邮箱地址：</label><span class="J_cardNO"></span></li>
-							<li class="js-cardId"><label>医院认证：</label><a  class="J_cardNO" id="btnid">添加</a></li>
-						</ul>
-					</div>
-				</div>
-				<div id="gcid" class="gp-home-new gp-home-index" data-module="home" style="display: ">
+    <div class="gc-mask">
+        <div class="content-admin g-clear g-content">
+            <div id="g-breadcrumb">
+                <a href="<?php echo U('home/index/index');?>">首页</a>&gt;
+                <span>账号设置</span>&gt;
+                <span>账号信息</span>
+            </div>
+            <!-- <div class="g-content-widget g-tab" > -->
+                <!-- <div> -->
+                <div class="config-tab" id="gtabid" style="display: none">
+                    <a href="<?php echo U('home/index/yyauthprofile');?>" monitor="doctorweb,accountset_top,myinfo">个人资料</a>
+                    <a href="<?php echo U('home/index/yyhead_pic_settings');?>" monitor="doctorweb,accountset_top,headpic">头像设置</a>
+                    <a href="javascript:;" class="active" monitor="doctorweb,accountset_top,info">账号信息</a>
+                    <a href="<?php echo U('home/index/yyauthtomod');?>" monitor="doctorweb,accountset_top,password">修改密码</a>
+                </div>
+              <!--   <div class="content-warp" style="margin-top:0px;" style="display: none">
+                    <div class="gfm-inline">
+                        <ul class="account-info-box">
+                            <li class="js-cardName"><label>账号：</label><span class="J_name">
+                            <?php echo ($user["hospital"]); ?></span></li>
+                            <li><label>绑定手机号：</label><span class="J_cardName">
+                            <?php echo ($user["mobile"]); ?></span></li>
+                            <li class="js-cardId"><label>邮箱地址：</label><span class="J_cardNO"></span></li>
+                            <li class="js-cardId"><label>医院认证：</label><a  class="J_cardNO" id="btnid">添加</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div id="gcid" class="gp-home-new gp-home-index" data-module="home" style="display: ;top:50px">
     <input type="hidden" id="falseExceptionFlag" name="falseExceptionFlag" value="">
     <input type="hidden" id="initiAlexceptionFlag" name="initiAlexceptionFlag" value="">
     <input type="hidden" id="bizId" name="bizId" value="">
@@ -174,7 +175,7 @@
         <div class="g-content">
             <input type="hidden" name="isOpenHealthyNum" id="isOpenHealthyNum" value="0" />
           
-		             <div class="g-tab g-apply J_DoctorVerify">
+                     <div class="g-tab g-apply J_DoctorVerify">
                 <form id="J_VerifyForm" name="verifyForm" onsubmit="return Checkpost();" method="post" enctype="multipart/form-data" action="<?php echo U('home/index/uploadlists');?>">
                       <input type="hidden" name="doctorid" id="jkhUrl" value="<?php echo ($user["id"]); ?>"><span class="tab-title" id="closeid">关闭</span>
                     <div class="tab-title">认证申请
@@ -286,7 +287,7 @@
                 </form>
             </div>
           
-				 
+                 
             
             <!-- start practiceModal -->
             <div class="new-common-modal practice-modal hide">
@@ -351,38 +352,40 @@
     </div>
     <!-- end of .gc-mask -->
 </div>
-			</div>
-		</div>
-	</div>
-	<!-- end of .gc-mask -->
+            </div>
+        </div>
+    </div>
+    <!-- end of .gc-mask -->
 </div>
 <!-- end of #gc -->
 <span id="gi_page_totop" class="gi gi-page-totop"></span>
 
-				<!-- end of #gc -->
-				<div class="clear"></div>
-			</div>
-			<!-- #gf -->
-			<div id="gf" class="gf-new">
-	<div class="g-container">
-		<p>网友、医生言论仅代表其个人观点，不代表本站同意其说法，本站不承担由此引起的法律责任</p>	
-		<p>择医提供平台支持 Copyright 2011-2018版权所有。&nbsp;&nbsp;浙ICP备12034511号</p>
-	</div>
+                <!-- end of #gc -->
+                <div class="clear"></div>
+            </div>
+            <!-- #gf -->
+            <div id="gf" class="gf-new">
+    <div class="g-container">
+        <p>网友、医生言论仅代表其个人观点，不代表本站同意其说法，本站不承担由此引起的法律责任</p>    
+        <p>择医提供平台支持 Copyright 2011-2018版权所有。&nbsp;&nbsp;浙ICP备12034511号</p>
+    </div>
 </div>
-			<!-- end of #gf -->
-		</div>	
-		<!-- end of #g-wrapper -->
-		
-		
+            <!-- end of #gf -->
+        </div>  
+        <!-- end of #g-wrapper -->
+        
+        
 <script type="text/javascript">
-	
+    
     $(document).ready(function(){
-    	  $("#btnid").click(function(){
-        	$("#gcid").css("display","block");
+          $("#btnid").click(function(){
+            $("#gcid").css("display","block");
+            $("#gtabid").css('display','none');
         })
-    	 $("#closeid").click(function(){
-    	 	$("#gcid").css("display","none");
-    	 })
+         $("#closeid").click(function(){
+            $("#gcid").css("display","none");
+             $("#gtabid").css('display','block');
+         })
         $('.J_Show').hover(function(){
             $(".J_Examples").css('display','block');
         },function(){
@@ -418,100 +421,100 @@
                 img.src = window.URL.createObjectURL(obj.files[0]);
             }
     function Checkpost(){
-    	var previewimg = $("#previewimg").attr('src');
-    	var previewimg1 = $("#previewimg1").attr('src');
-    	var province = $("#province").val();
-    	var cities = $("#cities").val();
-    	var username = $("#username").val();
-    	var level = $("#level").val();
-    	var quality = $("#quality").val();
-    	var type = $("#type").val();
-    	var dnum = $("#dnum").val();
-    	var dnums = $("#dnums").val();
-    	var user = $("#user").val();
-    	var mobile = $("#mobile").val();
-    	var email = $("#email").val();
+        var previewimg = $("#previewimg").attr('src');
+        var previewimg1 = $("#previewimg1").attr('src');
+        var province = $("#province").val();
+        var cities = $("#cities").val();
+        var username = $("#username").val();
+        var level = $("#level").val();
+        var quality = $("#quality").val();
+        var type = $("#type").val();
+        var dnum = $("#dnum").val();
+        var dnums = $("#dnums").val();
+        var user = $("#user").val();
+        var mobile = $("#mobile").val();
+        var email = $("#email").val();
         var address = $("#address").val();
-    	var office = $("#office").val();
+        var office = $("#office").val();
 
-    	var info = $("#info").val();
-    	if(previewimg.length==0){
-    		layer.msg('医疗执业许可证不能为空');
-    		return false;
-    	}
-    	if(previewimg1.length==0){
-    		layer.msg('评级证明证书不能为空');
-    		return false;
-    	}
-    	if(province ==''){
-    		layer.msg('所属省份不能为空');
-    		return false;
-    	}
-    	if(cities ==''){
-    		layer.msg('所属区域不能为空');
-    		return false;
-    	}
-    	if(username ==''){
-    		layer.msg('医院名称不能为空');
-    		return false;
-    	}
-    	if(level ==''){
-    		layer.msg('医院等级不能为空');
-    		return false;
-    	}
-    	if(quality ==''){
-    		layer.msg('医院性质不能为空');
-    		return false;
-    	}
-    	if(type ==''){
-    		layer.msg('医院类型不能为空');
-    		return false;
-    	}
-    	if(dnum ==''){
-    		layer.msg('日内诊量不能为空');
-    		return false;
-    	}
-    	if(dnums ==''){
-    		layer.msg('日预约量不能为空');
-    		return false;
-    	}
-    	if(user ==''){
-    		layer.msg('联系人不能为空');
-    		return false;
-    	}
-    	if(mobile ==''){
-    		layer.msg('手机号不能为空');
-    		return false;
-    	}
-    	var pattern = /^1[34578]\d{9}$/;
+        var info = $("#info").val();
+        if(previewimg.length==0){
+            layer.msg('医疗执业许可证不能为空');
+            return false;
+        }
+        if(previewimg1.length==0){
+            layer.msg('评级证明证书不能为空');
+            return false;
+        }
+        if(province ==''){
+            layer.msg('所属省份不能为空');
+            return false;
+        }
+        if(cities ==''){
+            layer.msg('所属区域不能为空');
+            return false;
+        }
+        if(username ==''){
+            layer.msg('医院名称不能为空');
+            return false;
+        }
+        if(level ==''){
+            layer.msg('医院等级不能为空');
+            return false;
+        }
+        if(quality ==''){
+            layer.msg('医院性质不能为空');
+            return false;
+        }
+        if(type ==''){
+            layer.msg('医院类型不能为空');
+            return false;
+        }
+        if(dnum ==''){
+            layer.msg('日内诊量不能为空');
+            return false;
+        }
+        if(dnums ==''){
+            layer.msg('日预约量不能为空');
+            return false;
+        }
+        if(user ==''){
+            layer.msg('联系人不能为空');
+            return false;
+        }
+        if(mobile ==''){
+            layer.msg('手机号不能为空');
+            return false;
+        }
+        var pattern = /^1[34578]\d{9}$/;
       //   if(!pattern.test(mobile)){
-      //   	layer.msg('手机号格式错误');
-    		// return false;
+      //    layer.msg('手机号格式错误');
+            // return false;
       //   }
-    	if(email ==''){
-    		layer.msg('邮箱不能为空');
-    		return false;
-    	}
-    	var reg = /^([\.a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;
-    	 if(!reg.test(email)){
-    	 	layer.msg('邮箱格式错误');
-    		return false;
-    	 }
+        if(email ==''){
+            layer.msg('邮箱不能为空');
+            return false;
+        }
+        var reg = /^([\.a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;
+         if(!reg.test(email)){
+            layer.msg('邮箱格式错误');
+            return false;
+         }
          if(address ==''){
             layer.msg('医院地址不能为空');
             return false;
         }
-    	if(office ==''){
-    		layer.msg('特色科室不能为空');
-    		return false;
-    	}
-    	if(info==''){
-    		layer.msg('医院简介不能为空');
-    		return false;
-    	}
+        if(office ==''){
+            layer.msg('特色科室不能为空');
+            return false;
+        }
+        if(info==''){
+            layer.msg('医院简介不能为空');
+            return false;
+        }
     }
 </script>
 </div>
 
-	</body>
+    </body>
 </html>

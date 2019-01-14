@@ -1,0 +1,22 @@
+[ 2018-12-30T23:31:02+08:00 ] 61.151.178.176 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004883s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-30T23:31:10+08:00 ] 61.151.178.176 /wap/css/error.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006836s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002930s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载控制器:Css
+

@@ -234,12 +234,11 @@
 </li>
 <li><a target="_blank" href="" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,fastpoder">健康视频</a>
 	<ul>
-    <li><a href="<?php echo U('home/index/allorder');?>?class=健康视频" target="_blank">健康视频</a></li>
+     <li><a href="<?php echo U('home/index/allorder');?>?class=健康视频" target="_blank">健康视频</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=养生视频" target="_blank">养生视频</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=减肥视频" target="_blank">减肥视频</a></li>
      <li><a href="<?php echo U('home/index/allorder');?>?class=生活视频" target="_blank">生活视频</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=饮食视频" target="_blank">饮食视频</a></li>
-  
 </ul>
 </li>
 <li><a target="_blank" target="_blank" href="<?php echo U('home/index/allorder');?>?class=搞笑视频" rel="nofollow" onmousedown="return _smartlog(this,'MNU')" monitor="public_menu,home_menu,preciseorder">搞笑视频</a>
@@ -266,7 +265,7 @@
 </ul> -->
   </li>
 
-   <li><a target="_blank" href="<?php echo U('home/index/video');?>" rel="nofollow" onmousedown="return _smartlog(this,'MNU')">微视频</a>
+   <li><a target="_blank" >微视频</a>
 <ul>
     <li><a href="<?php echo U('home/index/allorder');?>?class=演唱会" target="_blank">演唱会</a></li>
     <li><a href="<?php echo U('home/index/allorder');?>?class=影视" target="_blank">影视</a></li>
@@ -1799,11 +1798,11 @@ $(document).ready(function(){
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="<?php echo U('home/index/zonghe');?>?id=<?php echo ($vo["id"]); ?>">
                                             <img src="/Public/home/images/default_yy.gif" alt="">
-                                        </a>
+                                      
                                         
                                     </div><br/>
                                        <?php echo ($vo["hospital"]); ?><br/>
-                                       二级甲等
+                                       二级甲等  </a>
                                 </div><?php endforeach; endif; ?>  
                             </div>
                          <div class="news-main g-clear" style="float:left;width:10px;border-top: 2px solid rgb(255, 255, 255);"> </div>
@@ -1815,11 +1814,11 @@ $(document).ready(function(){
                                     <div class="focus-single g-clear">
                                         <a target="_blank" href="<?php echo U('home/index/yishen');?>?id=<?php echo ($vo["id"]); ?>">
                                             <img src="/Public/home/images/doctorlist.png" alt="">
-                                        </a>
+                                       
                                         
                                     </div><br/>
                                        <?php echo ($vo["hospital"]); ?><br/>
-                                       医生
+                                       医生 </a>
                                 </div><?php endforeach; endif; ?>  </div>
 
                         </div>
@@ -2095,8 +2094,76 @@ $(document).ready(function(){
                             </div>   </div>
 
 
+                         <div class="news-main g-clear" style="border-top: 2px solid #ffffff;">
+                           <div class="news-item health-preserve J_healthPreserve">
+                            <h5>百科<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=百科" target="_blank">更多</a></li></h5>
+                            <div class="focus-single g-clear">
+                              <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow5[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl8); ?>
+                            </a>
+                            <div class="text">
+                             <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow5[0]['ins_id']); ?>" class="title"><?php echo ($substrlist8); ?></a>
+                            <span class="summary">
+                            <?php echo ($substr8); ?>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow5[0]['ins_id']); ?>">[详细]
+                            </a>
+                            </span>
+                            </div>
+                            </div>
+                            <div class="focus-list">
+                            <ul>
+                             <?php if(is_array($listrow5)): foreach($listrow5 as $key=>$val): if($val['class'] == '百科'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
+                            <i class="dot"></i>
+                            <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
+                            <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                            <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                            </a>
+                            <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
+                            </li><?php endif; endif; endif; endforeach; endif; ?>
+                            </ul>
+                            </div>
+                            </div>
 
 
+
+
+
+                            <div class="news-item health-hot J_healthHot">
+
+                            <h5>资讯<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=健康资讯" target="_blank">更多</a></li></h5>
+
+                            <div class="focus-single g-clear">
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow6[0]['ins_id']); ?>" monitor="home_health_refer,doctordirect,doctor_text">
+                                            <?php echo ($imgurl9); ?>
+                            </a>
+                            <div class="text">
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow6[0]['ins_id']); ?>" class="title"><?php echo ($substrlist9); ?></a>
+                            <span class="summary">
+                            <?php echo ($substr9); ?>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($listrow6[0]['ins_id']); ?>">[详细]
+                            </a>
+                            </span>
+                            </div>
+                            </div>
+                            <div class="focus-list">
+                            <ul>
+                            <?php if(is_array($listrow6)): foreach($listrow6 as $key=>$val): if($val['class'] == '健康资讯'): if($val['unit_price'] == '1'): if($key > 0): ?><li>
+                            <a target="_blank" href="<?php echo U('home/index/topic');?>?ins_id=<?php echo ($val['ins_id']); ?>" class="title" title="<?php echo ($val['inspection_name']); ?>">
+                            <i class="dot"></i>
+                            <div class="focus-forhot"><?php echo ($val['inspection_name']); ?></div>
+                            <?php if($val['cost'] == '1'): ?><img src="/Public/home/images/new.png" alt=""><?php endif; ?>
+                            <?php if($val['cost'] == '2'): ?><img src="/Public/home/images/hot.gif" alt=""><?php endif; ?>
+                            </a>
+                            <span class="date"><?php echo (date('Y-m-d',$val['create_time'])); ?></span>
+                            </li><?php endif; endif; endif; endforeach; endif; ?>
+                            </ul>
+                            </div>
+                            </div>   </div>
+
+
+
+<!-- 
                             <div class="news-main g-clear" style="border-top: 2px solid #ffffff;">
                             <div class="news-item health-preserve J_healthPreserve">
                             <h5>百科<li style="float:right;list-style:none"><a href="<?php echo U('home/index/topiclist');?>?class=百科" target="_blank">更多</a></li></h5>
@@ -2126,8 +2193,10 @@ $(document).ready(function(){
                             </li><?php endif; endif; endif; endforeach; endif; ?>
                             </ul>
                             </div>
-                            </div></div>
+                            </div></div> -->
                         </div>
+
+
                         <div class="g-grid-right">
                             <div class="hot-topic J_hotTopic">
                                 <p class="module">
@@ -2548,7 +2617,7 @@ $(document).ready(function(){
            });
        </script>
        <link rel="stylesheet" type="text/css" href="/Public/home/common/css/layout.css" />
-<script type="text/javascript" src="/Public/home/common/js/base.js"></script>
+<!-- <script type="text/javascript" src="/Public/home/common/js/base.js"></script> -->
 <script type="text/javascript" src="/Public/home/common/js/common.js"></script>
 
        <div class="suspend">
@@ -2558,8 +2627,7 @@ $(document).ready(function(){
     <dd class="suspendTel"><a href="javascript:void(0);"></a></dd>
   </dl>
 </div>
-<!--[if IE 6]><script type="text/javascript" src="common/js/IE6PNG.js"></script>
-<script type="text/javascript">PNGmin.fix(".IE6PNG");</script><![endif]-->
+
 <script type="text/javascript">           
 Common.init();
 </script>

@@ -1,0 +1,286 @@
+[ 2018-12-29T11:30:18+08:00 ] 101.226.225.86 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012696s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T11:30:30+08:00 ] 101.226.225.86 /wap/css/error.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002930s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012695s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-12-29T11:30:36+08:00 ] 101.226.225.86 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009766s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T11:30:36+08:00 ] 101.226.225.86 /wap/css/error.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011718s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-12-29T11:30:39+08:00 ] 101.226.225.86 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003907s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009766s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T11:30:40+08:00 ] 101.226.225.86 /wap/css/error.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.000977s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-12-29T11:30:48+08:00 ] 101.226.225.86 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006836s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T11:30:48+08:00 ] 101.226.225.86 /wap/css/error.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012695s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-12-29T11:30:49+08:00 ] 101.226.225.86 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009765s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T11:30:50+08:00 ] 101.226.225.86 /wap/css/error.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010742s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-12-29T11:30:51+08:00 ] 101.226.225.86 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009766s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T11:30:52+08:00 ] 101.226.225.86 /wap/css/error.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010743s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-12-29T11:31:14+08:00 ] 61.151.178.165 /wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004882s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001954s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012695s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T11:32:03+08:00 ] 101.226.225.86 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004883s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012695s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T11:32:05+08:00 ] 101.226.225.86 /wap/css/error.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002930s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014648s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-12-29T11:32:24+08:00 ] 101.226.225.86 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006835s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019531s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T14:31:16+08:00 ] 49.95.208.151 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003907s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010743s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T14:31:17+08:00 ] 101.226.225.86 /wap/css/error.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002930s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.009765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017578s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-12-29T14:31:19+08:00 ] 101.226.225.86 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004883s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002930s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.009766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017579s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T20:46:52+08:00 ] 101.226.225.86 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003907s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002929s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008789s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T20:47:00+08:00 ] 101.226.225.86 /wap/css/error.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012695s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-12-29T20:47:15+08:00 ] 49.95.208.151 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002930s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.008789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018555s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T20:47:16+08:00 ] 101.226.225.86 /wap/css/error.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011719s ]
+ERR: 无法加载控制器:Css
+
+[ 2018-12-29T20:47:18+08:00 ] 101.226.225.86 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004883s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002929s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T20:47:57+08:00 ] 101.226.225.86 /wap/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004883s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001953s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012695s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+
+[ 2018-12-29T20:47:57+08:00 ] 101.89.239.216 /wap
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000976s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003906s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.003907s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.007812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+ERR: 模板不存在:./Application/Wap/View/Public/404.html
+

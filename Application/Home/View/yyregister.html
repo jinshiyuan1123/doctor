@@ -145,7 +145,7 @@
 	
 function checkPost(){
 	var mobile = $("#mobile").val();
-	var reg=/^[1][3678]\d{9}/;
+	var reg=/^[1][35678]\d{9}/;
 	if(mobile==''){
 		layer.msg('手机不能为空');
 		return false;

@@ -250,12 +250,13 @@ $('#share-4').share();
 </div>
 <div class="keshi-menu" id="keshi_menu_holder">
     <ul>
-        <li><a href="/xq/zonghe/1cd60.html" title="首  页" target="_self">首  页</a></li>
-        <li><a href="/hospital/1cd60_detail.html" title="详细介绍" target="_self">详细介绍</a></li>
-        <li><a href="/hospital/1cd60_labs.html" title="科室列表" target="_self">科室列表</a></li>
-        <li><a href="/hospital/1cd60_doctors.html" title="专家介绍" target="_self">推荐专家<i></i></a></li>
-        <li><a href="/hospital/1cd60_guides.html" title="就医指南" target="_self">就医指南</a></li><li><a href="/hospital/1cd60_comments.html" title="就诊评价" target="_self">就诊评价</a></li>
-        <li><a class="orange_link" href="/hospital/1cd60_registers.html" title="预约挂号" target="_self">预约挂号</a></li>
+       <li><a href="<?php echo U('home/index/zonghe');?>?id=<?php echo ($res["id"]); ?>" title="首  页" target="_self">首  页</a></li>
+        <li><a href="<?php echo U('home/index/zongheinfo');?>?id=<?php echo ($res["id"]); ?>" title="详细介绍" target="_self">详细介绍</a></li>
+        <li><a href="<?php echo U('home/index/zonghekeshi');?>?id=<?php echo ($res["id"]); ?>" title="科室列表" target="_self">科室列表</a></li>
+        <li><a href="<?php echo U('home/index/zonghejia');?>?id=<?php echo ($res["id"]); ?>" title="专家介绍" target="_self">推荐专家<i></i></a></li>
+        <li><a href="<?php echo U('home/index/guides');?>?id=<?php echo ($res["id"]); ?>" title="就医指南" target="_self">就医指南</a></li>
+        <li><a href="<?php echo U('home/index/zonghepijia');?>?id=<?php echo ($res["id"]); ?>" title="就诊评价" target="_self">就诊评价</a></li>
+        <li><a class="orange_link" href="" title="预约挂号" target="_self">预约挂号</a></li>
         <!-- 非合作方医院屏蔽底部浮动栏咨询 v5.6.4 -->
         
     </ul>

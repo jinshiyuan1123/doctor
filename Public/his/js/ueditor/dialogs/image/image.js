@@ -780,8 +780,7 @@
                     _src: prefix + data.url,
                     title: data.title,
                     alt: data.original,
-                    floatStyle: align,
-                    width:'450px'
+                    floatStyle: align
                 });
             }
             return list;

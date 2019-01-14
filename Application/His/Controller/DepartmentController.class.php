@@ -38,7 +38,7 @@ class DepartmentController extends HisBaseController
         } else {
             $search = array();
         }
-        $res = M('his_supplier')->where()->select();
+        $res = M('his_yydoctor')->where()->select();
         $this->assign('rankList',$res);
         //取出科室列表
         $hospitalId = $this->hospitalInfo['uid'];
@@ -81,6 +81,7 @@ class DepartmentController extends HisBaseController
                 'hid' => $hospitalId,
                 'sid' => $data['ranklist'],
                 'sid_name' => $data['sid_name'],
+                'ksname' => $data['ksname'],
                 'create_time' => time(),
             ];
             $res = $this->department_model->addData($data);
@@ -119,6 +120,7 @@ class DepartmentController extends HisBaseController
             $data['update_time'] = time();
             $data['sid'] = $data['ranklist'];
             $data['sid_name'] = $data['sid_name'];
+            $data['ksname']  = $data['ksname'];
             $res = $this->department_model->updateData($condition, $data);
             if ($res) {
                 $this->ajaxSuccess('修改成功');

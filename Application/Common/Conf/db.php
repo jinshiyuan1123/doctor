@@ -9,7 +9,7 @@ return array(
     'DB_PWD'                =>  'root',      // 密码
     'DB_PORT'               =>  '3306',     // 端口
     'DB_PREFIX'             =>  'dzm_',   // 数据库表前缀
-    'MAIN_SERVER_DOMAIN'             =>  'http://www.sou.com/',   // 主域名
+    'MAIN_SERVER_DOMAIN'             =>  'http://www.295120.com/',   // 主域名
     #用户权限管理
     'AUTH_CONFIG'=>array(
         'AUTH_ON' => true, //认证开关

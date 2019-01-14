@@ -206,11 +206,12 @@
 </div>
 <div class="keshi-menu" id="keshi_menu_holder">
     <ul>
-        <li><a href="/" title="首  页" target="_self">首  页</a></li>
+       <li><a href="{:U('home/index/zonghe')}?id={$res.id}" title="首  页" target="_self">首  页</a></li>
         <li><a href="{:U('home/index/zongheinfo')}?id={$res.id}" title="详细介绍" target="_self">详细介绍</a></li>
-        <li><a href="" title="科室列表" target="_self">科室列表</a></li>
-        <li><a href="" title="专家介绍" target="_self">推荐专家<i></i></a></li>
-        <li><a href="" title="就医指南" target="_self">就医指南</a></li><li><a href="" title="就诊评价" target="_self">就诊评价</a></li>
+        <li><a href="{:U('home/index/zonghekeshi')}?id={$res.id}" title="科室列表" target="_self">科室列表</a></li>
+        <li><a href="{:U('home/index/zonghejia')}?id={$res.id}" title="专家介绍" target="_self">推荐专家<i></i></a></li>
+        <li><a href="{:U('home/index/guides')}?id={$res.id}" title="就医指南" target="_self">就医指南</a></li>
+        <li><a href="{:U('home/index/zonghepijia')}?id={$res.id}" title="就诊评价" target="_self">就诊评价</a></li>
         <li><a class="orange_link" href="" title="预约挂号" target="_self">预约挂号</a></li>
         <!-- 非合作方医院屏蔽底部浮动栏咨询 v5.6.4 -->
         

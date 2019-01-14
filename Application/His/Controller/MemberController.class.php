@@ -202,8 +202,9 @@ class MemberController extends HisBaseController
      */
     public function addUser()
     {
-        if (IS_POST) {
+        // if (IS_POST) {
             $data = I('post.');
+            // var_dump($data);
             $res = array(
                 'mobile' =>$data['user_name'],
                 'true_name' => $data['true_name'],
@@ -213,17 +214,17 @@ class MemberController extends HisBaseController
                 'rank' =>$data['rank'],
                 'typelist'=>$data['type'],
                 'uid'=>'2',
-                 // 'type'=>'2',
+                 'ksname'=>$data['ksname'],
                 'update_time'=>time(),
                 'create_time'=>time(),
             );
-          
+          // die;
             $res = M('his_doctor')->where()->add($res);
             // if ($this->member_model->getError()) {
             //     $this->ajaxError($this->member_model->getError());
             // }
             $res ? $this->ajaxSuccess('添加成功') : $this->ajaxError('添加失败');
-        }
+        // }
 
     }
 
@@ -260,9 +261,9 @@ class MemberController extends HisBaseController
     
         if(IS_POST){
         $rowlist = I('post.');
-        
+        // var_dump($rowlist);die;
         $password = encrypt_password($rowlist['password']);
-        $datas = array('true_name'=>$rowlist['true_name'],'sex'=>$rowlist['sex'],'department'=>$rowlist['department_id'],'age'=>$rowlist['age'],'typelist'=>$rowlist['type'],'password'=>$password,'update_time'=>time() );
+        $datas = array('true_name'=>$rowlist['true_name'],'sex'=>$rowlist['sex'],'department'=>$rowlist['department_id'],'age'=>$rowlist['age'],'typelist'=>$rowlist['type'],'password'=>$password,'keshi'=>$rowlist['keshi'],'ksname'=>$rowlist['ksname'],'update_time'=>time() );
         $reslist = M('his_doctor')->where("id='$rowlist[uid]'")->save($datas);
         // p($reslist);die;
        if($reslist){
@@ -367,7 +368,7 @@ class MemberController extends HisBaseController
                 $this->ajaxSuccess($role);
             }
         }
-        $memberlist = M('his_supplier')->where()->select();
+        $memberlist = M('his_yydoctor')->where()->select();
         $remove_count = $this->member_model->getRemoveCount($uid);//获得禁用的人数
         $departmentList = D('HisDepartment')->getDepartmentList($uid);//获得当前诊所的部门信息
         $getRankList = $this->member_model->getRankTitle();//获得级别的列表
