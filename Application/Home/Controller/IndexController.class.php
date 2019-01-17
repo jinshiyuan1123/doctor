@@ -392,41 +392,52 @@ function getCity($ip = '')
     public function doLogin()
     {
         $verify_code = I('post.verify_code', '', 'string');
+        $mobile = I('post.mobile', '', '/^[1][3,4,5,7,8][0-9]{9}$/');
+        // p($verify_code);die;
+        // if (empty($mobile)) {
+        //     $this->success('手机号错误');
+        //     return fasle;
+        // }
         $verify = new \Think\Verify();
         if(!$verify->check($verify_code)){
             
-         $this->error('验证码错误！');
+         $this->success('验证码错误！');
+         return false;
         }
         if (!IS_POST) {
-            $this->error('非法登录');
+            $this->success('非法登录');
+            return false;
         }    
-        $mobile = I('post.mobile', '', '/^[1][3,4,5,7,8][0-9]{9}$/');
-        if (empty($mobile)) {
-            $this->error('手机号错误');
-        }
+
         $password = I('post.my_password', '', 'string');
-        if (empty($password)) {
-            $this->error('密码不能为空');
-        }
-        if (strlen($password) < 6) {
-            $this->error('密码不能少于6位');
-        }
+        // if (empty($password)) {
+        //     $this->success('密码不能为空');
+        //     return false;
+        // }
+        // if (strlen($password) < 6) {
+        //     $this->success('密码不能少于6位');
+        //     return false;
+        // }
 
         $user = M('his_user')->where(['mobile'=>$mobile])->find();
         if (empty($user)) {
-            $this->error('账号不存在');
+            $this->success('账号不存在');
+            return false;
         }
         if (decrypt_password($password, $user['password']) === false) {
-            $this->error('密码错误');
+            $this->success('密码错误');
+            return false;
         }
         $res = M('his_user')->where(['mobile'=>$mobile])->save(['update_time'=>NOW_TIME]);
         if (!$res) {
-            $this->error('登录失败，请重新登录');
+            $this->success('登录失败，请重新登录');
+            return false;
         }
         unset($user['password']);
         session('home_user_info', $user);
         if (!$res) {
-            $this->error('登录失败，请重新登录');
+            $this->success('登录失败，请重新登录');
+            return false;
         }
         // $this->success('登录成功');
         $this->redirect('/home');
@@ -1135,26 +1146,32 @@ public function recursived($meta,$flag,$count )
       $mobile = $data['loginId'];
       $password = $data['password'];
       $verify_code = $data['validCode'];
-      
+      $user = M('his_doctor')->where(['mobile'=>$mobile])->find();
       $verify = new \Think\Verify();
+       if (empty($user)) {
+            $this->success('账号不存在');
+            return false;
+      }
+      if (decrypt_password($password, $user['password']) === false) {
+            $this->success('密码错误');
+            return false;
+      }
       if(!$verify->check($verify_code)){
             
-         $this->error('验证码错误！');
+         $this->success('验证码错误！');
+         return false;
         }
 
-      $user = M('his_doctor')->where(['mobile'=>$mobile])->find();
+     
    
-      if (decrypt_password($password, $user['password']) === false) {
-            $this->error('密码错误');
-      }
-      if (empty($user)) {
-            $this->error('账号不存在');
-      }
+
+     
      
       $res = M('his_doctor')->where(['mobile'=>$mobile])->save(['update_time'=>NOW_TIME]);
      
         if (!$res) {
-            $this->error('登录失败，请重新登录');
+            $this->success('登录失败，请重新登录');
+            return false;
         }
 
       unset($user['password']);
@@ -1180,26 +1197,31 @@ public function recursived($meta,$flag,$count )
       $mobile = $data['loginId'];
       $password = $data['password'];
       $verify_code = $data['validCode'];
-      
+      $user = M('his_yydoctor')->where(['mobile'=>$mobile])->find();
       $verify = new \Think\Verify();
+      if (empty($user)) {
+            $this->success('账号不存在');
+            return false;
+      }
+     
       if(!$verify->check($verify_code)){
             
-         $this->error('验证码错误！');
+         $this->success('验证码错误！');
+         return false;
         }
 
-      $user = M('his_yydoctor')->where(['mobile'=>$mobile])->find();
+    
    
       if (decrypt_password($password, $user['password']) === false) {
-            $this->error('密码错误');
-      }
-      if (empty($user)) {
-            $this->error('账号不存在');
+            $this->success('密码错误');
+            return false;
       }
      
-      $res = M('his_doctor')->where(['mobile'=>$mobile])->save(['update_time'=>NOW_TIME]);
+      $res = M('his_yydoctor')->where(['mobile'=>$mobile])->save(['update_time'=>NOW_TIME]);
      
         if (!$res) {
-            $this->error('登录失败，请重新登录');
+            $this->success('登录失败，请重新登录');
+            return fasle;
         }
 
       unset($user['password']);

@@ -198,19 +198,19 @@ function Checkbox() {
             var f = $('input[type=hidden]').val();
 
 
-            $.post('/home/login/userlogin',{u:u,p:p,verify_code:verify_code,__hash__:f},function (res) {
-            	alert(res.status);
-                if(res.status==0){
-                    var d = res.data;
-                    window.location.href='/home/login/enlogin?enuid='+d.enuid;
-                }else if(res.status==5){
-                     $("#vimg").attr('src','/home/login/createVerify');
-                    $("#verify_code").val('');
-                    layer.msg(res.msg);
-                }else{
-                    layer.msg(res.msg);
-                }
-            },'json');
+            // $.post('/home/login/userlogin',{u:u,p:p,verify_code:verify_code,__hash__:f},function (res) {
+            // 	// alert(res.status);
+            //     if(res.status==0){
+            //         var d = res.data;
+            //         window.location.href='/home/login/enlogin?enuid='+d.enuid;
+            //     }else if(res.status==5){
+            //          $("#vimg").attr('src','/home/login/createVerify');
+            //         $("#verify_code").val('');
+            //         layer.msg(res.msg);
+            //     }else{
+            //         layer.msg(res.msg);
+            //     }
+            // },'json');
 
         
 		}

@@ -350,7 +350,7 @@ class LoginController extends PublicBaseController
 
 
         $verify = new \Think\Verify();
-        if(!$verify->check($verify_code))$this->resJSON(5, '验证码错误333！');
+        if(!$verify->check($verify_code))$this->resJSON(5, '验证码错误！');
 
         $User = M('HisMember');
         if (!$User->autoCheckToken($_POST))$this->resJSON(6,'表单安全验证失败');
@@ -361,7 +361,7 @@ class LoginController extends PublicBaseController
         $d_member = new HismemberModel();
         $user = $d_member->getOne($u, 'user_name');
         // if (!$user) $this->resJSON(2, '用户不存在！');
-        if (!decrypt_password($p, $user['password'])) {
+        if (decrypt_password($p, $user['password'])===false) {
             $this->resJSON(4, '用户密码错误');
         }
         $this->resJSON(0, 'ok', array('enuid' => $this->encrypt($user['uid'])));
